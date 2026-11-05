@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUB Group: Company, Role and Recruitment Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
+  --line:#dfe3e7; --soft:#f8f9fa; --gold:#29a3dd; --gold2:#e8f5fc;
+  --green:#236b45; --greenbg:#eaf5ee; --blue:#245b88; --bluebg:#edf4fa;
+  --orange:#8a5b00; --orangebg:#fff4dc; --red:#8b2f2f; --redbg:#faecec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Aptos,Arial,sans-serif;line-height:1.58}
+main{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{position:relative;background:#101214;color:#fff;padding:48px 56px 38px;border-top:7px solid var(--gold)}
+.site-link{position:absolute;top:16px;right:24px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#101214;background:var(--gold);text-decoration:none;border-radius:999px;padding:6px 12px;line-height:1}
+.site-link:hover{filter:brightness(1.08);text-decoration:underline}
+.site-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-link svg{width:12px;height:12px}
+@media (max-width:560px){.site-link{position:static;margin-bottom:14px}}
+@media print{.site-link{color:#101214}.site-link::after{content:" (" attr(href) ")";font-weight:400}}
+.hero .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#c7ccd2;font-weight:600}
+.hero h1{font-size:38px;line-height:1.1;margin:8px 0 10px}
+.hero h1 span{color:var(--gold)}
+.hero .sub{max-width:890px;color:#d4d8dc;font-size:16px}
+.hero .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:#b8bec5}
+.hero .meta .badge{margin-right:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);padding:10px 54px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-size:12px;color:#353a40;text-decoration:none;font-weight:600}
+.nav a:hover{color:#000;text-decoration:underline}
+section{padding:34px 56px 6px}
+h2{font-size:27px;margin:0 0 16px;border-bottom:2px solid var(--line);padding-bottom:9px}
+h3{font-size:19px;margin:27px 0 9px}
+h4{font-size:15px;margin:18px 0 7px}
+p{margin:8px 0 12px}
+.small{font-size:12px;font-weight:300;color:var(--muted)}
+.lead{font-size:16px;line-height:1.62}
+.thesis{background:#1b1e22;color:#eef0f2;border-left:7px solid var(--gold);border-radius:10px;padding:22px 26px;margin:6px 0 10px;font-size:15.5px}
+.thesis strong{color:var(--gold)}
+.thesis .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aeb5bc;margin-bottom:6px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.card{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:15px}
+.card .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.card .v{font-size:26px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
+.card .n{font-size:12px;font-weight:300;color:var(--muted);margin-top:4px}
+.callout{margin:17px 0;padding:15px 17px;border-left:5px solid #5d6670;background:#f5f7f8}
+.callout.gold{border-color:var(--gold);background:var(--gold2)}
+.callout.warn{border-color:#b47b00;background:#fff6e4}
+.problem{font-size:19px;font-weight:700;line-height:1.45;margin:12px 0;padding:18px 20px;border:2px solid var(--gold);border-radius:10px;background:#f5fbfe}
+.badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;border-radius:999px;padding:3px 8px;margin-right:5px;vertical-align:1px;white-space:nowrap}
+.fact{color:var(--green);background:var(--greenbg)}
+.infer{color:var(--blue);background:var(--bluebg)}
+.hyp{color:var(--orange);background:var(--orangebg)}
+.limit{color:var(--red);background:var(--redbg)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{background:#eef1f3;text-align:left;font-size:12px;padding:9px;border:1px solid #d5dbe0}
+td{padding:9px;border:1px solid #dce1e5;vertical-align:top}
+td.num{white-space:nowrap}
+ul{margin-top:7px}
+li{margin:5px 0}
+.phase{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:14px 0}
+.phase:first-of-type{border-top:0}
+.phase .label{font-weight:700}
+.refs{margin:18px 0 8px;padding:11px 14px;border-left:4px solid #9aa2aa;background:#f7f8f9;font-size:11.5px;color:#535b64}
+.refs a{color:#174f85;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.refs{line-height:1.7}
+.refs .sep{color:#9aa2aa;margin:0 5px}
+.refs.dark .sep{color:#5d6670}
+.refs.dark{background:#1c2024;border-left-color:#5d6670;color:#aeb5bc;margin-top:14px}
+.refs.dark a{color:#9ec5ec}
+button{font-family:inherit}
+svg text{font-family:Lexend,Aptos,Arial,sans-serif}
+td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
+.metricbars{display:grid;gap:9px;margin:16px 0}
+.metricrow{display:grid;grid-template-columns:90px 1fr 75px;gap:10px;align-items:center;font-size:12px}
+.barbg{height:12px;background:#eceff1;border-radius:8px;overflow:hidden}
+.bar{height:100%;background:#8c4747;border-radius:8px}
+.tag{font-weight:700;text-align:right}
+.timeline td:first-child{white-space:nowrap;font-weight:700}
+.footer{margin-top:34px;padding:24px 56px 50px;border-top:1px solid var(--line);font-size:11.5px;color:#636b74}
+.notice{font-size:12.5px;border:1px solid #9fd3ee;background:#eef8fd;border-radius:8px;padding:12px 14px;margin:14px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qbox{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;background:#fff}
+.qbox strong{display:block;margin-bottom:4px}
+.story{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0;background:#fff;position:relative}
+.story .rank{position:absolute;top:16px;right:18px;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#101214;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.story h4{margin:0 0 8px;font-size:16.5px;padding-right:50px}
+.story .why{font-size:13.5px;margin:6px 0 10px}
+.star{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;font-size:13.5px;margin:8px 0}
+.star b{color:#fff;background:#3a4047;border-radius:5px;text-align:center;font-size:12px;padding:2px 0;height:22px}
+.story .open{border-left:4px solid var(--gold);background:var(--gold2);padding:9px 12px;font-style:italic;margin:10px 0 6px;font-size:14px}
+.story .meta2{font-size:12px;color:var(--muted)}
+.chartbox{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px;margin:18px 0 22px}
+.chartbox .title{font-weight:700;font-size:14px;margin-bottom:6px}
+.chartcap{font-size:11px;font-weight:300;color:var(--muted);margin-top:6px}
+.stock-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.stock-ranges{display:flex;gap:6px;flex-wrap:wrap}
+.stock-ranges button{appearance:none;border:1px solid #ccd2d8;background:#fff;color:#353a40;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:600;cursor:pointer}
+.stock-ranges button.active{background:#202428;color:#fff;border-color:#202428}
+.stock-ranges button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.stock-chart-wrap{position:relative}
+#sykChart{width:100%;height:300px;display:block;touch-action:pan-y}
+.stock-tooltip{position:absolute;pointer-events:none;background:#111;color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;line-height:1.35;transform:translate(-50%,-115%);white-space:nowrap;display:none;z-index:2}
+.stock-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend b{color:var(--ink)}
+/* Executive infographic */
+.info{background:#101214;color:#eef0f2;border-radius:14px;padding:26px 26px 22px;margin:8px 0 10px;border-top:6px solid var(--gold)}
+.info h2{color:#fff;border-bottom:1px solid #2e3338;font-size:24px}
+.info .ik{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#29a3dd;font-weight:600;margin:20px 0 9px}
+.itiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.itile{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:12px 13px}
+.itile .v{font-size:26px;font-weight:700;color:#fff;line-height:1.15;letter-spacing:-.01em}
+.itile .l{font-size:12px;font-weight:300;color:#b8bec5;margin-top:5px}
+.itile.neg .v{color:#ff9d8f}
+.itrack{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-top:18px}
+.itrack:before{content:"";position:absolute;left:4%;right:4%;top:24px;height:3px;background:linear-gradient(90deg,#5d6670,#29a3dd 60%,#d9534f)}
+.istop{position:relative;text-align:center;font-size:11.5px;color:#cfd4d9;padding-top:18px}
+.istop:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#29a3dd;border:3px solid #101214}
+.istop.shock:before{background:#d9534f}
+.istop b{display:block;color:#fff;font-size:13px}
+.ichev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ichev div{background:#2a2f35;padding:12px 14px 12px 22px;clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%,6% 50%);font-size:12px;color:#cfd4d9}
+.ichev div:first-child{clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%);padding-left:14px}
+.ichev div:last-child{background:#29a3dd;color:#101214}
+.ichev b{display:block;font-size:13.5px;color:#fff}
+.ichev div:last-child b{color:#101214}
+.icols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ibox{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:13px 15px;font-size:12.5px;color:#d4d8dc}
+.ibox ul{margin:4px 0 0;padding-left:18px}
+.ibox li{margin:4px 0}
+.hrow{display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;margin:7px 0}
+.conf{height:8px;border-radius:6px;background:#2e3338;overflow:hidden}
+.conf i{display:block;height:100%;background:#29a3dd}
+.hrow small{grid-column:1/-1;color:#8f979f;margin-top:-5px}
+.iproof{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.iproof div{background:#1c2024;border:1px solid #2e3338;border-left:4px solid #29a3dd;border-radius:8px;padding:10px 11px;font-size:11.5px;color:#aeb5bc}
+.iproof b{display:block;color:#fff;font-size:15px;line-height:1.25;margin-bottom:3px}
+.iproof em{display:block;font-style:normal;color:#29a3dd;font-weight:600;margin-top:4px;font-size:11px}
+.iq{margin-top:18px;border:2px solid #29a3dd;border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
+.info .src{font-size:10.5px;color:#8f979f;margin-top:12px}
+@media (max-width:900px){
+  .itiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itrack{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+  .itrack:before{display:none}
+  .ichev,.icols{grid-template-columns:1fr}
+  .ichev div,.ichev div:first-child{clip-path:none;padding-left:14px;border-radius:8px}
+  .iproof{grid-template-columns:1fr 1fr}
+  .info{padding:20px 16px}
+}
+@media (max-width:560px){.iproof,.itiles{grid-template-columns:1fr}.itrack{grid-template-columns:1fr 1fr}}
+@media print{.info{-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .hero,section,.footer{padding-left:20px;padding-right:20px}
+  .nav{padding-left:20px;padding-right:20px;gap:12px}
+  .phase{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}#sykChart{height:260px}.problem{font-size:17px}}
+@media print{
+  body{background:#fff}
+  main{box-shadow:none;max-width:none}
+  .nav,.stock-ranges{display:none}
+  section{padding-top:24px}
+  a{color:inherit}
+  .card,.qbox,.callout,.refs,.story,.chartbox,.thesis{break-inside:avoid}
+  tr{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <a class="site-link" href="https://www.aubgroup.com.au/" target="_blank" rel="noopener" title="AUB Group Limited official website">aubgroup.com.au <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
+  <h1><span>AUB Group</span>: Company, Role and Recruitment Brief</h1>
+  <div class="sub">AI Delivery Lead (Sydney, hybrid, permanent; confidential client via Talenza) | Executive infographic, Stage 1 executive briefing, compensation and headcount, Stage 2 company dossier (sections 1 to 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
+  <div class="meta">
+    <span>Prepared: 5 November 2026 (version 2, updated 5 November 2026)</span>
+    <span>Candidate: Adam Aziz</span>
+    <span>Currency: AUD unless stated</span>
+    <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Report sections">
+  <a href="#infographic">Infographic</a>
+  <a href="#stage1">Stage 1</a>
+  <a href="#pay">Pay &amp; headcount</a>
+  <a href="#stage2">Stage 2</a>
+  <a href="#stock">Stock</a>
+  <a href="#extras">Extras</a>
+  <a href="#role">Role</a>
+  <a href="#stage3">Stage 3</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="thesis">
+<div class="thesis">
+  <div class="k">Executive Summary</div>
+  AUB Group is an ASX200 insurance broking and underwriting agency group that has grown underlying revenue from <strong>A$541.6m (FY19) to A$1,596.6m (FY26)</strong>, mostly through acquisitions such as Tysers and Prestige. After the <strong>EQT/CVC A$45 a share proposal was withdrawn on 1 Dec 2025</strong>, management has to prove value on its own, with FY27 underlying NPAT guidance of A$245m to A$265m. In August 2026 AUB told the market its AI foundations are in place (<strong>92% Copilot utilisation, 43 active AI agents, 710 hours released</strong>) and that the focus is now embedding AI into broker, underwriting and claims workflows. The AI Delivery Lead appears to be the hire that turns that pipeline into <strong>measured, adopted value</strong> across a decentralised partner network, with a slim team. The ad does not name the client; AUB is a Working Hypothesis to confirm with Talenza.
+</div>
+<div class="refs"><strong>References:</strong> Summary of Stage 1 and section 7; these links support the specific claims. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a></div>
+</section>
+
+<!-- ============ INFOGRAPHIC ============ -->
+<section id="infographic">
+<div class="info" role="region" aria-label="Executive infographic">
+  <h2>AUB Group at a glance: why this role, why now, why me?</h2>
+
+  <div class="ik">Observed facts</div>
+  <div class="itiles">
+    <div class="itile"><div class="v">A$1,596.6m</div><div class="l">FY26 underlying revenue, up from A$541.6m in FY19</div></div>
+    <div class="itile"><div class="v">A$224.6m</div><div class="l">FY26 underlying NPAT; FY27 guidance A$245m to A$265m</div></div>
+    <div class="itile"><div class="v">2,697</div><div class="l">Employees (30 Jun 2026); about 7,000 network professionals</div></div>
+    <div class="itile"><div class="v">92% / 43</div><div class="l">Copilot utilisation / active AI agents (FY26 results, Aug 2026)</div></div>
+    <div class="itile neg"><div class="v">-17.8%</div><div class="l">Shares on 1 Dec 2025, when the A$45 bid was withdrawn</div></div>
+  </div>
+
+  <div class="ik">Turning points</div>
+  <div class="itrack">
+    <div class="istop"><b>2019</b>Mike Emmett becomes CEO</div>
+    <div class="istop"><b>2020</b>BizCover 40% stake</div>
+    <div class="istop"><b>2022</b>Tysers, A$880m</div>
+    <div class="istop shock"><b>Dec 2025</b>A$45 bid withdrawn</div>
+    <div class="istop"><b>Jan 2026</b>Prestige, A$432m</div>
+    <div class="istop"><b>Aug 2026</b>AI: Foundations to Impact</div>
+  </div>
+
+  <div class="ik">Strategic evolution</div>
+  <div class="ichev">
+    <div><b>SME broker network</b>Equity stakes in owner-run brokers; data held in each business</div>
+    <div><b>Acquisitive specialist group</b>Agencies, BizCover, Tysers, UK retail; more platforms</div>
+    <div><b>Integrated, AI-enabled distributor</b>Nexus data platform, group AI governance, margin targets</div>
+  </div>
+
+  <div class="icols" style="margin-top:4px">
+    <div>
+      <div class="ik">Why the role exists now</div>
+      <div class="ibox">
+        <ul>
+          <li><b>Foundations done:</b> Copilot, Nexus, AI Governance Forum and AI Policy are in place (Aug 2026).</li>
+          <li><b>Next step stated:</b> embed AI in broker, underwriting and claims workflows.</li>
+          <li><b>Pressure for proof:</b> FY27 guidance and a failed A$45 takeover make measured benefits matter.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="ik">Key working hypotheses</div>
+      <div class="ibox">
+        <div class="hrow"><span>The role exists to move AI from usage measures to measured financial benefit</span><div class="conf" aria-label="High confidence"><i style="width:85%"></i></div><small>High. Test: "How are the 710 hours measured, and who signs off benefits?"</small></div>
+        <div class="hrow"><span>Benefits will be judged against division margin targets, especially International and NZ</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: "Which divisions are the first AI priorities?"</small></div>
+        <div class="hrow"><span>The confidential client is AUB Group</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: ask Kieran Waite (Talenza) to name the client.</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ik">Candidate positioning: five proof points</div>
+  <div class="iproof">
+    <div><b>4 days to instant</b>AI assistant for global IT support, in Webex<em>AI into the workflow</em></div>
+    <div><b>46 to 196</b>Weekly users (326%); 33% fewer data requests<em>Adoption and benefits</em></div>
+    <div><b>2.9x value</b>ThoughtSpot capacity case, negotiated with the vendor<em>Business case, vendors</em></div>
+    <div><b>4 options</b>Compared ML, GenAI and statistics; chose anomaly detection<em>Judgement on method</em></div>
+    <div><b>62% to 100%</b>27 KPIs; privacy and Works Council partnership<em>Governance and trust</em></div>
+  </div>
+
+  <div class="iq">"How does AUB turn its AI foundations into measured, adopted value in broking, underwriting and claims, across a decentralised partner network, with a slim team?"</div>
+
+<div class="refs dark"><strong>References:</strong> Hypotheses are Working Hypotheses to validate in interview; confidence bars are qualitative. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a> <span class="sep">|</span> Master Resume (4 Nov 2026)</div>
+</div>
+</section>
+
+<!-- ============ STAGE 1 ============ -->
+<section id="stage1">
+<h2>Stage 1: One-page Executive Briefing</h2>
+
+<h3>Company in one paragraph</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span> AUB Group (ASX: AUB) is an ASX200 group of insurance brokers and underwriting agencies. It takes equity stakes in owner-run broking and agency businesses and supplies group services (IT, back office, M&amp;A, claims, risk and compliance). It earns mostly commission and fees on about <strong>A$11bn of premium placed</strong> for about 1.6m clients, across about 640 locations in 17 countries. Underlying revenue grew from <strong>A$541.6m (FY19) to A$1,596.6m (FY26)</strong>, driven by the A$880m Tysers (Lloyd's wholesale) deal in 2022 and the A$432m Prestige (UK) deal in 2026. <span class="badge fact">Observed Fact</span> The direction now is integration and margin. One of six FY27 priorities is to "strengthen enterprise capability through technology, data and operational excellence", and the results deck says AI is moving from foundations to broker, underwriting and claims workflows.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">FY26 underlying revenue</div><div class="v">A$1,596.6m</div><div class="n">Up from A$541.6m in FY19</div></div>
+  <div class="card"><div class="k">FY26 underlying NPAT</div><div class="v">A$224.6m</div><div class="n">FY27 guidance A$245m to A$265m</div></div>
+  <div class="card"><div class="k">Employees</div><div class="v">2,697</div><div class="n">At 30 Jun 2026; 17 countries</div></div>
+  <div class="card"><div class="k">AI scorecard</div><div class="v">92% / 43</div><div class="n">Copilot utilisation / active AI agents</div></div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a></div>
+
+<h3>Observed Facts</h3>
+<div class="tablewrap"><table>
+<tr><th>Area</th><th>Fact</th><th>Interview relevance</th></tr>
+<tr><td>Scale</td><td><span class="badge fact">Fact</span> Underlying revenue A$541.6m (FY19) to A$1,596.6m (FY26); underlying NPAT A$224.6m (FY26).</td><td>More scale makes every hour freed and every decision improved worth more.</td></tr>
+<tr><td>Outlook</td><td><span class="badge fact">Fact</span> FY27 underlying NPAT guidance A$245m to A$265m (9.1% to 18.0% growth).</td><td>AI value has to show up in this number.</td></tr>
+<tr><td>Margin gaps</td><td><span class="badge fact">Fact</span> FY26 EBIT margin vs medium-term target: International 27.6% vs 32%, NZ 33.1% vs 42%, Agencies 43.7% vs 47%, Australian Broking 38.1% vs 40%.</td><td>Gaps give AI use cases a measurable target.</td></tr>
+<tr><td>AI platform</td><td><span class="badge fact">Fact</span> Microsoft 365 Copilot is the enterprise AI interface. Nexus, the AUB Data Platform, is building unified, AI-ready data across AU, UK and NZ.</td><td>The platform exists; the job is use and value.</td></tr>
+<tr><td>AI governance</td><td><span class="badge fact">Fact</span> AI Governance Forum, AI Policy and AI Risk Appetite Statements. An AI Risk Management &amp; Governance Framework is being implemented.</td><td>You build on existing controls, not from zero.</td></tr>
+<tr><td>AI delivery</td><td><span class="badge fact">Fact</span> CoverNet (came with Prestige), the BizCover AI Centre of Excellence, citizen development and partners.</td><td>Several build teams need one coordinator.</td></tr>
+<tr><td>AI results</td><td><span class="badge fact">Fact</span> 92% Copilot utilisation, 43 active AI agents, 40+ solutions in pipeline, 710 hours released in the last 30 days.</td><td>Usage is measured today; realised benefits are the next step.</td></tr>
+<tr><td>People</td><td><span class="badge fact">Fact</span> 2,697 employees (30 Jun 2026), down from 2,859. Turnover 17%, up from 13%.</td><td>Capacity is tight, so "slim team" is real.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734wt9xzy74p1.pdf" title="FY26 Performance Overview, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Performance Overview</a></div>
+
+<h3>Major Turning Points</h3>
+<ol>
+<li><strong>Mar 2019, Mike Emmett becomes CEO:</strong> start of the acquisition-led growth era. <span class="badge fact">Fact</span></li>
+<li><strong>Feb 2020, 40% of BizCover for about A$132m:</strong> AUB's first digital SME platform, now home of the AI Centre of Excellence. <span class="badge fact">Fact</span></li>
+<li><strong>Sep 2022, Tysers (A$880m):</strong> funded by about A$350m of equity and a A$675m debt facility. AUB becomes international and Lloyd's-facing. <span class="badge fact">Fact</span></li>
+<li><strong>Sep to Dec 2025, A$45 a share proposal:</strong> EQT, then EQT and CVC; the consortium walked away on 1 Dec 2025 and shares fell 17.8%. <span class="badge fact">Fact</span></li>
+<li><strong>Jan 2026, Prestige (UK) for A$432m:</strong> funded by a A$400m placement at A$29.40. CoverNet came with it. <span class="badge fact">Fact</span></li>
+<li><strong>Aug 2026, "AI Strategy: Foundations to Impact":</strong> the FY26 results deck sets out AI governance and an adoption scorecard. <span class="badge fact">Fact</span></li>
+</ol>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.adviservoice.com.au/2019/01/aub-group-announces-ceo-succession/" title="AUB Group announces CEO succession, AdviserVoice, Jan 2019">AdviserVoice: CEO succession</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20200217/pdf/44f47dp58mkxg8.pdf" title="Investment in BizCover, AUB Group via ASX, 17 Feb 2020">AUB: BizCover investment</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://fool.com.au/2022/05/09/aub-share-price-halted-amid-880-million-acquisition" title="AUB share price halted amid $880 million acquisition, The Motley Fool Australia, 9 May 2022">Motley Fool: Tysers A$880m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20251028/pdf/06r47vnj7yxwqs.pdf" title="Response to media speculation: EQT non-binding indicative proposal, AUB Group via ASX, 28 Oct 2025">AUB: takeover approach</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260127/pdf/06vlrrs5g9385h.pdf" title="Acquisition of Prestige and equity raising, AUB Group via ASX, 27 Jan 2026">AUB: Prestige acquisition</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a></div>
+
+<h3>Strategic Evolution</h3>
+<p><span class="badge infer">Strong Inference</span> The path runs from an <strong>SME broker network</strong> (Austbrokers, renamed AUB Group in 2015), to an <strong>acquisitive specialist group</strong> (BizCover, 360 Underwriting, Tysers, UK retail), to an <strong>integrated, data-led distributor</strong> with one data platform (Nexus), group AI governance and margin targets for every division. AUB is becoming a specialist insurance distributor that uses shared data and AI to lift margin, while keeping the owner-run model that drives growth.</p>
+<div class="refs"><strong>References:</strong> Inference from Observed Facts and Major Turning Points. <a target="_blank" rel="noopener" href="https://insurancebusinessmag.com/nz/news/breaking-news/nz-expansion-prompts-name-change-for-austbrokers-51910.aspx" title="NZ expansion prompts name change for Austbrokers, Insurance Business, Nov 2015">Insurance Business: rename</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a></div>
+
+<h3>Why the Role Exists Now</h3>
+<div class="callout gold">
+<span class="badge infer">Strong Inference</span><br>
+AUB told the market in Aug 2026 that the AI platform, governance and delivery engines are in place, and the focus is now <strong>embedding AI into broker, underwriting and claims workflows</strong>. The ad asks for exactly that next step:
+<ul>
+<li>Prioritise AI use cases across business functions and build the business cases.</li>
+<li>Coordinate vendors and partners, and embed governance and responsible AI controls.</li>
+<li>Drive adoption and track realised benefits.</li>
+</ul>
+The likely trigger is the shift from activity measures (92% utilisation, 43 agents, 710 hours) to profit-relevant value, with FY27 guidance of A$245m to A$265m and investors still weighing the failed A$45 takeover and the discounted Prestige raise. <span class="badge hyp">Working Hypothesis</span> AUB being the client: confirm with Talenza.
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/01/28/aub-group-completes-400m-institutional-placement-to-fund-prestige-acquisition/" title="AUB Group completes $400m institutional placement to fund Prestige acquisition, The Motley Fool Australia, 28 Jan 2026">Motley Fool: A$400m placement</a></div>
+
+<h3>The Real Business Problem</h3>
+<div class="problem">"How does AUB turn its AI foundations into measured, adopted value in broking, underwriting and claims, across a decentralised partner network, with a slim team?"</div>
+<ul>
+<li><span class="badge infer">Inference</span> <strong>Value, not activity:</strong> usage and hours are not margin. The board will look at division margin targets.</li>
+<li><span class="badge infer">Inference</span> <strong>Influence, not mandate:</strong> partner businesses are owner-run, and some run their own IT.</li>
+<li><span class="badge infer">Inference</span> <strong>Many engines, one pipeline:</strong> CoverNet, BizCover, citizen developers and partners all build. Someone has to prioritise, govern and count benefits across them.</li>
+</ul>
+<div class="refs"><strong>References:</strong> Inference from Observed Facts and Why the Role Exists Now. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a></div>
+
+<h3>Working Hypotheses</h3>
+<div class="tablewrap"><table>
+<tr><th>#</th><th>Working hypothesis</th><th>Confidence</th></tr>
+<tr><td>H1</td><td>The confidential client is AUB Group</td><td><span class="badge hyp">Medium</span> Adam's information; fits AUB's FY26 AI slide; not named in the ad</td></tr>
+<tr><td>H2</td><td>The role exists to move AI from usage measures to measured financial benefit</td><td><span class="badge infer">High</span></td></tr>
+<tr><td>H3</td><td>Benefits will be judged against division margin targets, especially International and NZ</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>H4</td><td>The role coordinates CoverNet, the BizCover AI CoE, citizen developers and vendors rather than leading a large build team</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>H5</td><td>The role reports into group technology or operations (no CDO or CTO is named publicly)</td><td><span class="badge hyp">Low</span></td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Inference from Stage 1. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a></div>
+</section>
+
+<!-- ============ PAY ============ -->
+<section id="pay">
+<h2>Compensation &amp; Headcount</h2>
+<div class="tablewrap"><table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Global employees</td><td class="num"><strong>2,697</strong></td><td><span class="badge fact">Fact</span> Employees of AUB and controlled entities at 30 Jun 2026 (FY26 Annual Report), down from 2,859. Excludes associates and network members. FTE not published.</td></tr>
+<tr><td>Wider network</td><td class="num"><strong>~7,000</strong></td><td><span class="badge fact">Fact</span> "Insurance professionals" including associates and non-equity network members (FY26 deck). Not employees.</td></tr>
+<tr><td>Australia employees</td><td class="num"><strong>Not publicly disclosed</strong></td><td>AUB's Workplace Gender Equality Agency (WGEA) filing may give a count; not checked.</td></tr>
+<tr><td>Sydney headcount</td><td class="num"><strong>Not publicly disclosed</strong></td><td><span class="badge fact">Fact</span> Head office: Level 14, 141 Walker Street, North Sydney.</td></tr>
+<tr><td>Exact-role pay</td><td class="num"><strong>A$180k to 200k</strong><br><span class="small">plus super, permanent</span></td><td><span class="badge fact">Fact</span> Recruiter disclosure (Talenza ad, 4 Nov 2026). <strong>Base; super on top; bonus unknown.</strong></td></tr>
+<tr><td>Benchmark 1: Sydney/NSW, 2026</td><td class="num">Program Manager A$155k to 190k<br>Data Governance Manager A$175k to 215k<br>Head of Delivery A$225k to 270k</td><td>Robert Walters Salary Guide 2026 (mid-year). <strong>Base only; excludes super, bonus and benefits.</strong> No "AI Delivery Lead" row exists.</td></tr>
+<tr><td>Benchmark 2: Sydney, 2026</td><td class="num">Program Manager A$210k to 250k<br><span class="small">median A$230k</span></td><td>Morgan McKinley 2026 guide. "Total pay" estimate; super basis not stated, so not directly comparable.</td></tr>
+</table></div>
+
+<div class="callout gold">
+<strong>Indicative interview range:</strong> <strong>A$190k to 200k base, plus super</strong>. Anchor <strong>A$200k plus super</strong>.<br>
+<span class="badge infer">Inference, not an employer-confirmed budget</span> The ad caps at A$200k. The scope (cross-functional AI portfolio, governance, vendors, benefits) sits between the Program Manager and Head of Delivery bands, so the top of the advertised range is defensible. Do not anchor low because the requirements are met.<br>
+<strong>Material uncertainty:</strong> whether A$200k is a hard cap, any short-term incentive, and the reporting line. <strong>Confirm with Kieran Waite:</strong> the budget ceiling, incentive structure and who the role reports to.
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+"Based on the scope, I'm looking at the top of the advertised range, around $200k plus super. I'm flexible on how the overall package is structured, including any incentive."
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.robertwalters.com.au/content/dam/robert-walters-redesign/country/australia/files/salary-survey/salary-guide-2026-AU-mid-year.pdf" title="Salary Guide 2026 (mid-year), Australia and New Zealand, Robert Walters, 2026">Robert Walters: Salary Guide 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/program-manager/sydney" title="Program Manager salary, Sydney, Morgan McKinley 2026 Salary Guide, accessed 5 Nov 2026">Morgan McKinley: Program Manager Sydney</a></div>
+</section>
+
+<!-- ============ STAGE 2 ============ -->
+<section id="stage2">
+<h2>Stage 2: Full Interview Dossier</h2>
+
+<h3>1. Company Overview</h3>
+<ul>
+<li><span class="badge fact">Fact</span> <strong>Business:</strong> equity partner to owner-run insurance brokers and underwriting agencies, plus shared group services. About 640 locations, 17 countries, about 1.6m clients, over A$11bn premium placed.</li>
+<li><span class="badge fact">Fact</span> <strong>Revenue model:</strong> commission and fees on premium placed; underwriting agency income for insurers and Lloyd's syndicates; premium funding interest (down 11.6% in FY26 as rates fell).</li>
+<li><span class="badge fact">Fact</span> <strong>FY26 revenue by division</strong> (underlying, associates at 100%): Australian Broking A$647.8m; International (Tysers, UK Retail, MGAs including Prestige) A$494.9m; Agencies (39 agencies: 360 Underwriting, SURA, Strata) A$240.9m; BizCover A$120.7m; NZ Broking NZ$107.9m.</li>
+<li><span class="badge fact">Fact</span> <strong>Ownership and leadership:</strong> ASX-listed since 2005. CEO Mike Emmett (since 2019), Chair Peter Harmer (since Oct 2024), CFO Nick Dryden (confirmed Feb 2026), Chief Legal and Risk Officer Richard Bell. No CDO, CTO or CIO named in official sources.</li>
+<li><span class="badge fact">Fact</span> <strong>Market context:</strong> market cap about A$3.96bn (5 Nov 2026); shares A$29.69 (4 Nov 2026 close).</li>
+<li><span class="badge fact">Fact</span> <strong>FY27 priorities:</strong> integrate Prestige; scale Agencies; grow Tysers wholesale; optimise and restore NZ; disciplined M&amp;A; technology, data and operational excellence.</li>
+</ul>
+
+<h4>Financial scale</h4>
+<div class="chartbox">
+  <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="AUB underlying revenue rising from 541.6 million dollars in FY19 to 1,596.6 million in FY26">
+    <g font-family="Lexend,Aptos,Arial,sans-serif" font-size="12" fill="#17191c">
+      <text x="8" y="16" font-size="11" fill="#626a73">A$ millions</text>
+      <line x1="44" y1="220" x2="620" y2="220" stroke="#cfd5da"/><text x="38" y="224" text-anchor="end" font-size="11" fill="#626a73">400</text>
+      <line x1="44" y1="164.6" x2="620" y2="164.6" stroke="#eceff1"/><text x="38" y="168.6" text-anchor="end" font-size="11" fill="#626a73">800</text>
+      <line x1="44" y1="109.2" x2="620" y2="109.2" stroke="#eceff1"/><text x="38" y="113.2" text-anchor="end" font-size="11" fill="#626a73">1,200</text>
+      <line x1="44" y1="53.8" x2="620" y2="53.8" stroke="#eceff1"/><text x="38" y="57.8" text-anchor="end" font-size="11" fill="#626a73">1,600</text>
+      <path d="M60 200.4 L210 185.1" fill="none" stroke="#1f8fc4" stroke-width="3" stroke-dasharray="6 5"/>
+      <path d="M210 185.1 L285 179.9 L360 121.5 L435 91 L510 67.5 L585 54.3" fill="none" stroke="#1f8fc4" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="60" cy="200.4" r="5" fill="#1f8fc4"/><text x="60" y="190" text-anchor="middle" font-weight="700">541.6</text>
+      <circle cx="210" cy="185.1" r="5" fill="#1f8fc4"/><text x="206" y="174" text-anchor="end" font-weight="700">651.8</text>
+      <circle cx="285" cy="179.9" r="5" fill="#1f8fc4"/><text x="290" y="200" text-anchor="start" font-weight="700">689.5</text>
+      <circle cx="360" cy="121.5" r="5" fill="#1f8fc4"/><text x="352" y="112" text-anchor="end" font-weight="700">1,111.4</text>
+      <circle cx="435" cy="91" r="5" fill="#1f8fc4"/><text x="427" y="82" text-anchor="end" font-weight="700">1,331.7</text>
+      <circle cx="510" cy="67.5" r="5" fill="#1f8fc4"/><text x="502" y="58" text-anchor="end" font-weight="700">1,501.3</text>
+      <circle cx="585" cy="54.3" r="5" fill="#1f8fc4"/><text x="585" y="40" text-anchor="middle" font-weight="700">1,596.6</text>
+      <text x="60" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY19</text>
+      <text x="135" y="240" text-anchor="middle" font-size="11.5" fill="#aeb5bc">FY20</text>
+      <text x="210" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY21</text>
+      <text x="285" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY22</text>
+      <text x="360" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY23</text>
+      <text x="435" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY24</text>
+      <text x="510" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY25</text>
+      <text x="585" y="240" text-anchor="middle" font-size="11.5" fill="#626a73">FY26</text>
+    </g>
+  </svg>
+  <div class="chartcap">Underlying revenue (associates at 100%, not IFRS), A$m, years to 30 June, FY19 to FY26. FY19 and FY24 to FY26 from the FY26 Investor Presentation; FY21 to FY23 from each year's annual report. FY20 is not shown (not verified in a primary source), so the dashed segment spans two years. FY22 onward is continuing operations; FY23 includes nine months of Tysers.</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.asx.com.au/asxpdf/20210826/pdf/44zrc5y7rqxgxt.pdf" title="FY21 Annual Report, AUB Group via ASX, 26 Aug 2021">AUB: FY21 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20220824/pdf/45d5xwyysvrdjr.pdf" title="FY22 Annual Report, AUB Group via ASX, 24 Aug 2022">AUB: FY22 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20230822/pdf/05sw049crsfkft.pdf" title="FY23 Annual Report, AUB Group via ASX, 22 Aug 2023">AUB: FY23 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/quote/asx/AUB/statistics/" title="AUB Group statistics, StockAnalysis, 5 Nov 2026">StockAnalysis: AUB statistics</a></div>
+
+<h3>2. How the Company Became What It Is Today</h3>
+<div class="phase"><div class="label">2005 to 2018: Broker network</div><div>Austbrokers bought stakes in Australian SME brokers and let the founders keep running them. It listed on the ASX in 2005 at about A$100m and renamed itself AUB Group in 2015 as it grew in NZ.</div></div>
+<div class="phase"><div class="label">2019 to 2021: Build and buy</div><div>Mike Emmett became CEO in 2019. BizCover (2020) added a digital SME channel; 360 Underwriting (2020) and later SURA built an agencies arm; Health &amp; Rehab was exited.</div></div>
+<div class="phase"><div class="label">2022 to 2025: International</div><div>Tysers (A$880m) took AUB into Lloyd's wholesale and roughly doubled revenue. UK retail roll-ups (Momentum, Movo) followed.</div></div>
+<div class="phase"><div class="label">Late 2025: Takeover cycle</div><div>EQT, then EQT and CVC, proposed A$45 a share and walked away after due diligence on 1 Dec 2025. Shares fell 17.8%.</div></div>
+<div class="phase"><div class="label">2026: Integrate and compound</div><div>Prestige (A$432m) was funded by a discounted A$400m raise. NZ underperformed after an unsuccessful market share push. <span class="badge infer">Inference</span> AUB now presents itself as an integrator: one data platform (Nexus), group AI governance and margin targets for every division.</div></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://insurancebusinessmag.com/nz/news/breaking-news/nz-expansion-prompts-name-change-for-austbrokers-51910.aspx" title="NZ expansion prompts name change for Austbrokers, Insurance Business, Nov 2015">Insurance Business: rename</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.adviservoice.com.au/2019/01/aub-group-announces-ceo-succession/" title="AUB Group announces CEO succession, AdviserVoice, Jan 2019">AdviserVoice: CEO succession</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20200217/pdf/44f47dp58mkxg8.pdf" title="Investment in BizCover, AUB Group via ASX, 17 Feb 2020">AUB: BizCover investment</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://fool.com.au/2022/05/09/aub-share-price-halted-amid-880-million-acquisition" title="AUB share price halted amid $880 million acquisition, The Motley Fool Australia, 9 May 2022">Motley Fool: Tysers A$880m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.insurancenews.com.au/corporate/aub-stock-plunges-as-buyout-hits-buffers" title="AUB stock plunges as buyout hits buffers, Insurance News, 1 Dec 2025">Insurance News: buyout hits buffers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260127/pdf/06vlrrs5g9385h.pdf" title="Acquisition of Prestige and equity raising, AUB Group via ASX, 27 Jan 2026">AUB: Prestige acquisition</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a></div>
+
+<h3>3. Chronological Timeline</h3>
+<div class="tablewrap"><table class="timeline">
+<tr><th>Year / Date</th><th>Event</th><th>Evidence</th><th>Why it mattered</th></tr>
+<tr><td>Nov 2015</td><td>Austbrokers renamed AUB Group</td><td><span class="badge fact">Fact</span></td><td>Group identity beyond Australian broking</td></tr>
+<tr><td>Mar 2019</td><td>Mike Emmett becomes CEO</td><td><span class="badge fact">Fact</span></td><td>Acquisition-led growth; more systems to join up</td></tr>
+<tr><td>Feb 2020</td><td>40% of BizCover for about A$132m</td><td><span class="badge fact">Fact</span></td><td>First digital platform; later the AI Centre of Excellence</td></tr>
+<tr><td>Dec 2020</td><td>360 Underwriting acquired; Health &amp; Rehab exited</td><td><span class="badge fact">Fact</span></td><td>Agencies become a core division with its own data</td></tr>
+<tr><td>Sep 2022</td><td>Tysers (A$880m) completed</td><td><span class="badge fact">Fact</span></td><td>International complexity; data across AU, UK and NZ</td></tr>
+<tr><td><strong>FY19 to FY26</strong></td><td><strong>Underlying revenue rose from A$541.6m to A$1,596.6m</strong></td><td><span class="badge fact">Fact</span></td><td>At almost 3x the scale, every hour freed and every decision improved is worth more</td></tr>
+<tr><td>Oct to Dec 2025</td><td>EQT/CVC A$45 a share proposal; withdrawn 1 Dec 2025, shares down 17.8%</td><td><span class="badge fact">Fact</span></td><td>Management has to prove value on its own; benefits must be visible</td></tr>
+<tr><td>Jan to May 2026</td><td>Prestige (UK) bought for A$432m; CoverNet comes with it</td><td><span class="badge fact">Fact</span></td><td>Adds an AI delivery engine and another integration</td></tr>
+<tr><td>24 Feb 2026</td><td>1H26 underlying NPAT A$90.4m; FY26 guidance raised; NZ weak</td><td><span class="badge fact">Fact</span></td><td>Margin focus; NZ restore becomes a priority</td></tr>
+<tr><td>25 Aug 2026</td><td>FY26 underlying NPAT A$224.6m; FY27 guidance A$245m to A$265m; "AI Strategy: Foundations to Impact"</td><td><span class="badge fact">Fact</span></td><td>AI moves from platform to measured workflow impact: the role's job</td></tr>
+<tr><td>4 Nov 2026</td><td>Confidential AI Delivery Lead ad (Talenza)</td><td><span class="badge fact">Fact</span> ad; <span class="badge hyp">Hypothesis</span> client</td><td>The hire to turn the AI pipeline into realised benefits</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://insurancebusinessmag.com/nz/news/breaking-news/nz-expansion-prompts-name-change-for-austbrokers-51910.aspx" title="NZ expansion prompts name change for Austbrokers, Insurance Business, Nov 2015">Insurance Business: rename</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.adviservoice.com.au/2019/01/aub-group-announces-ceo-succession/" title="AUB Group announces CEO succession, AdviserVoice, Jan 2019">AdviserVoice: CEO succession</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20200217/pdf/44f47dp58mkxg8.pdf" title="Investment in BizCover, AUB Group via ASX, 17 Feb 2020">AUB: BizCover investment</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://amp.insurancejournal.com/news/international/2022/09/30/687765.htm" title="AUB completes Tysers acquisition, Insurance Journal, 30 Sep 2022">Insurance Journal: Tysers completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20251028/pdf/06r47vnj7yxwqs.pdf" title="Response to media speculation: EQT non-binding indicative proposal, AUB Group via ASX, 28 Oct 2025">AUB: takeover approach</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260127/pdf/06vlrrs5g9385h.pdf" title="Acquisition of Prestige and equity raising, AUB Group via ASX, 27 Jan 2026">AUB: Prestige acquisition</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260224/pdf/06wn2mjn5rgjf7.pdf" title="1H26 results announcement, AUB Group via ASX, 24 Feb 2026">AUB: 1H26 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a></div>
+
+<h3>4. Observed Facts</h3>
+<div class="two">
+<div>
+<h4>Financial / commercial</h4>
+<ul>
+<li>Underlying revenue A$1,596.6m (FY26), up from A$1,501.3m; underlying NPAT A$224.6m, up 12%.</li>
+<li>Reported NPAT A$96.0m (FY26), down from A$180.1m, after A$62.7m of impairments.</li>
+<li>FY19 to FY26: revenue compound growth 16.7% a year, underlying NPAT 25.1%; EBIT margin 26.9% to 36.1%.</li>
+<li>FY27 underlying NPAT guidance A$245m to A$265m.</li>
+</ul>
+<h4>Operational</h4>
+<ul>
+<li>2,697 employees; turnover 17%; about 7,000 network professionals.</li>
+<li>A minority of partner firms run their own IT and must follow AUB's Security Policy.</li>
+<li>NIST-aligned cyber framework, managed detection and response, SIEM monitoring.</li>
+</ul>
+</div>
+<div>
+<h4>Leadership / strategy</h4>
+<ul>
+<li>CEO Mike Emmett; Chair Peter Harmer; CFO Nick Dryden.</li>
+<li>New board member Gary Lennon (May 2026, ex NAB and Deutsche Bank).</li>
+<li>Six FY27 priorities, including technology, data and operational excellence.</li>
+</ul>
+<h4>Data / technology</h4>
+<ul>
+<li>Microsoft 365 Copilot is the enterprise AI interface; 92% utilisation.</li>
+<li>Nexus data platform: unified, AI-ready data across AU, UK and NZ.</li>
+<li>43 active AI agents, 40+ solutions in pipeline, 710 hours released in 30 days.</li>
+<li>AI listed as a material risk; AI Risk Management &amp; Governance Framework being implemented (accountability, lifecycle controls, training).</li>
+<li>BizCover: "AI-Everywhere" in engineering; MYOB API partnership (Jun 2026); NPS +73.</li>
+</ul>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734wt9xzy74p1.pdf" title="FY26 Performance Overview, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Performance Overview</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.insurancebusinessmag.com/au/news/breaking-news/aub-group-lifts-underlying-profit-12-as-broker-results-week-opens-587250.aspx" title="AUB Group lifts underlying profit 12% as broker results week opens, Insurance Business, 25 Aug 2026">Insurance Business: FY26 profit</a></div>
+
+<h3>5. Observed Turning Points (role lens)</h3>
+<div class="tablewrap"><table>
+<tr><th>Turning point</th><th>What happened</th><th>Immediate / longer-term effect</th><th>Relevance to the role</th></tr>
+<tr><td>BizCover (2020)</td><td>40% stake for about A$132m</td><td>Digital SME channel; now powers ExpressCover and hosts the AI Centre of Excellence</td><td><span class="badge infer">Inference</span> A ready AI build team to coordinate</td></tr>
+<tr><td>Tysers (2022)</td><td>A$880m; about A$350m equity and A$675m debt</td><td>Revenue A$1,111.4m in FY23; International margin 27.6% vs 32% target</td><td><span class="badge infer">Inference</span> Biggest margin gap; likely AI value target</td></tr>
+<tr><td>Failed takeover (2025)</td><td>A$45 bid withdrawn 1 Dec 2025</td><td>Shares down 17.8%; management must prove standalone value</td><td><span class="badge infer">Inference</span> Benefits tracking carries weight with the board</td></tr>
+<tr><td>Prestige (2026)</td><td>A$432m; A$400m placement at A$29.40</td><td>Shares down 4.7% on the raise; brought CoverNet; another UK integration</td><td><span class="badge infer">Inference</span> More engines and data to join up</td></tr>
+<tr><td>"Foundations to Impact" (2026)</td><td>FY26 deck slide with governance and scorecard</td><td>Public commitment to AI impact; investors will ask for proof</td><td><span class="badge infer">Inference</span> The role delivers that proof</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Relevance to the role is Inference from the facts cited. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20200217/pdf/44f47dp58mkxg8.pdf" title="Investment in BizCover, AUB Group via ASX, 17 Feb 2020">AUB: BizCover investment</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://fool.com.au/2022/05/09/aub-share-price-halted-amid-880-million-acquisition" title="AUB share price halted amid $880 million acquisition, The Motley Fool Australia, 9 May 2022">Motley Fool: Tysers A$880m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/01/28/aub-group-completes-400m-institutional-placement-to-fund-prestige-acquisition/" title="AUB Group completes $400m institutional placement to fund Prestige acquisition, The Motley Fool Australia, 28 Jan 2026">Motley Fool: A$400m placement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a></div>
+
+<h3>6. Strategic Evolution</h3>
+<div class="tablewrap"><table>
+<tr><th>Phase</th><th>Business model</th><th>Product / customer</th><th>Operating complexity</th><th>Strategic objective</th><th>Data implication</th></tr>
+<tr><td>Network (to 2019)</td><td>Equity in owner-run brokers</td><td>SME commercial lines; local broker with group backing</td><td>Low</td><td>Grow the network</td><td>Data held in each broker</td></tr>
+<tr><td>Build and buy (2019 to 2022)</td><td>Brokers, agencies and digital</td><td>Agencies, BizCover online</td><td>Rising</td><td>Diversify earnings</td><td>Several platforms, little shared data</td></tr>
+<tr><td>International (2022 to 2025)</td><td>Plus Lloyd's wholesale and UK retail</td><td>Specialty, wholesale, global placement</td><td>High</td><td>Scale and earnings growth</td><td>Need for group data (Nexus)</td></tr>
+<tr><td>Integrate and compound (2026 on)</td><td>Integrated group with shared services</td><td>Specialty, agencies, AI in workflows</td><td>High</td><td>Margin targets and FY27 guidance</td><td>AI-ready data, governed AI, measured benefits</td></tr>
+</table></div>
+<p><span class="badge infer">Strong Inference</span> <strong>What it is becoming:</strong> a specialist insurance distributor that uses shared data and AI to lift margin across owner-run businesses, while keeping the founder model that drives growth.</p>
+<div class="refs"><strong>References:</strong> Inference from sections 2 to 5. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a></div>
+
+<h3 id="nexus">What is the Nexus Platform?</h3>
+<p><span class="badge fact">Observed Fact</span> Nexus is AUB's internal group data platform. The FY26 results deck (25 Aug 2026, slide "AI Strategy: Foundations to Impact") describes it in one line: <strong>"Nexus, the AUB Data Platform, is building unified, AI-ready data across AU, UK and NZ."</strong> It sits under "Data foundation: scaling", beside Microsoft 365 Copilot (the enterprise AI interface) and the AI governance and delivery engines. "Building" means it is still in progress.</p>
+<div class="two">
+<div>
+<h4>Not publicly disclosed</h4>
+<ul>
+<li>Technology stack (for example Snowflake, Databricks or Microsoft Fabric).</li>
+<li>Start date, owner, budget, and which businesses are already connected.</li>
+</ul>
+<p class="small"><span class="badge limit">Caution</span> Not the same as Nexus Advisernet (Aust) Pty Ltd, an older broker-network entity in AUB's associates and subsidiaries list.</p>
+<h4>What it likely is</h4>
+<ul>
+<li><span class="badge infer">Strong Inference</span> A central data layer joining data from AUB's acquired businesses (Austbrokers partners, Agencies, BizCover, Tysers, UK Retail, Prestige, NZ), which each run their own systems.</li>
+<li><span class="badge infer">Strong Inference</span> "AI-ready" points to a standard, governed data model that Copilot, the 43 AI agents and CoverNet can use safely: clients, policies, premiums, claims and commissions.</li>
+</ul>
+</div>
+<div>
+<h4>Why it matters for the role</h4>
+<ul>
+<li><span class="badge hyp">Working Hypothesis</span> Nexus readiness will set the pace for which AI use cases can reach production first (opportunity 2).</li>
+<li>Closest match to your Cisco Snowflake and DBT work: warehouse volume down 42%, lineage and release controls, AI-readiness for 200+ internal customers (Stage 3, story 5).</li>
+</ul>
+<h4>Questions to ask</h4>
+<ol>
+<li>What platform is Nexus built on, and how far through is it across AU, UK and NZ?</li>
+<li>Which data is already in Nexus, and which still sits in partner systems?</li>
+<li>Does this role work with the Nexus team on which AI use cases go first?</li>
+</ol>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> Master Resume (4 Nov 2026)</div>
+</section>
+
+<!-- ============ STOCK ============ -->
+<section id="stock">
+<h3 style="margin-top:0">7. Business Performance and Market Response (ASX: AUB)</h3>
+<div class="grid">
+  <div class="card"><div class="k">Latest close</div><div class="v">A$29.69</div><div class="n">4 Nov 2026</div></div>
+  <div class="card"><div class="k">52-week high</div><div class="v">A$40.28</div><div class="n">7 Nov 2025 (intraday); price now about 26% below</div></div>
+  <div class="card"><div class="k">52-week low</div><div class="v">A$22.08</div><div class="n">23 Mar 2026 (intraday)</div></div>
+  <div class="card"><div class="k">Market cap</div><div class="v">~A$3.96bn</div><div class="n">5 Nov 2026; down 18.5% over 52 weeks</div></div>
+</div>
+
+<div class="chartbox">
+  <div class="stock-toolbar">
+    <div class="title">AUB monthly closing price (A$)</div>
+    <div class="stock-ranges" role="group" aria-label="Stock chart time range">
+      <button type="button" data-range="6">6M</button>
+      <button type="button" data-range="12">1Y</button>
+      <button type="button" data-range="24">2Y</button>
+      <button type="button" data-range="0" class="active">Full range</button>
+    </div>
+  </div>
+  <div class="stock-chart-wrap">
+    <svg id="sykChart" role="img" aria-label="AUB Group monthly closing share price chart"></svg>
+    <div class="stock-tooltip" id="sykTooltip" aria-hidden="true"></div>
+  </div>
+  <div class="stock-legend">
+    <span><b id="sykStart"></b> start</span>
+    <span><b id="sykEnd"></b> latest</span>
+    <span><b id="sykChange"></b> change over selected range</span>
+  </div>
+  <div class="chartcap">Monthly closes Dec 2023 to Oct 2026; the last point is the 4 Nov 2026 close. Red markers show dated events that coincided with major trend shifts: FY25 guidance (Aug 2024), top-of-range update (May 2025), EQT bid (Oct 2025), bid withdrawn (Dec 2025), Prestige raise (Jan 2026), HY26 fall (Feb 2026), Steadfast bid (Jun 2026) and FY26 result (Aug 2026). Data: Yahoo Finance monthly closes, InvestSMART daily closes. Not investment advice.</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/AUB.AX/history/" title="AUB.AX monthly price history, Yahoo Finance, accessed 5 Nov 2026">Yahoo Finance: AUB.AX history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.investsmart.com.au/security/asx/aub/aub-group-limited/share-price" title="AUB Group share price history (Morningstar data), InvestSMART, accessed 5 Nov 2026">InvestSMART: AUB price history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/quote/asx/AUB/statistics/" title="AUB Group statistics, StockAnalysis, 5 Nov 2026">StockAnalysis: AUB statistics</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="http://www.fool.com.au/2024/08/21/guess-which-asx-200-stock-is-down-10-after-reporting-its-fy-2024-results/" title="Guess which ASX 200 stock is down 10% after reporting its FY 2024 results, The Motley Fool Australia, 21 Aug 2024">Motley Fool: FY24 shares down</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2025/10/28/aub-group-fields-takeover-offer-at-massive-premium/" title="AUB Group fields takeover offer at massive premium, The Motley Fool Australia, 28 Oct 2025">Motley Fool: takeover offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/01/28/aub-group-completes-400m-institutional-placement-to-fund-prestige-acquisition/" title="AUB Group completes $400m institutional placement to fund Prestige acquisition, The Motley Fool Australia, 28 Jan 2026">Motley Fool: A$400m placement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/02/24/aub-group-posts-half-year-profit-lifts-fy26-guidance/" title="AUB Group posts half-year profit, lifts FY26 guidance, The Motley Fool Australia, 24 Feb 2026">Motley Fool: HY26 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://filingreader.com/news-wire/sydney/2026-06-10/steadfast-receives-a77bn-acquisition-proposal-from-amwins-dragoneer" title="Steadfast receives acquisition proposal from Amwins and Dragoneer, FilingReader, 10 Jun 2026">FilingReader: Steadfast proposal</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/08/25/aub-group-fy26-results-record-underlying-profit-and-higher-dividend/" title="AUB Group FY26 results: record underlying profit and higher dividend, The Motley Fool Australia, 25 Aug 2026">Motley Fool: FY26 results</a></div>
+
+<h4>Recent price performance (to 4 Nov 2026)</h4>
+<div class="metricbars">
+  <div class="metricrow"><span>1 month</span><div class="barbg"><div class="bar" style="width:3%"></div></div><span class="tag">+0.5%</span></div>
+  <div class="metricrow"><span>3 months</span><div class="barbg"><div class="bar" style="width:34%"></div></div><span class="tag">+6.6%</span></div>
+  <div class="metricrow"><span>YTD</span><div class="barbg"><div class="bar" style="width:18%"></div></div><span class="tag">-3.6%</span></div>
+  <div class="metricrow"><span>1 year</span><div class="barbg"><div class="bar" style="width:100%"></div></div><span class="tag">-19.6%</span></div>
+</div>
+<p class="small">Calculated from month-end closes (Oct 2026 A$29.54, Jul 2026 A$27.86, Dec 2025 A$30.80, Oct 2025 A$36.94) to the 4 Nov 2026 close of A$29.69. StockAnalysis reports -18.5% over 52 weeks on a daily basis.</p>
+<div class="refs"><strong>References:</strong> Calculated from month-end closes shown above. <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/AUB.AX/history/" title="AUB.AX monthly price history, Yahoo Finance, accessed 5 Nov 2026">Yahoo Finance: AUB.AX history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.investsmart.com.au/security/asx/aub/aub-group-limited/share-price" title="AUB Group share price history (Morningstar data), InvestSMART, accessed 5 Nov 2026">InvestSMART: AUB price history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/quote/asx/AUB/statistics/" title="AUB Group statistics, StockAnalysis, 5 Nov 2026">StockAnalysis: AUB statistics</a></div>
+
+<h4>What coincided with the major moves</h4>
+<ul>
+<li><span class="badge fact">Fact</span> <strong>Long-run backdrop:</strong> underlying revenue rose from A$541.6m (FY19) to A$1,596.6m (FY26) and underlying NPAT grew every year, so the big swings came from the takeover cycle, the discounted raise and guidance against expectations, not from falling earnings.</li>
+<li><span class="badge fact">Fact</span> <strong>Aug 2024, "FY25 guide":</strong> on 21 Aug 2024 FY24 earnings beat consensus, but FY25 guidance of A$190m to A$200m was below broker hopes; shares fell about 6.5% intraday (as much as 10.5%). Month-end close went from A$32.28 (Jul) to A$31.26 (Aug), about -3%.</li>
+<li><span class="badge infer">Strong Inference</span> <strong>May 2025, "Top of range":</strong> a 6 May 2025 update put FY25 at the top of guidance; shares rose 6.0% on 7 May to A$33.96. Close went from A$31.91 (Apr) to A$34.49 (May), about +8%. The event comes from search snippets only.</li>
+<li><span class="badge fact">Fact</span> <strong>Oct 2025, "EQT bid":</strong> the A$45 a share EQT proposal became public on 27 to 28 Oct 2025; shares rose 12.1%, then 5.9% to A$38.10. Close went from A$32.73 (Sep) to A$36.94 (Oct), about +13%, then A$37.25 (Nov).</li>
+<li><span class="badge fact">Fact</span> <strong>Dec 2025, "Bid withdrawn":</strong> on 1 Dec 2025 the EQT/CVC consortium walked away; shares fell 17.8% to A$30.63. Close went from A$37.25 (Nov) to A$30.80 (Dec), about -17%.</li>
+<li><span class="badge fact">Fact</span> <strong>Jan 2026, "Prestige raise":</strong> on 28 Jan 2026 the A$400m placement at A$29.40 to fund Prestige saw shares fall 4.7% to A$30.40. Close went from A$30.80 (Dec) to A$30.21 (Jan).</li>
+<li><span class="badge infer">Strong Inference</span> <strong>Feb 2026, "HY26 fall":</strong> on 24 Feb 2026 half-year underlying NPAT rose 14% to A$90.4m and guidance was raised, but shares fell 5.4% to A$23.76. A 6.1% fall on 10 Feb had no named trigger. Close went from A$30.21 (Jan) to A$25.34 (Feb), about -16%. Confounded: dilution and a downtrend were already under way.</li>
+<li><span class="badge infer">Strong Inference</span> <strong>Jun 2026, "Steadfast bid":</strong> on 10 Jun 2026 shares rose 9.8% to A$28.70 on the day rival Steadfast received a takeover proposal. A sector re-rating, not AUB news. Close went from A$26.13 (May) to A$28.64 (Jun), about +10%.</li>
+<li><span class="badge fact">Fact</span> <strong>Aug 2026, "FY26 result":</strong> on 25 Aug 2026 underlying NPAT rose 12% to A$224.6m with FY27 guidance of A$245m to A$265m; shares rose 4.1% to A$30.27 (one source disagrees on the day's move). Month-end close was A$29.17 (Aug).</li>
+<li><span class="badge limit">Caution</span> Timing fits these events, but sector takeover speculation and market-wide moves also play a part. Left unlabelled: 7 Nov 2025 (the A$40.28 high came before the CVC news was public) and the March 2026 slide to A$22.08 (no company event found). Raise the takeover history only if the interviewer does.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="http://www.fool.com.au/2024/08/21/guess-which-asx-200-stock-is-down-10-after-reporting-its-fy-2024-results/" title="Guess which ASX 200 stock is down 10% after reporting its FY 2024 results, The Motley Fool Australia, 21 Aug 2024">Motley Fool: FY24 shares down</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/aub-group-shares-dive-despite-fy-earnings-beating-consensus-baa1a31f-52e4-46e6-857f-2a1299fb51f3/" title="AUB Group shares dive despite FY earnings beating consensus, Capital Brief, 21 Aug 2024">Capital Brief: FY24 shares dive</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2025/10/28/aub-group-fields-takeover-offer-at-massive-premium/" title="AUB Group fields takeover offer at massive premium, The Motley Fool Australia, 28 Oct 2025">Motley Fool: takeover offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.insurancenews.com.au/corporate/aub-stock-plunges-as-buyout-hits-buffers" title="AUB stock plunges as buyout hits buffers, Insurance News, 1 Dec 2025">Insurance News: buyout hits buffers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/01/28/aub-group-completes-400m-institutional-placement-to-fund-prestige-acquisition/" title="AUB Group completes $400m institutional placement to fund Prestige acquisition, The Motley Fool Australia, 28 Jan 2026">Motley Fool: A$400m placement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/02/24/aub-group-posts-half-year-profit-lifts-fy26-guidance/" title="AUB Group posts half-year profit, lifts FY26 guidance, The Motley Fool Australia, 24 Feb 2026">Motley Fool: HY26 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/02/11/this-asx-200-share-crashed-6-yesterday-time-to-buy-the-dip/" title="This ASX 200 share crashed 6% yesterday, The Motley Fool Australia, 11 Feb 2026">Motley Fool: 10 Feb fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://filingreader.com/news-wire/sydney/2026-06-10/steadfast-receives-a77bn-acquisition-proposal-from-amwins-dragoneer" title="Steadfast receives acquisition proposal from Amwins and Dragoneer, FilingReader, 10 Jun 2026">FilingReader: Steadfast proposal</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/08/25/aub-group-fy26-results-record-underlying-profit-and-higher-dividend/" title="AUB Group FY26 results: record underlying profit and higher dividend, The Motley Fool Australia, 25 Aug 2026">Motley Fool: FY26 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/AUB.AX/history/" title="AUB.AX monthly price history, Yahoo Finance, accessed 5 Nov 2026">Yahoo Finance: AUB.AX history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.investsmart.com.au/security/asx/aub/aub-group-limited/share-price" title="AUB Group share price history (Morningstar data), InvestSMART, accessed 5 Nov 2026">InvestSMART: AUB price history</a></div>
+</section>
+
+<!-- ============ EXTRAS ============ -->
+<section id="extras">
+<h2>Optional extras (sections 8 to 11)</h2>
+
+<h3>8. Hypothesis Review</h3>
+<div class="tablewrap"><table>
+<tr><th>Hypothesis</th><th>Hard evidence</th><th>Inference</th><th>Alternative explanation</th><th>Confidence</th><th>Confirm / disprove</th><th>Conclusion and interview relevance</th></tr>
+<tr><td><strong>H1</strong> The confidential client is AUB Group</td><td>None in the ad ("an enterprise organisation"). Adam identified AUB.</td><td>The ad's language matches AUB's FY26 "Foundations to Impact" slide closely.</td><td>Many Sydney enterprises are scaling AI; the wording is generic.</td><td><span class="badge hyp">Medium</span></td><td>Kieran names the client, or the interview is at 141 Walker Street, North Sydney.</td><td>Prepare for AUB; open with questions that work for any client. Quoting the 92% / 43 agents / 710 hours scorecard shows real homework.</td></tr>
+<tr><td><strong>H2</strong> The role exists to move AI from usage measures to measured financial benefit</td><td>"Focus is now embedding AI into broker, underwriting and claims workflows"; scorecard has no dollars; ad asks for "realised benefits".</td><td>After activity comes value; the board will want benefits linked to margin and guidance.</td><td>Mainly delivery coordination, with benefits owned by finance or divisions.</td><td><span class="badge infer">High</span></td><td>Ask how the 710 hours are measured and who signs off benefits.</td><td>Lead with benefits and adoption, not technology. The $11M+ value cases and 46 to 196 weekly users fit.</td></tr>
+<tr><td><strong>H3</strong> Benefits judged against division margin targets</td><td>International 27.6% vs 32%; NZ 33.1% vs 42%.</td><td>AI that frees broker and underwriter time is a margin lever where gaps are largest.</td><td>Gaps closed mainly through pricing, mix, integration or the NZ cost reset.</td><td><span class="badge hyp">Medium</span></td><td>Ask which divisions are first and whether use cases carry margin or capacity targets.</td><td>Show you would rank use cases by value against these targets.</td></tr>
+<tr><td><strong>H4</strong> The role coordinates several build teams</td><td>Delivery model: CoverNet, BizCover AI CoE, citizen development, partners. Ad: "slim team", "coordinate delivery".</td><td>The job is portfolio, governance and adoption across teams the role does not own.</td><td>The role sits inside one engine (for example BizCover).</td><td><span class="badge hyp">Medium</span></td><td>Ask about team size, reporting line and how work is split.</td><td>Stress influence without authority and repeatable intake and prioritisation.</td></tr>
+<tr><td><strong>H5</strong> Reports into group technology or operations</td><td>No CDO, CTO or CIO named in official sources.</td><td>Enterprise AI roles with governance duties usually sit under technology, operations or risk.</td><td>Reports to a division CEO or BizCover.</td><td><span class="badge hyp">Low</span></td><td>Ask Kieran directly.</td><td>Decides whether governance, delivery or commercial stories lead.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a> <span class="sep">|</span> Master Resume (4 Nov 2026)</div>
+
+<h3>9. Evidence-Based Data and AI Opportunities</h3>
+<p>Starting from AUB's stated priorities: embed AI in broker, underwriting and claims workflows; restore NZ; integrate Prestige; scale Agencies; strengthen technology and data.</p>
+<div class="tablewrap"><table>
+<tr><th>#</th><th>Business issue</th><th>Evidence</th><th>Opportunity</th><th>Classification</th><th>Confidence</th><th>Potential value</th><th>Interview relevance</th></tr>
+<tr><td>1</td><td>AI value measured as hours, not money</td><td>92%, 43 agents, 710 hours</td><td>Benefits framework: baseline, hours to capacity or margin, sign-off by division</td><td><span class="badge infer">Strong Inference</span></td><td>High</td><td>Credible board reporting; better funding decisions</td><td>Core of the role; your value cases</td></tr>
+<tr><td>2</td><td>40+ solutions in pipeline, several build teams</td><td>FY26 slide delivery model</td><td>One intake and ranking method (value, complexity, risk, readiness)</td><td><span class="badge infer">Strong Inference</span></td><td>High</td><td>Fewer low-value builds; faster time to value</td><td>Roadmap and intake stories</td></tr>
+<tr><td>3</td><td>Broker admin time</td><td>"Less administration" is a stated outcome</td><td>Copilot and agents for submissions, renewals prep and client summaries in Australian Broking</td><td><span class="badge infer">Strong Inference</span></td><td>Medium</td><td>Capacity in the A$647.8m division</td><td>AI assistant (summaries and Q&amp;A)</td></tr>
+<tr><td>4</td><td>International margin 27.6% vs 32%</td><td>Division targets</td><td>Underwriting and placement support at Tysers and UK Retail</td><td><span class="badge hyp">Working Hypothesis</span></td><td>Medium</td><td>Margin in the A$494.9m division</td><td>Ranking by value</td></tr>
+<tr><td>5</td><td>NZ margin 33.1% vs 42%, cost reset</td><td>FY26 NZ commentary</td><td>Workflow automation as part of NZ simplification</td><td><span class="badge hyp">Working Hypothesis</span></td><td>Low to medium</td><td>Lower cost to serve</td><td>Ties AI to a live management problem</td></tr>
+<tr><td>6</td><td>AI risk framework being implemented</td><td>FY26 Annual Report: AI a material risk</td><td>Controls built into delivery: risk tiers, human approval points, monitoring</td><td><span class="badge fact">Fact</span> need; <span class="badge infer">Inference</span> approach</td><td>High</td><td>Safe scaling; partner trust</td><td>Privacy and Works Council; approval gates</td></tr>
+<tr><td>7</td><td>Adoption across owner-run partners</td><td>Owner-run partners; some run their own IT</td><td>Adoption playbook: champions, show-and-share, usage dashboards per partner</td><td><span class="badge infer">Strong Inference</span></td><td>Medium</td><td>Wider uptake without a mandate</td><td>Analyst community; 326% adoption</td></tr>
+<tr><td>8</td><td>AI running cost as use grows</td><td>43 agents, 40+ in pipeline</td><td>Cost and token tracking per use case</td><td><span class="badge hyp">Working Hypothesis</span></td><td>Medium</td><td>Lower run cost</td><td>40% token waste cut</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> Master Resume (4 Nov 2026)</div>
+
+<h3>10. Probing Questions for Interviewers</h3>
+<div class="two">
+<div>
+<h4>Role purpose and sponsorship</h4>
+<ol>
+<li>Who sponsors this role, and what would they need to see in 12 months to call it a success?</li>
+<li>Why now? What changed after the FY26 results that made this role a priority?</li>
+</ol>
+<h4>Business pain and decision gaps</h4>
+<ol start="3">
+<li>Of the 40+ solutions in the pipeline, how are they ranked today, and who decides?</li>
+<li>How are the 710 hours released measured, and how do they turn into capacity or margin a division CEO would recognise?</li>
+</ol>
+<h4>Data maturity and ownership</h4>
+<ol start="5">
+<li>How ready is Nexus for the first workflow use cases? Where is data still held in partner systems?</li>
+</ol>
+</div>
+<div>
+<ol start="6">
+<li>How does work split between CoverNet, the BizCover AI CoE, citizen developers and partners, and where does this role sit?</li>
+</ol>
+<h4>Governance and risk</h4>
+<ol start="7">
+<li>What does the AI Risk Appetite Statement rule out today, and where does the AI Governance Forum still decide case by case?</li>
+<li>How do partner firms that run their own IT take part in AI governance?</li>
+</ol>
+<h4>First-year priorities and barriers</h4>
+<ol start="9">
+<li>If I could deliver only two use cases into production with measured benefits in year one, which divisions would you want them in?</li>
+<li>What has slowed adoption so far, outside of Copilot?</li>
+</ol>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> Inference from sections 8 and 9. <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a></div>
+
+<h3>11. Mandatory Final Judgement</h3>
+<div class="two">
+<div class="qbox"><strong>Why this role exists now</strong>
+AUB has put the AI platform, governance and delivery teams in place and told the market in Aug 2026 that the focus is now embedding AI in broker, underwriting and claims workflows. With FY27 underlying NPAT guidance of A$245m to A$265m and investors still weighing the failed A$45 takeover, AI has to move from usage measures (92% utilisation, 43 agents, 710 hours) to measured financial benefit. <span class="badge infer">Strong Inference</span> <span class="badge hyp">AUB as client: Working Hypothesis</span></div>
+<div class="qbox"><strong>The business problem the hire is expected to solve</strong>
+"How does AUB turn its AI foundations into measured, adopted value in broking, underwriting and claims, across a decentralised partner network, with a slim team?"</div>
+<div class="qbox"><strong>Why the candidate is credible</strong>
+<ul>
+<li>Business value cases for IT programs worth $11M+; vendor capacity case with 2.9x better value.</li>
+<li>Led an AI assistant for global IT support: case-spike analysis from 4 days to near-instant insight.</li>
+<li>Self-service analytics adoption up 326%, from 46 to 196 weekly active users.</li>
+<li>Governance, privacy and European Works Council partnership; 27 KPIs from 62% to 100% consistency.</li>
+<li>AI token waste cut by 40%.</li>
+<li>Five-agent Claude Code workflow with human approval gates (independent, outside Cisco).</li>
+</ul></div>
+<div class="qbox"><strong>What could prevent selection</strong>
+<ul>
+<li><strong>No insurance background.</strong> Framing: same pattern (value case, workflow, adoption, benefits); insurance knowledge is learnable, measured delivery is not.</li>
+<li><strong>No formal AI governance framework on file</strong> (ISO 42001, Australian Voluntary AI Safety Standard). Framing: practical controls delivered, plus readiness to work inside AUB's AI Policy and Risk Appetite.</li>
+<li><strong>AI scale within one IT function.</strong> Framing: a global function across regions (including Japan and South Korea), 200+ internal customers, influence without authority.</li>
+<li><strong>Agentic work is independent.</strong> Framing: say so; it is hands-on credibility to challenge engineers and vendors.</li>
+<li><strong>Vendor management thin on file.</strong> Framing: the ThoughtSpot negotiation and option comparison.</li>
+</ul></div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a> <span class="sep">|</span> Master Resume (4 Nov 2026) <span class="sep">|</span> Rezi Evidence Match (4 Nov 2026)</div>
+</section>
+
+<!-- ============ ROLE ============ -->
+<section id="role">
+<h2>Role Deconstruction: AI Delivery Lead</h2>
+<p>The Talenza ad (ref BBBH22987) describes a permanent, hybrid Sydney role that "sits between business and technology" and owns AI opportunities "from idea through to implementation, adoption and value realisation", with a slim team.</p>
+<div class="tablewrap"><table>
+<tr><th>Job wording</th><th>Underlying management problem</th><th>Likely success signal</th></tr>
+<tr><td>"Identify and shape AI opportunities across multiple business functions"</td><td>Many ideas and builders; no shared view of which use cases matter most</td><td>A ranked AI portfolio that division leaders agree with</td></tr>
+<tr><td>"Build business cases and define the value of AI initiatives"</td><td>AI value is reported as usage and hours, not dollars</td><td>Approved cases with baselines and benefit owners</td></tr>
+<tr><td>"Coordinate delivery across business stakeholders, technical teams, vendors and external partners"</td><td>Several delivery engines (internal, BizCover, partners) without one coordinator</td><td>Use cases moving through one pipeline on predictable timelines</td></tr>
+<tr><td>"Assess solution options, challenge assumptions"</td><td>Risk of choosing tools before problems</td><td>Clear build, buy or do-not-use-AI decisions</td></tr>
+<tr><td>"Establish appropriate governance, risk and responsible AI controls"</td><td>Policy exists; controls must work inside each use case</td><td>Every production use case passes governance without stalling</td></tr>
+<tr><td>"Support AI capability uplift through training, enablement and change"</td><td>Adoption in owner-run businesses cannot be mandated</td><td>Usage and benefits rising across partners, not just head office</td></tr>
+<tr><td>"Track adoption, business outcomes and realised benefits"</td><td>The board and investors will ask for proof</td><td>A benefits dashboard leaders use and trust</td></tr>
+<tr><td>"Repeatable processes and ways of working that support the scale-up of AI"</td><td>Each use case is delivered differently</td><td>A standard intake, delivery and governance path</td></tr>
+<tr><td>"Technically credible across AI, Agentic AI and LLM-based solutions"</td><td>Needs someone who can challenge engineers and vendors</td><td>Sound technical calls without a large team</td></tr>
+</table></div>
+<div class="callout"><strong>Contacts:</strong> Kieran Waite is listed on the Talenza ad as the recruiter contact. Rezi's message file calls him the hiring manager (per Adam); worth confirming before the call.</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a> <span class="sep">|</span> Rezi Evidence Match (4 Nov 2026)</div>
+</section>
+
+<!-- ============ STAGE 3 ============ -->
+<section id="stage3">
+<h2>Stage 3: Top 5 Experiences to Lead With</h2>
+<p>Each story answers part of the business problem: <strong>how AUB turns its AI foundations into measured, adopted value in broking, underwriting and claims, across a decentralised partner network, with a slim team</strong>.</p>
+
+<div class="story">
+  <div class="rank">1</div>
+  <h4>AI assistant for global IT support (Cisco, Data Solutions &amp; Insights Leader, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Drive AI initiatives from concept through to implementation and adoption"; H2. AUB wants AI inside broker and claims workflows; this put AI inside a support workflow.</div>
+  <div class="star">
+    <b>S</b><span>Help@Cisco had fewer agents after layoffs; case spikes were handled reactively and leaders heard about issues only after escalation.</span>
+    <b>T</b><span>Alert the right teams early with enough insight to act, without switching apps.</span>
+    <b>A</b><span>Built tripwire alerts (2 standard deviations for executives, 1.8 for operations). Led a GPT-based assistant with prompt patterns (cognitive verifier, few-shot, question refinement), surfaced in Webex with on-demand summaries and Q&amp;A.</span>
+    <b>R</b><span><strong>Case-spike analysis cut from 4 days to near-instant insight; fewer escalations to the executive team.</strong></span>
+  </div>
+  <div class="open">"The best AI work I've led put the answer where people already work: a case spike triggered an alert in Webex, and one click gave the team an AI summary they could act on."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about an AI initiative you took from idea to adoption." · <strong>Source:</strong> Master Resume (Cisco 2019 to 2026); STAR Skills (AI-Enabled Decisioning). <span class="badge limit">Figure conflict</span> STAR Skills says "half a day to near-instant"; the Master Resume says "4-days". Using the Master Resume; confirm before the interview.</div>
+  <div class="refs"><strong>References:</strong> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">2</div>
+  <h4>Self-service analytics adoption and measured benefits (Cisco, FY24 to FY26)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Track adoption, business outcomes and realised benefits" and "capability uplift"; H2 and opportunity 1. AUB reports 710 hours released; this story turns hours into dollars.</div>
+  <div class="star">
+    <b>S</b><span>Analysts were tied up with simple data requests, creating a bottleneck.</span>
+    <b>T</b><span>Introduce self-service while keeping data trusted.</span>
+    <b>A</b><span>Rolled out ThoughtSpot on verified, governed datasets; added Spotter (GPT-based Q&amp;A); set up onboarding pages, videos and support communities.</span>
+    <b>R</b><span><strong>Weekly active users 46 to 196 (326%); monthly queries 8.1K to 19.2K; data request workload down 33%, an estimated 738 hours and $68.9K a year.</strong></span>
+  </div>
+  <div class="open">"Adoption only counted when it showed up in workload: we went from 46 to 196 weekly users and took a third of the request load off the team."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How do you measure whether an AI or analytics tool is actually delivering value?" · <strong>Source:</strong> Master Resume; STAR Skills (Self-service analytics with ThoughtSpot).</div>
+  <div class="refs"><strong>References:</strong> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">3</div>
+  <h4>Commercial case and vendor negotiation: ThoughtSpot capacity uplift (Cisco, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Build business cases and define the value of AI initiatives" and "working with vendors and technology partners"; H4.</div>
+  <div class="star">
+    <b>S</b><span>The AI-powered analytics tool came through an internal team at a higher cross-charge, with slow support and no access to the latest AI features.</span>
+    <b>T</b><span>Set up a direct instance at lower cost with full control.</span>
+    <b>A</b><span>With other data leads, worked directly with ThoughtSpot's account team, negotiated terms and cost, agreed shared usage, and built the option comparison.</span>
+    <b>R</b><span><strong>The $70K / 250M-row option gave 2.9x better value than the $40K / 50M-row option: 65% lower cost per million rows, 5x the capacity for 1.75x the cost.</strong></span>
+  </div>
+  <div class="open">"I don't pick the cheapest option, I pick the one with the best value per unit, and I'm happy to sit across the table from the vendor to get it."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about a time you built a business case or managed a vendor." · <strong>Source:</strong> Master Resume; STAR Skills (ThoughtSpot capacity uplift). Supporting: business value cases worth $11M+ (Master Resume, Lead Analyst 2017 to 2019). STAR Skills gives 2.86x; the Master Resume rounds to 2.9x.</div>
+  <div class="refs"><strong>References:</strong> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">4</div>
+  <h4>Choosing the right method: AI-based laptop performance (Cisco, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Assess solution options, challenge assumptions and work through delivery complexities"; opportunity 2 (ranking 40+ solutions). Shows judgement on when not to use GenAI.</div>
+  <div class="star">
+    <b>S</b><span>Laptop refresh ran on device age, not performance, wasting budget and disrupting users.</span>
+    <b>T</b><span>Use telemetry to decide when devices truly need refreshing.</span>
+    <b>A</b><span>With a data scientist, compared supervised ML, unsupervised ML, GenAI reasoning models and plain statistics on build time, resources, run overhead and fit; chose unsupervised anomaly detection.</span>
+    <b>R</b><span>Prioritised underperforming devices, cut over-provisioning, improved stock forecasting. Supported <strong>millions in <em>potential</em> global asset management savings</strong>.</span>
+  </div>
+  <div class="open">"We looked at four ways to solve it, including GenAI, and chose the one that met the goal with the least overhead."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How do you decide whether a problem needs AI, and which kind?" · <strong>Source:</strong> Master Resume; STAR Skills (Performance-Based Refresh). Always say "potential".</div>
+  <div class="refs"><strong>References:</strong> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">5</div>
+  <h4>Trusted, governed data: KPI trust and data foundations (Cisco, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Establish appropriate governance, risk and responsible AI controls" and "navigating privacy and regulatory considerations"; opportunity 6. AUB's Nexus is building AI-ready data; this is the same job.</div>
+  <div class="star">
+    <b>S</b><span>Teams saw different numbers for the same KPI, and data errors were hard to trace back through the stack.</span>
+    <b>T</b><span>Restore trust in the numbers and build controls that hold up.</span>
+    <b>A</b><span>Moved logic into governed SQL and DBT layers with lineage, catalogue and release controls; partnered with governance, privacy and European Works Council stakeholders on responsible employee data use.</span>
+    <b>R</b><span><strong>27 service KPIs from 62% to 100% consistency; KPI escalations from 3 to 5 a month to zero; warehouse volume down 42% and warehouse disruptions to zero.</strong></span>
+  </div>
+  <div class="open">"AI is only as safe as the data and controls under it, so I start with trust, lineage and who is allowed to use what."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How have you handled governance, privacy or risk in a data or AI initiative?" · <strong>Source:</strong> Master Resume; STAR Skills (Closing the Data Trust Gap; Building resilient data foundations and AI-Readiness).</div>
+  <div class="refs"><strong>References:</strong> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+</div>
+
+<div class="notice"><strong>Story in reserve: hands-on agentic AI (independent, outside Cisco, 2026).</strong> Five-agent Claude Code workflow with orchestration, task handovers and human approval gates; token-use tracking. Pair with the 40% AI token waste cut at Cisco. Use when asked about Agentic AI or LLM depth, and always say it is independent work. Portfolio: <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AI_Build_Log/" title="AI Build Log, Adam Aziz portfolio">AI Build Log</a>.</div>
+
+<h3>Coverage check (built from Rezi's Evidence Match)</h3>
+<div class="tablewrap"><table>
+<tr><th>#</th><th>Job ad needs</th><th>Match (Rezi)</th><th>Top 5 story</th></tr>
+<tr><td>1</td><td>Identify and shape AI opportunities across business functions</td><td><span class="badge hyp">Partial</span></td><td>1, 4</td></tr>
+<tr><td>2</td><td>Build business cases and define the value of AI</td><td><span class="badge fact">Strong match</span></td><td>3</td></tr>
+<tr><td>3</td><td>Coordinate delivery across business, technical teams, vendors, partners</td><td><span class="badge hyp">Partial</span></td><td>3 (see note)</td></tr>
+<tr><td>4</td><td>Drive AI from concept to implementation and adoption</td><td><span class="badge fact">Strong match</span></td><td>1</td></tr>
+<tr><td>5</td><td>Assess solution options, challenge assumptions</td><td><span class="badge fact">Strong match</span></td><td>4</td></tr>
+<tr><td>6</td><td>Governance, risk and responsible AI controls</td><td><span class="badge hyp">Partial</span></td><td>5</td></tr>
+<tr><td>7</td><td>AI capability uplift through training, enablement and change</td><td><span class="badge fact">Strong match</span></td><td>2</td></tr>
+<tr><td>8</td><td>Track adoption, business outcomes and realised benefits</td><td><span class="badge fact">Strong match</span></td><td>2</td></tr>
+<tr><td>9</td><td>Repeatable processes to scale AI</td><td><span class="badge hyp">Partial</span></td><td>2, 5</td></tr>
+<tr><td>10</td><td>Practical understanding of AI, GenAI, automation, platforms</td><td><span class="badge fact">Strong match</span></td><td>1, reserve</td></tr>
+<tr><td>11</td><td>Governance, risk, privacy and regulatory considerations</td><td><span class="badge hyp">Partial</span></td><td>5</td></tr>
+<tr><td>12</td><td>Commercial thinking, measurable outcomes</td><td><span class="badge fact">Strong match</span></td><td>3</td></tr>
+<tr><td>13</td><td>Technically credible across Agentic AI and LLM solutions</td><td><span class="badge fact">Strong match</span></td><td>1, reserve</td></tr>
+<tr><td>14</td><td>Deliver with a slim team, roll up sleeves</td><td><span class="badge fact">Strong match</span></td><td>1, 4</td></tr>
+</table></div>
+<p class="small"><strong>Note on row 3:</strong> STAR Skills shows direct work with ThoughtSpot's account team, negotiating contract terms and cost. Rezi rated this Partial because no vendor management was on file; it may lift row 3.</p>
+<div class="refs"><strong>References:</strong> Rezi Evidence Match (4 Nov 2026) <span class="sep">|</span> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+
+<h3>Gaps to prepare for</h3>
+<div class="two">
+<div class="qbox"><strong>1. Formal AI governance frameworks</strong>
+No ISO 42001 or Australian Voluntary AI Safety Standard work on file.<br><em>Framing:</em> "I haven't written an enterprise AI policy. What I have done is build controls into delivery: privacy and Works Council sign-off, governed data, and human approval points. AUB already has an AI Policy and Risk Appetite Statements; my job would be making them work in each use case."</div>
+<div class="qbox"><strong>2. AI scaled across many businesses, not one function</strong>
+Evidence is within one global IT function.<br><em>Framing:</em> "My scale was one global IT function serving 200+ internal customers across regions. The method, from intake and value case to adoption and benefits, is what carries across to AUB's partner network."</div>
+</div>
+<div class="refs"><strong>References:</strong> Rezi Evidence Match (4 Nov 2026) <span class="sep">|</span> Master Resume (4 Nov 2026) <span class="sep">|</span> STAR Skills (26 Oct 2026)</div>
+
+<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (confirmed 4 Nov 2026), STAR Skills.docx (26 Oct 2026), Rezi Evidence Match (4 Nov 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>.</div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+<h2>Source Register</h2>
+<div class="tablewrap"><table>
+<tr><th>Source</th><th>Used for</th></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a></td><td>Business model, employees, strategy, AI risk, leadership, head office</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> · <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734wt9xzy74p1.pdf" title="FY26 Performance Overview, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Performance Overview</a></td><td>Revenue trend, division revenue and margins, AI strategy and scorecard, FY27 guidance</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.asx.com.au/asxpdf/20210826/pdf/44zrc5y7rqxgxt.pdf" title="FY21 Annual Report, AUB Group via ASX, 26 Aug 2021">AUB: FY21 Annual Report</a> · <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20220824/pdf/45d5xwyysvrdjr.pdf" title="FY22 Annual Report, AUB Group via ASX, 24 Aug 2022">AUB: FY22 Annual Report</a> · <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20230822/pdf/05sw049crsfkft.pdf" title="FY23 Annual Report, AUB Group via ASX, 22 Aug 2023">AUB: FY23 Annual Report</a></td><td>FY21 to FY23 underlying revenue</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260224/pdf/06wn2mjn5rgjf7.pdf" title="1H26 results announcement, AUB Group via ASX, 24 Feb 2026">AUB: 1H26 results</a></td><td>1H26 results, guidance, CFO</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20251028/pdf/06r47vnj7yxwqs.pdf" title="Response to media speculation: EQT non-binding indicative proposal, AUB Group via ASX, 28 Oct 2025">AUB: takeover approach</a> · <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20251110/pdf/06rpztbqk9tk4r.pdf" title="Update on proposal: CVC joins EQT consortium, AUB Group via ASX, 10 Nov 2025">AUB: CVC joins EQT</a></td><td>EQT and CVC proposal timeline</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260127/pdf/06vlrrs5g9385h.pdf" title="Acquisition of Prestige and equity raising, AUB Group via ASX, 27 Jan 2026">AUB: Prestige acquisition</a></td><td>Prestige acquisition and funding</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20200217/pdf/44f47dp58mkxg8.pdf" title="Investment in BizCover, AUB Group via ASX, 17 Feb 2020">AUB: BizCover investment</a> · <a target="_blank" rel="noopener" href="https://fool.com.au/2022/05/09/aub-share-price-halted-amid-880-million-acquisition" title="AUB share price halted amid $880 million acquisition, The Motley Fool Australia, 9 May 2022">Motley Fool: Tysers A$880m</a> · <a target="_blank" rel="noopener" href="https://amp.insurancejournal.com/news/international/2022/09/30/687765.htm" title="AUB completes Tysers acquisition, Insurance Journal, 30 Sep 2022">Insurance Journal: Tysers completed</a></td><td>BizCover and Tysers deals</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://insurancebusinessmag.com/nz/news/breaking-news/nz-expansion-prompts-name-change-for-austbrokers-51910.aspx" title="NZ expansion prompts name change for Austbrokers, Insurance Business, Nov 2015">Insurance Business: rename</a> · <a target="_blank" rel="noopener" href="https://www.adviservoice.com.au/2019/01/aub-group-announces-ceo-succession/" title="AUB Group announces CEO succession, AdviserVoice, Jan 2019">AdviserVoice: CEO succession</a></td><td>Name change, CEO succession</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/asx-closes-lower-aub-dives-18-after-takeover-consortium-withdraws-18169cc2-61a5-41a5-953b-1e8c17eaddcd/" title="ASX closes lower; AUB dives 18% after takeover consortium withdraws, Capital Brief, 1 Dec 2025">Capital Brief: AUB dives 18%</a> · <a target="_blank" rel="noopener" href="https://www.insurancenews.com.au/corporate/aub-stock-plunges-as-buyout-hits-buffers" title="AUB stock plunges as buyout hits buffers, Insurance News, 1 Dec 2025">Insurance News: buyout hits buffers</a> · <a target="_blank" rel="noopener" href="https://www.insurancebusinessmag.com/au/news/breaking-news/aub-group-lifts-underlying-profit-12-as-broker-results-week-opens-587250.aspx" title="AUB Group lifts underlying profit 12% as broker results week opens, Insurance Business, 25 Aug 2026">Insurance Business: FY26 profit</a></td><td>Bid withdrawal reaction; FY26 profit and impairments</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="http://www.fool.com.au/2024/08/21/guess-which-asx-200-stock-is-down-10-after-reporting-its-fy-2024-results/" title="Guess which ASX 200 stock is down 10% after reporting its FY 2024 results, The Motley Fool Australia, 21 Aug 2024">Motley Fool: FY24 shares down</a> · <a target="_blank" rel="noopener" href="https://www.capitalbrief.com/briefing/aub-group-shares-dive-despite-fy-earnings-beating-consensus-baa1a31f-52e4-46e6-857f-2a1299fb51f3/" title="AUB Group shares dive despite FY earnings beating consensus, Capital Brief, 21 Aug 2024">Capital Brief: FY24 shares dive</a> · <a target="_blank" rel="noopener" href="https://www.fool.com.au/2025/10/28/aub-group-fields-takeover-offer-at-massive-premium/" title="AUB Group fields takeover offer at massive premium, The Motley Fool Australia, 28 Oct 2025">Motley Fool: takeover offer</a> · <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/01/28/aub-group-completes-400m-institutional-placement-to-fund-prestige-acquisition/" title="AUB Group completes $400m institutional placement to fund Prestige acquisition, The Motley Fool Australia, 28 Jan 2026">Motley Fool: A$400m placement</a> · <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/02/11/this-asx-200-share-crashed-6-yesterday-time-to-buy-the-dip/" title="This ASX 200 share crashed 6% yesterday, The Motley Fool Australia, 11 Feb 2026">Motley Fool: 10 Feb fall</a> · <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/02/24/aub-group-posts-half-year-profit-lifts-fy26-guidance/" title="AUB Group posts half-year profit, lifts FY26 guidance, The Motley Fool Australia, 24 Feb 2026">Motley Fool: HY26 results</a> · <a target="_blank" rel="noopener" href="https://filingreader.com/news-wire/sydney/2026-06-10/steadfast-receives-a77bn-acquisition-proposal-from-amwins-dragoneer" title="Steadfast receives acquisition proposal from Amwins and Dragoneer, FilingReader, 10 Jun 2026">FilingReader: Steadfast proposal</a> · <a target="_blank" rel="noopener" href="https://www.fool.com.au/2026/08/25/aub-group-fy26-results-record-underlying-profit-and-higher-dividend/" title="AUB Group FY26 results: record underlying profit and higher dividend, The Motley Fool Australia, 25 Aug 2026">Motley Fool: FY26 results</a></td><td>Share price reactions to events</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/AUB.AX/history/" title="AUB.AX monthly price history, Yahoo Finance, accessed 5 Nov 2026">Yahoo Finance: AUB.AX history</a> · <a target="_blank" rel="noopener" href="https://www.investsmart.com.au/security/asx/aub/aub-group-limited/share-price" title="AUB Group share price history (Morningstar data), InvestSMART, accessed 5 Nov 2026">InvestSMART: AUB price history</a> · <a target="_blank" rel="noopener" href="https://stockanalysis.com/quote/asx/AUB/statistics/" title="AUB Group statistics, StockAnalysis, 5 Nov 2026">StockAnalysis: AUB statistics</a></td><td>Share price data and market cap</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://talenza.com.au/jobseekers/job-search/bbbh22987/" title="AI Delivery Lead, Sydney, ref BBBH22987, Talenza, 4 Nov 2026">Talenza: AI Delivery Lead ad</a></td><td>Role requirements, pay, recruiter</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.robertwalters.com.au/content/dam/robert-walters-redesign/country/australia/files/salary-survey/salary-guide-2026-AU-mid-year.pdf" title="Salary Guide 2026 (mid-year), Australia and New Zealand, Robert Walters, 2026">Robert Walters: Salary Guide 2026</a> · <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/program-manager/sydney" title="Program Manager salary, Sydney, Morgan McKinley 2026 Salary Guide, accessed 5 Nov 2026">Morgan McKinley: Program Manager Sydney</a></td><td>Salary benchmarks</td></tr>
+<tr><td>Master Resume (4 Nov 2026) · STAR Skills (26 Oct 2026) · Rezi Evidence Match (4 Nov 2026)</td><td>Candidate evidence, Stage 3, coverage check</td></tr>
+</table></div>
+</section>
+
+<footer class="footer">
+<p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
+<p>Company figures and pay in AUD unless stated (NZ Broking in NZD). "Underlying" figures are AUB's non-IFRS measures. Share price data is for context only and is not investment advice. The client is not named in the job ad; AUB Group is a Working Hypothesis. Prepared 5 November 2026 for Adam Aziz's interview preparation. Version 2 (5 November 2026): "What is the Nexus Platform?" section added to Stage 2. Version 1 (5 November 2026): first issue.</p>
+</footer>
+
+</main>
+<script>
+(function(){
+  var data=[["Dec 23",27.75],["Jan 24",30.67],["Feb 24",30.22],["Mar 24",29.74],["Apr 24",28.29],["May 24",29.55],["Jun 24",31.69],["Jul 24",32.28],["Aug 24",31.26],["Sep 24",30.78],["Oct 24",31.98],["Nov 24",32.80],
+  ["Dec 24",31.20],["Jan 25",31.96],["Feb 25",31.03],["Mar 25",30.84],["Apr 25",31.91],["May 25",34.49],["Jun 25",35.48],["Jul 25",33.93],["Aug 25",33.53],["Sep 25",32.73],["Oct 25",36.94],["Nov 25",37.25],
+  ["Dec 25",30.80],["Jan 26",30.21],["Feb 26",25.34],["Mar 26",24.30],["Apr 26",25.70],["May 26",26.13],["Jun 26",28.64],["Jul 26",27.86],["Aug 26",29.17],["Sep 26",26.70],["Oct 26",29.54],["4 Nov 26",29.69]];
+  var events={
+    "Aug 24":{s:"FY25 guide",d:"21 Aug 2024: FY25 guidance below hopes; shares down about 6.5% intraday",a:"middle",up:0},
+    "May 25":{s:"Top of range",d:"7 May 2025: FY25 tracking at top of guidance; shares +6.0%",a:"end",up:1},
+    "Oct 25":{s:"EQT bid",d:"27 to 28 Oct 2025: EQT A$45 a share proposal public; shares +12.1%, then +5.9%",a:"end",up:1},
+    "Dec 25":{s:"Bid withdrawn",d:"1 Dec 2025: EQT/CVC walk away; shares -17.8%",a:"end",up:0},
+    "Jan 26":{s:"Prestige raise",d:"28 Jan 2026: A$400m placement at A$29.40 for Prestige; shares -4.7%",a:"start",up:1},
+    "Feb 26":{s:"HY26 fall",d:"24 Feb 2026: HY26 result, guidance raised, shares -5.4% (downtrend; confounded)",a:"start",up:0},
+    "Jun 26":{s:"Steadfast bid",d:"10 Jun 2026: rival Steadfast receives takeover proposal; AUB +9.8% (sector move)",a:"end",up:1},
+    "Aug 26":{s:"FY26 result",d:"25 Aug 2026: FY26 underlying NPAT A$224.6m, FY27 guidance; shares +4.1%",a:"middle",up:1}};
+  var svg=document.getElementById('sykChart'),tip=document.getElementById('sykTooltip');
+  var NS="http://www.w3.org/2000/svg",current=0;
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function draw(){
+    var n=current?current+1:data.length, d=data.slice(-n);
+    var W=svg.clientWidth||800,H=svg.clientHeight||300,pl=46,pr=16,pt=16,pb=30;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML='';
+    var vals=d.map(function(x){return x[1]}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),pad=(mx-mn)*0.12||10;mn-=pad;mx+=pad;
+    function X(i){return pl+(W-pl-pr)*(d.length===1?0.5:i/(d.length-1));}
+    function Y(v){return pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));}
+    for(var g=0;g<=4;g++){var v=mn+(mx-mn)*g/4,y=Y(v);svg.appendChild(el('line',{x1:pl,x2:W-pr,y1:y,y2:y,stroke:'#eceff1'}));var t=el('text',{x:pl-6,y:y+4,'text-anchor':'end','font-size':11,fill:'#626a73'});t.textContent='$'+v.toFixed(0);svg.appendChild(t);}
+    var step=Math.max(1,Math.ceil(d.length/8));
+    d.forEach(function(p,i){if(i%step===0||i===d.length-1){var t=el('text',{x:X(i),y:H-9,'text-anchor':'middle','font-size':10.5,fill:'#626a73'});t.textContent=p[0];svg.appendChild(t);}});
+    var path=d.map(function(p,i){return(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)}).join(' ');
+    svg.appendChild(el('path',{d:path+' L'+X(d.length-1)+' '+(H-pb)+' L'+X(0)+' '+(H-pb)+' Z',fill:'rgba(41,163,221,.13)'}));
+    svg.appendChild(el('path',{d:path,fill:'none',stroke:'#202428','stroke-width':2.2}));
+    d.forEach(function(p,i){var e=events[p[0]];if(e){svg.appendChild(el('circle',{cx:X(i),cy:Y(p[1]),r:5,fill:'#8b2f2f'}));var anc=i===d.length-1?'end':(i===0?'start':e.a),dx=anc==='start'?-4:(anc==='end'?4:0);var t=el('text',{x:X(i)+dx,y:e.up?Y(p[1])-10:Y(p[1])+19,'text-anchor':anc,'font-size':10.5,'font-weight':600,fill:'#8b2f2f'});t.textContent=e.s;svg.appendChild(t);}});
+    var dot=el('circle',{r:4.5,fill:'#29a3dd',stroke:'#202428','stroke-width':1.5,style:'display:none'});svg.appendChild(dot);
+    function move(ev){var r=svg.getBoundingClientRect(),cx=(ev.touches?ev.touches[0].clientX:ev.clientX)-r.left,sx=cx*W/r.width;
+      var i=Math.round((sx-pl)/((W-pl-pr)/(d.length-1||1)));i=Math.max(0,Math.min(d.length-1,i));
+      dot.setAttribute('cx',X(i));dot.setAttribute('cy',Y(d[i][1]));dot.style.display='';
+      tip.style.display='block';tip.style.left=(X(i)*r.width/W)+'px';tip.style.top=(Y(d[i][1])*r.height/H)+'px';
+      tip.innerHTML='<b>'+d[i][0]+'</b><br>US$'+d[i][1].toFixed(2)+(events[d[i][0]]?'<br>'+events[d[i][0]].d:'');}
+    svg.onmousemove=move;svg.ontouchstart=move;svg.ontouchmove=move;
+    svg.onmouseleave=function(){tip.style.display='none';dot.style.display='none';};
+    var a=d[0][1],b=d[d.length-1][1],c=(b/a-1)*100;
+    document.getElementById('sykStart').textContent='$'+a.toFixed(2)+' ('+d[0][0]+')';
+    document.getElementById('sykEnd').textContent='$'+b.toFixed(2)+' ('+d[d.length-1][0]+')';
+    document.getElementById('sykChange').textContent=(c>0?'+':'')+c.toFixed(1)+'%';
+  }
+  document.querySelectorAll('.stock-ranges button').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('.stock-ranges button').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');current=+btn.dataset.range;draw();});});
+  window.addEventListener('resize',draw);draw();
+})();
+</script>
+</body>
+</html>

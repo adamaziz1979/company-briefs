@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OnDeck Australia: Company, Role and Recruitment Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
+  --line:#dfe3e7; --soft:#f8f9fa; --gold:#83eece; --gold2:#e8fbf5;
+  --green:#236b45; --greenbg:#eaf5ee; --blue:#245b88; --bluebg:#edf4fa;
+  --orange:#8a5b00; --orangebg:#fff4dc; --red:#8b2f2f; --redbg:#faecec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Aptos,Arial,sans-serif;line-height:1.58}
+main{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{position:relative;background:#101214;color:#fff;padding:48px 56px 38px;border-top:7px solid var(--gold)}
+.site-link{position:absolute;top:16px;right:24px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#000082;background:var(--gold);text-decoration:none;border-radius:999px;padding:6px 12px;line-height:1}
+.site-link:hover{filter:brightness(1.08);text-decoration:underline}
+.site-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-link svg{width:12px;height:12px}
+@media (max-width:560px){.site-link{position:static;margin-bottom:14px}}
+@media print{.site-link{color:#101214}.site-link::after{content:" (" attr(href) ")";font-weight:400}}
+.hero .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#c7ccd2;font-weight:600}
+.hero h1{font-size:38px;line-height:1.1;margin:8px 0 10px}
+.hero h1 span{color:var(--gold)}
+.hero{background:#000060}
+.hero .sub{max-width:890px;color:#d4d8dc;font-size:16px}
+.hero .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:#b8bec5}
+.hero .meta .badge{margin-right:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);padding:10px 54px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-size:12px;color:#353a40;text-decoration:none;font-weight:600}
+.nav a:hover{color:#000;text-decoration:underline}
+section{padding:34px 56px 6px}
+h2{font-size:27px;margin:0 0 16px;border-bottom:2px solid var(--line);padding-bottom:9px}
+h3{font-size:19px;margin:27px 0 9px}
+h4{font-size:15px;margin:18px 0 7px}
+p{margin:8px 0 12px}
+.small{font-size:12px;font-weight:300;color:var(--muted)}
+.lead{font-size:16px;line-height:1.62}
+.thesis{background:#1b1e22;color:#eef0f2;border-left:7px solid var(--gold);border-radius:10px;padding:22px 26px;margin:6px 0 10px;font-size:15.5px}
+.thesis strong{color:var(--gold)}
+.thesis .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aeb5bc;margin-bottom:6px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.card{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:15px}
+.card .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.card .v{font-size:26px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
+.card .n{font-size:12px;font-weight:300;color:var(--muted);margin-top:4px}
+.callout{margin:17px 0;padding:15px 17px;border-left:5px solid #5d6670;background:#f5f7f8}
+.callout.gold{border-color:var(--gold);background:var(--gold2)}
+.callout.warn{border-color:#b47b00;background:#fff6e4}
+.problem{font-size:19px;font-weight:700;line-height:1.45;margin:12px 0;padding:18px 20px;border:2px solid var(--gold);border-radius:10px;background:#f4fdfa}
+.badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;border-radius:999px;padding:3px 8px;margin-right:5px;vertical-align:1px;white-space:nowrap}
+.fact{color:var(--green);background:var(--greenbg)}
+.infer{color:var(--blue);background:var(--bluebg)}
+.hyp{color:var(--orange);background:var(--orangebg)}
+.limit{color:var(--red);background:var(--redbg)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{background:#eef1f3;text-align:left;font-size:12px;padding:9px;border:1px solid #d5dbe0}
+td{padding:9px;border:1px solid #dce1e5;vertical-align:top}
+td.num{white-space:nowrap}
+ul{margin-top:7px}
+li{margin:5px 0}
+.phase{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:14px 0}
+.phase:first-of-type{border-top:0}
+.phase .label{font-weight:700}
+.refs{margin:18px 0 8px;padding:11px 14px;border-left:4px solid #9aa2aa;background:#f7f8f9;font-size:11.5px;color:#535b64}
+.refs a{color:#174f85;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.refs{line-height:1.7}
+.refs .sep{color:#9aa2aa;margin:0 5px}
+.refs.dark .sep{color:#5d6670}
+.refs.dark{background:#1c2024;border-left-color:#5d6670;color:#aeb5bc;margin-top:14px}
+.refs.dark a{color:#9ec5ec}
+button{font-family:inherit}
+svg text{font-family:Lexend,Aptos,Arial,sans-serif}
+td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
+.metricbars{display:grid;gap:9px;margin:16px 0}
+.metricrow{display:grid;grid-template-columns:90px 1fr 75px;gap:10px;align-items:center;font-size:12px}
+.barbg{height:12px;background:#eceff1;border-radius:8px;overflow:hidden}
+.bar{height:100%;background:#8c4747;border-radius:8px}
+.tag{font-weight:700;text-align:right}
+.timeline td:first-child{white-space:nowrap;font-weight:700}
+.footer{margin-top:34px;padding:24px 56px 50px;border-top:1px solid var(--line);font-size:11.5px;color:#636b74}
+.notice{font-size:12.5px;border:1px solid #83eece;background:#f1fbf8;border-radius:8px;padding:12px 14px;margin:14px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qbox{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;background:#fff}
+.qbox strong{display:block;margin-bottom:4px}
+.story{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0;background:#fff;position:relative}
+.story .rank{position:absolute;top:16px;right:18px;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#000082;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.story h4{margin:0 0 8px;font-size:16.5px;padding-right:50px}
+.story .why{font-size:13.5px;margin:6px 0 10px}
+.star{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;font-size:13.5px;margin:8px 0}
+.star b{color:#fff;background:#3a4047;border-radius:5px;text-align:center;font-size:12px;padding:2px 0;height:22px}
+.story .open{border-left:4px solid var(--gold);background:var(--gold2);padding:9px 12px;font-style:italic;margin:10px 0 6px;font-size:14px}
+.story .meta2{font-size:12px;color:var(--muted)}
+.chartbox{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px;margin:18px 0 22px}
+.chartbox .title{font-weight:700;font-size:14px;margin-bottom:6px}
+.chartcap{font-size:11px;font-weight:300;color:var(--muted);margin-top:6px}
+.stock-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.stock-ranges{display:flex;gap:6px;flex-wrap:wrap}
+.stock-ranges button{appearance:none;border:1px solid #ccd2d8;background:#fff;color:#353a40;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:600;cursor:pointer}
+.stock-ranges button.active{background:#202428;color:#fff;border-color:#202428}
+.stock-ranges button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.stock-chart-wrap{position:relative}
+#sykChart{width:100%;height:300px;display:block;touch-action:pan-y}
+.stock-tooltip{position:absolute;pointer-events:none;background:#111;color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;line-height:1.35;transform:translate(-50%,-115%);white-space:nowrap;display:none;z-index:2}
+.stock-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend b{color:var(--ink)}
+/* Executive infographic */
+.info{background:#101214;color:#eef0f2;border-radius:14px;padding:26px 26px 22px;margin:8px 0 10px;border-top:6px solid var(--gold)}
+.info h2{color:#fff;border-bottom:1px solid #2e3338;font-size:24px}
+.info .ik{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#83eece;font-weight:600;margin:20px 0 9px}
+.itiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.itile{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:12px 13px}
+.itile .v{font-size:26px;font-weight:700;color:#fff;line-height:1.15;letter-spacing:-.01em}
+.itile .l{font-size:12px;font-weight:300;color:#b8bec5;margin-top:5px}
+.itile.neg .v{color:#ff9d8f}
+.itrack{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-top:18px}
+.itrack:before{content:"";position:absolute;left:4%;right:4%;top:24px;height:3px;background:linear-gradient(90deg,#5d6670,#83eece 60%,#d9534f)}
+.istop{position:relative;text-align:center;font-size:11.5px;color:#cfd4d9;padding-top:18px}
+.istop:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#83eece;border:3px solid #101214}
+.istop.shock:before{background:#d9534f}
+.istop b{display:block;color:#fff;font-size:13px}
+.ichev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ichev div{background:#2a2f35;padding:12px 14px 12px 22px;clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%,6% 50%);font-size:12px;color:#cfd4d9}
+.ichev div:first-child{clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%);padding-left:14px}
+.ichev div:last-child{background:#83eece;color:#000082}
+.ichev b{display:block;font-size:13.5px;color:#fff}
+.ichev div:last-child b{color:#000082}
+.icols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ibox{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:13px 15px;font-size:12.5px;color:#d4d8dc}
+.ibox ul{margin:4px 0 0;padding-left:18px}
+.ibox li{margin:4px 0}
+.hrow{display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;margin:7px 0}
+.conf{height:8px;border-radius:6px;background:#2e3338;overflow:hidden}
+.conf i{display:block;height:100%;background:#83eece}
+.hrow small{grid-column:1/-1;color:#8f979f;margin-top:-5px}
+.iproof{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.iproof div{background:#1c2024;border:1px solid #2e3338;border-left:4px solid #83eece;border-radius:8px;padding:10px 11px;font-size:11.5px;color:#aeb5bc}
+.iproof b{display:block;color:#fff;font-size:15px;line-height:1.25;margin-bottom:3px}
+.iproof em{display:block;font-style:normal;color:#83eece;font-weight:600;margin-top:4px;font-size:11px}
+.iq{margin-top:18px;border:2px solid #83eece;border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
+.info .src{font-size:10.5px;color:#8f979f;margin-top:12px}
+@media (max-width:900px){
+  .itiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itrack{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+  .itrack:before{display:none}
+  .ichev,.icols{grid-template-columns:1fr}
+  .ichev div,.ichev div:first-child{clip-path:none;padding-left:14px;border-radius:8px}
+  .iproof{grid-template-columns:1fr 1fr}
+  .info{padding:20px 16px}
+}
+@media (max-width:560px){.iproof,.itiles{grid-template-columns:1fr}.itrack{grid-template-columns:1fr 1fr}}
+@media print{.info{-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .hero,section,.footer{padding-left:20px;padding-right:20px}
+  .nav{padding-left:20px;padding-right:20px;gap:12px}
+  .phase{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}#sykChart{height:260px}.problem{font-size:17px}}
+@media print{
+  body{background:#fff}
+  main{box-shadow:none;max-width:none}
+  .nav,.stock-ranges{display:none}
+  section{padding-top:24px}
+  a{color:inherit}
+  .card,.qbox,.callout,.refs,.story,.chartbox,.thesis{break-inside:avoid}
+  tr{break-inside:avoid}
+}
+.scalegrid{grid-template-columns:1fr 2fr;margin:6px 0 10px}
+@media (max-width:900px){.grid.scalegrid{grid-template-columns:1fr}}
+@media (max-width:560px){.metricrow{grid-template-columns:78px 1fr 52px}}
+</style>
+
+
+</head>
+<body>
+<main>
+<header class="hero">
+  <a class="site-link" href="https://www.ondeck.com.au/" target="_blank" rel="noopener" title="OnDeck Australia official website">ondeck.com.au <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
+  <h1><span>OnDeck Australia</span>: Company, Role and Recruitment Brief</h1>
+  <div class="sub">Manager, Reporting and Prioritisation (Sydney, four days in office; internal Director level) | Executive infographic, Stage 1 executive briefing, compensation and headcount, Stage 2 company dossier (sections 1 to 7), role deconstruction and Stage 3 top five experiences to lead with.</div>
+  <div class="meta">
+    <span>Prepared: 29 September 2026 (version 2, updated 1 October 2026)</span>
+    <span>Candidate: Adam Aziz</span>
+    <span>Currency: AUD unless stated (Enova figures in USD)</span>
+    <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Report sections">
+  <a href="#infographic">Infographic</a>
+  <a href="#stage1">Stage 1</a>
+  <a href="#pay">Pay &amp; headcount</a>
+  <a href="#stage2">Stage 2</a>
+  <a href="#performance">Performance</a>
+  <a href="#role">Role</a>
+  <a href="#stage3">Stage 3</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="thesis">
+<div class="thesis">
+  <div class="k">Executive Summary</div>
+  OnDeck Australia is a Sydney-based, management-owned online lender of unsecured small business loans. It has funded <strong>A$1.2bn to date</strong> since launching in 2015. Demand is surging, with <strong>applications up 120% year on year</strong> in February 2026, a record month. Automation has cut approvals for loans under A$200k from <strong>about 6 hours to 12 minutes</strong>. Reporting still rests on one person, and the Head of Data and Analytics is based in Dallas. The company is creating a Sydney-based reporting and prioritisation lead to give executives <strong>one trusted set of numbers and a clear order of work</strong> as funders and ASIC look more closely at non-bank lenders.
+</div>
+<div class="refs"><strong>References:</strong> Summary of Stage 1 and Stage 2; these links support the specific claims. <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> Job Brief (22 Aug 2026)</div>
+</section>
+
+<!-- ============ INFOGRAPHIC ============ -->
+<section id="infographic">
+<div class="info" role="region" aria-label="Executive infographic">
+  <h2>OnDeck Australia at a glance: why this role, why now, why me?</h2>
+
+  <div class="ik">Observed facts</div>
+  <div class="itiles">
+    <div class="itile"><div class="v">A$1.2bn</div><div class="l">Funded to date since 2015 (OnDeck website, Sep 2026)</div></div>
+    <div class="itile"><div class="v">+120%</div><div class="l">Applications, year on year (Feb 2026, a record month)</div></div>
+    <div class="itile"><div class="v">12 min</div><div class="l">Approval for loans under A$200k, down from about 6 hours (Mar 2026)</div></div>
+    <div class="itile"><div class="v">80%</div><div class="l">Australian-owned since the 2022 management buyout; Enova 20%</div></div>
+    <div class="itile neg"><div class="v">1 person</div><div class="l">Owns reporting today, alongside 4 to 5 Sydney engineers (Aug 2026)</div></div>
+  </div>
+
+  <div class="ik">Turning points</div>
+  <div class="itrack">
+    <div class="istop"><b>2015</b>Launch in Australia</div>
+    <div class="istop"><b>2018</b>A$75m warehouse</div>
+    <div class="istop shock"><b>Oct 2020</b>Enova buys US parent</div>
+    <div class="istop"><b>2022</b>Management buyout</div>
+    <div class="istop"><b>2024 to 2026</b>Demand surge, automation</div>
+    <div class="istop shock"><b>Aug 2026</b>ASIC targets non-bank SME lending</div>
+  </div>
+
+  <div class="ik">Strategic evolution</div>
+  <div class="ichev">
+    <div><b>US-backed start-up</b>Speed plus scoring; basic reporting</div>
+    <div><b>Independent, broker-led lender</b>Funders, warehouse, local owners</div>
+    <div><b>Automation-first lender that must prove control</b>Trusted KPIs, governed priorities</div>
+  </div>
+
+  <div class="icols" style="margin-top:4px">
+    <div>
+      <div class="ik">Why the role exists now</div>
+      <div class="ibox">
+        <ul>
+          <li><b>Growth outran reporting:</b> +120% applications against a one-person reporting function.</li>
+          <li><b>Restructure:</b> the data team is being split into reporting and prioritisation now, and data engineering later.</li>
+          <li><b>Leadership gap on site:</b> the Head of Data and Analytics is in Dallas; the role is Sydney-based, four days in the office.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="ik">Key working hypotheses</div>
+      <div class="ibox">
+        <div class="hrow"><span>H1. The role exists because growth has outrun a one-person reporting function.</span><div class="conf" aria-label="Medium-high confidence"><i style="width:75%"></i></div><small>Medium-high. Test: "What breaks today when the monthly numbers are late or disputed?"</small></div>
+        <div class="hrow"><span>H4. Prioritisation is needed because engineers (4 to 5) are a fixed capacity facing rising demand.</span><div class="conf" aria-label="Medium-high confidence"><i style="width:75%"></i></div><small>Medium-high. Test: "How is data and engineering work prioritised today, and who decides?"</small></div>
+        <div class="hrow"><span>H2. Funders and lending governance make trusted KPIs a commercial necessity, not a nice-to-have.</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: "Which reports go to funders or the board, and who signs them off?"</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ik">Candidate positioning: five proof points</div>
+  <div class="iproof">
+    <div><b>62% to 100%</b>KPI consistency across 27 KPIs; escalations to zero<em>Reporting standards and trust</em></div>
+    <div><b>$11M+</b>Business value cases for IT programs; case accuracy +80%<em>Prioritisation and investment</em></div>
+    <div><b>46 to 196 users</b>Self-service adoption; data requests down 33%<em>No reporting bottleneck</em></div>
+    <div><b>Half a day to instant</b>Tripwire alerts and AI assistant for exec and ops<em>Performance monitoring</em></div>
+    <div><b>87%+ users</b>M5 Air case adopted as the Mac standard<em>Executive decision-making</em></div>
+  </div>
+
+  <div class="iq">"How do we give a fast-growing, automation-led lender one trusted set of numbers and a clear order of work, without turning the reporting team into a bottleneck?"</div>
+
+<div class="refs dark"><strong>References:</strong> Hypotheses are Working Hypotheses to validate in interview; confidence bars are qualitative. <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.abfjournal.com/enova-completes-acquisition-of-ondeck/" title="Enova completes acquisition of OnDeck, ABF Journal, Oct 2020">ABF Journal: Enova completes OnDeck</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> Job Brief (22 Aug 2026) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026)</div>
+</div>
+</section>
+
+<!-- ============ STAGE 1 ============ -->
+<section id="stage1">
+<h2>Stage 1: One-page Executive Briefing</h2>
+
+<h3>Company in one paragraph</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span> OnDeck Australia is a Sydney-based online lender of <strong>unsecured small business loans from A$10k to A$300k</strong>. Its Lightning Loans (A$10k to A$200k) are approved in minutes, and Lightning Loans Plus (A$200k to A$300k) in hours. It launched in 2015 and has funded <strong>A$1.2bn to date</strong>. Revenue comes from interest and origination fees; a third-party review cites 3% for new customers and 2% for renewals. Brokers are the largest acquisition channel. Since the 2022 management buyout it is 80% Australian-owned, with Enova International holding 20%.
+<span class="badge infer">Strong Inference</span> Current direction: more automation, larger loans, instant renewals for existing customers, and growth in demand across all states.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">Funded to date</div><div class="v">A$1.2bn</div><div class="n">Since 2015 (website, Sep 2026)</div></div>
+  <div class="card"><div class="k">Applications, year on year</div><div class="v">+120%</div><div class="n">Feb 2026, a record month</div></div>
+  <div class="card"><div class="k">Approval time</div><div class="v">12 min</div><div class="n">Loans under A$200k; about 6 hours two years earlier</div></div>
+  <div class="card"><div class="k">Employees</div><div class="v">~61</div><div class="n">Third-party, undated; low confidence</div></div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/" title="OnDeck Australia home page, loan tiers and eligibility, accessed 29 Sep 2026">OnDeck: loan tiers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lend.com.au/ondeck-business-loan-review" title="On Deck Business Loans Review 2026, Lend.com.au, 2026">Lend: OnDeck review</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/leading-us-small-business-lender-ondeck-expands-to-australia-300065854.html" title="Leading US small business lender OnDeck expands to Australia, PR Newswire, 2015">PR Newswire: Australia launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://jobs.fintechaustralia.org.au/companies/ondeck-australia" title="OnDeck Australia profile (61 employees, 130 Pitt St), FinTech Australia jobs board via search, undated; page now returns 404">FinTech Australia: company profile</a></div>
+
+<h3>Observed Facts</h3>
+<div class="tablewrap"><table>
+<tr><th>Area</th><th>Fact</th><th>Interview relevance</th></tr>
+<tr><td>Growth</td><td><span class="badge fact">Observed Fact</span> Feb 2026 was the largest month on record; applications +120% year on year (WA +200%, QLD +150%). Dec quarter 2025 applications were +42%.</td><td>Volume is outrunning manual reporting.</td></tr>
+<tr><td>Scale</td><td><span class="badge fact">Observed Fact</span> A$1.2bn funded to date since 2015.</td><td>The number to quote. A book this size needs consistent decision information.</td></tr>
+<tr><td>Automation</td><td><span class="badge fact">Observed Fact</span> Approvals for loans under A$200k fell from about 6 hours to 12 minutes in two years. Instant Renewals (up to A$60k) launched Mar 2026. Credit decisions use the proprietary Lightning Score model.</td><td>Fast decisions need trusted, near-real-time metrics.</td></tr>
+<tr><td>Ownership and leadership</td><td><span class="badge fact">Observed Fact</span> Management holds 58%, Australian investors 22%, Enova 20%. CEO Cameron Poolman (since launch; also AFIA Committee Chair), CFO Jerry Yohananov, COO Charlene Batson, CRO Dr Nicholas Brown (former CRO of OnDeck US).</td><td>A short executive chain. Owners want decisions, not dashboards.</td></tr>
+<tr><td>Data leadership</td><td><span class="badge fact">Observed Fact</span> Todd Estep, Head of Data and Analytics, is based in Dallas. Reporting is one person, plus 4 to 5 engineers in Sydney.</td><td>You would be the senior data leader on site, building the function.</td></tr>
+<tr><td>Funding</td><td><span class="badge fact">Observed Fact</span> A$22.5m investor facility (2017), A$75m warehouse (2018), A$30m from the government's ABSF (2021).</td><td>Funders expect reliable portfolio reporting.</td></tr>
+<tr><td>Regulation</td><td><span class="badge fact">Observed Fact</span> ASIC's 2026-27 corporate plan targets non-bank SME lending practices.</td><td>Reporting must stand up to scrutiny.</td></tr>
+<tr><td>Culture</td><td><span class="badge fact">Observed Fact</span> "Data led" is a stated company value. Named one of Australia's Best Places to Work five times.</td><td>Evidence-based decision-making is already a stated norm to build on.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/careers/" title="Careers, OnDeck Australia, accessed 29 Sep 2026">OnDeck: Careers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/small-businesses-shift-from-survival-to-growth-ondeck-data-reveals/" title="Small businesses shift from survival to growth, OnDeck data reveals, OnDeck Australia, 4 Feb 2026">OnDeck: Dec quarter 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/growth/36376-ondeck-secures-22m-funding-facility-from-gci" title="OnDeck secures $22m funding facility from GCI, The Adviser, 23 Jun 2017">The Adviser: GCI A$22.5m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> Job Brief (22 Aug 2026)</div>
+
+<h3>Major Turning Points</h3>
+<ol>
+<li><span class="badge fact">Observed Fact</span> <strong>2015: launch.</strong> Cameron Poolman, founding CEO of GraysOnline, brought the US OnDeck model to Australia.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>2017 to 2018: funding capacity built.</strong> Wholesale and warehouse funding replaced small investor pools.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Oct 2020: Enova acquires OnDeck Inc</strong>, which held the Australian stake. Enova then signalled Australia and Canada were small and could be divested.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Sep 2021 to 2022: ABSF funding, then the management buyout.</strong> The business became 80% Australian-owned.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Nov 2024 to Feb 2026: demand surge and automation push.</strong> Growth figures ranged from +40% to +246% year on year (see section 1).</li>
+</ol>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/leading-us-small-business-lender-ondeck-expands-to-australia-300065854.html" title="Leading US small business lender OnDeck expands to Australia, PR Newswire, 2015">PR Newswire: Australia launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/growth/36376-ondeck-secures-22m-funding-facility-from-gci" title="OnDeck secures $22m funding facility from GCI, The Adviser, 23 Jun 2017">The Adviser: GCI A$22.5m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.abfjournal.com/enova-completes-acquisition-of-ondeck/" title="Enova completes acquisition of OnDeck, ABF Journal, Oct 2020">ABF Journal: Enova completes OnDeck</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://debanked.com/2021/02/enova-pleased-with-the-ondeck-acquisition-looking-to-divest-odx-ondeck-canada-ondeck-australia/" title="Enova pleased with the OnDeck acquisition, looking to divest ODX, OnDeck Canada, OnDeck Australia, deBanked, Feb 2021">deBanked: Enova on divesting</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a></div>
+
+<h3>Strategic Evolution</h3>
+<div class="phase"><div class="label">2015 to 2019</div><div>US-backed start-up proving a speed-plus-scoring model.</div></div>
+<div class="phase"><div class="label">2020 to 2022</div><div>Ownership shock, then independence under local management.</div></div>
+<div class="phase"><div class="label">2022 to now</div><div>Broker-led scale-up, more automation, larger products.</div></div>
+<div class="phase"><div class="label">Becoming</div><div><span class="badge infer">Strong Inference</span> A local, automation-first SME lender that now has to prove control, not just speed.</div></div>
+<div class="refs"><strong>References:</strong> Inference from Major Turning Points. <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/news/general/ondeck-has-transformed-sme-lending/297919" title="OnDeck has transformed SME lending, Mortgage Professional Australia, 2020">MPA: transformed SME lending</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a></div>
+
+<h3>Why the Role Exists Now</h3>
+<div class="callout gold">
+<span class="badge infer">Strong Inference</span><br>
+Growth of 120% has outgrown a one-person reporting function. The data team is being split into two verticals: <strong>reporting and prioritisation now</strong>, and data engineering later. The Head of Data and Analytics is based in Dallas, so the business needs a <strong>senior data leader in the Sydney office</strong>. Leaders need one trusted set of numbers and a defensible order of work, with funders and ASIC looking on.
+<br><span class="small">The restructure, the immediate need and the four-day office requirement are Observed Facts from the recruiter brief. The link to growth and scrutiny is inference.</span>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> Job Brief (22 Aug 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+
+<h3>The Real Business Problem</h3>
+<div class="problem">"How do we give a fast-growing, automation-led lender one trusted set of numbers and a clear order of work, without turning the reporting team into a bottleneck?"</div>
+<div class="refs"><strong>References:</strong> Inference from Why the Role Exists Now and Observed Facts. Job description (Sep 2026)</div>
+</section>
+
+<!-- ============ PAY ============ -->
+<section id="pay">
+<h2>Compensation &amp; Headcount</h2>
+<div class="tablewrap"><table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Global employees</td><td class="num"><strong>~61</strong><br><span class="small">Unclear if FTE</span></td><td><span class="badge fact">Observed Fact</span> Third-party directory (FinTech Australia jobs board), undated. It listed an old address (130 Pitt St), so the figure is probably stale. Low confidence.</td></tr>
+<tr><td>Australia employees</td><td class="num"><strong>~61</strong></td><td><span class="badge fact">Observed Fact</span> OnDeck Australia operates only in Australia, so the national figure equals the global one. Same source, same low confidence. OnDeck calls itself a "growing team".</td></tr>
+<tr><td>Sydney headcount</td><td class="num"><strong>Not publicly disclosed</strong></td><td><span class="badge fact">Observed Fact</span> The only office on the careers page is Level 11, 135 King Street, Sydney. <span class="badge hyp">Working Hypothesis</span> Most or all of the team is in Sydney, apart from remote leaders such as the Dallas-based Head of Data and Analytics.</td></tr>
+<tr><td>Employer figure for this role</td><td class="num"><strong>~A$180k base + 10% bonus</strong></td><td><span class="badge fact">Observed Fact</span> Recruiter brief, 22 Aug 2026: a starting point, flexible for exceptional candidates; bonus to be confirmed. Employer-relayed. Base and bonus stated; super and equity unknown.</td></tr>
+<tr><td>Known benefits</td><td class="num">Listed on careers page</td><td><span class="badge fact">Observed Fact</span> Paid parental leave, study leave and study assistance, wellbeing program, breakfast and snacks. Hybrid: four days in office.</td></tr>
+<tr><td>Benchmark 1: Analytics Manager, Sydney</td><td class="num">A$140k to A$180k<br><span class="small">Median A$155k</span></td><td>Morgan McKinley 2026 Salary Guide, permanent roles. Super treatment not specified.</td></tr>
+<tr><td>Benchmark 2: Head of Analytics, Sydney</td><td class="num">A$180k to A$250k<br><span class="small">Median A$200k</span></td><td>Morgan McKinley 2026 Salary Guide, permanent roles. Super treatment not specified.</td></tr>
+</table></div>
+
+<div class="callout gold">
+<strong>Indicative interview range:</strong> <strong>A$180k to A$200k base, plus bonus</strong>. Anchor about <strong>A$195k base</strong>.<br>
+<span class="badge infer">Strong Inference, not an employer-confirmed budget</span> The employer's A$180k sits at the top of the Analytics Manager band and the bottom of Head of Analytics. The scope (team leadership, board reporting, prioritisation governance, internal Director level) sits between the two. The recruiter has already flagged flexibility.<br>
+<strong>Material uncertainty:</strong> whether A$180k includes super, the bonus structure, and whether the Director level carries equity. <strong>Confirm with the recruiter:</strong> all three, plus the final external title.
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+"Based on the scope described, I'm looking at around $195k base, and I'm flexible on the overall package once I understand the bonus, super and benefits structure."
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://jobs.fintechaustralia.org.au/companies/ondeck-australia" title="OnDeck Australia profile (61 employees, 130 Pitt St), FinTech Australia jobs board via search, undated; page now returns 404">FinTech Australia: company profile</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/careers/" title="Careers, OnDeck Australia, accessed 29 Sep 2026">OnDeck: Careers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/analytics-manager/sydney" title="Analytics Manager salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Analytics Manager</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-analytics/sydney" title="Head of Analytics salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Head of Analytics</a> <span class="sep">|</span> Job Brief (22 Aug 2026)</div>
+</section>
+
+<!-- ============ STAGE 2 ============ -->
+<section id="stage2">
+<h2>Stage 2: Full Interview Dossier (first pass)</h2>
+
+<h3>1. Company Overview</h3>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Business:</strong> unsecured SME loans. Lightning Loans (A$10k to A$200k, minutes), Lightning Loans Plus (A$200k to A$300k, hours), Instant Renewals (up to A$60k). Brokers are the largest channel.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Customers:</strong> businesses with an ABN or ACN, 1 year or more trading and A$100k or more annual revenue.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Ownership and leadership:</strong> unlisted. Management 58%, Australian investors 22%, Enova 20% (equity-accounted by Enova since Dec 2021). CEO Poolman, CFO Yohananov, COO Batson, CRO Brown, Head of Data and Analytics Estep (Dallas).</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Minority holder context:</strong> Enova (NYSE: ENVA) reported Q2 2026 revenue of US$929m (+22%) and record loans of US$5.5bn. OnDeck Australia is not consolidated, so these are not OnDeck Australia figures.</li>
+<li><span class="badge infer">Strong Inference</span> <strong>Priorities:</strong> growth through brokers, automation of credit decisions and renewals, and bigger loans for established businesses.</li>
+</ul>
+
+<h4>Ownership and funding context</h4>
+<p>OnDeck Australia is private and publishes no revenue, loan book or originations series. It discloses one scale figure (funded to date) and dated growth rates. Filed ASIC accounts may hold the real figures and are worth a paid extract before the interview.</p>
+
+<div class="chartbox">
+  <div class="title">Financial scale</div>
+  <div class="grid scalegrid">
+    <div class="card"><div class="k">Funded to date</div><div class="v">A$1.2bn</div><div class="n">Since launch in 2015 (OnDeck website, accessed 29 Sep 2026)</div></div>
+    <div>
+      <div class="small" style="font-weight:600;color:var(--ink);margin-bottom:4px">Growth signals disclosed by OnDeck, year on year (mixed measures)</div>
+      <div class="metricbars" style="margin:4px 0">
+        <div class="metricrow"><span>Nov 2024</span><div class="barbg"><div class="bar" style="width:100%;background:#000082"></div></div><span class="tag">+246%</span></div>
+        <div class="metricrow"><span>Jan 2025</span><div class="barbg"><div class="bar" style="width:22%;background:#000082"></div></div><span class="tag">+54%</span></div>
+        <div class="metricrow"><span>Feb to Apr 2025</span><div class="barbg"><div class="bar" style="width:16%;background:#000082"></div></div><span class="tag">+40%</span></div>
+        <div class="metricrow"><span>Dec qtr 2025</span><div class="barbg"><div class="bar" style="width:17%;background:#000082"></div></div><span class="tag">+42%</span></div>
+        <div class="metricrow"><span>Feb 2026</span><div class="barbg"><div class="bar" style="width:49%;background:#0074ff"></div></div><span class="tag">+120%</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="chartcap">No 5 to 7 year scale series is published, so no trend line is drawn. Growth rates use different measures and are not directly comparable: Nov 2024 is broker-originated loan volume; Jan 2025 is loan originations (volume); Feb to Apr 2025 is value of loans funded; Dec quarter 2025 and Feb 2026 are applications. Sources: OnDeck press releases (12 Dec 2024, 24 Feb 2025, 28 May 2025, 4 Feb 2026), MPA (24 Mar 2026), OnDeck website.</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/" title="OnDeck Australia home page, loan tiers and eligibility, accessed 29 Sep 2026">OnDeck: loan tiers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-records-246-yoy-jump-in-the-volume-of-broker-originated-loans/" title="OnDeck records 246% YoY jump in the volume of broker-originated loans, OnDeck Australia, 12 Dec 2024">OnDeck: broker loans +246%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-reports-high-levels-of-confidence-across-small-business-sector/" title="OnDeck reports high levels of confidence across small business sector, OnDeck Australia, 24 Feb 2025">OnDeck: Jan 2025 originations</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/rate-cuts-ignite-small-business-confidence-as-lending-surges-says-leading-lender/" title="Rate cuts ignite small business confidence as lending surges, OnDeck Australia, 28 May 2025">OnDeck: value funded +40%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/small-businesses-shift-from-survival-to-growth-ondeck-data-reveals/" title="Small businesses shift from survival to growth, OnDeck data reveals, OnDeck Australia, 4 Feb 2026">OnDeck: Dec quarter 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lend.com.au/ondeck-business-loan-review" title="On Deck Business Loans Review 2026, Lend.com.au, 2026">Lend: OnDeck review</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1529864/000119312526060461/enva-20251231.htm" title="Enova International Form 10-K FY2025, SEC EDGAR, 2026">SEC: Enova 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.enova.com/?p=11560" title="Enova reports second quarter 2026 results, Enova International, 23 Jul 2026">Enova: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a></div>
+
+<h3>2. How the Company Became What It Is Today</h3>
+<ul>
+<li><span class="badge fact">Observed Fact</span> OnDeck launched in Australia in 2015 under Cameron Poolman as an extension of the US OnDeck model. By Oct 2017 it had lent to more than 1,000 small businesses.</li>
+<li><span class="badge fact">Observed Fact</span> It funded early growth through Australian investors (A$22.5m, 2017) and then a bank-backed warehouse (A$75m, 2018).</li>
+<li><span class="badge fact">Observed Fact</span> Enova bought the US parent in Oct 2020 and signalled Australia and Canada were small and could be sold.</li>
+<li><span class="badge fact">Observed Fact</span> Management chose to buy in. The buyout, announced 2 Feb 2022, made it 80% Australian-owned. Broker-originated loans had grown 175% in 2021.</li>
+<li><span class="badge fact">Observed Fact</span> Since then: a broker-led, automated scale-up, with A$1.2bn funded to date.</li>
+</ul>
+<p><span class="badge infer">Strong Inference</span> The story: a US model localised, then re-owned by local management. It now runs lean and fast, and that pressure is why the role exists.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/leading-us-small-business-lender-ondeck-expands-to-australia-300065854.html" title="Leading US small business lender OnDeck expands to Australia, PR Newswire, 2015">PR Newswire: Australia launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/blog/business-loans/ondeck-ceo/" title="From the CEO: On track for continued growth, OnDeck Australia, 10 Oct 2017">OnDeck: CEO update 2017</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/growth/36376-ondeck-secures-22m-funding-facility-from-gci" title="OnDeck secures $22m funding facility from GCI, The Adviser, 23 Jun 2017">The Adviser: GCI A$22.5m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.abfjournal.com/enova-completes-acquisition-of-ondeck/" title="Enova completes acquisition of OnDeck, ABF Journal, Oct 2020">ABF Journal: Enova completes OnDeck</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://debanked.com/2021/02/enova-pleased-with-the-ondeck-acquisition-looking-to-divest-odx-ondeck-canada-ondeck-australia/" title="Enova pleased with the OnDeck acquisition, looking to divest ODX, OnDeck Canada, OnDeck Australia, deBanked, Feb 2021">deBanked: Enova on divesting</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokernews.com.au/news/breaking-news/management-buyout-at-sme-lender-ondeck-279511.aspx" title="Management buyout at SME lender OnDeck, Australian Broker News, Feb 2022">Broker News: buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a></div>
+
+<h3>3. Chronological Timeline</h3>
+<div class="tablewrap"><table class="timeline">
+<tr><th>Year/Date</th><th>Event</th><th>Evidence Classification</th><th>Why It Mattered</th></tr>
+<tr><td>2015</td><td>Launch in Australia</td><td><span class="badge fact">Observed Fact</span></td><td>Start of the data-driven lending model</td></tr>
+<tr><td>Jun 2017</td><td>A$22.5m GCI investor facility</td><td><span class="badge fact">Observed Fact</span></td><td>First investor-funded book. Funders need portfolio reporting.</td></tr>
+<tr><td>Aug 2018</td><td>A$75m securitisation warehouse</td><td><span class="badge fact">Observed Fact</span></td><td>Institutional reporting obligations begin</td></tr>
+<tr><td>Oct 2020</td><td>Enova acquires OnDeck Inc</td><td><span class="badge fact">Observed Fact</span></td><td>Ownership uncertainty for the Australian arm</td></tr>
+<tr><td>Sep 2021</td><td>A$30m ABSF allocation</td><td><span class="badge fact">Observed Fact</span></td><td>Government-backed funding, more scrutiny</td></tr>
+<tr><td>Feb 2022</td><td>Management buyout (80% Australian-owned)</td><td><span class="badge fact">Observed Fact</span></td><td>Local decision-makers own the reporting problem</td></tr>
+<tr><td>Nov 2024</td><td>Broker-originated loan volume +246%</td><td><span class="badge fact">Observed Fact</span></td><td>Channel growth multiplies reporting demand</td></tr>
+<tr><td>Dec qtr 2025</td><td>Applications +42%</td><td><span class="badge fact">Observed Fact</span></td><td>Demand accelerates</td></tr>
+<tr><td>Feb 2026</td><td>Record month; applications +120%</td><td><span class="badge fact">Observed Fact</span></td><td>Volume outruns manual reporting</td></tr>
+<tr><td>Mar 2026</td><td>Loan cap to A$300k; Instant Renewals</td><td><span class="badge fact">Observed Fact</span></td><td>Larger, faster decisions raise the cost of wrong numbers</td></tr>
+<tr><td>Aug 2026</td><td>ASIC targets non-bank SME lending</td><td><span class="badge fact">Observed Fact</span></td><td>Reporting must stand up to regulators</td></tr>
+<tr><td>Aug 2026</td><td>Reporting and prioritisation role scoped</td><td><span class="badge fact">Observed Fact</span></td><td>The company builds the function</td></tr>
+<tr><td>2015 to Sep 2026</td><td>A$1.2bn funded to date since launch</td><td><span class="badge fact">Observed Fact</span></td><td>Scale at this level makes consistent decision information worth paying for; every extra point of growth adds to it.</td></tr>
+<tr><td>Nov 2024 to Feb 2026</td><td>Every disclosed growth signal was between +40% and +246% year on year</td><td><span class="badge fact">Observed Fact</span></td><td>Sustained growth, not a spike: the reporting and prioritisation load keeps rising.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/leading-us-small-business-lender-ondeck-expands-to-australia-300065854.html" title="Leading US small business lender OnDeck expands to Australia, PR Newswire, 2015">PR Newswire: Australia launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/growth/36376-ondeck-secures-22m-funding-facility-from-gci" title="OnDeck secures $22m funding facility from GCI, The Adviser, 23 Jun 2017">The Adviser: GCI A$22.5m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.abfjournal.com/enova-completes-acquisition-of-ondeck/" title="Enova completes acquisition of OnDeck, ABF Journal, Oct 2020">ABF Journal: Enova completes OnDeck</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-records-246-yoy-jump-in-the-volume-of-broker-originated-loans/" title="OnDeck records 246% YoY jump in the volume of broker-originated loans, OnDeck Australia, 12 Dec 2024">OnDeck: broker loans +246%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/small-businesses-shift-from-survival-to-growth-ondeck-data-reveals/" title="Small businesses shift from survival to growth, OnDeck data reveals, OnDeck Australia, 4 Feb 2026">OnDeck: Dec quarter 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> Job Brief (22 Aug 2026)</div>
+
+<h3>4. Observed Facts</h3>
+<div class="two">
+<div>
+<h4>Financial / commercial</h4>
+<ul>
+<li>A$1.2bn funded to date.</li>
+<li>Feb 2026 record month; applications +120%. Dec quarter 2025 applications +42%.</li>
+<li>Borrowing purposes, Feb 2026: expansion 30%, stock 18.3%, equipment 12.7%.</li>
+<li>Funding: A$22.5m (2017), A$75m warehouse (2018), A$30m ABSF (2021).</li>
+</ul>
+<h4>Product / customer</h4>
+<ul>
+<li>Loans A$10k to A$300k, unsecured; Instant Renewals up to A$60k.</li>
+<li>Approvals under A$200k in about 12 minutes.</li>
+<li>Trustpilot rating 4.8.</li>
+</ul>
+</div>
+<div>
+<h4>Operational / leadership</h4>
+<ul>
+<li>Brokers are the top channel.</li>
+<li>CEO Poolman, CFO Yohananov, COO Batson, CRO Brown; management owns 58%.</li>
+<li>Office: Level 11, 135 King Street, Sydney; four days in the office.</li>
+</ul>
+<h4>Data / technology</h4>
+<ul>
+<li>Proprietary Lightning Score credit model "using a decade of small business insights".</li>
+<li>Head of Data and Analytics in Dallas; one reporting person plus 4 to 5 engineers in Sydney.</li>
+<li>"Data led" is a company value.</li>
+</ul>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/" title="OnDeck Australia home page, loan tiers and eligibility, accessed 29 Sep 2026">OnDeck: loan tiers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/careers/" title="Careers, OnDeck Australia, accessed 29 Sep 2026">OnDeck: Careers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/small-businesses-shift-from-survival-to-growth-ondeck-data-reveals/" title="Small businesses shift from survival to growth, OnDeck data reveals, OnDeck Australia, 4 Feb 2026">OnDeck: Dec quarter 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/growth/36376-ondeck-secures-22m-funding-facility-from-gci" title="OnDeck secures $22m funding facility from GCI, The Adviser, 23 Jun 2017">The Adviser: GCI A$22.5m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> Job Brief (22 Aug 2026)</div>
+
+<h3>5. Observed Turning Points (role lens)</h3>
+<div class="tablewrap"><table>
+<tr><th>Turning point</th><th>What happened</th><th>Why it mattered</th><th>Effect</th><th>Role relevance</th></tr>
+<tr><td>Enova acquisition (2020)</td><td><span class="badge fact">Observed Fact</span> Parent bought by Enova, which called Australia small and possibly for sale</td><td>Ownership uncertainty</td><td>Short term: business as usual. Long term: led to the buyout.</td><td>The business is built for independence, so reporting cannot lean on a parent's systems.</td></tr>
+<tr><td>Management buyout (2022)</td><td><span class="badge fact">Observed Fact</span> Management took 58%; 80% Australian-owned</td><td>Local owners answer to their own P&amp;L</td><td>Broker focus amplified</td><td>Executives who own the business want decisions, not dashboards.</td></tr>
+<tr><td>Funding stack (2017 to 2021)</td><td><span class="badge fact">Observed Fact</span> Investor facility, warehouse, ABSF</td><td>Access to capital depends on portfolio transparency</td><td>Institutional-grade reporting demands</td><td><span class="badge infer">Strong Inference</span> Reporting standards and governance are part of the funding story.</td></tr>
+<tr><td>Demand surge (2024 to 2026)</td><td><span class="badge fact">Observed Fact</span> +40% to +246% growth signals; record Feb 2026</td><td>Manual processes strain</td><td>Automation push</td><td><span class="badge infer">Strong Inference</span> The prioritisation half of the role exists because demand outstrips capacity.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.abfjournal.com/enova-completes-acquisition-of-ondeck/" title="Enova completes acquisition of OnDeck, ABF Journal, Oct 2020">ABF Journal: Enova completes OnDeck</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://debanked.com/2021/02/enova-pleased-with-the-ondeck-acquisition-looking-to-divest-odx-ondeck-canada-ondeck-australia/" title="Enova pleased with the OnDeck acquisition, looking to divest ODX, OnDeck Canada, OnDeck Australia, deBanked, Feb 2021">deBanked: Enova on divesting</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-records-246-yoy-jump-in-the-volume-of-broker-originated-loans/" title="OnDeck records 246% YoY jump in the volume of broker-originated loans, OnDeck Australia, 12 Dec 2024">OnDeck: broker loans +246%</a></div>
+
+<h3>6. Strategic Evolution</h3>
+<div class="tablewrap"><table>
+<tr><th>Phase</th><th>Business model</th><th>Product focus</th><th>Proposition</th><th>Operating complexity</th><th>Data implication</th></tr>
+<tr><td>1. Start-up (2015 to 2019)</td><td>Direct online lender, US-backed</td><td>Short-term loans</td><td>Speed</td><td>Low</td><td>Scoring and basic reporting</td></tr>
+<tr><td>2. Transition (2020 to 2022)</td><td>Funders and warehouse; ownership change</td><td>Broker channel</td><td>Reliability</td><td>Rising</td><td>Portfolio and funder reporting</td></tr>
+<tr><td>3. Scale-up (2022 to now)</td><td>Broker plus direct, automated</td><td>Larger loans, instant renewals</td><td>Minutes, not days</td><td>High</td><td>Standard KPIs, governed priorities</td></tr>
+</table></div>
+<p><span class="badge infer">Strong Inference</span> <strong>What it is becoming:</strong> a scaled, automation-first SME lender whose next constraint is management information rather than credit speed.</p>
+<div class="refs"><strong>References:</strong> Inference from sections 2 to 5. <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/news/general/ondeck-has-transformed-sme-lending/297919" title="OnDeck has transformed SME lending, Mortgage Professional Australia, 2020">MPA: transformed SME lending</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a></div>
+</section>
+
+<!-- ============ PERFORMANCE ============ -->
+<section id="performance">
+<h3 style="margin-top:0">7. Business Performance and Market Response (unlisted)</h3>
+<p>OnDeck Australia is unlisted, so there is no share-price chart. These are the equivalent signals.</p>
+<div class="tablewrap"><table>
+<tr><th>Signal</th><th>What is known</th><th>Evidence</th><th>Read-across</th></tr>
+<tr><td>Growth</td><td>Every disclosed growth signal from Nov 2024 to Feb 2026 was +40% or more year on year.</td><td><span class="badge fact">Observed Fact</span></td><td>Strong demand. Some of it may reflect the market (RBA rate cuts in 2025), not only execution.</td></tr>
+<tr><td>Scale</td><td>A$1.2bn funded to date.</td><td><span class="badge fact">Observed Fact</span></td><td>The one scale number to quote.</td></tr>
+<tr><td>Asset quality</td><td>Low delinquency rates and a strong loan book reported at the buyout (Feb 2022). No recent public figure.</td><td><span class="badge fact">Observed Fact</span> (dated)</td><td>Ask how credit performance is reported now.</td></tr>
+<tr><td>Funding</td><td>Warehouse and ABSF facilities; no new facility found in public sources since 2021.</td><td><span class="badge fact">Observed Fact</span></td><td><span class="badge hyp">Working Hypothesis</span> Newer facilities may exist but not be announced.</td></tr>
+<tr><td>Market</td><td>Australian alternative lending forecast to grow about 13.8% a year from 2025 to 2029; Prospa consolidating SME lending; ASIC scrutiny from Aug 2026.</td><td><span class="badge fact">Observed Fact</span></td><td>Growth with more competition and oversight.</td></tr>
+<tr><td>Minority holder</td><td>Enova Q2 2026: revenue US$929m (+22%); raised full-year outlook.</td><td><span class="badge fact">Observed Fact</span></td><td><span class="badge limit">Caution</span> OnDeck Australia is a 20% equity-accounted stake. Do not attribute Enova's results to it.</td></tr>
+</table></div>
+<p class="small">Correlation caution: growth in applications may reflect market conditions as much as company execution. No causation is claimed.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-records-246-yoy-jump-in-the-volume-of-broker-originated-loans/" title="OnDeck records 246% YoY jump in the volume of broker-originated loans, OnDeck Australia, 12 Dec 2024">OnDeck: broker loans +246%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-reports-high-levels-of-confidence-across-small-business-sector/" title="OnDeck reports high levels of confidence across small business sector, OnDeck Australia, 24 Feb 2025">OnDeck: Jan 2025 originations</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/rate-cuts-ignite-small-business-confidence-as-lending-surges-says-leading-lender/" title="Rate cuts ignite small business confidence as lending surges, OnDeck Australia, 28 May 2025">OnDeck: value funded +40%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/small-businesses-shift-from-survival-to-growth-ondeck-data-reveals/" title="Small businesses shift from survival to growth, OnDeck data reveals, OnDeck Australia, 4 Feb 2026">OnDeck: Dec quarter 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260129337278/en/Australia-Alternative-Lending-Business-Report-2025-Afterpay-and-Zip-Lead-BNPL-While-Prospa-Drives-Consolidation-in-SME-Lending---Forecast-to-2029---ResearchAndMarkets.com" title="Australia Alternative Lending Business Report 2025, ResearchAndMarkets via Businesswire, 29 Jan 2026">Businesswire: alt lending 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.enova.com/?p=11560" title="Enova reports second quarter 2026 results, Enova International, 23 Jul 2026">Enova: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1529864/000119312526060461/enva-20251231.htm" title="Enova International Form 10-K FY2025, SEC EDGAR, 2026">SEC: Enova 10-K FY2025</a></div>
+</section>
+
+<!-- ============ ROLE ============ -->
+<section id="role">
+<h2>Role Deconstruction: Manager, Reporting and Prioritisation</h2>
+<p>The JD describes a Sydney leader who reports to the Head of Data, Analytics and Reporting. The role combines enterprise reporting, portfolio prioritisation and performance management.</p>
+<div class="tablewrap"><table>
+<tr><th>Job wording</th><th>Underlying management problem</th><th>Likely success signal</th></tr>
+<tr><td>"Establish reporting standards, governance, and best practices"</td><td>Numbers differ by team and source; one person holds the knowledge</td><td>One agreed KPI set with owners and definitions</td></tr>
+<tr><td>"Develop and manage the prioritisation framework… Balance strategic value, customer impact, risk, regulatory obligations, and resource capacity"</td><td>Demand for data work exceeds 4 to 5 engineers; loudest voice wins</td><td>A visible, scored backlog that executives accept</td></tr>
+<tr><td>"Define and maintain enterprise KPIs, OKRs"</td><td>Growth targets exist but are not measured consistently</td><td>KPIs tied to strategy, reviewed on a set rhythm</td></tr>
+<tr><td>"Board-ready materials"; "Executive scorecards, portfolio health reports"</td><td>Board and funder packs are manual and slow</td><td>Shorter reporting cycle; fewer questions about the numbers</td></tr>
+<tr><td>"Support audit and regulatory reporting requirements"</td><td>ASIC and funder scrutiny is rising</td><td>Reports that can be traced to governed sources</td></tr>
+<tr><td>"Promote self-service analytics where appropriate"</td><td>The reporting team risks becoming a bottleneck</td><td>Routine questions answered without the team</td></tr>
+<tr><td>"Lead and develop a high-performing reporting and portfolio management team"</td><td>No team exists yet beyond one analyst</td><td>First hires made; capability visible within a year</td></tr>
+<tr><td>Power BI, Tableau, SQL, Snowflake, Fabric; Jira, Smartsheet, Confluence</td><td>Tooling matters less than capability (recruiter brief)</td><td>Hands-on credibility with the engineers</td></tr>
+</table></div>
+<div class="callout"><strong>Title and level:</strong> the JD says Manager; the recruiter brief says internal Director level, with the external title possibly "Senior Manager". <span class="badge hyp">Working Hypothesis</span> Confirm the level, as it affects pay, scope and who you present to. <strong>Non-negotiables from the recruiter brief:</strong> strong communicator at all levels, strategic, hands-on, tool-agnostic, people manager, ownership.</div>
+<div class="tablewrap"><table>
+<tr><th>#</th><th>Working Hypothesis</th><th>Support</th><th>Limiting evidence</th><th>What would validate it in interview</th></tr>
+<tr><td>H1</td><td>The role exists because growth has outrun a one-person reporting function.</td><td>+120% applications; one reporting person</td><td>May also be a planned restructure regardless of growth</td><td>"What breaks today when the numbers are late or disputed?"</td></tr>
+<tr><td>H2</td><td>Funders and lending governance make trusted KPIs a commercial necessity, not a nice-to-have.</td><td>Warehouse and ABSF funding; CRO from OnDeck US</td><td>Funder reporting may sit with Finance, not this role</td><td>"Which reports go to funders or the board, and who signs them off?"</td></tr>
+<tr><td>H3</td><td>ASIC's SME scrutiny raises the value of defensible, auditable reporting.</td><td>ASIC 2026-27 corporate plan; JD mentions regulatory reporting</td><td>Timing may be coincidental</td><td>"How is regulatory or audit reporting handled today?"</td></tr>
+<tr><td>H4</td><td>Prioritisation is needed because engineers (4 to 5) are a fixed capacity facing rising demand.</td><td>Recruiter brief; JD prioritisation scope</td><td>Engineering may be prioritised by Todd directly</td><td>"How is data and engineering work prioritised today, and who decides?"</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a> <span class="sep">|</span> Job description (Sep 2026) <span class="sep">|</span> Job Brief (22 Aug 2026)</div>
+</section>
+
+<!-- ============ STAGE 3 ============ -->
+<section id="stage3">
+<h2>Stage 3: Top 5 Experiences to Lead With</h2>
+<p>A first interview will probably test three things: can you make the numbers <strong>trusted</strong>, can you decide <strong>what matters most</strong> and defend it, and can you do it <strong>without becoming the bottleneck</strong>. These five stories cover those three, plus performance monitoring and executive influence.</p>
+
+<div class="story">
+  <div class="rank">1</div>
+  <h4>Trusted KPIs across business areas (Cisco, Data Solutions &amp; Insights Lead)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks you to "establish reporting standards, governance" and make reporting "timely, accurate, consistent". It answers the first half of the business problem: one trusted set of numbers (H1).</div>
+  <div class="star">
+    <b>S</b><span>Teams saw different numbers for the same KPI (1 to 5% gaps), causing 3 to 5 escalations a month.</span>
+    <b>T</b><span>Reduce inconsistency to zero and restore confidence in the numbers.</span>
+    <b>A</b><span>Moved logic from Power BI into shared SQL single-source views. Added plain-English data catalogues, master dashboards per business area and tripwire alerts for variances over 2%.</span>
+    <b>R</b><span><strong>27 KPIs from 62% to 100% consistency. Dashboards from 70+ to 46. Escalations from 3 to 5 a month to zero. Workspace health from 60% to 93%.</strong></span>
+  </div>
+  <div class="open">"The first thing I fix is whether people trust the number. At Cisco the same KPI showed different values depending on which dashboard you opened."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How do you make sure executives trust the reporting?" · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Trusted metrics and KPI Consistency"; portfolio case study 1.</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">2</div>
+  <h4>Business value cases and investment prioritisation (Cisco, Lead Analyst and roadmap owner)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD's prioritisation framework must "balance strategic value… and resource capacity" and "support investment planning and annual budgeting". It answers the "clear order of work" in the business problem (H4).</div>
+  <div class="star">
+    <b>S</b><span>IT programs were competing for investment, and senior leaders needed a clear basis for what to fund and deliver first.</span>
+    <b>T</b><span>Clarify expected value, savings, delivery priorities and trade-offs for each program.</span>
+    <b>A</b><span>Built business value cases, strengthened the analysis and benefit-measurement logic, streamlined analytics intake, and later owned a multi-year analytics roadmap.</span>
+    <b>R</b><span><strong>Value cases for $11M+ of IT programs. Business value case accuracy improved by 80%. Faster intake and better stakeholder satisfaction.</strong></span>
+  </div>
+  <div class="open">"I try to move prioritisation away from who asks loudest, towards value, risk, effort and capacity that everyone can see."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How do you prioritise competing requests?" · <strong>Source:</strong> Resume (Lead Analyst; Senior Business/Data Analyst; DS&amp;I Lead roadmap); SAFe 6 PO/PM certification. <span class="badge limit">Caution</span> No STAR Skills entry exists for this story. Write one before the interview.</div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">3</div>
+  <h4>Self-service rollout and ThoughtSpot commercial case (Cisco, FY24 to FY26)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks you to "promote self-service analytics" and targets "reduction in reporting cycle times". It answers the last clause of the business problem: without becoming a bottleneck.</div>
+  <div class="star">
+    <b>S</b><span>Analysts were swamped with simple requests, and the ThoughtSpot instance was cross-charged and capped.</span>
+    <b>T</b><span>Move simple demand to governed self-service at better value.</span>
+    <b>A</b><span>Built self-service on the same verified datasets as the executive KPIs, automated onboarding, and negotiated a direct vendor instance with other data leads.</span>
+    <b>R</b><span><strong>Users from 46 to 196 (+326%). Monthly queries from 8.1K to 19.2K. Data requests down 33%. Short-term dashboard projects avoided by 67%. The $70K option gave 2.9x better value.</strong></span>
+  </div>
+  <div class="open">"The way to stop a reporting team becoming a bottleneck is to give people trusted self-service for the simple questions."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How would you stop the team drowning in ad hoc requests?" · <strong>Source:</strong> Resume; STAR "Self-service analytics with ThoughtSpot" and "ThoughtSpot capacity uplift"; portfolio. <span class="badge limit">Figure conflict</span> Resume says 2.9x and "weekly active users"; STAR says 2.86x and "average end users". Master Resume used; say "roughly 2.9 times".</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">4</div>
+  <h4>Tripwire alerts and AI assistant for executive and operations teams (Cisco, DS&amp;I Lead)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks you to "monitor organisational performance", "identify trends, risks" and "introduce automation". A lender deciding in 12 minutes needs early warning, not month-end surprises.</div>
+  <div class="star">
+    <b>S</b><span>After layoffs, support-case spikes were handled reactively, and executives heard of issues before service owners did.</span>
+    <b>T</b><span>Alert the right teams early with enough context to act; no surprises for leadership.</span>
+    <b>A</b><span>Built standard-deviation tripwires on six months of case trends: 1.8 SD for operations, 2.0 SD for executives. Added a GPT-based assistant in Webex for on-demand summaries and Q&amp;A, with a QA process.</span>
+    <b>R</b><span><strong>Case-spike analysis from half a day to near-instant. Fewer escalations to the executive team.</strong></span>
+  </div>
+  <div class="open">"I set two alert thresholds, one for operations and one for executives, so each group sees what it needs, when it needs it."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How would you spot a performance problem before it reaches the board?" · <strong>Source:</strong> Resume; STAR "Developed an AI Assistant… Service Offering Tripwires"; portfolio case study 2.</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">5</div>
+  <h4>M5 MacBook Air executive decision case (Cisco, 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks you to "translate complex data into clear business insights and recommendations" for executives and boards, and to influence without authority.</div>
+  <div class="star">
+    <b>S</b><span>Rising RAM costs and tariffs made the new M5 MacBook Pro models much more expensive to supply.</span>
+    <b>T</b><span>Build executive confidence to adopt the M5 Air as the standard Mac.</span>
+    <b>A</b><span>Quantified CPU and RAM scores across Mac and Windows users, benchmarked the M5 Air, and forecast cost avoidance.</span>
+    <b>R</b><span><strong>Decision made to adopt the M5 Air as the standard. It meets 87%+ of global Mac users' needs at 1.5x the performance of the M4 MacBook Pro, 23% cheaper than the M5 14-inch and under half the cost of the 16-inch.</strong></span>
+  </div>
+  <div class="open">"I didn't talk processor specs. I framed it around users' needs, cost and the trade-off, so the decision was easy to make."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell us about influencing a senior decision with data." · <strong>Source:</strong> Resume; STAR "MacBookAir M5 Intro"; portfolio case study 4.</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+</div>
+
+<h3>Coverage check</h3>
+<div class="tablewrap"><table>
+<tr><th>JD requirement</th><th>Covered by</th><th>Strength</th></tr>
+<tr><td>Reporting strategy, standards, governance</td><td>1 (backup: Snowflake/DBT lineage and release cycles)</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Prioritisation framework, investment planning</td><td>2; SAFe 6 PO/PM; Jira Align</td><td><span class="badge hyp">Medium: needs a STAR entry</span></td></tr>
+<tr><td>KPIs, OKRs, performance monitoring</td><td>1, 4</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Executive reporting and influence</td><td>5, 2</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Board presentations</td><td>Not directly evidenced</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>Self-service, data literacy</td><td>3</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Trusted, governed data sources; audit support</td><td>1; data foundations story (42% warehouse reduction, zero disruptions)</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Automation and modern practice</td><td>4, 3</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>5+ years leadership; team building</td><td>Resume: led analysts, data scientists and engineers since 2019; ANZ Mentor of the Quarter (2023)</td><td><span class="badge hyp">Medium: STAR entry incomplete</span></td></tr>
+<tr><td>Financial services or regulated industry</td><td>Adjacent only: DIISR (A$1.64B grants), ACCC, privacy and European Works Council governance</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>Power BI, Tableau, SQL, Snowflake</td><td>1, 3; resume skills</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Smartsheet, Confluence, Fabric</td><td>Not evidenced</td><td><span class="badge hyp">Adjacent</span></td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Job description (Sep 2026) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026)</div>
+
+<h3>Gaps to prepare for</h3>
+<div class="two">
+<div class="qbox"><strong>1. No lending or financial services experience</strong>
+The JD prefers financial services or regulated industries. Your career is in enterprise IT and government.<br><em>Framing:</em> "I haven't worked in lending, but I've worked where numbers carry consequences: allocating $1.64B in research grants in government, product safety reporting at the ACCC, and employee data governed by privacy rules and the European Works Council. The discipline is the same: governed sources, clear ownership and numbers you can defend. I'd lean on Risk and Finance to learn the lending metrics fast."</div>
+<div class="qbox"><strong>2. Board exposure and Director-level leadership</strong>
+The JD wants board presentations and 5+ years of leadership, and the internal level is Director. Your STAR "Leading a data team" entry has no Situation or Result.<br><em>Framing:</em> "I've led a mixed team of analysts, data scientists and engineers since 2019, and I've presented investment cases to senior executives. I've hosted the IT Leadership Program at Cisco Live twice." Add one named coaching example, and be honest that board-level exposure has been through executives rather than direct.</div>
+</div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> Job description (Sep 2026)</div>
+
+<div class="notice"><strong>Not yet produced:</strong> the optional Stage 2 extras (8. Hypothesis Review, 9. Data and AI Opportunities, 10. Probing Questions, 11. Mandatory Final Judgement). They can be added to this report on request.</div>
+<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (28 Sep 2026), STAR Skills.docx (9 Sep 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>. The LinkedIn profile could not be read (it blocks automated access).</div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+<h2>Source Register</h2>
+<div class="tablewrap"><table>
+<tr><th>Source</th><th>Used for</th></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/company/" title="About Us (A$1.2b funded to date, leadership team), OnDeck Australia, accessed 29 Sep 2026">OnDeck: About us</a></td><td>Funded to date, leadership, Head of Data location, Lightning Score</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/" title="OnDeck Australia home page, loan tiers and eligibility, accessed 29 Sep 2026">OnDeck: loan tiers</a></td><td>Products, loan sizes, eligibility</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/careers/" title="Careers, OnDeck Australia, accessed 29 Sep 2026">OnDeck: Careers</a></td><td>Office address, hybrid model, benefits, values</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-records-246-yoy-jump-in-the-volume-of-broker-originated-loans/" title="OnDeck records 246% YoY jump in the volume of broker-originated loans, OnDeck Australia, 12 Dec 2024">OnDeck: broker loans +246%</a></td><td>Nov 2024 growth signal</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/ondeck-reports-high-levels-of-confidence-across-small-business-sector/" title="OnDeck reports high levels of confidence across small business sector, OnDeck Australia, 24 Feb 2025">OnDeck: Jan 2025 originations</a></td><td>Jan 2025 growth signal</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/rate-cuts-ignite-small-business-confidence-as-lending-surges-says-leading-lender/" title="Rate cuts ignite small business confidence as lending surges, OnDeck Australia, 28 May 2025">OnDeck: value funded +40%</a></td><td>Feb to Apr 2025 growth signal</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/press-releases/small-businesses-shift-from-survival-to-growth-ondeck-data-reveals/" title="Small businesses shift from survival to growth, OnDeck data reveals, OnDeck Australia, 4 Feb 2026">OnDeck: Dec quarter 2025</a></td><td>Dec quarter 2025 applications</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.ondeck.com.au/blog/business-loans/ondeck-ceo/" title="From the CEO: On track for continued growth, OnDeck Australia, 10 Oct 2017">OnDeck: CEO update 2017</a></td><td>1,000+ businesses by 2017</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/leading-us-small-business-lender-ondeck-expands-to-australia-300065854.html" title="Leading US small business lender OnDeck expands to Australia, PR Newswire, 2015">PR Newswire: Australia launch</a></td><td>Launch</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.mpamag.com/au/specialty/sme/ondeck-raises-loan-cap-and-adds-instant-renewals/569468" title="OnDeck raises loan cap and adds instant renewals, Mortgage Professional Australia, 24 Mar 2026">MPA: loan cap and renewals</a></td><td>Feb 2026 record, approval times, Instant Renewals</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.mpamag.com/au/news/general/ondeck-has-transformed-sme-lending/297919" title="OnDeck has transformed SME lending, Mortgage Professional Australia, 2020">MPA: transformed SME lending</a></td><td>Early model, broker growth</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://theadviser.com.au/lender/42489-ondeck-management-to-secure-majority-ownership" title="OnDeck management to secure majority ownership, The Adviser, 2 Feb 2022">The Adviser: management buyout</a></td><td>Buyout, ownership split, delinquencies</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.brokernews.com.au/news/breaking-news/management-buyout-at-sme-lender-ondeck-279511.aspx" title="Management buyout at SME lender OnDeck, Australian Broker News, Feb 2022">Broker News: buyout</a></td><td>2021 broker growth</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.abfjournal.com/enova-completes-acquisition-of-ondeck/" title="Enova completes acquisition of OnDeck, ABF Journal, Oct 2020">ABF Journal: Enova completes OnDeck</a></td><td>Enova acquisition</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://debanked.com/2021/02/enova-pleased-with-the-ondeck-acquisition-looking-to-divest-odx-ondeck-canada-ondeck-australia/" title="Enova pleased with the OnDeck acquisition, looking to divest ODX, OnDeck Canada, OnDeck Australia, deBanked, Feb 2021">deBanked: Enova on divesting</a></td><td>Divestment signal</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1529864/000119312526060461/enva-20251231.htm" title="Enova International Form 10-K FY2025, SEC EDGAR, 2026">SEC: Enova 10-K FY2025</a></td><td>Equity-method stake</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.enova.com/?p=11560" title="Enova reports second quarter 2026 results, Enova International, 23 Jul 2026">Enova: Q2 2026 results</a></td><td>Minority holder context</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.lawyersweekly.com.au/biglaw/23754-ondeck-warehouse-boosts-australian-fintech" title="OnDeck warehouse boosts Australian fintech, Lawyers Weekly, 6 Aug 2018">Lawyers Weekly: A$75m warehouse</a></td><td>A$75m warehouse</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.brokerdaily.au/lender/16080-ondeck-secures-30m-via-absf" title="OnDeck secures $30m via ABSF, Broker Daily, 24 Sep 2021">Broker Daily: ABSF A$30m</a></td><td>ABSF funding</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.theadviser.com.au/growth/36376-ondeck-secures-22m-funding-facility-from-gci" title="OnDeck secures $22m funding facility from GCI, The Adviser, 23 Jun 2017">The Adviser: GCI A$22.5m</a></td><td>GCI facility</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.theadviser.com.au/broker/48865-asic-flags-non-bank-sme-lending-scrutiny" title="ASIC flags non-bank SME lending scrutiny, The Adviser, 26 Aug 2026">The Adviser: ASIC scrutiny</a></td><td>Regulatory scrutiny</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.lend.com.au/ondeck-business-loan-review" title="On Deck Business Loans Review 2026, Lend.com.au, 2026">Lend: OnDeck review</a></td><td>Fees and eligibility (third-party)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/analytics-manager/sydney" title="Analytics Manager salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Analytics Manager</a></td><td>Pay benchmark</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-analytics/sydney" title="Head of Analytics salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Head of Analytics</a></td><td>Pay benchmark</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://jobs.fintechaustralia.org.au/companies/ondeck-australia" title="OnDeck Australia profile (61 employees, 130 Pitt St), FinTech Australia jobs board via search, undated; page now returns 404">FinTech Australia: company profile</a></td><td>Headcount (low confidence)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260129337278/en/Australia-Alternative-Lending-Business-Report-2025-Afterpay-and-Zip-Lead-BNPL-While-Prospa-Drives-Consolidation-in-SME-Lending---Forecast-to-2029---ResearchAndMarkets.com" title="Australia Alternative Lending Business Report 2025, ResearchAndMarkets via Businesswire, 29 Jan 2026">Businesswire: alt lending 2025</a></td><td>Market context</td></tr>
+<tr><td>Job description, Manager of Reporting &amp; Prioritisation (supplied, Sep 2026)</td><td>Role scope, KPIs, reporting line</td></tr>
+<tr><td>Job Brief, Reporting and Prioritisation (recruiter notes, 22 Aug 2026)</td><td>Why the role exists, team size, title, pay, interview process</td></tr>
+<tr><td>Master Resume (28 Sep 2026) · STAR Skills (9 Sep 2026)</td><td>Stage 3 stories and positioning</td></tr>
+</table></div>
+</section>
+
+<footer class="footer">
+<p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation in interview.</p>
+<p>Figures in AUD unless stated; Enova figures in USD. Enova data is context only and is not investment advice. Prepared 29 September 2026 for Adam Aziz's interview preparation. Version 2 (1 October 2026): Financial scale panel now stacks on mobile so the growth bars stay visible. Version 1 (29 September 2026): first release.</p>
+</footer>
+
+</main>
+</body>
+</html>

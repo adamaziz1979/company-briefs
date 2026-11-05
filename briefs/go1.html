@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Go1 — Director, Data Intelligence Executive Brief</title>
+<style>
+:root{
+  --ink:#17212b; --muted:#586573; --navy:#173a5e; --blue:#2f6f9f;
+  --pale:#eef4f8; --line:#d7e0e7; --fact:#e9f5ed; --infer:#fff4df;
+  --paper:#ffffff; --bg:#f3f6f8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+main{max-width:1120px;margin:0 auto;background:var(--paper);padding:44px 54px 70px}
+h1{font-size:34px;line-height:1.15;margin:0 0 7px;color:var(--navy)}
+h2{font-size:24px;margin:40px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line);color:var(--navy)}
+h3{font-size:18px;margin:26px 0 8px;color:var(--navy)}
+p{margin:8px 0 13px}
+ul{margin:8px 0 16px 22px;padding:0}
+li{margin:6px 0}
+.subtitle{color:var(--muted);font-size:15px;margin-bottom:24px}
+.hero{background:linear-gradient(135deg,#edf4f8,#f8fbfd);border:1px solid var(--line);border-left:6px solid var(--blue);padding:20px 22px;margin:22px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{border:1px solid var(--line);border-radius:8px;padding:16px 18px;background:#fff}
+.card h3{margin-top:0}
+.label{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:12px;padding:3px 8px;margin-right:6px}
+.fact{background:var(--fact);color:#245a36}
+.infer{background:var(--infer);color:#7a5619}
+.callout{background:var(--pale);border-left:5px solid var(--navy);padding:16px 18px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:16px 0 22px;font-size:13px}
+th{background:#eaf0f4;color:#24394c;text-align:left;padding:9px;border:1px solid #cbd7df}
+td{vertical-align:top;padding:9px;border:1px solid #d7e0e7}
+.phase{font-weight:700;color:var(--navy);white-space:nowrap}
+.refs{background:#f7f9fa;border-left:4px solid #8b99a5;padding:11px 14px;margin:16px 0 26px;font-size:12px;color:#4d5a66}
+.refs a{color:#1e5f8c;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.small{font-size:12px;color:var(--muted)}
+.executive-summary{font-size:16px}
+.kicker{text-transform:uppercase;letter-spacing:.08em;font-size:12px;font-weight:700;color:var(--blue)}
+@media(max-width:760px){
+  main{padding:28px 20px 48px}
+  .grid{grid-template-columns:1fr}
+  table{font-size:12px}
+}
+@media print{
+  body{background:#fff}
+  main{max-width:none;padding:18mm}
+  h2{page-break-after:avoid}
+  table,.card,.callout{page-break-inside:avoid}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Interview preparation | 18 July 2026</div>
+<h1>Go1 — Director, Data Intelligence</h1>
+<p class="subtitle">Executive company brief for an initial recruiter screening</p>
+
+<section class="hero">
+<h2 style="margin-top:0;border:0;padding:0">1-page executive brief</h2>
+<p class="executive-summary"><strong>Go1 is an Australian-founded, privately owned enterprise learning company that aggregates training content from more than 250 providers into a single subscription and integrates it into customers’ HR and learning technology.</strong> Founded in 2015, it scaled rapidly during the digital-learning boom, raised more than US$400 million, expanded into North America and Europe, and broadened its proposition through the acquisitions of Coorpacademy and Blinkist. Its current direction is to become an intelligent learning ecosystem rather than simply a large content catalogue: personalised recommendations, AI-assisted curation and learning delivered in the flow of work through tools such as Slack and Microsoft Teams.</p>
+<p><strong>The strategic story:</strong> Go1 first solved content fragmentation; then used venture capital to expand globally; then added new formats, regions and customer propositions through acquisitions; and is now using AI, metadata and behavioural signals to make learning more relevant and embedded. This progression has materially increased the complexity of customer, product, revenue, usage and content data.</p>
+<p><strong>Why this role now:</strong> The job description states that Go1 needs confidence in critical metrics, less reliance on local workarounds, clearer ownership of data, governed self-service and foundations for AI-assisted decision-making. The role reports to the CTO and leads analytics, data engineering and data science. This indicates an enterprise operating-model problem rather than a narrow reporting vacancy.</p>
+<p><strong>The real business problem:</strong> Go1 needs a common, trusted evidence layer connecting ARR, retention, churn, product adoption, customer health, learner behaviour and content performance. Without it, leaders may make customer, product and investment decisions from conflicting definitions and manually reconciled data. The role must create trust without centralising every question into a data-team queue.</p>
+<p><strong>Performance context:</strong> Go1 is private and does not publish continuous financial reporting. Public signals show strong historical investor support, a 2022 valuation above US$2 billion, acquisition-led expansion and reported annual revenue above US$100 million by 2024. However, current revenue growth, margins, cash generation, retention and valuation are not publicly verifiable. The hiring mandate suggests that the company’s next phase requires better operating discipline and commercial visibility as much as further product growth.</p>
+</section>
+
+<h2>Observed facts</h2>
+<ul>
+<li>Go1 was created in 2015 and describes itself as the world’s largest online learning library.</li>
+<li>Its core offer is a single subscription covering learning content from more than 250 providers.</li>
+<li>Go1 states that more than 10,000 organisations use its learning ecosystem.</li>
+<li>The platform integrates with customers’ HR and learning technology rather than depending solely on a standalone learning environment.</li>
+<li>Go1 raised more than US$100 million in June 2022, taking disclosed total funding above US$400 million and its valuation above US$2 billion.</li>
+<li>North America had become Go1’s largest market by 2022.</li>
+<li>Go1 acquired Coorpacademy in 2022 to strengthen its European reach and French- and German-language offering.</li>
+<li>Go1 acquired Blinkist in 2023, adding short-form mobile learning and a large consumer user base.</li>
+<li>Go1 launched AI-assisted search, curation, personalisation and recommendations, supported by large-scale learning-content and completion data.</li>
+<li>Morgan by Go1 delivers personalised learning through Slack and Microsoft Teams.</li>
+<li>The Director, Data Intelligence role reports to the CTO and leads analytics, data engineering and data science.</li>
+<li>The role’s published mandate includes trusted metrics, semantic layers, governed self-service, data products, data quality, lineage, ownership and AI-assisted decision-making.</li>
+</ul>
+<div class="refs"><strong>References:</strong>
+<a href="https://www.go1.com/about-us">Go1 About Us</a> |
+<a href="https://www.go1.com/">Go1 homepage</a> |
+<a href="https://www.go1.com/blog/go1-secures-fresh-support-after-year-of-record-growth">Go1 funding announcement, 9 June 2022</a> |
+<a href="https://job-boards.greenhouse.io/go1au/jobs/4703341005">Director, Data Intelligence job description</a>
+</div>
+
+<h2>Major turning points</h2>
+<div class="grid">
+<div class="card">
+<h3>1. Founding and content aggregation</h3>
+<p><span class="label fact">Observed fact</span> Go1 began in 2015 by consolidating workplace-learning content into one access point.</p>
+<p><strong>Why it mattered:</strong> It solved a procurement and administration problem for L&amp;D teams and created an ecosystem model involving customers, content providers and technology partners.</p>
+</div>
+<div class="card">
+<h3>2. Unicorn funding and global expansion</h3>
+<p><span class="label fact">Observed fact</span> Go1 raised US$200 million in 2021 and more than US$100 million in 2022, with valuation rising above US$2 billion.</p>
+<p><strong>Why it mattered:</strong> Capital accelerated geographic expansion, hiring, platform investment and acquisition activity, while raising expectations for scalable growth and operating visibility.</p>
+</div>
+<div class="card">
+<h3>3. Acquisition-led portfolio expansion</h3>
+<p><span class="label fact">Observed fact</span> Coorpacademy added European reach and multilingual content; Blinkist added short-form and mobile-first learning.</p>
+<p><strong>Why it mattered:</strong> Go1 moved beyond one enterprise content model into a broader portfolio with different user journeys, data structures and commercial signals.</p>
+</div>
+<div class="card">
+<h3>4. Shift from content breadth to intelligence</h3>
+<p><span class="label fact">Observed fact</span> Go1 introduced semantic search, recommendations, AI curation and workflow-integrated learning.</p>
+<p><strong>Why it mattered:</strong> Product value increasingly depends on metadata quality, behavioural evidence, relevance, personalisation and measurement—not merely catalogue size.</p>
+</div>
+<div class="card">
+<h3>5. Data trust becomes an executive mandate</h3>
+<p><span class="label fact">Observed fact</span> The company is recruiting a Director reporting to the CTO across analytics, engineering and data science.</p>
+<p><strong>Why it mattered:</strong> Data is being treated as operating and product infrastructure rather than a reporting support function.</p>
+</div>
+</div>
+
+<h2>Strategic evolution</h2>
+<table>
+<thead><tr><th>Phase</th><th>Business proposition</th><th>Strategic objective</th><th>Data implication</th></tr></thead>
+<tbody>
+<tr><td class="phase">Content aggregator</td><td>One access point for fragmented workplace-learning content.</td><td>Reduce vendor search, contracting and administration.</td><td>Reliable content, provider, customer and learner records.</td></tr>
+<tr><td class="phase">Subscription ecosystem</td><td>Broad content library under one enterprise subscription.</td><td>Scale recurring revenue and increase customer utility.</td><td>Consistent ARR, renewal, entitlement, usage and content-performance metrics.</td></tr>
+<tr><td class="phase">Global scale-up</td><td>International enterprise distribution through platforms and partners.</td><td>Expand North America, Europe and other markets.</td><td>Common definitions across currencies, regions, systems, channels and privacy regimes.</td></tr>
+<tr><td class="phase">Portfolio expansion</td><td>Enterprise, multilingual and short-form/mobile learning experiences.</td><td>Serve more learning moments and user types.</td><td>Reconcile identities, taxonomies, events, products and commercial models across acquisitions.</td></tr>
+<tr><td class="phase">AI-enabled learning</td><td>Personalised discovery, recommendations, curation and delivery in the flow of work.</td><td>Differentiate through relevance, ease and context.</td><td>Machine-readable semantics, governed metadata, trustworthy behavioural signals and AI evaluation.</td></tr>
+<tr><td class="phase">Current direction</td><td>Intelligent workforce-learning ecosystem.</td><td>Convert scale and content breadth into measurable customer and commercial advantage.</td><td>A trusted business spine connecting commercial, product, learner and customer-health evidence.</td></tr>
+</tbody>
+</table>
+<div class="callout"><strong>What Go1 appears to be becoming — strong inference:</strong> an intelligent learning-distribution layer that identifies relevant development needs, selects trusted content and delivers it inside the tools employees already use. The strategic asset is therefore not only content access; it is the combination of content, metadata, behavioural signals, integrations and decision intelligence.</div>
+
+<h2>Why the role exists now</h2>
+<p><span class="label infer">Strong inference</span><strong>Go1’s operating complexity has outgrown a conventional central analytics model.</strong></p>
+<p>The job description is unusually explicit: critical metrics need greater trust; local workarounds need to become less attractive; semantic layers and ownership need strengthening; domains need safe self-service; and evidence must be usable by AI systems. These are signs of a company where growth, acquisitions and product expansion have created multiple valid but insufficiently reconciled views of performance.</p>
+<p>The reporting line to the CTO suggests three simultaneous expectations:</p>
+<ul>
+<li>create an enterprise metric and semantic foundation;</li>
+<li>modernise the data operating model across central and domain teams; and</li>
+<li>make reliable evidence available for internal decisions and AI-enabled products.</li>
+</ul>
+<p><strong>Confidence:</strong> High. The role specification directly supports the diagnosis. What remains unknown is which issue is most urgent: commercial metric reconciliation, acquisition integration, team effectiveness, platform modernisation, or executive reporting.</p>
+
+<h2>The real business problem</h2>
+<div class="callout">
+<strong>Go1 needs a trusted, reusable evidence system that connects customer contracts, recurring revenue, retention, product adoption, learner behaviour, content performance and customer health—without turning the central data team into a reporting queue.</strong>
+</div>
+<p>The visible technical symptoms are likely to include conflicting definitions, unclear ownership, duplicated transformations, manual reconciliation, uneven data quality and uncontrolled self-service. The underlying business risk is slower or lower-confidence decisions about:</p>
+<ul>
+<li>which customers are healthy or at risk;</li>
+<li>which product behaviours drive renewal and expansion;</li>
+<li>which content and AI features create measurable value;</li>
+<li>where commercial forecasts are unreliable; and</li>
+<li>which investments should receive scarce product and engineering capacity.</li>
+</ul>
+
+<h2>How Go1 became what it is today</h2>
+<h3>1. It solved fragmentation rather than replacing every learning platform</h3>
+<p>Go1’s initial advantage was aggregation. It made content from many providers easier to buy, administer and access through a single subscription and through customers’ existing technology. This created a scalable ecosystem rather than a pure course-production business.</p>
+
+<h3>2. Digital learning demand and venture capital accelerated scale</h3>
+<p>The remote-work and digital-learning period strengthened demand for online workforce development. Go1 raised major funding rounds in 2021 and 2022, expanded internationally and became one of Australia’s best-known software unicorns. North America emerged as its largest market.</p>
+
+<h3>3. Acquisitions broadened geography, formats and users</h3>
+<p>Coorpacademy expanded Go1’s European and multilingual position. Blinkist added mobile-first, short-form learning and consumer-product capabilities. These moves increased the addressable market and learning formats, but also likely multiplied data models, identities, taxonomies and customer journeys.</p>
+
+<h3>4. Abundance created a discovery problem</h3>
+<p>Once a learning library becomes very large, the central customer problem changes from access to relevance. Go1 therefore invested in semantic search, recommendations, playlist generation, personalisation and AI-assisted administration.</p>
+
+<h3>5. Learning moved into the flow of work</h3>
+<p>Morgan and Go1’s integrations take learning into Slack, Microsoft Teams and the broader HR technology stack. This shifts the proposition from “visit a learning platform” to “receive relevant learning in the moment of need”.</p>
+
+<h3>6. Trusted data became a strategic dependency</h3>
+<p>At this stage, weak commercial definitions affect operating decisions, while weak metadata and behavioural signals affect customer-facing AI. Data quality, semantics, lineage and ownership are therefore part of both Go1’s internal management system and its product value proposition.</p>
+<div class="refs"><strong>References:</strong>
+<a href="https://www.go1.com/about-us">Go1 company history</a> |
+<a href="https://www.go1.com/blog/go1-secures-fresh-support-after-year-of-record-growth">2022 funding and market expansion</a> |
+<a href="https://www.businessnewsaustralia.com/articles/go1-acquires-swiss-french-edtech-coorpacademy-to-grow-european-footprint.html">Coorpacademy acquisition</a> |
+<a href="https://www.go1.com/blog/go1-acquires-blinkist-launching-a-new-model-of-learning">Blinkist acquisition</a> |
+<a href="https://www.go1.com/blog/introducing-gen-ai-the-future-of-personalized-learning-at-go1">Go1 AI</a> |
+<a href="https://www.go1.com/product/morgan">Morgan by Go1</a>
+</div>
+
+<h2>Business performance and market response</h2>
+<p><strong>Go1 is private, so there is no continuous share-price or statutory market disclosure against which to assess performance.</strong> The most useful public indicators are funding, valuation, reported revenue milestones, customer scale, acquisitions and product investment.</p>
+<table>
+<thead><tr><th>Signal</th><th>Observed evidence</th><th>What can reasonably be concluded</th></tr></thead>
+<tbody>
+<tr><td>Funding</td><td>More than US$400 million disclosed by June 2022.</td><td>Go1 had strong investor backing to pursue global growth, product development and acquisitions.</td></tr>
+<tr><td>Historical valuation</td><td>Above US$1 billion in 2021 and above US$2 billion in 2022.</td><td>Investor expectations rose rapidly during a favourable technology-capital cycle. This is not evidence of current valuation.</td></tr>
+<tr><td>Revenue milestone</td><td>The Australian Financial Review reported in August 2024 that Go1 had surpassed US$100 million in annual revenue and achieved key profitability metrics.</td><td>The company had reached meaningful commercial scale, although the underlying accounts, growth rate and profit definition are not publicly available.</td></tr>
+<tr><td>Customer scale</td><td>Go1 currently states that more than 10,000 organisations use its ecosystem.</td><td>The company has broad adoption and a substantial installed base from which retention, expansion and cross-product growth matter.</td></tr>
+<tr><td>Acquisitions</td><td>Coorpacademy in 2022 and Blinkist in 2023.</td><td>Growth was partly portfolio- and geography-led, increasing both strategic reach and integration complexity.</td></tr>
+<tr><td>Product investment</td><td>AI search, curation, recommendations, reporting assistants and Morgan.</td><td>Go1 continues to invest in product differentiation and workflow integration rather than competing only on content volume.</td></tr>
+<tr><td>Senior data recruitment</td><td>Enterprise-wide Director role reporting to the CTO.</td><td>The company appears to view data trust and decision infrastructure as a current scaling constraint.</td></tr>
+</tbody>
+</table>
+<p><strong>Market-response interpretation:</strong> Historical funding and valuation show strong confidence in Go1’s expansion story. The later emphasis on profitability, AI-enabled product value and trusted operating evidence suggests a transition from “growth through scale and breadth” toward “growth with clearer economics, integration and decision discipline”. This is a strong inference; private-company disclosure is too limited to assess present financial health conclusively.</p>
+<p><strong>Important unknowns:</strong> current ARR, net revenue retention, gross margin, cash generation, churn, customer concentration, acquisition synergies, current valuation and the degree to which AI features have changed retention or expansion.</p>
+<div class="refs"><strong>References:</strong>
+<a href="https://www.reuters.com/technology/online-library-go1-raises-200-mln-softbank-vision-fund-2-others-2021-07-19/">Reuters, July 2021 funding</a> |
+<a href="https://www.go1.com/blog/go1-secures-fresh-support-after-year-of-record-growth">Go1, June 2022 funding</a> |
+<a href="https://www.afr.com/technology/investors-back-unicorn-go1-ceo-swap-as-ipo-plans-emerge-20240818-p5k3cb">Australian Financial Review, August 2024</a> |
+<a href="https://www.go1.com/">Go1 current customer scale</a>
+</div>
+
+<h2>Chronological timeline by strategic phase</h2>
+<table>
+<thead><tr><th>Phase</th><th>Year</th><th>Event</th><th>Strategic impact / why it matters</th></tr></thead>
+<tbody>
+<tr><td class="phase" rowspan="2">Foundation</td><td>2015</td><td>Go1 created in Queensland.</td><td>Established a content-aggregation model aimed at simplifying enterprise learning procurement and access.</td></tr>
+<tr><td>2015–2020</td><td>Built an online learning library and distribution model integrated with customer learning environments.</td><td>Created the ecosystem foundations across customers, content providers, learners and technology partners.</td></tr>
+
+<tr><td class="phase" rowspan="3">Global scale</td><td>July 2021</td><td>Raised US$200 million at a valuation above US$1 billion.</td><td>Marked unicorn status and provided capital for international expansion, hiring and product investment.</td></tr>
+<tr><td>2021–2022</td><td>North America became Go1’s largest market.</td><td>Confirmed the company had moved beyond an Australian scale-up into a globally distributed SaaS business.</td></tr>
+<tr><td>June 2022</td><td>Raised more than US$100 million; disclosed total funding exceeded US$400 million and valuation exceeded US$2 billion.</td><td>Increased resources and investor expectations, while heightening the need for scalable commercial and operating controls.</td></tr>
+
+<tr><td class="phase" rowspan="2">Portfolio expansion</td><td>April 2022</td><td>Acquired Coorpacademy.</td><td>Expanded European reach, multilingual content and enterprise learning capabilities.</td></tr>
+<tr><td>May 2023</td><td>Acquired Blinkist.</td><td>Added short-form, mobile and consumer-style learning, broadening Go1’s user experience and data complexity.</td></tr>
+
+<tr><td class="phase" rowspan="3">AI intelligence</td><td>February 2024</td><td>Publicly detailed Go1 AI for search, recommendations, personalisation and curation.</td><td>Shifted differentiation from content breadth alone toward discovery, relevance and personalised learning.</td></tr>
+<tr><td>August 2024</td><td>Media reported annual revenue above US$100 million, key profitability milestones and a CEO structure change.</td><td>Suggested transition from founder-led hypergrowth toward a more conventional operating model and potential future liquidity options.</td></tr>
+<tr><td>2025–2026</td><td>Expanded AI assistants and introduced Morgan for Slack and Microsoft Teams.</td><td>Moved learning further into everyday workflows and made trusted metadata and behavioural evidence more central to product value.</td></tr>
+
+<tr><td class="phase">Trusted operating system</td><td>2026</td><td>Recruitment of Director, Data Intelligence reporting to the CTO.</td><td>Signals that metric trust, data ownership, governed self-service and AI-ready evidence have become enterprise-level priorities.</td></tr>
+</tbody>
+</table>
+
+
+<h2>Top 3 hypothesis reviews</h2>
+
+<div class="card" style="margin-bottom:18px">
+<h3>Hypothesis 1 — The role exists because Go1 lacks a sufficiently trusted commercial truth</h3>
+<p><strong>Hypothesis:</strong> Go1’s most immediate problem is inconsistent or insufficiently governed definitions across ARR, retention, churn, adoption and customer health.</p>
+<p><strong>Hard evidence:</strong> The role description explicitly prioritises trusted company metrics, semantic layers, ownership, lineage, self-service and reducing reliance on local workarounds.</p>
+<p><strong>Inference:</strong> Senior leaders and operating teams are likely spending too much time reconciling numbers before making decisions, particularly across Finance, Sales, Customer Success and Product.</p>
+<p><strong>Alternative explanation:</strong> The company may already have acceptable commercial reporting, with the role primarily intended to scale data products and AI capability rather than repair core metrics.</p>
+<p><strong>Confidence:</strong> High.</p>
+<p><strong>What would confirm it:</strong> The recruiter or CTO identifies conflicting ARR, churn, adoption or customer-health reporting as a current executive pain point; manual reconciliation is common; multiple teams maintain competing definitions.</p>
+<p><strong>What would disprove it:</strong> Go1 already has universally accepted commercial metrics and the first-year mandate is predominantly product analytics, machine learning or platform modernisation.</p>
+<p><strong>Conclusion:</strong> The role is likely expected to establish a governed commercial and customer evidence layer before broader AI and self-service ambitions can scale safely.</p>
+<p><strong>Interview relevance:</strong> Position your KPI consistency, dashboard consolidation, governance and executive decision-support experience as the closest analogue. Avoid claiming direct SaaS metric ownership that is not in your background.</p>
+</div>
+
+<div class="card" style="margin-bottom:18px">
+<h3>Hypothesis 2 — Acquisitions and global expansion have created operating-model and data-integration complexity</h3>
+<p><strong>Hypothesis:</strong> Go1’s acquisitions, international growth and expanding product portfolio have created fragmented systems, taxonomies, ownership and reporting practices.</p>
+<p><strong>Hard evidence:</strong> Go1 expanded rapidly across North America and Europe, acquired Coorpacademy and Blinkist, and now operates across enterprise learning, short-form learning, partners, integrations and AI-enabled experiences.</p>
+<p><strong>Inference:</strong> Different products and regions may use different customer identities, product events, content taxonomies and commercial definitions, making enterprise-wide analysis difficult.</p>
+<p><strong>Alternative explanation:</strong> The acquired businesses may already be well integrated, and the current challenge may instead stem from organic growth or an outdated central data model.</p>
+<p><strong>Confidence:</strong> Medium to high.</p>
+<p><strong>What would confirm it:</strong> Separate data platforms or metric definitions remain across Blinkist, Coorpacademy or regions; executive reporting requires cross-system reconciliation; domain ownership is unclear.</p>
+<p><strong>What would disprove it:</strong> Go1 has completed technical and semantic integration, with acquisitions operating on common customer, product and finance models.</p>
+<p><strong>Conclusion:</strong> The successful leader may need to create a federated model that preserves useful domain autonomy while establishing shared enterprise definitions and controls.</p>
+<p><strong>Interview relevance:</strong> Emphasise your experience working across engineering, governance, privacy and globally distributed stakeholder groups, and your ability to improve consistency without forcing every team into one delivery process.</p>
+</div>
+
+<div class="card" style="margin-bottom:18px">
+<h3>Hypothesis 3 — Go1’s AI strategy is increasing the value and urgency of governed data foundations</h3>
+<p><strong>Hypothesis:</strong> Go1’s move into AI recommendations, semantic search, curation and workflow-based learning has made metadata quality, behavioural evidence and machine-readable definitions a strategic product dependency.</p>
+<p><strong>Hard evidence:</strong> Go1 publicly promotes AI-assisted search, curation, recommendations, reporting support and Morgan, while the role description explicitly references AI-assisted decision-making and trusted data foundations.</p>
+<p><strong>Inference:</strong> The company needs stronger provenance, evaluation, ownership and quality controls because unreliable data could degrade both internal decisions and customer-facing AI experiences.</p>
+<p><strong>Alternative explanation:</strong> AI may be a secondary element of the role, with the immediate priority remaining conventional analytics and data engineering.</p>
+<p><strong>Confidence:</strong> High that AI raises the importance of trusted data; medium regarding how much of the first-year mandate will be AI-specific.</p>
+<p><strong>What would confirm it:</strong> The CTO identifies AI readiness, recommendation quality, content metadata or model evaluation as a major priority; the team owns data products used directly by AI systems.</p>
+<p><strong>What would disprove it:</strong> AI product teams operate independently and this role is confined to internal BI, commercial metrics and platform reliability.</p>
+<p><strong>Conclusion:</strong> The role likely needs to build the semantic and governance layer that allows Go1 to scale AI without multiplying risk, inconsistency or opaque decision-making.</p>
+<p><strong>Interview relevance:</strong> Connect your AI assistant, telemetry-based decisioning, token-efficiency work and governance experience to business value and trust. Present AI as a decision capability, not a technology demonstration.</p>
+</div>
+
+<h2>Top 3 probing questions</h2>
+
+<div class="qcard">
+<h4>1. What specific executive decision is hardest to make confidently today because the underlying data or metric definitions are not trusted?</h4>
+<p><strong>Why ask it:</strong> This reveals the real business pain behind the role and identifies whether the priority is ARR, retention, forecasting, customer health, product adoption or another domain.</p>
+<p><strong>What to listen for:</strong> Reconciliation effort, delayed decisions, disagreements between functions, private spreadsheets, unclear metric ownership and examples of commercial consequences.</p>
+</div>
+
+<div class="qcard">
+<h4>2. At the end of the first 12 months, what would the CTO and executive team need to see to conclude that the data operating model is materially better?</h4>
+<p><strong>Why ask it:</strong> This tests whether success is defined as platform delivery, trusted metrics, team transformation, better decisions, AI readiness or a combination of these.</p>
+<p><strong>What to listen for:</strong> Measurable outcomes, executive sponsorship, sequencing, appetite for organisational change and whether the role has authority to change ownership and ways of working.</p>
+</div>
+
+<div class="qcard">
+<h4>3. How do you expect responsibility to be divided between the central Data Intelligence team and business or product domains?</h4>
+<p><strong>Why ask it:</strong> The role description promotes both shared truth and distributed self-service. This question exposes whether Go1 has a realistic federated model or expects the central team to own every data problem.</p>
+<p><strong>What to listen for:</strong> Named domain owners, decision rights, data-product accountability, governance forums, embedded analysts, semantic ownership and the central team’s ability to decline low-value reporting work.</p>
+</div>
+
+<h2>Final judgement</h2>
+
+<div class="callout">
+<h3 style="margin-top:0">Why this role exists now</h3>
+<p>Go1 has reached a stage where global scale, acquisitions, a broader product portfolio and AI-enabled learning have made fragmented data practices commercially costly. The company now needs an enterprise leader who can turn data from a collection of reports and local interpretations into trusted operating infrastructure.</p>
+</div>
+
+<div class="callout">
+<h3 style="margin-top:0">The business problem the hire is expected to solve</h3>
+<p>The hire is expected to establish a common evidence layer across recurring revenue, retention, customer health, adoption, learner behaviour and content performance; clarify ownership; enable governed self-service; and ensure that both leaders and AI systems use consistent, explainable data.</p>
+</div>
+
+<div class="callout">
+<h3 style="margin-top:0">Why the candidate is credible</h3>
+<p>Adam’s strongest evidence is directly relevant to the core mandate: improving consistency across critical KPIs, eliminating duplicate reporting, scaling self-service adoption, leading analysts, data scientists and engineers, improving data quality and governance, and connecting analytics and AI to measurable commercial and operational outcomes. His background demonstrates the ability to build trust and decision capability across a complex global technology environment.</p>
+</div>
+
+<div class="callout">
+<h3 style="margin-top:0">What could prevent selection</h3>
+<p>The principal risks are limited direct ownership of SaaS commercial metrics such as ARR and net revenue retention, uncertainty about the scale of formal people leadership, and the need to prove adaptability after a long tenure at Cisco. Selection will depend on showing that the underlying leadership capability is transferable: defining trusted metrics, changing operating behaviour, influencing senior executives, leading multidisciplinary teams and linking data work to customer and commercial decisions.</p>
+</div>
+
+<p class="small">Prepared from public sources available on 18 July 2026. “Observed fact” denotes directly supported public information. “Strong inference” denotes a conclusion supported by several facts but not explicitly confirmed by Go1. Private-company financial data remains limited.</p>
+</main>
+</body>
+</html>

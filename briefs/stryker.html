@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stryker: Company, Role and Recruitment Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
+  --line:#dfe3e7; --soft:#f8f9fa; --gold:#f5b400; --gold2:#fff6d8;
+  --green:#236b45; --greenbg:#eaf5ee; --blue:#245b88; --bluebg:#edf4fa;
+  --orange:#8a5b00; --orangebg:#fff4dc; --red:#8b2f2f; --redbg:#faecec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Aptos,Arial,sans-serif;line-height:1.58}
+main{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{position:relative;background:#101214;color:#fff;padding:48px 56px 38px;border-top:7px solid var(--gold)}
+.site-link{position:absolute;top:16px;right:24px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#101214;background:var(--gold);text-decoration:none;border-radius:999px;padding:6px 12px;line-height:1}
+.site-link:hover{filter:brightness(1.08);text-decoration:underline}
+.site-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-link svg{width:12px;height:12px}
+@media (max-width:560px){.site-link{position:static;margin-bottom:14px}}
+@media print{.site-link{color:#101214}.site-link::after{content:" (" attr(href) ")";font-weight:400}}
+.hero .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#c7ccd2;font-weight:600}
+.hero h1{font-size:38px;line-height:1.1;margin:8px 0 10px}
+.hero h1 span{color:var(--gold)}
+.hero .sub{max-width:890px;color:#d4d8dc;font-size:16px}
+.hero .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:#b8bec5}
+.hero .meta .badge{margin-right:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);padding:10px 54px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-size:12px;color:#353a40;text-decoration:none;font-weight:600}
+.nav a:hover{color:#000;text-decoration:underline}
+section{padding:34px 56px 6px}
+h2{font-size:27px;margin:0 0 16px;border-bottom:2px solid var(--line);padding-bottom:9px}
+h3{font-size:19px;margin:27px 0 9px}
+h4{font-size:15px;margin:18px 0 7px}
+p{margin:8px 0 12px}
+.small{font-size:12px;font-weight:300;color:var(--muted)}
+.lead{font-size:16px;line-height:1.62}
+.thesis{background:#1b1e22;color:#eef0f2;border-left:7px solid var(--gold);border-radius:10px;padding:22px 26px;margin:6px 0 10px;font-size:15.5px}
+.thesis strong{color:var(--gold)}
+.thesis .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aeb5bc;margin-bottom:6px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.card{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:15px}
+.card .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.card .v{font-size:26px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
+.card .n{font-size:12px;font-weight:300;color:var(--muted);margin-top:4px}
+.callout{margin:17px 0;padding:15px 17px;border-left:5px solid #5d6670;background:#f5f7f8}
+.callout.gold{border-color:var(--gold);background:var(--gold2)}
+.callout.warn{border-color:#b47b00;background:#fff6e4}
+.problem{font-size:19px;font-weight:700;line-height:1.45;margin:12px 0;padding:18px 20px;border:2px solid var(--gold);border-radius:10px;background:#fffdf5}
+.badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;border-radius:999px;padding:3px 8px;margin-right:5px;vertical-align:1px;white-space:nowrap}
+.fact{color:var(--green);background:var(--greenbg)}
+.infer{color:var(--blue);background:var(--bluebg)}
+.hyp{color:var(--orange);background:var(--orangebg)}
+.limit{color:var(--red);background:var(--redbg)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{background:#eef1f3;text-align:left;font-size:12px;padding:9px;border:1px solid #d5dbe0}
+td{padding:9px;border:1px solid #dce1e5;vertical-align:top}
+td.num{white-space:nowrap}
+ul{margin-top:7px}
+li{margin:5px 0}
+.phase{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:14px 0}
+.phase:first-of-type{border-top:0}
+.phase .label{font-weight:700}
+.refs{margin:18px 0 8px;padding:11px 14px;border-left:4px solid #9aa2aa;background:#f7f8f9;font-size:11.5px;color:#535b64}
+.refs a{color:#174f85;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.refs{line-height:1.7}
+.refs .sep{color:#9aa2aa;margin:0 5px}
+.refs.dark .sep{color:#5d6670}
+.refs.dark{background:#1c2024;border-left-color:#5d6670;color:#aeb5bc;margin-top:14px}
+.refs.dark a{color:#9ec5ec}
+button{font-family:inherit}
+svg text{font-family:Lexend,Aptos,Arial,sans-serif}
+td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
+.metricbars{display:grid;gap:9px;margin:16px 0}
+.metricrow{display:grid;grid-template-columns:90px 1fr 75px;gap:10px;align-items:center;font-size:12px}
+.barbg{height:12px;background:#eceff1;border-radius:8px;overflow:hidden}
+.bar{height:100%;background:#8c4747;border-radius:8px}
+.tag{font-weight:700;text-align:right}
+.timeline td:first-child{white-space:nowrap;font-weight:700}
+.footer{margin-top:34px;padding:24px 56px 50px;border-top:1px solid var(--line);font-size:11.5px;color:#636b74}
+.notice{font-size:12.5px;border:1px solid #e2c66b;background:#fff9e7;border-radius:8px;padding:12px 14px;margin:14px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qbox{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;background:#fff}
+.qbox strong{display:block;margin-bottom:4px}
+.story{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0;background:#fff;position:relative}
+.story .rank{position:absolute;top:16px;right:18px;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#101214;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.story h4{margin:0 0 8px;font-size:16.5px;padding-right:50px}
+.story .why{font-size:13.5px;margin:6px 0 10px}
+.star{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;font-size:13.5px;margin:8px 0}
+.star b{color:#fff;background:#3a4047;border-radius:5px;text-align:center;font-size:12px;padding:2px 0;height:22px}
+.story .open{border-left:4px solid var(--gold);background:var(--gold2);padding:9px 12px;font-style:italic;margin:10px 0 6px;font-size:14px}
+.story .meta2{font-size:12px;color:var(--muted)}
+.chartbox{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px;margin:18px 0 22px}
+.chartbox .title{font-weight:700;font-size:14px;margin-bottom:6px}
+.chartcap{font-size:11px;font-weight:300;color:var(--muted);margin-top:6px}
+.stock-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.stock-ranges{display:flex;gap:6px;flex-wrap:wrap}
+.stock-ranges button{appearance:none;border:1px solid #ccd2d8;background:#fff;color:#353a40;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:600;cursor:pointer}
+.stock-ranges button.active{background:#202428;color:#fff;border-color:#202428}
+.stock-ranges button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.stock-chart-wrap{position:relative}
+#sykChart{width:100%;height:300px;display:block;touch-action:pan-y}
+.stock-tooltip{position:absolute;pointer-events:none;background:#111;color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;line-height:1.35;transform:translate(-50%,-115%);white-space:nowrap;display:none;z-index:2}
+.stock-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend b{color:var(--ink)}
+/* Executive infographic */
+.info{background:#101214;color:#eef0f2;border-radius:14px;padding:26px 26px 22px;margin:8px 0 10px;border-top:6px solid var(--gold)}
+.info h2{color:#fff;border-bottom:1px solid #2e3338;font-size:24px}
+.info .ik{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#f5b400;font-weight:600;margin:20px 0 9px}
+.itiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.itile{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:12px 13px}
+.itile .v{font-size:26px;font-weight:700;color:#fff;line-height:1.15;letter-spacing:-.01em}
+.itile .l{font-size:12px;font-weight:300;color:#b8bec5;margin-top:5px}
+.itile.neg .v{color:#ff9d8f}
+.itrack{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-top:18px}
+.itrack:before{content:"";position:absolute;left:4%;right:4%;top:24px;height:3px;background:linear-gradient(90deg,#5d6670,#f5b400 60%,#d9534f)}
+.istop{position:relative;text-align:center;font-size:11.5px;color:#cfd4d9;padding-top:18px}
+.istop:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#f5b400;border:3px solid #101214}
+.istop.shock:before{background:#d9534f}
+.istop b{display:block;color:#fff;font-size:13px}
+.ichev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ichev div{background:#2a2f35;padding:12px 14px 12px 22px;clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%,6% 50%);font-size:12px;color:#cfd4d9}
+.ichev div:first-child{clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%);padding-left:14px}
+.ichev div:last-child{background:#f5b400;color:#101214}
+.ichev b{display:block;font-size:13.5px;color:#fff}
+.ichev div:last-child b{color:#101214}
+.icols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ibox{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:13px 15px;font-size:12.5px;color:#d4d8dc}
+.ibox ul{margin:4px 0 0;padding-left:18px}
+.ibox li{margin:4px 0}
+.hrow{display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;margin:7px 0}
+.conf{height:8px;border-radius:6px;background:#2e3338;overflow:hidden}
+.conf i{display:block;height:100%;background:#f5b400}
+.hrow small{grid-column:1/-1;color:#8f979f;margin-top:-5px}
+.iproof{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.iproof div{background:#1c2024;border:1px solid #2e3338;border-left:4px solid #f5b400;border-radius:8px;padding:10px 11px;font-size:11.5px;color:#aeb5bc}
+.iproof b{display:block;color:#fff;font-size:15px;line-height:1.25;margin-bottom:3px}
+.iproof em{display:block;font-style:normal;color:#f5b400;font-weight:600;margin-top:4px;font-size:11px}
+.iq{margin-top:18px;border:2px solid #f5b400;border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
+.info .src{font-size:10.5px;color:#8f979f;margin-top:12px}
+@media (max-width:900px){
+  .itiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itrack{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+  .itrack:before{display:none}
+  .ichev,.icols{grid-template-columns:1fr}
+  .ichev div,.ichev div:first-child{clip-path:none;padding-left:14px;border-radius:8px}
+  .iproof{grid-template-columns:1fr 1fr}
+  .info{padding:20px 16px}
+}
+@media (max-width:560px){.iproof,.itiles{grid-template-columns:1fr}.itrack{grid-template-columns:1fr 1fr}}
+@media print{.info{-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .hero,section,.footer{padding-left:20px;padding-right:20px}
+  .nav{padding-left:20px;padding-right:20px;gap:12px}
+  .phase{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}#sykChart{height:260px}.problem{font-size:17px}}
+@media print{
+  body{background:#fff}
+  main{box-shadow:none;max-width:none}
+  .nav,.stock-ranges{display:none}
+  section{padding-top:24px}
+  a{color:inherit}
+  .card,.qbox,.callout,.refs,.story,.chartbox,.thesis{break-inside:avoid}
+  tr{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <a class="site-link" href="https://www.stryker.com/au/en/index.html" target="_blank" rel="noopener" title="Stryker Australia and New Zealand website">stryker.com/au <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
+  <h1><span>Stryker</span>: Company, Role and Recruitment Brief</h1>
+  <div class="sub">Senior Lead Data Analyst (Sydney, hybrid) | Executive infographic, Stage 1 executive briefing, compensation and headcount, Stage 2 company dossier (sections 1 to 7), role deconstruction and Stage 3 top five experiences to lead with.</div>
+  <div class="meta">
+    <span>Prepared: 28 September 2026 (version 5, updated 29 September 2026)</span>
+    <span>Candidate: Adam Aziz</span>
+    <span>Currency: USD for company figures; AUD for pay</span>
+    <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Report sections">
+  <a href="#infographic">Infographic</a>
+  <a href="#stage1">Stage 1</a>
+  <a href="#pay">Pay &amp; headcount</a>
+  <a href="#stage2">Stage 2</a>
+  <a href="#stock">Stock</a>
+  <a href="#role">Role</a>
+  <a href="#stage3">Stage 3</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="thesis">
+<div class="thesis">
+  <div class="k">Executive Summary</div>
+  Stryker is a $25bn medtech business that has used acquisitions to shift towards higher-growth segments like peripheral vascular, robotics and connected care. 2026 has shown the cost of that complexity: a <strong>global cyberattack in March</strong> and a <strong>peripheral vascular supply backlog</strong> that has cut about 26% from its market value over the year. The ANZ Data &amp; Analytics team is hiring a <strong>strategic partner</strong> and a <strong>platform technical lead</strong> at the same time, while it moves to Microsoft Fabric and Databricks. The Senior Lead Data Analyst sits where those two meet. The job is to turn data into <strong>trusted, dollar-quantified decisions</strong> while the systems, structure and definitions underneath keep changing.
+</div>
+
+<div class="refs"><strong>References:</strong> Summary of Stage 1 and section 7; these links support the specific claims. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a></div>
+</section>
+
+<!-- ============ INFOGRAPHIC ============ -->
+<section id="infographic">
+<div class="info" role="region" aria-label="Executive infographic">
+  <h2>Stryker at a glance: why this role, why now, why me?</h2>
+
+  <div class="ik">Observed facts</div>
+  <div class="itiles">
+    <div class="itile"><div class="v">$25.1bn</div><div class="l">FY2025 net sales, +10.3% organic</div></div>
+    <div class="itile"><div class="v">9.0%</div><div class="l">Q2 2026 organic growth, after 2.4% in Q1</div></div>
+    <div class="itile"><div class="v">~56,000</div><div class="l">Global employees (Dec 2025)</div></div>
+    <div class="itile"><div class="v">1,000+</div><div class="l">Stryker Australia employees (CY2024); Sydney is HQ</div></div>
+    <div class="itile neg"><div class="v">-31%</div><div class="l">Share price vs 52-week high (25 Sep 2026)</div></div>
+  </div>
+
+  <div class="ik">Turning points</div>
+  <div class="itrack">
+    <div class="istop"><b>2013</b>Mako robotics</div>
+    <div class="istop"><b>2020</b>Wright Medical</div>
+    <div class="istop"><b>2022 to 2024</b>Vocera, care.ai: software</div>
+    <div class="istop"><b>2025</b>Inari in, US spine out</div>
+    <div class="istop shock"><b>Mar 2026</b>Global cyberattack</div>
+    <div class="istop shock"><b>Sep 2026</b>PV supply issue runs into Q4</div>
+  </div>
+
+  <div class="ik">Strategic evolution</div>
+  <div class="ichev">
+    <div><b>Diversified device maker</b>Division-led growth, divisional reporting</div>
+    <div><b>Portfolio reshaped by acquisitions</b>Robotics, software, vascular; more data estates</div>
+    <div><b>Runs on data and systems</b>New ERP, Fabric/Databricks, trusted KPIs in dollars</div>
+  </div>
+
+  <div class="icols" style="margin-top:4px">
+    <div>
+      <div class="ik">Why the role exists now</div>
+      <div class="ibox">
+        <ul>
+          <li><b>Team build-out:</b> sister roles split "partner the business" from "lead the platform" (Aug 2026).</li>
+          <li><b>Platform shift:</b> ANZ D&amp;A moving to Microsoft Fabric and Databricks.</li>
+          <li><b>Pressure for evidence:</b> the cyberattack, supply backlog, reorganisation and ERP all demand trusted, quantified decisions.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="ik">Key working hypotheses</div>
+      <div class="ibox">
+        <div class="hrow"><span>D&amp;A is moving from reporting to commercial decision partner</span><div class="conf" aria-label="Medium-high confidence"><i style="width:75%"></i></div><small>Medium-high confidence. Test: "What decisions should this role change in year one?"</small></div>
+        <div class="hrow"><span>KPI definitions are unsettled by the reorganisation and ERP</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: "How many versions of sales or margin do leaders see today?"</small></div>
+        <div class="hrow"><span>Supply and forecasting analytics are rising in priority</span><div class="conf" aria-label="Low-medium confidence"><i style="width:40%"></i></div><small>Low-medium; PV is a global issue. Test: "Does ANZ D&amp;A support supply or demand planning?"</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ik">Candidate positioning: five proof points</div>
+  <div class="iproof">
+    <div><b>62% to 100%</b>KPI consistency across 27 KPIs; escalations to zero<em>Governance and trust</em></div>
+    <div><b>2.9x value</b>ThoughtSpot case; users 46 to 196<em>Financial acumen, adoption</em></div>
+    <div><b>End-to-end ML</b>Anomaly detection for laptop refresh; millions in potential savings<em>Project to deployment</em></div>
+    <div><b>$4.3M</b>Productivity saved via root cause across 34.4K staff<em>Root cause leadership</em></div>
+    <div><b>87%+ users</b>M5 Air case adopted as the Mac standard<em>Executive influence</em></div>
+  </div>
+
+  <div class="iq">"How do we turn Stryker ANZ's data into trusted, dollar-quantified decisions for business leaders, while the platform, the ERP and the org structure are all changing underneath us?"</div>
+
+<div class="refs dark"><strong>References:</strong> Hypotheses are Working Hypotheses to validate in interview; confidence bars are qualitative. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000025/sykex991earningsq12026.htm" title="Q1 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 2026">SEC: Q1 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.stryker.com/content/dam/stryker/australia-new-zealand/cr-hub-files/2024%20Stryker%20Australia%20Modern%20Slavery%20Statement.pdf" title="Stryker Australia Modern Slavery Statement 2024, Stryker Australia, CY2024 reporting period">Stryker AU: Modern Slavery Statement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026)</div>
+</div>
+</section>
+
+<!-- ============ STAGE 1 ============ -->
+<section id="stage1">
+<h2>Stage 1: One-page Executive Briefing</h2>
+
+<h3>Company in one paragraph</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span> Stryker is a NYSE-listed medical technology company with <strong>$25.1bn in FY2025 net sales</strong> across two segments: MedSurg &amp; Neurotechnology (62%) and Orthopaedics (38%). It sells implants, instruments, capital equipment (including Mako surgical robots), disposables and connected-care software to hospitals, surgeons and health systems. Revenue mixes capital sales with recurring procedure and consumable volume.
+<span class="badge infer">Strong Inference</span> Since 2020 it has used large acquisitions to shift towards higher-growth segments and sold slower businesses. <span class="badge fact">Observed Fact</span> In 2026 the priority is to keep about 9% organic growth while recovering from a major cyberattack and a peripheral vascular supply backlog.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">FY2025 net sales</div><div class="v">$25.1bn</div><div class="n">+11.2% reported, +10.3% organic</div></div>
+  <div class="card"><div class="k">Q2 2026 organic growth</div><div class="v">9.0%</div><div class="n">After 2.4% in cyber-hit Q1</div></div>
+  <div class="card"><div class="k">Global employees</div><div class="v">~56,000</div><div class="n">At 31 Dec 2025</div></div>
+  <div class="card"><div class="k">Share price vs 52-wk high</div><div class="v">-31%</div><div class="n">$272 vs $393 high (25 Sep 2026)</div></div>
+</div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a></div>
+<h3>Observed Facts</h3>
+<div class="tablewrap"><table>
+<tr><th>Area</th><th>Fact</th><th>Interview relevance</th></tr>
+<tr><td>Scale</td><td><span class="badge fact">Fact</span> FY2025 sales $25.1bn (+11.2%, 10.3% organic). Adjusted operating margin 26.3%, up 100bps.</td><td>Organic growth near 10% on a $25bn base, with margin as a stated focus. Analysis has to quantify dollars.</td></tr>
+<tr><td>2026 trading</td><td><span class="badge fact">Fact</span> Q1 organic growth 2.4%. Q2 organic 9.0% on $6.6bn sales. FY2026 organic guidance narrowed to 8.3% to 9.3%.</td><td>A recovery year with little room for misses.</td></tr>
+<tr><td>Cyber</td><td><span class="badge fact">Fact</span> On 11 Mar 2026 attackers abused Microsoft Intune admin access and wiped devices. Manufacturing, ordering and shipping were disrupted in 79 countries.</td><td>Data trust, continuity and governance are now board-level issues.</td></tr>
+<tr><td>Market</td><td><span class="badge fact">Fact</span> Shares fell 8.8% on 8 Sep after the CFO said peripheral vascular supply problems would run into Q4. Now about $272, close to the 52-week low.</td><td>Supply, demand and backorder visibility is under investor scrutiny.</td></tr>
+<tr><td>Structure</td><td><span class="badge fact">Fact</span> New President &amp; COO (Spencer Stiles) from 1 Jan 2026. Q1 2026 reorganisation created "Ortho Tech", combining orthopaedic instruments with Mako.</td><td>Reporting hierarchies and KPI definitions are being restated.</td></tr>
+<tr><td>Systems</td><td><span class="badge fact">Fact</span> The FY2025 10-K calls the new ERP implementation a "major undertaking". Accenture was reported as the SAP S/4HANA partner (date to verify).</td><td>Source-system change drives work on definitions, lineage and migration.</td></tr>
+<tr><td>ANZ D&amp;A team</td><td><span class="badge fact">Fact</span> In Aug 2026 two sister roles were advertised in Sydney/Melbourne. One is "Strategic Partnering" to the Medical business, the other a "Technical Lead" driving Microsoft Fabric and Databricks adoption.</td><td>The team is expanding and modernising its platform at the same time.</td></tr>
+</table></div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000025/sykex991earningsq12026.htm" title="Q1 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 2026">SEC: Q1 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.hipaajournal.com/stryker-cyberattack-iran/" title="Stryker cyberattack, HIPAA Journal, Mar 2026">HIPAA Journal: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-names-Spencer-Stiles-President-and-Chief-Operating-Officer/default.aspx" title="Stryker names Spencer Stiles President and Chief Operating Officer, Stryker Investor Relations, 2025">Stryker IR: COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm" title="Form 8-K: Ortho Tech segment reorganisation, SEC EDGAR, 26 Jun 2026">SEC: Ortho Tech 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://infotechlead.com/digital/accenture-deploy-sap-s4hana-solution-strykers-erp-system-40795" title="Accenture to deploy SAP S/4HANA for Stryker&#x27;s ERP system, InfoTechLead, date to verify">InfoTechLead: S/4HANA</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/data-analytics" title="Data &amp; Analytics careers, Stryker Careers, accessed Sep 2026">Stryker: D&amp;A careers</a></div>
+<h3>Major Turning Points</h3>
+<ol>
+<li><strong>2020, Wright Medical ($4.1bn equity):</strong> scale in extremities and trauma. <span class="badge fact">Fact</span></li>
+<li><strong>2022 Vocera and 2024 care.ai:</strong> first real move into software and connected care. <span class="badge fact">Fact</span></li>
+<li><strong>Feb 2025, Inari (about $4.9bn):</strong> entry into high-growth peripheral vascular. <strong>Apr 2025:</strong> US spinal implants sold to VB Spine. <span class="badge fact">Fact</span></li>
+<li><strong>Mar 2026, cyberattack:</strong> an operational shock, followed by a Q2 rebound. <span class="badge fact">Fact</span></li>
+<li><strong>Sep 2026:</strong> peripheral vascular supply problems persist and the shares are re-rated. <span class="badge fact">Fact</span></li>
+</ol>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.stryker.com/us/en/about/news/2020/stryker-completes-acquisition-of-wright-medical.html" title="Stryker completes acquisition of Wright Medical, Stryker, Nov 2020">Stryker: Wright Medical</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/stryker-completes-acquisition-vocera-communications-133000396.html" title="Stryker completes acquisition of Vocera Communications, Business Wire via Yahoo Finance, 23 Feb 2022">Business Wire: Vocera completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx" title="Stryker announces definitive agreement to acquire care.ai, Stryker Investor Relations, Aug 2024">Stryker IR: care.ai</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx" title="Stryker completes acquisition of Inari Medical, Stryker Investor Relations, Feb 2025">Stryker IR: Inari completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-sale-of-U-S--spinal-implants-business/default.aspx" title="Stryker completes sale of U.S. spinal implants business, Stryker Investor Relations, Apr 2025">Stryker IR: US spine sale</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a></div>
+<h3>Strategic Evolution</h3>
+<p><span class="badge infer">Strong Inference</span> The path runs from a <strong>diversified device maker</strong>, to a <strong>portfolio actively reshaped towards faster-growing segments</strong>, to a <strong>company that now runs on data and systems</strong> (robotics, connected care, new ERP, AI platforms). Operating complexity has grown faster than systems maturity, and 2026 exposed that.</p>
+
+
+<div class="refs"><strong>References:</strong> Inference from Observed Facts and Major Turning Points. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx" title="Stryker announces definitive agreement to acquire care.ai, Stryker Investor Relations, Aug 2024">Stryker IR: care.ai</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a></div>
+<h3>Why the Role Exists Now</h3>
+<div class="callout gold">
+<span class="badge hyp">Working Hypothesis, medium-high confidence</span><br>
+The ANZ Data &amp; Analytics team appears to be growing from a reporting function into a <strong>commercial decision partner</strong>. Three things point that way:
+<ul>
+<li>Two August roles split "partner the business" from "lead the platform".</li>
+<li>The platform is moving to Fabric and Databricks.</li>
+<li>The company needs sharper evidence on growth, margin and supply after the cyber and supply disruptions.</li>
+</ul>
+The SEEK ad blends both profiles: technical and project leadership plus a financial-impact business case. So the hire probably has to <strong>set standards and quantify value</strong>, not only build dashboards.
+</div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a> <span class="sep">|</span> Job description (supplied) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a></div>
+<h3>The Real Business Problem</h3>
+<div class="problem">"How do we turn Stryker ANZ's data into trusted, dollar-quantified decisions for business leaders, while the platform, the ERP and the org structure are all changing underneath us?"</div>
+
+<div class="refs"><strong>References:</strong> Inference from Why the Role Exists Now and Observed Facts. <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a> <span class="sep">|</span> Job description (supplied)</div>
+</section>
+
+<!-- ============ PAY ============ -->
+<section id="pay">
+<h2>Compensation &amp; Headcount</h2>
+<div class="tablewrap"><table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Global employees</td><td class="num"><strong>~56,000</strong><br><span class="small">28k US, 28k international</span></td><td><span class="badge fact">Fact</span> Stryker 10-K, as at 31 Dec 2025.</td></tr>
+<tr><td>Australia employees</td><td class="num"><strong>1,000+</strong></td><td><span class="badge fact">Fact</span> Stryker Australia Pty Ltd Modern Slavery Statement, CY2024 reporting period. Mostly direct, permanent employees; contractors are also used but not counted. Five Australian sites: Sydney, Melbourne, Brisbane, Perth, Adelaide.</td></tr>
+<tr><td>Sydney headcount</td><td class="num"><strong>Not publicly disclosed</strong></td><td><span class="badge fact">Fact</span> Sydney holds the ANZ HQ (8 Herbert St, St Leonards) and the Arndell Park distribution centre, and is described as the "largest Stryker presence in the region". <span class="badge infer">Inference</span> Sydney is probably the largest share of the 1,000+, but no defensible number exists.</td></tr>
+<tr><td>Exact-role pay</td><td class="num"><strong>Not disclosed</strong></td><td><span class="badge fact">Fact</span> No figure in the SEEK ad or the Stryker postings reviewed. Stryker describes a "total rewards" package that includes bonus.</td></tr>
+<tr><td>Stryker data analyst (industry estimate)</td><td class="num">A$100k to 120k</td><td>SEEK platform estimate for pharma/medtech data analysts, refreshed Sep 2026. An industry average, not Stryker data, and below this seniority. Low relevance.</td></tr>
+<tr><td>Benchmark 1: Sydney data analyst, 2026</td><td class="num">A$125.4k / 141.7k / 158.1k<br><span class="small">25th / median / 75th</span></td><td>Robert Half 2026. <strong>Base only; excludes super, bonus and benefits.</strong></td></tr>
+<tr><td>Benchmark 2: Sydney senior data analyst</td><td class="num">~A$130k avg; 75th A$149k; 90th A$170k</td><td>Glassdoor employee-reported data. Whether this is base or total pay isn't confirmed.</td></tr>
+</table></div>
+
+<div class="callout gold">
+<strong>Indicative interview range:</strong> <strong>A$155k to 175k base, plus super and bonus</strong>. Anchor about <strong>A$165k base</strong>.<br>
+<span class="badge infer">Inference, not an employer-confirmed budget</span> "Senior Lead" sits above senior data analyst. The scope covers technical and project leadership, mentoring and financial business cases, which puts it at or above the 75th percentile of the recruiter benchmarks.<br>
+<strong>Material uncertainty:</strong> the bonus percentage, whether the role has direct reports, and whether Stryker's grade caps base below A$160k. <strong>Confirm with the recruiter:</strong> the grade, the budgeted base range and the bonus structure.
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+"Based on the scope, I'm looking at around $165k base plus super. I'm flexible on how the overall package is structured, including bonus. Could you share the budgeted range for the role?"
+</div>
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.stryker.com/content/dam/stryker/australia-new-zealand/cr-hub-files/2024%20Stryker%20Australia%20Modern%20Slavery%20Statement.pdf" title="Stryker Australia Modern Slavery Statement 2024, Stryker Australia, CY2024 reporting period">Stryker AU: Modern Slavery Statement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.strykercareersblog.com/post/eight-reasons-to-love-stryker-in-australia-and-new-zealand" title="Eight reasons to love Stryker in Australia and New Zealand, Stryker Careers Blog, accessed Sep 2026">Stryker blog: ANZ sites</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.stryker.com/au/en/about/our-locations.html" title="Our locations: Australia and New Zealand, Stryker, accessed Sep 2026">Stryker: ANZ locations</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/companies/stryker-434959/salaries/data-analyst" title="Stryker data analyst salary estimate, SEEK, Sep 2026">SEEK: salary estimate</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.roberthalf.com/au/en/job-details/data-analyst/sydney" title="Data Analyst salary, Sydney, 2026, Robert Half Salary Guide, 2026">Robert Half: Sydney 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.glassdoor.com.au/Salaries/sydney-senior-data-analyst-salary-SRCH_IL.0,6_IM962_KO7,26.htm" title="Senior Data Analyst salaries, Sydney, Glassdoor, accessed Sep 2026">Glassdoor: Sydney senior analyst</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a></div>
+</section>
+
+<!-- ============ STAGE 2 ============ -->
+<section id="stage2">
+<h2>Stage 2: Full Interview Dossier (first pass)</h2>
+
+<h3>1. Company Overview</h3>
+<ul>
+<li><span class="badge fact">Fact</span> <strong>Businesses:</strong> Medical &amp; Surgical equipment, Neurotechnology (neurovascular, cranial), Vascular (Inari, AVS), Orthopaedics (knees, hips, trauma, extremities) and Ortho Tech (Mako robotics and enabling technology).</li>
+<li><span class="badge fact">Fact</span> <strong>Customers and geography:</strong> hospitals, surgeons, health systems and EMS. In Q2 2026, US sales were $4.96bn (about 75%) and international $1.63bn (+9.2% constant currency).</li>
+<li><span class="badge fact">Fact</span> <strong>Ownership and leadership:</strong> NYSE: SYK. Kevin Lobo has been CEO since 2012. Preston Wells became CFO in Apr 2025 and Spencer Stiles became President &amp; COO in Jan 2026.</li>
+<li><span class="badge fact">Fact</span> <strong>Financial context:</strong> market cap about $104bn, down roughly 26% year on year. FY2026 adjusted EPS guidance is $14.95 to $15.10.</li>
+<li><span class="badge infer">Inference</span> <strong>2026 priorities:</strong> cyber recovery, clearing the peripheral vascular backlog, vascular integration, the Mako 4 rollout and the ERP program.</li>
+</ul>
+
+<div class="chartbox">
+  <div class="title">Net sales, FY2020 to FY2025 (US$ bn)</div>
+  <svg viewBox="0 0 640 220" width="100%" role="img" aria-label="Stryker net sales rising from 14.4 billion dollars in 2020 to 25.1 billion in 2025">
+    <g font-family="Lexend,Aptos,Arial,sans-serif" font-size="12" fill="#17191c">
+      <line x1="40" y1="190" x2="620" y2="190" stroke="#cfd5da"/>
+      <!-- scale: 25.1bn -> 150px -->
+      <rect x="60"  y="104.2" width="62" height="85.8"  fill="#6b737c" rx="3"/><text x="91"  y="98"  text-anchor="middle" font-weight="700">14.4</text><text x="91"  y="207" text-anchor="middle">2020</text>
+      <rect x="155" y="87.8"  width="62" height="102.2" fill="#6b737c" rx="3"/><text x="186" y="82"  text-anchor="middle" font-weight="700">17.1</text><text x="186" y="207" text-anchor="middle">2021</text>
+      <rect x="250" y="79.8"  width="62" height="110.2" fill="#6b737c" rx="3"/><text x="281" y="74"  text-anchor="middle" font-weight="700">18.4</text><text x="281" y="207" text-anchor="middle">2022</text>
+      <rect x="345" y="67.5"  width="62" height="122.5" fill="#6b737c" rx="3"/><text x="376" y="62"  text-anchor="middle" font-weight="700">20.5</text><text x="376" y="207" text-anchor="middle">2023</text>
+      <rect x="440" y="55"    width="62" height="135"   fill="#6b737c" rx="3"/><text x="471" y="49"  text-anchor="middle" font-weight="700">22.6</text><text x="471" y="207" text-anchor="middle">2024</text>
+      <rect x="535" y="40"    width="62" height="150"   fill="#f5b400" rx="3"/><text x="566" y="34"  text-anchor="middle" font-weight="700">25.1</text><text x="566" y="207" text-anchor="middle">2025</text>
+    </g>
+  </svg>
+  <div class="chartcap">Source: Stryker annual results and 10-K filings (via MacroTrends for FY2020 to FY2024). About 75% growth over five years, driven by organic growth and acquisitions.</div>
+</div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2012/Stryker-Names-Kevin-A-Lobo-as-President-and-Chief-Executive-Officer/default.aspx" title="Stryker names Kevin A. Lobo as President and Chief Executive Officer, Stryker Investor Relations, 1 Oct 2012">Stryker IR: Lobo as CEO</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-announces-the-retirement-of-Glenn-S.-Boehnlein-and-the-promotion-of-Preston-Wells-to-Vice-President-Chief-Financial-Officer/default.aspx" title="Retirement of Glenn S. Boehnlein and promotion of Preston Wells to CFO, Stryker Investor Relations, 2025">Stryker IR: CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-names-Spencer-Stiles-President-and-Chief-Operating-Officer/default.aspx" title="Stryker names Spencer Stiles President and Chief Operating Officer, Stryker Investor Relations, 2025">Stryker IR: COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx" title="Stryker completes acquisition of Inari Medical, Stryker Investor Relations, Feb 2025">Stryker IR: Inari completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-completes-acquisition-of-Amplitude-Vascular-Systems-to-add-next-generation-IVL-technology-to-peripheral-vascular-portfolio/default.aspx" title="Stryker completes acquisition of Amplitude Vascular Systems, Stryker Investor Relations, May 2026">Stryker IR: AVS completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/SYK/stryker/revenue" title="Stryker revenue history, MacroTrends, accessed Sep 2026">MacroTrends: revenue</a></div>
+<h3>2. How the Company Became What It Is Today</h3>
+<div class="phase"><div class="label">1941 to 2012: Origins</div><div>Orthopaedic surgeon Homer Stryker founded the company in 1941. It grew into a decentralised, division-led device maker.</div></div>
+<div class="phase"><div class="label">2013: Robotics</div><div>Mako Surgical ($1.65bn) brought robotic-assisted surgery into the portfolio and turned joint replacement into a technology platform.</div></div>
+<div class="phase"><div class="label">2020 to 2024: Scale and software</div><div>Wright Medical (2020) added extremities scale. Vocera (2022) and care.ai (2024) moved Stryker into clinical communication, virtual care and ambient AI.</div></div>
+<div class="phase"><div class="label">2025: Vascular and focus</div><div>Inari (about $4.9bn) created a peripheral vascular growth platform. The US spinal implants business was sold to VB Spine, and a new CFO was appointed.</div></div>
+<div class="phase"><div class="label">2026: Execution under stress</div><div>A new COO and the Ortho Tech reorganisation arrived just before the March cyberattack. The Q2 rebound was followed by a peripheral vascular supply backlog that now runs into Q4. <span class="badge infer">Inference</span> Revenue has almost doubled since 2020, but so have the number of systems, acquired data estates and supply chains to integrate.</div></div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.stryker.com/ir/en/about/history.html" title="Our history, Stryker, accessed Sep 2026">Stryker: history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2013/Stryker-Announces-Definitive-Agreement-to-Acquire-MAKO-Surgical-Corp-for-165-Billion/default.aspx" title="Stryker announces definitive agreement to acquire MAKO Surgical for $1.65 billion, Stryker Investor Relations, 25 Sep 2013">Stryker IR: Mako agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2013/Stryker-Completes-Acquisition-of-MAKO-Surgical-Corp/default.aspx" title="Stryker completes acquisition of MAKO Surgical Corp., Stryker Investor Relations, 17 Dec 2013">Stryker IR: Mako completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.stryker.com/us/en/about/news/2020/stryker-completes-acquisition-of-wright-medical.html" title="Stryker completes acquisition of Wright Medical, Stryker, Nov 2020">Stryker: Wright Medical</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/stryker-completes-acquisition-vocera-communications-133000396.html" title="Stryker completes acquisition of Vocera Communications, Business Wire via Yahoo Finance, 23 Feb 2022">Business Wire: Vocera completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx" title="Stryker announces definitive agreement to acquire care.ai, Stryker Investor Relations, Aug 2024">Stryker IR: care.ai</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx" title="Stryker completes acquisition of Inari Medical, Stryker Investor Relations, Feb 2025">Stryker IR: Inari completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-sale-of-U-S--spinal-implants-business/default.aspx" title="Stryker completes sale of U.S. spinal implants business, Stryker Investor Relations, Apr 2025">Stryker IR: US spine sale</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-announces-the-retirement-of-Glenn-S.-Boehnlein-and-the-promotion-of-Preston-Wells-to-Vice-President-Chief-Financial-Officer/default.aspx" title="Retirement of Glenn S. Boehnlein and promotion of Preston Wells to CFO, Stryker Investor Relations, 2025">Stryker IR: CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-names-Spencer-Stiles-President-and-Chief-Operating-Officer/default.aspx" title="Stryker names Spencer Stiles President and Chief Operating Officer, Stryker Investor Relations, 2025">Stryker IR: COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm" title="Form 8-K: Ortho Tech segment reorganisation, SEC EDGAR, 26 Jun 2026">SEC: Ortho Tech 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/SYK/stryker/revenue" title="Stryker revenue history, MacroTrends, accessed Sep 2026">MacroTrends: revenue</a></div>
+<h3>3. Chronological Timeline</h3>
+<div class="tablewrap"><table class="timeline">
+<tr><th>Year / Date</th><th>Event</th><th>Evidence</th><th>Why it mattered</th></tr>
+<tr><td>Oct 2012</td><td>Kevin Lobo becomes CEO</td><td><span class="badge fact">Fact</span></td><td>Start of the acquisition-led portfolio strategy</td></tr>
+<tr><td>2013</td><td>Mako Surgical acquired ($1.65bn)</td><td><span class="badge fact">Fact</span></td><td>Robotics becomes central to Orthopaedics</td></tr>
+<tr><td>Nov 2020</td><td>Wright Medical completed ($4.1bn equity)</td><td><span class="badge fact">Fact</span></td><td>Extremities scale; a large integration</td></tr>
+<tr><td>Feb 2022</td><td>Vocera completed</td><td><span class="badge fact">Fact</span></td><td>Entry into connected-care software</td></tr>
+<tr><td>Aug 2024</td><td>care.ai agreement</td><td><span class="badge fact">Fact</span></td><td>AI-assisted virtual care and smart rooms</td></tr>
+<tr><td>Feb 2025</td><td>Inari completed (about $4.9bn)</td><td><span class="badge fact">Fact</span></td><td>Entry into peripheral vascular</td></tr>
+<tr><td>Apr 2025</td><td>Preston Wells becomes CFO; US spinal implants sold to VB Spine</td><td><span class="badge fact">Fact</span></td><td>Tighter portfolio and finance focus</td></tr>
+<tr><td>Jan 2026</td><td>Spencer Stiles becomes President &amp; COO; FY2025 sales $25.1bn, 10.3% organic</td><td><span class="badge fact">Fact</span></td><td>Peak momentum and a new operating leader</td></tr>
+<tr><td>Q1 2026</td><td>Ortho Tech reorganisation</td><td><span class="badge fact">Fact</span></td><td>Reporting restructured</td></tr>
+<tr><td>11 Mar 2026</td><td>Global cyberattack</td><td><span class="badge fact">Fact</span></td><td>Q1 organic growth fell to 2.4%</td></tr>
+<tr><td>7 May 2026</td><td>Amplitude Vascular Systems (IVL) acquisition completed</td><td><span class="badge fact">Fact</span></td><td>More vascular integration</td></tr>
+<tr><td>30 Jul 2026</td><td>Q2: 9.0% organic; guidance narrowed to 8.3% to 9.3%</td><td><span class="badge fact">Fact</span></td><td>Recovery demonstrated</td></tr>
+<tr><td>Aug 2026</td><td>ANZ D&amp;A roles advertised: Strategic Partnering and Technical Lead (Fabric/Databricks)</td><td><span class="badge fact">Fact</span></td><td>Team build-out</td></tr>
+<tr><td>8 Sep 2026</td><td>CFO says PV supply issue runs into Q4; stock down 8.8%</td><td><span class="badge fact">Fact</span></td><td>Pressure on forecasting and supply visibility</td></tr>
+<tr><td>~22 Sep 2026</td><td>SEEK: Senior Lead Data Analyst, Sydney</td><td><span class="badge fact">Fact</span></td><td>This role</td></tr>
+</table></div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2012/Stryker-Names-Kevin-A-Lobo-as-President-and-Chief-Executive-Officer/default.aspx" title="Stryker names Kevin A. Lobo as President and Chief Executive Officer, Stryker Investor Relations, 1 Oct 2012">Stryker IR: Lobo as CEO</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2013/Stryker-Announces-Definitive-Agreement-to-Acquire-MAKO-Surgical-Corp-for-165-Billion/default.aspx" title="Stryker announces definitive agreement to acquire MAKO Surgical for $1.65 billion, Stryker Investor Relations, 25 Sep 2013">Stryker IR: Mako agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.stryker.com/us/en/about/news/2020/stryker-completes-acquisition-of-wright-medical.html" title="Stryker completes acquisition of Wright Medical, Stryker, Nov 2020">Stryker: Wright Medical</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/stryker-completes-acquisition-vocera-communications-133000396.html" title="Stryker completes acquisition of Vocera Communications, Business Wire via Yahoo Finance, 23 Feb 2022">Business Wire: Vocera completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx" title="Stryker announces definitive agreement to acquire care.ai, Stryker Investor Relations, Aug 2024">Stryker IR: care.ai</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx" title="Stryker completes acquisition of Inari Medical, Stryker Investor Relations, Feb 2025">Stryker IR: Inari completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-announces-the-retirement-of-Glenn-S.-Boehnlein-and-the-promotion-of-Preston-Wells-to-Vice-President-Chief-Financial-Officer/default.aspx" title="Retirement of Glenn S. Boehnlein and promotion of Preston Wells to CFO, Stryker Investor Relations, 2025">Stryker IR: CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-sale-of-U-S--spinal-implants-business/default.aspx" title="Stryker completes sale of U.S. spinal implants business, Stryker Investor Relations, Apr 2025">Stryker IR: US spine sale</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-names-Spencer-Stiles-President-and-Chief-Operating-Officer/default.aspx" title="Stryker names Spencer Stiles President and Chief Operating Officer, Stryker Investor Relations, 2025">Stryker IR: COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm" title="Form 8-K: Ortho Tech segment reorganisation, SEC EDGAR, 26 Jun 2026">SEC: Ortho Tech 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000025/sykex991earningsq12026.htm" title="Q1 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 2026">SEC: Q1 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-completes-acquisition-of-Amplitude-Vascular-Systems-to-add-next-generation-IVL-technology-to-peripheral-vascular-portfolio/default.aspx" title="Stryker completes acquisition of Amplitude Vascular Systems, Stryker Investor Relations, May 2026">Stryker IR: AVS completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a></div>
+<h3>4. Observed Facts</h3>
+<div class="two">
+<div>
+<h4>Financial / commercial</h4>
+<ul>
+<li>FY2025: $25.1bn, +11.2% reported, +10.3% organic. Adjusted operating margin 26.3%.</li>
+<li>Q2 2026: $6.6bn, +9.4% reported, +9.0% organic. Adjusted EPS $3.69 (+17.9%).</li>
+<li>H1 2026: reported EPS +31.4%, adjusted EPS +5.4%.</li>
+</ul>
+
+<h4>Operational</h4>
+<ul>
+<li>March 2026 cyberattack disrupted manufacturing, ordering and shipping. All restored by Q2.</li>
+<li>Peripheral vascular backorders cost about 70 to 80bps of growth in Q2 and Q3, and the same is expected in Q4.</li>
+</ul>
+
+</div>
+<div>
+<h4>Leadership / strategy</h4>
+<ul>
+<li>CEO stable since 2012. CFO appointed Apr 2025, COO Jan 2026.</li>
+<li>Acquisitions of $459m in H1 2026 (including AVS).</li>
+</ul>
+
+<h4>Data / technology</h4>
+<ul>
+<li>New ERP rollout (10-K: "major undertaking").</li>
+<li>ANZ D&amp;A is adopting Microsoft Fabric and Databricks.</li>
+<li>Products include AI-assisted virtual care. The 10-K flags generative-AI-enabled cyber risk.</li>
+</ul>
+</div>
+</div>
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.hipaajournal.com/stryker-cyberattack-iran/" title="Stryker cyberattack, HIPAA Journal, Mar 2026">HIPAA Journal: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2012/Stryker-Names-Kevin-A-Lobo-as-President-and-Chief-Executive-Officer/default.aspx" title="Stryker names Kevin A. Lobo as President and Chief Executive Officer, Stryker Investor Relations, 1 Oct 2012">Stryker IR: Lobo as CEO</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-announces-the-retirement-of-Glenn-S.-Boehnlein-and-the-promotion-of-Preston-Wells-to-Vice-President-Chief-Financial-Officer/default.aspx" title="Retirement of Glenn S. Boehnlein and promotion of Preston Wells to CFO, Stryker Investor Relations, 2025">Stryker IR: CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-names-Spencer-Stiles-President-and-Chief-Operating-Officer/default.aspx" title="Stryker names Spencer Stiles President and Chief Operating Officer, Stryker Investor Relations, 2025">Stryker IR: COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-completes-acquisition-of-Amplitude-Vascular-Systems-to-add-next-generation-IVL-technology-to-peripheral-vascular-portfolio/default.aspx" title="Stryker completes acquisition of Amplitude Vascular Systems, Stryker Investor Relations, May 2026">Stryker IR: AVS completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx" title="Stryker announces definitive agreement to acquire care.ai, Stryker Investor Relations, Aug 2024">Stryker IR: care.ai</a></div>
+
+<h3>5. Observed Turning Points (role lens)</h3>
+<div class="tablewrap"><table>
+<tr><th>Turning point</th><th>What happened</th><th>Immediate / longer-term effect</th><th>Relevance to the role</th></tr>
+<tr><td>Inari (Feb 2025)</td><td>$4.9bn entry into peripheral vascular</td><td>A high-growth segment, but it also brought supply fragility that now drags on growth</td><td><span class="badge infer">Inference</span> Need for forecasting, backorder and supply-demand analytics</td></tr>
+<tr><td>Cyberattack (Mar 2026)</td><td>Intune admin access used to wipe devices globally</td><td>Q1 growth fell to 2.4%. Resilience is now a board issue.</td><td><span class="badge infer">Inference</span> Resilient, governed data with clear lineage</td></tr>
+<tr><td>Ortho Tech reorganisation and ERP</td><td>Businesses regrouped; source systems replaced</td><td>KPI hierarchies and definitions change</td><td><span class="badge infer">Inference</span> A "one version of the truth" mandate, which the JD names explicitly</td></tr>
+</table></div>
+
+
+<div class="refs"><strong>References:</strong> Relevance to the role is Inference from the facts cited. <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx" title="Stryker completes acquisition of Inari Medical, Stryker Investor Relations, Feb 2025">Stryker IR: Inari completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000025/sykex991earningsq12026.htm" title="Q1 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 2026">SEC: Q1 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm" title="Form 8-K: Ortho Tech segment reorganisation, SEC EDGAR, 26 Jun 2026">SEC: Ortho Tech 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a></div>
+<h3>6. Strategic Evolution</h3>
+<div class="tablewrap"><table>
+<tr><th>Phase</th><th>Business model</th><th>Operating complexity</th><th>Data implication</th></tr>
+<tr><td>2012 to 2019</td><td>Division-led device growth</td><td>Medium</td><td>Divisional reporting</td></tr>
+<tr><td>2020 to 2024</td><td>Large-scale acquisitions plus software</td><td>High</td><td>Multiple data estates to integrate</td></tr>
+<tr><td>2025 to 2026</td><td>Portfolio mix shift to high-growth segments; AI-enabled care</td><td>Very high</td><td>Trusted cross-business KPIs, forecasting, a modern platform</td></tr>
+</table></div>
+<p><span class="badge infer">Strong Inference</span> <strong>What it is becoming:</strong> a portfolio managed tightly on growth and margin, where each business needs quantified, fast decision support. Analytics has to prove its value in dollars.</p>
+
+<div class="refs"><strong>References:</strong> Inference from sections 2 to 5. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm" title="Stryker Form 10-K, FY2025, SEC EDGAR, FY2025 filing">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/SYK/stryker/revenue" title="Stryker revenue history, MacroTrends, accessed Sep 2026">MacroTrends: revenue</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx" title="Stryker completes acquisition of Inari Medical, Stryker Investor Relations, Feb 2025">Stryker IR: Inari completed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx" title="Stryker announces definitive agreement to acquire care.ai, Stryker Investor Relations, Aug 2024">Stryker IR: care.ai</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm" title="Form 8-K: Ortho Tech segment reorganisation, SEC EDGAR, 26 Jun 2026">SEC: Ortho Tech 8-K</a></div>
+</section>
+
+<!-- ============ STOCK ============ -->
+<section id="stock">
+<h3 style="margin-top:0">7. Business Performance and Market Response (NYSE: SYK)</h3>
+<div class="grid">
+  <div class="card"><div class="k">Latest close</div><div class="v">$272.36</div><div class="n">25 Sep 2026</div></div>
+  <div class="card"><div class="k">52-week high</div><div class="v">$392.55</div><div class="n">Price now about 31% below</div></div>
+  <div class="card"><div class="k">52-week low</div><div class="v">$267.00</div><div class="n">Trading near the low</div></div>
+  <div class="card"><div class="k">Market cap</div><div class="v">~$104bn</div><div class="n">About 26% down year on year</div></div>
+</div>
+
+<div class="chartbox">
+  <div class="stock-toolbar">
+    <div class="title">SYK monthly closing price (US$)</div>
+    <div class="stock-ranges" role="group" aria-label="Stock chart time range">
+      <button type="button" data-range="6">6M</button>
+      <button type="button" data-range="12" class="active">1Y</button>
+      <button type="button" data-range="24">2Y</button>
+      <button type="button" data-range="0">Full range</button>
+    </div>
+  </div>
+  <div class="stock-chart-wrap">
+    <svg id="sykChart" role="img" aria-label="Stryker monthly closing share price chart"></svg>
+    <div class="stock-tooltip" id="sykTooltip" aria-hidden="true"></div>
+  </div>
+  <div class="stock-legend">
+    <span><b id="sykStart"></b> start</span>
+    <span><b id="sykEnd"></b> latest</span>
+    <span><b id="sykChange"></b> change over selected range</span>
+  </div>
+  <div class="chartcap">Monthly closes Jan 2024 to Aug 2026. Sep 2026 point is the 25 Sep close. Red markers show dated company events that coincided with major trend shifts: Q3 2024 beat (Oct 2024), Inari deal (Jan 2025), Q3 2025 dip (Oct 2025), cyberattack (Mar 2026), Q2 2026 sales miss (Jul 2026) and the CFO supply update (Sep 2026). Hover a marker for detail. Sources: Digrin monthly history, StockAnalysis. Not investment advice.</div>
+</div>
+
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.digrin.com/stocks/detail/SYK/price" title="SYK price history, Digrin, accessed Sep 2026">Digrin: SYK history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.investing.com/news/stock-market-news/stryker-stock-jumps-as-q3-earnings-outlook-top-estimates-93CH-3689390" title="Stryker stock jumps as Q3 earnings, outlook top estimates, Investing.com, 29 Oct 2024">Investing.com: Q3 2024 beat</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1531048/000119312525002249/d871947dex991.htm" title="Stryker to acquire Inari Medical (press release, 8-K Ex. 99.1), SEC EDGAR, 6 Jan 2025">SEC: Inari deal announced</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.massdevice.com/stryker-raises-guidance-beats-q3-2025/" title="Stryker raises revenue guidance on the back of Street-beating Q3, MassDevice, 30 Oct 2025">MassDevice: Q3 2025 reaction</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/markets/stocks/articles/why-stryker-syk-shares-plunging-152357303.html" title="Why Stryker (SYK) shares are plunging today, StockStory via Yahoo Finance, 31 Jul 2026">StockStory: Q2 2026 reaction</a></div>
+<h4>Recent price performance (to 25 Sep 2026)</h4>
+<div class="metricbars">
+  <div class="metricrow"><span>1 month</span><div class="barbg"><div class="bar" style="width:61%"></div></div><span class="tag">-15.9%</span></div>
+  <div class="metricrow"><span>3 months</span><div class="barbg"><div class="bar" style="width:52%"></div></div><span class="tag">-13.5%</span></div>
+  <div class="metricrow"><span>YTD</span><div class="barbg"><div class="bar" style="width:85%"></div></div><span class="tag">-22.1%</span></div>
+  <div class="metricrow"><span>1 year</span><div class="barbg"><div class="bar" style="width:100%"></div></div><span class="tag">-25.7%</span></div>
+</div>
+<p class="small">Calculated from month-end closes (Aug 2026 $323.80, Jun 2026 $314.84, Dec 2025 $349.59, Sep 2025 $366.78) to $272.36.</p>
+
+
+<div class="refs"><strong>References:</strong> Calculated from month-end closes shown above. <a target="_blank" rel="noopener" href="https://www.digrin.com/stocks/detail/SYK/price" title="SYK price history, Digrin, accessed Sep 2026">Digrin: SYK history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a></div>
+
+<h4>What coincided with the major moves</h4>
+<ul>
+<li><span class="badge fact">Fact</span> <strong>Long-run backdrop:</strong> revenue grew about 75% from FY2020 to FY2025, with organic growth near 10% in 2025.</li>
+<li><span class="badge fact">Fact</span> <strong>Oct to Nov 2024, "Q3 beat":</strong> on 29 Oct 2024 Stryker beat Q3 estimates and raised full-year guidance, and the shares rose 3.6% that day. The price went from $350.31 (Oct close) to $385.58 (Nov close), about +10%.</li>
+<li><span class="badge fact">Fact</span> <strong>Jan 2025, "Inari deal":</strong> on 6 Jan 2025 Stryker announced the $4.9bn Inari Medical acquisition. The shares went from $354.84 (Dec close) to $385.63 (Jan close), about +9%. Q4 2024 results were also released in late January, so the move can't be tied to the deal alone.</li>
+<li><span class="badge fact">Fact</span> <strong>Oct 2025, "Q3 25 dip":</strong> on 30 Oct 2025 Q3 results beat forecasts and guidance was raised, but the shares fell more than 2% to about $360 the next morning. The price slid from $387.46 (Aug close) to $349.59 (Dec close), about -10%.</li>
+<li><span class="badge fact">Fact</span> <strong>Mar 2026, "Cyberattack":</strong> the shares fell from $385.39 (Feb close) to $327.72 (Mar close), about -15%, in the month of the 11 March cyberattack.</li>
+<li><span class="badge fact">Fact</span> <strong>Jul 2026, "Q2 sales miss":</strong> the shares recovered from $304.28 (May close) to $325.70 (Jul close). Q2 results on 30 Jul showed 9.0% organic growth and an EPS beat, but organic growth missed forecasts and the shares fell 7.3% intraday on 31 Jul.</li>
+<li><span class="badge fact">Fact</span> <strong>8 Sep 2026, "PV supply update":</strong> the shares fell 8.8% on the day after the CFO said peripheral vascular supply problems would run into Q4. They closed at $272.36 on 25 Sep, near the 52-week low. On 23 Sep 2026 a shareholder-rights firm (Hagens Berman) opened an investigation into disclosure.</li>
+<li><span class="badge limit">Caution</span> The timing fits these company events, but broader medtech sentiment and market-wide moves may also play a part, so the moves shouldn't be read as fully explained. Don't raise the investigation in the interview.</li>
+</ul>
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/SYK/stryker/revenue" title="Stryker revenue history, MacroTrends, accessed Sep 2026">MacroTrends: revenue</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/" title="Stryker reports 2025 operating results and 2026 outlook, Stryker via TradingView, Jan 2026">Stryker: FY2025 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.digrin.com/stocks/detail/SYK/price" title="SYK price history, Digrin, accessed Sep 2026">Digrin: SYK history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/" title="SYK stock price and statistics, StockAnalysis, 25 Sep 2026">StockAnalysis: SYK</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack" title="Medical technology company Stryker disrupted globally by cyberattack, AHA News, 12 Mar 2026">AHA News: cyberattack</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm" title="Q2 2026 earnings release (8-K Ex 99.1), SEC EDGAR, 30 Jul 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.globenewswire.com/news-release/2026/09/23/3367674/32716/en/stryker-nyse-syk-scrutinized-amid-disclosure-of-persisting-peripheral-vascular-problems-hbss.html" title="Stryker scrutinized amid disclosure of persisting peripheral vascular problems, Hagens Berman via GlobeNewswire, 23 Sep 2026">Hagens Berman: investigation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.investing.com/news/stock-market-news/stryker-stock-jumps-as-q3-earnings-outlook-top-estimates-93CH-3689390" title="Stryker stock jumps as Q3 earnings, outlook top estimates, Investing.com, 29 Oct 2024">Investing.com: Q3 2024 beat</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1531048/000119312525002249/d871947dex991.htm" title="Stryker to acquire Inari Medical (press release, 8-K Ex. 99.1), SEC EDGAR, 6 Jan 2025">SEC: Inari deal announced</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.massdevice.com/stryker-raises-guidance-beats-q3-2025/" title="Stryker raises revenue guidance on the back of Street-beating Q3, MassDevice, 30 Oct 2025">MassDevice: Q3 2025 reaction</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/markets/stocks/articles/why-stryker-syk-shares-plunging-152357303.html" title="Why Stryker (SYK) shares are plunging today, StockStory via Yahoo Finance, 31 Jul 2026">StockStory: Q2 2026 reaction</a></div>
+</section>
+
+<!-- ============ ROLE ============ -->
+<section id="role">
+<h2>Role Deconstruction: Senior Lead Data Analyst</h2>
+<p>The SEEK ad describes a hybrid Sydney role that combines advanced technical analysis with a business-facing consulting mandate.</p>
+<div class="tablewrap"><table>
+<tr><th>Job wording</th><th>Underlying management problem</th><th>Likely success signal</th></tr>
+<tr><td>"Technical and project leadership in the team's day-to-day project portfolio"</td><td>Work is fragmented and the team lacks a senior point for design and prioritisation</td><td>A visible, prioritised portfolio with fewer stalled projects</td></tr>
+<tr><td>"Financial acumen to develop financial impacts… evaluating new opportunities" (stated twice)</td><td>Analytics value isn't being quantified in dollars</td><td>Business cases leaders act on; value realisation tracked</td></tr>
+<tr><td>"Orchestrate collaboration with Stryker enterprise across functions"</td><td>Silos between D&amp;A, the businesses and global functions</td><td>Joint projects with domain owners; reuse of enterprise assets</td></tr>
+<tr><td>"Manage expectations on timing and scope"</td><td>Stakeholders are frustrated by slow or shifting delivery</td><td>Clear intake, scope and delivery commitments that hold</td></tr>
+<tr><td>"Mentor and coach data analytics colleagues"</td><td>Uneven capability, especially during the Fabric/Databricks move</td><td>Measurable uplift in team skills and standards</td></tr>
+<tr><td>"Recommend visualisations… convey complex analyses up to the leadership level"</td><td>Insight isn't landing with executives</td><td>Leadership decisions visibly based on the team's analysis</td></tr>
+<tr><td>"Documented definitions, calculations, sources, lineage"</td><td>KPI inconsistency, made worse by the ERP and reorganisation changes</td><td>Governed metrics that people trust</td></tr>
+<tr><td>SQL, Python, R, DAX, M; Power BI / Tableau; data modelling</td><td>Hands-on credibility is still needed in a small team</td><td>Hands-on design reviews and solution quality</td></tr>
+</table></div>
+<div class="callout"><strong>Context:</strong> an August Stryker version of this role described partnering the <strong>Medical</strong> business and experience with <strong>Microsoft Fabric or Databricks</strong>. The generic Stryker job-family text also calls the grade a "management position" achieving results through others. <span class="badge hyp">Working Hypothesis</span> Ask whether this role has direct reports or leads through influence.</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied" title="Senior Lead Data Analyst, Sydney, SEEK, Sep 2026">SEEK: role advert</a> <span class="sep">|</span> Job description (supplied) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-strategic-partnering/job/31857F59E3E387AE3A90041C58AE5E70" title="Lead Data Analyst, Strategic Partnering (closed), Stryker Careers, Aug 2026">Stryker: Strategic Partnering role</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a></div>
+</section>
+
+<!-- ============ STAGE 3 ============ -->
+<section id="stage3">
+<h2>Stage 3: Top 5 Experiences to Lead With</h2>
+<p>The interviewers will probably want proof of three things: you can <strong>quantify dollar impact</strong>, you can <strong>make numbers trusted across the business</strong>, and you can <strong>run an analytics project from problem to deployment</strong> while lifting the team around you. Each of these five covers a different part of that.</p>
+
+<div class="story">
+  <div class="rank">1</div>
+  <h4>Trusted KPIs across the business (Cisco, Data Solutions &amp; Insights)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks for governance "including documented definitions, calculations, sources, lineage" and for visualisation that helps leaders "quickly identify key insights". The Ortho Tech reorganisation and ERP change make shared definitions a live issue (Working Hypothesis).</div>
+  <div class="star">
+    <b>S</b><span>Teams saw different numbers for the same KPI (1 to 5% gaps), which caused 3 to 5 escalations a month.</span>
+    <b>T</b><span>Get to zero inconsistency and restore confidence in the numbers.</span>
+    <b>A</b><span>Moved logic out of Power BI into shared SQL single-source views. Added catalogues with plain-English definitions and master dashboards per business area. Set up tripwire alerts for any variance over 2%.</span>
+    <b>R</b><span><strong>27 KPIs went from 62% to 100% consistency. Dashboards cut from 70+ to 46. Escalations went from 3 to 5 a month to zero. Workspace health went from 60% to 93%.</strong></span>
+  </div>
+  <div class="open">"The first thing I usually fix is whether people trust the number. At Cisco, the same KPI was showing different values depending on which dashboard you opened."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about a time you improved trust in reporting." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Trusted metrics and KPI Consistency"; portfolio case study 1.</div>
+  
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Job description (supplied) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm" title="Form 8-K: Ortho Tech segment reorganisation, SEC EDGAR, 26 Jun 2026">SEC: Ortho Tech 8-K</a></div>
+</div>
+
+<div class="story">
+  <div class="rank">2</div>
+  <h4>ThoughtSpot commercial case and self-service rollout (Cisco, FY24 to FY26)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks twice for financial acumen to "develop financial impacts… and evaluate new opportunities". Stryker ANZ is rolling out new platforms (Fabric, Databricks), and this shows you can make a platform decision pay and get people to use it.</div>
+  <div class="star">
+    <b>S</b><span>You were paying internal cross-charges for a capped ThoughtSpot instance, and analysts were swamped with simple requests.</span>
+    <b>T</b><span>Get a direct instance at better value and move simple demand to self-service.</span>
+    <b>A</b><span>Modelled the capacity options, negotiated directly with the vendor alongside other data leads, and built governed datasets and automated onboarding.</span>
+    <b>R</b><span><strong>The $70K / 250M-row option gave 2.9x better value, with 65% lower cost per million rows. Weekly users grew from 46 to 196 (+326%). Monthly queries went from 8.1K to 19.2K. Data requests fell 33% (about 738 hours and $68.9K a year).</strong></span>
+  </div>
+  <div class="open">"Here's one where I had to put a dollar value on a platform choice before anyone would fund it."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Walk us through a business case you built." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Self-service analytics" and "ThoughtSpot capacity uplift". <span class="badge limit">Figure conflict</span> STAR and portfolio say 2.86x, the resume says 2.9x. Say "roughly 2.9 times".</div>
+  
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Job description (supplied) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://careers.stryker.com/lead-data-analyst-technical-lead/job/34D05D085A2720A6F3B9D3670014213A" title="Lead Data Analyst, Technical Lead (closed), Stryker Careers, Aug 2026">Stryker: Technical Lead role</a></div>
+</div>
+
+<div class="story">
+  <div class="rank">3</div>
+  <h4>Performance-based laptop refresh with anomaly detection (Cisco, DS&amp;I Lead)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD wants experience leading end-to-end projects "from problem and requirements definition to code/model validation and deployment", and cross-functional work that draws on domain expertise. It fits Stryker's supply-and-demand forecasting problem in peripheral vascular (Working Hypothesis).</div>
+  <div class="star">
+    <b>S</b><span>Laptops were refreshed by age rather than need, so budget and supply didn't match what users needed.</span>
+    <b>T</b><span>Refresh based on evidence from device telemetry.</span>
+    <b>A</b><span>Weighed supervised ML, unsupervised ML, GenAI and statistical options against build effort, upkeep and reliability. Chose unsupervised anomaly detection. Defined the telemetry strategy (CPU, RAM, memory pressure, disk). Built persona clusters from app usage.</span>
+    <b>R</b><span>Prioritised early refresh for underperforming devices and cut over-provisioning risk. Improved stock forecasting. Supported <strong>millions in <em>potential</em> global asset savings</strong>.</span>
+  </div>
+  <div class="open">"The best example of taking a vague problem all the way to a deployed model is how we changed laptop refresh at Cisco."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Describe an end-to-end analytics project you led." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Performance-Based Refresh"; portfolio case study 2B. Always say "potential": this was not realised savings.</div>
+  
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Job description (supplied) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/" title="Stryker stock falls on slower peripheral vascular, hip sales, MedTech Dive, Sep 2026">MedTech Dive: PV supply</a></div>
+</div>
+
+<div class="story">
+  <div class="rank">4</div>
+  <h4>Root cause of BSODs and app crashes (Cisco, Lead Analyst, 2017 to 2019)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks you to "lead and mentor others in root cause/problem solving efforts" and to quantify value.</div>
+  <div class="star">
+    <b>S</b><span>Recurring blue screens and Cisco app crashes were costing employees productive time.</span>
+    <b>T</b><span>Find the causes and size the impact.</span>
+    <b>A</b><span>Ran root-cause analysis across device, OS and driver data with the global Windows, Mac and Linux teams.</span>
+    <b>R</b><span><strong>Up to $4.3M in productivity hours saved across 34.4K employees.</strong></span>
+  </div>
+  <div class="open">"On root cause, the one I'm proudest of turned crash data into $4.3 million in recovered productivity."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about a complex problem you solved." · <strong>Source:</strong> Resume only (Lead Analyst). <span class="badge hyp">Prep needed</span> There's no STAR write-up. Before the interview, write down the method, the top causes you found and how the $4.3M was calculated.</div>
+  
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> Job description (supplied)</div>
+</div>
+
+<div class="story">
+  <div class="rank">5</div>
+  <h4>M5 MacBook Air as the standard Mac (Cisco, 2025 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks you to present "complex analyses up to the leadership level" and to "develop financial impacts". This story ends in an executive decision.</div>
+  <div class="star">
+    <b>S</b><span>Rising RAM costs and new tariffs pushed M5 MacBook Pro prices up, which put pressure on the asset budget.</span>
+    <b>T</b><span>Build executive confidence in a cheaper standard model.</span>
+    <b>A</b><span>Scored CPU and RAM needs across the fleet, benchmarked them against the M5 Air, and forecast cost avoidance.</span>
+    <b>R</b><span><strong>The M5 Air met the needs of 87%+ of Mac users globally. It delivered 1.5x the performance of the M4 MacBook Pro and cost 23% less than the M5 14-inch. Leadership decided to make it the standard.</strong></span>
+  </div>
+  <div class="open">"A recent one where the analysis went straight into an executive decision was choosing Cisco's standard Mac."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about a time your analysis changed a leadership decision." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "MacBookAir M5 Intro"; portfolio case study 4A.</div>
+  
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a> <span class="sep">|</span> Job description (supplied)</div>
+</div>
+
+<h3>Coverage check</h3>
+<div class="tablewrap"><table>
+<tr><th>JD requirement</th><th>Covered by</th><th>Strength</th></tr>
+<tr><td>Financial acumen, quantified impact</td><td>2, 4, 5</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>End-to-end project, including model validation and deployment</td><td>3</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Governance: definitions, lineage</td><td>1 (backup: Snowflake/DBT lineage and release-cycle story)</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Visualisation and executive communication</td><td>1, 5</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Root cause and problem solving</td><td>4</td><td><span class="badge hyp">Medium: needs prep</span></td></tr>
+<tr><td>Cross-functional collaboration</td><td>3, 4</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>SQL / Python / data modelling</td><td>1, 3</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Power BI / Tableau</td><td>1</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Mentoring and coaching</td><td>Not in top 5. Use: ANZ Mentor of the Quarter (Apr 2023), IT analyst community, leading a mixed team</td><td><span class="badge limit">Medium: no strong STAR story</span></td></tr>
+<tr><td>Waterfall and Agile project management</td><td>SAFe 6 PO/PM, Jira Align, DBT release cycles</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>Managing scope and timing</td><td>Streamlined analytics intake (Lead Analyst)</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>Fabric / Databricks (sister role)</td><td>Snowflake / DBT as the nearest equivalent</td><td><span class="badge hyp">Adjacent</span></td></tr>
+</table></div>
+
+
+<div class="refs"><strong>References:</strong> Job description (supplied) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Sep 2026">Portfolio site</a></div>
+<h3>Gaps to prepare for</h3>
+<div class="two">
+<div class="qbox"><strong>1. Mentoring evidence</strong>
+The "Leading a data team" STAR entry has no Situation or Result filled in.<br><em>Framing:</em> "I moved the team from producing dashboards fast to building decision narratives. I shifted skills towards advanced SQL and Python, and we wrote a mission statement together. I was named ANZ Mentor of the Quarter in 2023." Add one named example of someone you coached and what changed for them.</div>
+<div class="qbox"><strong>2. Degree and hands-on depth</strong>
+The JD prefers a technical degree, and you hold a BA in Visual Arts. After years leading a team, they may also ask how current your hands-on skills are.<br><em>Framing:</em> "My degree isn't technical. My data training is 14 years of doing the work, plus IBM Python for Data Science and Snowflake GenAI certifications. I still write SQL and Python myself. The laptop anomaly work and the Finance proposal were my own Python analysis."</div>
+</div>
+
+
+<div class="refs"><strong>References:</strong> STAR Skills (9 Sep 2026) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> Job description (supplied)</div>
+<div class="notice"><strong>Not yet produced:</strong> the optional Stage 2 extras (8. Hypothesis Review, 9. Data and AI Opportunities, 10. Probing Questions, 11. Mandatory Final Judgement). They can be added to this report on request.</div>
+
+<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (28 Sep 2026), STAR Skills.docx (9 Sep 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>. The LinkedIn profile could not be read (it blocks automated access).</div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+<h2>Source Register</h2>
+<div class="tablewrap"><table>
+<tr><th>Source</th><th>Used for</th></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/310764/000031076426000010/syk-20251231.htm">Stryker Form 10-K FY2025</a></td><td>Segments, employees, acquisitions, ERP, cyber risk</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000025/sykex991earningsq12026.htm">Q1 2026 results (8-K)</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000048/sykex991earningsq22026.htm">Q2 2026 results (8-K)</a></td><td>2026 trading, guidance, geography</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000310764/000031076426000041/syk-20260626.htm">8-K, 26 Jun 2026</a></td><td>Ortho Tech reorganisation</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.tradingview.com/news/tradingview:92a43deba7295:0-stryker-reports-2025-operating-results-and-2026-outlook/">FY2025 results release</a></td><td>FY2025 growth and margin</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.aha.org/news/headline/2026-03-12-medical-technology-company-stryker-disrupted-globally-cyberattack">AHA News</a> · <a target="_blank" rel="noopener" href="https://www.hipaajournal.com/stryker-cyberattack-iran/">HIPAA Journal</a></td><td>March 2026 cyberattack</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.medtechdive.com/news/stryker-stock-falls-on-slower-peripheral-vascular-hip-sales/830060/">MedTech Dive</a></td><td>Sep 2026 supply update and share reaction</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.stryker.com/content/dam/stryker/australia-new-zealand/cr-hub-files/2024%20Stryker%20Australia%20Modern%20Slavery%20Statement.pdf">Stryker Australia Modern Slavery Statement 2024</a></td><td>Australian headcount</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.roberthalf.com/au/en/job-details/data-analyst/sydney">Robert Half</a> · <a target="_blank" rel="noopener" href="https://www.glassdoor.com.au/Salaries/sydney-senior-data-analyst-salary-SRCH_IL.0,6_IM962_KO7,26.htm">Glassdoor</a> · <a target="_blank" rel="noopener" href="https://au.seek.com/companies/stryker-434959/salaries/data-analyst">SEEK</a></td><td>Pay benchmarks</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2013/Stryker-Announces-Definitive-Agreement-to-Acquire-MAKO-Surgical-Corp-for-165-Billion/default.aspx">Mako agreement</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2013/Stryker-Completes-Acquisition-of-MAKO-Surgical-Corp/default.aspx">Mako completion</a> · <a target="_blank" rel="noopener" href="https://www.stryker.com/us/en/about/news/2020/stryker-completes-acquisition-of-wright-medical.html">Wright Medical</a> · <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/stryker-completes-acquisition-vocera-communications-133000396.html">Vocera</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2024/Stryker-announces-definitive-agreement-to-acquire-care.ai-a-leading-virtual-care-and-ambient-intelligence-solutions-platform/default.aspx">care.ai</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-acquisition-of-Inari-Medical-Inc.-providing-entry-into-the-high-growth-peripheral-vascular-segment/default.aspx">Inari</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-completes-sale-of-U-S--spinal-implants-business/default.aspx">US spine sale</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-completes-acquisition-of-Amplitude-Vascular-Systems-to-add-next-generation-IVL-technology-to-peripheral-vascular-portfolio/default.aspx">AVS</a></td><td>Acquisitions and divestments</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2012/Stryker-Names-Kevin-A-Lobo-as-President-and-Chief-Executive-Officer/default.aspx">Lobo as CEO</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-announces-the-retirement-of-Glenn-S.-Boehnlein-and-the-promotion-of-Preston-Wells-to-Vice-President-Chief-Financial-Officer/default.aspx">Wells as CFO</a> · <a target="_blank" rel="noopener" href="https://investors.stryker.com/press-releases/news-details/2025/Stryker-names-Spencer-Stiles-President-and-Chief-Operating-Officer/default.aspx">Stiles as COO</a> · <a target="_blank" rel="noopener" href="https://www.stryker.com/ir/en/about/history.html">Stryker history</a></td><td>Leadership and origins</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.globenewswire.com/news-release/2026/09/23/3367674/32716/en/stryker-nyse-syk-scrutinized-amid-disclosure-of-persisting-peripheral-vascular-problems-hbss.html">Hagens Berman release</a></td><td>Shareholder investigation (context only)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/syk/">StockAnalysis</a> · <a target="_blank" rel="noopener" href="https://www.digrin.com/stocks/detail/SYK/price">Digrin</a></td><td>Share price data</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://au.seek.com/job/94796596?ref=applied">SEEK job ad</a> (saved PDF, 28 Sep 2026)</td><td>Role requirements</td></tr>
+</table></div>
+</section>
+
+<footer class="footer">
+<p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation in interview.</p>
+<p>Company figures in USD; pay in AUD. Share price data is for context only and is not investment advice. Prepared 28 September 2026 for Adam Aziz's interview preparation. Version 5 (29 September 2026): company website link added at the top right. Version 4 (29 September 2026): share-price chart now has six dated event labels across the full range, with detail on hover; the July 2026 label corrected from "Q2 beat" to "Q2 sales miss". Version 3: compact one-line references with full titles on hover, inference-only references relabelled.</p>
+</footer>
+</main>
+
+<script>
+(function(){
+  var data=[["Jan 24",327.60],["Feb 24",340.88],["Mar 24",350.27],["Apr 24",329.35],["May 24",333.84],["Jun 24",333.81],["Jul 24",321.25],["Aug 24",353.60],["Sep 24",355.21],["Oct 24",350.31],["Nov 24",385.58],["Dec 24",354.84],
+  ["Jan 25",385.63],["Feb 25",380.60],["Mar 25",367.71],["Apr 25",369.36],["May 25",377.98],["Jun 25",391.64],["Jul 25",388.77],["Aug 25",387.46],["Sep 25",366.78],["Oct 25",353.45],["Nov 25",368.28],["Dec 25",349.59],
+  ["Jan 26",367.58],["Feb 26",385.39],["Mar 26",327.72],["Apr 26",314.29],["May 26",304.28],["Jun 26",314.84],["Jul 26",325.70],["Aug 26",323.80],["25 Sep 26",272.36]];
+  var events={
+    "Nov 24":{s:"Q3 beat",d:"29 Oct 2024: Q3 beat, guidance raised; shares +3.6%",a:"end",up:1},
+    "Jan 25":{s:"Inari deal",d:"6 Jan 2025: $4.9bn Inari Medical deal announced",a:"start",up:1},
+    "Oct 25":{s:"Q3 25 dip",d:"30 Oct 2025: Q3 beat, but shares fell 2%+",a:"middle",up:0},
+    "Mar 26":{s:"Cyberattack",d:"11 Mar 2026: global cyberattack",a:"start",up:1},
+    "Jul 26":{s:"Q2 sales miss",d:"31 Jul 2026: Q2 organic growth missed forecasts; shares -7.3% intraday",a:"middle",up:1},
+    "25 Sep 26":{s:"PV supply update",d:"8 Sep 2026: CFO says PV supply issue runs into Q4; shares -8.8%",a:"end",up:1}};
+  var svg=document.getElementById('sykChart'),tip=document.getElementById('sykTooltip');
+  var NS="http://www.w3.org/2000/svg",current=12;
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function draw(){
+    var n=current?current+1:data.length, d=data.slice(-n);
+    var W=svg.clientWidth||800,H=svg.clientHeight||300,pl=46,pr=16,pt=16,pb=30;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML='';
+    var vals=d.map(function(x){return x[1]}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),pad=(mx-mn)*0.12||10;mn-=pad;mx+=pad;
+    function X(i){return pl+(W-pl-pr)*(d.length===1?0.5:i/(d.length-1));}
+    function Y(v){return pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));}
+    for(var g=0;g<=4;g++){var v=mn+(mx-mn)*g/4,y=Y(v);svg.appendChild(el('line',{x1:pl,x2:W-pr,y1:y,y2:y,stroke:'#eceff1'}));var t=el('text',{x:pl-6,y:y+4,'text-anchor':'end','font-size':11,fill:'#626a73'});t.textContent='$'+Math.round(v);svg.appendChild(t);}
+    var step=Math.max(1,Math.ceil(d.length/8));
+    d.forEach(function(p,i){if(i%step===0||i===d.length-1){var t=el('text',{x:X(i),y:H-9,'text-anchor':'middle','font-size':10.5,fill:'#626a73'});t.textContent=p[0];svg.appendChild(t);}});
+    var path=d.map(function(p,i){return(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)}).join(' ');
+    svg.appendChild(el('path',{d:path+' L'+X(d.length-1)+' '+(H-pb)+' L'+X(0)+' '+(H-pb)+' Z',fill:'rgba(245,180,0,.12)'}));
+    svg.appendChild(el('path',{d:path,fill:'none',stroke:'#202428','stroke-width':2.2}));
+    d.forEach(function(p,i){var e=events[p[0]];if(e){svg.appendChild(el('circle',{cx:X(i),cy:Y(p[1]),r:5,fill:'#8b2f2f'}));var anc=i===d.length-1?'end':(i===0?'start':e.a),dx=anc==='start'?-4:(anc==='end'?4:0);var t=el('text',{x:X(i)+dx,y:e.up?Y(p[1])-10:Y(p[1])+19,'text-anchor':anc,'font-size':10.5,'font-weight':600,fill:'#8b2f2f'});t.textContent=e.s;svg.appendChild(t);}});
+    var dot=el('circle',{r:4.5,fill:'#f5b400',stroke:'#202428','stroke-width':1.5,style:'display:none'});svg.appendChild(dot);
+    function move(ev){var r=svg.getBoundingClientRect(),cx=(ev.touches?ev.touches[0].clientX:ev.clientX)-r.left,sx=cx*W/r.width;
+      var i=Math.round((sx-pl)/((W-pl-pr)/(d.length-1||1)));i=Math.max(0,Math.min(d.length-1,i));
+      dot.setAttribute('cx',X(i));dot.setAttribute('cy',Y(d[i][1]));dot.style.display='';
+      tip.style.display='block';tip.style.left=(X(i)*r.width/W)+'px';tip.style.top=(Y(d[i][1])*r.height/H)+'px';
+      tip.innerHTML='<b>'+d[i][0]+'</b><br>US$'+d[i][1].toFixed(2)+(events[d[i][0]]?'<br>'+events[d[i][0]].d:'');}
+    svg.onmousemove=move;svg.ontouchstart=move;svg.ontouchmove=move;
+    svg.onmouseleave=function(){tip.style.display='none';dot.style.display='none';};
+    var a=d[0][1],b=d[d.length-1][1],c=(b/a-1)*100;
+    document.getElementById('sykStart').textContent='$'+a.toFixed(2)+' ('+d[0][0]+')';
+    document.getElementById('sykEnd').textContent='$'+b.toFixed(2)+' ('+d[d.length-1][0]+')';
+    document.getElementById('sykChange').textContent=(c>0?'+':'')+c.toFixed(1)+'%';
+  }
+  document.querySelectorAll('.stock-ranges button').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('.stock-ranges button').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');current=+btn.dataset.range;draw();});});
+  window.addEventListener('resize',draw);draw();
+})();
+</script>
+</body>
+</html>

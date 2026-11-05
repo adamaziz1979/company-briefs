@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynatrace: Company, Role and Recruitment Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
+  --line:#dfe3e7; --soft:#f8f9fa; --gold:#9b5cff; --gold2:#f3ecff;
+  --green:#236b45; --greenbg:#eaf5ee; --blue:#245b88; --bluebg:#edf4fa;
+  --orange:#8a5b00; --orangebg:#fff4dc; --red:#8b2f2f; --redbg:#faecec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Aptos,Arial,sans-serif;line-height:1.58}
+main{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{position:relative;background:#101214;color:#fff;padding:48px 56px 38px;border-top:7px solid var(--gold)}
+.site-link{position:absolute;top:16px;right:24px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#101214;background:var(--gold);text-decoration:none;border-radius:999px;padding:6px 12px;line-height:1}
+.site-link:hover{filter:brightness(1.08);text-decoration:underline}
+.site-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-link svg{width:12px;height:12px}
+@media (max-width:560px){.site-link{position:static;margin-bottom:14px}}
+@media print{.site-link{color:#101214}.site-link::after{content:" (" attr(href) ")";font-weight:400}}
+.hero .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#c7ccd2;font-weight:600}
+.hero h1{font-size:38px;line-height:1.1;margin:8px 0 10px}
+.hero h1 span{color:var(--gold)}
+.hero .sub{max-width:890px;color:#d4d8dc;font-size:16px}
+.hero .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:#b8bec5}
+.hero .meta .badge{margin-right:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);padding:10px 54px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-size:12px;color:#353a40;text-decoration:none;font-weight:600}
+.nav a:hover{color:#000;text-decoration:underline}
+section{padding:34px 56px 6px}
+h2{font-size:27px;margin:0 0 16px;border-bottom:2px solid var(--line);padding-bottom:9px}
+h3{font-size:19px;margin:27px 0 9px}
+h4{font-size:15px;margin:18px 0 7px}
+p{margin:8px 0 12px}
+.small{font-size:12px;font-weight:300;color:var(--muted)}
+.lead{font-size:16px;line-height:1.62}
+.thesis{background:#1b1e22;color:#eef0f2;border-left:7px solid var(--gold);border-radius:10px;padding:22px 26px;margin:6px 0 10px;font-size:15.5px}
+.thesis strong{color:var(--gold)}
+.thesis .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aeb5bc;margin-bottom:6px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.card{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:15px}
+.card .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.card .v{font-size:26px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
+.card .n{font-size:12px;font-weight:300;color:var(--muted);margin-top:4px}
+.callout{margin:17px 0;padding:15px 17px;border-left:5px solid #5d6670;background:#f5f7f8}
+.callout.gold{border-color:var(--gold);background:var(--gold2)}
+.callout.warn{border-color:#b47b00;background:#fff6e4}
+.problem{font-size:19px;font-weight:700;line-height:1.45;margin:12px 0;padding:18px 20px;border:2px solid var(--gold);border-radius:10px;background:#faf7ff}
+.badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;border-radius:999px;padding:3px 8px;margin-right:5px;vertical-align:1px;white-space:nowrap}
+.fact{color:var(--green);background:var(--greenbg)}
+.infer{color:var(--blue);background:var(--bluebg)}
+.hyp{color:var(--orange);background:var(--orangebg)}
+.limit{color:var(--red);background:var(--redbg)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{background:#eef1f3;text-align:left;font-size:12px;padding:9px;border:1px solid #d5dbe0}
+td{padding:9px;border:1px solid #dce1e5;vertical-align:top}
+td.num{white-space:nowrap}
+ul{margin-top:7px}
+li{margin:5px 0}
+.phase{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:14px 0}
+.phase:first-of-type{border-top:0}
+.phase .label{font-weight:700}
+.refs{margin:18px 0 8px;padding:11px 14px;border-left:4px solid #9aa2aa;background:#f7f8f9;font-size:11.5px;color:#535b64}
+.refs a{color:#174f85;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.refs{line-height:1.7}
+.refs .sep{color:#9aa2aa;margin:0 5px}
+.refs.dark .sep{color:#5d6670}
+.refs.dark{background:#1c2024;border-left-color:#5d6670;color:#aeb5bc;margin-top:14px}
+.refs.dark a{color:#9ec5ec}
+button{font-family:inherit}
+svg text{font-family:Lexend,Aptos,Arial,sans-serif}
+td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
+.metricbars{display:grid;gap:9px;margin:16px 0}
+.metricrow{display:grid;grid-template-columns:90px 1fr 75px;gap:10px;align-items:center;font-size:12px}
+.barbg{height:12px;background:#eceff1;border-radius:8px;overflow:hidden}
+.bar{height:100%;background:#8c4747;border-radius:8px}
+.tag{font-weight:700;text-align:right}
+.timeline td:first-child{white-space:nowrap;font-weight:700}
+.footer{margin-top:34px;padding:24px 56px 50px;border-top:1px solid var(--line);font-size:11.5px;color:#636b74}
+.notice{font-size:12.5px;border:1px solid #e2c66b;background:#fff9e7;border-radius:8px;padding:12px 14px;margin:14px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qbox{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;background:#fff}
+.qbox strong{display:block;margin-bottom:4px}
+.story{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0;background:#fff;position:relative}
+.story .rank{position:absolute;top:16px;right:18px;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#101214;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.story h4{margin:0 0 8px;font-size:16.5px;padding-right:50px}
+.story .why{font-size:13.5px;margin:6px 0 10px}
+.star{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;font-size:13.5px;margin:8px 0}
+.star b{color:#fff;background:#3a4047;border-radius:5px;text-align:center;font-size:12px;padding:2px 0;height:22px}
+.story .open{border-left:4px solid var(--gold);background:var(--gold2);padding:9px 12px;font-style:italic;margin:10px 0 6px;font-size:14px}
+.story .meta2{font-size:12px;color:var(--muted)}
+.chartbox{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px;margin:18px 0 22px}
+.chartbox .title{font-weight:700;font-size:14px;margin-bottom:6px}
+.chartcap{font-size:11px;font-weight:300;color:var(--muted);margin-top:6px}
+.stock-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.stock-ranges{display:flex;gap:6px;flex-wrap:wrap}
+.stock-ranges button{appearance:none;border:1px solid #ccd2d8;background:#fff;color:#353a40;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:600;cursor:pointer}
+.stock-ranges button.active{background:#202428;color:#fff;border-color:#202428}
+.stock-ranges button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.stock-chart-wrap{position:relative}
+#dtChart{width:100%;height:300px;display:block;touch-action:pan-y}
+.stock-tooltip{position:absolute;pointer-events:none;background:#111;color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;line-height:1.35;transform:translate(-50%,-115%);white-space:nowrap;display:none;z-index:2}
+.stock-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend b{color:var(--ink)}
+/* Executive infographic */
+.info{background:#101214;color:#eef0f2;border-radius:14px;padding:26px 26px 22px;margin:8px 0 10px;border-top:6px solid var(--gold)}
+.info h2{color:#fff;border-bottom:1px solid #2e3338;font-size:24px}
+.info .ik{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9b5cff;font-weight:600;margin:20px 0 9px}
+.itiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.itile{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:12px 13px}
+.itile .v{font-size:26px;font-weight:700;color:#fff;line-height:1.15;letter-spacing:-.01em}
+.itile .l{font-size:12px;font-weight:300;color:#b8bec5;margin-top:5px}
+.itile.neg .v{color:#ff9d8f}
+.itrack{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-top:18px}
+.itrack:before{content:"";position:absolute;left:4%;right:4%;top:24px;height:3px;background:linear-gradient(90deg,#5d6670,#9b5cff 60%,#d9534f)}
+.istop{position:relative;text-align:center;font-size:11.5px;color:#cfd4d9;padding-top:18px}
+.istop:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#9b5cff;border:3px solid #101214}
+.istop.shock:before{background:#d9534f}
+.istop b{display:block;color:#fff;font-size:13px}
+.ichev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ichev div{background:#2a2f35;padding:12px 14px 12px 22px;clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%,6% 50%);font-size:12px;color:#cfd4d9}
+.ichev div:first-child{clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%);padding-left:14px}
+.ichev div:last-child{background:#9b5cff;color:#101214}
+.ichev b{display:block;font-size:13.5px;color:#fff}
+.ichev div:last-child b{color:#101214}
+.icols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ibox{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:13px 15px;font-size:12.5px;color:#d4d8dc}
+.ibox ul{margin:4px 0 0;padding-left:18px}
+.ibox li{margin:4px 0}
+.hrow{display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;margin:7px 0}
+.conf{height:8px;border-radius:6px;background:#2e3338;overflow:hidden}
+.conf i{display:block;height:100%;background:#9b5cff}
+.hrow small{grid-column:1/-1;color:#8f979f;margin-top:-5px}
+.iproof{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.iproof div{background:#1c2024;border:1px solid #2e3338;border-left:4px solid #9b5cff;border-radius:8px;padding:10px 11px;font-size:11.5px;color:#aeb5bc}
+.iproof b{display:block;color:#fff;font-size:15px;line-height:1.25;margin-bottom:3px}
+.iproof em{display:block;font-style:normal;color:#9b5cff;font-weight:600;margin-top:4px;font-size:11px}
+.iq{margin-top:18px;border:2px solid #9b5cff;border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
+.info .src{font-size:10.5px;color:#8f979f;margin-top:12px}
+@media (max-width:900px){
+  .itiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itrack{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+  .itrack:before{display:none}
+  .ichev,.icols{grid-template-columns:1fr}
+  .ichev div,.ichev div:first-child{clip-path:none;padding-left:14px;border-radius:8px}
+  .iproof{grid-template-columns:1fr 1fr}
+  .info{padding:20px 16px}
+}
+@media (max-width:560px){.iproof,.itiles{grid-template-columns:1fr}.itrack{grid-template-columns:1fr 1fr}}
+@media print{.info{-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .hero,section,.footer{padding-left:20px;padding-right:20px}
+  .nav{padding-left:20px;padding-right:20px;gap:12px}
+  .phase{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}#dtChart{height:260px}.problem{font-size:17px}}
+@media print{
+  body{background:#fff}
+  main{box-shadow:none;max-width:none}
+  .nav,.stock-ranges{display:none}
+  section{padding-top:24px}
+  a{color:inherit}
+  .card,.qbox,.callout,.refs,.story,.chartbox,.thesis{break-inside:avoid}
+  tr{break-inside:avoid}
+}
+
+.bar.up{background:#2f7a52}
+.finchart text{font-family:Lexend,Aptos,Arial,sans-serif}
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:12px 0}
+.shot{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.shot img{display:block;width:100%;height:auto;background:#f3f5f7}
+.shot figcaption{font-size:12px;font-weight:300;color:var(--muted);padding:8px 10px}
+@media (max-width:560px){.shots{grid-template-columns:1fr}}
+@media print{.shot{break-inside:avoid}}
+code{font-size:12px;background:#f3f5f7;padding:1px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<main>
+
+<header class="hero">
+  <a class="site-link" href="https://www.dynatrace.com/" target="_blank" rel="noopener" title="Dynatrace official website (global; no Australian locale site)">dynatrace.com <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
+  <h1><span>Dynatrace</span>: Company, Role and Recruitment Brief</h1>
+  <div class="sub">Manager, Data Analytics - APAC (Business Insights, Sydney, hybrid) | Executive infographic, Stage 1 executive briefing, compensation and headcount, Stage 2 company dossier (sections 1 to 7), role deconstruction and Stage 3 top five experiences to lead with.</div>
+  <div class="meta">
+    <span>Prepared: 2 October 2026 (version 3, updated 9 October 2026)</span>
+    <span>Candidate: Adam Aziz</span>
+    <span>Currency: USD for company figures; AUD for pay</span>
+    <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Report sections">
+  <a href="#infographic">Infographic</a>
+  <a href="#stage1">Stage 1</a>
+  <a href="#pay">Pay &amp; headcount</a>
+  <a href="#stage2">Stage 2</a>
+  <a href="#grail">Grail</a>
+  <a href="#biapp">BI app</a>
+  <a href="#stock">Stock</a>
+  <a href="#role">Role</a>
+  <a href="#stage3">Stage 3</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="thesis">
+<div class="thesis">
+  <div class="k">Executive Summary</div>
+  Dynatrace has grown revenue from <strong>US$546m (FY20) to US$2,018m (FY26)</strong> by selling an AI-powered observability platform to the world's largest companies. Since 2023 customers buy through <strong>consumption-based subscriptions</strong>, so Dynatrace only grows when customers use more of the platform. Growth is now slowing: FY27 ARR guidance of <strong>US$2.38bn to US$2.40bn</strong> sent the shares down 11.4% on 13 May 2026 amid doubts about pricing power. APAC is a <strong>US$193m region growing 19%</strong>. The Business Insights manager's job is to turn platform data into <strong>measurable customer value that grows consumption and secures renewals</strong> in APAC's top accounts.
+</div>
+<div class="refs"><strong>References:</strong> Summary of Stage 1 and section 7; these links support the specific claims. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a></div>
+</section>
+<section id="infographic">
+<div class="info" role="region" aria-label="Executive infographic">
+  <h2>Dynatrace at a glance: why this role, why now, why me?</h2>
+
+  <div class="ik">Observed facts</div>
+  <div class="itiles">
+    <div class="itile"><div class="v">US$2,018m</div><div class="l">FY26 revenue (to 31 Mar 2026), up from US$546m in FY20</div></div>
+    <div class="itile"><div class="v">US$193m</div><div class="l">FY26 APAC revenue, 10% of total, +19%</div></div>
+    <div class="itile"><div class="v">~5,600</div><div class="l">Employees; ~4,100 customers (31 Mar 2026)</div></div>
+    <div class="itile"><div class="v">US$2.38-2.40bn</div><div class="l">FY27 ARR guidance, 15.5% to 16.5% cc growth</div></div>
+    <div class="itile neg"><div class="v">-11.4%</div><div class="l">Share fall on FY27 guidance (13 May 2026)</div></div>
+  </div>
+
+  <div class="ik">Turning points</div>
+  <div class="itrack">
+    <div class="istop"><b>2014</b>Carved out by Thoma Bravo</div>
+    <div class="istop"><b>Aug 2019</b>NYSE IPO</div>
+    <div class="istop"><b>Apr 2023</b>DPS consumption pricing</div>
+    <div class="istop"><b>Jan 2026</b>Dynatrace Intelligence agents</div>
+    <div class="istop shock"><b>May 2026</b>Guidance reset, shares -11.4%</div>
+    <div class="istop shock"><b>Aug 2026</b>CFO to retire by Mar 2027</div>
+  </div>
+
+  <div class="ik">Strategic evolution</div>
+  <div class="ichev">
+    <div><b>Monitoring specialist</b>APM tools used inside IT</div>
+    <div><b>Consumption platform</b>One data store; customers pay for what they use</div>
+    <div><b>Business observability</b>AI agents and analysts turn platform data into business outcomes</div>
+  </div>
+
+  <div class="icols" style="margin-top:4px">
+    <div>
+      <div class="ik">Why the role exists now</div>
+      <div class="ibox">
+        <ul>
+          <li><b>Adoption is revenue:</b> under DPS, more customer usage means more consumption and stronger renewals.</li>
+          <li><b>APAC scale:</b> a US$193m region growing 19% needs its own Business Insights leadership.</li>
+          <li><b>Proof under pressure:</b> after the May reset, Sales needs documented customer outcomes to defend price.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="ik">Key working hypotheses</div>
+      <div class="ibox">
+        <div class="hrow"><span>H1: Business Insights is a commercial lever for expansion and renewal</span><div class="conf" aria-label="High confidence"><i style="width:85%"></i></div><small>High. Test: "Which consumption or renewal metrics is this team measured on?"</small></div>
+        <div class="hrow"><span>H2: APAC is becoming its own squad on the US model</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: "How many analysts and accounts does the APAC squad cover today?"</small></div>
+        <div class="hrow"><span>H3: Proof of customer value is needed to defend pricing</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: "How do QBR outcomes feed Sales at renewal time?"</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ik">Candidate positioning: five proof points</div>
+  <div class="iproof">
+    <div><b>46 to 196 users</b>ThoughtSpot adoption +326%; queries 8.1K to 19.2K a month<em>Adoption and consumption</em></div>
+    <div><b>62% to 100%</b>Consistency across 27 KPIs; escalations to zero<em>Executive-grade reporting</em></div>
+    <div><b>Half a day to near-instant</b>AI assistant and tripwires for case spikes<em>Health, risk, escalation</em></div>
+    <div><b>Telemetry to value</b>OpenTelemetry device data to anomaly-led refresh; millions in potential savings<em>Observability to business value</em></div>
+    <div><b>Team of analysts, DS, engineers</b>Led at Cisco; ANZ Mentor of the Quarter (Apr 2023)<em>Leading and developing a squad</em></div>
+  </div>
+
+  <div class="iq">"How do we prove, account by account across APAC, that Business Insights turns Dynatrace data into measurable business value that grows consumption and secures renewals, without quality slipping as the team scales?"</div>
+
+<div class="refs dark"><strong>References:</strong> Hypotheses are Working Hypotheses to validate in interview; confidence bars are qualitative. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000049/q1fy27-earningsreleaseex99.htm" title="Dynatrace Reports First Quarter Fiscal Year 2027 Financial Results (8-K Ex 99), SEC EDGAR, 5 Aug 2026">SEC: Q1 FY27 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.thomabravo.com/behind-the-deal/how-a-complex-carveout-led-to-dynatrace-disrupting-itself-and-then-an-entire-industry" title="How a complex carve-out led to Dynatrace disrupting itself and then an entire industry, Thoma Bravo, accessed Oct 2026">Thoma Bravo: carve-out story</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://builtin.com/job/manager-data-analytics/4716253" title="Manager, Data Analytics, Insights Data Analytics team (removed 24 Apr 2025), Built In, 2025">Built In: US role 2025</a> <span class="sep">|</span> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026)</div>
+</div>
+</section>
+<section id="stage1">
+<h2>Stage 1: One-page Executive Briefing</h2>
+
+<h3>Company in one paragraph</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span> Dynatrace sells an AI-powered observability and security platform that monitors applications, infrastructure, logs and digital experience for large enterprises. Revenue is almost all subscription: <strong>US$1,930m of US$2,018m in FY26</strong>. It targets the world's largest 15,000 companies and has about 4,100 customers in over 110 countries. Customers increasingly buy through the <strong>Dynatrace Platform Subscription (DPS)</strong>, an annual spend commitment drawn down by consumption. <span class="badge infer">Strong Inference</span> Usage therefore drives revenue. <span class="badge fact">Observed Fact</span> The current direction is "agentic operations": Dynatrace Intelligence, launched at Perform on 28 January 2026, uses AI agents to act on what the platform sees.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">FY26 revenue</div><div class="v">US$2,018m</div><div class="n">+19%; US$546m in FY20</div></div>
+  <div class="card"><div class="k">APAC revenue FY26</div><div class="v">US$193m</div><div class="n">10% of total, +19%</div></div>
+  <div class="card"><div class="k">Employees</div><div class="v">~5,600</div><div class="n">~4,100 customers (31 Mar 2026)</div></div>
+  <div class="card"><div class="k">FY27 ARR guidance</div><div class="v">US$2.38-2.40bn</div><div class="n">15.5% to 16.5% cc; shares -11.4% on 13 May 2026</div></div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a></div>
+
+<h3>Observed Facts</h3>
+<div class="tablewrap"><table>
+<tr><th>Area</th><th>Fact</th><th>Interview relevance</th></tr>
+<tr><td>Scale</td><td><span class="badge fact">Observed Fact</span> Revenue US$546m (FY20) to US$2,018m (FY26).</td><td>Bigger accounts mean higher stakes for proving value.</td></tr>
+<tr><td>Momentum</td><td><span class="badge fact">Observed Fact</span> ARR US$2,136m at 30 Jun 2026 (+17%). Q1 FY27 revenue US$555m (+16%).</td><td>Growth is solid but slowing.</td></tr>
+<tr><td>Outlook</td><td><span class="badge fact">Observed Fact</span> FY27 ARR guidance US$2.38bn to US$2.40bn (15.5% to 16.5% cc).</td><td>Every renewal and expansion counts.</td></tr>
+<tr><td>APAC</td><td><span class="badge fact">Observed Fact</span> US$193m FY26 revenue, 10% of total, +19% (FY25: US$162m).</td><td>Growing in line with the group and edging up to 10% of revenue.</td></tr>
+<tr><td>People</td><td><span class="badge fact">Observed Fact</span> ~5,600 employees in ~40 countries; ~30% in the US, ~28% in Austria.</td><td>The APAC team is a small unit in a large company.</td></tr>
+<tr><td>Leadership</td><td><span class="badge fact">Observed Fact</span> CFO Jim Benson will retire by 31 Mar 2027; a search is under way.</td><td>Scrutiny on cost to serve may tighten.</td></tr>
+<tr><td>Service</td><td><span class="badge fact">Observed Fact</span> Business Insights is a dedicated team that drives value, adoption and optimisation for Digital Experience Monitoring (DEM) and Business Analytics customers.</td><td>This is the team you would lead.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000049/q1fy27-earningsreleaseex99.htm" title="Dynatrace Reports First Quarter Fiscal Year 2027 Financial Results (8-K Ex 99), SEC EDGAR, 5 Aug 2026">SEC: Q1 FY27 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/services-support/business-insights/" title="Business Insights service page, Dynatrace, accessed Oct 2026">Dynatrace: Business Insights</a></div>
+
+<h3>Major Turning Points</h3>
+<ol>
+<li><strong>2014 to 2018, carve-out and rebuild:</strong> Thoma Bravo took Compuware private, separated Dynatrace and backed a rebuild around AI and automation. <span class="badge fact">Observed Fact</span></li>
+<li><strong>1 Aug 2019, IPO:</strong> listed on the NYSE as DT. Revenue has grown about 3.7x since FY20. <span class="badge fact">Observed Fact</span></li>
+<li><strong>Apr 2023, DPS consumption pricing:</strong> customers commit to annual spend and use any capability. Adoption now drives revenue directly. <span class="badge fact">Observed Fact</span> (H1)</li>
+<li><strong>May 2024, go-to-market reorganisation:</strong> cautious FY25 guidance cited sales changes and longer consolidation deals. <span class="badge fact">Observed Fact</span></li>
+<li><strong>Jan 2026, agentic pivot:</strong> Dynatrace Intelligence and domain agents launched, including "business observability" agents. Taplytics (DevCycle feature flags) acquired. <span class="badge fact">Observed Fact</span></li>
+<li><strong>13 May 2026, guidance reset:</strong> FY26 beat expectations but FY27 ARR guidance slowed. Shares fell 11.4% on pricing-power and competition concerns. <span class="badge fact">Observed Fact</span> (H3)</li>
+</ol>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.thomabravo.com/behind-the-deal/how-a-complex-carveout-led-to-dynatrace-disrupting-itself-and-then-an-entire-industry" title="How a complex carve-out led to Dynatrace disrupting itself and then an entire industry, Thoma Bravo, accessed Oct 2026">Thoma Bravo: carve-out story</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Dynatrace" title="Dynatrace, Wikipedia, accessed Oct 2026">Wikipedia: Dynatrace history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investing.com/news/company-news/dynatrace-shares-target-cut-at-rbc-capital-amid-2025-guidance-93CH-3443594" title="Dynatrace shares target cut at RBC Capital amid 2025 guidance, Investing.com, May 2024">Investing.com: FY25 guidance</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://eit.dealroom.co/news/feed/dynatrace-acquires-devcycle-to-shift-from-problem-detection-to-automatic-remediation-1" title="Dynatrace acquires DevCycle to shift from problem detection to automatic remediation, Dealroom, Jan 2026">Dealroom: DevCycle deal</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a></div>
+
+<h3>Strategic Evolution</h3>
+<div class="phase"><div class="label">2005 to 2014</div><div>Application performance specialist; inside Compuware from 2011. Data used by IT teams.</div></div>
+<div class="phase"><div class="label">2014 to 2019</div><div>Platform rebuild. The Keynote merger added digital experience monitoring, the product area Business Insights supports.</div></div>
+<div class="phase"><div class="label">2019 to 2023</div><div>Listed platform. Observability, security and the Grail data store unify logs, traces, metrics and user sessions.</div></div>
+<div class="phase"><div class="label">2023 to 2025</div><div>Consumption model (DPS). Value has to show up in usage, not licence counts.</div></div>
+<div class="phase"><div class="label">2026 onwards</div><div>Agentic operations and business observability. <span class="badge infer">Strong Inference</span> <strong>What it is becoming:</strong> a platform whose data answers business questions, not just IT ones. Business Insights is the human layer that proves this to customers.</div></div>
+<div class="refs"><strong>References:</strong> Inference from Observed Facts and Major Turning Points. <a target="_blank" rel="noopener" href="https://www.thomabravo.com/behind-the-deal/how-a-complex-carveout-led-to-dynatrace-disrupting-itself-and-then-an-entire-industry" title="How a complex carve-out led to Dynatrace disrupting itself and then an entire industry, Thoma Bravo, accessed Oct 2026">Thoma Bravo: carve-out story</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://itwire.com/sponsored-announcements/dynatrace-and-keynote-set-to-merge" title="Dynatrace and Keynote set to merge, iTWire, 2015">iTWire: Keynote merger</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a></div>
+
+<h3>Why the Role Exists Now</h3>
+<div class="callout gold">
+<span class="badge hyp">Working Hypothesis, medium-high confidence</span><br>
+<ul>
+<li>Under DPS, every gain in customer adoption is a gain in consumption and renewal value (H1). <span class="badge infer">Strong Inference</span></li>
+<li>APAC revenue grew 19% to US$193m. A region that size needs its own Business Insights leadership, not coverage from another time zone (H2).</li>
+<li>After the 13 May 2026 reset, investors are questioning pricing power. Documented customer outcomes in QBRs are the evidence Sales needs to defend price and expand (H3).</li>
+<li>In June 2025 the Business Insights app moved into the platform, and AI agents have launched since. The service model is changing, and someone has to scale it in APAC (H4).</li>
+</ul>
+<span class="badge fact">Observed Fact</span> The JD centres on the top 10 to 15 accounts, consumption and growth metrics, renewals and executive reporting. This is a <strong>commercial role delivered through analytics</strong>.
+</div>
+<div class="refs"><strong>References:</strong> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app blog</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a></div>
+
+<h3>The Real Business Problem</h3>
+<div class="problem">"How do we prove, account by account across APAC, that Business Insights turns Dynatrace data into measurable business value that grows consumption and secures renewals, without quality slipping as the team scales?"</div>
+<div class="refs"><strong>References:</strong> Inference from Why the Role Exists Now and Major Turning Points. Job description (Interview Prep file, 2 Oct 2026)</div>
+</section>
+<section id="pay">
+<h2>Compensation &amp; Headcount</h2>
+<div class="tablewrap"><table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Global employees</td><td class="num"><strong>~5,600</strong><br><span class="small">~30% US, ~28% Austria; ~40 countries</span></td><td><span class="badge fact">Observed Fact</span> 10-K FY2026, at 31 Mar 2026. Employees, not contractors.</td></tr>
+<tr><td>Australia employees</td><td class="num"><strong>Not publicly disclosed</strong></td><td><span class="badge fact">Observed Fact</span> North Sydney is listed as the APAC regional HQ, and Melbourne also hires. No filing gives a number.</td></tr>
+<tr><td>Sydney headcount</td><td class="num"><strong>Not publicly disclosed</strong></td><td>No defensible basis for an estimate.</td></tr>
+<tr><td>APAC Business Insights team size</td><td class="num"><strong>Not disclosed for APAC</strong></td><td><span class="badge fact">Observed Fact</span> A 2025 US version of this role led a squad of 8 to 10 analysts, each covering 25 to 45 accounts. <span class="badge hyp">Working Hypothesis</span> Applying that to APAC (H2).</td></tr>
+<tr><td>Exact-role pay</td><td class="num"><strong>Not disclosed</strong></td><td><span class="badge fact">Observed Fact</span> The ad gave no salary and was removed on 30 Sep 2026.</td></tr>
+<tr><td>Benchmark 1: Analytics Manager, Sydney 2026</td><td class="num">A$140k to A$180k<br><span class="small">median A$155k</span></td><td>Morgan McKinley 2026 guide (recruiter). Base vs package and super treatment not stated.</td></tr>
+<tr><td>Benchmark 2: Head of Analytics, Sydney 2026</td><td class="num">A$180k to A$250k<br><span class="small">median A$200k</span></td><td>Morgan McKinley 2026 guide (recruiter). Same caveat.</td></tr>
+<tr><td>Platform estimate: Analytics Manager, Sydney</td><td class="num">avg A$135.7k base<br><span class="small">A$107k to A$172k</span></td><td>PayScale, self-reported. Lowest weight.</td></tr>
+</table></div>
+
+<div class="callout gold">
+<strong>Indicative interview range:</strong> <strong>A$180k to A$210k base plus super</strong>, with bonus and RSUs on top. Anchor about <strong>A$195k base plus super</strong>.<br>
+<span class="badge infer">Inference, not an employer-confirmed budget</span> The role leads a squad, owns outcomes on the top 10 to 15 accounts and is the executive escalation point. That sits above a standard Analytics Manager (A$155k median) and near the Head of Analytics band. <span class="badge hyp">Working Hypothesis</span> US-listed software vendors usually add equity.<br>
+<strong>Material uncertainty:</strong> APAC squad size, whether benchmarks include super, bonus target and RSU value. <strong>Confirm with the recruiter:</strong> the budgeted base, super treatment, bonus target %, RSU grant and vesting, and the APAC team size.
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+"Based on the scope, leading the APAC squad and owning outcomes on the top accounts, I'm looking at around A$195,000 base plus super. I'm flexible on how the package is structured across bonus and equity. Could you share the budgeted range?"
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://builtin.com/company/dynatrace/offices" title="Offices at Dynatrace, Built In, accessed Oct 2026">Built In: Dynatrace offices</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.builtinboston.com/job/manager-data-analytics-apac/10775249" title="Manager, Data Analytics - APAC (removed 30 Sep 2026), Built In Boston, Sep 2026">Built In: APAC role ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://builtin.com/job/manager-data-analytics/4716253" title="Manager, Data Analytics, Insights Data Analytics team (removed 24 Apr 2025), Built In, 2025">Built In: US role 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/analytics-manager/sydney" title="Analytics Manager salaries, Sydney, Morgan McKinley Salary Guide 2026">Morgan McKinley: Analytics Mgr Sydney</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-analytics/sydney" title="Head of Analytics salaries, Sydney, Morgan McKinley Salary Guide 2026">Morgan McKinley: Head of Analytics Sydney</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.payscale.com/research/AU/Job=Analytics_Manager/Salary/61eb5b11/Sydney" title="Average Analytics Manager salary in Sydney, PayScale, 2026">PayScale: Analytics Mgr Sydney</a></div>
+</section>
+<section id="stage2">
+<h2>Stage 2: Full Interview Dossier (first pass)</h2>
+
+<h3>1. Company Overview</h3>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Business:</strong> unified observability and security platform covering infrastructure, application, log, digital experience, business analytics and security monitoring, all on the Grail data store.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Revenue model:</strong> subscription (US$1,930m of US$2,018m in FY26), increasingly through DPS consumption commitments.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Customers:</strong> ~4,100 in 110+ countries, aimed at the largest 15,000 companies. No customer is over 10% of revenue.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Geography (FY26):</strong> North America US$1,017m (50%), EMEA US$649m (32%), APAC US$193m (10%), Latin America US$159m (8%).</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Ownership:</strong> NYSE: DT since 1 Aug 2019. Thoma Bravo fully exited in 2023. A US$1bn buyback was authorised in Feb 2026; US$275m was spent in Q1 FY27 at an average US$38.88.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>APAC leadership:</strong> James McCready, VP Asia Pacific and Japan, based in Singapore, appointed March 2024. Confirm he is still in role.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Priorities:</strong> agentic AI (Dynatrace Intelligence), log management growth, platform consolidation deals and partner-led go-to-market.</li>
+</ul>
+<div class="chartbox">
+  <div class="title">Financial scale</div>
+  <svg class="finchart" viewBox="0 0 640 256" width="100%" role="img" aria-label="Dynatrace revenue rising from 546 million US dollars in FY20 to 2,018 million in FY26">
+    <text x="12" y="16" font-size="11" fill="#626a73">US$ millions</text>
+    <line x1="56" y1="209.4" x2="615" y2="209.4" stroke="#eceff1"/><text x="50" y="213.4" text-anchor="end" font-size="11" fill="#626a73">500</text><line x1="56" y1="156.7" x2="615" y2="156.7" stroke="#eceff1"/><text x="50" y="160.7" text-anchor="end" font-size="11" fill="#626a73">1,000</text><line x1="56" y1="103.9" x2="615" y2="103.9" stroke="#eceff1"/><text x="50" y="107.9" text-anchor="end" font-size="11" fill="#626a73">1,500</text><line x1="56" y1="51.1" x2="615" y2="51.1" stroke="#eceff1"/><text x="50" y="55.1" text-anchor="end" font-size="11" fill="#626a73">2,000</text>
+    <polyline points="80,204.6 165,187.9 250,164.2 335,139.9 420,111.2 505,82.9 590,49.2" fill="none" stroke="#9b5cff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="80" cy="204.6" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="80" y="192.6" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">546</text><text x="80" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY20</text><circle cx="165" cy="187.9" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="165" y="175.9" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">704</text><text x="165" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY21</text><circle cx="250" cy="164.2" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="250" y="152.2" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">929</text><text x="250" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY22</text><circle cx="335" cy="139.9" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="335" y="127.9" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">1,159</text><text x="335" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY23</text><circle cx="420" cy="111.2" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="420" y="99.2" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">1,431</text><text x="420" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY24</text><circle cx="505" cy="82.9" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="505" y="70.9" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">1,699</text><text x="505" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY25</text><circle cx="590" cy="49.2" r="5.5" fill="#9b5cff" stroke="#fff" stroke-width="2"/><text x="590" y="37.2" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17191c">2,018</text><text x="590" y="244" text-anchor="middle" font-size="11.5" fill="#626a73">FY26</text>
+  </svg>
+  <div class="chartcap">Revenue, FY20 to FY26 (fiscal years to 31 March). FY21 to FY23 from the FY2023 10-K; FY25 and FY26 from the FY26 Q4 release and FY2026 10-K; FY20 and FY24 from Macrotrends (compiled from filings).</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000049/q1fy27-earningsreleaseex99.htm" title="Dynatrace Reports First Quarter Fiscal Year 2027 Financial Results (8-K Ex 99), SEC EDGAR, 5 Aug 2026">SEC: Q1 FY27 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1773383/000177338323000055/dt-20230331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2023, SEC EDGAR, May 2023">SEC: 10-K FY2023</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/DT/dynatrace/revenue" title="Dynatrace revenue 2019 to 2025, Macrotrends, accessed Oct 2026">Macrotrends: DT revenue</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://pehub.com/dynatrace-ranks-as-one-of-thoma-bravos-best-deals-ever" title="Dynatrace ranks as one of Thoma Bravo&#x27;s best deals ever, PE Hub, 2023">PE Hub: Thoma Bravo exit</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://itwire.com/people-moves/dynatrace-names-new-vice-president-for-asia-pacific-and-japan.html" title="Dynatrace names new vice president for Asia Pacific and Japan, iTWire, 4 Mar 2024">iTWire: APJ VP</a></div>
+
+<h3>2. How the Company Became What It Is Today</h3>
+<div class="phase"><div class="label">2005 to 2014: Origins</div><div><span class="badge fact">Observed Fact</span> Founded in Linz, Austria in 2005 as an application performance specialist. Compuware bought it in 2011.</div></div>
+<div class="phase"><div class="label">2014 to 2019: Rebuild</div><div><span class="badge fact">Observed Fact</span> Thoma Bravo took Compuware private in 2014, carved Dynatrace out and backed a full rebuild around AI and automation. The 2015 Keynote merger added synthetic and digital experience monitoring.</div></div>
+<div class="phase"><div class="label">2019 to 2023: Listed platform</div><div><span class="badge fact">Observed Fact</span> The 2019 IPO funded the move from APM into full observability, security and logs. Rick McConnell became CEO in December 2021.</div></div>
+<div class="phase"><div class="label">2023 to 2025: Consumption</div><div><span class="badge fact">Observed Fact</span> DPS (April 2023) moved customers to consumption-based commitments, so Dynatrace earns more only when customers use more.</div></div>
+<div class="phase"><div class="label">2026: Agentic, under scrutiny</div><div><span class="badge fact">Observed Fact</span> Dynatrace Intelligence reframes observability data as a source of autonomous action and business insight. Revenue grew 19% in FY26 but growth is slowing, and the market questions pricing power. A CFO change is due by March 2027. <span class="badge infer">Strong Inference</span> The thread to the role: Dynatrace's value now depends on customers turning platform data into business outcomes, and Business Insights is where that happens one account at a time.</div></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Dynatrace" title="Dynatrace, Wikipedia, accessed Oct 2026">Wikipedia: Dynatrace history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.thomabravo.com/behind-the-deal/how-a-complex-carveout-led-to-dynatrace-disrupting-itself-and-then-an-entire-industry" title="How a complex carve-out led to Dynatrace disrupting itself and then an entire industry, Thoma Bravo, accessed Oct 2026">Thoma Bravo: carve-out story</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://itwire.com/sponsored-announcements/dynatrace-and-keynote-set-to-merge" title="Dynatrace and Keynote set to merge, iTWire, 2015">iTWire: Keynote merger</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/229/dynatrace-announces-ceo-transition" title="Dynatrace announces CEO transition, Dynatrace Investor Relations, 15 Nov 2021">Dynatrace IR: CEO transition</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4592147-dynatrace-stock-slides-10-q4-earnings-fail-to-defend-ai-rivals-hurting-price-power" title="Dynatrace stock slides 10%: Q4 earnings fail to defend AI, rivals hurting price power, Seeking Alpha, 13 May 2026">Seeking Alpha: Q4 slide</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a></div>
+
+<h3>3. Chronological Timeline</h3>
+<div class="tablewrap"><table class="timeline">
+<tr><th>Year / Date</th><th>Event</th><th>Evidence</th><th>Why it mattered</th></tr>
+<tr><td>2005</td><td>dynaTrace founded in Linz, Austria</td><td><span class="badge fact">Observed Fact</span></td><td>Austrian engineering core remains (~28% of staff)</td></tr>
+<tr><td>2011</td><td>Acquired by Compuware</td><td><span class="badge fact">Observed Fact</span></td><td>Scale and enterprise customer access</td></tr>
+<tr><td>Dec 2014</td><td>Thoma Bravo takes Compuware private; Dynatrace carved out</td><td><span class="badge fact">Observed Fact</span></td><td>Funded the AI platform rebuild</td></tr>
+<tr><td>2015</td><td>Merger with Keynote</td><td><span class="badge fact">Observed Fact</span></td><td>Added the digital experience products Business Insights supports</td></tr>
+<tr><td>1 Aug 2019</td><td>IPO on NYSE (DT)</td><td><span class="badge fact">Observed Fact</span></td><td>Public scrutiny of growth and customer value begins</td></tr>
+<tr><td><strong>FY20 to FY26</strong></td><td><strong>Revenue rose from US$546m to US$2,018m</strong></td><td><span class="badge fact">Observed Fact</span></td><td><strong>At 3.7x the scale, each account's proven value decides more ARR, and that is the evidence Business Insights must produce</strong></td></tr>
+<tr><td>13 Dec 2021</td><td>Rick McConnell becomes CEO</td><td><span class="badge fact">Observed Fact</span></td><td>Shift to large enterprise and consolidation deals</td></tr>
+<tr><td>26 Apr 2023</td><td>DPS consumption pricing released</td><td><span class="badge fact">Observed Fact</span></td><td>Adoption now equals revenue, so proving value becomes commercial (H1)</td></tr>
+<tr><td>2023</td><td>Thoma Bravo fully exits</td><td><span class="badge fact">Observed Fact</span></td><td>Independent public company; buybacks follow</td></tr>
+<tr><td>Mar 2024</td><td>James McCready named VP APJ (Singapore)</td><td><span class="badge fact">Observed Fact</span></td><td>Regional growth push under new APJ leadership</td></tr>
+<tr><td>May 2024</td><td>FY25 guidance cautious after go-to-market reorg</td><td><span class="badge fact">Observed Fact</span></td><td>More focus on large accounts</td></tr>
+<tr><td>Jun 2025</td><td>Business Insights app launched in the platform</td><td><span class="badge fact">Observed Fact</span></td><td>Service moves from manual reports to in-platform delivery (H4)</td></tr>
+<tr><td>13 Jan 2026</td><td>Acquires Taplytics (DevCycle feature flags)</td><td><span class="badge fact">Observed Fact</span></td><td>Digital experience can now be fixed, not just watched</td></tr>
+<tr><td>28 Jan 2026</td><td>Perform: Dynatrace Intelligence and domain agents</td><td><span class="badge fact">Observed Fact</span></td><td>"Business observability" agents overlap with Business Insights work (H4)</td></tr>
+<tr><td>Feb 2026</td><td>Q3 FY26 beat and raise; US$1bn buyback; sector AI selloff</td><td><span class="badge fact">Observed Fact</span></td><td>Results strong, but investors question software pricing</td></tr>
+<tr><td>13 May 2026</td><td>FY26 revenue US$2,018m; FY27 ARR guidance US$2.38bn to US$2.40bn; shares -11.4%</td><td><span class="badge fact">Observed Fact</span></td><td>Growth slowing, so proof of customer value matters more for renewals (H3)</td></tr>
+<tr><td>5 Aug 2026</td><td>Q1 FY27 ARR US$2,136m (+17%); CFO to retire by 31 Mar 2027</td><td><span class="badge fact">Observed Fact</span></td><td>Finance leadership change during an efficiency focus</td></tr>
+<tr><td>30 Sep 2026</td><td>APAC Business Insights manager ad removed</td><td><span class="badge fact">Observed Fact</span></td><td>Hiring is at a late stage</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Dynatrace" title="Dynatrace, Wikipedia, accessed Oct 2026">Wikipedia: Dynatrace history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.thomabravo.com/behind-the-deal/how-a-complex-carveout-led-to-dynatrace-disrupting-itself-and-then-an-entire-industry" title="How a complex carve-out led to Dynatrace disrupting itself and then an entire industry, Thoma Bravo, accessed Oct 2026">Thoma Bravo: carve-out story</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://itwire.com/sponsored-announcements/dynatrace-and-keynote-set-to-merge" title="Dynatrace and Keynote set to merge, iTWire, 2015">iTWire: Keynote merger</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1773383/000177338323000055/dt-20230331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2023, SEC EDGAR, May 2023">SEC: 10-K FY2023</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/DT/dynatrace/revenue" title="Dynatrace revenue 2019 to 2025, Macrotrends, accessed Oct 2026">Macrotrends: DT revenue</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/229/dynatrace-announces-ceo-transition" title="Dynatrace announces CEO transition, Dynatrace Investor Relations, 15 Nov 2021">Dynatrace IR: CEO transition</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://pehub.com/dynatrace-ranks-as-one-of-thoma-bravos-best-deals-ever" title="Dynatrace ranks as one of Thoma Bravo&#x27;s best deals ever, PE Hub, 2023">PE Hub: Thoma Bravo exit</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://itwire.com/people-moves/dynatrace-names-new-vice-president-for-asia-pacific-and-japan.html" title="Dynatrace names new vice president for Asia Pacific and Japan, iTWire, 4 Mar 2024">iTWire: APJ VP</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investing.com/news/company-news/dynatrace-shares-target-cut-at-rbc-capital-amid-2025-guidance-93CH-3443594" title="Dynatrace shares target cut at RBC Capital amid 2025 guidance, Investing.com, May 2024">Investing.com: FY25 guidance</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app blog</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://eit.dealroom.co/news/feed/dynatrace-acquires-devcycle-to-shift-from-problem-detection-to-automatic-remediation-1" title="Dynatrace acquires DevCycle to shift from problem detection to automatic remediation, Dealroom, Jan 2026">Dealroom: DevCycle deal</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-leaps-10-raising-annual-121243913.html" title="Dynatrace surges 10% after raising annual outlook, beating FQ3 estimates, Yahoo Finance, 9 Feb 2026">Yahoo: Q3 FY26 +10%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000049/q1fy27-earningsreleaseex99.htm" title="Dynatrace Reports First Quarter Fiscal Year 2027 Financial Results (8-K Ex 99), SEC EDGAR, 5 Aug 2026">SEC: Q1 FY27 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.builtinboston.com/job/manager-data-analytics-apac/10775249" title="Manager, Data Analytics - APAC (removed 30 Sep 2026), Built In Boston, Sep 2026">Built In: APAC role ad</a></div>
+
+<h3>4. Observed Facts</h3>
+<div class="two">
+<div>
+<h4>Financial / commercial</h4>
+<ul>
+<li>FY26 revenue US$2,018m (+19%); subscription US$1,930m; total ARR US$2,054m at 31 Mar 2026 (+18%).</li>
+<li>Q1 FY27: ARR US$2,136m (+17%), revenue US$555m (+16%), operating cash flow US$306m.</li>
+<li>FY27 ARR guidance US$2.38bn to US$2.40bn (15.5% to 16.5% cc).</li>
+<li>APAC revenue US$162m (FY25) to US$193m (FY26), 9% to 10% of total.</li>
+</ul>
+<h4>Product / customer</h4>
+<ul>
+<li>~4,100 customers; target market is the largest 15,000 companies.</li>
+<li>Business Insights provides hands-on management, advanced analytics and adoption support for DEM and Business Analytics.</li>
+<li>Published Business Insights outcomes: a UK retailer added US$500k+ in monthly revenue from a 2% exit-rate cut; an automaker cut outages 58% year on year.</li>
+</ul>
+<h4>Operational</h4>
+<ul>
+<li>~5,600 employees in ~40 countries; ~30% US, ~28% Austria.</li>
+<li>US Business Insights squads (2025 ad): 8 to 10 analysts per manager, 25 to 45 accounts per analyst. Metrics: value, growth, consumption, maturity.</li>
+</ul>
+</div>
+<div>
+<h4>Leadership / strategy</h4>
+<ul>
+<li>CEO Rick McConnell since Dec 2021; CFO Jim Benson retiring by 31 Mar 2027.</li>
+<li>Dynatrace Intelligence (agentic operations) launched 28 Jan 2026.</li>
+<li>Go-to-market targets the largest 15,000 companies, with partner enablement and expansion beyond APM.</li>
+</ul>
+<h4>Data / technology</h4>
+<ul>
+<li>Grail unifies logs, traces, metrics and user sessions without upfront indexing or schema design.</li>
+<li>The Business Insights app delivers insights in-platform, with a timeline view and collaborative comments.</li>
+</ul>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000049/q1fy27-earningsreleaseex99.htm" title="Dynatrace Reports First Quarter Fiscal Year 2027 Financial Results (8-K Ex 99), SEC EDGAR, 5 Aug 2026">SEC: Q1 FY27 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/services-support/business-insights/" title="Business Insights service page, Dynatrace, accessed Oct 2026">Dynatrace: Business Insights</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app blog</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://builtin.com/job/manager-data-analytics/4716253" title="Manager, Data Analytics, Insights Data Analytics team (removed 24 Apr 2025), Built In, 2025">Built In: US role 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/229/dynatrace-announces-ceo-transition" title="Dynatrace announces CEO transition, Dynatrace Investor Relations, 15 Nov 2021">Dynatrace IR: CEO transition</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a></div>
+
+<h3>5. Observed Turning Points (role lens)</h3>
+<div class="tablewrap"><table>
+<tr><th>Turning point</th><th>What happened</th><th>Immediate / longer-term effect</th><th>Relevance to the role</th></tr>
+<tr><td>DPS (26 Apr 2023)</td><td><span class="badge fact">Observed Fact</span> Annual platform spend commitment drawn down on any capability</td><td>A licensing migration, then adoption and maturity become revenue metrics</td><td><span class="badge infer">Strong Inference</span> The JD's "adoption, consumption and maturity" language follows directly (H1)</td></tr>
+<tr><td>Go-to-market reorg (May 2024)</td><td><span class="badge fact">Observed Fact</span> Cautious FY25 guidance; shares -3.5%</td><td>Focus shifts to fewer, larger platform deals</td><td><span class="badge infer">Strong Inference</span> Explains the "top 10 to 15 accounts" focus and partnering with Sales on renewals</td></tr>
+<tr><td>Agentic pivot (Jun 2025 to Jan 2026)</td><td><span class="badge fact">Observed Fact</span> Business Insights app in-platform; Dynatrace Intelligence launched</td><td>Some analyst work can be productised or automated</td><td><span class="badge hyp">Working Hypothesis</span> The manager decides what stays human and what moves to agents (H4)</td></tr>
+<tr><td>Guidance reset (13 May 2026)</td><td><span class="badge fact">Observed Fact</span> FY27 ARR growth guided to 15.5% to 16.5% cc; shares -11.4%</td><td>Competition and pricing-power doubts shape the investor story</td><td><span class="badge hyp">Working Hypothesis</span> Measurable customer value defends price (H3)</td></tr>
+<tr><td>CFO transition (5 Aug 2026)</td><td><span class="badge fact">Observed Fact</span> CFO to retire by 31 Mar 2027</td><td>New finance leadership in FY28</td><td><span class="badge hyp">Working Hypothesis</span> Services teams may need to show return on headcount</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Relevance to the role is inference from the facts cited. <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investing.com/news/company-news/dynatrace-shares-target-cut-at-rbc-capital-amid-2025-guidance-93CH-3443594" title="Dynatrace shares target cut at RBC Capital amid 2025 guidance, Investing.com, May 2024">Investing.com: FY25 guidance</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app blog</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4592147-dynatrace-stock-slides-10-q4-earnings-fail-to-defend-ai-rivals-hurting-price-power" title="Dynatrace stock slides 10%: Q4 earnings fail to defend AI, rivals hurting price power, Seeking Alpha, 13 May 2026">Seeking Alpha: Q4 slide</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a></div>
+
+<h3>6. Strategic Evolution</h3>
+<div class="tablewrap"><table>
+<tr><th>Phase</th><th>Business model</th><th>Product focus</th><th>Customer proposition</th><th>Complexity</th><th>Data implication</th></tr>
+<tr><td>Specialist (2005 to 2014)</td><td>Licence</td><td>APM</td><td>Find code bottlenecks</td><td>Low</td><td>Data used by developers</td></tr>
+<tr><td>Rebuild (2014 to 2019)</td><td>Subscription</td><td>AI-driven full stack</td><td>Automatic answers, not dashboards</td><td>Medium</td><td>Monitoring data unified</td></tr>
+<tr><td>Public platform (2019 to 2023)</td><td>Subscription, module-based</td><td>Observability, security, Grail</td><td>One platform, fewer tools</td><td>High</td><td>Logs, traces, sessions in one store</td></tr>
+<tr><td>Consumption (2023 to 2025)</td><td>DPS commitments</td><td>Logs, consolidation</td><td>Use anything, pay for use</td><td>High</td><td>Value proven through usage</td></tr>
+<tr><td>Agentic (2026 onwards)</td><td>DPS plus AI</td><td>Dynatrace Intelligence, agents</td><td>Autonomous operations, business observability</td><td>Very high</td><td>Observability data drives business decisions</td></tr>
+</table></div>
+<p><span class="badge infer">Strong Inference</span> <strong>What it is becoming:</strong> the system of record for how digital services perform for the business, not only for IT. Business Insights is the proof point that this works in customer terms.</p>
+<div class="refs"><strong>References:</strong> Inference from sections 2, 3 and 5. <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a></div>
+</section>
+
+<section id="grail">
+<h3 style="margin-top:0">What is Grail?</h3>
+<p class="lead">Grail is Dynatrace's own data store, and the data the Business Insights team works with lives there.</p>
+
+<h4>What it is</h4>
+<ul>
+<li><span class="badge fact">Observed Fact</span> Launched on <strong>4 Oct 2022</strong> as a "causational data lakehouse" with a massively parallel processing (MPP) analytics engine and the new <strong>Dynatrace Query Language (DQL)</strong>. Its first use was log analytics, initially on AWS.</li>
+<li><span class="badge fact">Observed Fact</span> Built on an <strong>indexless, schema-on-read</strong> design: structure is applied when the data is read, so nobody designs tables or re-indexes before data arrives.</li>
+<li><span class="badge fact">Observed Fact</span> The FY2026 10-K calls it Dynatrace's "unified data foundation", holding logs, traces, metrics and user sessions "without the need for upfront indexing, schema design, or data movement".</li>
+<li><span class="badge fact">Observed Fact</span> Dynatrace now markets it as "the unified data lakehouse built for AI-driven operations", with always-on hot and cold storage and OpenPipeline ingestion.</li>
+</ul>
+
+<h4>What sits in it</h4>
+<ul>
+<li><span class="badge fact">Observed Fact</span> Logs, metrics, traces, real-user (RUM) sessions, security data and <strong>business events</strong>.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Business events</strong> (from Nov 2022) capture commercial signals such as order fulfilment, bill payments, service activation and customer onboarding. Sources include OneAgent, web and mobile RUM sessions and a public API.</li>
+<li><span class="badge fact">Observed Fact</span> Data is mapped to <strong>Smartscape</strong>, Dynatrace's live topology of how services, hosts and applications connect. <span class="badge infer">Strong Inference</span> This is what lets a query link a revenue drop to the service causing it.</li>
+</ul>
+
+<h4>How it's used</h4>
+<ul>
+<li><span class="badge fact">Observed Fact</span> Analysts query it with <strong>DQL</strong>, which parses, transforms and analyses data at read time. Results feed Notebooks, Dashboards and platform apps.</li>
+<li><span class="badge fact">Observed Fact</span> The <strong>Business Insights app</strong> links its value moments into Notebooks, Dashboards and other platform apps.</li>
+<li><span class="badge infer">Strong Inference</span> Dynatrace Intelligence's AI agents (Jan 2026) reason over the same unified data.</li>
+<li><span class="badge infer">Strong Inference</span> Under DPS, ingesting, retaining and querying Grail data is consumption. More analysis means more revenue.</li>
+</ul>
+
+<div class="callout gold">
+<strong>Why it matters for this role</strong>
+<ul>
+<li><strong>H1 in practice:</strong> every dashboard, query and business-event use case the squad builds runs on Grail. Proving value and growing consumption are the same activity.</li>
+<li><strong>Your Cisco parallels:</strong> your Snowflake and dbt work gives you the vocabulary (lineage, governed datasets, release cycles). Your OpenTelemetry endpoint project gives you the experience: collection intervals, metric volume and privacy controls are the trade-offs Grail customers face.</li>
+<li><span class="badge hyp">Working Hypothesis</span> <strong>Likely gap:</strong> you won't have used DQL. Spend an hour in the free trial or the DQL docs before the practical, so you can say you've written queries rather than just read about them.</li>
+</ul>
+</div>
+
+<div class="qbox"><strong>Questions worth asking the panel</strong>
+"How much of the Business Insights work now runs on Grail and business events, compared with classic digital experience dashboards?"<br>
+"Do analysts build in DQL and Notebooks themselves, or does a platform team do that?"</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/263/dynatrace-launches-grail-for-boundless-observability-security-and-business-analytics" title="Dynatrace Launches Grail for Boundless Observability, Security, and Business Analytics, Dynatrace Investor Relations, 4 Oct 2022">Dynatrace IR: Grail launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://dynatrace.com/monitoring/platform/dynatrace-grail" title="Grail: the unified data lakehouse built for AI-driven operations, Dynatrace, accessed 9 Oct 2026">Dynatrace: Grail product page</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/dynatrace-enhances-business-observability/" title="Dynatrace enhances business observability with business events powered by Grail, Dynatrace blog, 15 Nov 2022 (updated 5 Oct 2023)">Dynatrace: business events on Grail</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/270/dynatrace-extends-grail-to-power-business-analytics-with-speed-and-precision" title="Dynatrace Extends Grail to Power Business Analytics with Speed and Precision, Dynatrace Investor Relations">Dynatrace IR: Grail for business analytics</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app" title="Business Insights app, Dynatrace Documentation, accessed 9 Oct 2026">Dynatrace Docs: Business Insights app</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a></div>
+</section>
+
+
+<section id="biapp">
+<h3 style="margin-top:0">Business Insights App</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span> The app moves Dynatrace's Business Insights service inside the platform, replacing email and calls. Your squad's analysts would publish their work here, and customers would read, comment on and rate it.</p>
+
+<h4>The key term: "value moment"</h4>
+<p><span class="badge fact">Observed Fact</span> A value moment is a short, consumable analysis of digital experience data that an analyst publishes. Each one is tagged by <strong>value chain</strong> (Operational, Performance, Business or Other), <strong>component</strong> (Synthetic, Web app, Mobile app) and <strong>target</strong> (application or monitor, page or event).</p>
+
+<h4>Main features</h4>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Timeline:</strong> one history of value moments, announcements, enablement material and invitations to Tech Talks and Customer Connects. Dynatrace says it also helps new customer staff get up to speed.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Value moment detail:</strong> optional video summary, indexed sections, links into Notebooks, Dashboards and other apps, and a shareable deep link.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Comments:</strong> customers highlight any content to ask a question; the Insights team is notified and replies in the thread, with email alerts.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Feedback:</strong> a satisfied or dissatisfied rating with optional context on every value moment, used to steer future analysis.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Search, Favourites</strong> and a <strong>Contact Insights Team</strong> tab.</li>
+</ul>
+
+<h4>Access</h4>
+<p><span class="badge fact">Observed Fact</span> The app is not self-serve. It comes with the Business Insights service: the customer gets a token from the Insights team, subscribes to the Business Insights channel and installs the app from Dynatrace Hub. Users need the <code>insights:moments:read</code> permission. It is available on Dynatrace SaaS.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app" title="Business Insights app, Dynatrace Documentation, published 11 Jun 2025, accessed 9 Oct 2026">Dynatrace Docs: BI app</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights" title="Business Insights (Digital Experience Monitoring with Insights), Dynatrace Documentation, accessed 9 Oct 2026">Dynatrace Docs: Business Insights</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app launch</a></div>
+
+<h4>Screenshots</h4>
+<div class="shots">
+<figure class="shot"><a href="https://dt-cdn.net/images/business-insights-list-2147-045255ff9d.png" target="_blank" rel="noopener"><img src="https://dt-cdn.net/images/business-insights-list-2147-045255ff9d.png" alt="Timeline: value moment list (left), an open value moment with video summary (centre) and comments (right)" loading="lazy"></a><figcaption>Timeline: value moment list (left), an open value moment with video summary (centre) and comments (right)</figcaption></figure>
+<figure class="shot"><a href="https://dt-cdn.net/images/business-insights-card-detail-4294-2f32ec680f.png" target="_blank" rel="noopener"><img src="https://dt-cdn.net/images/business-insights-card-detail-4294-2f32ec680f.png" alt="Value moment card: type, value chain, component, application or monitor, video flag and view count" loading="lazy"></a><figcaption>Value moment card: type, value chain, component, application or monitor, video flag and view count</figcaption></figure>
+<figure class="shot"><a href="https://dt-cdn.net/images/business-insights-vm-detail-2147-11c0405262.png" target="_blank" rel="noopener"><img src="https://dt-cdn.net/images/business-insights-vm-detail-2147-11c0405262.png" alt="Value moment detail: video summary, indexed sections and links into other apps" loading="lazy"></a><figcaption>Value moment detail: video summary, indexed sections and links into other apps</figcaption></figure>
+<figure class="shot"><a href="https://dt-cdn.net/images/business-insights-comments-2147-3c5681ed7b.png" target="_blank" rel="noopener"><img src="https://dt-cdn.net/images/business-insights-comments-2147-3c5681ed7b.png" alt="Comments: highlight any content to ask the Insights team a question" loading="lazy"></a><figcaption>Comments: highlight any content to ask the Insights team a question</figcaption></figure>
+<figure class="shot"><a href="https://dt-cdn.net/images/business-insights-feedback-2147-bb99634d86.png" target="_blank" rel="noopener"><img src="https://dt-cdn.net/images/business-insights-feedback-2147-bb99634d86.png" alt="Feedback: satisfied or dissatisfied rating with optional context" loading="lazy"></a><figcaption>Feedback: satisfied or dissatisfied rating with optional context</figcaption></figure>
+<figure class="shot"><a href="https://news.cdn.dm.dynatrace.com/wp-content/uploads/2024/08/Opportunities.png" target="_blank" rel="noopener"><img src="https://news.cdn.dm.dynatrace.com/wp-content/uploads/2024/08/Opportunities.png" alt="Opportunity Insights (related app, 2024): top opportunities ranked by predicted business impact" loading="lazy"></a><figcaption>Opportunity Insights (related app, 2024): top opportunities ranked by predicted business impact</figcaption></figure>
+</div>
+<p class="chartcap">Official Dynatrace product images, loaded from Dynatrace's servers (select an image to open it full size). They need an internet connection to display.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app" title="Business Insights app, Dynatrace Documentation, published 11 Jun 2025, accessed 9 Oct 2026">Dynatrace Docs: BI app</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/opportunity-insights-ai-prediction-and-real-user-data-optimize-business-outcomes/" title="Dynatrace Opportunity Insights uses AI prediction and real-user data to optimize business outcomes, Dynatrace blog, 12 Aug 2024 (updated 19 May 2026)">Dynatrace: Opportunity Insights</a></div>
+
+<h4>Chronological timeline: development and releases</h4>
+<div class="notice"><span class="badge fact">Observed Fact</span> The app is distributed through a private Hub channel, so Dynatrace publishes no public version-by-version release notes for it. This timeline is built from dated Dynatrace announcements, documentation and job ads.</div>
+<div class="tablewrap"><table class="timeline">
+<tr><th>Date</th><th>Event</th><th>Evidence</th><th>Why it mattered</th></tr>
+<tr><td>2015</td><td>Dynatrace merges with Keynote, adding synthetic and digital experience monitoring</td><td><span class="badge fact">Fact</span></td><td>Created the DEM product line Business Insights now supports. <span class="badge infer">Inference</span> The service grew around these products</td></tr>
+<tr><td>4 Oct 2022</td><td>Grail launched with DQL</td><td><span class="badge fact">Fact</span></td><td>The data foundation value moments now link into</td></tr>
+<tr><td>15 Nov 2022</td><td>Business events on Grail announced</td><td><span class="badge fact">Fact</span></td><td>Business KPIs (orders, payments, onboarding) join IT data, widening what analysts can analyse</td></tr>
+<tr><td>Apr 2023</td><td>DPS consumption pricing released</td><td><span class="badge fact">Fact</span></td><td>Adoption becomes revenue, so the service's value becomes commercial (H1)</td></tr>
+<tr><td>Apr 2024</td><td>Opportunity Insights released as a preview to a subset of Business Insights customers</td><td><span class="badge fact">Fact</span></td><td>First AI-driven app delivered through the Business Insights service</td></tr>
+<tr><td>By 12 Aug 2024</td><td>Opportunity Insights generally available for Business Insights subscribers (Dynatrace version 1.296; exact GA date not published)</td><td><span class="badge fact">Fact</span></td><td>Predictive AI ranks the top three pages to fix by business impact</td></tr>
+<tr><td>2025 (ad removed 24 Apr 2025)</td><td>US Insights Data Analytics squads advertised: 8 to 10 analysts, 25 to 45 accounts each</td><td><span class="badge fact">Fact</span></td><td>The operating model the APAC manager is likely to inherit (H2)</td></tr>
+<tr><td>5 Jun 2025</td><td>Business Insights app announced: first release, generally available for Business Insights customers on SaaS, rolling out progressively</td><td><span class="badge fact">Fact</span></td><td>Service delivery moves from email and calls into the platform</td></tr>
+<tr><td>11 Jun 2025</td><td>Business Insights app documentation published</td><td><span class="badge fact">Fact</span></td><td>Install requires a token from the Insights team; access needs the insights:moments:read permission</td></tr>
+<tr><td>16 Jan 2026</td><td>Launch blog updated</td><td><span class="badge fact">Fact</span></td><td>Content of the update not stated; check in interview</td></tr>
+<tr><td>28 Jan 2026</td><td>Dynatrace Intelligence launched, including business observability agents</td><td><span class="badge fact">Fact</span></td><td>AI agents start to overlap with analyst work (H4)</td></tr>
+<tr><td>20 Apr 2026</td><td>Business Observability with Insights documented as a separate subscription service</td><td><span class="badge fact">Fact</span></td><td>Insights model extends from DEM to business processes, one process per subscription</td></tr>
+<tr><td>19 May 2026</td><td>Opportunity Insights blog updated</td><td><span class="badge fact">Fact</span></td><td>Content of the update not stated</td></tr>
+<tr><td>Sep 2026</td><td>Manager, Data Analytics - APAC advertised (removed 30 Sep 2026)</td><td><span class="badge fact">Fact</span></td><td>This role</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://itwire.com/sponsored-announcements/dynatrace-and-keynote-set-to-merge" title="Dynatrace and Keynote set to merge, iTWire, 2015">iTWire: Keynote merger</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/263/dynatrace-launches-grail-for-boundless-observability-security-and-business-analytics" title="Dynatrace Launches Grail for Boundless Observability, Security, and Business Analytics, Dynatrace Investor Relations, 4 Oct 2022">Dynatrace IR: Grail launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/dynatrace-enhances-business-observability/" title="Dynatrace enhances business observability with business events powered by Grail, Dynatrace blog, 15 Nov 2022 (updated 5 Oct 2023)">Dynatrace: business events on Grail</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/" title="Introducing the Dynatrace Platform Subscription, Dynatrace blog, Apr 2023">Dynatrace: DPS launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/opportunity-insights-ai-prediction-and-real-user-data-optimize-business-outcomes/" title="Dynatrace Opportunity Insights uses AI prediction and real-user data to optimize business outcomes, Dynatrace blog, 12 Aug 2024 (updated 19 May 2026)">Dynatrace: Opportunity Insights</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://builtin.com/job/manager-data-analytics/4716253" title="Manager, Data Analytics, Insights Data Analytics team (removed 24 Apr 2025), Built In, 2025">Built In: US role 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app" title="Business Insights app, Dynatrace Documentation, published 11 Jun 2025, accessed 9 Oct 2026">Dynatrace Docs: BI app</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/business-observability/bo-insights" title="Business Observability with Insights, Dynatrace Documentation, dated 20 Apr 2026">Dynatrace Docs: BO with Insights</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.builtinboston.com/job/manager-data-analytics-apac/10775249" title="Manager, Data Analytics - APAC (removed 30 Sep 2026), Built In Boston, Sep 2026">Built In: APAC role ad</a></div>
+
+<h4>Videos</h4>
+<p><span class="badge fact">Observed Fact</span> Dynatrace has not published a public video of the Business Insights app itself. These are the closest:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=a5Kp3WJ8NHU" title="Dynatrace Business Events: Expanding Observability into your business domain, Dynatrace YouTube channel">YouTube: Business Events</a>: Dynatrace Business Events: Expanding Observability into your business domain. The data your analysts would work with.</li>
+<li><a target="_blank" rel="noopener" href="https://video.dynatrace.com/watch/VYoSQEmHaB5SLKjpvfk17m" title="Business Flow, Dynatrace App Spotlight, Klaus Enzenhofer, Dynatrace Video">Dynatrace Video: Business Flow</a>: short Business Flow app spotlight by Klaus Enzenhofer on tracking business KPIs and process anomalies.</li>
+<li><a target="_blank" rel="noopener" href="https://community.dynatrace.com/t5/Videos/Get-Real-Time-Business-Insights-with-Dynatrace/m-p/282000" title="Get Real-Time Business Insights with Dynatrace, Andi Grabner and Klaus Enzenhofer, Dynatrace Community">Community: Real-Time Business Insights</a>: Andi Grabner and Klaus Enzenhofer demo business observability on the Dynatrace Playground.</li>
+<li><a target="_blank" rel="noopener" href="https://community.dynatrace.com/t5/Videos/Ingest-Business-Events-into-Dynatrace/m-p/282003" title="Ingest Business Events into Dynatrace, Dynatrace Community">Community: Ingest Business Events</a>: how-to on capturing business events.</li>
+<li><a target="_blank" rel="noopener" href="https://www.brighttalk.com/webcast/20853/643236" title="Leveraging business events and analytics insights to enhance user experiences (BCLC and Ben Owens, Director, Business Insights, Dynatrace), BrightTalk, 25 min">BrightTalk: BCLC webcast</a>: BCLC customer story (25 min) with <strong>Ben Owens, Director, Business Insights at Dynatrace</strong>, covering Business Events, Synthetics and Opportunity Insights. He may sit in or near your reporting line, so watch this before the practical.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=a5Kp3WJ8NHU" title="Dynatrace Business Events: Expanding Observability into your business domain, Dynatrace YouTube channel">YouTube: Business Events</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://video.dynatrace.com/watch/VYoSQEmHaB5SLKjpvfk17m" title="Business Flow, Dynatrace App Spotlight, Klaus Enzenhofer, Dynatrace Video">Dynatrace Video: Business Flow</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://community.dynatrace.com/t5/Videos/Get-Real-Time-Business-Insights-with-Dynatrace/m-p/282000" title="Get Real-Time Business Insights with Dynatrace, Andi Grabner and Klaus Enzenhofer, Dynatrace Community">Community: Real-Time Business Insights</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://community.dynatrace.com/t5/Videos/Ingest-Business-Events-into-Dynatrace/m-p/282003" title="Ingest Business Events into Dynatrace, Dynatrace Community">Community: Ingest Business Events</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.brighttalk.com/webcast/20853/643236" title="Leveraging business events and analytics insights to enhance user experiences (BCLC and Ben Owens, Director, Business Insights, Dynatrace), BrightTalk, 25 min">BrightTalk: BCLC webcast</a></div>
+
+<div class="callout gold">
+<strong>Why it matters for this role</strong>
+<ul>
+<li><span class="badge hyp">Working Hypothesis</span> <strong>It changes the job (H4):</strong> analysts publish value moments that customers rate, instead of sending reports. That gives built-in data on views, comments and satisfaction per account.</li>
+<li><span class="badge infer">Strong Inference</span> <strong>Executive reporting:</strong> that feedback data is a ready source for the JD's "consistent set of reports on each squad's status". It mirrors your Power BI Workspace Health dashboard at Cisco (60% to 93%).</li>
+</ul>
+</div>
+<div class="qbox"><strong>Questions worth asking the panel</strong>
+"Do you track value moment views and feedback per account, and do they feed renewal conversations?"<br>
+"What share of APAC customers have the app installed?"<br>
+"What changed in the app in January 2026?"</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app" title="Business Insights app, Dynatrace Documentation, published 11 Jun 2025, accessed 9 Oct 2026">Dynatrace Docs: BI app</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app launch</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a></div>
+</section>
+
+<section id="stock">
+<h3 style="margin-top:0">7. Business Performance and Market Response (NYSE: DT)</h3>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Growth:</strong> revenue growth of 23% (FY24), 19% (FY25) and 19% (FY26); 16% in Q1 FY27. ARR growth has held at about 16% to 17% cc but is guided lower.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Profitability:</strong> Q1 FY27 GAAP operating income US$71m; non-GAAP US$162m.</li>
+</ul>
+<div class="grid">
+  <div class="card"><div class="k">Latest close</div><div class="v">US$59.26</div><div class="n">1 Oct 2026</div></div>
+  <div class="card"><div class="k">52-week high</div><div class="v">US$59.42</div><div class="n">Price now at the high</div></div>
+  <div class="card"><div class="k">52-week low</div><div class="v">US$31.64</div><div class="n">10 Apr 2026, software AI selloff</div></div>
+  <div class="card"><div class="k">Market cap</div><div class="v">~US$17.1bn</div><div class="n">289m shares outstanding</div></div>
+</div>
+
+<div class="chartbox">
+  <div class="stock-toolbar">
+    <div class="title">DT monthly closing price (US$)</div>
+    <div class="stock-ranges" role="group" aria-label="Stock chart time range">
+      <button type="button" data-range="6">6M</button>
+      <button type="button" data-range="12">1Y</button>
+      <button type="button" data-range="24">2Y</button>
+      <button type="button" data-range="0" class="active">Full range</button>
+    </div>
+  </div>
+  <div class="stock-chart-wrap">
+    <svg id="dtChart" role="img" aria-label="Dynatrace monthly closing share price chart"></svg>
+    <div class="stock-tooltip" id="dtTooltip" aria-hidden="true"></div>
+  </div>
+  <div class="stock-legend">
+    <span><b id="dtStart"></b> start</span>
+    <span><b id="dtEnd"></b> latest</span>
+    <span><b id="dtChange"></b> change over selected range</span>
+  </div>
+  <div class="chartcap">Monthly closes Oct 2023 to Sep 2026; the last point is the 1 Oct 2026 close. Red markers show dated company events that coincided with major trend shifts: Q3 FY24 ARR miss (Feb 2024), FY25 guidance (May 2024), Q1 FY26 dip (Aug 2025), Q3 FY26 beat amid the software selloff (Feb 2026), FY27 guidance drop (May 2026) and Q1 FY27 beat (Aug 2026). The Feb 2025 peak and Apr 2026 low are unlabelled (no single cited company event). Hover a marker for detail. Sources: Yahoo Finance, StockAnalysis. Not investment advice.</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/DT/history/" title="DT monthly price history, Yahoo Finance, accessed 2 Oct 2026">Yahoo Finance: DT history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/dt/" title="Dynatrace (DT) stock price and statistics, StockAnalysis, 1 Oct 2026">StockAnalysis: DT</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4064747-dynatrace-down-despite-earnings-beating-estimates" title="Dynatrace down on lower ARR despite beating estimates, Seeking Alpha, 8 Feb 2024">Seeking Alpha: Q3 FY24 reaction</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investing.com/news/company-news/dynatrace-shares-target-cut-at-rbc-capital-amid-2025-guidance-93CH-3443594" title="Dynatrace shares target cut at RBC Capital amid 2025 guidance, Investing.com, May 2024">Investing.com: FY25 guidance</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stocks.observer-reporter.com/observerreporter/article/stockstory-2025-8-7-dynatrace-dt-stock-trades-down-here-is-why" title="Dynatrace (DT) stock trades down, here is why, StockStory, 7 Aug 2025">StockStory: 7 Aug 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-dt-shares-skyrocket-know-203052716.html" title="Dynatrace (DT) shares skyrocket, what you need to know, StockStory via Yahoo Finance, 10 Feb 2026">StockStory: Feb 2026 moves</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-leaps-10-raising-annual-121243913.html" title="Dynatrace surges 10% after raising annual outlook, beating FQ3 estimates, Yahoo Finance, 9 Feb 2026">Yahoo: Q3 FY26 +10%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://goldesel.de/aktien/news/dynatrace-springt-nach-q1-ergebnissen-gewinn-je-aktie-ubertrifft-erwartungen-fy27-eps-spanne-steigt" title="Dynatrace springt nach Q1-Ergebnissen, Goldesel, 5 Aug 2026">Goldesel: Q1 FY27 jump</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ng.investing.com/news/stock-market-news/dynatrace-stock-climbs-8-on-earnings-beat-and-strong-guidance-93CH-2638995" title="Dynatrace stock climbs 8% on earnings beat and strong guidance, Investing.com, 5 Aug 2026">Investing.com: Q1 FY27 +8%</a></div>
+
+<h4>Recent price performance (to 1 Oct 2026)</h4>
+<div class="metricbars">
+  <div class="metricrow"><span>1 month</span><div class="barbg"><div class="bar up" style="width:23%"></div></div><span class="tag">+8.6%</span></div>
+  <div class="metricrow"><span>3 months</span><div class="barbg"><div class="bar up" style="width:95%"></div></div><span class="tag">+35.0%</span></div>
+  <div class="metricrow"><span>YTD</span><div class="barbg"><div class="bar up" style="width:100%"></div></div><span class="tag">+36.7%</span></div>
+  <div class="metricrow"><span>1 year</span><div class="barbg"><div class="bar up" style="width:61%"></div></div><span class="tag">+22.3%</span></div>
+</div>
+<p class="small">Calculated from month-end closes (Aug 2026 US$54.59, Jun 2026 US$43.91, Dec 2025 US$43.34, Sep 2025 US$48.45) to US$59.26 on 1 Oct 2026.</p>
+<div class="refs"><strong>References:</strong> Calculated from month-end closes shown above. <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/DT/history/" title="DT monthly price history, Yahoo Finance, accessed 2 Oct 2026">Yahoo Finance: DT history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/dt/" title="Dynatrace (DT) stock price and statistics, StockAnalysis, 1 Oct 2026">StockAnalysis: DT</a></div>
+
+<h4>What coincided with the major moves</h4>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Long-run backdrop:</strong> revenue grew from US$546m (FY20) to US$2,018m (FY26), but growth has slowed from 23% (FY24) to 19% (FY26) and is guided lower for FY27.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Feb 2024, "Q3 ARR miss":</strong> on 8 Feb 2024 Q3 FY24 beat on revenue and EPS, but full-year ARR guidance and billings came in below expectations; shares fell nearly 7% that afternoon. Price went from US$57.00 (Jan close) to US$49.55 (Feb close), about -13%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>May 2024, "FY25 guide":</strong> on 16 May 2024 FY25 guidance came in below consensus, citing go-to-market changes; shares fell 3.5% to about US$44.8. The month closed flat at US$45.73 (Apr US$45.31), so the reaction was short-lived.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Aug 2025, "Q1 FY26 dip":</strong> on 6 Aug 2025 Q1 FY26 beat and guidance rose (+3.7%), then on 7 Aug shares fell 6.8% after BMO trimmed its target over soft new-customer additions. Price went from US$52.61 (Jul close) to US$50.60 (Aug close), about -4%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Feb 2026, "Q3 beat":</strong> around 4 Feb 2026 shares fell 8.7% in a sector-wide software selloff on AI disruption fears. On 9 Feb Q3 FY26 beat, guidance rose and a US$1bn buyback was authorised; shares rose about 10%. Confounder: the month still closed lower, from US$38.09 (Jan) to US$35.92 (Feb), about -6%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>May 2026, "FY27 guide drop":</strong> on 13 May 2026 FY26 beat, but FY27 ARR growth was guided to 15.5% to 16.5% cc and shares fell 11.4% on pricing-power and competition concerns. The price still rose over the month, from US$36.21 (Apr) to US$42.59 (May), about +18%, helped by a late-May sector rebound.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Aug 2026, "Q1 beat":</strong> on 5 Aug 2026 Q1 FY27 beat and EPS guidance rose; shares rose about 8% to 12% depending on the source and exchange. Confounder: the CFO's planned retirement was announced the same day. Price went from US$44.32 (Jul) to US$54.59 (Aug), about +23%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Unlabelled:</strong> the Feb 2025 peak (52-week high US$62.42), because day-one reports on the 30 Jan 2025 results conflict; and the 10 Apr 2026 low of US$31.64, which had no dated company event and coincided with a sector selloff (DT down about 14% YTD by 21 Apr).</li>
+<li><span class="badge limit">Caution</span> The timing fits these events, but sector sentiment on AI and software valuations moved the shares as much as company news did. Don't over-explain moves in interview; use them only to show you understand what investors reward: durable ARR growth and evidence of customer expansion.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/DT/dynatrace/revenue" title="Dynatrace revenue 2019 to 2025, Macrotrends, accessed Oct 2026">Macrotrends: DT revenue</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm" title="Dynatrace Reports Fourth Quarter and Full Year Fiscal 2026 Financial Results (8-K Ex 99), SEC EDGAR, 13 May 2026">SEC: FY26 Q4 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4064747-dynatrace-down-despite-earnings-beating-estimates" title="Dynatrace down on lower ARR despite beating estimates, Seeking Alpha, 8 Feb 2024">Seeking Alpha: Q3 FY24 reaction</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://investing.com/news/company-news/dynatrace-shares-target-cut-at-rbc-capital-amid-2025-guidance-93CH-3443594" title="Dynatrace shares target cut at RBC Capital amid 2025 guidance, Investing.com, May 2024">Investing.com: FY25 guidance</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://stocks.observer-reporter.com/observerreporter/article/stockstory-2025-8-7-dynatrace-dt-stock-trades-down-here-is-why" title="Dynatrace (DT) stock trades down, here is why, StockStory, 7 Aug 2025">StockStory: 7 Aug 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-dt-shares-skyrocket-know-203052716.html" title="Dynatrace (DT) shares skyrocket, what you need to know, StockStory via Yahoo Finance, 10 Feb 2026">StockStory: Feb 2026 moves</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-leaps-10-raising-annual-121243913.html" title="Dynatrace surges 10% after raising annual outlook, beating FQ3 estimates, Yahoo Finance, 9 Feb 2026">Yahoo: Q3 FY26 +10%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4592147-dynatrace-stock-slides-10-q4-earnings-fail-to-defend-ai-rivals-hurting-price-power" title="Dynatrace stock slides 10%: Q4 earnings fail to defend AI, rivals hurting price power, Seeking Alpha, 13 May 2026">Seeking Alpha: Q4 slide</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://goldesel.de/aktien/news/dynatrace-springt-nach-q1-ergebnissen-gewinn-je-aktie-ubertrifft-erwartungen-fy27-eps-spanne-steigt" title="Dynatrace springt nach Q1-Ergebnissen, Goldesel, 5 Aug 2026">Goldesel: Q1 FY27 jump</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ng.investing.com/news/stock-market-news/dynatrace-stock-climbs-8-on-earnings-beat-and-strong-guidance-93CH-2638995" title="Dynatrace stock climbs 8% on earnings beat and strong guidance, Investing.com, 5 Aug 2026">Investing.com: Q1 FY27 +8%</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm" title="Form 8-K: planned resignation of CFO James Benson, Dynatrace Investor Relations, 5 Aug 2026">Dynatrace IR: CFO 8-K</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ycharts.com/companies/DT/year_low" title="Dynatrace 52-week low, YCharts, accessed Oct 2026">YCharts: 52-week low</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/04/21/beaten-down-software-stock-buy-rebound-dynatrace/" title="Got $1,000? The 1 beaten-down software stock I&#x27;d buy before the rebound hits, The Motley Fool, 21 Apr 2026">Motley Fool: Apr 2026 selloff</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/DT/history/" title="DT monthly price history, Yahoo Finance, accessed 2 Oct 2026">Yahoo Finance: DT history</a></div>
+
+<div class="notice"><strong>Correction to the chat brief:</strong> the chat version said the shares had recovered to "about US$55 (Sep 2026)". The latest close is <strong>US$59.26 (1 Oct 2026)</strong>, at the 52-week high. This report uses the corrected figure.</div>
+</section>
+<section id="role">
+<h2>Role Deconstruction: Manager, Data Analytics - APAC</h2>
+<p>The ad (Sydney, hybrid, removed 30 Sep 2026) describes a people leader whose team sells value through analytics. It reads more like a customer success leadership role than an internal Head of Data role.</p>
+<div class="tablewrap"><table>
+<tr><th>Job wording</th><th>Underlying management problem</th><th>Likely success signal</th></tr>
+<tr><td>"Lead and develop a team of analysts, drive account growth, deliver measurable customer value"</td><td>Analyst time has to translate into ARR, not just reports</td><td>Expansion and renewal outcomes traceable to the squad's work</td></tr>
+<tr><td>"Help customers increase adoption, consumption, and maturity"</td><td>Under DPS, unused commitments put renewals at risk (H1)</td><td>Rising consumption and maturity scores across top accounts</td></tr>
+<tr><td>"Executive-level reporting that highlights customer value, business outcomes, and team accomplishments"</td><td>Business Insights' value isn't visible enough internally</td><td>A consistent value report leadership uses to fund the team</td></tr>
+<tr><td>"Weekly account reviews (top 10 to 15 accounts)"; "full view of status, health, risks"</td><td>Risks surface too late, through escalation</td><td>Early-warning account health view; fewer surprise escalations</td></tr>
+<tr><td>"Capacity planning, workload balancing, and resource allocation"; "assign resources to POCs"</td><td>25 to 45 accounts per analyst stretches quality (H2)</td><td>Coverage model that protects quality as accounts grow</td></tr>
+<tr><td>"Partner with Sales on renewals and new business"</td><td>Sales needs proof of value at renewal time (H3)</td><td>Business Insights evidence used in renewal and expansion deals</td></tr>
+<tr><td>"Present at Quarterly Business Reviews"; "strategic executive escalation point"</td><td>Customer executives need insight, not data</td><td>QBRs that end in agreed actions and expansion conversations</td></tr>
+<tr><td>"Partner with senior leadership to build and evolve the Business Insights service"; "flag tool, process, and training improvements"</td><td>The service model is changing with in-platform apps and AI agents (H4)</td><td>A clear view of what to automate and what stays human</td></tr>
+<tr><td>"Identify and create use cases for wider team education and collateral"</td><td>Wins aren't being reused across regions</td><td>A library of APAC case studies used by Sales and other squads</td></tr>
+</table></div>
+
+<h3>Working hypotheses</h3>
+<div class="tablewrap"><table>
+<tr><th>Working hypothesis</th><th>Support</th><th>Limiting evidence</th><th>What would validate it in interview</th></tr>
+<tr><td><strong>H1</strong> (high): Consumption pricing (DPS) links customer adoption directly to Dynatrace revenue, so Business Insights is a commercial lever for expansion and renewal, not a support function.</td><td>DPS model; JD language on adoption, consumption, renewals</td><td>Business Insights may be sold as a paid service with its own targets</td><td>"Which consumption or renewal metrics is the team measured on?"</td></tr>
+<tr><td><strong>H2</strong> (medium): Dynatrace is formalising APAC Business Insights as its own squad with a regional manager, following the US squad model (8 to 10 analysts, 25 to 45 accounts each).</td><td>"APAC" in the title; US squad model in a 2025 ad; APAC revenue +19%</td><td>A previous Sydney "Manager, Data Analytics" requisition existed, so this may be a backfill</td><td>"Is this a new squad or a replacement? How many analysts and accounts?"</td></tr>
+<tr><td><strong>H3</strong> (medium): After the May 2026 guidance reset, Dynatrace needs hard proof of customer value to defend pricing and net new ARR, and QBR-grade evidence from Business Insights feeds that.</td><td>May 2026 guidance reset; pricing-power commentary</td><td>Q1 FY27 net new ARR grew 41%, easing pressure</td><td>"How do QBR outcomes feed Sales at renewal time?"</td></tr>
+<tr><td><strong>H4</strong> (medium-low): Dynatrace Intelligence and the in-platform Business Insights app will automate parts of analyst work, so the manager must redesign the service to cover more accounts per analyst.</td><td>In-platform Business Insights app; business observability agents</td><td>JD doesn't mention AI or automation</td><td>"How is Dynatrace Intelligence changing what analysts do?"</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.builtinboston.com/job/manager-data-analytics-apac/10775249" title="Manager, Data Analytics - APAC (removed 30 Sep 2026), Built In Boston, Sep 2026">Built In: APAC role ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://builtin.com/job/manager-data-analytics/4716253" title="Manager, Data Analytics, Insights Data Analytics team (removed 24 Apr 2025), Built In, 2025">Built In: US role 2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://apply.careers.dynatrace.com/job/Sydney-Manager%2C-Data-Analytics-APAC-New-2060/1421423100/" title="Manager, Data Analytics - APAC, Sydney (shows as filled), Dynatrace Careers, accessed 2 Oct 2026">Dynatrace Careers: role page</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm" title="Dynatrace Form 10-K for fiscal year ended 31 March 2026, SEC EDGAR, May 2026">SEC: 10-K FY2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/" title="The power of Business Insights expertise, now directly on the Dynatrace platform, Dynatrace blog, 5 Jun 2025 (updated 16 Jan 2026)">Dynatrace: BI app blog</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/" title="Why Dynatrace stock plummeted today, The Motley Fool, 13 May 2026">Motley Fool: 13 May 2026 fall</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://ng.investing.com/news/stock-market-news/dynatrace-stock-climbs-8-on-earnings-beat-and-strong-guidance-93CH-2638995" title="Dynatrace stock climbs 8% on earnings beat and strong guidance, Investing.com, 5 Aug 2026">Investing.com: Q1 FY27 +8%</a></div>
+</section>
+<section id="stage3">
+<h2>Stage 3: Top 5 Experiences to Lead With</h2>
+<p>The panel will want proof of three things: you can <strong>grow adoption and show value in numbers</strong>, you can <strong>give executives a trusted, consistent view</strong> of status and risk, and you can <strong>lead a squad</strong> through changing tools and AI. Each story covers a different part of the business problem.</p>
+<div class="story">
+  <div class="rank">1</div>
+  <h4>Growing self-service adoption with ThoughtSpot (Cisco, FY24 to FY26)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD's core outcome is helping customers "increase adoption, consumption, and maturity". You've done this from the customer side of a SaaS vendor, and you negotiated directly with that vendor. Answers H1.</div>
+  <div class="star">
+    <b>S</b><span>Analysts were swamped with simple requests, and ThoughtSpot was provided through an internal team at higher cross-charge rates with limited capacity.</span>
+    <b>T</b><span>Move simple demand to self-service on trusted data, and get a direct instance at better value.</span>
+    <b>A</b><span>Built ThoughtSpot on verified, governed datasets, introduced Spotter for natural-language Q&amp;A, automated onboarding (how-to pages, videos, communities), and negotiated directly with the vendor alongside other data leads.</span>
+    <b>R</b><span><strong>Weekly users rose from 46 to 196 (+326%). Monthly queries went from 8.1K to 19.2K. Data requests fell 33% (about 738 hours and $68.9K a year). The direct instance gave 2.9x better value: 5x the capacity for 1.75x the cost.</strong></span>
+  </div>
+  <div class="open">"I've sat on the customer side of this exact problem: we were paying for a platform and needed to prove usage and value to justify it."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me how you've driven adoption of a product or platform." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Self-service analytics" and "ThoughtSpot capacity uplift"; portfolio case study 7. <span class="badge limit">Figure conflict</span> STAR says 2.86x, the resume says 2.9x. Say "roughly 2.9 times".</div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Oct 2026">Portfolio site</a> <span class="sep">|</span> Job description (Interview Prep file, 2 Oct 2026)</div>
+</div>
+<div class="story">
+  <div class="rank">2</div>
+  <h4>Trusted KPIs and executive reporting (Cisco, DS&amp;I Lead)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks for "clear, consistent, executive-level reporting" and "a consistent set of reports on each squad's status". This is the business problem's "measurable value" half.</div>
+  <div class="star">
+    <b>S</b><span>Teams saw different numbers for the same KPI (1 to 5% gaps), which caused 3 to 5 escalations a month and 1 to 2 days of manual validation.</span>
+    <b>T</b><span>Get to zero inconsistency and restore confidence in the numbers.</span>
+    <b>A</b><span>Moved logic from Power BI into shared SQL single-source views, published plain-English catalogues, set up master dashboards per business area and added tripwire alerts for any variance over 2%.</span>
+    <b>R</b><span><strong>27 KPIs went from 62% to 100% consistency. Dashboards cut from 70+ to 46. Escalations went from 3 to 5 a month to zero. Workspace health went from 60% to 93%.</strong></span>
+  </div>
+  <div class="open">"Executive reporting only works if people trust the number, so that's where I start."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about a time you improved trust in reporting." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Trusted metrics and KPI Consistency"; portfolio case study 1. </div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Oct 2026">Portfolio site</a> <span class="sep">|</span> Job description (Interview Prep file, 2 Oct 2026)</div>
+</div>
+<div class="story">
+  <div class="rank">3</div>
+  <h4>AI assistant and tripwires for support-case spikes (Cisco, DS&amp;I Lead)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD asks for a "full view of status, health, risks" and makes you the executive escalation point. It also shows hands-on AI as Dynatrace moves to agentic operations (H4).</div>
+  <div class="star">
+    <b>S</b><span>After layoffs, the global support team ran with fewer agents while an AI support tool wasn't yet ready. Case spikes were found late, and executives heard about issues before engineers could respond.</span>
+    <b>T</b><span>Alert the right teams early, with enough insight to judge severity and act, and stop surprises reaching leadership.</span>
+    <b>A</b><span>Built tripwire alerts on six months of case trends with two thresholds (2.0 standard deviations for executives, 1.8 for operations). Led a GPT-based assistant in Webex with on-demand summaries and Q&amp;A, plus a QA process to verify accuracy.</span>
+    <b>R</b><span><strong>Case-spike analysis went from half a day to near-instant. Fewer escalations to the executive team and fewer surprises between leadership and operations.</strong></span>
+  </div>
+  <div class="open">"Account health is really an early-warning problem, and I built one for our global support function."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How would you spot risk in an account before it becomes an escalation?" · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "AI Assistant"; portfolio case study 2. </div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Oct 2026">Portfolio site</a> <span class="sep">|</span> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation" title="Dynatrace Perform 2026 Ignites a New Era of Autonomous Intelligence and Innovation, Business Wire, 28 Jan 2026">Business Wire: Perform 2026</a></div>
+</div>
+<div class="story">
+  <div class="rank">4</div>
+  <h4>Turning device telemetry into business value: performance-based refresh (Cisco, DS&amp;I Lead)</h4>
+  <div class="why"><strong>Why it matters here:</strong> Business Insights turns observability data into business outcomes. You did exactly that with OpenTelemetry endpoint data (via Splunk Observability), so you understand the product's data from the inside. Answers the business problem.</div>
+  <div class="star">
+    <b>S</b><span>Laptops were refreshed by age rather than evidence, which wasted budget and disrupted users who didn't need a new device.</span>
+    <b>T</b><span>Use performance telemetry to decide when devices should be refreshed, postponed or upgraded.</span>
+    <b>A</b><span>Defined the telemetry strategy (CPU, RAM, memory pressure, disk) using a custom OpenTelemetry Collector. Weighed supervised ML, unsupervised ML, GenAI and statistical options, chose unsupervised anomaly detection, and built persona clusters from app usage.</span>
+    <b>R</b><span>Prioritised early refresh for underperforming devices, cut over-provisioning risk, improved stock forecasting and supported <strong>millions in <em>potential</em> asset management savings</strong>.</span>
+  </div>
+  <div class="open">"The closest thing I've done to Business Insights was turning observability telemetry into a business decision at Cisco."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me how you've turned technical data into a business outcome." · <strong>Source:</strong> Resume (DS&amp;I Lead); STAR "Performance-Based Refresh"; portfolio case study 3. Always say "potential": these were not realised savings.</div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Oct 2026">Portfolio site</a> <span class="sep">|</span> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dynatrace.com/services-support/business-insights/" title="Business Insights service page, Dynatrace, accessed Oct 2026">Dynatrace: Business Insights</a></div>
+</div>
+<div class="story">
+  <div class="rank">5</div>
+  <h4>Leading and developing a mixed data team (Cisco, 2017 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The JD's first line is "lead and develop a team of analysts", plus mentoring, capacity planning and resource allocation. It requires 2+ years leading teams.</div>
+  <div class="star">
+    <b>S</b><span>The team was organised around fast dashboard output, with analysts context-switching between ad-hoc requests and complex projects.</span>
+    <b>T</b><span>Move the team to an insight-led model and develop each person's capability.</span>
+    <b>A</b><span>Shifted skills to advanced SQL, Python and data storytelling, moved ad-hoc demand to self-service, wrote a shared mission statement with the team and stakeholders, and built an analyst community with quarterly show-and-share sessions. Ran prioritisation through SAFe PI planning.</span>
+    <b>R</b><span>Led a global team of analysts, data scientists and engineers for 7 years. <strong>Named ANZ Mentor of the Quarter (Apr 2023)</strong> and twice hosted the IT Leadership Program at Cisco Live (2024 to 2025).</span>
+  </div>
+  <div class="open">"The part of the job I enjoy most is finding what motivates each analyst and pointing that at the work that matters."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How do you develop and motivate a team of analysts?" · <strong>Source:</strong> Resume (DS&amp;I Lead, Lead Analyst, Honours); STAR "Leading a data team into the modern technology era"; portfolio case study 6. <span class="badge hyp">Prep needed</span> The STAR entry has no Situation or Result filled in. Add one named person you coached and what changed for them.</div>
+<div class="refs"><strong>References:</strong> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Oct 2026">Portfolio site</a> <span class="sep">|</span> Job description (Interview Prep file, 2 Oct 2026)</div>
+</div>
+<h3>Coverage check</h3>
+<div class="tablewrap"><table>
+<tr><th>JD requirement</th><th>Covered by</th><th>Strength</th></tr>
+<tr><td>Lead and develop a team of analysts; mentoring</td><td>5</td><td><span class="badge hyp">Medium: needs a named example</span></td></tr>
+<tr><td>Increase adoption, consumption and maturity</td><td>1</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Executive-level reporting; consistent squad reports</td><td>2</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Account status, health, risks and escalations</td><td>3</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Observability and digital experience data</td><td>4</td><td><span class="badge fact">Strong, adjacent</span></td></tr>
+<tr><td>Capacity planning and resource allocation</td><td>5 (SAFe PI planning, WSJF)</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>Strategic vision across horizons</td><td>Multi-year analytics roadmap (resume)</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>Partner with Sales on renewals and new business</td><td>None</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>QBRs with external customer executives</td><td>Internal executive reporting only (2); $11M+ value cases for senior leaders</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>8 to 10+ years in data analytics; 2+ years leading teams</td><td>14+ years; 7 years as DS&amp;I Lead</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Bachelor's degree in a quantitative discipline (required)</td><td>BA Visual Arts</td><td><span class="badge limit">Gap</span></td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Professional portfolio, GitHub Pages, accessed Oct 2026">Portfolio site</a></div>
+
+<h3>Gaps to prepare for</h3>
+<div class="two">
+<div class="qbox"><strong>1. External customers and Sales partnership</strong>
+Your stakeholders have been internal, and the JD centres on external accounts, renewals and QBRs.<br><em>Framing:</em> "My customers were internal, 200+ stakeholders across IT, but the job was the same: prove value so they kept investing. I've also been on the buying side of a SaaS renewal with ThoughtSpot, so I know what a customer needs to see before they expand." You can also point to your sales demonstrations as Branch Manager at Nova.</div>
+<div class="qbox"><strong>2. Degree requirement</strong>
+The JD says a quantitative bachelor's degree "is required"; you hold a BA in Visual Arts.<br><em>Framing:</em> "My degree isn't quantitative. My data training is 14 years of applied analytics, plus IBM Python for Data Science, NC State Data Science for Leaders and Snowflake GenAI certifications." Since you are at the practical stage, they have likely already accepted this, but be ready.</div>
+</div>
+<div class="refs"><strong>References:</strong> Job description (Interview Prep file, 2 Oct 2026) <span class="sep">|</span> Master Resume (28 Sep 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026)</div>
+
+<div class="notice"><strong>Not yet produced:</strong> the optional Stage 2 extras (8. Hypothesis Review, 9. Data and AI Opportunities, 10. Probing Questions, 11. Mandatory Final Judgement). They can be added to this report on request.</div>
+<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (28 Sep 2026), STAR Skills.docx (9 Sep 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>. The LinkedIn profile was not read (it blocks automated access).</div>
+</section>
+<section id="sources">
+<h2>Source Register</h2>
+<div class="tablewrap"><table>
+<tr><th>Source</th><th>Used for</th></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm">Dynatrace Form 10-K FY2026</a></td><td>Employees, customers, geography, strategy, acquisitions</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000011/fy26q4-earningsreleaseex99.htm">FY26 Q4 results (8-K)</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0001773383/000177338326000049/q1fy27-earningsreleaseex99.htm">Q1 FY27 results (8-K)</a></td><td>Revenue, ARR, guidance, buybacks</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://ir.dynatrace.com/sec-filings/all-sec-filings/content/0001773383-26-000049/dt-20260731.htm">CFO 8-K, Aug 2026</a> · <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/229/dynatrace-announces-ceo-transition">CEO transition, 2021</a></td><td>Leadership changes</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/1773383/000177338323000055/dt-20230331.htm">10-K FY2023</a> · <a target="_blank" rel="noopener" href="https://www.macrotrends.net/stocks/charts/DT/dynatrace/revenue">Macrotrends</a></td><td>Revenue history FY20 to FY24</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.dynatrace.com/services-support/business-insights/">Business Insights page</a> · <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/">Business Insights app blog</a></td><td>The service and its customer outcomes</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/introducing-the-dynatrace-platform-subscription-flexible-pricing-for-modern-cloud-observability-and-security/">DPS launch</a> · <a target="_blank" rel="noopener" href="https://www.businesswire.com/news/home/20260128134927/en/Dynatrace-Perform-2026-Ignites-a-New-Era-of-Autonomous-Intelligence-and-Innovation">Perform 2026</a> · <a target="_blank" rel="noopener" href="https://eit.dealroom.co/news/feed/dynatrace-acquires-devcycle-to-shift-from-problem-detection-to-automatic-remediation-1">DevCycle deal</a></td><td>Pricing model, agentic pivot, acquisition</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.thomabravo.com/behind-the-deal/how-a-complex-carveout-led-to-dynatrace-disrupting-itself-and-then-an-entire-industry">Thoma Bravo</a> · <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Dynatrace">Wikipedia</a> · <a target="_blank" rel="noopener" href="https://itwire.com/sponsored-announcements/dynatrace-and-keynote-set-to-merge">iTWire: Keynote</a> · <a target="_blank" rel="noopener" href="https://pehub.com/dynatrace-ranks-as-one-of-thoma-bravos-best-deals-ever">PE Hub</a></td><td>History, ownership</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://itwire.com/people-moves/dynatrace-names-new-vice-president-for-asia-pacific-and-japan.html">iTWire: APJ VP</a> · <a target="_blank" rel="noopener" href="https://builtin.com/company/dynatrace/offices">Built In: offices</a></td><td>APAC leadership and offices</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.builtinboston.com/job/manager-data-analytics-apac/10775249">APAC role ad</a> · <a target="_blank" rel="noopener" href="https://builtin.com/job/manager-data-analytics/4716253">US role ad, 2025</a> · <a target="_blank" rel="noopener" href="https://apply.careers.dynatrace.com/job/Sydney-Manager%2C-Data-Analytics-APAC-New-2060/1421423100/">Dynatrace Careers</a></td><td>Role scope, squad model, posting status</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/analytics-manager/sydney">Morgan McKinley: Analytics Manager</a> · <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-analytics/sydney">Morgan McKinley: Head of Analytics</a> · <a target="_blank" rel="noopener" href="https://www.payscale.com/research/AU/Job=Analytics_Manager/Salary/61eb5b11/Sydney">PayScale</a></td><td>Pay benchmarks</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4064747-dynatrace-down-despite-earnings-beating-estimates">Q3 FY24</a> · <a target="_blank" rel="noopener" href="https://investing.com/news/company-news/dynatrace-shares-target-cut-at-rbc-capital-amid-2025-guidance-93CH-3443594">FY25 guidance</a> · <a target="_blank" rel="noopener" href="https://stocks.observer-reporter.com/observerreporter/article/stockstory-2025-8-7-dynatrace-dt-stock-trades-down-here-is-why">Aug 2025</a> · <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-dt-shares-skyrocket-know-203052716.html">Feb 2026</a> · <a target="_blank" rel="noopener" href="https://finance.yahoo.com/news/dynatrace-leaps-10-raising-annual-121243913.html">Q3 FY26</a> · <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/05/13/why-dynatrace-stock-plummeted-today/">May 2026</a> · <a target="_blank" rel="noopener" href="https://seekingalpha.com/news/4592147-dynatrace-stock-slides-10-q4-earnings-fail-to-defend-ai-rivals-hurting-price-power">Q4 slide</a> · <a target="_blank" rel="noopener" href="https://goldesel.de/aktien/news/dynatrace-springt-nach-q1-ergebnissen-gewinn-je-aktie-ubertrifft-erwartungen-fy27-eps-spanne-steigt">Q1 FY27</a> · <a target="_blank" rel="noopener" href="https://ng.investing.com/news/stock-market-news/dynatrace-stock-climbs-8-on-earnings-beat-and-strong-guidance-93CH-2638995">Q1 FY27 +8%</a> · <a target="_blank" rel="noopener" href="https://finance.yahoo.com/markets/stocks/articles/why-dynatrace-dt-stock-trading-223931343.html">Sep 2026</a> · <a target="_blank" rel="noopener" href="https://www.fool.com/investing/2026/04/21/beaten-down-software-stock-buy-rebound-dynatrace/">Apr 2026</a> · <a target="_blank" rel="noopener" href="https://ycharts.com/companies/DT/year_low">52-week low</a></td><td>Share price reactions</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/DT/history/">Yahoo Finance</a> · <a target="_blank" rel="noopener" href="https://stockanalysis.com/stocks/dt/">StockAnalysis</a></td><td>Share price data, market cap</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/263/dynatrace-launches-grail-for-boundless-observability-security-and-business-analytics">Dynatrace IR: Grail launch</a> · <a target="_blank" rel="noopener" href="https://dynatrace.com/monitoring/platform/dynatrace-grail">Dynatrace: Grail product page</a> · <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/dynatrace-enhances-business-observability/">Dynatrace: business events on Grail</a> · <a target="_blank" rel="noopener" href="https://ir.dynatrace.com/news-events/press-releases/detail/270/dynatrace-extends-grail-to-power-business-analytics-with-speed-and-precision">Dynatrace IR: Grail for business analytics</a> · <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app">Dynatrace Docs: Business Insights app</a></td><td>What is Grail? section</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights/business-insights-app">Dynatrace Docs: BI app</a> · <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/digital-experience/business-insights">Dynatrace Docs: Business Insights</a> · <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/the-power-of-business-insights-expertise-now-directly-on-the-dynatrace-platform/">Dynatrace: BI app launch</a> · <a target="_blank" rel="noopener" href="https://www.dynatrace.com/news/blog/opportunity-insights-ai-prediction-and-real-user-data-optimize-business-outcomes/">Dynatrace: Opportunity Insights</a> · <a target="_blank" rel="noopener" href="https://docs.dynatrace.com/docs/observe/business-observability/bo-insights">Dynatrace Docs: BO with Insights</a> · <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=a5Kp3WJ8NHU">YouTube: Business Events</a> · <a target="_blank" rel="noopener" href="https://video.dynatrace.com/watch/VYoSQEmHaB5SLKjpvfk17m">Dynatrace Video: Business Flow</a> · <a target="_blank" rel="noopener" href="https://community.dynatrace.com/t5/Videos/Get-Real-Time-Business-Insights-with-Dynatrace/m-p/282000">Community: Real-Time Business Insights</a> · <a target="_blank" rel="noopener" href="https://community.dynatrace.com/t5/Videos/Ingest-Business-Events-into-Dynatrace/m-p/282003">Community: Ingest Business Events</a> · <a target="_blank" rel="noopener" href="https://www.brighttalk.com/webcast/20853/643236">BrightTalk: BCLC webcast</a></td><td>Business Insights App section</td></tr>
+<tr><td>Job description (Interview Prep file) · Master Resume (28 Sep 2026) · STAR Skills (9 Sep 2026) · <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">Portfolio site</a></td><td>Role requirements and candidate evidence</td></tr>
+</table></div>
+</section>
+<footer class="footer">
+<p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation in interview.</p>
+<p>Company figures in USD; pay in AUD. Dynatrace's fiscal year ends 31 March. Share price data is for context only and is not investment advice. Prepared 2 October 2026 for Adam Aziz's interview preparation. Version 3 (9 October 2026): "What is Grail?" and "Business Insights App" sections (with screenshots, videos and a development timeline) added after Stage 2 section 6. Version 2 (9 October 2026): Stage 3 top five experiences reviewed and approved in chat. Version 1 (2 October 2026): first release.</p>
+</footer>
+</main>
+
+<script>
+(function(){
+  var data=[["Oct 23",44.71],["Nov 23",53.55],["Dec 23",54.69],["Jan 24",57.00],["Feb 24",49.55],["Mar 24",46.44],["Apr 24",45.31],["May 24",45.73],["Jun 24",44.74],["Jul 24",43.92],["Aug 24",50.62],["Sep 24",53.47],["Oct 24",53.80],["Nov 24",56.19],["Dec 24",54.35],["Jan 25",57.75],["Feb 25",57.25],["Mar 25",47.15],["Apr 25",46.97],["May 25",54.01],["Jun 25",55.21],["Jul 25",52.61],["Aug 25",50.60],["Sep 25",48.45],["Oct 25",50.57],["Nov 25",44.56],["Dec 25",43.34],["Jan 26",38.09],["Feb 26",35.92],["Mar 26",36.98],["Apr 26",36.21],["May 26",42.59],["Jun 26",43.91],["Jul 26",44.32],["Aug 26",54.59],["Sep 26",57.74],["1 Oct 26",59.26]];
+  var events={
+    "Feb 24":{s:"Q3 ARR miss",d:"8 Feb 2024: Q3 FY24 beat, but ARR guidance and billings missed; shares fell nearly 7%",a:"start",up:1},
+    "May 24":{s:"FY25 guide",d:"16 May 2024: FY25 guidance below consensus after go-to-market reorg; shares -3.5%",a:"end",up:0},
+    "Aug 25":{s:"Q1 FY26 dip",d:"6 to 7 Aug 2025: Q1 beat (+3.7%), then -6.8% on a BMO target cut",a:"start",up:1},
+    "Feb 26":{s:"Q3 beat",d:"9 Feb 2026: Q3 FY26 beat, guidance raised, US$1bn buyback; shares +10% (after -8.7% in the early-Feb software selloff)",a:"end",up:0},
+    "May 26":{s:"FY27 guide drop",d:"13 May 2026: FY27 ARR growth guided lower; shares -11.4%",a:"end",up:1},
+    "Aug 26":{s:"Q1 beat",d:"5 Aug 2026: Q1 FY27 beat, EPS guidance raised; shares up about 8 to 12%. CFO retirement announced same day",a:"end",up:1}};
+  var svg=document.getElementById('dtChart'),tip=document.getElementById('dtTooltip');
+  var NS="http://www.w3.org/2000/svg",current=0;
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function draw(){
+    var n=current?current+1:data.length, d=data.slice(-n);
+    var W=svg.clientWidth||800,H=svg.clientHeight||300,pl=46,pr=16,pt=22,pb=30;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML='';
+    var vals=d.map(function(x){return x[1]}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),pad=(mx-mn)*0.14||5;mn-=pad;mx+=pad;
+    function X(i){return pl+(W-pl-pr)*(d.length===1?0.5:i/(d.length-1));}
+    function Y(v){return pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));}
+    for(var g=0;g<=4;g++){var v=mn+(mx-mn)*g/4,y=Y(v);svg.appendChild(el('line',{x1:pl,x2:W-pr,y1:y,y2:y,stroke:'#eceff1'}));var t=el('text',{x:pl-6,y:y+4,'text-anchor':'end','font-size':11,fill:'#626a73'});t.textContent='$'+Math.round(v);svg.appendChild(t);}
+    var step=Math.max(1,Math.ceil(d.length/8));
+    d.forEach(function(p,i){if((i%step===0&&i<d.length-1-Math.ceil(step/2))||i===d.length-1){var t=el('text',{x:X(i),y:H-9,'text-anchor':i===d.length-1?'end':'middle','font-size':10.5,fill:'#626a73'});t.textContent=p[0];svg.appendChild(t);}});
+    var path=d.map(function(p,i){return(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)}).join(' ');
+    svg.appendChild(el('path',{d:path+' L'+X(d.length-1)+' '+(H-pb)+' L'+X(0)+' '+(H-pb)+' Z',fill:'rgba(155,92,255,.12)'}));
+    svg.appendChild(el('path',{d:path,fill:'none',stroke:'#202428','stroke-width':2.2}));
+    d.forEach(function(p,i){var e=events[p[0]];if(e){svg.appendChild(el('circle',{cx:X(i),cy:Y(p[1]),r:5,fill:'#8b2f2f'}));var anc=i===d.length-1?'end':(i===0?'start':e.a),dx=anc==='start'?-4:(anc==='end'?4:0);var t=el('text',{x:X(i)+dx,y:e.up?Y(p[1])-10:Y(p[1])+19,'text-anchor':anc,'font-size':10.5,'font-weight':600,fill:'#8b2f2f'});t.textContent=e.s;svg.appendChild(t);}});
+    var dot=el('circle',{r:4.5,fill:'#9b5cff',stroke:'#202428','stroke-width':1.5,style:'display:none'});svg.appendChild(dot);
+    function move(ev){var r=svg.getBoundingClientRect(),cx=(ev.touches?ev.touches[0].clientX:ev.clientX)-r.left,sx=cx*W/r.width;
+      var i=Math.round((sx-pl)/((W-pl-pr)/(d.length-1||1)));i=Math.max(0,Math.min(d.length-1,i));
+      dot.setAttribute('cx',X(i));dot.setAttribute('cy',Y(d[i][1]));dot.style.display='';
+      tip.style.display='block';tip.style.left=(X(i)*r.width/W)+'px';tip.style.top=(Y(d[i][1])*r.height/H)+'px';
+      tip.innerHTML='<b>'+d[i][0]+'</b><br>US$'+d[i][1].toFixed(2)+(events[d[i][0]]?'<br>'+events[d[i][0]].d:'');}
+    svg.onmousemove=move;svg.ontouchstart=move;svg.ontouchmove=move;
+    svg.onmouseleave=function(){tip.style.display='none';dot.style.display='none';};
+    var a=d[0][1],b=d[d.length-1][1],c=(b/a-1)*100;
+    document.getElementById('dtStart').textContent='$'+a.toFixed(2)+' ('+d[0][0]+')';
+    document.getElementById('dtEnd').textContent='$'+b.toFixed(2)+' ('+d[d.length-1][0]+')';
+    document.getElementById('dtChange').textContent=(c>0?'+':'')+c.toFixed(1)+'%';
+  }
+  document.querySelectorAll('.stock-ranges button').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('.stock-ranges button').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');current=+btn.dataset.range;draw();});});
+  window.addEventListener('resize',draw);draw();
+})();
+</script>
+</body>
+</html>

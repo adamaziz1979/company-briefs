@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharon AI: Company, Role and Recruitment Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
+  --line:#dfe3e7; --soft:#f8f9fa; --gold:#3A70FF; --gold2:#e8efff;
+  --green:#236b45; --greenbg:#eaf5ee; --blue:#245b88; --bluebg:#edf4fa;
+  --orange:#8a5b00; --orangebg:#fff4dc; --red:#8b2f2f; --redbg:#faecec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Aptos,Arial,sans-serif;line-height:1.58}
+main{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{position:relative;background:#101214;color:#fff;padding:48px 56px 38px;border-top:7px solid var(--gold)}
+.site-link{position:absolute;top:16px;right:24px;display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#fff;background:var(--gold);text-decoration:none;border-radius:999px;padding:6px 12px;line-height:1}
+.site-link:hover{filter:brightness(1.08);text-decoration:underline}
+.site-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-link svg{width:12px;height:12px}
+@media (max-width:560px){.site-link{position:static;margin-bottom:14px}}
+@media print{.site-link{color:#fff}.site-link::after{content:" (" attr(href) ")";font-weight:400}}
+.hero .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#c7ccd2;font-weight:600}
+.hero h1{font-size:38px;line-height:1.1;margin:8px 0 10px}
+.hero h1 span{color:var(--gold)}
+.hero .sub{max-width:890px;color:#d4d8dc;font-size:16px}
+.hero .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:#b8bec5}
+.hero .meta .badge{margin-right:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);padding:10px 54px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-size:12px;color:#353a40;text-decoration:none;font-weight:600}
+.nav a:hover{color:#000;text-decoration:underline}
+section{padding:34px 56px 6px}
+h2{font-size:27px;margin:0 0 16px;border-bottom:2px solid var(--line);padding-bottom:9px}
+h3{font-size:19px;margin:27px 0 9px}
+h4{font-size:15px;margin:18px 0 7px}
+p{margin:8px 0 12px}
+.small{font-size:12px;font-weight:300;color:var(--muted)}
+.lead{font-size:16px;line-height:1.62}
+.thesis{background:#1b1e22;color:#eef0f2;border-left:7px solid var(--gold);border-radius:10px;padding:22px 26px;margin:6px 0 10px;font-size:15.5px}
+.thesis strong{color:var(--gold)}
+.thesis .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#aeb5bc;margin-bottom:6px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.card{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:15px}
+.card .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.card .v{font-size:26px;font-weight:700;margin-top:4px;letter-spacing:-.01em}
+.card .n{font-size:12px;font-weight:300;color:var(--muted);margin-top:4px}
+.callout{margin:17px 0;padding:15px 17px;border-left:5px solid #5d6670;background:#f5f7f8}
+.callout.gold{border-color:var(--gold);background:var(--gold2)}
+.callout.warn{border-color:#b47b00;background:#fff6e4}
+.problem{font-size:19px;font-weight:700;line-height:1.45;margin:12px 0;padding:18px 20px;border:2px solid var(--gold);border-radius:10px;background:#f5f8ff}
+.badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:600;border-radius:999px;padding:3px 8px;margin-right:5px;vertical-align:1px;white-space:nowrap}
+.fact{color:var(--green);background:var(--greenbg)}
+.infer{color:var(--blue);background:var(--bluebg)}
+.hyp{color:var(--orange);background:var(--orangebg)}
+.limit{color:var(--red);background:var(--redbg)}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{background:#eef1f3;text-align:left;font-size:12px;padding:9px;border:1px solid #d5dbe0}
+td{padding:9px;border:1px solid #dce1e5;vertical-align:top}
+td.num{white-space:nowrap}
+ul{margin-top:7px}
+li{margin:5px 0}
+.phase{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:14px 0}
+.phase:first-of-type{border-top:0}
+.phase .label{font-weight:700}
+.refs{margin:18px 0 8px;padding:11px 14px;border-left:4px solid #9aa2aa;background:#f7f8f9;font-size:11.5px;color:#535b64}
+.refs a{color:#174f85;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.refs{line-height:1.7}
+.refs .sep{color:#9aa2aa;margin:0 5px}
+.refs.dark .sep{color:#5d6670}
+.refs.dark{background:#1c2024;border-left-color:#5d6670;color:#aeb5bc;margin-top:14px}
+.refs.dark a{color:#9ec5ec}
+button{font-family:inherit}
+svg text{font-family:Lexend,Aptos,Arial,sans-serif}
+td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
+.metricbars{display:grid;gap:9px;margin:16px 0}
+.metricrow{display:grid;grid-template-columns:90px 1fr 75px;gap:10px;align-items:center;font-size:12px}
+.barbg{height:12px;background:#eceff1;border-radius:8px;overflow:hidden}
+.bar{height:100%;background:#8c4747;border-radius:8px}
+.tag{font-weight:700;text-align:right}
+.timeline td:first-child{white-space:nowrap;font-weight:700}
+.footer{margin-top:34px;padding:24px 56px 50px;border-top:1px solid var(--line);font-size:11.5px;color:#636b74}
+.notice{font-size:12.5px;border:1px solid #e2c66b;background:#fff9e7;border-radius:8px;padding:12px 14px;margin:14px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qbox{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;background:#fff}
+.qbox strong{display:block;margin-bottom:4px}
+.story{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0;background:#fff;position:relative}
+.story .rank{position:absolute;top:16px;right:18px;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#fff;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.story h4{margin:0 0 8px;font-size:16.5px;padding-right:50px}
+.story .why{font-size:13.5px;margin:6px 0 10px}
+.star{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;font-size:13.5px;margin:8px 0}
+.star b{color:#fff;background:#3a4047;border-radius:5px;text-align:center;font-size:12px;padding:2px 0;height:22px}
+.story .open{border-left:4px solid var(--gold);background:var(--gold2);padding:9px 12px;font-style:italic;margin:10px 0 6px;font-size:14px}
+.story .meta2{font-size:12px;color:var(--muted)}
+.chartbox{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px;margin:18px 0 22px}
+.chartbox .title{font-weight:700;font-size:14px;margin-bottom:6px}
+.chartcap{font-size:11px;font-weight:300;color:var(--muted);margin-top:6px}
+.stock-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.stock-ranges{display:flex;gap:6px;flex-wrap:wrap}
+.stock-ranges button{appearance:none;border:1px solid #ccd2d8;background:#fff;color:#353a40;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:600;cursor:pointer}
+.stock-ranges button.active{background:#202428;color:#fff;border-color:#202428}
+.stock-ranges button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.stock-chart-wrap{position:relative}
+#shazChart{width:100%;height:300px;display:block;touch-action:pan-y}
+.stock-tooltip{position:absolute;pointer-events:none;background:#111;color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;line-height:1.35;transform:translate(-50%,-115%);white-space:nowrap;display:none;z-index:2}
+.stock-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend b{color:var(--ink)}
+/* Executive infographic */
+.info{background:#101214;color:#eef0f2;border-radius:14px;padding:26px 26px 22px;margin:8px 0 10px;border-top:6px solid var(--gold)}
+.info h2{color:#fff;border-bottom:1px solid #2e3338;font-size:24px}
+.info .ik{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8fb0ff;font-weight:600;margin:20px 0 9px}
+.itiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.itile{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:12px 13px}
+.itile .v{font-size:26px;font-weight:700;color:#fff;line-height:1.15;letter-spacing:-.01em}
+.itile .l{font-size:12px;font-weight:300;color:#b8bec5;margin-top:5px}
+.itile.neg .v{color:#ff9d8f}
+.itrack{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;padding-top:18px}
+.itrack:before{content:"";position:absolute;left:4%;right:4%;top:24px;height:3px;background:linear-gradient(90deg,#5d6670,#3A70FF 60%,#d9534f)}
+.istop{position:relative;text-align:center;font-size:11.5px;color:#cfd4d9;padding-top:18px}
+.istop:before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:15px;height:15px;border-radius:50%;background:#3A70FF;border:3px solid #101214}
+.istop.shock:before{background:#d9534f}
+.istop b{display:block;color:#fff;font-size:13px}
+.ichev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ichev div{background:#2a2f35;padding:12px 14px 12px 22px;clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%,6% 50%);font-size:12px;color:#cfd4d9}
+.ichev div:first-child{clip-path:polygon(0 0,93% 0,100% 50%,93% 100%,0 100%);padding-left:14px}
+.ichev div:last-child{background:#3A70FF;color:#fff}
+.ichev b{display:block;font-size:13.5px;color:#fff}
+.ichev div:last-child b{color:#fff}
+.icols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ibox{background:#1c2024;border:1px solid #2e3338;border-radius:10px;padding:13px 15px;font-size:12.5px;color:#d4d8dc}
+.ibox ul{margin:4px 0 0;padding-left:18px}
+.ibox li{margin:4px 0}
+.hrow{display:grid;grid-template-columns:1fr 92px;gap:8px;align-items:center;margin:7px 0}
+.conf{height:8px;border-radius:6px;background:#2e3338;overflow:hidden}
+.conf i{display:block;height:100%;background:#3A70FF}
+.hrow small{grid-column:1/-1;color:#8f979f;margin-top:-5px}
+.iproof{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+.iproof div{background:#1c2024;border:1px solid #2e3338;border-left:4px solid #3A70FF;border-radius:8px;padding:10px 11px;font-size:11.5px;color:#aeb5bc}
+.iproof b{display:block;color:#fff;font-size:15px;line-height:1.25;margin-bottom:3px}
+.iproof em{display:block;font-style:normal;color:#8fb0ff;font-weight:600;margin-top:4px;font-size:11px}
+.iq{margin-top:18px;border:2px solid #3A70FF;border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
+.info .src{font-size:10.5px;color:#8f979f;margin-top:12px}
+@media (max-width:900px){
+  .itiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .itrack{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
+  .itrack:before{display:none}
+  .ichev,.icols{grid-template-columns:1fr}
+  .ichev div,.ichev div:first-child{clip-path:none;padding-left:14px;border-radius:8px}
+  .iproof{grid-template-columns:1fr 1fr}
+  .info{padding:20px 16px}
+}
+@media (max-width:560px){.iproof,.itiles{grid-template-columns:1fr}.itrack{grid-template-columns:1fr 1fr}}
+@media print{.info{-webkit-print-color-adjust:exact;print-color-adjust:exact;break-inside:avoid}}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .hero,section,.footer{padding-left:20px;padding-right:20px}
+  .nav{padding-left:20px;padding-right:20px;gap:12px}
+  .phase{grid-template-columns:1fr;gap:4px}
+}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:30px}#shazChart{height:260px}.problem{font-size:17px}}
+@media print{
+  body{background:#fff}
+  main{box-shadow:none;max-width:none}
+  .nav,.stock-ranges{display:none}
+  section{padding-top:24px}
+  a{color:inherit}
+  .card,.qbox,.callout,.refs,.story,.chartbox,.thesis{break-inside:avoid}
+  tr{break-inside:avoid}
+}
+
+.metricbars.wide .metricrow{grid-template-columns:150px 1fr 40px}
+.thesis strong{color:#8fb0ff}
+.scale-note{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <a class="site-link" href="https://sharonai.com" target="_blank" rel="noopener" title="Sharon AI official website">sharonai.com <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
+  <h1><span>Sharon AI</span>: Company, Role and Recruitment Brief</h1>
+  <div class="sub">Head of Data and AI (Sydney, hybrid, reports to the COO) | Executive infographic, Stage 1 executive briefing, compensation and headcount, Stage 2 company dossier (sections 1 to 7), recruitment activity and Stage 3 top five experiences to lead with.</div>
+  <div class="meta">
+    <span>Prepared: 24 October 2026 (version 4, updated 26 October 2026)</span>
+    <span>Candidate: Adam Aziz</span>
+    <span>Currency: USD for company figures; AUD for pay</span>
+    <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Report sections">
+  <a href="#infographic">Infographic</a>
+  <a href="#stage1">Stage 1</a>
+  <a href="#pay">Pay &amp; headcount</a>
+  <a href="#stage2">Stage 2</a>
+  <a href="#stock">Stock</a>
+  <a href="#recruitment">Recruitment</a>
+  <a href="#stage3">Stage 3</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="thesis">
+<div class="thesis">
+  <div class="k">Executive Summary</div>
+  Sharon AI is an Australian neocloud that listed in the US in December 2025 and has since built <strong>about US$8.8bn of total contract value</strong> (6 Aug 2026) against <strong>CY25 revenue of US$1.57m</strong>. Total assets rose from <strong>US$32.1m to US$2.32bn</strong> in 18 months, run by a core team of <strong>30 full-time staff</strong> (Mar 2026), a new CFO and COO, and EY as the incoming auditor. The shares closed on 23 Oct 2026 at US$22.97, <strong>75% below the June closing high</strong>, so investors now want proof that contracts are turning into revenue. The Head of Data and AI is a hands-on builder, reporting to the COO, who must create <strong>one trusted, agent-ready model</strong> of customers, contracts, GPUs and usage, using Claude rather than a large team.
+</div>
+<div class="refs"><strong>References:</strong> Summary of Stage 1 and section 7; these links support the specific claims. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+</section>
+
+<!-- ============ INFOGRAPHIC ============ -->
+<section id="infographic">
+<div class="info" role="region" aria-label="Executive infographic">
+  <h2>Sharon AI at a glance: why this role, why now, why me?</h2>
+
+  <div class="ik">Observed facts</div>
+  <div class="itiles">
+    <div class="itile"><div class="v">~US$8.8bn</div><div class="l">Total contract value (TCV), 6 Aug 2026</div></div>
+    <div class="itile"><div class="v">US$2.32bn</div><div class="l">Total assets, 30 Jun 2026 (US$32.1m in Dec 2024)</div></div>
+    <div class="itile"><div class="v">US$1.57m</div><div class="l">CY25 revenue; ramp expected from Q3 2026</div></div>
+    <div class="itile"><div class="v">30</div><div class="l">Full-time staff (18 Mar 2026)</div></div>
+    <div class="itile neg"><div class="v">-75%</div><div class="l">Share price vs closing high (23 Oct 2026)</div></div>
+  </div>
+
+  <div class="ik">Turning points</div>
+  <div class="itrack">
+    <div class="istop"><b>2021 to 2024</b>Storage roots; NVIDIA Cloud Partner</div>
+    <div class="istop"><b>Dec 2025</b>SPAC merger, US listing</div>
+    <div class="istop"><b>Feb 2026</b>Nasdaq at US$30</div>
+    <div class="istop"><b>Apr to Aug 2026</b>Contract wave, TCV ~US$8.8bn</div>
+    <div class="istop"><b>Aug to Sep 2026</b>New CFO, COO; EY auditor</div>
+    <div class="istop shock"><b>Oct 2026</b>Shares 75% off the high</div>
+  </div>
+
+  <div class="ik">Strategic evolution</div>
+  <div class="ichev">
+    <div><b>Storage and small HPC</b>A few hundred GPUs, spreadsheets and billing tools</div>
+    <div><b>GPU cloud start-up</b>Listed, a handful of customers, usage and billing data</div>
+    <div><b>Agent-run AI Factory operator</b>212 MW secured, US$8.8bn TCV, one trusted model run by agents</div>
+  </div>
+
+  <div class="icols" style="margin-top:4px">
+    <div>
+      <div class="ik">Why the role exists now</div>
+      <div class="ibox">
+        <ul>
+          <li><b>Contracts outran systems:</b> TCV ~US$8.8bn vs US$1.57m CY25 revenue; delivery has to be tracked and proven.</li>
+          <li><b>New leaders, new scrutiny:</b> CFO (24 Aug), COO (7 Sep), EY auditor (23 Sep), GPU-backed lenders (Oct).</li>
+          <li><b>Agent-first by design:</b> the ad asks one hands-on leader to build with Claude, not a large data team.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="ik">Key working hypotheses</div>
+      <div class="ibox">
+        <div class="hrow"><span>H1. The contract book has outrun the company's systems</span><div class="conf" aria-label="Medium-high confidence"><i style="width:75%"></i></div><small>Medium-high. Test: "Where does a contract's status live today, from signature to first invoice?"</small></div>
+        <div class="hrow"><span>H2. The new COO and CFO want one source of truth before the first EY audit</span><div class="conf" aria-label="Medium confidence"><i style="width:55%"></i></div><small>Medium. Test: "Which numbers do the COO and CFO reconcile by hand each month?"</small></div>
+        <div class="hrow"><span>H3. Sharon AI wants to run itself as an agent-first company</span><div class="conf" aria-label="High confidence"><i style="width:85%"></i></div><small>Strong Inference, high. Test: "Which back-office work should agents own in year one?"</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ik">Candidate positioning: five proof points</div>
+  <div class="iproof">
+    <div><b>5 agents</b>KPI Creator, a human-in-the-loop agent team built in Claude Code<em>Agents and the Anthropic stack</em></div>
+    <div><b>4 days to instant</b>AI assistant on verified SQL data for case spikes<em>Trusted data for AI</em></div>
+    <div><b>1-2 to 0</b>Warehouse disruptions a quarter after lineage and secure sharing<em>Controls and security</em></div>
+    <div><b>62% to 100%</b>Consistency across 27 KPIs; escalations to zero<em>One coherent model</em></div>
+    <div><b>~150K devices</b>Fleet telemetry and anomaly detection for refresh<em>Infrastructure modelling</em></div>
+  </div>
+
+  <div class="iq">"How does Sharon AI build one trusted, agent-ready model of its customers, contracts, GPUs and usage, fast enough to deliver a US$8.8bn contract book with a small team, and auditable enough for a listed company?"</div>
+
+<div class="refs dark"><strong>References:</strong> Hypotheses are Working Hypotheses to validate in interview; confidence bars are qualitative. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226034569/form8-k.htm" title="8-K: Appointment of Chief Financial Officer, SEC EDGAR, 24 Jul 2026">SEC: 8-K CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics and AI portfolio, GitHub Pages, Oct 2026">Portfolio: case studies</a> <span class="sep">|</span> Master Resume (14 Oct 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026)</div>
+</div>
+</section>
+
+<!-- ============ STAGE 1 ============ -->
+<section id="stage1">
+<h2>Stage 1: One-page Executive Briefing</h2>
+
+<h3>Company in one paragraph</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span> Sharon AI (SharonAI Holdings Inc., Nasdaq: SHAZ) is an Australian "neocloud". It rents NVIDIA GPU capacity to AI labs, AI platforms and enterprises as cloud compute, mostly on five-year take-or-pay contracts, from NEXTDC and Equinix data centres in Melbourne and Sydney, with New Zealand next. It began as a small distributed-storage and HPC business (DSS, 2021), listed in the US through a SPAC merger in December 2025 and moved to Nasdaq in February 2026. By 6 Aug 2026 it reported <strong>about US$8.8bn of total contract value</strong>, including a US$4.9bn six-year NVIDIA collaboration, and 212 MW of secured capacity. Revenue is still tiny (US$1.57m in CY25). <span class="badge infer">Strong Inference</span> The next 18 months are about turning that capacity and more than 64,000 GPUs (expected by mid-2027) into billed revenue.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">Total contract value</div><div class="v">~US$8.8bn</div><div class="n">Company-reported TCV, 6 Aug 2026</div></div>
+  <div class="card"><div class="k">Total assets</div><div class="v">US$2.32bn</div><div class="n">30 Jun 2026, from US$32.1m (Dec 2024)</div></div>
+  <div class="card"><div class="k">Secured capacity</div><div class="v">212 MW</div><div class="n">64,000+ GPUs expected by mid-2027</div></div>
+  <div class="card"><div class="k">Full-time staff</div><div class="v">30</div><div class="n">18 Mar 2026 (10-K)</div></div>
+</div>
+
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626001448/sharonaiholdings_424b4.htm" title="Prospectus 424B4 for the Nasdaq offering, SEC EDGAR, 19 Feb 2026">SEC: 424B4 Nasdaq offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.datacenterdynamics.com/en/news/sharon-ai-and-lambda-secure-gpu-backed-debt-funding/" title="Sharon AI and Lambda secure GPU-backed debt funding, DatacenterDynamics, Oct 2026">DCD: GPU-backed debt</a></div>
+
+<h3>Observed Facts</h3>
+<div class="tablewrap"><table>
+<tr><th>Area</th><th>Fact</th><th>Interview relevance</th></tr>
+<tr><td>Scale</td><td><span class="badge fact">Observed Fact</span> Total assets US$32.1m (31 Dec 2024), US$133.1m (31 Dec 2025), US$2.32bn (30 Jun 2026). Most of the June figure is cash (US$1.86bn) from the 2026 raises.</td><td>The balance sheet grew about 70x in 18 months; the systems were built for a start-up.</td></tr>
+<tr><td>Revenue</td><td><span class="badge fact">Observed Fact</span> CY25 revenue US$1.57m (CY24 US$0.44m). Q2 2026 revenue US$1.9m, up 412%. Management expects revenue to "ramp materially from the third quarter of 2026 through 2027".</td><td>Almost all value is future, contracted revenue. Tracking delivery is the job.</td></tr>
+<tr><td>Contracts</td><td><span class="badge fact">Observed Fact</span> TCV about US$8.8bn at 6 Aug 2026: NVIDIA US$4.9bn (six years), ESDS US$1.25bn (1 Apr), global technology company US$950m (14 May), global AI lab US$1.32bn (16 Jul), global AI platform US$373m (4 Aug). TCV is an operating metric, not GAAP revenue.</td><td>Contract, SLA and billing data must be modelled properly, contract by contract.</td></tr>
+<tr><td>Concentration</td><td><span class="badge fact">Observed Fact</span> About 82% of 2025 revenue came from three customers.</td><td>Customer data is high-stakes; one wrong number affects investor trust.</td></tr>
+<tr><td>People</td><td><span class="badge fact">Observed Fact</span> 30 full-time personnel at 18 Mar 2026 (6 executive, 24 general operations).</td><td>A small, "highly leveraged" team, as the ad says.</td></tr>
+<tr><td>Leadership</td><td><span class="badge fact">Observed Fact</span> CEO James Manning (co-founder, CEO since 22 Jan 2026). Chair Andrew Penn (ex-Telstra CEO, from May 2026). CFO Anuj Goel (from 24 Aug). COO David Burns (from 7 Sep), this role's manager. CTO Daniel Mons. Chief Legal Officer Melissa Anastasiou (Jul 2026).</td><td>A new leadership team will want new, trusted reporting.</td></tr>
+<tr><td>Controls</td><td><span class="badge fact">Observed Fact</span> Material weakness in internal control at 31 Dec 2025 (complex financial instruments), reported as fixed. EY replaced HoganTaylor as auditor on 23 Sep 2026.</td><td>"Controls appropriate to a listed-company environment" in the ad is a real need.</td></tr>
+<tr><td>Role</td><td><span class="badge fact">Observed Fact</span> The ad asks for a hands-on builder of the enterprise data model, agents and secure patterns for Claude and the Anthropic ecosystem. "The objective isn't to create a large data function."</td><td>Lead with what you have built, not team size.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014475/ex99-1.htm" title="Sharon AI Announces 5 year $1.25BN AI Cloud Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 1 Apr 2026">SEC: US$1.25bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226022897/ex99-1.htm" title="Sharon AI Announces Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 14 May 2026">SEC: US$950m agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226033457/ex99-1.htm" title="Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 16 Jul 2026">SEC: US$1.32bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226035925/ex99-1.htm" title="Sharon AI Announces US$373m Five-Year AI Cloud Service Agreement (8-K Ex 99.1), SEC EDGAR, 4 Aug 2026">SEC: US$373m agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226028370/ex99-1.htm" title="Sharon AI Announces Six Year Strategic Compute Collaboration with NVIDIA (8-K Ex 99.1), SEC EDGAR, 12 Jun 2026">SEC: NVIDIA collaboration</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226034569/form8-k.htm" title="8-K: Appointment of Chief Financial Officer, SEC EDGAR, 24 Jul 2026">SEC: 8-K CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226025096/form8-k.htm" title="8-K: Andrew Penn appointed Chair, SEC EDGAR, 26 May 2026">SEC: 8-K Penn as Chair</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+
+<h3>Major Turning Points</h3>
+<ol>
+<li><strong>2024, from storage to GPU cloud:</strong> SharonAI Inc. formed (Feb 2024), bought AAM and DSS (Apr to Jun 2024) and became an NVIDIA Cloud Partner (Dec 2024). <span class="badge fact">Observed Fact</span></li>
+<li><strong>Dec 2025 to Feb 2026, public company:</strong> SPAC merger with Roth CH closed on 17 Dec 2025; Nasdaq listing with a US$125m offering at US$30 in Feb 2026. <span class="badge fact">Observed Fact</span></li>
+<li><strong>Jan 2026, founder takes the helm:</strong> Wolf Schubert resigned as CEO and co-founder James Manning took over. The Texas data-centre joint venture was sold for US$74m, so the focus is now Australia and APAC. <span class="badge fact">Observed Fact</span></li>
+<li><strong>Apr to Aug 2026, the contract wave:</strong> TCV reached about US$8.8bn, including the NVIDIA collaboration (72 MW, up to 40,000 GB300 GPUs), funded by about US$2.6bn of equity and convertible notes. <span class="badge fact">Observed Fact</span></li>
+<li><strong>Aug to Oct 2026, building the grown-up company:</strong> new CFO, COO, Chief Legal Officer and Chair; EY as auditor; first GPU-backed debt (US$356m at 9.95%); data and AI roles advertised. Shares fell from a US$92.70 closing high (18 Jun) to US$22.97 (23 Oct). <span class="badge fact">Observed Fact</span></li>
+</ol>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626001448/sharonaiholdings_424b4.htm" title="Prospectus 424B4 for the Nasdaq offering, SEC EDGAR, 19 Feb 2026">SEC: 424B4 Nasdaq offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626000505/sharonai_8k.htm" title="8-K: CEO resignation and appointment, SEC EDGAR, 23 Jan 2026">SEC: 8-K CEO change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226028370/ex99-1.htm" title="Sharon AI Announces Six Year Strategic Compute Collaboration with NVIDIA (8-K Ex 99.1), SEC EDGAR, 12 Jun 2026">SEC: NVIDIA collaboration</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226029005/ex99-1.htm" title="Sharon AI Announces Oversubscribed US$1.6 Billion Strategic Financing (8-K Ex 99.1), SEC EDGAR, 17 Jun 2026">SEC: US$1.6bn financing</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a></div>
+
+<h3>Strategic Evolution</h3>
+<p><span class="badge infer">Strong Inference</span> The path runs from a <strong>storage and small HPC business</strong>, to a <strong>listed GPU cloud start-up</strong>, to a <strong>contracted AI Factory operator</strong> with 212 MW secured and multi-billion-dollar, multi-year commitments. Next, it appears to be becoming a sovereign-AI infrastructure company for APAC that runs a very large GPU fleet with a small, agent-heavy team. Commitments, capital and complexity have grown far faster than people and systems.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+
+<h3>Why the Role Exists Now</h3>
+<div class="callout gold">
+<span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypotheses H1 to H3</span><br>
+In about nine months Sharon AI went from 30 people and US$1.57m of revenue to about US$8.8bn of TCV, 212 MW secured and US$2.32bn of assets. Now customers, contracts, GPUs, power, SLAs and usage must join up for:
+<ul>
+<li>the COO and CFO, who are both new;</li>
+<li>EY's first audit and the listed-company controls that follow a 2025 material weakness;</li>
+<li>lenders in a planned series of GPU-backed facilities, who need data per GPU pool.</li>
+</ul>
+The company wants this built by <strong>one hands-on leader using agents</strong> (Claude named in the ad), not by a large data team. Hiring backs this up: 38 open roles in Australia (27 in Sydney) against 30 full-time staff, plus a new Sydney Data &amp; AI team (see Recruitment Activity).
+</div>
+<div class="refs"><strong>References:</strong> Inference from Observed Facts and Turning Points. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a></div>
+
+<h3>The Real Business Problem</h3>
+<div class="problem">"How does Sharon AI build one trusted, agent-ready model of its customers, contracts, GPUs and usage, fast enough to deliver a US$8.8bn contract book with a small team, and auditable enough for a listed company?"</div>
+<div class="refs"><strong>References:</strong> Inference from Why the Role Exists Now. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+</section>
+
+<!-- ============ PAY ============ -->
+<section id="pay">
+<h2>Compensation &amp; Headcount</h2>
+<h3>Head of Data and AI</h3>
+<div class="tablewrap"><table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Global headcount</td><td class="num"><strong>30</strong> full-time personnel<br><span class="small">6 executive, 24 general operations</span></td><td><span class="badge fact">Observed Fact</span> FY2025 10-K, at 18 Mar 2026. <span class="badge limit">Caution</span> The same 10-K text also says "25 employees, board members, advisors and contractors", so the definitions are inconsistent. The current figure is not disclosed; it is higher now (CFO, COO, Chief Legal Officer, Chief Revenue Officer, VP Infrastructure and Head of Platform roles have been added).</td></tr>
+<tr><td>Australia headcount</td><td class="num"><strong>Not publicly disclosed</strong></td><td><span class="badge fact">Observed Fact</span> Staff are "based in Australia and the United States". <span class="badge hyp">Working Hypothesis, medium</span> Most operating staff are in Australia, where all the GPUs and data centres are.</td></tr>
+<tr><td>Sydney headcount</td><td class="num"><strong>Not publicly disclosed</strong></td><td><span class="badge fact">Observed Fact</span> The Australian staff office is L1, 32 Walker St, North Sydney: about 170 m2 on a 3-year lease (10-K, Mar 2026), up from 4 desks in Haymarket (Feb 2026 prospectus). This shows growth, not a head count.</td></tr>
+<tr><td>Exact-role pay</td><td class="num"><strong>Not disclosed</strong></td><td><span class="badge fact">Observed Fact</span> No salary in the careers ad or the LinkedIn listing.</td></tr>
+<tr><td>Executive pay at Sharon AI</td><td class="num">CFO A$650k base<br>COO A$550k base</td><td><span class="badge fact">Observed Fact</span> 8-Ks, Jul and Aug 2026. CFO: STI up to 100%, LTI up to 200% of base. COO: STI and LTI up to 150% each. This is the layer above the role, not a benchmark for it.</td></tr>
+<tr><td>Benchmark 1: Head of Data Science, Sydney, 2026</td><td class="num">A$200k / 230k / 260k<br><span class="small">low / median / high</span></td><td>Morgan McKinley 2026 Salary Guide, permanent roles, "Total Pay Estimate" model. Whether super is included is not stated.</td></tr>
+<tr><td>Benchmark 2: Head of Analytics, Sydney, 2026</td><td class="num">A$180k / 200k / 250k<br><span class="small">low / median / high</span></td><td>Morgan McKinley 2026 Salary Guide; same basis caveat.</td></tr>
+</table></div>
+
+<div class="callout gold">
+<strong>Indicative interview range:</strong> <strong>A$240k to 280k base, plus super and RSUs</strong>. Anchor about <strong>A$260k base</strong>.<br>
+<span class="badge infer">Inference, not an employer-confirmed budget</span> The role sits at the top of the Sydney head-of-data band: Board exposure, a listed company, and scarce hands-on architecture and agentic AI skills. It sits well below the A$550k COO it reports to. Equity comes through the 2025 Omnibus Equity Incentive Plan.<br>
+<strong>Material uncertainty:</strong> whether Sharon AI pays more in cash or leans on equity, and whether the recruiter figures include super. <strong>Confirm with the recruiter:</strong> the budgeted base, the STI percentage, the RSU value and the vesting schedule.
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+"Based on the scope and the market for hands-on data and AI leaders in Sydney, I'm looking at around $260k base plus super. I'm flexible on the mix, and I'd like to understand how equity fits into the overall package."
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626001448/sharonaiholdings_424b4.htm" title="Prospectus 424B4 for the Nasdaq offering, SEC EDGAR, 19 Feb 2026">SEC: 424B4 Nasdaq offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226034569/form8-k.htm" title="8-K: Appointment of Chief Financial Officer, SEC EDGAR, 24 Jul 2026">SEC: 8-K CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-data-science/sydney" title="Head of Data Science salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Head of Data Science</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-analytics/sydney" title="Head of Analytics salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Head of Analytics</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+
+<h3>Data &amp; AI Product Lead (your second application)</h3>
+<p>You applied for this role on 24 Oct 2026 and it was viewed the same day. It is a Sydney, hybrid, full-time, permanent role that LinkedIn lists as "Mid-Senior level". It leads the product side of the new Data &amp; AI team: the Product Analyst works "closely with the Data &amp; AI Product Lead" on value cases, backlog and outcomes (see Recruitment Activity).</p>
+<div class="tablewrap"><table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Exact-role pay</td><td class="num"><strong>Not disclosed</strong></td><td><span class="badge fact">Observed Fact</span> No salary on the LinkedIn listing (posted 23 Oct 2026). The role is not on the careers page or SEEK.</td></tr>
+<tr><td>Benchmark 1: Product Manager, Sydney</td><td class="num">A$143k / 173k / 226k<br><span class="small">25th / median / 75th</span></td><td>Levels.fyi, 68 employee-reported salaries, updated 25 Oct 2026. <strong>Total compensation</strong> (base, bonus and stock), skewed towards tech companies.</td></tr>
+<tr><td>Benchmark 2: live Sydney ad, Digital Product Manager</td><td class="num">Up to A$160k base + super</td><td>Latitude IT on SEEK, 1 Oct 2026. Employer-stated. A general product role, not data or AI.</td></tr>
+<tr><td>Benchmark 3: live Sydney ad, Founding Product Data Scientist</td><td class="num">A$150k to 190k + super + ESOP</td><td>The Onset on SEEK, 7 Oct 2026. Employer-stated. A data and AI product start-up role, the closest skills match.</td></tr>
+<tr><td>Benchmark 4: live Sydney ad, Group Product Manager</td><td class="num">A$200k + super + bonus</td><td>Bluefin Resources (recruiter) on SEEK, 9 Oct 2026. A level above, leading several product managers.</td></tr>
+<tr><td>Ceiling: Head of Data and AI</td><td class="num">A$240k to 280k base</td><td><span class="badge hyp">Working Hypothesis</span> From the Head of Data and AI table above. The Product Lead sits below the Head.</td></tr>
+</table></div>
+
+<div class="callout gold">
+<strong>Indicative interview range:</strong> <strong>A$170k to 200k base, plus super and RSUs</strong>. Anchor about <strong>A$185k base</strong>.<br>
+<span class="badge infer">Inference, not an employer-confirmed budget</span> The role is above a mid-level Sydney product manager (Levels.fyi median A$173k total compensation; live ads up to A$160k base) because it owns a new data and AI product function, value cases and agent adoption at a listed company. It sits below the Head of Data and AI band (A$240k to 280k) and in line with the A$150k to 190k founding data product ad. Sharon AI's equity plan (2025 Omnibus Equity Incentive Plan) may cover this level, but that is not confirmed.<br>
+<strong>Material uncertainty:</strong> whether "Lead" means one hands-on product owner or a manager of the Product Analyst, and how much of the package is equity. <strong>Confirm with the recruiter:</strong> the budgeted base, any STI, RSU eligibility, and the reporting line (Head of Data and AI, or COO while the Head role is open).
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+"For a Data and AI Product Lead role with this scope, I'm looking at around $185k base plus super. I'm flexible on the mix, and I'd like to understand whether equity is part of the package at this level."
+</div>
+<div class="callout warn"><strong>If both roles are in play:</strong> keep the two numbers separate. Lead with the Head of Data and AI range (A$260k anchor) for that role. If they steer you to the Product Lead role, use the A$185k anchor and ask how the two roles will work together, rather than discounting the Head number.</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481666035" title="Data & AI Product Lead, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657465" title="Data & AI Product Analyst, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Analyst</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.levels.fyi/t/product-manager/locations/sydney-aus" title="Product Manager salary in Sydney, Australia, Levels.fyi, updated 25 Oct 2026">Levels.fyi: Product Manager Sydney</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.seek.com.au/job/94986417" title="Digital Product Manager, Latitude IT, SEEK, 1 Oct 2026">SEEK: Digital Product Manager</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.seek.com.au/job/95117045" title="Founding Product Data Scientist, The Onset, SEEK, 7 Oct 2026">SEEK: Founding Product Data Scientist</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.seek.com.au/job/95155477" title="Group Product Manager, Digital Platforms, Bluefin Resources, SEEK, 9 Oct 2026">SEEK: Group Product Manager</a> <span class="sep">|</span> LinkedIn and Sharon AI application emails (24 Oct 2026)</div>
+</section>
+
+<!-- ============ STAGE 2 ============ -->
+<section id="stage2">
+<h2>Stage 2: Full Interview Dossier (first pass)</h2>
+
+<h3>1. Company Overview</h3>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Business:</strong> GPU cloud ("GPU as a Service"), private clusters and a supercluster, storage (VAST Data, S3), the SharonAI Cloud orchestration platform (moving to Rafay, Sep 2026) and SHARON AI Studio (managed AI platform).</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Revenue model:</strong> five-year take-or-pay contracts with AI labs and platforms, a revenue-sharing collaboration with NVIDIA, plus on-demand GPU rental. Q2 2026 revenue was all GPU infrastructure services; crypto mining has stopped.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Customers:</strong> Canva, GMI Cloud, ESDS, plus an unnamed global technology company, global AI lab and global AI platform. About 82% of 2025 revenue came from three customers. The first deployment for the global technology customer was delivered and accepted on 20 Aug 2026.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Geography:</strong> data centres in Melbourne (NEXTDC M3) and Sydney (Equinix, NEXTDC), with New Zealand for the AI lab contract. Head office in New York; operating office in North Sydney.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Ownership:</strong> Nasdaq-listed since Feb 2026, with dual-class shares. Three founders (Manning, Leece, Hughes-Jones) hold all the Class B shares at 160 votes each, and officers and directors control about 46% of the votes.</li>
+<li><span class="badge infer">Strong Inference</span> <strong>Market value:</strong> 35.7m Class A shares (20 Aug 2026) at US$22.97 is about US$0.8bn. This excludes Class B shares, warrants and convertible notes.</li>
+</ul>
+
+<div class="chartbox">
+  <div class="title">Financial scale: total assets (US$ millions)</div>
+  <svg viewBox="0 0 640 240" width="100%" role="img" aria-label="Sharon AI total assets rising from 32.1 million dollars in December 2024 to 133.1 million in December 2025 and 2,321.3 million in June 2026">
+    <g font-family="Lexend,Aptos,Arial,sans-serif" font-size="11" fill="#626a73">
+      <text x="14" y="18" font-size="11" font-weight="600">US$ millions</text>
+      <line x1="60" x2="620" y1="200" y2="200" stroke="#eceff1"/><text x="54" y="204" text-anchor="end">0</text>
+      <line x1="60" x2="620" y1="160" y2="160" stroke="#eceff1"/><text x="54" y="164" text-anchor="end">600</text>
+      <line x1="60" x2="620" y1="120" y2="120" stroke="#eceff1"/><text x="54" y="124" text-anchor="end">1,200</text>
+      <line x1="60" x2="620" y1="80" y2="80" stroke="#eceff1"/><text x="54" y="84" text-anchor="end">1,800</text>
+      <line x1="60" x2="620" y1="40" y2="40" stroke="#eceff1"/><text x="54" y="44" text-anchor="end">2,400</text>
+      <text x="130" y="222" text-anchor="middle">Dec 2024</text>
+      <text x="340" y="222" text-anchor="middle">Dec 2025</text>
+      <text x="550" y="222" text-anchor="middle">Jun 2026</text>
+    </g>
+    <polyline points="130,197.9 340,191.1 550,45.2" fill="none" stroke="#3A70FF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <g fill="#3A70FF"><circle cx="130" cy="197.9" r="6"/><circle cx="340" cy="191.1" r="6"/><circle cx="550" cy="45.2" r="6"/></g>
+    <g font-family="Lexend,Aptos,Arial,sans-serif" font-size="13" font-weight="700" fill="#17191c" text-anchor="middle">
+      <text x="130" y="186">32.1</text><text x="340" y="179">133.1</text><text x="550" y="32">2,321.3</text>
+    </g>
+  </svg>
+  <div class="chartcap">Total assets, 31 Dec 2024, 31 Dec 2025 and 30 Jun 2026. Dec 2024 and Dec 2025 from the FY2025 10-K; Jun 2026 from the Q2 2026 10-Q. Only three points exist: SharonAI was formed in Feb 2024 and has reported as one group only since then, so a 5 to 7 year series is not available. Most of the Jun 2026 figure is cash (US$1.86bn) raised in 2026, not yet GPUs. The y-axis starts at zero because the first value is close to zero.</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226032957/formdef14a.htm" title="Definitive proxy statement DEF 14A, SEC EDGAR, 13 Jul 2026">SEC: DEF 14A 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039364/ex99-1.htm" title="Sharon AI Successfully Delivers AI Cloud Deployment for Global Technology Customer (8-K Ex 99.1), SEC EDGAR, 20 Aug 2026">SEC: first delivery</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226041450/ex99-1.htm" title="Sharon AI Selects Rafay Systems for AI Infrastructure Orchestration (8-K Ex 99.1), SEC EDGAR, 4 Sep 2026">SEC: Rafay platform</a></div>
+
+<h3>2. How the Company Became What It Is Today</h3>
+<div class="phase"><div class="label">2021 to 2024: Roll-up</div><div>Small Australian storage and compute businesses (DSS and AAM, both from 2021) were brought under a Delaware holding company formed in Feb 2024. NVIDIA Cloud Partner status (Dec 2024) and a 1,000-plus GPU supercluster at NEXTDC M3 gave it credibility.</div></div>
+<div class="phase"><div class="label">2025: Listing route</div><div>It chose a SPAC (Roth CH: agreement Jan 2025, closed 17 Dec 2025) for US market access, launched SharonAI Cloud (Feb 2025) and hired CTO Daniel Mons (May 2025).</div></div>
+<div class="phase"><div class="label">Jan to Feb 2026: Focus</div><div>Co-founder James Manning became CEO. The Texas gas-powered data-centre joint venture was sold for US$74m, putting the focus on Australia and APAC "sovereign AI". The shares moved to Nasdaq with a US$125m offering at US$30.</div></div>
+<div class="phase"><div class="label">Apr to Aug 2026: Scale</div><div>Large five-year contracts and the NVIDIA collaboration took TCV to about US$8.8bn. Funding came from convertible notes (US$103m Dec 2025, US$350m Apr/May 2026, US$700m Jun 2026), equity (US$125m Feb, about US$900m Jun) and, from Oct, GPU-backed debt (US$356m).</div></div>
+<div class="phase"><div class="label">Aug to Oct 2026: Institutionalise</div><div>An experienced CFO and COO arrived, co-founder Andrew Leece moved to strategic partnerships, and EY was appointed. <span class="badge infer">Strong Inference</span> It is now a capital-heavy operator with a small team, a very large contract book and little billed revenue yet.</div></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626000505/sharonai_8k.htm" title="8-K: CEO resignation and appointment, SEC EDGAR, 23 Jan 2026">SEC: 8-K CEO change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226042434/form8-k.htm" title="8-K: Deed of Release, Andrew Leece role change, SEC EDGAR, 11 Sep 2026">SEC: 8-K Leece role change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a></div>
+
+<h3>3. Chronological Timeline</h3>
+<div class="tablewrap"><table class="timeline">
+<tr><th>Year / Date</th><th>Event</th><th>Evidence</th><th>Why it mattered</th></tr>
+<tr><td>2021</td><td>DSS and AAM established (storage, HPC)</td><td><span class="badge fact">Observed Fact</span></td><td>Origins in storage: data is in the company's DNA, but not enterprise data</td></tr>
+<tr><td>Feb to Jun 2024</td><td>SharonAI Inc. formed; AAM and DSS acquired</td><td><span class="badge fact">Observed Fact</span></td><td>A roll-up means several legacy systems to join up</td></tr>
+<tr><td>Dec 2024</td><td>NVIDIA Cloud Partner</td><td><span class="badge fact">Observed Fact</span></td><td>Access to GPU allocation, the scarce input</td></tr>
+<tr><td>Feb 2025</td><td>SharonAI Cloud platform launched</td><td><span class="badge fact">Observed Fact</span></td><td>The first self-service usage data source</td></tr>
+<tr><td>17 Dec 2025</td><td>SPAC merger closes; OTC trading from 18 Dec</td><td><span class="badge fact">Observed Fact</span></td><td>Listed-company reporting duties begin</td></tr>
+<tr><td>22 Jan 2026</td><td>James Manning becomes CEO</td><td><span class="badge fact">Observed Fact</span></td><td>A founder-led push into large contracts</td></tr>
+<tr><td>Feb 2026</td><td>Nasdaq listing, US$125m at US$30</td><td><span class="badge fact">Observed Fact</span></td><td>Investor scrutiny of every number</td></tr>
+<tr><td>1 Apr 2026</td><td>ESDS agreement, US$1.25bn over five years</td><td><span class="badge fact">Observed Fact</span></td><td>The first billion-dollar contract to track and evidence</td></tr>
+<tr><td>14 May 2026</td><td>Global technology company agreement, US$950m</td><td><span class="badge fact">Observed Fact</span></td><td>Customer and contract complexity rise</td></tr>
+<tr><td>12 Jun 2026</td><td>NVIDIA six-year collaboration (US$4.9bn TCV): 72 MW, up to 40,000 GB300 GPUs</td><td><span class="badge fact">Observed Fact</span></td><td>A revenue-sharing model needs clear usage and revenue data</td></tr>
+<tr><td>17 Jun 2026</td><td>About US$1.6bn financing (US$900m equity, US$700m convertibles)</td><td><span class="badge fact">Observed Fact</span></td><td>Cash to build; investors now expect proof of delivery</td></tr>
+<tr><td>16 Jul 2026</td><td>Global AI lab agreement, US$1.32bn, New Zealand</td><td><span class="badge fact">Observed Fact</span></td><td>A new country and new data-centre data</td></tr>
+<tr><td>4 Aug 2026</td><td>Global AI platform agreement, US$373m, 2,048 B300 GPUs</td><td><span class="badge fact">Observed Fact</span></td><td>TCV reaches about US$8.8bn (6 Aug)</td></tr>
+<tr><td>Dec 2024 to Jun 2026</td><td>Total assets rose from US$32.1m to US$2.32bn</td><td><span class="badge fact">Observed Fact</span></td><td>Scale has outrun start-up systems; trusted decision information now has real economic value</td></tr>
+<tr><td>CY25 vs Aug 2026</td><td>Revenue US$1.57m vs TCV about US$8.8bn</td><td><span class="badge fact">Observed Fact</span></td><td>The gap between signed and billed is what the business must manage and prove</td></tr>
+<tr><td>24 Aug and 7 Sep 2026</td><td>New CFO (Anuj Goel) and COO (David Burns, this role's manager) start</td><td><span class="badge fact">Observed Fact</span></td><td>New leaders need one source of truth</td></tr>
+<tr><td>23 Sep 2026</td><td>EY replaces HoganTaylor as auditor</td><td><span class="badge fact">Observed Fact</span></td><td>Data lineage and controls will be tested</td></tr>
+<tr><td>28 Sep 2026</td><td>US$356m GPU-backed facility at 9.95% fixed</td><td><span class="badge fact">Observed Fact</span></td><td>Lenders need asset, utilisation and revenue data per GPU pool</td></tr>
+<tr><td>23 Oct 2026</td><td>Shares close at US$22.97, 75% below the US$92.70 closing high and below the US$30 offer price</td><td><span class="badge fact">Observed Fact</span></td><td>Pressure to show contracts turning into revenue</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014475/ex99-1.htm" title="Sharon AI Announces 5 year $1.25BN AI Cloud Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 1 Apr 2026">SEC: US$1.25bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226022897/ex99-1.htm" title="Sharon AI Announces Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 14 May 2026">SEC: US$950m agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226028370/ex99-1.htm" title="Sharon AI Announces Six Year Strategic Compute Collaboration with NVIDIA (8-K Ex 99.1), SEC EDGAR, 12 Jun 2026">SEC: NVIDIA collaboration</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226029005/ex99-1.htm" title="Sharon AI Announces Oversubscribed US$1.6 Billion Strategic Financing (8-K Ex 99.1), SEC EDGAR, 17 Jun 2026">SEC: US$1.6bn financing</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226033457/ex99-1.htm" title="Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 16 Jul 2026">SEC: US$1.32bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226035925/ex99-1.htm" title="Sharon AI Announces US$373m Five-Year AI Cloud Service Agreement (8-K Ex 99.1), SEC EDGAR, 4 Aug 2026">SEC: US$373m agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226034569/form8-k.htm" title="8-K: Appointment of Chief Financial Officer, SEC EDGAR, 24 Jul 2026">SEC: 8-K CFO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a></div>
+
+<h3>4. Observed Facts</h3>
+<div class="two">
+<div>
+<h4>Financial / commercial</h4>
+<ul>
+<li>CY25 revenue US$1.57m; cost of revenue US$1.47m; first positive gross profit, US$0.10m.</li>
+<li>CY25 net loss US$39.8m, mostly a US$26.0m fair-value loss on convertible notes.</li>
+<li>Q2 2026 revenue US$1.9m (+412%). Net loss US$430.4m, driven by a US$400.4m non-cash fair-value loss on convertibles. Adjusted EBITDA US$0.6m.</li>
+<li>Cash US$1.86bn and total assets US$2.32bn at 30 Jun 2026; about US$1.0bn of convertible notes.</li>
+<li>About 82% of 2025 revenue came from three customers.</li>
+</ul>
+
+<h4>Operational</h4>
+<ul>
+<li>212 MW of secured capacity for 2026 and 2027; 64,000+ NVIDIA GPUs expected by mid-2027 (6 Aug 2026). Earlier releases said 132 MW and 55,000 to 62,000 GPUs, so the figures keep moving up.</li>
+<li>NEXTDC service order for 72 MW in Australia, about US$623m commitment (Jul 2026).</li>
+<li>VAST Data 600 PB storage deployment, sized for about 100,000 GPUs (Jun 2026). Rafay chosen as the orchestration platform (Sep 2026).</li>
+</ul>
+</div>
+<div>
+<h4>Leadership / strategy</h4>
+<ul>
+<li>Founders hold all the super-voting Class B shares.</li>
+<li>CEO James Manning, Chair Andrew Penn, CTO Daniel Mons, CFO Anuj Goel, COO David Burns, Chief Legal Officer Melissa Anastasiou, and a Chief Revenue Officer (unnamed in the 10-Q).</li>
+<li>Material weakness at 31 Dec 2025, reported remediated; EY is now the auditor.</li>
+</ul>
+
+<h4>Data / technology</h4>
+<ul>
+<li>The Head of Data and AI ad covers: an enterprise data model (customers, contracts, products, infrastructure, usage, competitors), digital twins, agents that automate analytical and operational work, lineage and audit of agent actions, and secure patterns for Claude and the Anthropic ecosystem.</li>
+<li>A separate "Data Analyst &amp; Reporting Engineer, AI Operations" role (Power BI, SLA and incident reporting) reports to the Service Operations Manager.</li>
+<li>LinkedIn shows "Data &amp; AI Product Lead" and "Data &amp; AI Product Analyst" roles in Sydney, posted about 23 Oct 2026.</li>
+</ul>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226032957/formdef14a.htm" title="Definitive proxy statement DEF 14A, SEC EDGAR, 13 Jul 2026">SEC: DEF 14A 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226041450/ex99-1.htm" title="Sharon AI Selects Rafay Systems for AI Infrastructure Orchestration (8-K Ex 99.1), SEC EDGAR, 4 Sep 2026">SEC: Rafay platform</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a> <span class="sep">|</span> LinkedIn job alert and application emails (23 and 24 Oct 2026)</div>
+
+<h3>5. Observed Turning Points (role lens)</h3>
+<div class="tablewrap"><table>
+<tr><th>Turning point</th><th>What happened</th><th>Immediate / longer-term effect</th><th>Relevance to the role</th></tr>
+<tr><td>Listing (Dec 2025 to Feb 2026)</td><td>SPAC close, then Nasdaq</td><td>Quarterly SEC reporting; a material weakness found. Every number is now public.</td><td><span class="badge infer">Strong Inference</span> The data foundation must be audit-grade from day one</td></tr>
+<tr><td>Founder CEO and Texas exit (Jan 2026)</td><td>Manning replaced Schubert; Texas JV sold for US$74m</td><td>Focus on APAC sovereign AI</td><td><span class="badge infer">Strong Inference</span> One geography and one business model to model first</td></tr>
+<tr><td>Contract wave (Apr to Aug 2026)</td><td>TCV about US$8.8bn across five commitments</td><td>Share-price peak in June; delivery risk across 2026 and 2027</td><td><span class="badge infer">Strong Inference</span> Contract-to-capacity-to-revenue tracking is the core data product (answers the business problem)</td></tr>
+<tr><td>Professional management (Aug to Sep 2026)</td><td>New CFO, COO and Chief Legal Officer; Leece to partnerships; EY appointed</td><td>Institutional controls expected by investors and lenders</td><td><span class="badge hyp">Working Hypothesis</span> The hiring manager is new and will want early, visible wins</td></tr>
+<tr><td>Asset-backed debt (Sep to Oct 2026)</td><td>US$356m at 9.95%, "first of a planned series"</td><td>Funding per GPU pool</td><td><span class="badge infer">Strong Inference</span> Lenders need reliable per-pool utilisation and revenue data</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626000505/sharonai_8k.htm" title="8-K: CEO resignation and appointment, SEC EDGAR, 23 Jan 2026">SEC: 8-K CEO change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226042434/form8-k.htm" title="8-K: Deed of Release, Andrew Leece role change, SEC EDGAR, 11 Sep 2026">SEC: 8-K Leece role change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.datacenterdynamics.com/en/news/sharon-ai-and-lambda-secure-gpu-backed-debt-funding/" title="Sharon AI and Lambda secure GPU-backed debt funding, DatacenterDynamics, Oct 2026">DCD: GPU-backed debt</a></div>
+
+<h3>6. Strategic Evolution</h3>
+<div class="tablewrap"><table>
+<tr><th>Phase</th><th>Business model</th><th>Operating complexity</th><th>Data implication</th></tr>
+<tr><td>2021 to 2024: storage and HPC</td><td>Storage, small GPU rental, some mining</td><td>Low</td><td>Spreadsheets and billing tools</td></tr>
+<tr><td>2025: GPU cloud start-up</td><td>On-demand and reserved GPUs; sovereign Australian AI compute</td><td>Medium</td><td>Usage and billing for a few customers</td></tr>
+<tr><td>2026: AI Factory operator</td><td>Five-year take-or-pay contracts; NVIDIA revenue share</td><td>High: 212 MW, several sites and countries, many funding sources</td><td>One model of contracts, capacity, usage, cost and revenue; audit and lender reporting</td></tr>
+<tr><td>Next: agent-run infrastructure company</td><td>The same, at larger scale</td><td>Very high</td><td>Agents acting on trusted data, with every action logged</td></tr>
+</table></div>
+<p><span class="badge infer">Strong Inference</span> <strong>What it is becoming:</strong> a sovereign AI infrastructure company for APAC that runs a large GPU fleet with a small, agent-heavy team. Data and AI are how it scales without a large back office.</p>
+<div class="refs"><strong>References:</strong> Inference from sections 1 to 5. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+</section>
+
+<!-- ============ STOCK ============ -->
+<section id="stock">
+<h3 style="margin-top:0">7. Business Performance and Market Response (Nasdaq: SHAZ)</h3>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Revenue:</strong> small but growing (Q2 2026 US$1.9m, +412%). Large contract revenue starts from Q3 2026 (ESDS) and Q1 to Q2 2027 (AI lab, AI platform).</li>
+<li><span class="badge infer">Strong Inference</span> <strong>Losses:</strong> headline losses are mostly non-cash fair-value movements on convertibles, which grow when the share price rises (10-Q note).</li>
+<li><span class="badge fact">Observed Fact</span> <strong>Analysts:</strong> Northland initiated at Outperform with a US$95 target on 18 Sep 2026 (secondary source).</li>
+</ul>
+<div class="grid">
+  <div class="card"><div class="k">Latest close</div><div class="v">US$22.97</div><div class="n">23 Oct 2026</div></div>
+  <div class="card"><div class="k">Closing high</div><div class="v">US$92.70</div><div class="n">18 Jun 2026; now 75% below</div></div>
+  <div class="card"><div class="k">Closing low</div><div class="v">US$17.52</div><div class="n">3 Mar 2026</div></div>
+  <div class="card"><div class="k">Market value</div><div class="v">~US$0.8bn</div><div class="n">Class A shares only (inference)</div></div>
+</div>
+
+<div class="chartbox">
+  <div class="stock-toolbar">
+    <div class="title">SHAZ daily closing price (US$)</div>
+    <div class="stock-ranges" role="group" aria-label="Stock chart time range">
+      <button type="button" data-range="21">1M</button>
+      <button type="button" data-range="63">3M</button>
+      <button type="button" data-range="126">6M</button>
+      <button type="button" data-range="0" class="active">Full range</button>
+    </div>
+  </div>
+  <div class="stock-chart-wrap">
+    <svg id="shazChart" role="img" aria-label="Sharon AI daily closing share price chart, 18 February to 23 October 2026"></svg>
+    <div class="stock-tooltip" id="shazTooltip" aria-hidden="true"></div>
+  </div>
+  <div class="stock-legend">
+    <span><b id="shazStart"></b> start</span>
+    <span><b id="shazEnd"></b> latest</span>
+    <span><b id="shazChange"></b> change over selected range</span>
+  </div>
+  <div class="chartcap">Daily closes from the first Nasdaq close (18 Feb 2026) to 23 Oct 2026. Range buttons count trading days (1M about 21, 3M 63, 6M 126). Red markers show dated company events on days of large moves: Nasdaq debut (18 Feb), US$1.25bn deal (1 Apr), US$1.6bn raise (17 Jun), NZ deal, -7% (16 Jul), Q2 results (6 Aug) and GPU debt (1 Oct). Hover a marker for detail. Day moves are calculated from Yahoo Finance closes. Sources: Yahoo Finance, Sharon AI 8-K releases. Not investment advice.</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626001448/sharonaiholdings_424b4.htm" title="Prospectus 424B4 for the Nasdaq offering, SEC EDGAR, 19 Feb 2026">SEC: 424B4 Nasdaq offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014475/ex99-1.htm" title="Sharon AI Announces 5 year $1.25BN AI Cloud Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 1 Apr 2026">SEC: US$1.25bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226029005/ex99-1.htm" title="Sharon AI Announces Oversubscribed US$1.6 Billion Strategic Financing (8-K Ex 99.1), SEC EDGAR, 17 Jun 2026">SEC: US$1.6bn financing</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226033457/ex99-1.htm" title="Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 16 Jul 2026">SEC: US$1.32bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a></div>
+
+<h4>Recent price performance (to 23 Oct 2026)</h4>
+<div class="metricbars">
+  <div class="metricrow"><span>1 month</span><div class="barbg"><div class="bar" style="width:80%"></div></div><span class="tag">-60.2%</span></div>
+  <div class="metricrow"><span>3 months</span><div class="barbg"><div class="bar" style="width:89%"></div></div><span class="tag">-67.3%</span></div>
+  <div class="metricrow"><span>Since listing</span><div class="barbg"><div class="bar" style="width:37%"></div></div><span class="tag">-27.5%</span></div>
+  <div class="metricrow"><span>From high</span><div class="barbg"><div class="bar" style="width:100%"></div></div><span class="tag">-75.2%</span></div>
+</div>
+<p class="small">Calculated from daily closes: 23 Sep 2026 US$57.73, 23 Jul 2026 US$70.18, first close 18 Feb 2026 US$31.70, and the closing high of US$92.70 (18 Jun 2026), to US$22.97 on 23 Oct 2026. Against the US$30 offer price the shares are down 23.4%. The listing is under one year old, so there is no 1-year figure.</p>
+
+<h4>What coincided with the major moves</h4>
+<ul>
+<li><span class="badge fact">Observed Fact</span> <strong>Feb to Mar 2026, "Nasdaq debut":</strong> first close US$31.70 on 18 Feb, after the US$125m offer at US$30. The shares then fell to a US$17.52 closing low on 3 Mar (-14.5% that day, -17.4% the day before). No dated company event explains the fall, so it is unlabelled on the chart.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>1 Apr 2026, "US$1.25bn deal":</strong> the five-year US$1.25bn AI cloud agreement was announced and the shares closed +21.5% (US$27.62). CY25 results came out the day before (+4.6%). Month-end closes: US$22.73 (Mar) to US$46.00 (Apr), about +102%. The US$350m convertible notes (27 Apr) also fell in April.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>17 to 18 Jun 2026, "US$1.6bn raise":</strong> the US$1.6bn financing was announced on 17 Jun and the shares closed +10.9%, then +9.0% to the US$92.70 closing high on 18 Jun. The VAST Data expansion (15 Jun) and the NVIDIA collaboration (12 Jun, when the shares closed -12.9%) came in the same week, so the move can't be tied to one event. Month-end closes: US$75.83 (May) to US$84.66 (Jun), about +12%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>16 Jul 2026, "NZ deal, -7%":</strong> the US$1.32bn global AI lab contract was announced, but the shares closed -7.1% (US$65.60). The steepest fall came later: -23.5% on 28 Jul, with no dated company event found (unlabelled). Month-end closes: US$84.66 (Jun) to US$48.25 (Jul), about -43%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>6 Aug 2026, "Q2 results":</strong> Q2 results reported TCV of about US$8.8bn but revenue of US$1.9m, and the shares closed -8.5% (US$52.15). The US$373m contract came two days earlier (4 Aug, +6.0%). A +21.0% day on 12 Aug has no dated company event (unlabelled). Month-end closes: US$48.25 (Jul) to US$54.86 (Aug), about +14%.</li>
+<li><span class="badge fact">Observed Fact</span> <strong>1 Oct 2026, "GPU debt":</strong> the US$356m GPU-backed facility at 9.95% was announced and the shares closed -8.7% (US$49.85). The slide continued to US$22.97 on 23 Oct, including -15.7% on 22 Oct with no company statement. Close of US$54.60 (30 Sep) to US$22.97 (23 Oct), about -58%.</li>
+<li><span class="badge limit">Caution</span> The stock is very volatile (daily moves of more than 10% are common) and moves with the wider AI infrastructure and neocloud sector. That includes reports in about mid-September that Meta may sell spare AI compute, a threat to neocloud demand. Treat these links as timing, not cause. Don't raise the share price in the interview unless they do.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626001448/sharonaiholdings_424b4.htm" title="Prospectus 424B4 for the Nasdaq offering, SEC EDGAR, 19 Feb 2026">SEC: 424B4 Nasdaq offer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014475/ex99-1.htm" title="Sharon AI Announces 5 year $1.25BN AI Cloud Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 1 Apr 2026">SEC: US$1.25bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226029005/ex99-1.htm" title="Sharon AI Announces Oversubscribed US$1.6 Billion Strategic Financing (8-K Ex 99.1), SEC EDGAR, 17 Jun 2026">SEC: US$1.6bn financing</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226028370/ex99-1.htm" title="Sharon AI Announces Six Year Strategic Compute Collaboration with NVIDIA (8-K Ex 99.1), SEC EDGAR, 12 Jun 2026">SEC: NVIDIA collaboration</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226033457/ex99-1.htm" title="Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 16 Jul 2026">SEC: US$1.32bn agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226035925/ex99-1.htm" title="Sharon AI Announces US$373m Five-Year AI Cloud Service Agreement (8-K Ex 99.1), SEC EDGAR, 4 Aug 2026">SEC: US$373m agreement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://tickeron.com/blogs/why-is-sharonai-holdings-shaz-stock-down-10-81-today-16637/" title="Why Is SharonAI Holdings (SHAZ) Stock Down -10.81% Today?, Tickeron, Sep 2026">Tickeron: Meta compute report</a></div>
+</section>
+
+<!-- ============ RECRUITMENT ============ -->
+<section id="recruitment">
+<h2>Recruitment Activity: What Sharon AI Is Hiring For in Australia</h2>
+<p class="lead">Sharon AI's Australian hiring over the past six months shows where the company is heading more clearly than its press releases do. Open roles in Australia went from <strong>7 in May</strong> to <strong>38 today</strong>, against a base of <strong>30 full-time staff</strong> (Mar 2026). <strong>Sydney is the hub</strong>, with 27 of the 38 roles. Most new roles are for <strong>building and running AI Factories</strong>, not for winning more contracts.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">Open roles in Australia, 17 May</div><div class="v">7</div><div class="n">Careers page (Wayback snapshot)</div></div>
+  <div class="card"><div class="k">Open roles in Australia, 25 Oct</div><div class="v">38</div><div class="n">31 careers page + 7 on LinkedIn or beBee only</div></div>
+  <div class="card"><div class="k">Sydney roles</div><div class="v">27</div><div class="n">25 Sydney-based + 2 "Sydney preferred"</div></div>
+  <div class="card"><div class="k">Full-time staff</div><div class="v">30</div><div class="n">18 Mar 2026 (10-K)</div></div>
+</div>
+
+<h3>Where the roles are</h3>
+<div class="metricbars wide">
+  <div class="metricrow"><span>Sydney</span><div class="barbg"><div class="bar" style="width:100%;background:#3A70FF"></div></div><span class="tag">27</span></div>
+  <div class="metricrow"><span>Australia, remote</span><div class="barbg"><div class="bar" style="width:30%;background:#3A70FF"></div></div><span class="tag">8</span></div>
+  <div class="metricrow"><span>Melbourne</span><div class="barbg"><div class="bar" style="width:7%;background:#3A70FF"></div></div><span class="tag">2</span></div>
+  <div class="metricrow"><span>Adelaide</span><div class="barbg"><div class="bar" style="width:4%;background:#3A70FF"></div></div><span class="tag">1</span></div>
+</div>
+<p class="small">Sydney includes the Infrastructure Architect and Infrastructure Engineer ads ("Australia, Sydney preferred"). Remote covers the three AI Factory deployment engineers, the Storage Architect, both security roles, the Platform Engineer and the Senior R&amp;D Engineer (the last two are open in Australia or EMEA). Out of scope and not counted: three EMEA-only roles and one in Singapore. Sharon AI does not advertise on SEEK. Seven Sydney roles were found only on LinkedIn or beBee (four on 23 Oct, three on 24 Oct); keyword searches may still miss a few.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481666035" title="Data & AI Product Lead, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657465" title="Data & AI Product Analyst, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Analyst</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657458" title="Data & AI Platform Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Platform Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-data-ai-engineer-sharon-ai-inc-sydney-new-south-wales--t7xk-899615141" title="Senior Data & AI Engineer, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/rma-vendor-management-lead-sharon-ai-inc-sydney-new-south-wales--t7xk-899365720" title="RMA & Vendor Management Lead, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: RMA & Vendor Management Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-agile-coach-delivery-enablement-sharon-ai-inc-sydney-new-south-wales--t7xk-899533241" title="Senior Agile Coach, Delivery Enablement, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Agile Coach</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="http://web.archive.org/web/20260517170055/https://sharonai.com/careers/" title="Sharon AI careers page, Wayback Machine snapshot, 17 May 2026">Wayback: careers 17 May 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a></div>
+
+<h3>Open roles by function (Australia, 25 Oct 2026)</h3>
+<div class="metricbars wide">
+  <div class="metricrow"><span>AI Factory delivery</span><div class="barbg"><div class="bar" style="width:100%;background:#3A70FF"></div></div><span class="tag">10</span></div>
+  <div class="metricrow"><span>Operations (run)</span><div class="barbg"><div class="bar" style="width:90%;background:#3A70FF"></div></div><span class="tag">9</span></div>
+  <div class="metricrow"><span>Infrastructure</span><div class="barbg"><div class="bar" style="width:50%;background:#3A70FF"></div></div><span class="tag">5</span></div>
+  <div class="metricrow"><span>Data and AI</span><div class="barbg"><div class="bar" style="width:60%;background:#3A70FF"></div></div><span class="tag">6</span></div>
+  <div class="metricrow"><span>Legal and corporate</span><div class="barbg"><div class="bar" style="width:30%;background:#3A70FF"></div></div><span class="tag">3</span></div>
+  <div class="metricrow"><span>Platform and R&amp;D</span><div class="barbg"><div class="bar" style="width:20%;background:#3A70FF"></div></div><span class="tag">2</span></div>
+  <div class="metricrow"><span>Security</span><div class="barbg"><div class="bar" style="width:20%;background:#3A70FF"></div></div><span class="tag">2</span></div>
+  <div class="metricrow"><span>Marketing</span><div class="barbg"><div class="bar" style="width:10%;background:#3A70FF"></div></div><span class="tag">1</span></div>
+</div>
+<p class="small">Grouped by the team named in each ad.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481666035" title="Data & AI Product Lead, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657465" title="Data & AI Product Analyst, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Analyst</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657458" title="Data & AI Platform Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Platform Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-data-ai-engineer-sharon-ai-inc-sydney-new-south-wales--t7xk-899615141" title="Senior Data & AI Engineer, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/rma-vendor-management-lead-sharon-ai-inc-sydney-new-south-wales--t7xk-899365720" title="RMA & Vendor Management Lead, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: RMA & Vendor Management Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-agile-coach-delivery-enablement-sharon-ai-inc-sydney-new-south-wales--t7xk-899533241" title="Senior Agile Coach, Delivery Enablement, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Agile Coach</a></div>
+
+<h3>Every Australian role, grouped by what it tells you</h3>
+<div class="tablewrap"><table>
+<tr><th>Function (count)</th><th>Roles advertised (location)</th><th>Reports to (from the ads)</th><th>What it signals about direction</th></tr>
+<tr><td><strong>AI Factory delivery (10)</strong></td><td>Regional Delivery Manager (Sydney); Senior Agile Coach, Delivery Enablement (Sydney, new 24 Oct); Data Centre Design Manager, Lead (Sydney); Project Master Scheduler (Sydney); Portfolio Planning &amp; Performance Manager (Sydney); Data Centre Deployment Engineer (Sydney, Melbourne); Infrastructure, Network and Platform Deployment Engineers (remote)</td><td>Head of Delivery, Regional Delivery Manager, VP Infrastructure, Head of PMO</td><td><span class="badge infer">Strong Inference</span> Turning the ~US$8.8bn of TCV and 212 MW into live, accepted capacity. Each ad runs "to customer acceptance", which is when take-or-pay revenue starts. The Agile Coach (sprint cadence, Jira and Confluence, a Scrum of Scrums across teams) shows delivery teams now need a shared way of working.</td></tr>
+<tr><td><strong>Operations, the "run" side (9)</strong></td><td>RMA &amp; Vendor Management Lead (Sydney, new 24 Oct); Incident &amp; Problem Manager, AI Operations; Change Manager; Data Analyst &amp; Reporting Engineer, AI Operations; Senior Network Administrator (L3); Operational Tools Administrator (Jira); Data Centre Technician (all Sydney); Data Centre Technician (Melbourne, Adelaide)</td><td>NOC Manager, Service Operations Manager</td><td><span class="badge infer">Strong Inference</span> Moving from build to run: a Sydney NOC, a Change Advisory Board, SLA and incident reporting. The RMA Lead owns hardware returns, warranties, spares and vendor performance reporting, so failed hardware comes back into service quickly. Five-year contracts need provable service levels.</td></tr>
+<tr><td><strong>Infrastructure (5)</strong></td><td>Observability Engineer (Sydney); System Administrator (Sydney); Infrastructure Architect and Infrastructure Engineer (Sydney preferred); Storage Architect (remote)</td><td>VP Infrastructure, Head of Operations, Infrastructure Engineering Team Lead</td><td><span class="badge infer">Strong Inference</span> Designing for 64,000+ GPUs and "exabyte-class" storage; observability across compute, network and facilities.</td></tr>
+<tr><td><strong>Data and AI (6)</strong></td><td>Head of Data and AI; Data &amp; AI Product Lead; Data &amp; AI Product Analyst; Senior Data &amp; AI Engineer (new 24 Oct); Data &amp; AI Engineer; Data &amp; AI Platform Engineer (all Sydney, hybrid)</td><td>COO (Head); Data &amp; AI Engineering Lead and Product Lead (team)</td><td><span class="badge fact">Observed Fact</span> A new Sydney team: "one data foundation", "AI agents behind every role", AWS lakehouse. See the team blueprint below.</td></tr>
+<tr><td><strong>Legal and corporate (3)</strong></td><td>Senior Legal Counsel (data centre, energy and project finance contracts); Deputy General Counsel (Corporate &amp; Governance: US listed-company compliance, financing, M&amp;A); Executive Assistant to the CLO and CFO (all Sydney)</td><td>Chief Legal Officer</td><td><span class="badge infer">Strong Inference</span> Listed-company governance run from Sydney, plus a pipeline of financing, contracts and possible M&amp;A.</td></tr>
+<tr><td><strong>Platform and R&amp;D (2)</strong></td><td>Platform Engineer (GPUaaS); Senior R&amp;D Engineer (remote, Australia)</td><td>Head of Platform, R&amp;D Engineering Team Lead</td><td><span class="badge infer">Strong Inference</span> Kubernetes, Slurm and self-service: moving up from renting GPUs towards a managed AI platform (training, inference, agentic AI).</td></tr>
+<tr><td><strong>Security (2)</strong></td><td>Security Architect; Security Engineer (remote, Australia)</td><td>CISO</td><td><span class="badge infer">Strong Inference</span> "Sovereign" and multi-tenant claims need controls customers and auditors can test.</td></tr>
+<tr><td><strong>Marketing (1)</strong></td><td>Product Marketing Manager (Sydney)</td><td>Interim CMO (moving to a VP Marketing)</td><td><span class="badge hyp">Working Hypothesis</span> Light commercial hiring: the contract book is large, so the focus is delivery, not new sales.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481666035" title="Data & AI Product Lead, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657465" title="Data & AI Product Analyst, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Analyst</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657458" title="Data & AI Platform Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Platform Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-data-ai-engineer-sharon-ai-inc-sydney-new-south-wales--t7xk-899615141" title="Senior Data & AI Engineer, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/rma-vendor-management-lead-sharon-ai-inc-sydney-new-south-wales--t7xk-899365720" title="RMA & Vendor Management Lead, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: RMA & Vendor Management Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-agile-coach-delivery-enablement-sharon-ai-inc-sydney-new-south-wales--t7xk-899533241" title="Senior Agile Coach, Delivery Enablement, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Agile Coach</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a></div>
+
+<h3>How the hiring has shifted since May</h3>
+<div class="tablewrap"><table>
+<tr><th></th><th>Mar 2026 (8 roles)</th><th>May 2026 (7 roles)</th><th>Oct 2026 (38 roles)</th></tr>
+<tr><td>Roles</td><td>Executive Assistant, Product Manager, VP Infrastructure, Partner Development Manager, Customer Success Manager, Technical Project Manager, Systems Administrator, Security Analyst</td><td>Financial Analyst, Technical Accountant, Full Stack Software Engineer, People &amp; Talent Advisor (Sydney), Network Administrator, Product Manager, Systems Administrator</td><td>See the table above</td></tr>
+<tr><td>Shape</td><td>Generalists and first senior hires</td><td>Finance and people basics for a newly listed company</td><td>Specialist delivery, operations, data and AI, and governance teams with named managers</td></tr>
+<tr><td>Where</td><td>Australia</td><td>Australia (mostly unspecified; Sydney for People &amp; Talent)</td><td>Sydney hub (27), remote Australia (8), Melbourne (2), Adelaide (1)</td></tr>
+</table></div>
+<p class="small">All March and May roles were in Australia. The March snapshot (1 Mar 2026) is just outside the six-month window and is shown as a baseline. Snapshots between May and October were not archived, so some roles that opened and closed in that period may be missing. The earliest dated live Australian ad is 8 Oct (Adelaide technician, LinkedIn); you applied for the Head of Data and AI on 22 Sep, so that ad was live by then.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="http://web.archive.org/web/20260301223527/https://sharonai.com/careers/" title="Sharon AI careers page, Wayback Machine snapshot, 1 Mar 2026">Wayback: careers 1 Mar 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="http://web.archive.org/web/20260517170055/https://sharonai.com/careers/" title="Sharon AI careers page, Wayback Machine snapshot, 17 May 2026">Wayback: careers 17 May 2026</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a></div>
+
+<h3>Five things the recruitment drive tells you</h3>
+<ol>
+<li><strong>The company is switching from selling to delivering.</strong> <span class="badge infer">Strong Inference</span> 19 of 38 Australian roles are delivery or operations. That matches management's line that revenue will "ramp materially from the third quarter of 2026 through 2027". The Data &amp; AI ads say it outright: "as the business moves from build to run".</li>
+<li><strong>Australian headcount could more than double in months.</strong> <span class="badge infer">Strong Inference</span> 38 open roles in Australia against 30 full-time staff in March. Onboarding, access, tools and reporting all have to scale at the same time, which is exactly the work agents are meant to absorb.</li>
+<li><strong>Sydney is where the business is run.</strong> <span class="badge fact">Observed Fact</span> Delivery management, the PMO, the NOC and service operations, Data &amp; AI, and Legal are all advertised in Sydney. Melbourne and Adelaide roles are hands-on data centre work. <span class="badge infer">Strong Inference</span> The Head of Data and AI would sit next to the teams that produce most of the operational data.</li>
+<li><strong>Data is already being built in pockets.</strong> <span class="badge infer">Strong Inference</span> The Portfolio Planning &amp; Performance Manager must "bring together resource capacity, deployment costs, revenue forecasts". The AI Operations analyst builds SLA reporting in Power BI. The Observability Engineer owns telemetry. The Jira administrator and the Agile Coach own workflow data. The RMA Lead reports on vendor and spares performance. Without a single foundation these become separate versions of the truth. This supports H1 and is the business problem in practice.</li>
+<li><strong>Process maturity is being bought in.</strong> <span class="badge infer">Strong Inference</span> A Change Advisory Board, incident and problem management, a master scheduler, a PMO, a CISO and two security roles: the controls a listed company with five-year SLAs and lenders needs (supports H2). <span class="badge hyp">Working Hypothesis</span> The Adelaide technician points to a site not yet announced; ask rather than assert.</li>
+</ol>
+<div class="refs"><strong>References:</strong> Inference from the role tables above. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a></div>
+
+<h3>The Data &amp; AI team blueprint (Sydney)</h3>
+<div class="callout gold">
+<span class="badge fact">Observed Fact</span> Four Data &amp; AI roles in Sydney were posted on LinkedIn on 23 Oct 2026, with 25 to 61 applicants each within a day, and a Senior Data &amp; AI Engineer followed on 24 Oct. They share one description of the team:
+<ul>
+<li><strong>Mission:</strong> "a small, hands-on team that makes Sharon AI faster and right the first time".</li>
+<li><strong>What it builds:</strong> "One data foundation that our teams and delivery partners feed into"; "AI agents behind every role"; automation "as the business moves from build to run"; "governed end-to-end processes" run "by agents and people together".</li>
+<li><strong>Principle:</strong> "better, faster, cheaper, in that order". "Every day saved converts directly into revenue."</li>
+<li><strong>Stack:</strong> an AWS foundation with infrastructure as code, CI/CD for pipelines and agents, a lakehouse fed by operational and partner data, agent evaluations, and identity, secrets and audit logging "aligned with listed-company expectations".</li>
+<li><strong>Structure named in the ads:</strong> a Data &amp; AI Engineering Lead and a Data &amp; AI Product Lead, with a Senior Engineer (who mentors the engineers and builds "evaluation and observability into everything you ship so you can trace and audit every agent's actions"), an Engineer, a Platform Engineer and a Product Analyst.</li>
+</ul>
+<span class="badge hyp">Working Hypothesis</span> Someone has already designed this team. The Head of Data and AI ad is still live on the careers page (25 Oct), so either the Head is being hired to lead a team that is being recruited in parallel, or a leader (possibly acting) is already in place. Your Data &amp; AI Product Lead application was viewed on 24 Oct.
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481666035" title="Data & AI Product Lead, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Lead</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657465" title="Data & AI Product Analyst, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Analyst</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657458" title="Data & AI Platform Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Platform Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-data-ai-engineer-sharon-ai-inc-sydney-new-south-wales--t7xk-899615141" title="Senior Data & AI Engineer, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a> <span class="sep">|</span> LinkedIn and Sharon AI application emails (22 Sep to 24 Oct 2026)</div>
+
+<h3>Working hypotheses, tested against the hiring</h3>
+<div class="tablewrap"><table>
+<tr><th>Working hypothesis</th><th>Support (now including recruitment)</th><th>Limiting evidence</th><th>What would validate it in interview</th></tr>
+<tr><td><span class="badge hyp">H1</span> The contract book has outrun the company's systems: revenue, capacity and contract data still live in separate tools and people's heads (medium-high)</td><td>TCV about US$8.8bn vs US$1.57m CY25 revenue; 30 full-time staff; ad says "from the ground up"; data roles spread across PMO, Operations and Infrastructure</td><td>Finance systems may already be mature for audit</td><td>"Where does a contract's status live today, from signature to first invoice?"</td></tr>
+<tr><td><span class="badge hyp">H2</span> The new COO and CFO want one source of truth for operations and finance reporting before the first EY audit (medium)</td><td>CFO 24 Aug, COO 7 Sep, EY 23 Sep; 2025 material weakness; Change, Incident and PMO roles</td><td>The Head of Data and AI ad was live before the COO started</td><td>"Which numbers do the COO and CFO reconcile by hand each month?"</td></tr>
+<tr><td><span class="badge infer">H3</span> Sharon AI wants to run itself as an agent-first company, using Claude to do analytical and operational work instead of hiring a large back office (Strong Inference, high)</td><td>Head ad: "highly leveraged", Claude named; team ads: "AI agents behind every role"</td><td>38 open roles in Australia shows people are still the main lever for now</td><td>"Which back-office work should agents own in year one?"</td></tr>
+<tr><td><span class="badge hyp">H4</span> The October share-price fall raises pressure to show investors that contracted revenue is converting on time, and data is how that gets proven (medium-low)</td><td>Shares 75% below the high; revenue ramp guided from Q3 2026; delivery-heavy hiring</td><td>Share moves are sector-wide; the role may be internal only</td><td>"What does the Board want to see each quarter about delivery?"</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a></div>
+
+<h3>How to use this in the interview</h3>
+<ul>
+<li><strong>Show you've read the hiring, not just the press:</strong> "You've got about 38 roles open in Australia against roughly 30 people in March, most of them in delivery and operations, and most in Sydney. That tells me the next year is about build to run."</li>
+<li><strong>Name the silos as the opportunity:</strong> portfolio planning, AI Operations reporting, observability and Jira each create their own data. Offer to make the Data &amp; AI foundation the place they all feed, as the team ads describe.</li>
+<li><strong>Ask about the team:</strong> "Is the Data &amp; AI Engineering Lead in place, and how do the Product Lead and the Head of Data and AI split the work?"</li>
+<li><strong>Onboarding as an early agent win:</strong> with headcount doubling, agents that answer "how do we do X here" from Confluence, Jira and runbooks pay back quickly.</li>
+<li><span class="badge limit">Caution</span> Don't present unannounced sites (such as Adelaide) as facts; ask instead.</li>
+</ul>
+<div class="refs"><strong>References:</strong> Inference from this section. <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a></div>
+</section>
+
+<!-- ============ STAGE 3 ============ -->
+<section id="stage3">
+<h2>Stage 3: Top 5 Experiences to Lead With</h2>
+<p>The COO and executives will probably want proof of three things: you can <strong>personally build with agents and Claude</strong>, you can <strong>make data trusted and auditable</strong>, and you can <strong>model a large operational fleet</strong> and turn it into commercial decisions. Each of these five covers a different part of that, and each answers part of the business problem.</p>
+
+<div class="story">
+  <div class="rank">1</div>
+  <h4>KPI Creator: a five-agent team built in Claude Code (personal build, 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The ad asks for "significant practical experience with LLMs, agents, tool use" and nice-to-have "experience with Anthropic Claude". It answers H3 (agent-first company) directly.</div>
+  <div class="star">
+    <b>S</b><span>Turning a business problem into a KPI dashboard takes many hand-offs: requirements, KPI logic, charts and the build.</span>
+    <b>T</b><span>Build a repeatable, human-in-the-loop agent team that carries a KPI from problem to dashboard.</span>
+    <b>A</b><span>Designed five agents in Claude Code, each with one job: an orchestrator and approval gate (Ovy), business requirements (Gary), KPI development (Kewpie), data visualisation (Visalli) and dashboard creation (Jennifer). Added stage-by-stage approval, test cases and token-use reporting.</span>
+    <b>R</b><span><strong>Runs end to end on test projects (ClearCompare, Kestrel Medical), with an agent simulation replaying each run. One of 23 AI builds (20 in Claude Code, about 40 hours of build time).</strong></span>
+  </div>
+  <div class="open">"The closest thing to what you're describing is a five-agent team I built in Claude Code, where each agent owns one stage and a human approves every handover."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell us about an agent system you've actually built." · <strong>Source:</strong> Portfolio site (KPI Creator, AI builds); Master Resume (Building with Claude API certification). <span class="badge limit">Be precise</span> This is a personal build, not a Cisco production system. Say so, then explain the controls you built in.</div>
+</div>
+
+<div class="story">
+  <div class="rank">2</div>
+  <h4>AI assistant on trusted data for support-case spikes (Cisco, Data Solutions &amp; Insights)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The ad asks you to "make trusted enterprise data safely accessible to people, applications and AI agents" and to automate analytical work.</div>
+  <div class="star">
+    <b>S</b><span>After layoffs, the global IT support function had fewer agents and handled case spikes reactively; executives heard about issues before service owners did.</span>
+    <b>T</b><span>Alert the right teams early and give them instant, reliable insight without switching apps.</span>
+    <b>A</b><span>Built two-tier tripwire alerts (1.8 and 2 standard deviations over six months of case trends). Led a GPT-based assistant in Webex chat, with its knowledge base on custom SQL views, prompt patterns (cognitive verifier, question refinement, few-shot) and a QA process for accuracy.</span>
+    <b>R</b><span><strong>Case-spike analysis went from 4 days to near-instant insight</strong>, with fewer executive escalations and surprises.</span>
+  </div>
+  <div class="open">"I've learned that an AI assistant is only as good as the data under it, so I built this one on verified SQL views, not raw tickets."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How do you make enterprise data safe and useful for AI?" · <strong>Source:</strong> Master Resume (Data Solutions &amp; Insights Leader); STAR "AI Assistant"; portfolio case study 2. <span class="badge limit">Figure conflict</span> The resume says 4 days; STAR and the portfolio say half a day. Confirm which before the interview.</div>
+</div>
+
+<div class="story">
+  <div class="rank">3</div>
+  <h4>Resilient data foundations: lineage, release cycles and secure sharing (Cisco, Snowflake and DBT)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The ad asks for "security, ownership, quality, lineage, provenance, retention and lifecycle controls" and "pragmatic controls appropriate to a listed-company environment". It answers H2 (audit-ready source of truth).</div>
+  <div class="star">
+    <b>S</b><span>After moving to Snowflake, changes broke dashboards, errors were hard to trace, and external access risked crashing the warehouse for 200+ stakeholders.</span>
+    <b>T</b><span>Shape a scalable, maintainable architecture with sensible tool choices.</span>
+    <b>A</b><span>Added a DBT transformation and governance layer with lineage and DBT Docs (replacing Alation), GitHub release cycles with peer review and YAML tests, regular data purges, and secure AWS S3 data sharing instead of direct warehouse access.</span>
+    <b>R</b><span><strong>Warehouse volume down 42% (355 to 205 tables and views; 517.2M stagnant rows removed). Disruptions went from 1 to 2 a quarter to zero, protecting reporting for 200+ stakeholders.</strong></span>
+  </div>
+  <div class="open">"When I hear 'auditable without bureaucracy', I think of how we added lineage and release cycles to our Snowflake stack without slowing the team down."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How would you set up data controls for a listed company?" · <strong>Source:</strong> Master Resume (Data Solutions &amp; Insights Leader); STAR "Building resilient data foundations"; portfolio case study 7.</div>
+</div>
+
+<div class="story">
+  <div class="rank">4</div>
+  <h4>One trusted set of KPIs across the business (Cisco, Data Solutions &amp; Insights)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The ad asks for "coherent models" of the business; the business problem is "one trusted model". It answers H1 (separate tools, separate truths).</div>
+  <div class="star">
+    <b>S</b><span>Teams saw different numbers for the same KPI (1 to 5% gaps), causing 3 to 5 escalations a month.</span>
+    <b>T</b><span>Get to zero inconsistency and restore confidence in the numbers.</span>
+    <b>A</b><span>Moved logic out of Power BI into shared SQL single-source views, added plain-English catalogues, built master dashboards per business area, aligned refresh timings and set tripwire alerts for variances over 2%.</span>
+    <b>R</b><span><strong>27 KPIs went from 62% to 100% consistency. Dashboards cut from 70+ to 46. Escalations from 3 to 5 a month to zero. Workspace health from 60% to 93%.</strong></span>
+  </div>
+  <div class="open">"The first thing I usually fix is whether people trust the number. At Cisco, the same KPI showed different values depending on which dashboard you opened."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How would you create one source of truth across Sales, Finance and Operations?" · <strong>Source:</strong> Master Resume (Data Solutions &amp; Insights Leader); STAR "Trusted metrics and KPI Consistency"; portfolio case study 1.</div>
+</div>
+
+<div class="story">
+  <div class="rank">5</div>
+  <h4>Fleet telemetry and anomaly detection for laptop refresh (Cisco, about 150,000 devices)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The ad asks for "digital-twin and related modelling approaches" and "judgement about when to build, buy, integrate, automate". Modelling a large device fleet from telemetry is the closest match to modelling a GPU fleet.</div>
+  <div class="star">
+    <b>S</b><span>Laptops were refreshed by age, not need, across a fleet of about 150,000 laptop and mobile devices, so budget and supply didn't match user needs.</span>
+    <b>T</b><span>Refresh based on evidence from device telemetry.</span>
+    <b>A</b><span>Compared supervised ML, unsupervised ML, GenAI and statistical methods on build effort, upkeep and reliability. Chose unsupervised anomaly detection. Defined the telemetry strategy (CPU, RAM, memory pressure, disk via OpenTelemetry) and built persona clusters from app usage.</span>
+    <b>R</b><span>Prioritised early refresh for underperforming devices, cut over-provisioning risk, improved stock forecasting and supported <strong>millions in <em>potential</em> global asset savings</strong>.</span>
+  </div>
+  <div class="open">"Your GPU fleet is a bigger version of a problem I've worked on: using telemetry to decide what each asset should do next."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How would you approach a digital twin of our infrastructure?" · <strong>Source:</strong> Master Resume (Lead Analyst: about 150,000 devices; Data Solutions &amp; Insights Leader: laptop methodology); STAR "Performance-Based Refresh"; portfolio case study 3. Always say "potential": these savings were not realised.</div>
+</div>
+
+<h3>Coverage check</h3>
+<div class="tablewrap"><table>
+<tr><th>Ad requirement</th><th>Covered by</th><th>Strength</th></tr>
+<tr><td>LLMs, agents, tool use, retrieval on structured data</td><td>1, 2</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Anthropic Claude (nice to have)</td><td>1; Building with Claude API certification</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Data modelling, integration, lineage, governance, quality</td><td>3, 4</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Coherent enterprise models</td><td>4 (KPIs), 5 (fleet)</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Digital twins and modelling</td><td>5</td><td><span class="badge hyp">Medium: adjacent</span></td></tr>
+<tr><td>Build, buy or avoid judgement</td><td>5; backup: ThoughtSpot capacity case (2.9x better value)</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Commercial judgement</td><td>ThoughtSpot (2.9x value), M5 MacBook Air standard (87%+ of users), US$11M+ business cases</td><td><span class="badge fact">Strong</span></td></tr>
+<tr><td>Security: identity, authorisation, agent access</td><td>3 (secure S3 sharing); privacy work with the European Works Council</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>Auditable agent actions</td><td>1 (approval gates), 2 (QA process)</td><td><span class="badge hyp">Medium</span></td></tr>
+<tr><td>Strong software engineering; production-quality code</td><td>1 (Claude Code builds), SQL, Python, DBT</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>Cloud architectures, APIs, event-driven systems</td><td>3 (AWS S3, Snowflake)</td><td><span class="badge limit">Thin</span></td></tr>
+<tr><td>Hands-on while credible with executives and the Board</td><td>2, 4; M5 decision; Cisco Live IT Leadership Program host</td><td><span class="badge hyp">Medium: Board exposure thin</span></td></tr>
+</table></div>
+
+<h3>Gaps to prepare for</h3>
+<div class="two">
+<div class="qbox"><strong>1. Software engineering depth</strong>
+The ad wants "strong software engineering skills" and "event-driven systems". Your strength is data architecture and analytics, not a career as a software engineer.<br><em>Framing:</em> "I'm not a career software engineer. I build with SQL, Python and DBT, use GitHub release cycles, and in 2026 I've shipped 20 builds in Claude Code, including a five-agent system. For event-driven plumbing I'd use the platforms you already run, such as Rafay, and partners, and keep my own time for the data model and agents." Bring one build you can demo.</div>
+<div class="qbox"><strong>2. Listed-company controls and Board exposure</strong>
+You haven't run data for a listed company's audit or presented to a Board.<br><em>Framing:</em> "At Cisco I worked with privacy and European Works Council stakeholders on responsible employee data, and I built lineage and release controls that removed warehouse disruptions. For Sharon AI I'd start with an access, logging and approval pattern for agents that EY can test." Prepare a one-page controls sketch for agent access to contract and fleet data.</div>
+</div>
+
+<div class="notice"><strong>Not produced (by choice):</strong> the optional Stage 2 extras (8. Hypothesis Review, 9. Data and AI Opportunities, 10. Probing Questions, 11. Mandatory Final Judgement). They can be added on request.</div>
+
+<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (14 Oct 2026), STAR Skills.docx (9 Sep 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>. LinkedIn: headline "Data and AI Transformation Leader | Head of Data", from LinkedIn emails; the profile page itself blocks automated access.</div>
+<div class="refs"><strong>References:</strong> Master Resume (14 Oct 2026) <span class="sep">|</span> STAR Skills (9 Sep 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics and AI portfolio, GitHub Pages, Oct 2026">Portfolio: case studies</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a></div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section id="sources">
+<h2>Source Register</h2>
+<div class="tablewrap"><table>
+<tr><th>Source</th><th>Used for</th></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014068/form10-k.htm" title="SharonAI Holdings Form 10-K FY2025, SEC EDGAR, 31 Mar 2026">SEC: 10-K FY2025</a></td><td>Business, history, CY24 and CY25 results, total assets, employees, properties, customer concentration, material weakness</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036377/form10-q.htm" title="Form 10-Q, quarter ended 30 Jun 2026, SEC EDGAR, 6 Aug 2026">SEC: 10-Q Q2 2026</a></td><td>Q2 2026 results, balance sheet, convertibles, subsequent contracts, NEXTDC 72 MW order</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226036254/ex99-1.htm" title="Sharon AI Reports Second Quarter 2026 Results (8-K Ex 99.1), SEC EDGAR, 6 Aug 2026">SEC: Q2 2026 results</a></td><td>TCV about US$8.8bn, 212 MW, 64,000+ GPUs, revenue outlook</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039475/forms-1a.htm" title="Form S-1/A Amendment No. 2, SEC EDGAR, 20 Aug 2026">SEC: S-1/A Aug 2026</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626001448/sharonaiholdings_424b4.htm" title="Prospectus 424B4 for the Nasdaq offering, SEC EDGAR, 19 Feb 2026">SEC: 424B4 Nasdaq offer</a></td><td>Corporate history, financing, Nasdaq offer, prior office, officers</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226032957/formdef14a.htm" title="Definitive proxy statement DEF 14A, SEC EDGAR, 13 Jul 2026">SEC: DEF 14A 2026</a></td><td>Officers, ages, voting control, 2025 executive pay</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226014475/ex99-1.htm" title="Sharon AI Announces 5 year $1.25BN AI Cloud Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 1 Apr 2026">SEC: US$1.25bn agreement</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226022897/ex99-1.htm" title="Sharon AI Announces Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 14 May 2026">SEC: US$950m agreement</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226028370/ex99-1.htm" title="Sharon AI Announces Six Year Strategic Compute Collaboration with NVIDIA (8-K Ex 99.1), SEC EDGAR, 12 Jun 2026">SEC: NVIDIA collaboration</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226033457/ex99-1.htm" title="Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Infrastructure Agreement (8-K Ex 99.1), SEC EDGAR, 16 Jul 2026">SEC: US$1.32bn agreement</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226035925/ex99-1.htm" title="Sharon AI Announces US$373m Five-Year AI Cloud Service Agreement (8-K Ex 99.1), SEC EDGAR, 4 Aug 2026">SEC: US$373m agreement</a></td><td>Contract dates and values</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226029005/ex99-1.htm" title="Sharon AI Announces Oversubscribed US$1.6 Billion Strategic Financing (8-K Ex 99.1), SEC EDGAR, 17 Jun 2026">SEC: US$1.6bn financing</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226045368/form8-k.htm" title="8-K: US$356m syndicated facility agreement, SEC EDGAR, 1 Oct 2026">SEC: 8-K GPU facility</a> · <a target="_blank" rel="noopener" href="https://www.datacenterdynamics.com/en/news/sharon-ai-and-lambda-secure-gpu-backed-debt-funding/" title="Sharon AI and Lambda secure GPU-backed debt funding, DatacenterDynamics, Oct 2026">DCD: GPU-backed debt</a></td><td>Financing and GPU-backed debt</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000182912626000505/sharonai_8k.htm" title="8-K: CEO resignation and appointment, SEC EDGAR, 23 Jan 2026">SEC: 8-K CEO change</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226025096/form8-k.htm" title="8-K: Andrew Penn appointed Chair, SEC EDGAR, 26 May 2026">SEC: 8-K Penn as Chair</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226034569/form8-k.htm" title="8-K: Appointment of Chief Financial Officer, SEC EDGAR, 24 Jul 2026">SEC: 8-K CFO appointed</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226040426/form8-k.htm" title="8-K: Appointment of Chief Operating Officer, SEC EDGAR, 27 Aug 2026">SEC: 8-K COO appointed</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226042434/form8-k.htm" title="8-K: Deed of Release, Andrew Leece role change, SEC EDGAR, 11 Sep 2026">SEC: 8-K Leece role change</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226044154/form8-k.htm" title="8-K: Change in certifying accountant, SEC EDGAR, 24 Sep 2026">SEC: 8-K auditor change</a></td><td>Leadership changes, executive pay, auditor change</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226039364/ex99-1.htm" title="Sharon AI Successfully Delivers AI Cloud Deployment for Global Technology Customer (8-K Ex 99.1), SEC EDGAR, 20 Aug 2026">SEC: first delivery</a> · <a target="_blank" rel="noopener" href="https://www.sec.gov/Archives/edgar/data/2068385/000149315226041450/ex99-1.htm" title="Sharon AI Selects Rafay Systems for AI Infrastructure Orchestration (8-K Ex 99.1), SEC EDGAR, 4 Sep 2026">SEC: Rafay platform</a></td><td>First delivery; orchestration platform</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Head of Data and AI, Sharon AI Careers, captured 24 Oct 2026">Sharon AI: Head of Data and AI ad</a> · <a target="_blank" rel="noopener" href="https://sharonai.com/careers/" title="Open Positions (35 roles), Sharon AI Careers, captured 25 Oct 2026">Sharon AI: careers page, 35 roles</a></td><td>Head of Data and AI requirements; 35 open roles (31 in Australia), teams, locations and reporting lines (25 Oct 2026)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481666035" title="Data & AI Product Lead, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Lead</a> · <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657465" title="Data & AI Product Analyst, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Product Analyst</a> · <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481650545" title="Data & AI Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Engineer</a> · <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4481657458" title="Data & AI Platform Engineer, Sharon AI, Inc, LinkedIn, posted 23 Oct 2026">LinkedIn: Data & AI Platform Engineer</a></td><td>Data &amp; AI team roles and team blueprint (LinkedIn, 23 Oct 2026)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-data-ai-engineer-sharon-ai-inc-sydney-new-south-wales--t7xk-899615141" title="Senior Data & AI Engineer, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Data & AI Engineer</a> · <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/rma-vendor-management-lead-sharon-ai-inc-sydney-new-south-wales--t7xk-899365720" title="RMA & Vendor Management Lead, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: RMA & Vendor Management Lead</a> · <a target="_blank" rel="noopener" href="https://bebee.com/au/jobs/senior-agile-coach-delivery-enablement-sharon-ai-inc-sydney-new-south-wales--t7xk-899533241" title="Senior Agile Coach, Delivery Enablement, Sharon AI, Inc, Sydney, beBee, posted 24 Oct 2026">beBee: Senior Agile Coach</a></td><td>Three Sydney roles posted 24 Oct 2026 (beBee)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="http://web.archive.org/web/20260301223527/https://sharonai.com/careers/" title="Sharon AI careers page, Wayback Machine snapshot, 1 Mar 2026">Wayback: careers 1 Mar 2026</a> · <a target="_blank" rel="noopener" href="http://web.archive.org/web/20260517170055/https://sharonai.com/careers/" title="Sharon AI careers page, Wayback Machine snapshot, 17 May 2026">Wayback: careers 17 May 2026</a></td><td>Earlier open-role lists (1 Mar and 17 May 2026)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://finance.yahoo.com/quote/SHAZ/history/" title="SHAZ historical daily prices, Yahoo Finance, 18 Feb to 23 Oct 2026">Yahoo Finance: SHAZ history</a></td><td>Daily share prices and calculated moves</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://tickeron.com/blogs/why-is-sharonai-holdings-shaz-stock-down-10-81-today-16637/" title="Why Is SharonAI Holdings (SHAZ) Stock Down -10.81% Today?, Tickeron, Sep 2026">Tickeron: Meta compute report</a></td><td>Sector context for the September to October fall</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-data-science/sydney" title="Head of Data Science salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Head of Data Science</a> · <a target="_blank" rel="noopener" href="https://www.morganmckinley.com/au/salary-guide/data/head-of-analytics/sydney" title="Head of Analytics salary, Sydney, Morgan McKinley 2026 Salary Guide">Morgan McKinley: Head of Analytics</a></td><td>Pay benchmarks (Head of Data and AI)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://www.levels.fyi/t/product-manager/locations/sydney-aus" title="Product Manager salary in Sydney, Australia, Levels.fyi, updated 25 Oct 2026">Levels.fyi: Product Manager Sydney</a> · <a target="_blank" rel="noopener" href="https://www.seek.com.au/job/94986417" title="Digital Product Manager, Latitude IT, SEEK, 1 Oct 2026">SEEK: Digital Product Manager</a> · <a target="_blank" rel="noopener" href="https://www.seek.com.au/job/95117045" title="Founding Product Data Scientist, The Onset, SEEK, 7 Oct 2026">SEEK: Founding Product Data Scientist</a> · <a target="_blank" rel="noopener" href="https://www.seek.com.au/job/95155477" title="Group Product Manager, Digital Platforms, Bluefin Resources, SEEK, 9 Oct 2026">SEEK: Group Product Manager</a></td><td>Pay benchmarks (Data &amp; AI Product Lead)</td></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics and AI portfolio, GitHub Pages, Oct 2026">Portfolio: case studies</a> · Master Resume (14 Oct 2026) · STAR Skills (9 Sep 2026)</td><td>Stage 3 stories and coverage</td></tr>
+</table></div>
+</section>
+
+<footer class="footer">
+<p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation in interview.</p>
+<p>Company figures in USD; pay in AUD. TCV is a company operating metric, not GAAP revenue. Share price data is for context only and is not investment advice. Prepared 24 October 2026 for Adam Aziz's interview preparation. Version 4 (26 October 2026): three new Sydney roles added to Recruitment Activity (Senior Data &amp; AI Engineer, RMA &amp; Vendor Management Lead, Senior Agile Coach), taking open roles in Australia to 38. Version 3 (26 October 2026): pay range added for the Data &amp; AI Product Lead role. Version 2 (25 October 2026): the Role section is replaced by Recruitment Activity, covering the 35 open roles in Australia (24 in Sydney), hiring since May 2026 and the Data &amp; AI team blueprint. Version 1 (24 October 2026): first release.</p>
+</footer>
+
+</main>
+<script>
+(function(){
+  var data=[["18 Feb",31.7],["19 Feb",31.0],["20 Feb",30.77],["23 Feb",30.65],["24 Feb",30.19],["25 Feb",29.12],["26 Feb",27.52],["27 Feb",24.82],["2 Mar",20.5],["3 Mar",17.52],["4 Mar",19.27],["5 Mar",19.01],["6 Mar",19.5],["9 Mar",18.59],["10 Mar",20.38],["11 Mar",19.77],["12 Mar",19.76],["13 Mar",22.85],["16 Mar",24.87],["17 Mar",24.23],["18 Mar",26.01],["19 Mar",25.58],["20 Mar",23.85],["23 Mar",23.96],["24 Mar",23.98],["25 Mar",24.37],["26 Mar",23.61],["27 Mar",22.98],["30 Mar",21.73],["31 Mar",22.73],["1 Apr",27.62],["2 Apr",26.94],["6 Apr",26.54],["7 Apr",26.38],["8 Apr",26.0],["9 Apr",30.66],["10 Apr",30.79],["13 Apr",33.02],["14 Apr",34.52],["15 Apr",36.59],["16 Apr",34.26],["17 Apr",37.02],["20 Apr",36.39],["21 Apr",38.98],["22 Apr",40.8],["23 Apr",42.65],["24 Apr",42.19],["27 Apr",42.27],["28 Apr",43.98],["29 Apr",45.68],["30 Apr",46.0],["1 May",42.21],["4 May",44.63],["5 May",44.35],["6 May",54.0],["7 May",53.7],["8 May",52.75],["11 May",53.81],["12 May",52.1],["13 May",55.03],["14 May",55.63],["15 May",53.93],["18 May",57.5],["19 May",52.48],["20 May",50.25],["21 May",57.7],["22 May",68.06],["26 May",65.0],["27 May",65.69],["28 May",74.82],["29 May",75.83],["1 Jun",79.55],["2 Jun",84.38],["3 Jun",80.09],["4 Jun",76.02],["5 Jun",67.41],["8 Jun",59.46],["9 Jun",63.42],["10 Jun",62.89],["11 Jun",71.51],["12 Jun",62.32],["15 Jun",70.21],["16 Jun",76.68],["17 Jun",85.05],["18 Jun",92.7],["22 Jun",91.91],["23 Jun",84.36],["24 Jun",83.69],["25 Jun",80.77],["26 Jun",82.05],["29 Jun",81.0],["30 Jun",84.66],["1 Jul",79.11],["2 Jul",67.91],["6 Jul",79.96],["7 Jul",71.76],["8 Jul",76.17],["9 Jul",80.0],["10 Jul",74.62],["13 Jul",68.26],["14 Jul",71.26],["15 Jul",70.63],["16 Jul",65.6],["17 Jul",63.64],["20 Jul",62.34],["21 Jul",71.0],["22 Jul",70.49],["23 Jul",70.18],["24 Jul",64.89],["27 Jul",58.79],["28 Jul",44.98],["29 Jul",40.09],["30 Jul",48.77],["31 Jul",48.25],["3 Aug",52.38],["4 Aug",55.52],["5 Aug",57.02],["6 Aug",52.15],["7 Aug",49.79],["10 Aug",52.7],["11 Aug",56.58],["12 Aug",68.46],["13 Aug",72.02],["14 Aug",76.47],["17 Aug",76.9],["18 Aug",68.78],["19 Aug",65.45],["20 Aug",60.85],["21 Aug",59.07],["24 Aug",58.38],["25 Aug",60.97],["26 Aug",59.59],["27 Aug",59.21],["28 Aug",52.37],["31 Aug",54.86],["1 Sep",52.64],["2 Sep",54.29],["3 Sep",54.97],["4 Sep",55.94],["8 Sep",57.63],["9 Sep",56.75],["10 Sep",56.57],["11 Sep",59.41],["14 Sep",51.91],["15 Sep",49.99],["16 Sep",52.21],["17 Sep",56.73],["18 Sep",57.56],["21 Sep",59.93],["22 Sep",63.21],["23 Sep",57.73],["24 Sep",56.4],["25 Sep",54.68],["28 Sep",52.91],["29 Sep",54.17],["30 Sep",54.6],["1 Oct",49.85],["2 Oct",50.81],["5 Oct",47.7],["6 Oct",48.12],["7 Oct",45.12],["8 Oct",39.05],["9 Oct",37.93],["12 Oct",35.69],["13 Oct",34.71],["14 Oct",31.0],["15 Oct",31.03],["16 Oct",26.59],["19 Oct",27.04],["20 Oct",26.97],["21 Oct",28.0],["22 Oct",23.59],["23 Oct",22.97]];
+  var events={"18 Feb":{"s":"Nasdaq debut","d":"18 Feb 2026: first Nasdaq close US$31.70 (US$125m offer at US$30)","a":"start","up":1},"1 Apr":{"s":"US$1.25bn deal","d":"1 Apr 2026: five-year US$1.25bn AI cloud agreement; shares +21.5% (CY25 results the day before)","a":"start","up":0},"17 Jun":{"s":"US$1.6bn raise","d":"17 Jun 2026: US$1.6bn financing announced; shares +10.9%, then +9.0% to the US$92.70 closing high on 18 Jun","a":"end","up":1},"16 Jul":{"s":"NZ deal, -7%","d":"16 Jul 2026: US$1.32bn global AI lab contract; shares closed -7.1%","a":"end","up":0},"6 Aug":{"s":"Q2 results","d":"6 Aug 2026: Q2 results, TCV ~US$8.8bn, revenue US$1.9m; shares -8.5%","a":"middle","up":0},"1 Oct":{"s":"GPU debt","d":"1 Oct 2026: US$356m GPU-backed facility at 9.95% announced; shares -8.7%","a":"middle","up":0}};
+  var svg=document.getElementById('shazChart'),tip=document.getElementById('shazTooltip');
+  var NS="http://www.w3.org/2000/svg",current=0;
+  function el(n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function draw(){
+    var n=current?current+1:data.length, d=data.slice(-n);
+    var W=svg.clientWidth||800,H=svg.clientHeight||300,pl=46,pr=16,pt=16,pb=30;
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);svg.innerHTML='';
+    var vals=d.map(function(x){return x[1]}),mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),pad=(mx-mn)*0.12||10;mn-=pad;mx+=pad;
+    function X(i){return pl+(W-pl-pr)*(d.length===1?0.5:i/(d.length-1));}
+    function Y(v){return pt+(H-pt-pb)*(1-(v-mn)/(mx-mn));}
+    for(var g=0;g<=4;g++){var v=mn+(mx-mn)*g/4,y=Y(v);svg.appendChild(el('line',{x1:pl,x2:W-pr,y1:y,y2:y,stroke:'#eceff1'}));var t=el('text',{x:pl-6,y:y+4,'text-anchor':'end','font-size':11,fill:'#626a73'});t.textContent='$'+Math.round(v);svg.appendChild(t);}
+    var step=Math.max(1,Math.ceil(d.length/8));
+    d.forEach(function(p,i){if((i%step===0&&d.length-1-i>=step*0.9)||i===d.length-1){var t=el('text',{x:X(i),y:H-9,'text-anchor':'middle','font-size':10.5,fill:'#626a73'});t.textContent=p[0];svg.appendChild(t);}});
+    var path=d.map(function(p,i){return(i?'L':'M')+X(i).toFixed(1)+' '+Y(p[1]).toFixed(1)}).join(' ');
+    svg.appendChild(el('path',{d:path+' L'+X(d.length-1)+' '+(H-pb)+' L'+X(0)+' '+(H-pb)+' Z',fill:'rgba(58,112,255,.12)'}));
+    svg.appendChild(el('path',{d:path,fill:'none',stroke:'#202428','stroke-width':2.2}));
+    d.forEach(function(p,i){var e=events[p[0]];if(e){svg.appendChild(el('circle',{cx:X(i),cy:Y(p[1]),r:5,fill:'#8b2f2f'}));var anc=i===d.length-1?'end':(i===0?'start':e.a),dx=anc==='start'?-4:(anc==='end'?4:0);var t=el('text',{x:X(i)+dx,y:e.up?Y(p[1])-10:Y(p[1])+19,'text-anchor':anc,'font-size':10.5,'font-weight':600,fill:'#8b2f2f',stroke:'#fff','stroke-width':3,'paint-order':'stroke'});t.textContent=e.s;svg.appendChild(t);}});
+    var dot=el('circle',{r:4.5,fill:'#3A70FF',stroke:'#202428','stroke-width':1.5,style:'display:none'});svg.appendChild(dot);
+    function move(ev){var r=svg.getBoundingClientRect(),cx=(ev.touches?ev.touches[0].clientX:ev.clientX)-r.left,sx=cx*W/r.width;
+      var i=Math.round((sx-pl)/((W-pl-pr)/(d.length-1||1)));i=Math.max(0,Math.min(d.length-1,i));
+      dot.setAttribute('cx',X(i));dot.setAttribute('cy',Y(d[i][1]));dot.style.display='';
+      tip.style.display='block';tip.style.left=(X(i)*r.width/W)+'px';tip.style.top=(Y(d[i][1])*r.height/H)+'px';
+      tip.innerHTML='<b>'+d[i][0]+'</b><br>US$'+d[i][1].toFixed(2)+(events[d[i][0]]?'<br>'+events[d[i][0]].d:'');}
+    svg.onmousemove=move;svg.ontouchstart=move;svg.ontouchmove=move;
+    svg.onmouseleave=function(){tip.style.display='none';dot.style.display='none';};
+    var a=d[0][1],b=d[d.length-1][1],c=(b/a-1)*100;
+    document.getElementById('shazStart').textContent='$'+a.toFixed(2)+' ('+d[0][0]+')';
+    document.getElementById('shazEnd').textContent='$'+b.toFixed(2)+' ('+d[d.length-1][0]+')';
+    document.getElementById('shazChange').textContent=(c>0?'+':'')+c.toFixed(1)+'%';
+  }
+  document.querySelectorAll('.stock-ranges button').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('.stock-ranges button').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');current=+btn.dataset.range;draw();});});
+  window.addEventListener('resize',draw);draw();
+})();
+</script>
+</body>
+</html>

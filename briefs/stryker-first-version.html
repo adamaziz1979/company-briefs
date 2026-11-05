@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stryker — Executive Interview Briefing | Senior Lead Data Analyst</title>
+<style>
+:root{
+  --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
+  --line:#dfe3e7; --soft:#f8f9fa; --gold:#f5b400; --gold2:#fff6d8;
+  --green:#236b45; --greenbg:#eaf5ee; --blue:#245b88; --bluebg:#edf4fa;
+  --orange:#8a5b00; --orangebg:#fff4dc; --red:#8b2f2f; --redbg:#faecec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;line-height:1.58}
+main{max-width:1180px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{background:#101214;color:#fff;padding:48px 56px 38px;border-top:7px solid var(--gold)}
+.hero .eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:#c7ccd2}
+.hero h1{font-size:38px;line-height:1.1;margin:8px 0 10px}
+.hero h1 span{color:var(--gold)}
+.hero .sub{max-width:890px;color:#d4d8dc;font-size:16px}
+.hero .meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:12px;color:#b8bec5}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);padding:10px 54px;border-bottom:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap}
+.nav a{font-size:12px;color:#353a40;text-decoration:none;font-weight:700}
+.nav a:hover{color:#000;text-decoration:underline}
+section{padding:34px 56px 6px}
+h2{font-size:27px;margin:0 0 16px;border-bottom:2px solid var(--line);padding-bottom:9px}
+h3{font-size:19px;margin:27px 0 9px}
+h4{font-size:15px;margin:18px 0 7px}
+p{margin:8px 0 12px}
+.small{font-size:12px;color:var(--muted)}
+.lead{font-size:17px;line-height:1.62}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.card{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:15px}
+.card .k{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700}
+.card .v{font-size:24px;font-weight:800;margin-top:3px}
+.card .n{font-size:11.5px;color:var(--muted);margin-top:3px}
+.callout{margin:17px 0;padding:15px 17px;border-left:5px solid #5d6670;background:#f5f7f8}
+.callout.gold{border-color:var(--gold);background:var(--gold2)}
+.callout.warn{border-color:#b47b00;background:#fff6e4}
+.badge{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;border-radius:999px;padding:3px 8px;margin-right:5px;vertical-align:1px}
+.fact{color:var(--green);background:var(--greenbg)}
+.infer{color:var(--blue);background:var(--bluebg)}
+.hyp{color:var(--orange);background:var(--orangebg)}
+.limit{color:var(--red);background:var(--redbg)}
+table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:13px}
+th{background:#eef1f3;text-align:left;font-size:12px;padding:9px;border:1px solid #d5dbe0}
+td{padding:9px;border:1px solid #dce1e5;vertical-align:top}
+td.num{text-align:right;white-space:nowrap}
+ul{margin-top:7px}
+li{margin:5px 0}
+.phase{display:grid;grid-template-columns:170px 1fr;gap:14px;border-top:1px solid var(--line);padding:14px 0}
+.phase:first-of-type{border-top:0}
+.phase .label{font-weight:800}
+.refs{margin:18px 0 8px;padding:11px 14px;border-left:4px solid #9aa2aa;background:#f7f8f9;font-size:11.5px;color:#535b64}
+.refs a{color:#174f85;text-decoration:none}
+.refs a:hover{text-decoration:underline}
+.metricbars{display:grid;gap:9px;margin:16px 0}
+.metricrow{display:grid;grid-template-columns:90px 1fr 75px;gap:10px;align-items:center;font-size:12px}
+.barbg{height:12px;background:#eceff1;border-radius:8px;overflow:hidden;position:relative}
+.bar{height:100%;background:#505963;border-radius:8px}
+.bar.neg{background:#8c4747}
+.tag{font-weight:800;text-align:right}
+.timeline td:first-child{white-space:nowrap;font-weight:700}
+.footer{margin-top:34px;padding:24px 56px 50px;border-top:1px solid var(--line);font-size:11.5px;color:#636b74}
+.notice{font-size:12px;border:1px solid #e2c66b;background:#fff9e7;border-radius:8px;padding:12px 14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.qbox{border:1px solid var(--line);border-radius:9px;padding:14px 16px;margin:10px 0;background:#fff}
+.qbox strong{display:block;margin-bottom:4px}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .hero,section{padding-left:24px;padding-right:24px}
+  .nav{padding-left:24px;padding-right:24px}
+  .phase{grid-template-columns:1fr}
+}
+@media (max-width:560px){.grid{grid-template-columns:1fr}.hero h1{font-size:31px}}
+@media print{
+  body{background:#fff}
+  main{box-shadow:none;max-width:none}
+  .nav{display:none}
+  .hero{break-after:page}
+  section{padding-top:24px}
+  a{color:inherit}
+  .card,.qbox,.callout,.refs{break-inside:avoid}
+  table{break-inside:auto}
+  tr{break-inside:avoid}
+}
+
+.stock-interactive{margin:22px 0 26px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px}
+.stock-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.stock-toolbar .title{font-weight:800;font-size:14px}
+.stock-ranges{display:flex;gap:6px;flex-wrap:wrap}
+.stock-ranges button{appearance:none;border:1px solid #ccd2d8;background:#fff;color:#353a40;border-radius:999px;padding:7px 11px;font-size:11px;font-weight:800;cursor:pointer}
+.stock-ranges button.active{background:#202428;color:#fff;border-color:#202428}
+.stock-ranges button:focus-visible{outline:3px solid #f5b400;outline-offset:2px}
+.stock-chart-wrap{position:relative;min-height:320px}
+#sykChart{width:100%;height:320px;display:block;touch-action:pan-y}
+.stock-tooltip{position:absolute;pointer-events:none;background:#111;color:#fff;border-radius:7px;padding:7px 9px;font-size:11px;line-height:1.35;transform:translate(-50%,-115%);white-space:nowrap;display:none;z-index:2}
+.stock-caption{font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--muted);margin-top:8px}
+.stock-legend b{color:var(--ink)}
+@media(max-width:560px){.stock-chart-wrap{min-height:280px}#sykChart{height:280px}}
+
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
+  <h1><span>Stryker</span> — Company, Role & Interview Brief</h1>
+  <div class="sub">Senior Lead Data Analyst | Stage 1 executive briefing, Stage 2 company dossier, indicative compensation and headcount, Gallup/psychometric assessment briefing, and current stock-performance context.</div>
+  <div class="meta">
+    <span>Prepared: 25 September 2026</span>
+    <span>Currency: USD unless stated otherwise</span>
+    <span>Evidence labels: Observed Fact • Strong Inference • Working Hypothesis</span>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="#stage1">Stage 1</a>
+  <a href="#stage2">Stage 2</a>
+  <a href="#role">Role</a>
+  <a href="#pay">Pay & headcount</a>
+  <a href="#stock">Stock</a>
+  <a href="#gallup">Gallup assessment</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<section id="stage1">
+<h2>Stage 1 — One-page Executive Briefing</h2>
+
+<h3>Company in one paragraph</h3>
+<p class="lead"><span class="badge fact">Observed Fact</span>
+Stryker is a NYSE-listed global medical-technology company operating across MedSurg, Neurotechnology and Orthopaedics. In 2025 it generated <strong>$25.1bn in global sales</strong>, invested about <strong>$1.6bn in R&amp;D</strong>, employed approximately <strong>56,000 people</strong> in 61 countries and said its products impacted more than 150 million patients annually. Its strategic evolution has moved it from an orthopaedic-device heritage toward a broader technology-enabled procedural platform spanning implants, surgical equipment, robotics, digital clinical communication and vascular intervention.</p>
+
+<div class="grid">
+  <div class="card"><div class="k">2025 global sales</div><div class="v">$25.1bn</div><div class="n">+11.2% reported; +10.3% organic</div></div>
+  <div class="card"><div class="k">Global employees</div><div class="v">~56,000</div><div class="n">Data as at 31 Dec 2025</div></div>
+  <div class="card"><div class="k">Australia employees</div><div class="v">1,000+</div><div class="n">Official 2024 Australian disclosure</div></div>
+  <div class="card"><div class="k">Exact-role pay signal</div><div class="v">A$160k</div><div class="n">Employer-provided figure surfaced by Glassdoor</div></div>
+</div>
+
+<h3>Observed Facts</h3>
+<table>
+<tr><th>Area</th><th>Fact</th><th>Interview relevance</th></tr>
+<tr><td>Scale</td><td>56,000 employees, 61 countries, $25.1bn sales in 2025.</td><td>Analytics operates in a highly scaled, multi-business environment.</td></tr>
+<tr><td>Growth</td><td>2025 net sales grew 11.2%; organic sales grew 10.3%.</td><td>The mandate is not simply cost control; analytics must support growth and operating leverage.</td></tr>
+<tr><td>Portfolio</td><td>MedSurg &amp; Neurotechnology generated $15.647bn in 2025; Orthopaedics generated $9.469bn.</td><td>Multiple commercial models and product economics increase decision complexity.</td></tr>
+<tr><td>Australia</td><td>Stryker Australia employs 1,000+ people and operates from Sydney, Melbourne, Brisbane, Perth and Adelaide. Sydney has the Australian HQ and a distribution centre.</td><td>Sydney is a material operating hub even though Stryker does not publish site-level headcount.</td></tr>
+<tr><td>Data capability</td><td>Adjacent Sydney analytics roles explicitly reference Fabric, Databricks, governance, scalable analytics and value realisation.</td><td>Suggests active modernisation and capability uplift, not just BAU reporting.</td></tr>
+</table>
+
+<h3>Major Turning Points</h3>
+<p><span class="badge fact">Observed Fact</span> The strategic story over the last decade is a progression from orthopaedic products toward platforms and adjacent high-growth technologies: MAKO robotics; Wright Medical in extremities; Vocera in digital clinical communication; Inari in peripheral vascular; and the 2025 divestiture of the U.S. spinal implants business to sharpen portfolio focus.</p>
+
+<h3>Strategic Evolution</h3>
+<p><span class="badge infer">Strong Inference</span> Stryker appears to be becoming a broader <strong>technology-enabled procedural platform</strong> in which hardware, robotics, software, workflow and commercial execution increasingly intersect. That evolution raises the value of trusted enterprise data, consistent definitions, acquisition integration, value-realisation measurement and stronger business-facing analytics.</p>
+
+<h3>Why the Role Exists Now</h3>
+<div class="callout gold">
+<strong>Strong Inference — high confidence.</strong> The Senior Lead Data Analyst role appears to exist because Stryker wants more than reporting capacity. The job explicitly combines technical/project leadership, commercial and financial analysis, senior stakeholder influence, governance, mentoring and change management. An adjacent Technical Lead role focuses on Fabric, Databricks, analytics engineering and standards. Together, the hiring pattern suggests Stryker is strengthening both the <em>business-value</em> and <em>technical-platform</em> sides of Data &amp; Analytics.
+</div>
+
+<h3>The Real Business Problem</h3>
+<p><span class="badge infer">Strong Inference</span> The likely problem is: <strong>how to convert a growing volume of cross-functional data into trusted commercial decisions consistently and quickly across a complex, acquisitive medical-technology business.</strong> The role specification repeatedly links analytics to business pain points, financial impact, decision support, governance, stakeholder adoption and root-cause problem solving.</p>
+
+<div class="refs">
+<strong>Section references:</strong>
+<a href="https://www.stryker.com/in/en/about.html">Stryker company facts</a> ·
+<a href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-reports-2025-operating-results-and-2026-outlook/default.aspx">FY2025 results</a> ·
+<a href="https://www.stryker.com/content/dam/stryker/australia-new-zealand/cr-hub-files/2024%20Stryker%20Australia%20Modern%20Slavery%20Statement.pdf">Stryker Australia 2024 disclosure</a> ·
+<a href="https://au.seek.com/job/94796596?ref=applied">Senior Lead Data Analyst advert</a> ·
+<a href="https://stryker.wd1.myworkdayjobs.com/en-US/StrykerCareers/job/Senior-Data-Analyst_R558366">Lead Data Analyst — Technical Lead</a>
+</div>
+</section>
+
+<section id="pay">
+<h2>Compensation & Headcount</h2>
+
+<table>
+<tr><th>Measure</th><th>Indicative position</th><th>Evidence / confidence</th></tr>
+<tr><td>Global headcount</td><td class="num"><strong>~56,000</strong></td><td><span class="badge fact">Observed Fact</span> Stryker figure at 31 Dec 2025.</td></tr>
+<tr><td>Australia headcount</td><td class="num"><strong>1,000+</strong></td><td><span class="badge fact">Observed Fact</span> Stryker Australia 2024 Modern Slavery Statement.</td></tr>
+<tr><td>Sydney / Greater Sydney</td><td class="num"><strong>~300–500</strong></td><td><span class="badge hyp">Working Hypothesis</span> Stryker does not publish site headcount. Sydney contains the national HQ plus Arndell Park distribution centre; this is an estimate only and should not be repeated as a company fact.</td></tr>
+<tr><td>Exact Senior Lead role pay signal</td><td class="num"><strong>A$160,000 p.a.</strong></td><td><span class="badge fact">External pay evidence</span> Glassdoor currently surfaces A$160k for this exact Sydney role and labels it employer-provided. Whether super is included is not disclosed.</td></tr>
+<tr><td>2026 Sydney Data Analyst benchmark</td><td class="num">A$125,350–158,050</td><td>Robert Half; excludes super, bonuses and benefits.</td></tr>
+<tr><td>2026 Sydney BI Analyst benchmark</td><td class="num">A$136,250–168,950</td><td>Robert Half; excludes super, bonuses and benefits.</td></tr>
+</table>
+
+<div class="callout">
+<strong>Indicative salary expectation for interview:</strong> <strong>A$160k–170k base + super + bonus/benefits</strong>, with an anchor around <strong>A$165k base</strong>. This reflects the exact A$160k role signal plus the scope: technical leadership, commercial partnering, financial impact, executive communication and mentoring. Keep flexibility until bonus, super treatment and total-reward structure are confirmed.
+</div>
+
+<div class="qbox"><strong>Suggested wording</strong>
+“Given the seniority, technical leadership and commercial-partnering scope, I’m thinking around A$165,000 base plus super, with some flexibility depending on the bonus and overall package.”
+</div>
+
+<div class="refs">
+<strong>Section references:</strong>
+<a href="https://www.glassdoor.com.au/Salary/Stryker-Salaries-E1918.htm">Glassdoor — Stryker jobs/pay signal</a> ·
+<a href="https://www.roberthalf.com/au/en/job-details/data-analyst/sydney">Robert Half — Sydney Data Analyst 2026</a> ·
+<a href="https://www.roberthalf.com/au/en/job-details/business-intelligence-analyst/sydney">Robert Half — Sydney BI Analyst 2026</a> ·
+<a href="https://www.stryker.com/au/en/about/our-locations/australia.html">Stryker Australia locations</a>
+</div>
+</section>
+
+<section id="stage2">
+<h2>Stage 2 — Full Interview Dossier: First Pass</h2>
+
+<h3>1. Company Overview</h3>
+<p>Stryker was founded in 1941 by orthopaedic surgeon Dr Homer Stryker after he developed medical products to meet unmet patient needs. It is now an S&amp;P 500 medical-technology company listed on the NYSE under <strong>SYK</strong>. Its core reporting segments are MedSurg &amp; Neurotechnology and Orthopaedics, with businesses spanning instruments, endoscopy, medical equipment, vascular, neuro cranial, knees, hips, trauma and extremities, and enabling technologies.</p>
+
+<table>
+<tr><th>FY2025</th><th class="num">Revenue</th><th>Reported growth</th></tr>
+<tr><td>MedSurg &amp; Neurotechnology</td><td class="num">$15.647bn</td><td class="num">15.7%</td></tr>
+<tr><td>Orthopaedics</td><td class="num">$9.469bn</td><td class="num">4.3%</td></tr>
+<tr><td><strong>Total</strong></td><td class="num"><strong>$25.116bn</strong></td><td class="num"><strong>11.2%</strong></td></tr>
+<tr><td>United States</td><td class="num">$19.006bn</td><td class="num">12.2%</td></tr>
+<tr><td>International</td><td class="num">$6.110bn</td><td class="num">8.1%</td></tr>
+</table>
+
+<p>For Q2 2026, Stryker reported $6.589bn of net sales, up 9.4%, with 9.0% organic growth and adjusted operating margin of 27.4%. It narrowed 2026 organic-growth guidance to <strong>8.3%–9.3%</strong> and adjusted EPS guidance to <strong>$14.95–$15.10</strong>.</p>
+
+<div class="refs">
+<strong>References:</strong>
+<a href="https://www.stryker.com/ir/en/about/history.html">Stryker history</a> ·
+<a href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-reports-2025-operating-results-and-2026-outlook/default.aspx">FY2025 results</a> ·
+<a href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-reports-second-quarter-2026-operating-results/default.aspx">Q2 2026 results</a>
+</div>
+
+<h3>2. How Stryker Became What It Is Today</h3>
+<div class="phase"><div class="label">Origins → scale</div><div>Innovation began with Dr Homer Stryker's inventions for patient care. Over decades the company scaled into a diversified medical-device business.</div></div>
+<div class="phase"><div class="label">2013: Robotics</div><div>MAKO introduced a robotic-assisted surgical platform into the portfolio. The $1.65bn acquisition helped turn joint replacement into a technology-enabled ecosystem rather than an implant-only proposition.</div></div>
+<div class="phase"><div class="label">2020: Extremities</div><div>Wright Medical broadened Stryker's trauma and extremities position, including upper and lower extremities and biologics.</div></div>
+<div class="phase"><div class="label">2022: Digital workflow</div><div>Vocera expanded Stryker into digital clinical communication and care coordination, explicitly supporting Stryker's digital ambitions.</div></div>
+<div class="phase"><div class="label">2025: Vascular + focus</div><div>Inari Medical established a peripheral vascular platform, while the sale of the U.S. spinal implants business sharpened portfolio focus and retained selected enabling technologies/relationships.</div></div>
+<div class="phase"><div class="label">2026: Execution + integration</div><div>Stryker entered 2026 with new operating leadership, a reorganised Orthopaedics reporting structure, recovery from a cyber incident, and continuing integration and supply challenges in parts of the portfolio.</div></div>
+
+<h3>3. Chronological Timeline</h3>
+<table class="timeline">
+<tr><th>Year / Date</th><th>Event</th><th>Evidence</th><th>Why it mattered</th></tr>
+<tr><td>1941</td><td>Dr Homer Stryker starts the company.</td><td><span class="badge fact">Fact</span></td><td>Innovation-led origin; clinical problem solving remains central to the brand.</td></tr>
+<tr><td>2013</td><td>Agreement to acquire MAKO Surgical for $1.65bn.</td><td><span class="badge fact">Fact</span></td><td>Established robotic-assisted orthopaedics as a strategic platform.</td></tr>
+<tr><td>2020</td><td>Completes Wright Medical acquisition.</td><td><span class="badge fact">Fact</span></td><td>Strengthened trauma/extremities and specialised orthopaedics.</td></tr>
+<tr><td>2022</td><td>Completes Vocera acquisition.</td><td><span class="badge fact">Fact</span></td><td>Expanded into connected clinical communication and digital workflow.</td></tr>
+<tr><td>Feb 2025</td><td>Completes Inari Medical acquisition.</td><td><span class="badge fact">Fact</span></td><td>Established a peripheral vascular growth platform.</td></tr>
+<tr><td>Apr 2025</td><td>Sells U.S. spinal implants business.</td><td><span class="badge fact">Fact</span></td><td>Portfolio optimisation toward areas management sees as stronger long-term opportunities.</td></tr>
+<tr><td>Jan 2026</td><td>Spencer Stiles becomes President &amp; COO.</td><td><span class="badge fact">Fact</span></td><td>Global businesses, strategy and M&amp;A brought under one operating leader.</td></tr>
+<tr><td>Mar 2026</td><td>Cyber incident disrupts operations.</td><td><span class="badge fact">Fact</span></td><td>Operational resilience, supply and recovery become material 2026 execution issues.</td></tr>
+<tr><td>Jul 2026</td><td>Q2 results show recovery: sales +9.4%, organic +9.0%.</td><td><span class="badge fact">Fact</span></td><td>Underlying demand remained strong despite disruption.</td></tr>
+<tr><td>Sep 2026</td><td>Sydney Senior Lead and Technical Lead analytics roles visible.</td><td><span class="badge fact">Fact</span></td><td>Signals investment in analytics leadership, strategic partnering and modern platforms.</td></tr>
+</table>
+
+<h3>4. Observed Facts</h3>
+<div class="two">
+<div>
+<h4>Financial / commercial</h4>
+<ul>
+<li>FY2025 sales: $25.116bn; +11.2% reported, +10.3% organic.</li>
+<li>FY2025 adjusted operating margin: 26.3%, up 100 bps.</li>
+<li>Q2 2026 sales: $6.589bn; +9.4% reported, +9.0% organic.</li>
+<li>Q2 2026 adjusted EPS: $3.69, +17.9%.</li>
+</ul>
+<h4>Operational</h4>
+<ul>
+<li>2026 cyber incident affected operations; management reported significant recovery by Q2.</li>
+<li>September management commentary indicated peripheral-vascular manufacturing/supply constraints were lasting longer than initially expected.</li>
+</ul>
+</div>
+<div>
+<h4>Leadership / strategy</h4>
+<ul>
+<li>Spencer Stiles became President &amp; COO from 1 Jan 2026, responsible for global businesses, strategy and M&amp;A.</li>
+<li>2025 portfolio actions included Inari acquisition and U.S. spinal-implants divestiture.</li>
+</ul>
+<h4>Data / technology</h4>
+<ul>
+<li>The Senior Lead advert requires project leadership, financial acumen, governance, senior communication and mentoring.</li>
+<li>An adjacent Technical Lead advert names Microsoft Fabric and Databricks, plus analytics engineering, governance and scalable solutions.</li>
+</ul>
+</div>
+</div>
+
+<h3>5. Observed Turning Points</h3>
+<p><strong>MAKO:</strong> shifted part of Stryker's proposition from products toward a technology platform embedded in surgical workflow. <strong>Wright:</strong> deepened specialist orthopaedics. <strong>Vocera:</strong> added software/digital communication. <strong>Inari:</strong> created a new vascular growth platform. <strong>Spine divestiture:</strong> showed active portfolio pruning, not just acquisition-led expansion.</p>
+
+<p><span class="badge infer">Strong Inference</span> For Data &amp; Analytics, these shifts create more integration points: installed-base and utilisation data, commercial data, acquisition reporting, product hierarchies, customer profitability, value realisation, workflow adoption and changing organisational structures.</p>
+
+<h3>6. Strategic Evolution</h3>
+<table>
+<tr><th>Phase</th><th>Business model / proposition</th><th>Operating complexity</th><th>Data implication</th></tr>
+<tr><td>Traditional medtech</td><td>Devices and implants</td><td>Product/category sales</td><td>Sales, inventory, procedure and customer reporting</td></tr>
+<tr><td>Robotics platform</td><td>Implant + enabling technology</td><td>Installed base, utilisation, procedure economics</td><td>Link device, procedure, account and commercial data</td></tr>
+<tr><td>Portfolio expansion</td><td>More specialist businesses</td><td>More product/customer models</td><td>Harmonisation and cross-business decision support</td></tr>
+<tr><td>Digital workflow</td><td>Software and connected care</td><td>Usage, adoption and workflow data</td><td>New behavioural and product-usage signals</td></tr>
+<tr><td>Vascular / portfolio optimisation</td><td>New growth adjacency + divestitures</td><td>Integration and value-realisation pressure</td><td>Acquisition integration, forecasting and benefit tracking</td></tr>
+<tr><td>2026 onward</td><td>Scaled technology-enabled procedural platform</td><td>Enterprise-level decision complexity</td><td>Governed definitions, scalable platforms and business-facing analytics leadership</td></tr>
+</table>
+
+<h3>7. Business Performance & Market Response</h3>
+<p><span class="badge fact">Observed Fact</span> Operating performance remains strong at the revenue level. 2025 sales grew 11.2%; Q2 2026 sales grew 9.4% and organic sales grew 9.0%. Management nonetheless faced material 2026 execution issues, including cyber recovery and supply/manufacturing constraints in peripheral vascular.</p>
+
+<p><span class="badge infer">Interpretation</span> The key interview point is the tension between <strong>continued underlying commercial growth</strong> and <strong>higher execution complexity</strong>. That environment typically increases the value of reliable forecasting, transparent operational metrics, root-cause analytics and fast, trusted management reporting. This is an inference from public facts, not a stated reason for the vacancy.</p>
+</section>
+
+<section id="role">
+<h2>Role Deconstruction — Senior Lead Data Analyst</h2>
+<p>The SEEK advert describes a hybrid Sydney role that combines advanced analysis with a business-facing consulting mandate. The title is less important than the operating model.</p>
+
+<table>
+<tr><th>Advert requirement</th><th>What it means in practice</th></tr>
+<tr><td>Technical and project leadership</td><td>Own ambiguous analytics work end-to-end; not a dashboard-only role.</td></tr>
+<tr><td>Financial acumen and impact evaluation</td><td>Translate analytics into dollars, opportunity sizing and prioritisation.</td></tr>
+<tr><td>Cross-enterprise collaboration</td><td>Operate across functions and domain owners, not inside an isolated BI team.</td></tr>
+<tr><td>Identify analytics opportunities</td><td>Proactively generate demand for analytics where it can change business outcomes.</td></tr>
+<tr><td>Mentor and coach analysts</td><td>Lead through capability building even where direct-report authority may be limited.</td></tr>
+<tr><td>Executive presentations</td><td>Communicate conclusions and action, not merely methodology.</td></tr>
+<tr><td>SQL / Python / R / DAX / M, modelling, cleansing</td><td>Hands-on technical credibility remains necessary.</td></tr>
+<tr><td>Governance: definitions, calculations, sources, lineage</td><td>Trust, consistency and controlled metric definitions matter to the role.</td></tr>
+</table>
+
+<div class="callout gold">
+<strong>Interview positioning:</strong> lead with <strong>decision improvement, commercial value, stakeholder adoption and data trust</strong>; then explain the technical mechanisms underneath. Avoid positioning yourself primarily as a Power BI/SQL specialist.
+</div>
+
+<div class="notice"><strong>Candidate-fit limitation:</strong> your most recent Master Resume has not been supplied in this conversation. In line with the brief, this report deliberately does not make definitive candidate-fit or selection-risk claims from an older resume. Candidate-specific evidence should be added only after the current Master Resume is provided.</div>
+
+<div class="refs">
+<strong>References:</strong>
+<a href="https://au.seek.com/job/94796596?ref=applied">SEEK — Senior Lead Data Analyst</a> ·
+<a href="https://stryker.wd1.myworkdayjobs.com/en-US/StrykerCareers/job/Senior-Data-Analyst_R558366">Stryker — Lead Data Analyst, Technical Lead</a> ·
+<a href="https://stryker.wd1.myworkdayjobs.com/en-US/StrykerCareers/job/Sydney-Australia/Lead-Data-Analyst---Strategic-Partnering_R568471-1">Stryker — Lead Data Analyst, Strategic Partnering</a>
+</div>
+</section>
+
+<section id="stock">
+<h2>Brief Stock-Performance Context — NYSE: SYK</h2>
+
+<div class="grid">
+  <div class="card"><div class="k">Latest close used</div><div class="v">$269.75</div><div class="n">24 Sep 2026</div></div>
+  <div class="card"><div class="k">52-week high</div><div class="v">$392.55</div><div class="n">Current market-data range</div></div>
+  <div class="card"><div class="k">52-week low</div><div class="v">$267.00</div><div class="n">Price is near the low end of range</div></div>
+  <div class="card"><div class="k">Approx. market cap</div><div class="v">$104bn</div><div class="n">Late Sep 2026</div></div>
+</div>
+
+
+<div class="stock-interactive" id="sykStockPanel">
+  <div class="stock-toolbar">
+    <div class="title">Interactive SYK price history</div>
+    <div class="stock-ranges" role="group" aria-label="Stock chart time range">
+      <button type="button" data-range="1M">1M</button>
+      <button type="button" data-range="6M">6M</button>
+      <button type="button" data-range="1Y" class="active">1Y</button>
+      <button type="button" data-range="ALL">Full range</button>
+    </div>
+  </div>
+  <div class="stock-chart-wrap">
+    <svg id="sykChart" role="img" aria-label="Interactive Stryker share price chart in US dollars"></svg>
+    <div class="stock-tooltip" id="sykTooltip" aria-hidden="true"></div>
+  </div>
+  <div class="stock-legend">
+    <span><b id="sykStart"></b> start</span>
+    <span><b id="sykEnd"></b> latest</span>
+    <span><b id="sykChange"></b> change over selected range</span>
+  </div>
+  <div class="stock-caption">Embedded data: monthly adjusted closes from Jan 2024 to Aug 2026, with daily closes for Sep 2026 through 24 Sep. Hover or tap the line to inspect values. Sources: Digrin monthly history; Investing.com AU daily Sep 2026 history.</div>
+</div>
+
+<h3>Recent price performance</h3>
+<div class="metricbars">
+  <div class="metricrow"><div>1 month</div><div class="barbg"><div class="bar neg" style="width:70%"></div></div><div class="tag">≈ -17.6%</div></div>
+  <div class="metricrow"><div>3 months</div><div class="barbg"><div class="bar neg" style="width:56%"></div></div><div class="tag">≈ -14.0%</div></div>
+  <div class="metricrow"><div>YTD</div><div class="barbg"><div class="bar neg" style="width:92%"></div></div><div class="tag">≈ -23.1%</div></div>
+  <div class="metricrow"><div>1 year</div><div class="barbg"><div class="bar neg" style="width:100%"></div></div><div class="tag">≈ -27.2%</div></div>
+</div>
+
+<p>As at 24 September 2026, Stryker was trading around <strong>$269.75</strong>, close to the bottom of its 52-week range of approximately <strong>$267–$392.55</strong>. Market-data services show the stock down roughly <strong>23% year-to-date</strong> and <strong>27% over one year</strong>.</p>
+
+<p><span class="badge fact">Observed Fact</span> On 8 September 2026 the shares fell sharply after management said manufacturing/supply constraints in peripheral vascular were persisting longer than initially expected; the stock closed down about 8.8% that day. Reuters also reported a negative after-hours share reaction following Q2 despite an earnings beat, as MedSurg/Neurotechnology sales came in below analyst expectations.</p>
+
+<div class="callout">
+<strong>Interview interpretation:</strong> do not claim the stock decline is caused by one issue. The useful observation is that <strong>strong revenue growth and a weaker share-price trajectory coexist</strong>. Investors appear focused on execution quality, supply recovery, segment performance and visibility. For an analytics leader, that reinforces the importance of early-warning indicators, operational transparency and credible forecasts — but it should be framed as an interview hypothesis, not as Stryker's stated hiring rationale.
+</div>
+
+<div class="refs">
+<strong>References:</strong>
+<a href="https://au.investing.com/equities/stryker-historical-data">Investing.com AU — SYK historical data</a> ·
+<a href="https://www.marketbeat.com/stocks/NYSE/SYK/chart/">MarketBeat — performance measures</a> ·
+<a href="https://www.reuters.com/legal/litigation/stryker-beats-quarterly-estimates-strong-demand-medical-devices-2026-07-30/">Reuters — Q2 2026 market reaction</a> ·
+<a href="https://www.boursorama.com/bourse/actualites/stryker-recule-apres-avoir-prevenu-que-les-difficultes-de-production-persisteraient-tout-au-long-du-second-semestre-28884c5d02a0e654c59904ab1aca090d">Reuters syndication — 8 Sep supply update</a>
+</div>
+</section>
+
+<section id="gallup">
+<h2>Briefing — Stryker's Gallup / Psychometric Assessment</h2>
+
+<p><span class="badge fact">Observed Fact</span> Stryker's current recruitment guidance includes a <strong>Gallup interview</strong> after the hiring-manager conversation. Stryker describes it as a professional strengths assessment conducted through a web-based platform or phone with a trained analyst, using strengths-themed questions. It can last roughly <strong>30 minutes to 1.5 hours</strong>, after which feedback is shared with the recruiter and hiring manager.</p>
+
+<h3>What it is — and what it is not</h3>
+<table>
+<tr><th>Supported by evidence</th><th>Do not assume</th></tr>
+<tr><td>It is structured around recurring talents/strengths and natural patterns of thought, feeling and behaviour.</td><td>That it is a numerical reasoning or IQ test.</td></tr>
+<tr><td>Stryker and Gallup have a decades-long strengths and talent-selection relationship.</td><td>That the hiring assessment is simply the standard CliftonStrengths questionnaire.</td></tr>
+<tr><td>Historical Gallup material describes Stryker role-specific, validated talent profiles and standardised questioning.</td><td>That today's scoring, thresholds or exact role profile are identical to the 2005 methodology.</td></tr>
+<tr><td>Stryker's advice is to be yourself rather than manufacture an ideal persona.</td><td>That there is a public list of “correct” answers for this Senior Lead role.</td></tr>
+</table>
+
+<h3>Likely experience</h3>
+<p>The interview may feel more structured and less conversational than a normal competency interview. Candidate accounts often describe relatively fast questioning and limited feedback. The assessment is designed to identify consistent behavioural patterns rather than reward polished long-form answers.</p>
+
+<h3>Preparation for this Senior Lead role</h3>
+<p><span class="badge hyp">Working Hypothesis</span> Based on the job specification — not on a disclosed Stryker scoring profile — likely relevant themes include initiative, ownership, achievement orientation, influence, relationship building, resilience, curiosity/learning, problem solving and comfort operating in ambiguity.</p>
+
+<div class="two">
+  <div class="qbox"><strong>Prepare evidence, not scripts</strong>
+  Have 8–10 real examples mentally ready: a result you personally drove; challenging a prevailing view; senior-stakeholder influence; resistance; ownership outside remit; setback/recovery; mentoring; an opportunity you identified before being asked; a difficult decision with incomplete information; and measurable business value.</div>
+  <div class="qbox"><strong>Answer naturally and consistently</strong>
+  Keep answers direct. Do not try to reverse-engineer a “perfect Stryker personality”. A structured assessment can expose inconsistent impression-management across repeated themes.</div>
+</div>
+
+<h3>Recruitment sequence</h3>
+<p>Stryker's published process is broadly: <strong>Recruiter → Hiring Manager → Gallup assessment → Final-stage interviews → Selection/offer</strong>. Stryker states that after the Gallup stage, the recruiter and hiring manager decide on next steps.</p>
+
+<div class="refs">
+<strong>References:</strong>
+<a href="https://www.strykercareersblog.com/post/what-to-expect-during-the-stryker-recruitment-process">Stryker Careers — recruitment process</a> ·
+<a href="https://news.gallup.com/businessjournal/19090/Stryker-Selects-Top-Talent.aspx">Gallup — Stryker Selects Top Talent</a> ·
+<a href="https://www.gallup.com/cliftonstrengths/en/266288/stryker-success-story.aspx">Gallup — Stryker strengths culture</a>
+</div>
+</section>
+
+<section>
+<h2>Interview Takeaways</h2>
+<table>
+<tr><th>Question</th><th>Current evidence-based answer</th></tr>
+<tr><td><strong>Why does this role exist now?</strong></td><td><span class="badge infer">Strong Inference</span> Stryker appears to be strengthening a modern Data &amp; Analytics capability that needs both technical platform leadership and business-facing value leadership.</td></tr>
+<tr><td><strong>What is the business problem?</strong></td><td><span class="badge infer">Strong Inference</span> Convert complex cross-functional data into trusted, financially meaningful decisions faster and more consistently, while increasing governance and adoption.</td></tr>
+<tr><td><strong>What should you emphasise?</strong></td><td>Commercial outcomes, stakeholder influence, end-to-end ownership, change/adoption, metric trust and the ability to remain technically credible.</td></tr>
+<tr><td><strong>What should you validate in interview?</strong></td><td>Whether the role is new or replacement; team structure; sponsorship; division/accountability; biggest decision gaps; source-system/platform state; first-year measures of success; relationship with the Technical Lead.</td></tr>
+<tr><td><strong>What is still missing?</strong></td><td>Your current Master Resume, required before making evidence-based candidate-fit and “what could prevent selection” conclusions.</td></tr>
+</table>
+</section>
+
+<section id="sources">
+<h2>Compact Source Register</h2>
+<table>
+<tr><th>Source</th><th>Use in this report</th></tr>
+<tr><td><a href="https://www.stryker.com/in/en/about.html">Stryker — About / fast facts</a></td><td>2025 sales, headcount, countries, R&amp;D and patient reach.</td></tr>
+<tr><td><a href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-reports-2025-operating-results-and-2026-outlook/default.aspx">Stryker — FY2025 results</a></td><td>Revenue, organic growth, margins, segment/geographic sales and outlook.</td></tr>
+<tr><td><a href="https://investors.stryker.com/press-releases/news-details/2026/Stryker-reports-second-quarter-2026-operating-results/default.aspx">Stryker — Q2 2026 results</a></td><td>Current operating performance, cyber recovery and 2026 guidance.</td></tr>
+<tr><td><a href="https://www.stryker.com/content/dam/stryker/australia-new-zealand/cr-hub-files/2024%20Stryker%20Australia%20Modern%20Slavery%20Statement.pdf">Stryker Australia — 2024 Modern Slavery Statement</a></td><td>Australia employee count and local operating model.</td></tr>
+<tr><td><a href="https://www.stryker.com/au/en/about/our-locations/australia.html">Stryker — Australia locations</a></td><td>Sydney HQ/distribution centre and national footprint.</td></tr>
+<tr><td><a href="https://au.seek.com/job/94796596?ref=applied">SEEK — Senior Lead Data Analyst</a></td><td>Exact role remit and requirements.</td></tr>
+<tr><td><a href="https://stryker.wd1.myworkdayjobs.com/en-US/StrykerCareers/job/Senior-Data-Analyst_R558366">Stryker Careers — Technical Lead</a></td><td>Fabric/Databricks, scalable analytics, technical leadership and capability uplift.</td></tr>
+<tr><td><a href="https://www.glassdoor.com.au/Salary/Stryker-Salaries-E1918.htm">Glassdoor — Stryker jobs/pay</a></td><td>A$160k employer-provided pay signal for the exact Sydney vacancy.</td></tr>
+<tr><td><a href="https://www.roberthalf.com/au/en/job-details/business-intelligence-analyst/sydney">Robert Half 2026</a></td><td>Sydney BI Analyst benchmark.</td></tr>
+<tr><td><a href="https://www.strykercareersblog.com/post/what-to-expect-during-the-stryker-recruitment-process">Stryker Careers — recruitment process</a></td><td>Gallup interview format, timing and sequence.</td></tr>
+<tr><td><a href="https://news.gallup.com/businessjournal/19090/Stryker-Selects-Top-Talent.aspx">Gallup — Stryker Selects Top Talent</a></td><td>Historical talent-selection methodology and role-specific profiling.</td></tr>
+<tr><td><a href="https://au.investing.com/equities/stryker-historical-data">Investing.com AU</a></td><td>24 Sep 2026 close and 52-week range.</td></tr>
+<tr><td><a href="https://www.reuters.com/legal/litigation/stryker-beats-quarterly-estimates-strong-demand-medical-devices-2026-07-30/">Reuters — 30 Jul 2026</a></td><td>Independent account of Q2 market reaction.</td></tr>
+</table>
+</section>
+
+<footer class="footer">
+<strong>Evidence discipline.</strong> “Observed Fact” means directly supported by cited public sources. “Strong Inference” means multiple observed facts point to the conclusion but Stryker has not stated it explicitly. “Working Hypothesis” is plausible but requires validation in interview. Salary and Sydney headcount are indicative only. Stock data is a snapshot, not investment advice. Candidate-specific fit has intentionally not been finalised without the current Master Resume.
+</footer>
+</main>
+
+<script>
+(() => {
+  const root = document.getElementById('sykStockPanel');
+  if (!root || root.dataset.ready === '1') return;
+  root.dataset.ready = '1';
+
+  const raw = [{"date":"2024-01-31","price":327.6},{"date":"2024-02-29","price":340.88},{"date":"2024-03-31","price":350.27},{"date":"2024-04-30","price":329.35},{"date":"2024-05-31","price":333.84},{"date":"2024-06-30","price":333.81},{"date":"2024-07-31","price":321.25},{"date":"2024-08-31","price":353.6},{"date":"2024-09-30","price":355.21},{"date":"2024-10-31","price":350.31},{"date":"2024-11-30","price":385.58},{"date":"2024-12-31","price":354.84},{"date":"2025-01-31","price":385.63},{"date":"2025-02-28","price":380.6},{"date":"2025-03-31","price":367.71},{"date":"2025-04-30","price":369.36},{"date":"2025-05-31","price":377.98},{"date":"2025-06-30","price":391.64},{"date":"2025-07-31","price":388.77},{"date":"2025-08-31","price":387.46},{"date":"2025-09-30","price":366.78},{"date":"2025-10-31","price":353.45},{"date":"2025-11-30","price":368.28},{"date":"2025-12-31","price":349.59},{"date":"2026-01-31","price":367.58},{"date":"2026-02-28","price":385.39},{"date":"2026-03-31","price":327.72},{"date":"2026-04-30","price":314.29},{"date":"2026-05-31","price":304.28},{"date":"2026-06-30","price":314.84},{"date":"2026-07-31","price":325.7},{"date":"2026-08-31","price":323.8},{"date":"2026-09-01","price":317.4},{"date":"2026-09-02","price":312.19},{"date":"2026-09-03","price":307.99},{"date":"2026-09-04","price":303.13},{"date":"2026-09-08","price":276.43},{"date":"2026-09-09","price":275.39},{"date":"2026-09-10","price":270.01},{"date":"2026-09-11","price":275.56},{"date":"2026-09-14","price":281.87},{"date":"2026-09-15","price":281.5},{"date":"2026-09-16","price":284.76},{"date":"2026-09-17","price":280.13},{"date":"2026-09-18","price":275.12},{"date":"2026-09-21","price":274.19},{"date":"2026-09-22","price":275.09},{"date":"2026-09-23","price":273.4},{"date":"2026-09-24","price":269.75}].map(d => ({...d, t: Date.parse(d.date + 'T00:00:00Z')}));
+  const svg = document.getElementById('sykChart');
+  const tip = document.getElementById('sykTooltip');
+  const wrap = svg.parentElement;
+  const buttons = [...root.querySelectorAll('[data-range]')];
+  let currentRange = '1Y';
+
+  const NS = 'http://www.w3.org/2000/svg';
+  const fmtPrice = v => '$' + v.toFixed(2);
+  const fmtDate = t => new Intl.DateTimeFormat('en-AU', {day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(t));
+
+  function rangeStart(label, end) {
+    const d = new Date(end);
+    if (label === '1M') d.setUTCMonth(d.getUTCMonth()-1);
+    else if (label === '6M') d.setUTCMonth(d.getUTCMonth()-6);
+    else if (label === '1Y') d.setUTCFullYear(d.getUTCFullYear()-1);
+    else return -Infinity;
+    return d.getTime();
+  }
+
+  function pointsFor(label) {
+    const end = raw[raw.length-1].t;
+    const start = rangeStart(label,end);
+    let pts = raw.filter(d => d.t >= start);
+    if (pts.length < 2) pts = raw.slice(-2);
+    return pts;
+  }
+
+  function el(name, attrs={}) {
+    const n = document.createElementNS(NS,name);
+    Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,String(v)));
+    return n;
+  }
+
+  function draw() {
+    const w = Math.max(320, Math.round(svg.getBoundingClientRect().width || 800));
+    const h = Math.max(260, Math.round(svg.getBoundingClientRect().height || 320));
+    svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+    svg.innerHTML = '';
+    const m = {l:54,r:18,t:16,b:34};
+    const pw=w-m.l-m.r, ph=h-m.t-m.b;
+    const pts=pointsFor(currentRange);
+    const t0=pts[0].t, t1=pts[pts.length-1].t;
+    let min=Math.min(...pts.map(d=>d.price)), max=Math.max(...pts.map(d=>d.price));
+    const pad=(max-min)*0.12 || 10; min-=pad; max+=pad;
+    const x=t=>m.l + ((t-t0)/(t1-t0||1))*pw;
+    const y=v=>m.t + (max-v)/(max-min)*ph;
+
+    // grid & y labels
+    for(let i=0;i<=4;i++) {
+      const val=max-(max-min)*i/4, yy=y(val);
+      svg.appendChild(el('line',{x1:m.l,y1:yy,x2:w-m.r,y2:yy,stroke:'#e5e8eb','stroke-width':1}));
+      const tx=el('text',{x:m.l-8,y:yy+4,'text-anchor':'end','font-size':10,fill:'#6a727b'});
+      tx.textContent='$'+Math.round(val); svg.appendChild(tx);
+    }
+    // x labels
+    const xticks=4;
+    for(let i=0;i<=xticks;i++) {
+      const tt=t0+(t1-t0)*i/xticks, xx=x(tt);
+      const tx=el('text',{x:xx,y:h-10,'text-anchor': i===0?'start':i===xticks?'end':'middle','font-size':10,fill:'#6a727b'});
+      tx.textContent=new Intl.DateTimeFormat('en-AU',{month:'short',year:'2-digit',timeZone:'UTC'}).format(new Date(tt));
+      svg.appendChild(tx);
+    }
+
+    const dpath=pts.map((d,i)=>(i?'L':'M')+x(d.t).toFixed(1)+','+y(d.price).toFixed(1)).join(' ');
+    const area=dpath + ` L ${x(pts[pts.length-1].t).toFixed(1)},${(m.t+ph).toFixed(1)} L ${x(pts[0].t).toFixed(1)},${(m.t+ph).toFixed(1)} Z`;
+    svg.appendChild(el('path',{d:area,fill:'#eef1f3'}));
+    svg.appendChild(el('path',{d:dpath,fill:'none',stroke:'#24292e','stroke-width':2.5,'stroke-linejoin':'round','stroke-linecap':'round'}));
+
+    const focusLine=el('line',{x1:0,y1:m.t,x2:0,y2:m.t+ph,stroke:'#9aa2aa','stroke-width':1,'stroke-dasharray':'3 3',visibility:'hidden'});
+    const focusDot=el('circle',{cx:0,cy:0,r:4,fill:'#f5b400',stroke:'#202428','stroke-width':1.5,visibility:'hidden'});
+    svg.appendChild(focusLine); svg.appendChild(focusDot);
+
+    document.getElementById('sykStart').textContent=fmtPrice(pts[0].price);
+    document.getElementById('sykEnd').textContent=fmtPrice(pts[pts.length-1].price);
+    const ch=(pts[pts.length-1].price/pts[0].price-1)*100;
+    document.getElementById('sykChange').textContent=(ch>=0?'+':'')+ch.toFixed(1)+'%';
+
+    function inspect(clientX) {
+      const rect=svg.getBoundingClientRect();
+      const localX=(clientX-rect.left)*(w/rect.width);
+      const target=t0 + Math.max(0,Math.min(1,(localX-m.l)/pw))*(t1-t0);
+      let best=pts[0];
+      for(const p of pts) if(Math.abs(p.t-target)<Math.abs(best.t-target)) best=p;
+      const bx=x(best.t), by=y(best.price);
+      focusLine.setAttribute('x1',bx); focusLine.setAttribute('x2',bx); focusLine.setAttribute('visibility','visible');
+      focusDot.setAttribute('cx',bx); focusDot.setAttribute('cy',by); focusDot.setAttribute('visibility','visible');
+      const px = bx*(rect.width/w), py=by*(rect.height/h);
+      tip.style.left=px+'px'; tip.style.top=py+'px'; tip.style.display='block';
+      tip.innerHTML=`<strong>${fmtPrice(best.price)}</strong><br>${fmtDate(best.t)}`;
+      tip.setAttribute('aria-hidden','false');
+    }
+    svg.onpointermove=e=>inspect(e.clientX);
+    svg.onpointerdown=e=>inspect(e.clientX);
+    svg.onpointerleave=()=>{tip.style.display='none';tip.setAttribute('aria-hidden','true');focusLine.setAttribute('visibility','hidden');focusDot.setAttribute('visibility','hidden')};
+  }
+
+  buttons.forEach(btn=>btn.addEventListener('click',()=>{
+    currentRange=btn.dataset.range;
+    buttons.forEach(b=>b.classList.toggle('active',b===btn));
+    draw();
+  }));
+
+  const ro = 'ResizeObserver' in window ? new ResizeObserver(draw) : null;
+  if (ro) ro.observe(svg); else window.addEventListener('resize',draw);
+  draw();
+})();
+</script>
+
+</body>
+</html>
