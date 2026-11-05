@@ -8,6 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script>
+/* Apply the saved theme before the page paints. data-theme = user's choice; data-mode = what is showing. */
+(function(){var t=null;try{t=localStorage.getItem('cb-theme')}catch(e){}
+  var r=document.documentElement;if(t==='light'||t==='dark')r.setAttribute('data-theme',t);
+  var dark=t?t==='dark':(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches);
+  r.setAttribute('data-mode',dark?'dark':'light');})();
+</script>
 <style>
 :root{
   --bg:#f3f5f7; --paper:#ffffff; --ink:#17191c; --muted:#5d6670; --line:#dfe3e7;
@@ -15,9 +22,12 @@
   --focus:#29a3dd; --chip:#e8f5fc; --chip-ink:#0b5d84;
 }
 @media (prefers-color-scheme:dark){
-  :root{--bg:#0d0f11; --paper:#16191c; --ink:#eef0f2; --muted:#aeb5bc; --line:#2e3338;
-    --chip:#12303f; --chip-ink:#9fd3ee;}
+  :root:not([data-theme="light"]){--bg:#0d0f11; --paper:#16191c; --ink:#eef0f2; --muted:#aeb5bc; --line:#2e3338;
+    --chip:#12303f; --chip-ink:#9fd3ee; color-scheme:dark}
 }
+:root[data-theme="dark"]{--bg:#0d0f11; --paper:#16191c; --ink:#eef0f2; --muted:#aeb5bc; --line:#2e3338;
+  --chip:#12303f; --chip-ink:#9fd3ee; color-scheme:dark}
+:root[data-theme="light"]{color-scheme:light}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
 body{font-family:Lexend,Aptos,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:1rem;line-height:1.5;
@@ -38,6 +48,17 @@ a{color:inherit}
 .newtab{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;
   background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:.85rem;text-decoration:none;white-space:nowrap}
 .newtab[hidden]{display:none}
+.theme{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:0 12px;
+  border-radius:999px;border:1px solid #3a4046;background:#1c2024;color:var(--bar-ink);font-size:.85rem;font-weight:600;cursor:pointer;
+  white-space:nowrap}
+.theme:hover{border-color:var(--accent)}
+.theme svg{width:18px;height:18px}
+.theme .moon{display:none}
+:root[data-mode="dark"] .theme .sun{display:none}
+:root[data-mode="dark"] .theme .moon{display:inline}
+/* Phones: toggle stays top right, beside the brand; the dropdown wraps below */
+.brand{order:1}.theme{order:2;margin-left:auto}.pick{order:3}.newtab{order:4}
+@media (min-width:768px){.theme{order:5;margin-left:0}}
 main{flex:1;display:flex;flex-direction:column;min-height:0}
 #viewer{flex:1;width:100%;border:0;background:#fff;min-height:70vh}
 #viewer[hidden],#home[hidden]{display:none}
@@ -49,8 +70,27 @@ main{flex:1;display:flex;flex-direction:column;min-height:0}
 .stats b{display:block;font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .stats span{font-size:.85rem;color:var(--muted)}
 h2{font-size:1.15rem;margin:0 0 12px}
-.cards{display:grid;grid-template-columns:1fr;gap:12px;margin:0;padding:0;list-style:none}
-.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px}
+.carousel{position:relative}
+.cards{position:relative;margin:0;padding:0;list-style:none;overflow:hidden;height:260px;touch-action:pan-y}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px;
+  position:absolute;top:50%;left:50%;width:var(--cw,300px);box-sizing:border-box;
+  transition:transform .5s ease,opacity .5s ease,box-shadow .5s ease}
+.card.side{cursor:pointer}
+.card.side:hover{border-color:var(--accent)}
+.card.mid{box-shadow:0 10px 28px rgba(0,0,0,.14);border-color:var(--accent)}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
+.ctl .nav{display:flex;gap:8px}
+.ctl button{min-width:44px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--paper);
+  color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:.85rem}
+.ctl button:hover{border-color:var(--accent)}
+.ctl svg{width:18px;height:18px}
+.ctl .pp{padding:0 14px;gap:6px}
+.dots{display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0;list-style:none}
+.dots button{min-width:28px;min-height:44px;border:0;background:transparent;padding:0}
+.dots button::before{content:"";display:block;width:8px;height:8px;margin:auto;border-radius:50%;background:var(--line);transition:width .2s,background .2s}
+.dots button[aria-current="true"]::before{width:20px;border-radius:4px;background:var(--accent)}
+.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 .card h3{margin:0 0 2px;font-size:1.05rem}
 .card .role{margin:0 0 10px;color:var(--muted);font-size:.92rem}
 .card .links{display:flex;flex-wrap:wrap;gap:8px}
@@ -60,10 +100,9 @@ h2{font-size:1.15rem;margin:0 0 12px}
 .note{margin-top:26px;font-size:.85rem;color:var(--muted);max-width:75ch}
 .err{background:#faecec;color:#8b2f2f;border:1px solid #e3b5b5;border-radius:8px;padding:10px 12px;margin:0 0 16px}
 @media (min-width:768px){
-  .cards{grid-template-columns:repeat(2,1fr)}
   #home{padding:40px 24px 56px}
 }
-@media (min-width:1100px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:480px){.dots{display:none}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
 </head>
@@ -76,14 +115,30 @@ h2{font-size:1.15rem;margin:0 0 12px}
   </div>
   <a class="newtab" id="newTab" href="#" target="_blank" rel="noopener" hidden>Open in new tab
     <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+  <button type="button" class="theme" id="themeBtn" aria-label="Switch to dark mode">
+    <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    <span id="themeLabel">Light</span>
+  </button>
 </header>
 <main>
   <section id="home" aria-labelledby="homeTitle">
     <h1 id="homeTitle">Interview briefs, in one place</h1>
     <p class="lead">Each brief prepares Adam Aziz for a first interview: how the company got here, why the role exists now, pay and headcount, the share price story, and the five experiences to lead with. Pick a company above, or choose one below.</p>
     <ul class="stats" id="stats"></ul>
-    <h2>Briefs</h2>
-    <ul class="cards" id="cards"></ul>
+    <h2 id="briefsTitle">Briefs</h2>
+    <div class="carousel" id="carousel" role="region" aria-roledescription="carousel" aria-labelledby="briefsTitle">
+      <ul class="cards" id="cards" aria-live="off"></ul>
+      <div class="ctl">
+        <button type="button" class="pp" id="ppBtn" aria-label="Pause auto-rotation"></button>
+        <ul class="dots" id="dots" aria-label="Choose a company"></ul>
+        <span class="count" id="count" aria-hidden="true"></span>
+        <div class="nav">
+          <button type="button" id="prevBtn" aria-label="Previous company"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button type="button" id="nextBtn" aria-label="Next company"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+    </div>
     <p class="note">Facts are cited inside each brief and labelled Observed Fact, Strong Inference or Working Hypothesis. Share price data is for context only and is not investment advice. "First version" documents are earlier drafts, kept for reference. Case studies and analyses sit under their company.</p>
   </section>
   <iframe id="viewer" title="Selected company brief" hidden></iframe>
@@ -129,13 +184,91 @@ h2{font-size:1.15rem;margin:0 0 12px}
     '<li><b>'+companies.length+'</b><span>companies</span></li>'+
     '<li><b>'+BRIEFS.length+'</b><span>documents, including '+(BRIEFS.length-latest.length)+' first versions</span></li>'+
     '<li><b>'+esc(BRIEFS[0].date)+'</b><span>latest brief</span></li>';
-  document.getElementById('cards').innerHTML=companies.map(function(c){
+  document.getElementById('cards').innerHTML=companies.map(function(c,ci){
     var items=BRIEFS.filter(function(b){return b.company===c});
-    return '<li class="card"><h3>'+esc(c)+'</h3><p class="role">'+esc(items[0].role)+'</p><div class="links">'+
+    return '<li class="card" aria-roledescription="slide" aria-label="'+(ci+1)+' of '+companies.length+'"><h3>'+esc(c)+'</h3><p class="role">'+esc(items[0].role)+'</p><div class="links">'+
       items.map(function(b){return '<button type="button" data-id="'+esc(b.id)+'"'+(b.first?' class="alt"':'')+'>'+
         esc(b.label+', '+b.date)+'</button>'}).join('')+'</div></li>';}).join('');
   document.getElementById('cards').addEventListener('click',function(e){
     var t=e.target.closest('button[data-id]');if(t)show(t.getAttribute('data-id'),true);});
+
+  // Carousel: three cards in view, the middle one larger. Moves on one company every 5 s and loops.
+  // Click a side card (or swipe, arrow keys, dots) to bring it to the middle.
+  // Pauses on hover, keyboard focus, hidden tab, or the Pause button; off by default for reduced motion.
+  var track=document.getElementById('cards'),cards=[].slice.call(track.children),n=cards.length,carousel=document.getElementById('carousel'),
+      ppBtn=document.getElementById('ppBtn'),dotsEl=document.getElementById('dots'),countEl=document.getElementById('count'),
+      idx=0,timer=null,hovering=false,focusing=false,SIDE=.82,
+      reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,userPaused=!!reduce;
+  var ICON_PAUSE='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Pause',
+      ICON_PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" fill="currentColor"/></svg>Play';
+  function layout(){
+    var w=track.clientWidth;if(!w)return;
+    // Middle card width: most of a phone screen (sides peek in); on wider screens all three cards fit in full
+    var cw=Math.round(w<600?w*.72:Math.min(460,(w/2-24-2)/(.5+SIDE)));
+    track.style.setProperty('--cw',cw+'px');
+    cards.forEach(function(c){c.style.height='auto'});
+    var h=Math.max.apply(null,cards.map(function(c){return c.offsetHeight}));
+    cards.forEach(function(c){c.style.height=h+'px'});
+    track.style.height=(h+24)+'px';
+    place();
+  }
+  function place(){
+    var cw=parseFloat(track.style.getPropertyValue('--cw'))||300,gap=track.clientWidth<600?10:24,
+        shift=cw/2+cw*SIDE/2+gap;
+    cards.forEach(function(c,i){
+      var off=((i-idx)%n+n)%n;if(off>n/2)off-=n;
+      var vis=Math.abs(off)<=1,x=(off<-1?-2:off>1?2:off)*shift,sc=off===0?1:SIDE;
+      c.style.transform='translate(calc(-50% + '+x+'px),-50%) scale('+sc+')';
+      c.style.opacity=vis?(off===0?1:.6):0;c.style.zIndex=off===0?2:1;
+      c.style.visibility=vis?'visible':'hidden';
+      c.classList.toggle('mid',off===0);c.classList.toggle('side',vis&&off!==0);
+      c.setAttribute('data-off',off);
+      if(off===0){c.removeAttribute('inert');c.removeAttribute('aria-hidden')}
+      else{c.setAttribute('inert','');c.setAttribute('aria-hidden','true')}
+    });
+    paintDots();
+  }
+  function paintDots(){
+    var h='';
+    for(var i=0;i<n;i++)h+='<li><button type="button" data-i="'+i+'" aria-label="Show '+esc(companies[i])+'"'+(i===idx?' aria-current="true"':'')+'></button></li>';
+    dotsEl.innerHTML=h;countEl.textContent=(idx+1)+' of '+n;
+  }
+  function go(i){idx=((i%n)+n)%n;place()}
+  function running(){return !userPaused&&!hovering&&!focusing&&!document.hidden&&!home.hidden&&n>1}
+  function sync(){
+    clearInterval(timer);timer=null;
+    if(running())timer=setInterval(function(){go(idx+1)},5000);
+    track.setAttribute('aria-live',running()?'off':'polite');
+    ppBtn.innerHTML=userPaused?ICON_PLAY:ICON_PAUSE;
+    ppBtn.setAttribute('aria-label',userPaused?'Start auto-rotation':'Pause auto-rotation');
+  }
+  ppBtn.addEventListener('click',function(){userPaused=!userPaused;sync()});
+  document.getElementById('prevBtn').addEventListener('click',function(){go(idx-1);sync()});
+  document.getElementById('nextBtn').addEventListener('click',function(){go(idx+1);sync()});
+  dotsEl.addEventListener('click',function(e){var t=e.target.closest('button[data-i]');if(t){go(+t.getAttribute('data-i'));sync()}});
+  // Side cards are inert (no clicks reach them), so find the one under the pointer
+  var swiped=false;
+  track.addEventListener('click',function(e){
+    if(swiped){swiped=false;return}
+    if(e.target.closest('.card.mid'))return;
+    cards.forEach(function(c){
+      if(!c.classList.contains('side'))return;var r=c.getBoundingClientRect();
+      if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){go(idx+(+c.getAttribute('data-off')));sync()}});});
+  carousel.addEventListener('keydown',function(e){
+    if(e.target.tagName==='SELECT')return;
+    if(e.key==='ArrowLeft'){go(idx-1);e.preventDefault()}else if(e.key==='ArrowRight'){go(idx+1);e.preventDefault()}});
+  var sx=null;
+  track.addEventListener('pointerdown',function(e){sx=e.clientX});
+  track.addEventListener('pointerup',function(e){if(sx===null)return;var dx=e.clientX-sx;sx=null;
+    if(Math.abs(dx)>40){swiped=true;go(idx+(dx<0?1:-1));sync()}});
+  carousel.addEventListener('mouseenter',function(){hovering=true;sync()});
+  carousel.addEventListener('mouseleave',function(){hovering=false;sync()});
+  carousel.addEventListener('focusin',function(){focusing=true;sync()});
+  carousel.addEventListener('focusout',function(e){if(!carousel.contains(e.relatedTarget)){focusing=false;sync()}});
+  document.addEventListener('visibilitychange',sync);
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(layout,150)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(layout);
+  layout();sync();
 
   function show(id,push){
     var b=byId(id);
@@ -152,10 +285,30 @@ h2{font-size:1.15rem;margin:0 0 12px}
       try{history.pushState({id:id||''},'',id?('?brief='+encodeURIComponent(id)):location.pathname);}catch(err){}
     }
     window.scrollTo(0,0);
+    hovering=focusing=false;if(!home.hidden)layout();sync();
   }
   sel.addEventListener('change',function(){show(sel.value,true)});
   document.getElementById('homeBtn').addEventListener('click',function(){show('',true)});
   window.addEventListener('popstate',function(){show(new URLSearchParams(location.search).get('brief')||'',false)});
+
+  // Light/dark toggle (top right). Saved per browser; falls back to the device setting.
+  var root=document.documentElement,themeBtn=document.getElementById('themeBtn'),themeLabel=document.getElementById('themeLabel');
+  function paintTheme(){
+    var dark=root.getAttribute('data-mode')==='dark';
+    themeLabel.textContent=dark?'Dark':'Light';
+    themeBtn.setAttribute('aria-label',dark?'Dark mode on. Switch to light mode':'Light mode on. Switch to dark mode');
+    themeBtn.title=dark?'Switch to light mode':'Switch to dark mode';
+  }
+  themeBtn.addEventListener('click',function(){
+    var next=root.getAttribute('data-mode')==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);root.setAttribute('data-mode',next);
+    try{localStorage.setItem('cb-theme',next)}catch(e){}
+    paintTheme();
+  });
+  if(window.matchMedia){var mq=matchMedia('(prefers-color-scheme: dark)'),onMq=function(){
+    if(!root.getAttribute('data-theme')){root.setAttribute('data-mode',mq.matches?'dark':'light');paintTheme();}};
+    if(mq.addEventListener)mq.addEventListener('change',onMq);else if(mq.addListener)mq.addListener(onMq);}
+  paintTheme();
 
   var start=new URLSearchParams(location.search).get('brief')||'';
   if(start&&!byId(start)){
