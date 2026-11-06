@@ -7,6 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script id="theme-init">
+/* Dark mode: follows the Company Briefs toggle (saved choice), else the device setting */
+(function(){var t=null;try{t=localStorage.getItem('cb-theme')}catch(e){}
+  if(t!=='light'&&t!=='dark')t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);})();
+</script>
 <style>
 :root{
   --ink:#17191c; --muted:#626a73; --paper:#ffffff; --bg:#f3f5f7;
@@ -179,6 +185,56 @@ td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
 .thesis strong{color:#8fb0ff}
 .scale-note{font-size:12px;color:var(--muted)}
 </style>
+<style id="jobad-style">
+.jd-meta{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 16px;padding:0;list-style:none}
+.jd-meta li{margin:0;font-size:12px;border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:4px 11px}
+.jd-meta b{font-weight:600}
+.jd{border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:10px;background:var(--soft);padding:6px 22px 14px;max-width:880px}
+.jd h3{font-size:16.5px;margin:20px 0 6px}
+.jd p,.jd li{font-size:14px}
+.jd ul{padding-left:20px}
+@media (max-width:560px){.jd{padding:4px 14px 10px}}
+</style>
+<style id="dark-theme">
+/* Dark mode. Same layout and figures; colours only. */
+html[data-theme="dark"]{color-scheme:dark;
+  --ink:#eef0f2; --muted:#aeb5bc; --paper:#16191c; --bg:#0d0f11; --line:#2e3338; --soft:#1c2024; --gold2:#18234a;
+  --green:#7fd1a1; --greenbg:#173326; --blue:#9ec5ec; --bluebg:#16283a;
+  --orange:#f0c060; --orangebg:#3a2c10; --red:#ff9d8f; --redbg:#3a1c1c}
+:where(html[data-theme="dark"]) a{color:#8fc7ee}
+html[data-theme="dark"] main{box-shadow:0 0 0 1px #1f2327}
+html[data-theme="dark"] .hero{border-bottom:1px solid #2e3338}
+html[data-theme="dark"] .nav{background:rgba(22,25,28,.97)}
+html[data-theme="dark"] .nav a{color:#cfd4d9}
+html[data-theme="dark"] .nav a:hover{color:#fff}
+html[data-theme="dark"] .thesis,html[data-theme="dark"] .info{box-shadow:0 0 0 1px #2e3338}
+html[data-theme="dark"] .callout{background:#1c2024;border-left-color:#8f979f}
+html[data-theme="dark"] .callout.gold{background:var(--gold2);border-color:var(--gold)}
+html[data-theme="dark"] .callout.warn{background:#3a2c10;border-color:#d9a024}
+html[data-theme="dark"] .problem{background:var(--gold2)}
+html[data-theme="dark"] th{background:#1f2327;border-color:#3a4047}
+html[data-theme="dark"] td{border-color:#2e3338}
+html[data-theme="dark"] .refs{background:#1a1d21;border-left-color:#5d6670;color:#aeb5bc}
+html[data-theme="dark"] .refs a{color:#9ec5ec}
+html[data-theme="dark"] .barbg{background:#2e3338}
+html[data-theme="dark"] .bar{background:#c46a6a}
+html[data-theme="dark"] .footer{color:#8f979f}
+html[data-theme="dark"] .notice{background:var(--gold2);border-color:#2e5d78}
+html[data-theme="dark"] .qbox,html[data-theme="dark"] .story,html[data-theme="dark"] .chartbox{background:var(--soft)}
+html[data-theme="dark"] .star b{background:#3a4047}
+html[data-theme="dark"] .stock-ranges button{background:#1c2024;color:#cfd4d9;border-color:#3a4047}
+html[data-theme="dark"] .stock-ranges button.active{background:#eef0f2;color:#101214;border-color:#eef0f2}
+html[data-theme="dark"] .stock-tooltip{background:#000;box-shadow:0 0 0 1px #3a4047}
+/* Charts: CSS overrides the colours written into the SVG */
+html[data-theme="dark"] svg [fill="#17191c"]{fill:#eef0f2}
+html[data-theme="dark"] svg [fill="#626a73"]{fill:#aeb5bc}
+html[data-theme="dark"] svg [stroke="#eceff1"]{stroke:#2a2f35}
+html[data-theme="dark"] svg [stroke="#cfd5da"]{stroke:#4a5158}
+html[data-theme="dark"] svg [stroke="#202428"]{stroke:#eef0f2}
+html[data-theme="dark"] svg [fill="#8b2f2f"]{fill:#ff9d8f}
+html[data-theme="dark"] svg [stroke="#fff"]{stroke:#1c2024}
+@media print{html[data-theme="dark"]{--ink:#17191c;--muted:#626a73;--paper:#fff;--bg:#fff;--line:#dfe3e7;--soft:#f8f9fa}}
+</style>
 </head>
 <body>
 <main>
@@ -204,6 +260,7 @@ td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
   <a href="#stock">Stock</a>
   <a href="#recruitment">Recruitment</a>
   <a href="#stage3">Stage 3</a>
+  <a href="#jobad">Job ad</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -858,6 +915,34 @@ Power Automate is in your skills list, but there is no example in your evidence.
 </section>
 
 <!-- ============ SOURCES ============ -->
+<section id="jobad">
+<h2>Original Job Description</h2>
+<p class="small">The Senior Technical Business Analyst, Delivery Intelligence &amp; Automation ad, as pasted by Adam on 4 Nov 2026.</p>
+<ul class="jd-meta"><li><b>Advertised by:</b> LinkedIn (Sharon AI, Inc)</li><li><b>Location:</b> Australia-wide remote, Sydney preferred</li><li><b>Type:</b> Full-time, permanent</li><li><b>Reports to:</b> Internal PMO, CTO Organisation</li><li><b>Saved:</b> 4 Nov 2026</li></ul>
+<div class="jd">
+<h3>Senior Technical Business Analyst, Delivery Intelligence &amp; Automation</h3>
+<h3>About Sharon AI</h3>
+<p>Sharon AI is an Australian neocloud, delivering trusted AI infrastructure organisations need to build, train and run AI at scale. We support customers across the full AI lifecycle, from training through to inference and agentic AI, drawing on a strong ecosystem of technology and co-location partners to deliver capability where it&#x27;s needed. As the first neocloud to join NVIDIA&#x27;s AI Compute Program, we&#x27;re growing quickly, scaling our AI Factory platform to meet rising demand for advanced compute.</p>
+<h3>The Role</h3>
+<p>The Senior Technical Business Analyst, Delivery Intelligence &amp; Automation is responsible for modernising and automating delivery management across Sharon AI&#x27;s internal technology portfolio in the CTO Organisation. The role is hands-on and technical: it builds solutions rather than only documenting requirements.</p>
+<p>Working with the PMO, engineering and Data &amp; AI teams, the role improves Jira and Confluence data quality, builds automated reporting, simplifies workflows and introduces practical AI-enabled delivery capabilities. The aim is consistent, trusted delivery information for Delivery Leads, Product Managers and leadership with less manual effort.</p>
+<p>The role reports to the internal PMO and supports the squad Jira spaces, the shared label scheme (win, blocker, hotspot) and weekly and board reporting.</p>
+<h3>What You&#x27;ll Be Doing</h3>
+<ul><li>Improve delivery workflows, data quality and reporting processes across internal technology initiatives.</li><li>Configure and optimise Jira and Confluence for tracking, dependencies, milestones and portfolio visibility.</li><li>Build automated, interactive dashboards in Power BI or comparable tools.</li><li>Develop workflow automations using Jira Automation, Power Automate, APIs and AI tools.</li><li>Connect Jira, Confluence, Microsoft Teams and other approved sources to reduce manual reporting.</li><li>Use AI tools such as Claude, Copilot and Rovo to generate delivery summaries, surface risks and flag inconsistencies.</li><li>Introduce automated checks for missing information, stale updates and overdue actions.</li><li>Work with the central Data &amp; AI team on integrations, architecture and security.</li><li>Establish reusable reporting templates, data definitions and documentation.</li></ul>
+<h3>What We&#x27;re Looking For</h3>
+<ul><li>Bachelor&#x27;s degree in Computer Science, Information Technology or a related discipline, or equivalent practical experience.</li><li>Typically 5 to 8+ years of relevant experience as a Technical Business Analyst in a software, cloud or technology environment.</li><li>Hands-on Jira, Confluence, JQL and Atlassian automation expertise.</li><li>Experience building Power BI or comparable interactive dashboards.</li><li>Practical experience with Power Automate, APIs or workflow integrations.</li></ul>
+<h3>Core</h3>
+<ul><li>Excellent analytical skills, attention to detail and problem-solving ability.</li><li>Ability to independently design, configure and implement practical solutions.</li><li>Strong understanding of Agile and product-led technology delivery.</li><li>Clear working relationship with the PMO, engineering and Data &amp; AI teams.</li></ul>
+<h3>Technical</h3>
+<ul><li>Jira, Confluence, JQL and Atlassian automation.</li><li>Power BI or comparable dashboard tools.</li><li>Power Automate, APIs and workflow integrations.</li><li>AI tooling for delivery reporting and analysis.</li></ul>
+<h3>Eligibility</h3>
+<ul><li>Ability to work across technical, commercial and operational stakeholders in a rapidly scaling business.</li><li>Eligibility to work in the nominated employment jurisdiction.</li><li>Ability to satisfy applicable customer or government screening requirements where required.</li><li>Demonstrated commitment to information security, confidentiality and professional integrity.</li></ul>
+<h3>Nice to have</h3>
+<ul><li>Experience with Claude, Copilot, Rovo or other enterprise AI tools.</li><li>Familiarity with Microsoft Graph and Teams integrations.</li><li>SQL, Python or scripting capability.</li><li>Knowledge of Kubernetes, cloud-native platforms, AI infrastructure or GPU cloud environments.</li><li>Experience integrating Atlassian and Microsoft ecosystems.</li></ul>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com/jobs/view/4484127346" title="Senior Technical Business Analyst, Delivery Intelligence &amp; Automation, Sharon AI, Inc, LinkedIn, posted 28 Oct 2026">LinkedIn: Senior Technical BA, Delivery Intelligence</a></div>
+</section>
+
 <section id="sources">
 <h2>Source Register</h2>
 <div class="tablewrap"><table>

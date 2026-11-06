@@ -306,14 +306,17 @@ h2{font-size:1.15rem;margin:0 0 12px}
     themeBtn.setAttribute('aria-label',dark?'Dark mode on. Switch to light mode':'Light mode on. Switch to dark mode');
     themeBtn.title=dark?'Switch to light mode':'Switch to dark mode';
   }
+  // Pass the theme into the open brief (briefs with a dark version use it; others stay light)
+  function themeBrief(){try{var d=viewer.contentDocument;if(d&&d.documentElement)d.documentElement.setAttribute('data-theme',root.getAttribute('data-mode'))}catch(e){}}
+  viewer.addEventListener('load',themeBrief);
   themeBtn.addEventListener('click',function(){
     var next=root.getAttribute('data-mode')==='dark'?'light':'dark';
     root.setAttribute('data-theme',next);root.setAttribute('data-mode',next);
     try{localStorage.setItem('cb-theme',next)}catch(e){}
-    paintTheme();
+    paintTheme();themeBrief();
   });
   if(window.matchMedia){var mq=matchMedia('(prefers-color-scheme: dark)'),onMq=function(){
-    if(!root.getAttribute('data-theme')){root.setAttribute('data-mode',mq.matches?'dark':'light');paintTheme();}};
+    if(!root.getAttribute('data-theme')){root.setAttribute('data-mode',mq.matches?'dark':'light');paintTheme();themeBrief();}};
     if(mq.addEventListener)mq.addEventListener('change',onMq);else if(mq.addListener)mq.addListener(onMq);}
   paintTheme();
 
