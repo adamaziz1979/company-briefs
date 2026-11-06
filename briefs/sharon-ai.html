@@ -195,6 +195,42 @@ td,.v,.tag,.metricrow,.num{font-variant-numeric:tabular-nums}
 .jd ul{padding-left:20px}
 @media (max-width:560px){.jd{padding:4px 14px 10px}}
 </style>
+<style id="light-panels">
+/* Light mode: the dark panels (title band, summary box, infographic, dark sources box) become light with dark text.
+   Dark mode is unchanged. Small chips, the selected chart range and the chart tooltip stay dark on purpose. */
+html:not([data-theme="dark"]){--accent-ink:#2f5fe0}
+html:not([data-theme="dark"]) .hero{background:#fff;color:var(--ink);border-bottom:1px solid var(--line)}
+html:not([data-theme="dark"]) .hero .eyebrow{color:#5d6670}
+html:not([data-theme="dark"]) .hero h1 span{color:var(--accent-ink)}
+html:not([data-theme="dark"]) .hero .sub{color:#353a40}
+html:not([data-theme="dark"]) .hero .meta{color:#5d6670}
+html:not([data-theme="dark"]) .thesis{background:var(--gold2);color:var(--ink)}
+html:not([data-theme="dark"]) .thesis strong{color:var(--accent-ink)}
+html:not([data-theme="dark"]) .thesis .k{color:#5d6670}
+html:not([data-theme="dark"]) .refs.dark{background:#f7f8f9;border-left-color:#9aa2aa;color:#535b64}
+html:not([data-theme="dark"]) .refs.dark a{color:#174f85}
+html:not([data-theme="dark"]) .refs.dark .sep{color:#9aa2aa}
+html:not([data-theme="dark"]) .info{background:#f5f7f9;color:var(--ink);box-shadow:0 0 0 1px var(--line)}
+html:not([data-theme="dark"]) .info h2{color:var(--ink);border-bottom-color:var(--line)}
+html:not([data-theme="dark"]) .info .ik{color:var(--accent-ink)}
+html:not([data-theme="dark"]) .itile,html:not([data-theme="dark"]) .ibox,html:not([data-theme="dark"]) .iproof div{background:#fff;border-color:var(--line)}
+html:not([data-theme="dark"]) .iproof div{border-left-color:var(--gold)}
+html:not([data-theme="dark"]) .itile .v,html:not([data-theme="dark"]) .istop b,html:not([data-theme="dark"]) .ichev b,html:not([data-theme="dark"]) .iproof b{color:var(--ink)}
+html:not([data-theme="dark"]) .itile .l{color:#5d6670}
+html:not([data-theme="dark"]) .itile.neg .v{color:#b03a2e}
+html:not([data-theme="dark"]) .istop{color:#353a40}
+html:not([data-theme="dark"]) .istop:before{border-color:#f5f7f9}
+html:not([data-theme="dark"]) .ichev div{background:#e3e7eb;color:#353a40}
+html:not([data-theme="dark"]) .ichev div:last-child{background:var(--gold);color:#fff}
+html:not([data-theme="dark"]) .ichev div:last-child b{color:#fff}
+html:not([data-theme="dark"]) .ibox{color:#353a40}
+html:not([data-theme="dark"]) .conf{background:#dfe3e7}
+html:not([data-theme="dark"]) .hrow small{color:#5d6670}
+html:not([data-theme="dark"]) .iproof div{color:#535b64}
+html:not([data-theme="dark"]) .iproof em{color:var(--accent-ink)}
+html:not([data-theme="dark"]) .iq{color:var(--ink)}
+html:not([data-theme="dark"]) .info .src{color:#5d6670}
+</style>
 <style id="dark-theme">
 /* Dark mode. Same layout and figures; colours only. */
 html[data-theme="dark"]{color-scheme:dark;
