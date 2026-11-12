@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>What is insurance brokerage?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script id="theme-init">
+/* Dark mode: follows the Company Briefs toggle (saved choice), else the device setting */
+(function(){var t=null;try{t=localStorage.getItem('cb-theme')}catch(e){}
+  if(t!=='light'&&t!=='dark')t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);})();
+</script>
+<style>
+:root{
+  --ink:#17191c; --muted:#5d6670; --paper:#ffffff; --bg:#f3f5f7; --line:#dfe3e7; --soft:#f6f8f9;
+  --accent:#29a3dd; --accent-ink:#17739f; --tint:#e8f5fc;
+  --ex:#236b45; --exbg:#eaf5ee; --warn:#8a5b00; --warnbg:#fff4dc;
+  --hero:#101214; --hero-ink:#ffffff; --hero-muted:#c7ccd2;
+}
+html[data-theme="dark"]{color-scheme:dark;
+  --ink:#eef0f2; --muted:#aeb5bc; --paper:#16191c; --bg:#0d0f11; --line:#2e3338; --soft:#1c2024;
+  --accent-ink:#7cc8ee; --tint:#12303f; --ex:#8fd3ab; --exbg:#16281e; --warn:#f0c96b; --warnbg:#2b2412}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Lexend,Aptos,Arial,sans-serif;line-height:1.6;font-size:16px}
+main{max-width:900px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 34px rgba(0,0,0,.06)}
+.hero{background:var(--hero);color:var(--hero-ink);padding:40px 40px 32px;border-top:7px solid var(--accent)}
+.eyebrow{font-size:12px;letter-spacing:.11em;text-transform:uppercase;color:var(--hero-muted);font-weight:600;margin:0}
+.hero h1{font-size:36px;line-height:1.12;margin:8px 0 12px;letter-spacing:-.01em}
+.hero h1 span{color:var(--accent)}
+.hero .sub{color:#d4d8dc;max-width:62ch;margin:0}
+.hero .meta{font-size:12px;color:#b8bec5;margin-top:18px}
+nav.toc{border-bottom:1px solid var(--line);padding:14px 40px;background:var(--soft)}
+nav.toc p{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:28px;font-size:14px}
+nav.toc a{color:var(--accent-ink);text-decoration:none}
+nav.toc a:hover{text-decoration:underline}
+section{padding:30px 40px 8px;scroll-margin-top:8px}
+h2{font-size:24px;line-height:1.25;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h2 .n{color:var(--accent-ink);margin-right:8px}
+h3{font-size:17px;margin:20px 0 8px}
+p{margin:8px 0 12px}
+.big{font-size:18px;line-height:1.55}
+.summary{background:var(--tint);border-left:6px solid var(--accent);border-radius:10px;padding:18px 22px;margin:4px 0 8px}
+.summary p{margin:0}
+.summary strong{color:var(--accent-ink)}
+.ex{background:var(--exbg);border-radius:10px;padding:12px 16px;margin:12px 0}
+.ex .k{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--ex);margin-bottom:2px}
+.ex p{margin:4px 0}
+.note{background:var(--warnbg);border-radius:10px;padding:12px 16px;margin:12px 0;font-size:15px}
+.note .k{font-weight:700;color:var(--warn)}
+ul.plain{padding-left:20px;margin:8px 0 12px}
+ul.plain li{margin:4px 0}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.who{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--soft)}
+.who h3{margin:0 0 4px;font-size:16px}
+.who .tag{font-size:12px;font-weight:600;color:var(--accent-ink);text-transform:uppercase;letter-spacing:.06em}
+.who p{margin:6px 0 0;font-size:14.5px}
+/* Flow diagram */
+.flow{margin:16px 0 8px}
+.flow svg{width:100%;height:auto;display:block}
+.flow .box{fill:var(--soft);stroke:var(--line);stroke-width:1.5}
+.flow .box.mid{fill:var(--tint);stroke:var(--accent)}
+.flow .t{fill:var(--ink);font:600 15px Lexend,Arial,sans-serif}
+.flow .s{fill:var(--muted);font:400 12.5px Lexend,Arial,sans-serif}
+.flow .arr{stroke:var(--muted);stroke-width:1.6;fill:none}
+.flow .lbl{fill:var(--ink);font:400 12.5px Lexend,Arial,sans-serif}
+.flow .money{stroke:var(--ex)}
+.flow .mlbl{fill:var(--ex);font:600 12.5px Lexend,Arial,sans-serif}
+.flow-m{display:none;list-style:none;padding:0;margin:14px 0}
+.flow-m li{border:1px solid var(--line);background:var(--soft);border-radius:10px;padding:10px 14px}
+.flow-m li.mid{background:var(--tint);border-color:var(--accent)}
+.flow-m li.arrow{border:0;background:none;padding:4px 0;text-align:center;color:var(--muted);font-size:14px}
+.flow-m li.money{border:0;background:var(--exbg);color:var(--ex);font-weight:600;font-size:14px;margin-top:8px}
+.flow-m b{display:block}
+.flow-m span{font-size:14px;color:var(--muted)}
+@media (max-width:600px){.flow svg{display:none}.flow-m{display:block}}
+/* Steps */
+ol.steps{list-style:none;padding:0;margin:12px 0;counter-reset:s}
+ol.steps>li{counter-increment:s;position:relative;padding:0 0 4px 46px;margin:0 0 14px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;
+  background:var(--accent);color:#101214;font-weight:700;display:flex;align-items:center;justify-content:center}
+ol.steps>li>strong{display:block;font-size:16.5px}
+/* Table */
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td:first-child{font-weight:600;white-space:nowrap}
+/* Sum */
+.sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+.sum div{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--paper)}
+.sum b{display:block;font-size:24px;font-variant-numeric:tabular-nums}
+.sum span{font-size:13px;color:var(--muted)}
+footer{padding:24px 40px 40px;color:var(--muted);font-size:13px}
+a{color:var(--accent-ink)}
+@media (max-width:700px){
+  .hero{padding:28px 16px 24px}.hero h1{font-size:28px}
+  nav.toc{padding:12px 16px}nav.toc ol{columns:1}
+  section{padding:24px 16px 6px}footer{padding:20px 16px 32px}
+  .cols,.sum{grid-template-columns:1fr}
+  td:first-child{white-space:normal}
+}
+@media print{html[data-theme="dark"]{--ink:#17191c;--muted:#5d6670;--paper:#fff;--bg:#fff;--line:#dfe3e7;--soft:#f6f8f9;--tint:#e8f5fc;--exbg:#eaf5ee;--warnbg:#fff4dc;--accent-ink:#17739f;--ex:#236b45;--warn:#8a5b00}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <p class="eyebrow">Explainer • Background for the AUB Group interview</p>
+  <h1>What is insurance <span>brokerage?</span></h1>
+  <p class="sub">A plain-English guide for someone starting from zero. Each point has one or two everyday examples.</p>
+  <p class="meta">Prepared 12 November 2026 • Australian context • Currency: AUD</p>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#short">The short answer</a></li>
+    <li><a href="#insurance">First, what insurance is</a></li>
+    <li><a href="#broker">What a broker is</a></li>
+    <li><a href="#players">The three main players</a></li>
+    <li><a href="#jobs">What a broker actually does</a></li>
+    <li><a href="#customers">Who uses a broker</a></li>
+    <li><a href="#money">How brokers make money</a></li>
+    <li><a href="#why">Why not just buy direct?</a></li>
+    <li><a href="#types">Types of brokers</a></li>
+    <li><a href="#aub">Where AUB Group fits</a></li>
+    <li><a href="#words">Words you will hear</a></li>
+  </ol>
+</nav>
+
+<section id="short">
+  <h2><span class="n">1</span>The short answer</h2>
+  <div class="summary">
+    <p class="big"><strong>An insurance broker is a professional who helps people and businesses buy the right insurance.</strong> The broker works for the customer, not for the insurance company. They find out what could go wrong, shop around several insurers, recommend the best cover, and help when it is time to make a claim.</p>
+  </div>
+  <p><strong>Insurance brokerage</strong> (or "broking", the usual Australian word) is simply the business of doing this.</p>
+  <div class="ex"><span class="k">Think of it like</span>
+    <p>A <strong>mortgage broker</strong>. You do not go to every bank yourself. The mortgage broker compares many banks' home loans and helps you pick one. An insurance broker does the same thing, but for insurance.</p>
+  </div>
+</section>
+
+<section id="insurance">
+  <h2><span class="n">2</span>First, what insurance is</h2>
+  <p>Insurance is a deal: you pay a company a small, certain amount of money now (the <strong>premium</strong>), and in return it promises to pay for a large, uncertain loss if it happens (a <strong>claim</strong>).</p>
+  <p>It works because the insurer collects premiums from many customers, and only a few of them have a loss in any year. The many pay for the few.</p>
+  <div class="ex"><span class="k">Example 1: car insurance</span>
+    <p>You pay $1,200 a year. Someone crashes into your car and the repair costs $9,000. The insurer pays the repairer. You pay only the agreed first part of the claim (the <strong>excess</strong>), say $800.</p>
+  </div>
+  <div class="ex"><span class="k">Example 2: a café</span>
+    <p>A café pays $4,000 a year for business insurance. A kitchen fire forces it to close for six weeks. The insurer pays to repair the kitchen and also covers the income it lost while closed.</p>
+  </div>
+</section>
+
+<section id="broker">
+  <h2><span class="n">3</span>What a broker is</h2>
+  <p>A broker is a <strong>middle person</strong> between the customer and the insurance companies. The key point is <strong>whose side they are on</strong>: a broker acts for the customer.</p>
+  <p>A broker does <strong>not</strong> pay claims out of their own pocket. The insurance company carries the risk and pays. The broker gives advice, arranges the policy and fights for the customer.</p>
+  <div class="ex"><span class="k">Example 1: a buyer's agent</span>
+    <p>When buying a house, a buyer's agent works for the buyer, not the seller. They search, compare and negotiate on your behalf. A broker plays that role in insurance.</p>
+  </div>
+  <div class="ex"><span class="k">Example 2: a plumbing business</span>
+    <p>Sam runs a plumbing business with five vans. Sam calls a broker once. The broker sorts out insurance for the vans, the tools, the workers and the risk of damaging a client's home. Sam deals with one person instead of ten insurers.</p>
+  </div>
+</section>
+
+<section id="players">
+  <h2><span class="n">4</span>The three main players</h2>
+  <p>Most insurance sales involve three parties. This picture shows how they connect, and which way the money flows.</p>
+  <figure class="flow" aria-labelledby="flowCap">
+    <svg viewBox="0 0 820 250" role="img" aria-labelledby="flowTitle flowDesc">
+      <title id="flowTitle">How an insurance broker sits between a customer and insurers</title>
+      <desc id="flowDesc">The customer tells the broker what they need. The broker asks several insurers for quotes and brings the best options back. The customer pays the premium; the insurer pays the broker a commission. If something goes wrong, the insurer pays the claim, and the broker helps.</desc>
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke"/></marker>
+      </defs>
+      <rect class="box" x="10" y="70" width="190" height="96" rx="12"/>
+      <text class="t" x="105" y="108" text-anchor="middle">Customer</text>
+      <text class="s" x="105" y="130" text-anchor="middle">a person or a business</text>
+      <text class="s" x="105" y="148" text-anchor="middle">e.g. a café owner</text>
+
+      <rect class="box mid" x="315" y="70" width="190" height="96" rx="12"/>
+      <text class="t" x="410" y="108" text-anchor="middle">Broker</text>
+      <text class="s" x="410" y="130" text-anchor="middle">advises and arranges</text>
+      <text class="s" x="410" y="148" text-anchor="middle">works for the customer</text>
+
+      <rect class="box" x="620" y="14" width="190" height="56" rx="12"/>
+      <text class="t" x="715" y="48" text-anchor="middle">Insurer A</text>
+      <rect class="box" x="620" y="90" width="190" height="56" rx="12"/>
+      <text class="t" x="715" y="124" text-anchor="middle">Insurer B</text>
+      <rect class="box" x="620" y="166" width="190" height="56" rx="12"/>
+      <text class="t" x="715" y="200" text-anchor="middle">Insurer C</text>
+
+      <path class="arr" d="M200 100H313" marker-end="url(#ah)"/>
+      <text class="lbl" x="256" y="92" text-anchor="middle">"Here's my risk"</text>
+      <path class="arr" d="M313 136H202" marker-end="url(#ah)"/>
+      <text class="lbl" x="256" y="155" text-anchor="middle">best options</text>
+
+      <path class="arr" d="M505 100L618 44" marker-end="url(#ah)"/>
+      <path class="arr" d="M505 118H618" marker-end="url(#ah)"/>
+      <path class="arr" d="M505 136L618 192" marker-end="url(#ah)"/>
+      <text class="lbl" x="560" y="110" text-anchor="middle">quotes?</text>
+
+      <path class="arr money" d="M105 166V236H715V224" marker-end="url(#ah)"/>
+      <text class="mlbl" x="410" y="230" text-anchor="middle">Premium (usually paid through the broker) → insurer pays broker a commission</text>
+    </svg>
+    <ol class="flow-m" aria-hidden="true">
+      <li><b>Customer</b><span>a person or a business, e.g. a café owner</span></li>
+      <li class="arrow">↓ "Here's my risk" &nbsp; ↑ best options</li>
+      <li class="mid"><b>Broker</b><span>advises and arranges; works for the customer</span></li>
+      <li class="arrow">↓ asks for quotes</li>
+      <li><b>Insurers A, B and C</b><span>each quotes a price and terms</span></li>
+      <li class="money">Money: the premium usually goes through the broker to the insurer, and the insurer pays the broker a commission.</li>
+    </ol>
+    <figcaption id="flowCap" class="s" style="font-size:13px;color:var(--muted)">The broker shops the customer's risk to several insurers. The insurer carries the risk and pays any claim.</figcaption>
+  </figure>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Player</th><th>What they do</th><th>Everyday example</th></tr></thead>
+    <tbody>
+      <tr><td>Customer (the "insured")</td><td>Needs protection and pays the premium.</td><td>A family, a café, a building company, a hospital.</td></tr>
+      <tr><td>Broker</td><td>Advises the customer, compares insurers, arranges the policy, helps with claims.</td><td>A local broker in Parramatta, or a big group like AUB, Marsh or Aon.</td></tr>
+      <tr><td>Insurer (the "carrier")</td><td>Writes the policy, takes on the risk, pays claims.</td><td>QBE, Allianz, Zurich, or a syndicate at Lloyd's of London.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="note"><span class="k">Broker vs agent.</span> An <em>agent</em> usually sells for one insurer, like a salesperson for that brand. A <em>broker</em> can shop across many insurers for the customer. Example: a car dealer offering "our partner's" insurance is acting like an agent; a broker would compare five insurers' quotes for you.</div>
+</section>
+
+<section id="jobs">
+  <h2><span class="n">5</span>What a broker actually does</h2>
+  <p>A broker's work repeats every year. These are the main steps.</p>
+  <ol class="steps">
+    <li><strong>Understand the customer's risks</strong>
+      Ask questions to find what could go wrong and how much it would cost.
+      <div class="ex"><span class="k">Example</span><p>For a café: fire, theft, a customer slipping on a wet floor, food poisoning, the fridge breaking and spoiling stock.</p></div></li>
+    <li><strong>Shop the market</strong>
+      Send the details (a "submission") to several insurers and collect quotes.
+      <div class="ex"><span class="k">Example</span><p>A builder's broker gets quotes from three insurers: $18,000, $21,500 and $16,900. The cheapest one leaves out flood damage, so it is not automatically the best.</p></div></li>
+    <li><strong>Recommend and explain</strong>
+      Compare price <em>and</em> what is covered, then explain the trade-offs in plain words.
+      <div class="ex"><span class="k">Example</span><p>"Option B costs $1,500 more, but it covers you if a flood shuts the site. Given you're near the river, I'd take it."</p></div></li>
+    <li><strong>Place the cover</strong>
+      Once the customer chooses, the broker arranges the policy, collects the premium and sends it on to the insurer. This is called "placing" the risk.</li>
+    <li><strong>Help with claims</strong>
+      When something goes wrong, the broker helps fill in the claim and pushes the insurer to pay fairly and quickly.
+      <div class="ex"><span class="k">Example</span><p>A storm floods a shop. The broker sends photos and invoices to the insurer, chases progress, and challenges a low offer.</p></div></li>
+    <li><strong>Renew every year</strong>
+      Most policies last 12 months. Before renewal, the broker checks what has changed and shops the market again.
+      <div class="ex"><span class="k">Example</span><p>The plumbing business bought two more vans and hired three staff, so its cover needs to grow.</p></div></li>
+  </ol>
+</section>
+
+<section id="customers">
+  <h2><span class="n">6</span>Who uses a broker</h2>
+  <p>Most people buy simple insurance (car, home contents) online themselves. Brokers matter most when the risk is <strong>bigger, more complex or unusual</strong>.</p>
+  <div class="cols">
+    <div class="who"><span class="tag">Small business</span><h3>Most common</h3><p>Cafés, tradies, shops, small offices. They need several policies at once and have no time to compare.</p><p><em>Example: a hair salon needing building, contents, liability and staff cover.</em></p></div>
+    <div class="who"><span class="tag">Large company</span><h3>Complex needs</h3><p>Big risks that one insurer may not take alone, often spread over many insurers.</p><p><em>Example: a mining company insuring a $500m processing plant.</em></p></div>
+    <div class="who"><span class="tag">Individuals</span><h3>Less common</h3><p>People with higher-value or unusual items.</p><p><em>Example: a family with a prestige home, a boat and an art collection.</em></p></div>
+  </div>
+</section>
+
+<section id="money">
+  <h2><span class="n">7</span>How brokers make money</h2>
+  <p>Brokers mainly earn in two ways:</p>
+  <ul class="plain">
+    <li><strong>Commission:</strong> the insurer pays the broker a share of the premium, often somewhere around 10% to 20% for business insurance (it varies by product and insurer).</li>
+    <li><strong>Fees:</strong> the broker charges the customer directly for their advice and work, either on top of or instead of commission.</li>
+  </ul>
+  <div class="ex"><span class="k">Example: one café policy</span>
+    <div class="sum">
+      <div><b>$10,000</b><span>premium the café pays</span></div>
+      <div><b>$1,500</b><span>15% commission the insurer pays the broker</span></div>
+      <div><b>+ $300</b><span>broker fee charged to the café</span></div>
+    </div>
+    <p>The broker earns $1,800 for that client this year. Multiply across thousands of clients, and repeat every renewal.</p>
+  </div>
+  <p>Some brokers also earn interest by holding premiums briefly before passing them to insurers, or by lending customers the money to pay their premium in instalments ("premium funding").</p>
+  <div class="note"><span class="k">Why this matters:</span> brokers win when premiums rise (bigger commission) and when clients stay year after year. Because commission comes from the insurer, brokers in Australia must tell customers how they are paid, so the customer can judge any conflict of interest.</div>
+</section>
+
+<section id="why">
+  <h2><span class="n">8</span>Why not just buy direct?</h2>
+  <p>You can, and for simple things many people do. A broker earns their keep when:</p>
+  <ul class="plain">
+    <li><strong>The fine print matters.</strong> <em>Example:</em> two policies look the same, but one excludes damage from "gradual leaks". A broker spots that before you need it.</li>
+    <li><strong>A claim is disputed.</strong> <em>Example:</em> after a burglary, the insurer says the alarm was not set. The broker argues the case with evidence.</li>
+    <li><strong>The risk is too big or odd for one insurer.</strong> <em>Example:</em> insuring a concert tour or a cargo ship. The broker splits the risk across several insurers.</li>
+    <li><strong>Time.</strong> <em>Example:</em> a business owner would rather run the business than spend days comparing 15 policy wordings.</li>
+  </ul>
+</section>
+
+<section id="types">
+  <h2><span class="n">9</span>Types of brokers and related businesses</h2>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Type</th><th>Plain meaning</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Retail broker</td><td>Deals directly with the end customer.</td><td>A suburban broker who looks after 800 local businesses.</td></tr>
+      <tr><td>Wholesale broker</td><td>A "broker's broker". Finds cover for unusual risks, often at Lloyd's in London, on behalf of retail brokers.</td><td>A local broker can't find cover for a fireworks maker, so asks a wholesale broker in London.</td></tr>
+      <tr><td>Underwriting agency</td><td>Not a broker. A specialist allowed to write policies <em>on behalf of</em> an insurer, for a niche.</td><td>An agency that only insures vintage cars or medical clinics, using an insurer's money.</td></tr>
+      <tr><td>Online platform</td><td>A website where small businesses compare and buy cover quickly.</td><td>A tradie buys liability cover in 10 minutes online.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="aub">
+  <h2><span class="n">10</span>Where AUB Group fits</h2>
+  <p>AUB Group is one of the largest broking groups in Australia and New Zealand. It owns shares in many owner-run broking businesses and underwriting agencies, and gives them shared services such as IT, compliance and claims support. In the language above, it does almost every type in section 9:</p>
+  <ul class="plain">
+    <li><strong>Retail broking:</strong> a large network of local brokers in Australia, New Zealand and the UK.</li>
+    <li><strong>Wholesale and Lloyd's:</strong> Tysers, bought in 2022 for A$880m.</li>
+    <li><strong>Underwriting agencies:</strong> specialist agencies writing cover for insurers.</li>
+    <li><strong>Online platform:</strong> a 40% stake in BizCover, bought in 2020.</li>
+  </ul>
+  <p>Per the AUB interview brief, it places about <strong>A$11bn of premium</strong> a year for about <strong>1.6 million clients</strong>, and earns mostly commission and fees on that premium.</p>
+  <div class="ex"><span class="k">Where AI could help a broker (useful for the interview)</span>
+    <p><strong>Step 2, shopping the market:</strong> reading a client's documents and pre-filling a submission, instead of retyping it.</p>
+    <p><strong>Step 3, comparing quotes:</strong> lining up two 80-page policy wordings and flagging what is different, such as a flood exclusion.</p>
+  </div>
+</section>
+
+<section id="words">
+  <h2><span class="n">11</span>Words you will hear</h2>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Word</th><th>Meaning</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Premium</td><td>The price of the insurance.</td><td>$4,000 a year for the café.</td></tr>
+      <tr><td>Policy</td><td>The contract that says what is and isn't covered.</td><td>A 40-page business policy document.</td></tr>
+      <tr><td>Cover</td><td>What the policy protects.</td><td>"You have cover for theft but not flood."</td></tr>
+      <tr><td>Claim</td><td>Asking the insurer to pay for a loss.</td><td>Claiming $9,000 for car repairs.</td></tr>
+      <tr><td>Excess</td><td>The part of a claim you pay yourself.</td><td>The first $800 of the car repair.</td></tr>
+      <tr><td>Exclusion</td><td>Something the policy specifically doesn't cover.</td><td>"Damage from gradual leaks."</td></tr>
+      <tr><td>Underwriter</td><td>The person at the insurer who decides whether to accept a risk and at what price.</td><td>An underwriter declines a café with three recent fires.</td></tr>
+      <tr><td>Placement</td><td>Arranging a policy with an insurer.</td><td>"We placed the builder's cover with Insurer B."</td></tr>
+      <tr><td>Renewal</td><td>Re-arranging cover when the policy year ends.</td><td>The plumbing business's cover renews each 1 July.</td></tr>
+      <tr><td>Lloyd's</td><td>A London marketplace where groups of investors ("syndicates") insure big and unusual risks.</td><td>Insuring a satellite launch.</td></tr>
+      <tr><td>Reinsurance</td><td>Insurance that insurers buy for themselves.</td><td>An insurer protects itself against a huge cyclone season.</td></tr>
+      <tr><td>Hard / soft market</td><td>Hard: prices rising, cover harder to get. Soft: the opposite.</td><td>After big floods, premiums rise: a hard market.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<footer>
+  General explainer written for interview preparation. Example dollar amounts are made up for illustration. AUB Group figures come from the AUB Group brief on this site, which cites AUB's FY26 annual report and investor presentation. Not financial or insurance advice.
+</footer>
+</main>
+</body>
+</html>
