@@ -720,6 +720,15 @@ The likely trigger is the shift from activity measures (92% utilisation, 43 agen
 </ol>
 </div>
 </div>
+<h4>Is Nexus a data lake?</h4>
+<p><span class="badge limit">Caution</span> Not publicly disclosed. AUB calls it a <strong>data platform</strong>, not a data lake. <span class="badge infer">Strong Inference</span> "Unified" (joining data from businesses that each run their own systems) and "AI-ready" (governed, labelled data that Copilot and the agents can use safely) point to a lakehouse-style platform, likely with a raw data lake inside it.</p>
+<div class="tablewrap"><table>
+<tr><th>Term</th><th>In plain words</th><th>Fits "unified, AI-ready"?</th></tr>
+<tr><td>Data lake</td><td>One big store for raw data in any format (files, emails, PDFs, system exports), cleaned up later when needed.</td><td>Partly: holds everything, but raw data is not unified or AI-ready on its own.</td></tr>
+<tr><td>Data warehouse</td><td>Cleaned, structured tables (clients, policies, premiums, claims) built for reporting.</td><td>Partly: unified, but weaker on documents and messy text that AI needs.</td></tr>
+<tr><td>Lakehouse / data platform</td><td>Both together: raw storage plus governed, modelled tables, with security and lineage (tracing where each number came from).</td><td><strong>Best fit.</strong> Snowflake, Databricks and Microsoft Fabric work this way; Fabric would suit AUB's Microsoft 365 setup, but that is a guess.</td></tr>
+</table></div>
+<p><strong>In the interview:</strong> don't call it a data lake. Ask: <em>"What is Nexus built on, and is it mainly bringing structured policy and claims data together, or also documents like submissions and policy wordings?"</em> Structured-data use cases need the warehouse layer; document-heavy ones (reading submissions, comparing wordings) need the documents stored too. Link it to Story 5: the Snowflake and DBT work on governed layers and lineage at Cisco.</p>
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734x1b3r8fr96.pdf" title="FY26 Results Investor Presentation, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Investor Presentation</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://announcements.asx.com.au/asxpdf/20260825/pdf/0734vcfysmsgmr.pdf" title="FY26 Annual Report and Appendix 4E, AUB Group via ASX, 25 Aug 2026">AUB: FY26 Annual Report</a> <span class="sep">|</span> Master Resume (4 Nov 2026)</div>
 </section>
 
