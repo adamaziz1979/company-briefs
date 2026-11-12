@@ -104,6 +104,15 @@ h2{font-size:1.15rem;margin:0 0 12px}
 .card button{min-height:44px;border-radius:8px;border:1px solid var(--line);background:var(--chip);color:var(--chip-ink);
   font-weight:600;font-size:.88rem;padding:8px 12px;cursor:pointer;text-align:left}
 .card button.alt{background:transparent;color:var(--muted);font-weight:400}
+.explainers{margin-top:30px}
+.explainers p.sub{color:var(--muted);margin:-6px 0 12px;font-size:.92rem}
+.xcards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.xcard{all:unset;box-sizing:border-box;display:block;width:100%;cursor:pointer;background:var(--paper);border:1px solid var(--line);
+  border-left:5px solid var(--accent);border-radius:12px;padding:14px 16px;min-height:44px}
+.xcard:hover{border-color:var(--accent)}
+.xcard:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.xcard b{display:block;font-size:1.02rem;margin-bottom:2px}
+.xcard span{display:block;font-size:.88rem;color:var(--muted)}
 .note{margin-top:26px;font-size:.85rem;color:var(--muted);max-width:75ch}
 .err{background:#faecec;color:#8b2f2f;border:1px solid #e3b5b5;border-radius:8px;padding:10px 12px;margin:0 0 16px}
 @media (min-width:768px){
@@ -146,6 +155,11 @@ h2{font-size:1.15rem;margin:0 0 12px}
         </div>
       </div>
     </div>
+    <section class="explainers" aria-labelledby="explainersTitle">
+      <h2 id="explainersTitle">Explainers</h2>
+      <p class="sub">Plain-English background on the industries behind the briefs.</p>
+      <ul class="xcards" id="xcards"></ul>
+    </section>
     <p class="note">Facts are cited inside each brief and labelled Observed Fact, Strong Inference or Working Hypothesis. Share price data is for context only and is not investment advice. "First version" documents are earlier drafts, kept for reference. Case studies and analyses sit under their company.</p>
   </section>
   <iframe id="viewer" title="Selected company brief" hidden></iframe>
@@ -170,10 +184,15 @@ h2{font-size:1.15rem;margin:0 0 12px}
     {id:"compare-club",company:"Compare Club",role:"Role not named in the briefing",label:"Executive briefing",date:"14 Sep 2026",file:"briefs/compare-club.html"},
     {id:"go1",company:"Go1",role:"Director, Data Intelligence",label:"Executive brief",date:"18 Jul 2026",file:"briefs/go1.html"}
   ];
+  // Industry explainers: background reading, shown in their own home section and dropdown group (not counted as briefs)
+  var EXPLAINERS=[
+    {id:"insurance-brokerage",title:"What is insurance brokerage?",blurb:"Brokers, insurers and how the money flows, with simple examples. Background for AUB Group.",date:"12 Nov 2026",file:"briefs/insurance-brokerage.html"}
+  ];
   var sel=document.getElementById('briefSelect'),viewer=document.getElementById('viewer'),
       home=document.getElementById('home'),newTab=document.getElementById('newTab');
   function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
-  function byId(id){for(var i=0;i<BRIEFS.length;i++)if(BRIEFS[i].id===id)return BRIEFS[i];return null}
+  function byId(id){for(var i=0;i<BRIEFS.length;i++)if(BRIEFS[i].id===id)return BRIEFS[i];
+    for(var j=0;j<EXPLAINERS.length;j++)if(EXPLAINERS[j].id===id)return EXPLAINERS[j];return null}
 
   // Dropdown: home first, then one group per company
   var companies=[];BRIEFS.forEach(function(b){if(companies.indexOf(b.company)<0)companies.push(b.company)});
@@ -183,7 +202,14 @@ h2{font-size:1.15rem;margin:0 0 12px}
     BRIEFS.filter(function(b){return b.company===c}).forEach(function(b){
       h+='<option value="'+esc(b.id)+'">'+esc(c+': '+b.label+' ('+b.date+')')+'</option>';});
     h+='</optgroup>';});
+  h+='<optgroup label="Explainers">';
+  EXPLAINERS.forEach(function(x){h+='<option value="'+esc(x.id)+'">'+esc(x.title+' ('+x.date+')')+'</option>'});
+  h+='</optgroup>';
   sel.innerHTML=h;
+  document.getElementById('xcards').innerHTML=EXPLAINERS.map(function(x){
+    return '<li><button type="button" class="xcard" data-id="'+esc(x.id)+'"><b>'+esc(x.title)+'</b><span>'+esc(x.blurb)+'</span></button></li>'}).join('');
+  document.getElementById('xcards').addEventListener('click',function(e){
+    var t=e.target.closest('button[data-id]');if(t)show(t.getAttribute('data-id'),true);});
 
   // Home: counts and cards
   var latest=BRIEFS.filter(function(b){return !b.first});
@@ -286,7 +312,7 @@ h2{font-size:1.15rem;margin:0 0 12px}
       home.hidden=true;viewer.hidden=false;
       if(viewer.getAttribute('src')!==b.file)viewer.setAttribute('src',b.file);
       newTab.href=b.file;newTab.hidden=false;sel.value=b.id;
-      document.title=b.company+' brief | Company Briefs';
+      document.title=(b.company?b.company+' brief':b.title)+' | Company Briefs';
     }
     if(push){
       try{history.pushState({id:id||''},'',id?('?brief='+encodeURIComponent(id)):location.pathname);}catch(err){}
