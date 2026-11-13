@@ -267,6 +267,48 @@ html[data-theme="dark"] svg [fill="#8b2f2f"]{fill:#ff9d8f}
 html[data-theme="dark"] svg [stroke="#fff"]{stroke:#1c2024}
 @media print{html[data-theme="dark"]{--ink:#17191c;--muted:#626a73;--paper:#fff;--bg:#fff;--line:#dfe3e7;--soft:#f8f9fa}}
 </style>
+<style id="journey-style">
+/* Data and AI journey: visual timeline */
+.jt{margin:18px 0 8px;border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px;background:var(--soft)}
+.jt-title{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 12px}
+.jt-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));column-gap:10px}
+.jt-band{border-radius:8px;padding:7px 10px;font-size:12px;font-weight:700;line-height:1.25;margin-bottom:14px}
+.jt-band span{display:block;font-weight:400;font-size:11px;opacity:.85}
+.jt-c1{background:var(--line);color:var(--ink)}
+.jt-c2{background:var(--bluebg);color:var(--blue);box-shadow:inset 0 0 0 1px var(--blue)}
+.jt-c3{background:var(--gold2);color:var(--ink);box-shadow:inset 0 0 0 1px var(--gold)}
+.jt-track{grid-column:1/-1;height:4px;border-radius:2px;margin:0 0 -11px;
+  background:linear-gradient(90deg,#9aa2aa 0 12.5%,var(--blue) 12.5% 75%,var(--gold) 75% 100%)}
+.jt-ms{list-style:none;margin:0;padding:0;display:contents}
+.jt-m{position:relative;padding-top:20px;font-size:12.5px;line-height:1.35}
+.jt-m::before{content:"";position:absolute;top:0;left:0;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--blue);box-sizing:border-box}
+.jt-m.c1::before{border-color:#9aa2aa}
+.jt-m.c3::before{border-color:var(--gold);background:var(--gold)}
+.jt-m.you::before{width:18px;height:18px;top:-2px;left:-2px;box-shadow:0 0 0 4px var(--gold2)}
+.jt-m time{display:block;font-weight:700;font-size:12px;color:var(--muted);margin-bottom:2px}
+.jt-m b{display:block;font-size:13px;margin-bottom:2px}
+.jt-m.you b{color:var(--gold)}
+.jt-stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:16px}
+.jt-stats div{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:9px 10px}
+.jt-stats b{display:block;font-size:20px;line-height:1.1;font-variant-numeric:tabular-nums}
+.jt-stats span{font-size:11.5px;color:var(--muted)}
+.jt-stats .gap{border:2px dashed var(--gold);background:var(--gold2)}
+.jt-note{font-size:11.5px;color:var(--muted);margin:10px 0 0}
+@media (max-width:760px){
+  .jt-grid{display:block}
+  .jt-band,.jt-track{display:none}
+  .jt-ms{display:block;border-left:3px solid var(--line);margin-left:6px;padding-left:0}
+  .jt-m{padding:0 0 14px 22px}
+  .jt-m::before{top:2px;left:-9px}
+  .jt-m.you::before{left:-11px;top:0}
+  .jt-m .ch{display:inline-block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;border-radius:4px;padding:1px 6px;margin-bottom:3px}
+  .jt-m.c1 .ch{background:var(--line)}.jt-m.c2 .ch{background:var(--bluebg);color:var(--blue)}.jt-m.c3 .ch{background:var(--gold2)}
+  .jt-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .jt-stats .gap{grid-column:1/-1}
+}
+@media (min-width:761px){.jt-m .ch{display:none}}
+@media print{.jt{break-inside:avoid}}
+</style>
 </head>
 <body>
 <main>
@@ -276,7 +318,7 @@ html[data-theme="dark"] svg [stroke="#fff"]{stroke:#1c2024}
   <h1><span>AUB Group</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">AI Delivery Lead (Position Description title: AI Delivery &amp; Transformation Lead), AUB Group, Sydney, hybrid, permanent, via Talenza. First interview Monday 16 November 2026, 5:30pm | Executive infographic, Stage 1 executive briefing, compensation and headcount, Stage 2 company dossier (sections 1 to 11), role deconstruction and Stage 3 interview preparation (recruiter brief, panel, answer bank) with the top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 5 November 2026 (version 7, updated 12 November 2026)</span>
+    <span>Prepared: 5 November 2026 (version 8, updated 13 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -334,7 +376,35 @@ html[data-theme="dark"] svg [stroke="#fff"]{stroke:#1c2024}
 <h2>AUB's data and AI journey</h2>
 <p class="lead">AUB's data and AI story has three chapters. First, it <strong>modernised the plumbing</strong>: outsourced infrastructure and digital platforms in the businesses it bought. Then BizCover and Tysers <strong>ran ahead with their own AI and data work</strong>. Most recently (reported in the FY26 results) the group has <strong>pulled it together</strong> with one data platform (Nexus), one AI interface (Microsoft 365 Copilot) and group AI governance. In August 2026 AUB told the market the foundations are done and the next step is <strong>impact inside broker, underwriting and claims workflows</strong>. Your role is that next step.</p>
 
-<h3>Timeline</h3>
+<figure class="jt" aria-labelledby="jtCap">
+<p class="jt-title" id="jtCap">AUB's data and AI journey at a glance, 2017 to 2026</p>
+<div class="jt-grid">
+<div class="jt-band jt-c1" style="grid-column:1/2">1. Fix the basics<span>infrastructure</span></div>
+<div class="jt-band jt-c2" style="grid-column:2/7">2. Divisions run ahead<span>BizCover, Tysers and Prestige build their own data and AI</span></div>
+<div class="jt-band jt-c3" style="grid-column:7/9">3. Pull together, then impact<span>one platform, one pipeline</span></div>
+<div class="jt-track" aria-hidden="true"></div>
+<ol class="jt-ms">
+<li class="jt-m c1"><span class="ch">1. Fix the basics</span><time>Nov 2017</time><b>Infrastructure outsourced</b>Data centre and support moved to a specialist provider.</li>
+<li class="jt-m c2"><span class="ch">2. Divisions run ahead</span><time>Feb 2020</time><b>BizCover stake</b>40% of the group's first digital SME platform.</li>
+<li class="jt-m c2"><span class="ch">2. Divisions run ahead</span><time>Aug 2023</time><b>Tysers Tconnect</b>Broking platform on one common data set.</li>
+<li class="jt-m c2"><span class="ch">2. Divisions run ahead</span><time>Dec 2025</time><b>"AI Everywhere"</b>BizCover AI platform; disputes down up to 43%.</li>
+<li class="jt-m c2"><span class="ch">2. Divisions run ahead</span><time>Jan 2026</time><b>CoverNet</b>Arrives with Prestige (UK) as an AI delivery engine.</li>
+<li class="jt-m c2"><span class="ch">2. Divisions run ahead</span><time>Mar 2026</time><b>Quotes in ChatGPT</b>BizCover quotes from 10 insurers inside ChatGPT.</li>
+<li class="jt-m c3"><span class="ch">3. Pull together</span><time>Aug 2026</time><b>Foundations to Impact</b>Copilot, Nexus and AI governance in place.</li>
+<li class="jt-m c3 you"><span class="ch">3. Pull together</span><time>Nov 2026</time><b>The AI Delivery Lead</b>Turn the 40+ pipeline into measured value.</li>
+</ol>
+</div>
+<div class="jt-stats" aria-label="FY26 AI scorecard">
+<div><b>92%</b><span>Copilot utilisation</span></div>
+<div><b>43</b><span>active AI agents</span></div>
+<div><b>40+</b><span>solutions in the pipeline</span></div>
+<div><b>710</b><span>hours released in 30 days</span></div>
+<div class="gap"><b>A$ ?</b><span>benefits signed off: not yet reported. <strong>This is the role.</strong></span></div>
+</div>
+<p class="jt-note">FY26 scorecard from the FY26 Investor Presentation (25 Aug 2026). Spacing is by event, not to scale. Detail and evidence labels in the table below.</p>
+</figure>
+
+<h3>Timeline in detail</h3>
 <div class="tablewrap"><table>
 <tr><th>When</th><th>What happened</th><th>Evidence</th><th>Why it matters for the role</th></tr>
 <tr><td>Nov 2017</td><td>Group starts outsourcing its data centre and business support to a specialist provider, for performance, security and lower cost (AGM chair address).</td><td><span class="badge fact">Fact</span></td><td>Infrastructure is bought in, not built: expect a partner-led model (Microsoft, vendors, offshore delivery).</td></tr>
@@ -1244,7 +1314,7 @@ Evidence is within one global IT function.<br><em>Framing:</em> "My scale was on
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Company figures and pay in AUD unless stated (NZ Broking in NZD). "Underlying" figures are AUB's non-IFRS measures. Share price data is for context only and is not investment advice. The client is not named in the job ad; Talenza confirmed it is AUB Group on 5 November 2026. Prepared 5 November 2026 for Adam Aziz's interview preparation. Version 7 (12 November 2026): "AUB's data and AI journey" section added after Insurance 101. Version 6 (12 November 2026): whole brief reviewed against the latest emails and the interview invite; confirmed client, pay, reporting line and Group CIO updated throughout; hypotheses H1 and H5 marked confirmed; Key contacts table added (panel and organiser). Version 5 (12 November 2026): "Insurance 101" section added. Version 4 (12 November 2026): "Interview prep sheet" section added with Kieran Waite's prep notes word for word. Version 3 (12 November 2026): Stage 3 updated with interview logistics, Kieran Waite's prep notes, the Position Description (Draft v0.1), the panel and an answer bank for the example questions. Version 2 (5 November 2026): "What is the Nexus Platform?" section added to Stage 2. Version 1 (5 November 2026): first issue.</p>
+<p>Company figures and pay in AUD unless stated (NZ Broking in NZD). "Underlying" figures are AUB's non-IFRS measures. Share price data is for context only and is not investment advice. The client is not named in the job ad; Talenza confirmed it is AUB Group on 5 November 2026. Prepared 5 November 2026 for Adam Aziz's interview preparation. Version 8 (13 November 2026): visual timeline infographic added to "AUB's data and AI journey"; "Is Nexus a data lake?" explainer added to the Nexus section. Version 7 (12 November 2026): "AUB's data and AI journey" section added after Insurance 101. Version 6 (12 November 2026): whole brief reviewed against the latest emails and the interview invite; confirmed client, pay, reporting line and Group CIO updated throughout; hypotheses H1 and H5 marked confirmed; Key contacts table added (panel and organiser). Version 5 (12 November 2026): "Insurance 101" section added. Version 4 (12 November 2026): "Interview prep sheet" section added with Kieran Waite's prep notes word for word. Version 3 (12 November 2026): Stage 3 updated with interview logistics, Kieran Waite's prep notes, the Position Description (Draft v0.1), the panel and an answer bank for the example questions. Version 2 (5 November 2026): "What is the Nexus Platform?" section added to Stage 2. Version 1 (5 November 2026): first issue.</p>
 </footer>
 
 </main>
