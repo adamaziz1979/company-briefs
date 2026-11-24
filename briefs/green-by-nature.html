@@ -207,6 +207,23 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 .st.ga{background:var(--greenbg);color:var(--green)}
 .st.pv{background:var(--orangebg);color:var(--orange)}
 @media (max-width:900px){.cfgrid,.cfpick{grid-template-columns:1fr}}
+
+/* Tech stacks compared */
+.sksum{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 6px}
+.skp{display:inline-block;font-size:11.5px;font-weight:600;border-radius:999px;padding:2px 9px;white-space:nowrap}
+.skp.id{background:var(--greenbg);color:var(--green)}
+.skp.nw{background:var(--bluebg);color:var(--blue)}
+.skp.tc{background:var(--orangebg);color:var(--orange)}
+.skg{display:grid;grid-template-columns:1fr 170px 1fr;gap:10px 12px;font-size:14px;line-height:1.4;margin-top:6px}
+.skg .hd{font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:6px 2px 2px}
+.skg .hd.mid{text-align:center}
+.skg .tier{grid-column:1/-1;margin-top:12px;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.skg .tier::after{content:"";flex:1;height:1px;background:var(--line)}
+.skc{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 11px;min-width:0;overflow-wrap:anywhere}
+.skc.id{border-color:var(--green)}
+.skm{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;font-weight:600;font-size:13.5px}
+.skr{display:contents}
+@media (max-width:700px){.skg{grid-template-columns:1fr 1fr}.skr{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}.skm{grid-column:1/-1;order:-1;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;margin-top:4px}.skg .hd.mid{display:none}}
 /* Copilot infographics */
 .cpi{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:18px 18px 14px;margin:12px 0 16px}
 .cpi .cpi-t{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 12px}
@@ -267,6 +284,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 }
 
 
+
 /* ===== Dark theme (data-theme="dark" from the briefs page, or device setting) ===== */
 @media screen{
 html[data-theme="dark"]{--ink:#e7ece9;--muted:#a7b3ac;--paper:#111815;--bg:#0a0f0d;--line:#2b3832;--soft:#1c2723;--gold2:#1c2a15;--chart:#8fd14f;--green:#8fd4a8;--greenbg:#143021;--blue:#9cc7ee;--bluebg:#13263a;--orange:#f0c46a;--orangebg:#33280f;--red:#f0a3a3;--redbg:#341b1b;color-scheme:dark}
@@ -287,7 +305,8 @@ html[data-theme="dark"] .refs .sep{color:#8d9a93}
 html[data-theme="dark"] .footer{color:var(--muted)}
 html[data-theme="dark"] .notice{background:#18240f;border-color:#3d5a26}
 html[data-theme="dark"] .qbox, html[data-theme="dark"] .story, html[data-theme="dark"] .chartbox{background:#16201c}
-html[data-theme="dark"] .chartbox svg [fill="#5c646d"], html[data-theme="dark"] .chartbox svg [fill="#626a73"]{fill:#a7b3ac}
+html[data-theme="dark"] .chartbox svg [fill="#5c646d"], html[data-theme="dark"] .chartbox svg [fill="#626a73"], html[data-theme="dark"] .chartbox svg [fill="#6b737c"]{fill:#a7b3ac}
+html[data-theme="dark"] .chartbox svg [stroke="#202428"]{stroke:#dfe3e7}
 html[data-theme="dark"] .chartbox svg [fill="#17191c"]{fill:#e7ece9}
 html[data-theme="dark"] .chartbox svg [stroke="#eceff1"], html[data-theme="dark"] .chartbox svg [stroke="#cfd5da"]{stroke:#2b3832}
 html[data-theme="dark"] .barbg{background:var(--line)}
@@ -295,7 +314,7 @@ html[data-theme="dark"] .stock-ranges button{background:#16201c;color:var(--ink)
 html[data-theme="dark"] .chartbox svg [fill="#3e7a1c"]{fill:#8fd14f}
 html[data-theme="dark"] .chartbox svg [stroke="#3e7a1c"]{stroke:#8fd14f}
 html[data-theme="dark"] .cpi{background:#0e1512}
-html[data-theme="dark"] .fbst, html[data-theme="dark"] .fbbar.orc, html[data-theme="dark"] .fbmr, html[data-theme="dark"] .tkc, html[data-theme="dark"] .cfc, html[data-theme="dark"] .cplane, html[data-theme="dark"] .cpstack span, html[data-theme="dark"] .cprow, html[data-theme="dark"] .cpsum div{background:#16201c}
+html[data-theme="dark"] .fbst, html[data-theme="dark"] .fbbar.orc, html[data-theme="dark"] .fbmr, html[data-theme="dark"] .tkc, html[data-theme="dark"] .cfc, html[data-theme="dark"] .cplane, html[data-theme="dark"] .cpstack span, html[data-theme="dark"] .cprow, html[data-theme="dark"] .cpsum div, html[data-theme="dark"] .skc{background:#16201c}
 html[data-theme="dark"] .fbmr.hd{background:none}
 html[data-theme="dark"] .tkc.tk2{background:var(--bluebg)}
 html[data-theme="dark"] .tkc.tk3{background:var(--gold2)}
@@ -329,7 +348,8 @@ html:not([data-theme="light"]) .refs .sep{color:#8d9a93}
 html:not([data-theme="light"]) .footer{color:var(--muted)}
 html:not([data-theme="light"]) .notice{background:#18240f;border-color:#3d5a26}
 html:not([data-theme="light"]) .qbox, html:not([data-theme="light"]) .story, html:not([data-theme="light"]) .chartbox{background:#16201c}
-html:not([data-theme="light"]) .chartbox svg [fill="#5c646d"], html:not([data-theme="light"]) .chartbox svg [fill="#626a73"]{fill:#a7b3ac}
+html:not([data-theme="light"]) .chartbox svg [fill="#5c646d"], html:not([data-theme="light"]) .chartbox svg [fill="#626a73"], html:not([data-theme="light"]) .chartbox svg [fill="#6b737c"]{fill:#a7b3ac}
+html:not([data-theme="light"]) .chartbox svg [stroke="#202428"]{stroke:#dfe3e7}
 html:not([data-theme="light"]) .chartbox svg [fill="#17191c"]{fill:#e7ece9}
 html:not([data-theme="light"]) .chartbox svg [stroke="#eceff1"], html:not([data-theme="light"]) .chartbox svg [stroke="#cfd5da"]{stroke:#2b3832}
 html:not([data-theme="light"]) .barbg{background:var(--line)}
@@ -337,7 +357,7 @@ html:not([data-theme="light"]) .stock-ranges button{background:#16201c;color:var
 html:not([data-theme="light"]) .chartbox svg [fill="#3e7a1c"]{fill:#8fd14f}
 html:not([data-theme="light"]) .chartbox svg [stroke="#3e7a1c"]{stroke:#8fd14f}
 html:not([data-theme="light"]) .cpi{background:#0e1512}
-html:not([data-theme="light"]) .fbst, html:not([data-theme="light"]) .fbbar.orc, html:not([data-theme="light"]) .fbmr, html:not([data-theme="light"]) .tkc, html:not([data-theme="light"]) .cfc, html:not([data-theme="light"]) .cplane, html:not([data-theme="light"]) .cpstack span, html:not([data-theme="light"]) .cprow, html:not([data-theme="light"]) .cpsum div{background:#16201c}
+html:not([data-theme="light"]) .fbst, html:not([data-theme="light"]) .fbbar.orc, html:not([data-theme="light"]) .fbmr, html:not([data-theme="light"]) .tkc, html:not([data-theme="light"]) .cfc, html:not([data-theme="light"]) .cplane, html:not([data-theme="light"]) .cpstack span, html:not([data-theme="light"]) .cprow, html:not([data-theme="light"]) .cpsum div, html:not([data-theme="light"]) .skc{background:#16201c}
 html:not([data-theme="light"]) .fbmr.hd{background:none}
 html:not([data-theme="light"]) .tkc.tk2{background:var(--bluebg)}
 html:not([data-theme="light"]) .tkc.tk3{background:var(--gold2)}
@@ -360,9 +380,9 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <a class="site-link" href="https://greenbynature.com.au/" target="_blank" rel="noopener" title="Green by Nature official website (Australia)">greenbynature.com.au <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 3 9M9 7.5v3H1.5V3h3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
   <div class="eyebrow">Executive interview preparation • Sydney, Australia</div>
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
-  <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
+  <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Cisco and GbN stacks compared, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 9, updated 24 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 10, updated 24 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -374,6 +394,7 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <a href="#stage1">Executive briefing</a>
   <a href="#pay">Pay &amp; headcount</a>
   <a href="#tech">Tech stack</a>
+  <a href="#stacks">Stacks compared</a>
   <a href="#stage2">Company dossier</a>
   <a href="#extras">Extras</a>
   <a href="#role">Role</a>
@@ -568,6 +589,43 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 </ol>
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://www.dyflex.com.au/case-study/sap-s-4hana-cloud-streamlined-disparate-application-landscapes-into-one-core-erp-system" title="SAP S/4HANA Cloud streamlined disparate application landscapes into one core ERP system, DyFlex Solutions, about Sep 2024">DyFlex: GbN SAP case study</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.sap.com/assetdetail/2024/09/ccdea69d-d77e-0010-bca6-c68f7e60039b.html" title="Green By Nature: Aligning processes, people and systems with SAP S/4HANA Cloud Public Edition, SAP, 23 Sep 2024">SAP: GbN success story</a> <span class="sep">|</span> Julian Tan LinkedIn (search listing, 23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://freehire.me/jobs/business-analyst-green-by-nature-ki2oh4rh" title="Business Analyst, Green by Nature, Mascot, posted 11 Sep 2026, closed 24 Oct 2026 (Freehire)">GbN: Business Analyst ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.talent.com/view?id=641833509636868111" title="Head of Payroll, Systems Transformation, Green by Nature, Talent.com, 16 Oct 2026">Talent.com: Head of Payroll</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.livehire.com/careers/greenbynature/jobs" title="Green by Nature careers, LiveHire, accessed 23 Nov 2026">LiveHire: GbN careers</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://thefrontgarden.buzzsprout.com/1403518/episodes/18007014-scaling-green-inside-green-by-nature-s-tech-driven-growth-the-front-garden-ep135" title="Scaling Green: Inside Green by Nature's Tech-Driven Growth, The Front Garden EP135, Landscaping Victoria, 27 Nov 2025">Front Garden: EP135</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.ziprecruiter.nz/jobs/642179311-nz-service-manager-at-green-by-nature" title="NZ Service Manager, Green by Nature, ZipRecruiter NZ, 2026">ZipRecruiter: NZ Service Manager</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/96034614" title="Head of Data, Insights &amp; AI, Boyd Recruitment, SEEK job 96034614, posted 21 Nov 2026">SEEK: Boyd Recruitment ad</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </section>
+
+<section id="stacks">
+<h2>Tech Stacks Compared</h2>
+<p>The Cisco stack you ran, next to the Green by Nature stack, layer by layer. The middle column is the job both layers do. Most of the work is the same; the tools change from Snowflake, DBT and ThoughtSpot to Fabric, OneLake and Copilot.</p>
+<div class="sksum"><span class="skp id">Identical: 3</span><span class="skp nw">Same job, new tool: 10</span><span class="skp tc">To confirm: 2</span></div>
+<div class="skg">
+<div class="hd">Cisco (what you ran)</div><div class="hd mid">Shared job</div><div class="hd">Green by Nature</div>
+<div class="tier">Sources</div>
+<div class="skr"><div class="skc">Workday, Intune, Jamf, Meraki</div><div class="skm">Systems of record<span class="skp nw">Same job, new tool</span></div><div class="skc">SAP S/4HANA, new WFM and time and attendance, payroll</div></div>
+<div class="skr"><div class="skc">SAP BusinessObjects</div><div class="skm">ERP reporting<span class="skp nw">Same job, new tool</span></div><div class="skc">S/4HANA reporting (the SAP family you know)</div></div>
+<div class="tier">Data platform</div>
+<div class="skr"><div class="skc">Snowflake pipelines</div><div class="skm">Ingestion<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric pipelines, Copy job, mirroring</div></div>
+<div class="skr"><div class="skc">Snowflake</div><div class="skm">Storage<span class="skp tc">To confirm</span></div><div class="skc">Existing data lake or warehouse, or OneLake</div></div>
+<div class="skr"><div class="skc">DBT models and tests</div><div class="skm">Transformation<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric notebooks, materialised lake views, T-SQL</div></div>
+<div class="skr"><div class="skc">DBT with GitHub releases</div><div class="skm">Release control<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric Git integration and deployment pipelines</div></div>
+<div class="tier">Governance</div>
+<div class="skr"><div class="skc">Alation, then DBT Docs</div><div class="skm">Catalogue and lineage<span class="skp nw">Same job, new tool</span></div><div class="skc">OneLake catalog, lineage view, Purview</div></div>
+<div class="skr"><div class="skc">AWS S3 data sharing</div><div class="skm">Data sharing<span class="skp nw">Same job, new tool</span></div><div class="skc">OneLake shortcuts</div></div>
+<div class="tier">Insights and AI</div>
+<div class="skr"><div class="skc id">Power BI</div><div class="skm">Dashboards<span class="skp id">Identical</span></div><div class="skc id">Power BI</div></div>
+<div class="skr"><div class="skc">ThoughtSpot and Spotter</div><div class="skm">Ask your data<span class="skp nw">Same job, new tool</span></div><div class="skc">Copilot in Power BI, Fabric data agent</div></div>
+<div class="skr"><div class="skc">Webex AI assistant</div><div class="skm">AI assistant<span class="skp nw">Same job, new tool</span></div><div class="skc">Copilot Studio agent in Teams</div></div>
+<div class="tier">Operations</div>
+<div class="skr"><div class="skc">Service desk tripwires</div><div class="skm">Alerts<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric Activator, Power BI alerts</div></div>
+<div class="skr"><div class="skc id">Power Automate</div><div class="skm">Automation<span class="skp id">Identical</span></div><div class="skc id">Power Automate</div></div>
+<div class="skr"><div class="skc id">SharePoint</div><div class="skm">Knowledge<span class="skp id">Identical</span></div><div class="skc id">SharePoint</div></div>
+<div class="skr"><div class="skc">Splunk OpenTelemetry</div><div class="skm">Telemetry<span class="skp tc">To confirm</span></div><div class="skc">Possibly mower or EV fleet data <span class="badge hyp">Working Hypothesis</span></div></div>
+</div>
+<div class="callout"><strong>How to say it at interview.</strong> "I've run every layer of this stack. Power BI, Power Automate and SharePoint are the same tools. For the rest, I've done the same job on Snowflake, DBT and ThoughtSpot, and Fabric, OneLake and Copilot do that job in the Microsoft world."</div>
+<h4>Confirm at interview</h4>
+<ol class="qlist">
+<li>Storage: does the current data lake or warehouse stay, or is a move to OneLake planned?</li>
+<li>Telemetry: is there any mower, vehicle or device data the business wants to use?</li>
+</ol>
+<div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> Tech Stack section above <span class="sep">|</span> Intro to Copilot and Fabric section below</div>
+</section>
+
 
 <!-- ============ STAGE 2 ============ -->
 <section id="stage2">
@@ -1271,7 +1329,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
