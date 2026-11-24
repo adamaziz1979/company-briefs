@@ -132,6 +132,68 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 .iproof em{display:block;font-style:normal;color:var(--gold);font-weight:600;margin-top:4px;font-size:11px}
 .iq{margin-top:18px;border:2px solid var(--gold);border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
 
+
+/* Fabric pipeline infographic */
+.fbflow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.fbst{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;position:relative;display:flex;flex-direction:column;gap:8px}
+.fbst:not(:last-child)::after{content:"";position:absolute;right:-11px;top:34px;width:10px;height:10px;border-top:3px solid var(--chart);border-right:3px solid var(--chart);transform:rotate(45deg)}
+.fbst h5{margin:0;font-size:14px;font-weight:700}
+.fbst .lay{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;padding:3px 9px;align-self:flex-start}
+.lay.src{background:var(--soft);color:var(--muted);border:1px solid var(--line)}
+.lay.br{background:#f6e7d8;color:#7a4a1c}
+.lay.si{background:#eceff2;color:#4a5560}
+.lay.go{background:#fff3c4;color:#6e5600}
+.lay.sv{background:var(--deep);color:var(--gold)}
+.fbst p{margin:0;font-size:12.5px;line-height:1.4;color:var(--ink)}
+.fbst ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px}
+.fbst li{font-size:12.5px;line-height:1.3;background:var(--soft);border-radius:7px;padding:6px 8px}
+.fbst li strong{display:block;font-size:12.5px}
+.sk{display:inline-block;font-size:10.5px;font-weight:600;border-radius:999px;padding:1px 7px;margin:3px 3px 0 0}
+.sk.dd{background:var(--greenbg);color:var(--green)}
+.sk.sq{background:var(--bluebg);color:var(--blue)}
+.sk.py{background:var(--orangebg);color:var(--orange)}
+.fbbar{margin-top:10px;border-radius:10px;padding:9px 12px;font-size:12.5px}
+.fbbar.orc{background:#fff;border:1px dashed var(--chart)}
+.fbbar.one{background:var(--deep);color:#e9f5dc}
+.fbbar.one b{color:var(--gold)}
+.fbkey{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted);margin:0 0 10px}
+.fbmx{display:grid;gap:6px}
+.fbmr{display:grid;grid-template-columns:1.6fr repeat(3,92px) 1.6fr;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px}
+.fbmr.hd{background:none;border:0;padding:0 12px;font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.fbmr .c{text-align:center}
+.dot{display:inline-block;width:14px;height:14px;border-radius:50%}
+.dot.f{background:var(--chart)}
+.dot.p{background:linear-gradient(90deg,var(--chart) 50%,var(--line) 50%)}
+.dot.n{background:var(--line);width:8px;height:8px}
+.fbmr .nt{font-size:12px;color:var(--muted)}
+@media (max-width:900px){.fbflow{grid-template-columns:1fr}.fbst:not(:last-child)::after{right:50%;top:auto;bottom:-11px;transform:translateX(50%) rotate(135deg)}}
+@media (max-width:560px){.fbmr{grid-template-columns:1.3fr repeat(3,44px)}.fbmr .nt{grid-column:1/-1}.fbmr.hd .nt{display:none}}
+
+/* Changes box */
+.chgbox{background:var(--redbg);border:1px solid #efc9c9;border-left:5px solid var(--red);border-radius:10px;padding:10px 16px 10px 12px;margin:8px 0 12px}
+.chgbox ul{margin:0;padding-left:20px}
+.chgbox li{margin:6px 0}
+/* Copilot family cards */
+.cfpick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.cfpick div{background:var(--deep);color:#e9f5dc;border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.35}
+.cfpick b{display:block;color:var(--gold);font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px}
+.cftier{margin:14px 0 6px;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.cftier::after{content:"";flex:1;height:1px;background:var(--line)}
+.cfgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cfgrid.one{grid-template-columns:1fr}
+.cfc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;display:grid;grid-template-columns:44px 1fr;gap:4px 12px;align-content:start}
+.cfc .ic{grid-row:1/3;width:44px;height:44px;border-radius:12px;background:var(--gold2);display:flex;align-items:center;justify-content:center}
+.cfc .ic svg{width:24px;height:24px;stroke:var(--deep);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cfc h4{margin:0;font-size:15px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.cfc .pl{margin:0;font-size:13px;color:var(--muted)}
+.cfc dl{grid-column:1/-1;margin:8px 0 0;display:grid;grid-template-columns:62px 1fr;gap:6px 10px;font-size:13px;line-height:1.4}
+.cfc dt{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);padding-top:2px}
+.cfc dd{margin:0}
+.cfc dd.gbn{background:var(--gold2);border-radius:7px;padding:5px 8px}
+.st{font-size:10.5px;font-weight:600;border-radius:999px;padding:2px 8px}
+.st.ga{background:var(--greenbg);color:var(--green)}
+.st.pv{background:var(--orangebg);color:var(--orange)}
+@media (max-width:900px){.cfgrid,.cfpick{grid-template-columns:1fr}}
 /* Copilot infographics */
 .cpi{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:18px 18px 14px;margin:12px 0 16px}
 .cpi .cpi-t{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 12px}
@@ -200,7 +262,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 6, updated 24 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 7, updated 24 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -216,7 +278,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   <a href="#extras">Extras</a>
   <a href="#role">Role</a>
   <a href="#mytake">My take</a>
-  <a href="#copilot">Copilot intro</a>
+  <a href="#copilot">Copilot &amp; Fabric</a>
   <a href="#stage3">Top 5 stories</a>
   <a href="#sources">Sources</a>
 </nav>
@@ -795,26 +857,45 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 
 <!-- ============ COPILOT ============ -->
 <section id="copilot">
-<h2>Intro to Copilot (for Adam)</h2>
+<h2>Intro to Copilot and Fabric (for Adam)</h2>
 <p>GbN runs on Microsoft (Power BI, SharePoint, with Fabric and Azure named in the PD), so Copilot is the likely AI layer. This is a quick primer for someone who knows ThoughtSpot Spotter but has not used Copilot. Facts checked 24 Nov 2026. Microsoft renames and moves these features often, so check anything marked preview before quoting it.</p>
 
 <h3>1. "Copilot" is a family, not one product</h3>
-<div class="tablewrap"><table>
-<tr><th>Product</th><th>What it does</th><th>What it needs</th><th>Why it matters at GbN</th></tr>
-<tr><td><strong>Copilot in Power BI</strong></td><td>A Copilot pane inside reports: summarises a page, answers questions about the data, suggests visuals, writes DAX in Desktop.</td><td>Workspace on a paid Fabric capacity (F2 or higher) or Power BI Premium P1.</td><td>The natural replacement for Power BI Q&amp;A and smart narratives on GbN's dashboards.</td></tr>
-<tr><td><strong>Fabric data agent</strong> <span class="badge fact">Fact</span></td><td>A chat agent over your data. Turns plain-English questions into SQL (lakehouse, warehouse), DAX (semantic model) or KQL. Up to five sources per agent, including ontologies. Generally available.</td><td>F2 or higher, or P1 with Fabric enabled; read access to the data.</td><td>The closest thing to ThoughtSpot Spotter. Sits on top of the gold layer.</td></tr>
-<tr><td><strong>Copilot Studio</strong></td><td>Low-code builder for custom agents: instructions, knowledge (SharePoint, files, websites, Dataverse), tools (Power Automate flows, connectors), and connected agents such as a Fabric data agent. Publishes to Teams and Microsoft 365 Copilot.</td><td>Copilot Studio licence or pay-as-you-go credits; extra billing for tenant data grounding.</td><td>Where you would build a GbN "AI assistant" that people use in Teams.</td></tr>
-<tr><td><strong>Agent Builder in Microsoft 365 Copilot</strong></td><td>No-code, light agents built inside Copilot chat. Up to 100 SharePoint files per agent.</td><td>Microsoft 365 Copilot licence, or pay-as-you-go enabled.</td><td>Quick knowledge assistants, e.g. policies, procedures, contract documents.</td></tr>
-<tr><td><strong>Microsoft 365 Copilot in Power BI and Fabric</strong> <span class="badge hyp">Preview</span></td><td>Ask about Power BI data from Microsoft 365 Copilot chat.</td><td>Microsoft 365 Copilot; on by default worldwide from 8 Dec 2026.</td><td>Replaces the standalone Power BI Copilot (see changes below).</td></tr>
-</table></div>
+<div class="cfpick">
+<div><b>Ask your data</b>Questions about numbers in reports and tables</div>
+<div><b>Build your own assistant</b>Custom agents for Teams, over data or documents</div>
+<div><b>Chat from anywhere</b>Ask about Power BI data from Microsoft 365 Copilot</div>
+</div>
+<div class="cftier">Ask your data</div>
+<div class="cfgrid">
+<div class="cfc"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div><h4>Copilot in Power BI </h4><p class="pl">Copilot inside your reports.</p>
+<dl><dt>Does</dt><dd>A Copilot pane inside reports: summarises a page, answers questions about the data, suggests visuals, writes DAX in Desktop.</dd><dt>Needs</dt><dd>Workspace on a paid Fabric capacity (F2 or higher) or Power BI Premium P1.</dd><dt>At GbN</dt><dd class="gbn">The natural replacement for Power BI Q&amp;A and smart narratives on GbN's dashboards.</dd></dl></div>
+<div class="cfc"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h4>Fabric data agent <span class="st ga">Generally available</span></h4><p class="pl">Chat with your data. The closest thing to Spotter.</p>
+<dl><dt>Does</dt><dd>Turns plain-English questions into SQL (lakehouse, warehouse), DAX (semantic model) or KQL. Up to five sources per agent, including ontologies.</dd><dt>Needs</dt><dd>F2 or higher, or P1 with Fabric enabled; read access to the data.</dd><dt>At GbN</dt><dd class="gbn">The closest thing to ThoughtSpot Spotter. Sits on top of the gold layer.</dd></dl></div>
+</div>
+<div class="cftier">Build your own assistant</div>
+<div class="cfgrid">
+<div class="cfc"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><path d="M17 14v6M14 17h6"/></svg></div><h4>Copilot Studio </h4><p class="pl">Low-code builder for custom agents.</p>
+<dl><dt>Does</dt><dd>Instructions, knowledge (SharePoint, files, websites, Dataverse), tools (Power Automate flows, connectors) and connected agents such as a Fabric data agent. Publishes to Teams and Microsoft 365 Copilot.</dd><dt>Needs</dt><dd>Copilot Studio licence or pay-as-you-go credits; extra billing for tenant data grounding.</dd><dt>At GbN</dt><dd class="gbn">Where you would build a GbN "AI assistant" that people use in Teams.</dd></dl></div>
+<div class="cfc"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></div><h4>Agent Builder in Microsoft 365 Copilot </h4><p class="pl">No-code, light agents built inside Copilot chat.</p>
+<dl><dt>Does</dt><dd>Light agents over up to 100 SharePoint files per agent.</dd><dt>Needs</dt><dd>Microsoft 365 Copilot licence, or pay-as-you-go enabled.</dd><dt>At GbN</dt><dd class="gbn">Quick knowledge assistants, e.g. policies, procedures, contract documents.</dd></dl></div>
+</div>
+<div class="cftier">Chat from anywhere</div>
+<div class="cfgrid one">
+<div class="cfc"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg></div><h4>Microsoft 365 Copilot in Power BI and Fabric <span class="st pv">Preview</span></h4><p class="pl">Ask about Power BI data from Microsoft 365 Copilot chat.</p>
+<dl><dt>Does</dt><dd>Answers questions about Power BI data inside Microsoft 365 Copilot chat.</dd><dt>Needs</dt><dd>Microsoft 365 Copilot; on by default worldwide from 8 Dec 2026.</dd><dt>At GbN</dt><dd class="gbn">Replaces the standalone Power BI Copilot (see changes below).</dd></dl></div>
+</div>
+
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent" title="Fabric data agent creation, Microsoft Learn, updated 21 Oct 2026">Microsoft Learn: Fabric data agent</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-sharepoint" title="Add SharePoint as a knowledge source, Copilot Studio, Microsoft Learn">Microsoft Learn: SharePoint knowledge</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/microsoft-365/copilot/extensibility/agent-builder-add-knowledge" title="Add knowledge to Agent Builder, Microsoft 365 Copilot, Microsoft Learn">Microsoft Learn: Agent Builder</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://mc.merill.net/message/MC1546429" title="MC1546429 Power BI retiring standalone Copilot experiences (preview), Microsoft 365 Message Center, 10 Nov 2026">Message Center: MC1546429</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/fabric-november-2026-feature-summary/5414311" title="Fabric November 2026 Feature Summary, Microsoft Fabric Community">Fabric: Nov 2026 features</a></div>
 
 <h3>2. Changes to know before the interview</h3>
+<div class="chgbox">
 <ul>
 <li><span class="badge fact">Fact</span> <strong>Power BI Q&amp;A retires in December 2026.</strong> New Q&amp;A visuals can no longer be created and existing ones stop working; Q&amp;A setup (synonyms, linguistic relationships) goes too. So talk about Copilot in Power BI, not Q&amp;A.</li>
 <li><span class="badge fact">Fact</span> <strong>The standalone Power BI Copilot (preview) retires in mid-January 2027</strong> (Home page, mobile, Teams and app-scoped Copilot). Microsoft points users to Microsoft 365 Copilot in Power BI and Fabric instead.</li>
 <li><span class="badge infer">Strong Inference</span> Smart narratives are being overtaken by Copilot summaries in reports. Check their status before naming them.</li>
 </ul>
+</div>
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://powerbi.microsoft.com/blog/deprecating-power-bi-qa" title="Deprecating Power BI Q&amp;A, Microsoft Power BI blog">Power BI blog: Q&amp;A retirement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://mc.merill.net/message/MC1546429" title="MC1546429 Power BI retiring standalone Copilot experiences (preview), Microsoft 365 Message Center, 10 Nov 2026">Message Center: MC1546429</a></div>
 
 <h3>3. How to create an AI agent or assistant</h3>
@@ -896,6 +977,57 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <div class="open">"I haven't run Copilot in production yet. I've built the same pattern on ThoughtSpot Spotter: governed data first, natural language on top, and a QA test set before release. In Microsoft that is a Fabric data agent on the semantic model, surfaced in Teams through Copilot Studio."</div>
 <p><strong>Learn it fast:</strong> Microsoft Learn's Fabric data agent and Copilot Studio modules, then build a small demo: a Power BI semantic model of sample contract data, a data agent on top, and a Copilot Studio agent in Teams. Check whether your trial capacity supports Copilot before you start.</p>
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://microsoft.github.io/mcs-labs/labs/data-fabric-agent/" title="Connecting Fabric Data Agents with Microsoft Copilot Studio, Microsoft Copilot Agents Labs, updated 18 Nov 2026">Microsoft Labs: Data agent to Copilot Studio</a> <span class="sep">|</span> Additional Evidence (23 Nov 2026)</div>
+<h3>7. How Fabric gets data from source systems to business-ready views</h3>
+<div class="cpi" role="img" aria-label="How Microsoft Fabric moves data from source systems through bronze, silver and gold layers to business-ready views, and which tools use drag-and-drop, SQL or Python">
+<p class="cpi-t">From source system to business-ready views in Fabric</p>
+<div class="fbkey"><span>Skill each tool uses:</span><span class="sk dd">Drag-and-drop</span><span class="sk sq">SQL</span><span class="sk py">Python</span></div>
+<div class="fbflow">
+<div class="fbst"><span class="lay src">Sources</span><h5>Where data starts</h5>
+<ul><li><strong>SAP S/4HANA</strong>finance, projects, assets</li><li><strong>Workforce and time and attendance</strong>2026 rollout</li><li><strong>Payroll</strong></li><li><strong>Legacy job systems</strong>of the four merged businesses</li><li><strong>SharePoint and Excel</strong></li></ul></div>
+<div class="fbst"><span class="lay br">Bronze</span><h5>1. Ingest (land raw)</h5>
+<ul><li><strong>Copy job</strong>wizard: full, incremental or change capture<br><span class="sk dd">Drag-and-drop</span></li>
+<li><strong>Pipelines (Copy activity)</strong>visual canvas, scheduled<br><span class="sk dd">Drag-and-drop</span></li>
+<li><strong>Mirroring</strong>near real-time copy of a database<br><span class="sk dd">Point and click</span></li>
+<li><strong>Shortcuts</strong>read data in place, no copy<br><span class="sk dd">Point and click</span></li></ul></div>
+<div class="fbst"><span class="lay si">Silver</span><h5>2. Clean and match</h5>
+<ul><li><strong>Dataflow Gen2</strong>Power Query, like Excel<br><span class="sk dd">Drag-and-drop</span></li>
+<li><strong>Notebooks</strong>Spark SQL or PySpark for heavy cleaning and matching<br><span class="sk sq">SQL</span><span class="sk py">Python</span></li>
+<li><strong>Materialized lake views</strong>layers defined as SELECT statements<br><span class="sk sq">SQL</span></li></ul></div>
+<div class="fbst"><span class="lay go">Gold</span><h5>3. Business-ready views</h5>
+<ul><li><strong>Warehouse</strong>T-SQL views and stored procedures<br><span class="sk sq">SQL</span></li>
+<li><strong>Lakehouse gold tables</strong>notebooks or lake views<br><span class="sk sq">SQL</span><span class="sk py">Python</span></li>
+<li><p>Contract profitability, labour productivity, asset utilisation</p></li></ul></div>
+<div class="fbst"><span class="lay sv">Serve</span><h5>4. Use it</h5>
+<ul><li><strong>Semantic model</strong>relationships drawn on a diagram; measures in DAX<br><span class="sk dd">Drag-and-drop</span></li>
+<li><strong>Power BI reports</strong>Direct Lake reads gold tables without an import</li>
+<li><strong>Copilot and data agents</strong>answer from the model</li></ul></div>
+</div>
+<div class="fbbar orc"><strong>Orchestrate and monitor:</strong> a pipeline runs the steps in order on a schedule; the Monitoring hub shows each run; lineage view traces any number back to its source.</div>
+<div class="fbbar one"><b>OneLake underneath:</b> every layer is stored once, as Delta tables, so SQL, Python and Power BI all read the same copy.</div>
+</div>
+
+<div class="cpi" role="img" aria-label="Which Fabric tools are drag-and-drop, SQL or Python">
+<p class="cpi-t">Drag-and-drop, SQL or Python? All three, by tool</p>
+<div class="fbmx">
+<div class="fbmr hd"><span>Tool</span><span class="c">Drag-drop</span><span class="c">SQL</span><span class="c">Python</span><span class="nt">Best for</span></div>
+<div class="fbmr"><span><strong>Copy job</strong></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot n"></i></span><span class="nt">Simple, repeatable loads from a source</span></div>
+<div class="fbmr"><span><strong>Pipelines</strong></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot n"></i></span><span class="nt">Running every step in order, on a schedule</span></div>
+<div class="fbmr"><span><strong>Dataflow Gen2</strong></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot n"></i></span><span class="nt">Business-friendly cleaning, smaller volumes</span></div>
+<div class="fbmr"><span><strong>Notebooks</strong></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot f"></i></span><span class="nt">Large volumes, record matching, data science</span></div>
+<div class="fbmr"><span><strong>Materialized lake views</strong></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot p"></i></span><span class="nt">Bronze to silver to gold as chained SQL views</span></div>
+<div class="fbmr"><span><strong>Warehouse</strong></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot n"></i></span><span class="nt">T-SQL teams; gold views and stored procedures</span></div>
+<div class="fbmr"><span><strong>Semantic model</strong></span><span class="c"><i class="dot f"></i></span><span class="c"><i class="dot n"></i></span><span class="c"><i class="dot n"></i></span><span class="nt">Relationships and DAX measures for Power BI and Copilot</span></div>
+</div>
+<div class="fbkey" style="margin:10px 0 0"><i class="dot f"></i><span>Main way to build it</span><i class="dot p"></i><span>Possible, with limits (PySpark lake views: preview, full refresh only)</span><i class="dot n"></i><span>Not used</span></div>
+</div>
+
+<p><strong>The short answer:</strong> all three. Ingestion is mostly drag-and-drop (Copy job, pipelines, mirroring). Cleaning and modelling can be drag-and-drop (Dataflow Gen2), SQL (notebooks, lake views, warehouse) or Python (notebooks). The semantic model is drawn on a diagram, with measures written in DAX.</p>
+<ul>
+<li><span class="badge infer">Strong Inference</span> <strong>Your fit:</strong> SQL-first, like your Snowflake and DBT work. Materialized lake views or warehouse T-SQL give you the same layered, version-controlled transformations; notebooks cover the heavy matching of the four businesses' records.</li>
+<li><span class="badge hyp">Working Hypothesis</span> <strong>SAP at GbN:</strong> S/4HANA Public Cloud is usually reached through SAP's APIs, SAP Datasphere replication (Microsoft's SAP mirroring route, partly preview) or a partner tool. Ask which route GbN uses today.</li>
+<li><strong>Medallion in one line:</strong> bronze keeps the raw copy, silver cleans and matches, gold holds the business-ready views that Power BI and Copilot read.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/get-started/decision-guide-pipeline-dataflow-spark" title="Microsoft Fabric decision guide: copy activity, dataflow, or Spark, Microsoft Learn">Microsoft Learn: Pipeline, dataflow or Spark</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/fundamentals/get-data" title="Get data into Fabric (mirroring and shortcuts), Microsoft Learn">Microsoft Learn: Get data</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-engineering/materialized-lake-views/overview-materialized-lake-view" title="Materialized lake views overview, Microsoft Learn">Microsoft Learn: Materialized lake views</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/mirroring/sap" title="Mirroring SAP in Microsoft Fabric (via SAP Datasphere), Microsoft Learn">Microsoft Learn: Mirroring SAP</a></div>
 </section>
 
 <!-- ============ STAGE 3 ============ -->
@@ -1039,7 +1171,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
