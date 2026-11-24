@@ -90,6 +90,9 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 .star{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;font-size:13.5px;margin:8px 0}
 .star b{color:#fff;background:#2f4a3b;border-radius:5px;text-align:center;font-size:12px;padding:2px 0;height:22px}
 .story .open{border-left:4px solid #6fae32;background:var(--gold2);padding:9px 12px;font-style:italic;margin:10px 0 6px;font-size:14px}
+.story .lbl{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:14px 0 4px}
+.story.take ul{margin:4px 0;padding-left:20px}
+.story.take li{margin:4px 0;font-size:14px}
 .story .meta2{font-size:12px;color:var(--muted)}
 .chartbox{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px 16px 12px;margin:18px 0 22px}
 .chartcap{font-size:11px;font-weight:300;color:var(--muted);margin-top:6px}
@@ -128,6 +131,42 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 .iproof b{display:block;color:#fff;font-size:15px;line-height:1.25;margin-bottom:3px}
 .iproof em{display:block;font-style:normal;color:var(--gold);font-weight:600;margin-top:4px;font-size:11px}
 .iq{margin-top:18px;border:2px solid var(--gold);border-radius:10px;padding:14px 16px;font-size:16.5px;font-weight:700;color:#fff;text-align:center}
+
+/* Copilot infographics */
+.cpi{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:18px 18px 14px;margin:12px 0 16px}
+.cpi .cpi-t{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 12px}
+.cpflow{display:grid;grid-template-columns:1.6fr 1.1fr .8fr;gap:14px;align-items:stretch}
+.cplane{border-radius:12px;padding:12px;position:relative;background:#fff;border:1px solid var(--line)}
+.cplane .cph{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px;margin-bottom:10px}
+.cplane .cph i{font-style:normal;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--deep);color:var(--gold)}
+.cplane.l2 .cph i{background:var(--blue);color:#fff}
+.cplane.l3 .cph i{background:var(--chart);color:#fff}
+.cpsteps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.cpsteps li{display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:start;font-size:13px;line-height:1.35;background:var(--soft);border-radius:8px;padding:7px 8px}
+.cpsteps li b{width:24px;height:24px;border-radius:50%;background:var(--gold);color:var(--deep);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+.cpsteps li span strong{display:block;font-size:13px}
+.cpsteps li span em{font-style:normal;color:var(--muted);font-size:12px}
+.cplane:not(.l3)::after{content:"";position:absolute;right:-13px;top:50%;width:12px;height:12px;border-top:3px solid var(--chart);border-right:3px solid var(--chart);transform:translateY(-50%) rotate(45deg);background:transparent}
+.cpstack{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:14px;font-size:12.5px}
+.cpstack span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-weight:600}
+.cpstack span.on{background:var(--deep);color:var(--gold);border-color:var(--deep)}
+.cpstack .ar{border:0;background:none;padding:0;color:var(--chart);font-weight:700}
+.cpmatch{display:grid;gap:8px}
+.cprow{display:grid;grid-template-columns:1fr 34px 1.25fr 118px;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+.cprow .ts{font-weight:600;font-size:13.5px}
+.cprow .ms{font-size:13.5px}
+.cprow .ms em{display:block;font-style:normal;color:var(--muted);font-size:12px;margin-top:2px}
+.cprow .arw{color:var(--chart);font-weight:700;text-align:center;font-size:18px}
+.cptag{font-size:11.5px;font-weight:600;border-radius:999px;padding:4px 10px;text-align:center}
+.cptag.ok{background:var(--greenbg);color:var(--green)}
+.cptag.build{background:var(--orangebg);color:var(--orange)}
+.cphead{display:grid;grid-template-columns:1fr 34px 1.25fr 118px;gap:10px;padding:0 12px;font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.cpsum{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.cpsum div{flex:1 1 150px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.cpsum b{display:block;font-size:24px;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums;color:var(--deep)}
+.cpsum span{font-size:12.5px;color:var(--muted)}
+@media (max-width:900px){.cpflow{grid-template-columns:1fr}.cplane:not(.l3)::after{right:50%;top:auto;bottom:-13px;transform:translateX(50%) rotate(135deg)}}
+@media (max-width:560px){.cphead{display:none}.cprow{grid-template-columns:1fr;gap:4px}.cprow .arw{display:none}.cptag{justify-self:start}}
 @media (max-width:900px){
   .itiles{grid-template-columns:repeat(2,minmax(0,1fr))}
   .itrack{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:14px}
@@ -161,7 +200,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 5, updated 24 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 6, updated 24 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -176,6 +215,8 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   <a href="#stage2">Company dossier</a>
   <a href="#extras">Extras</a>
   <a href="#role">Role</a>
+  <a href="#mytake">My take</a>
+  <a href="#copilot">Copilot intro</a>
   <a href="#stage3">Top 5 stories</a>
   <a href="#sources">Sources</a>
 </nav>
@@ -587,6 +628,276 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <div class="refs"><strong>References:</strong> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/96034614" title="Head of Data, Insights &amp; AI, Boyd Recruitment, SEEK job 96034614, posted 21 Nov 2026">SEEK: Boyd Recruitment ad</a> <span class="sep">|</span> Rezi Contacts (22 Nov 2026) <span class="sep">|</span> Michelle Rouillon (from Adam, 23 Nov 2026)</div>
 </section>
 
+<!-- ============ MY TAKE ============ -->
+<section id="mytake">
+<h2>My Take Based on the PD</h2>
+<p>Adam's own reading of the PD in six themes, each built out with what it looks like at GbN and the proof behind it. Proof comes from the Master Resume, the tailored Boyd Recruitment resume, STAR Skills, Additional Evidence and the Data Professional portfolio.</p>
+<div class="story take">
+  <div class="rank">1</div>
+  <h4>KPI Trust</h4>
+  <div class="why"><strong>What the PD asks for:</strong> "Common definitions for critical data, KPIs and systems of record, with named business owners and stewards" and "fewer conflicting reports and manual reconciliations".</div>
+  <div class="lbl">Your take, fleshed out</div>
+<ul>
+<li><strong>Business-ready views on the medallion architecture:</strong> each KPI is calculated once, in the business-ready (gold) layer, not inside each dashboard, so every report shows the same number.</li>
+<li><strong>One trusted Power BI dashboard for each business area:</strong> a master dashboard each for Specialty Services, Landscape Services, NZ and Finance, replacing the duplicate reports each legacy business brought with it.</li>
+<li><strong>Self-service set up for success:</strong> plain-English business definitions, a data catalogue, and an ontology that maps how GbN's core things relate (client, contract, site, crew, job, asset), so people and AI tools read the data the same way.</li>
+</ul>
+  <div class="lbl">What it looks like at GbN</div>
+<ul>
+<li>Four merged businesses are likely still counting the same thing differently: contract margin, labour hours, sites (<span class="badge hyp">Working Hypothesis</span> H1).</li>
+<li>Every definition gets a named business owner. The PD says business executives keep accountability for their data domains.</li>
+<li>Tripwire alerts flag when the same KPI drifts between reports, before it reaches the CFO.</li>
+</ul>
+  <div class="lbl">Your proof</div>
+<ul>
+<li><strong>27 service KPIs from 62% to 100% consistent</strong>; duplicate Power BI dashboards from <strong>70+ to 46</strong>; KPI escalations from <strong>3 to 5 a month to zero</strong>; Power BI workspace health from <strong>60% to 93%</strong>.</li>
+<li>Moved calculations out of dashboards into SQL single-source-of-truth views; a master dashboard for each business area; refresh schedules aligned to warehouse loads.</li>
+<li>Plain-English data catalogue in a consistent template, calculations agreed with stakeholders up front, and data literacy sessions so people could challenge the numbers.</li>
+<li>Tripwires flag variances above 2% and trigger team-owned fixes; leaders no longer spend 1 to 2 days on manual validation.</li>
+</ul>
+  <div class="open">"At Cisco, two teams saw different numbers for the same KPI. I moved the calculation out of the dashboards into one trusted layer, gave each business area one master dashboard, and consistency went from 62% to 100%."</div>
+  <div class="refs"><strong>References:</strong> Master Resume (23 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+</div>
+<div class="story take">
+  <div class="rank">2</div>
+  <h4>Data Engineering and Governance</h4>
+  <div class="why"><strong>What the PD asks for:</strong> "Lead the analytical data and BI capability, including data ingestion, pipelines, curated datasets, data models, quality checks, documentation, refresh monitoring" and "recommendations for systems of record".</div>
+  <div class="lbl">Your take, fleshed out</div>
+<ul>
+<li><strong>Efficient pipelines that deliver the right data at the right time:</strong> refresh schedules aligned to source loads, and pipeline health monitoring (failure rates, unexpected volume changes, load duration), so no dashboard shows half-loaded data.</li>
+<li><strong>Ingest, clean, combine:</strong> data from each source system is cleaned and formatted for use, then combined into business-ready views that compare apples with apples across the whole portfolio, whatever the source.</li>
+<li><strong>The merger data:</strong> ingest data from the four merged businesses (Green Options, Super Gardens, Skyline and Recreational Services NZ), consolidate it into a single system, and build business-ready views on the medallion architecture:<ul><li><strong>Bronze (raw):</strong> data landed as it is from SAP S/4HANA, the new workforce and time and attendance system, payroll, and the four businesses' legacy systems.</li><li><strong>Silver (clean and matched):</strong> one key each for client, contract, site, employee and asset, matched across systems, with duplicates and stale records removed.</li><li><strong>Gold (business-ready):</strong> contract profitability, labour productivity per contract and asset utilisation, by division.</li></ul></li>
+<li><strong>Governance built in:</strong> lineage, quality rules tested before each release, version-controlled changes and a documented catalogue.</li>
+</ul>
+  <div class="lbl">What it looks like at GbN</div>
+<ul>
+<li>Microsoft Fabric, named as desirable in the PD, is built around lakehouse layers, so a medallion design fits (<span class="badge infer">Strong Inference</span>).</li>
+<li>The 2026 workforce and payroll rollouts are the moment to set migration quality criteria, so bad legacy data is not carried into the new systems (PD).</li>
+</ul>
+  <div class="lbl">Your proof</div>
+<ul>
+<li><strong>Splunk and Meraki mergers:</strong> developed the KPIs, monitoring and progress updates for the device migration of <strong>8,000+ employees</strong>; cleaned stale records and merged them with Cisco asset and HR data; matched employees across HR systems; tracked the move to Intune against a <strong>6-month</strong> contract deadline.</li>
+<li>Managed pipelines from systems of record: Intune, Jamf, Meraki and Workday.</li>
+<li><strong>Snowflake and DBT:</strong> lineage, DBT Docs catalogue, and a release cycle from development through peer review and automated tests to production. Warehouse volume down <strong>42%</strong> (355 to 205 tables and views), <strong>517.2M</strong> stagnant rows removed.</li>
+<li>Replaced direct warehouse access with secure AWS S3 data sharing: disruptions from <strong>1 to 2 a quarter to zero</strong>, protecting <strong>200+</strong> stakeholders.</li>
+</ul>
+  <div class="open">"GbN's challenge is the one I worked on in the Splunk and Meraki mergers: messy, stale data from separate businesses that has to land in one system and match up. The medallion layers are how I would make that repeatable."</div>
+  <div class="refs"><strong>References:</strong> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+</div>
+<div class="story take">
+  <div class="rank">3</div>
+  <h4>Bridge between data and business</h4>
+  <div class="why"><strong>What the PD asks for:</strong> "Work with Operations, Finance, and other leaders to understand the decisions that drive revenue, margin, productivity and customer outcomes."</div>
+  <div class="lbl">Your take, fleshed out</div>
+<ul>
+<li><strong>Proactive stakeholder engagement:</strong> go to the EGMs and functional leaders before they come to the data team.</li>
+<li><strong>Understand their objectives, obstacles, timelines and target milestones:</strong> write down each leader's definition of success.</li>
+<li><strong>Connect the data team's effort and capacity to their top business needs:</strong> prioritise openly, so capacity goes where the value is.</li>
+</ul>
+  <div class="lbl">What it looks like at GbN</div>
+<ul>
+<li>Start with CFO Angela Kreis, the three EGMs (Dane Thatcher, Michael Culley, Matthew Bailey) and Michelle Rouillon's transformation programs.</li>
+<li>The likely top needs are the ones the PD names: contract profitability, tender pricing, labour productivity and asset utilisation.</li>
+<li>Agree the target milestones and baselines with Finance at the start, so benefits are signed off, not just claimed (H3).</li>
+</ul>
+  <div class="lbl">Your proof</div>
+<ul>
+<li><strong>Fiscal year planning (Jira Align):</strong> gathered requirements for each epic, set success metrics for each one, and shaped yearly themes from transformation and operational needs.</li>
+<li><strong>Quarterly PI planning with WSJF:</strong> ranked every project on criticality, complexity, dependencies, business value, capacity and duration; Miro PI board; quarterly roadmap presented to executives.</li>
+<li>Business value cases for IT programs worth <strong>$11M+</strong>; business value case accuracy improved by <strong>80%</strong>.</li>
+<li>Automated weekly progress reports and narratives for executive leadership.</li>
+</ul>
+  <div class="open">"I start with the decision, not the dashboard: what each leader is trying to achieve, what is in the way, and by when. Then the team's capacity follows the value."</div>
+  <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Master Resume (23 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+</div>
+<div class="story take">
+  <div class="rank">4</div>
+  <h4>Empower everyone with self-service analytics</h4>
+  <div class="why"><strong>What the PD asks for:</strong> "Business leaders and employees can find and use relevant information more easily, including through approved natural-language queries where suitable connections and access controls are in place."</div>
+  <div class="lbl">Your take, fleshed out</div>
+<ul>
+<li><strong>The ThoughtSpot story and the business need for it:</strong> a third of data requests were simple enough to need no analyst, yet analysts were the bottleneck and stakeholders waited.</li>
+<li><strong>Power BI smart narratives and Q&amp;A:</strong> natural-language summaries and questions inside the dashboards GbN already uses.</li>
+<li><strong>Explore Copilot's ability to power an AI assistant</strong> that queries data in natural language and gives reliable, consistent results.</li>
+</ul>
+  <div class="lbl">What it looks like at GbN</div>
+<ul>
+<li>Office and field managers ask "which contracts are over their labour budget this month?" without waiting for an analyst.</li>
+<li>Reliable answers come from the gold layer and a governed semantic model, never raw tables. A standard set of test questions is checked before release, like the Cisco QA process.</li>
+<li>Power BI Q&amp;A retires in December 2026 (Microsoft), so lead with Copilot in Power BI. See Intro to Copilot.</li>
+<li>You have not used Copilot yet (Additional Evidence). Lead with ThoughtSpot Spotter as the transferable natural-language experience.</li>
+</ul>
+  <div class="lbl">Your proof</div>
+<ul>
+<li>Built ThoughtSpot on the same verified, governed datasets as the executive KPI dashboards; added Spotter as a natural-language GPT layer for forecasting and correlation; new users enrolled automatically in SharePoint how-to pages and videos.</li>
+<li>Weekly users from <strong>46 to 196 (+326%)</strong>; monthly queries from <strong>8.1K to 19.2K (+137%)</strong>; data request workload down <strong>33%</strong>, saving about <strong>738 hours and $68.9K a year</strong>; short-term dashboard projects avoided by <strong>67%</strong>.</li>
+<li>Went direct to the vendor and built the capacity case: the $70K, 250M-row option gave <strong>2.9x better value</strong>, <strong>65% lower cost per million rows</strong>, <strong>5x the capacity for 1.75x the cost</strong>.</li>
+</ul>
+  <div class="open">"Self-service only works if people trust the answers. At Cisco I built it on the same governed data as the executive dashboards, and weekly users grew from 46 to 196."</div>
+  <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+</div>
+<div class="story take">
+  <div class="rank">5</div>
+  <h4>AI-enabled solutions</h4>
+  <div class="why"><strong>What the PD asks for:</strong> "Opportunities to improve business performance through AI are identified with business leaders, with benefits measured for agreed initiatives", plus "asset utilisation".</div>
+  <div class="lbl">Your take, fleshed out</div>
+<ul>
+<li><strong>AI assistant:</strong> alerts, AI summaries and Q&amp;A built on verified, business-ready data, with QA checks.</li>
+<li><strong>AI-enabled performance-based refresh (PBR):</strong> decide when to replace an asset from how it actually performs, not how old it is.</li>
+</ul>
+  <div class="lbl">What it looks like at GbN</div>
+<ul>
+<li><strong>AI assistant idea:</strong> tripwire alerts on contract performance (for example labour hours or overtime running above plan), with an AI summary sent to the contract manager. GbN's own Caulfield case study describes overtime and casual staff during a carnival (<span class="badge hyp">Working Hypothesis</span>).</li>
+<li><strong>PBR idea:</strong> the same thinking for mowers, vehicles (the EV fleet) and equipment: use usage and performance data to decide when to service, move or replace them. That is the PD's asset utilisation measure.</li>
+</ul>
+  <div class="lbl">Your proof</div>
+<ul>
+<li><strong>AI assistant:</strong> two-tier tripwires on six months of case trends (2 standard deviations for executives, 1.8 for operations); prompt patterns such as cognitive verifier, question refinement and few-shot examples; delivered in Webex chat with Q&amp;A from verified SQL views; QA process for accuracy. Case-spike analysis from <strong>4 working days to near-instant</strong>, with fewer executive escalations.</li>
+<li><strong>PBR:</strong> compared supervised learning, unsupervised learning, GenAI and statistical thresholds, and chose unsupervised anomaly detection (no training data to maintain, no hallucination risk, scales with the fleet). Used CPU, RAM, memory pressure and disk telemetry plus app-usage personas across a fleet of about <strong>150,000</strong> devices, supporting <strong>millions</strong> in potential asset management savings.</li>
+<li>AI token waste cut by <strong>40%</strong>; 3 years of AI governance work.</li>
+</ul>
+  <div class="open">"I build AI on top of trusted data, not ahead of it. The assistant cut case-spike analysis from 4 days to near-instant because it answered from verified views, with a QA check."</div>
+  <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+</div>
+<div class="story take">
+  <div class="rank">6</div>
+  <h4>Building and mentoring a data team, evolving the data function</h4>
+  <div class="why"><strong>What the PD asks for:</strong> "Experience building teams, influencing executives and managing specialist partners alongside technology and transformation functions."</div>
+  <div class="lbl">Your take, fleshed out</div>
+<ul>
+<li><strong>Building and mentoring a data team that evolves the data function:</strong> from answering one-off requests to owning the trusted data layer and setting up self-service.</li>
+</ul>
+  <div class="lbl">What it looks like at GbN</div>
+<ul>
+<li>Three direct reports across data engineering, BI and reporting, and data governance (Boyd's ad).</li>
+<li>The shift GbN needs: from reactive report requests to a team that owns the definitions and the business-ready views.</li>
+</ul>
+  <div class="lbl">Your proof</div>
+<ul>
+<li>Led a team of analysts, data scientists and engineers, working with specialist partners; built the foundations for a new data function (2017 to 2019).</li>
+<li>Changed what the team was rewarded for: from fast ad-hoc turnaround to advanced SQL and Python, data visualisation and narratives that drive action; built a mission statement with the team and stakeholders.</li>
+<li>Analyst community with quarterly show-and-share sessions; AI workshops and brown-bag sessions for up to 50 people; <strong>ANZ Mentor of the Quarter</strong> (Apr 2023).</li>
+</ul>
+  <div class="open">"I changed what the team was rewarded for: not how fast they answered one question, but how well placed they were to answer the next ten."</div>
+  <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Master Resume (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+</div>
+
+<h3>Questions to ask</h3>
+<div class="tablewrap"><table>
+<tr><th>Question</th><th>Why ask it</th><th>Listen for</th></tr>
+<tr><td>"Why SAP S/4HANA? Has a Snowflake data warehouse been considered?"</td><td>Finds out the analytics platform direction. Tip: S/4HANA is the ERP, not the warehouse, and the PD names Fabric and Azure, so a softer version is "What does the analytics platform look like today, and was Snowflake considered alongside Fabric?"</td><td>An existing data lake or warehouse, Fabric plans, who owns the platform, budget.</td></tr>
+<tr><td>"What has the adoption of, or resistance to, AI been like?"</td><td>Tests how ready people are, before you promise AI results.</td><td>Which AI tools are approved, who signs off a new use case, any past AI pilot that disappointed.</td></tr>
+<tr><td>"Tell me about the data team. What roles, skills and experience do they have?"</td><td>Shows what you inherit and what you need to build.</td><td>Tenure of the three direct reports, skill gaps, how much relies on partners.</td></tr>
+<tr><td>"What have been the most visible issues for each business area lead? For example: reporting requests take far too long; inaccurate reports create doubt; no one understands why it takes so long or what causes the issues; a lack of transparency and understanding."</td><td>Tests H1 directly and tells you where to start.</td><td>Manual reconciliation, conflicting numbers, which division or leader feels it most.</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Adam's questions (24 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> Additional Evidence (23 Nov 2026)</div>
+</section>
+
+<!-- ============ COPILOT ============ -->
+<section id="copilot">
+<h2>Intro to Copilot (for Adam)</h2>
+<p>GbN runs on Microsoft (Power BI, SharePoint, with Fabric and Azure named in the PD), so Copilot is the likely AI layer. This is a quick primer for someone who knows ThoughtSpot Spotter but has not used Copilot. Facts checked 24 Nov 2026. Microsoft renames and moves these features often, so check anything marked preview before quoting it.</p>
+
+<h3>1. "Copilot" is a family, not one product</h3>
+<div class="tablewrap"><table>
+<tr><th>Product</th><th>What it does</th><th>What it needs</th><th>Why it matters at GbN</th></tr>
+<tr><td><strong>Copilot in Power BI</strong></td><td>A Copilot pane inside reports: summarises a page, answers questions about the data, suggests visuals, writes DAX in Desktop.</td><td>Workspace on a paid Fabric capacity (F2 or higher) or Power BI Premium P1.</td><td>The natural replacement for Power BI Q&amp;A and smart narratives on GbN's dashboards.</td></tr>
+<tr><td><strong>Fabric data agent</strong> <span class="badge fact">Fact</span></td><td>A chat agent over your data. Turns plain-English questions into SQL (lakehouse, warehouse), DAX (semantic model) or KQL. Up to five sources per agent, including ontologies. Generally available.</td><td>F2 or higher, or P1 with Fabric enabled; read access to the data.</td><td>The closest thing to ThoughtSpot Spotter. Sits on top of the gold layer.</td></tr>
+<tr><td><strong>Copilot Studio</strong></td><td>Low-code builder for custom agents: instructions, knowledge (SharePoint, files, websites, Dataverse), tools (Power Automate flows, connectors), and connected agents such as a Fabric data agent. Publishes to Teams and Microsoft 365 Copilot.</td><td>Copilot Studio licence or pay-as-you-go credits; extra billing for tenant data grounding.</td><td>Where you would build a GbN "AI assistant" that people use in Teams.</td></tr>
+<tr><td><strong>Agent Builder in Microsoft 365 Copilot</strong></td><td>No-code, light agents built inside Copilot chat. Up to 100 SharePoint files per agent.</td><td>Microsoft 365 Copilot licence, or pay-as-you-go enabled.</td><td>Quick knowledge assistants, e.g. policies, procedures, contract documents.</td></tr>
+<tr><td><strong>Microsoft 365 Copilot in Power BI and Fabric</strong> <span class="badge hyp">Preview</span></td><td>Ask about Power BI data from Microsoft 365 Copilot chat.</td><td>Microsoft 365 Copilot; on by default worldwide from 8 Dec 2026.</td><td>Replaces the standalone Power BI Copilot (see changes below).</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent" title="Fabric data agent creation, Microsoft Learn, updated 21 Oct 2026">Microsoft Learn: Fabric data agent</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-sharepoint" title="Add SharePoint as a knowledge source, Copilot Studio, Microsoft Learn">Microsoft Learn: SharePoint knowledge</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/microsoft-365/copilot/extensibility/agent-builder-add-knowledge" title="Add knowledge to Agent Builder, Microsoft 365 Copilot, Microsoft Learn">Microsoft Learn: Agent Builder</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://mc.merill.net/message/MC1546429" title="MC1546429 Power BI retiring standalone Copilot experiences (preview), Microsoft 365 Message Center, 10 Nov 2026">Message Center: MC1546429</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/fabric-november-2026-feature-summary/5414311" title="Fabric November 2026 Feature Summary, Microsoft Fabric Community">Fabric: Nov 2026 features</a></div>
+
+<h3>2. Changes to know before the interview</h3>
+<ul>
+<li><span class="badge fact">Fact</span> <strong>Power BI Q&amp;A retires in December 2026.</strong> New Q&amp;A visuals can no longer be created and existing ones stop working; Q&amp;A setup (synonyms, linguistic relationships) goes too. So talk about Copilot in Power BI, not Q&amp;A.</li>
+<li><span class="badge fact">Fact</span> <strong>The standalone Power BI Copilot (preview) retires in mid-January 2027</strong> (Home page, mobile, Teams and app-scoped Copilot). Microsoft points users to Microsoft 365 Copilot in Power BI and Fabric instead.</li>
+<li><span class="badge infer">Strong Inference</span> Smart narratives are being overtaken by Copilot summaries in reports. Check their status before naming them.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://powerbi.microsoft.com/blog/deprecating-power-bi-qa" title="Deprecating Power BI Q&amp;A, Microsoft Power BI blog">Power BI blog: Q&amp;A retirement</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://mc.merill.net/message/MC1546429" title="MC1546429 Power BI retiring standalone Copilot experiences (preview), Microsoft 365 Message Center, 10 Nov 2026">Message Center: MC1546429</a></div>
+
+<h3>3. How to create an AI agent or assistant</h3>
+<div class="cpi" role="img" aria-label="How to build a data assistant: five steps in Microsoft Fabric, two in Copilot Studio, one in Teams">
+<p class="cpi-t">How to build a data assistant: 8 steps, 3 tools</p>
+<div class="cpflow">
+<div class="cplane l1"><div class="cph"><i>Fabric</i> Build the data agent</div>
+<ol class="cpsteps">
+<li><b>1</b><span><strong>Prepare the data</strong><em>Semantic model on the gold layer, clear names and descriptions</em></span></li>
+<li><b>2</b><span><strong>New item &gt; Data agent</strong><em>Name it, select Create</em></span></li>
+<li><b>3</b><span><strong>Add data source</strong><em>Semantic model; tick only the tables needed</em></span></li>
+<li><b>4</b><span><strong>Write instructions</strong><em>Business terms, e.g. what "margin" means</em></span></li>
+<li><b>5</b><span><strong>Test, then Publish</strong><em>Right number, query shown</em></span></li>
+</ol></div>
+<div class="cplane l2"><div class="cph"><i>Copilot Studio</i> Wrap it as an assistant</div>
+<ol class="cpsteps">
+<li><b>6</b><span><strong>Create agent</strong><em>Name, description, instructions</em></span></li>
+<li><b>7</b><span><strong>Connect the Fabric data agent</strong><em>Agents &gt; Add &gt; external agent; end user credentials</em></span></li>
+</ol></div>
+<div class="cplane l3"><div class="cph"><i>Teams</i> Use it</div>
+<ol class="cpsteps">
+<li><b>8</b><span><strong>Publish to Teams</strong><em>Staff ask questions in chat; each sees only their own data</em></span></li>
+</ol></div>
+</div>
+<div class="cpstack" aria-hidden="true"><span>Gold layer</span><span class="ar">&rarr;</span><span>Semantic model</span><span class="ar">&rarr;</span><span class="on">Fabric data agent</span><span class="ar">&rarr;</span><span class="on">Copilot Studio agent</span><span class="ar">&rarr;</span><span>Teams chat</span></div>
+</div>
+<p><strong>A data assistant (questions about numbers):</strong></p>
+<ol>
+<li><strong>Prepare the data:</strong> a clean semantic model on the gold layer, with clear table and column names, descriptions and relationships. Copilot answers from the model's metadata, so this matters more than the AI settings.</li>
+<li><strong>Fabric > your workspace > New item > Data agent.</strong> Name it and select <strong>Create</strong>.</li>
+<li><strong>Add data source:</strong> pick the semantic model (or lakehouse or warehouse), then tick only the tables the agent should use.</li>
+<li><strong>Write agent instructions:</strong> what the agent is for, business terms ("margin means contract revenue less direct labour and materials"), which table answers which kind of question. For lakehouse and warehouse sources, add example questions with the correct SQL.</li>
+<li><strong>Test, then Publish.</strong> You will see it work when the test pane returns the right number and shows the query it ran.</li>
+<li><strong>Copilot Studio > Create agent.</strong> Give it a name, description and instructions.</li>
+<li><strong>Agents tab > Add > Connect to an external agent > Microsoft Fabric (preview)</strong>, then pick your data agent. Choose <strong>End user credentials</strong> so each person only sees data they are allowed to see.</li>
+<li><strong>Publish to Teams</strong> (and Microsoft 365 Copilot). Staff then ask questions in Teams chat, the same "meet users where they are" idea as your Webex assistant.</li>
+</ol>
+<p><strong>A knowledge assistant (questions about documents):</strong> Copilot Studio or Agent Builder, with SharePoint sites or files as knowledge. It only returns content the signed-in person can already open, so SharePoint permissions and tidy folders do the governance work. This is the PD's "AI-accessible knowledge".</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://microsoft.github.io/mcs-labs/labs/data-fabric-agent/" title="Connecting Fabric Data Agents with Microsoft Copilot Studio, Microsoft Copilot Agents Labs, updated 18 Nov 2026">Microsoft Labs: Data agent to Copilot Studio</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent" title="Fabric data agent creation, Microsoft Learn, updated 21 Oct 2026">Microsoft Learn: Fabric data agent</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/microsoft-copilot-studio/knowledge-add-sharepoint" title="Add SharePoint as a knowledge source, Copilot Studio, Microsoft Learn">Microsoft Learn: SharePoint knowledge</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/microsoft-365/copilot/extensibility/agent-builder-add-knowledge" title="Add knowledge to Agent Builder, Microsoft 365 Copilot, Microsoft Learn">Microsoft Learn: Agent Builder</a></div>
+
+<h3>4. Can it replicate what ThoughtSpot does?</h3>
+<div class="cpi" role="img" aria-label="ThoughtSpot features mapped to Microsoft equivalents: 4 ready-made, 2 to build">
+<p class="cpi-t">ThoughtSpot to Microsoft: what carries over</p>
+<div class="cphead"><span>ThoughtSpot (what you built)</span><span></span><span>Microsoft equivalent</span><span>Fit</span></div>
+<div class="cpmatch">
+<div class="cprow"><div class="ts">Search and Spotter on governed data</div><div class="arw" aria-hidden="true">&rarr;</div><div class="ms">Fabric data agent + Copilot pane in reports<em>Read-only; 25 rows by 25 columns; English only</em></div><div class="cptag ok">Ready-made</div></div>
+<div class="cprow"><div class="ts">Verified worksheets and models</div><div class="arw" aria-hidden="true">&rarr;</div><div class="ms">Semantic model + Prep data for AI<em>Answers only as good as model names and descriptions</em></div><div class="cptag ok">Ready-made</div></div>
+<div class="cprow"><div class="ts">Liveboards</div><div class="arw" aria-hidden="true">&rarr;</div><div class="ms">Power BI reports and apps<em>Already in use at GbN</em></div><div class="cptag ok">Ready-made</div></div>
+<div class="cprow"><div class="ts">Onboarding pages and videos</div><div class="arw" aria-hidden="true">&rarr;</div><div class="ms">SharePoint pages + Copilot Studio help agent<em>Same SOP idea as Cisco</em></div><div class="cptag ok">Ready-made</div></div>
+<div class="cprow"><div class="ts">Spotter forecasting and correlation</div><div class="arw" aria-hidden="true">&rarr;</div><div class="ms">Copilot explanations + Fabric notebooks<em>No single "ask for a forecast" button</em></div><div class="cptag build">Build it</div></div>
+<div class="cprow"><div class="ts">Tripwire alerts + AI assistant</div><div class="arw" aria-hidden="true">&rarr;</div><div class="ms">Fabric Activator + Power Automate + Copilot Studio<em>Three tools to join, plus a QA test set</em></div><div class="cptag build">Build it</div></div>
+</div>
+<div class="cpsum"><div><b>4 of 6</b><span>Ready-made in Microsoft</span></div><div><b>2 of 6</b><span>Need building from parts</span></div><div><b>Same rule</b><span>Governed data first, natural language on top, QA before release</span></div></div>
+</div>
+<p>Mostly yes, with a few gaps. The pattern is the same as your Cisco build: governed data first, natural language on top, QA before release.</p>
+<div class="tablewrap"><table>
+<tr><th>ThoughtSpot (what you built)</th><th>Microsoft equivalent</th><th>Watch for</th></tr>
+<tr><td>Search and Spotter on verified, governed datasets</td><td>Fabric data agent over the semantic model; Copilot pane in Power BI reports</td><td>Data agent answers are read-only, capped at 25 rows and 25 columns, English only</td></tr>
+<tr><td>Verified worksheets and models</td><td>Semantic model on the gold layer, plus Prep data for AI (AI instructions, verified answers, a trimmed AI data schema)</td><td>Quality depends on names and descriptions in the model</td></tr>
+<tr><td>Spotter forecasting and correlation</td><td>Copilot in Power BI for explanations; Fabric notebooks for forecasting models</td><td>Less of a single "ask for a forecast" experience; plan to build it</td></tr>
+<tr><td>Liveboards</td><td>Power BI reports and apps</td><td>Already in use at GbN</td></tr>
+<tr><td>Onboarding pages and videos for new users</td><td>SharePoint pages plus a Copilot Studio help agent</td><td>Same SOP idea as Cisco</td></tr>
+<tr><td>Your tripwire alerts and Webex AI assistant</td><td>Fabric Activator or Power BI data alerts, Power Automate to post in Teams, a Copilot Studio agent to summarise and answer follow-up questions</td><td>Needs a QA test set, as you did at Cisco</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent" title="Fabric data agent creation, Microsoft Learn, updated 21 Oct 2026">Microsoft Learn: Fabric data agent</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://microsoft.github.io/mcs-labs/labs/data-fabric-agent/" title="Connecting Fabric Data Agents with Microsoft Copilot Studio, Microsoft Copilot Agents Labs, updated 18 Nov 2026">Microsoft Labs: Data agent to Copilot Studio</a> <span class="sep">|</span> Inference from STAR Skills (Self-service analytics, AI Assistant)</div>
+
+<h3>5. Making answers reliable and consistent</h3>
+<ul>
+<li>Point every agent at the gold layer and the governed semantic model, never raw tables.</li>
+<li>Write descriptions and synonyms for the measures people actually ask about (margin, labour hours, utilisation).</li>
+<li>Add verified answers and agent instructions for the top 20 questions each business area asks.</li>
+<li>Keep a fixed test set of questions with known answers; rerun it after every model change (your Cisco QA process).</li>
+<li>Use end user credentials and row-level security so people only see their own division's data.</li>
+<li>Track usage and accuracy as KPIs, the same way you tracked ThoughtSpot adoption.</li>
+</ul>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-science/concept-data-agent" title="Fabric data agent creation, Microsoft Learn, updated 21 Oct 2026">Microsoft Learn: Fabric data agent</a> <span class="sep">|</span> Inference from STAR Skills (AI Assistant QA process)</div>
+
+<h3>6. How to talk about it in the interview</h3>
+<div class="open">"I haven't run Copilot in production yet. I've built the same pattern on ThoughtSpot Spotter: governed data first, natural language on top, and a QA test set before release. In Microsoft that is a Fabric data agent on the semantic model, surfaced in Teams through Copilot Studio."</div>
+<p><strong>Learn it fast:</strong> Microsoft Learn's Fabric data agent and Copilot Studio modules, then build a small demo: a Power BI semantic model of sample contract data, a data agent on top, and a Copilot Studio agent in Teams. Check whether your trial capacity supports Copilot before you start.</p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://microsoft.github.io/mcs-labs/labs/data-fabric-agent/" title="Connecting Fabric Data Agents with Microsoft Copilot Studio, Microsoft Copilot Agents Labs, updated 18 Nov 2026">Microsoft Labs: Data agent to Copilot Studio</a> <span class="sep">|</span> Additional Evidence (23 Nov 2026)</div>
+</section>
+
 <!-- ============ STAGE 3 ============ -->
 <section id="stage3">
 <h2>Stage 3: Top 5 Experiences to Lead With</h2>
@@ -709,6 +1020,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 <h2>Source Register</h2>
 <div class="tablewrap"><table>
 <tr><th>Source</th><th>Used for</th></tr>
+<tr><td><a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> · Tailored resume, Boyd Recruitment (22 Nov 2026) · Additional Evidence (23 Nov 2026)</td><td>My Take Based on the PD: proof points and stories</td></tr>
 <tr><td><a target="_blank" rel="noopener" href="https://greenbynature.com.au/our-history/" title="Our history, Green by Nature, accessed 23 Nov 2026">GbN: Our history</a> · <a target="_blank" rel="noopener" href="https://greenbynature.com.au/our-leadership-team/" title="Our leadership team, Green by Nature, accessed 23 Nov 2026">GbN: Leadership team</a> · <a target="_blank" rel="noopener" href="https://greenbynature.com.au/news/" title="News, Green by Nature, accessed 23 Nov 2026">GbN: News</a></td><td>Founding, merger, geography, leadership, contracts, autonomous mower, EV fleet, B Corp</td></tr>
 <tr><td><a target="_blank" rel="noopener" href="https://www.scoop.co.nz/stories/BU2310/S00226.htm" title="Green by Nature brand launch media release, Scoop, 17 Oct 2023">Scoop: GbN rebrand</a></td><td>Rebrand date, about 2,000 staff</td></tr>
 <tr><td><a target="_blank" rel="noopener" href="https://www.mercurycapital.com.au/portfolio" title="Portfolio, Mercury Capital, accessed 23 Nov 2026">Mercury Capital: Portfolio</a></td><td>Ownership, 29% shareholding</td></tr>
@@ -727,7 +1039,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
