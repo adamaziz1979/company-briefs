@@ -265,6 +265,93 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   .card,.qbox,.callout,.refs,.story,.chartbox,.thesis{break-inside:avoid}
   tr{break-inside:avoid}
 }
+
+
+/* ===== Dark theme (data-theme="dark" from the briefs page, or device setting) ===== */
+@media screen{
+html[data-theme="dark"]{--ink:#e7ece9;--muted:#a7b3ac;--paper:#111815;--bg:#0a0f0d;--line:#2b3832;--soft:#1c2723;--gold2:#1c2a15;--chart:#8fd14f;--green:#8fd4a8;--greenbg:#143021;--blue:#9cc7ee;--bluebg:#13263a;--orange:#f0c46a;--orangebg:#33280f;--red:#f0a3a3;--redbg:#341b1b;color-scheme:dark}
+html[data-theme="dark"] a{color:#b5e38a}
+html[data-theme="dark"] main{box-shadow:none}
+html[data-theme="dark"] .site-link{color:#032c1f}
+html[data-theme="dark"] .nav{background:rgba(17,24,21,.97)}
+html[data-theme="dark"] .nav a{color:#d3dad6}
+html[data-theme="dark"] .nav a:hover{color:#fff}
+html[data-theme="dark"] .callout{background:var(--soft)}
+html[data-theme="dark"] .callout.warn{background:var(--orangebg)}
+html[data-theme="dark"] .problem{background:#18240f}
+html[data-theme="dark"] th{background:var(--soft);border-color:var(--line)}
+html[data-theme="dark"] td{border-color:var(--line)}
+html[data-theme="dark"] .refs{background:var(--soft);border-left-color:#56625c;color:var(--muted)}
+html[data-theme="dark"] .refs a{color:#9cc7ee}
+html[data-theme="dark"] .refs .sep{color:#8d9a93}
+html[data-theme="dark"] .footer{color:var(--muted)}
+html[data-theme="dark"] .notice{background:#18240f;border-color:#3d5a26}
+html[data-theme="dark"] .qbox, html[data-theme="dark"] .story, html[data-theme="dark"] .chartbox{background:#16201c}
+html[data-theme="dark"] .chartbox svg [fill="#5c646d"], html[data-theme="dark"] .chartbox svg [fill="#626a73"]{fill:#a7b3ac}
+html[data-theme="dark"] .chartbox svg [fill="#17191c"]{fill:#e7ece9}
+html[data-theme="dark"] .chartbox svg [stroke="#eceff1"], html[data-theme="dark"] .chartbox svg [stroke="#cfd5da"]{stroke:#2b3832}
+html[data-theme="dark"] .barbg{background:var(--line)}
+html[data-theme="dark"] .stock-ranges button{background:#16201c;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .chartbox svg [fill="#3e7a1c"]{fill:#8fd14f}
+html[data-theme="dark"] .chartbox svg [stroke="#3e7a1c"]{stroke:#8fd14f}
+html[data-theme="dark"] .cpi{background:#0e1512}
+html[data-theme="dark"] .fbst, html[data-theme="dark"] .fbbar.orc, html[data-theme="dark"] .fbmr, html[data-theme="dark"] .tkc, html[data-theme="dark"] .cfc, html[data-theme="dark"] .cplane, html[data-theme="dark"] .cpstack span, html[data-theme="dark"] .cprow, html[data-theme="dark"] .cpsum div{background:#16201c}
+html[data-theme="dark"] .fbmr.hd{background:none}
+html[data-theme="dark"] .tkc.tk2{background:var(--bluebg)}
+html[data-theme="dark"] .tkc.tk3{background:var(--gold2)}
+html[data-theme="dark"] .tki, html[data-theme="dark"] .tk2 .tki, html[data-theme="dark"] .tk3 .tki{background:#0e1512}
+html[data-theme="dark"] .tki svg, html[data-theme="dark"] .cfc .ic svg{stroke:var(--gold)}
+html[data-theme="dark"] .cpsum b{color:var(--gold)}
+html[data-theme="dark"] .lay.br{background:#3a2715;color:#e8b98a}
+html[data-theme="dark"] .lay.si{background:#2a3035;color:#c3ccd3}
+html[data-theme="dark"] .lay.go{background:#3a3210;color:#f0d775}
+html[data-theme="dark"] .chgbox{border-color:#5a2a2a;border-left-color:var(--red)}
+html[data-theme="dark"] .cfc dd.gbn{background:var(--gold2)}
+html[data-theme="dark"] .cplane.l2 .cph i{background:#245b88}
+html[data-theme="dark"] .cplane.l3 .cph i{background:#3e7a1c}
+}
+@media screen and (prefers-color-scheme:dark){
+html:not([data-theme="light"]){--ink:#e7ece9;--muted:#a7b3ac;--paper:#111815;--bg:#0a0f0d;--line:#2b3832;--soft:#1c2723;--gold2:#1c2a15;--chart:#8fd14f;--green:#8fd4a8;--greenbg:#143021;--blue:#9cc7ee;--bluebg:#13263a;--orange:#f0c46a;--orangebg:#33280f;--red:#f0a3a3;--redbg:#341b1b;color-scheme:dark}
+html:not([data-theme="light"]) a{color:#b5e38a}
+html:not([data-theme="light"]) main{box-shadow:none}
+html:not([data-theme="light"]) .site-link{color:#032c1f}
+html:not([data-theme="light"]) .nav{background:rgba(17,24,21,.97)}
+html:not([data-theme="light"]) .nav a{color:#d3dad6}
+html:not([data-theme="light"]) .nav a:hover{color:#fff}
+html:not([data-theme="light"]) .callout{background:var(--soft)}
+html:not([data-theme="light"]) .callout.warn{background:var(--orangebg)}
+html:not([data-theme="light"]) .problem{background:#18240f}
+html:not([data-theme="light"]) th{background:var(--soft);border-color:var(--line)}
+html:not([data-theme="light"]) td{border-color:var(--line)}
+html:not([data-theme="light"]) .refs{background:var(--soft);border-left-color:#56625c;color:var(--muted)}
+html:not([data-theme="light"]) .refs a{color:#9cc7ee}
+html:not([data-theme="light"]) .refs .sep{color:#8d9a93}
+html:not([data-theme="light"]) .footer{color:var(--muted)}
+html:not([data-theme="light"]) .notice{background:#18240f;border-color:#3d5a26}
+html:not([data-theme="light"]) .qbox, html:not([data-theme="light"]) .story, html:not([data-theme="light"]) .chartbox{background:#16201c}
+html:not([data-theme="light"]) .chartbox svg [fill="#5c646d"], html:not([data-theme="light"]) .chartbox svg [fill="#626a73"]{fill:#a7b3ac}
+html:not([data-theme="light"]) .chartbox svg [fill="#17191c"]{fill:#e7ece9}
+html:not([data-theme="light"]) .chartbox svg [stroke="#eceff1"], html:not([data-theme="light"]) .chartbox svg [stroke="#cfd5da"]{stroke:#2b3832}
+html:not([data-theme="light"]) .barbg{background:var(--line)}
+html:not([data-theme="light"]) .stock-ranges button{background:#16201c;color:var(--ink);border-color:var(--line)}
+html:not([data-theme="light"]) .chartbox svg [fill="#3e7a1c"]{fill:#8fd14f}
+html:not([data-theme="light"]) .chartbox svg [stroke="#3e7a1c"]{stroke:#8fd14f}
+html:not([data-theme="light"]) .cpi{background:#0e1512}
+html:not([data-theme="light"]) .fbst, html:not([data-theme="light"]) .fbbar.orc, html:not([data-theme="light"]) .fbmr, html:not([data-theme="light"]) .tkc, html:not([data-theme="light"]) .cfc, html:not([data-theme="light"]) .cplane, html:not([data-theme="light"]) .cpstack span, html:not([data-theme="light"]) .cprow, html:not([data-theme="light"]) .cpsum div{background:#16201c}
+html:not([data-theme="light"]) .fbmr.hd{background:none}
+html:not([data-theme="light"]) .tkc.tk2{background:var(--bluebg)}
+html:not([data-theme="light"]) .tkc.tk3{background:var(--gold2)}
+html:not([data-theme="light"]) .tki, html:not([data-theme="light"]) .tk2 .tki, html:not([data-theme="light"]) .tk3 .tki{background:#0e1512}
+html:not([data-theme="light"]) .tki svg, html:not([data-theme="light"]) .cfc .ic svg{stroke:var(--gold)}
+html:not([data-theme="light"]) .cpsum b{color:var(--gold)}
+html:not([data-theme="light"]) .lay.br{background:#3a2715;color:#e8b98a}
+html:not([data-theme="light"]) .lay.si{background:#2a3035;color:#c3ccd3}
+html:not([data-theme="light"]) .lay.go{background:#3a3210;color:#f0d775}
+html:not([data-theme="light"]) .chgbox{border-color:#5a2a2a;border-left-color:var(--red)}
+html:not([data-theme="light"]) .cfc dd.gbn{background:var(--gold2)}
+html:not([data-theme="light"]) .cplane.l2 .cph i{background:#245b88}
+html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
+}
 </style>
 </head>
 <body>
@@ -275,7 +362,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 8, updated 24 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 9, updated 24 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -1184,7 +1271,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
