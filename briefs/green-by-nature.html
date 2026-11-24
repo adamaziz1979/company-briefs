@@ -169,6 +169,19 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 @media (max-width:900px){.fbflow{grid-template-columns:1fr}.fbst:not(:last-child)::after{right:50%;top:auto;bottom:-11px;transform:translateX(50%) rotate(135deg)}}
 @media (max-width:560px){.fbmr{grid-template-columns:1.3fr repeat(3,44px)}.fbmr .nt{grid-column:1/-1}.fbmr.hd .nt{display:none}}
 
+/* My take sub-section cards */
+.tkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0 4px}
+.tkc{border-radius:12px;padding:12px 14px;border:1px solid var(--line);background:#fff;border-top:4px solid var(--chart)}
+.tkc.tk2{border-top-color:var(--blue);background:var(--bluebg)}
+.tkc.tk3{border-top-color:var(--gold);background:var(--gold2)}
+.tkh{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-bottom:6px}
+.tki{width:28px;height:28px;border-radius:8px;background:var(--soft);display:flex;align-items:center;justify-content:center;flex:none}
+.tk2 .tki,.tk3 .tki{background:#fff}
+.tki svg{width:16px;height:16px;stroke:var(--deep);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.story.take .tkc ul{padding-left:18px;margin:0}
+.story.take .tkc li{font-size:13.5px;margin:6px 0}
+.story.take .tkc li ul{margin-top:4px}
+@media (max-width:900px){.tkgrid{grid-template-columns:1fr}}
 /* Changes box */
 .chgbox{background:var(--redbg);border:1px solid #efc9c9;border-left:5px solid var(--red);border-radius:10px;padding:10px 16px 10px 12px;margin:8px 0 12px}
 .chgbox ul{margin:0;padding-left:20px}
@@ -262,7 +275,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 7, updated 24 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 8, updated 24 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -698,25 +711,25 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
   <div class="rank">1</div>
   <h4>KPI Trust</h4>
   <div class="why"><strong>What the PD asks for:</strong> "Common definitions for critical data, KPIs and systems of record, with named business owners and stewards" and "fewer conflicting reports and manual reconciliations".</div>
-  <div class="lbl">Your take, fleshed out</div>
+<div class="tkgrid"><div class="tkc tk1"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Your take, fleshed out</div>
 <ul>
 <li><strong>Business-ready views on the medallion architecture:</strong> each KPI is calculated once, in the business-ready (gold) layer, not inside each dashboard, so every report shows the same number.</li>
 <li><strong>One trusted Power BI dashboard for each business area:</strong> a master dashboard each for Specialty Services, Landscape Services, NZ and Finance, replacing the duplicate reports each legacy business brought with it.</li>
 <li><strong>Self-service set up for success:</strong> plain-English business definitions, a data catalogue, and an ontology that maps how GbN's core things relate (client, contract, site, crew, job, asset), so people and AI tools read the data the same way.</li>
-</ul>
-  <div class="lbl">What it looks like at GbN</div>
+</ul></div>
+<div class="tkc tk2"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>What it looks like at GbN</div>
 <ul>
 <li>Four merged businesses are likely still counting the same thing differently: contract margin, labour hours, sites (<span class="badge hyp">Working Hypothesis</span> H1).</li>
 <li>Every definition gets a named business owner. The PD says business executives keep accountability for their data domains.</li>
 <li>Tripwire alerts flag when the same KPI drifts between reports, before it reaches the CFO.</li>
-</ul>
-  <div class="lbl">Your proof</div>
+</ul></div>
+<div class="tkc tk3"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Your proof</div>
 <ul>
 <li><strong>27 service KPIs from 62% to 100% consistent</strong>; duplicate Power BI dashboards from <strong>70+ to 46</strong>; KPI escalations from <strong>3 to 5 a month to zero</strong>; Power BI workspace health from <strong>60% to 93%</strong>.</li>
 <li>Moved calculations out of dashboards into SQL single-source-of-truth views; a master dashboard for each business area; refresh schedules aligned to warehouse loads.</li>
 <li>Plain-English data catalogue in a consistent template, calculations agreed with stakeholders up front, and data literacy sessions so people could challenge the numbers.</li>
 <li>Tripwires flag variances above 2% and trigger team-owned fixes; leaders no longer spend 1 to 2 days on manual validation.</li>
-</ul>
+</ul></div></div>
   <div class="open">"At Cisco, two teams saw different numbers for the same KPI. I moved the calculation out of the dashboards into one trusted layer, gave each business area one master dashboard, and consistency went from 62% to 100%."</div>
   <div class="refs"><strong>References:</strong> Master Resume (23 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
@@ -724,25 +737,25 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
   <div class="rank">2</div>
   <h4>Data Engineering and Governance</h4>
   <div class="why"><strong>What the PD asks for:</strong> "Lead the analytical data and BI capability, including data ingestion, pipelines, curated datasets, data models, quality checks, documentation, refresh monitoring" and "recommendations for systems of record".</div>
-  <div class="lbl">Your take, fleshed out</div>
+<div class="tkgrid"><div class="tkc tk1"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Your take, fleshed out</div>
 <ul>
 <li><strong>Efficient pipelines that deliver the right data at the right time:</strong> refresh schedules aligned to source loads, and pipeline health monitoring (failure rates, unexpected volume changes, load duration), so no dashboard shows half-loaded data.</li>
 <li><strong>Ingest, clean, combine:</strong> data from each source system is cleaned and formatted for use, then combined into business-ready views that compare apples with apples across the whole portfolio, whatever the source.</li>
 <li><strong>The merger data:</strong> ingest data from the four merged businesses (Green Options, Super Gardens, Skyline and Recreational Services NZ), consolidate it into a single system, and build business-ready views on the medallion architecture:<ul><li><strong>Bronze (raw):</strong> data landed as it is from SAP S/4HANA, the new workforce and time and attendance system, payroll, and the four businesses' legacy systems.</li><li><strong>Silver (clean and matched):</strong> one key each for client, contract, site, employee and asset, matched across systems, with duplicates and stale records removed.</li><li><strong>Gold (business-ready):</strong> contract profitability, labour productivity per contract and asset utilisation, by division.</li></ul></li>
 <li><strong>Governance built in:</strong> lineage, quality rules tested before each release, version-controlled changes and a documented catalogue.</li>
-</ul>
-  <div class="lbl">What it looks like at GbN</div>
+</ul></div>
+<div class="tkc tk2"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>What it looks like at GbN</div>
 <ul>
 <li>Microsoft Fabric, named as desirable in the PD, is built around lakehouse layers, so a medallion design fits (<span class="badge infer">Strong Inference</span>).</li>
 <li>The 2026 workforce and payroll rollouts are the moment to set migration quality criteria, so bad legacy data is not carried into the new systems (PD).</li>
-</ul>
-  <div class="lbl">Your proof</div>
+</ul></div>
+<div class="tkc tk3"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Your proof</div>
 <ul>
 <li><strong>Splunk and Meraki mergers:</strong> developed the KPIs, monitoring and progress updates for the device migration of <strong>8,000+ employees</strong>; cleaned stale records and merged them with Cisco asset and HR data; matched employees across HR systems; tracked the move to Intune against a <strong>6-month</strong> contract deadline.</li>
 <li>Managed pipelines from systems of record: Intune, Jamf, Meraki and Workday.</li>
 <li><strong>Snowflake and DBT:</strong> lineage, DBT Docs catalogue, and a release cycle from development through peer review and automated tests to production. Warehouse volume down <strong>42%</strong> (355 to 205 tables and views), <strong>517.2M</strong> stagnant rows removed.</li>
 <li>Replaced direct warehouse access with secure AWS S3 data sharing: disruptions from <strong>1 to 2 a quarter to zero</strong>, protecting <strong>200+</strong> stakeholders.</li>
-</ul>
+</ul></div></div>
   <div class="open">"GbN's challenge is the one I worked on in the Splunk and Meraki mergers: messy, stale data from separate businesses that has to land in one system and match up. The medallion layers are how I would make that repeatable."</div>
   <div class="refs"><strong>References:</strong> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
@@ -750,25 +763,25 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
   <div class="rank">3</div>
   <h4>Bridge between data and business</h4>
   <div class="why"><strong>What the PD asks for:</strong> "Work with Operations, Finance, and other leaders to understand the decisions that drive revenue, margin, productivity and customer outcomes."</div>
-  <div class="lbl">Your take, fleshed out</div>
+<div class="tkgrid"><div class="tkc tk1"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Your take, fleshed out</div>
 <ul>
 <li><strong>Proactive stakeholder engagement:</strong> go to the EGMs and functional leaders before they come to the data team.</li>
 <li><strong>Understand their objectives, obstacles, timelines and target milestones:</strong> write down each leader's definition of success.</li>
 <li><strong>Connect the data team's effort and capacity to their top business needs:</strong> prioritise openly, so capacity goes where the value is.</li>
-</ul>
-  <div class="lbl">What it looks like at GbN</div>
+</ul></div>
+<div class="tkc tk2"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>What it looks like at GbN</div>
 <ul>
 <li>Start with CFO Angela Kreis, the three EGMs (Dane Thatcher, Michael Culley, Matthew Bailey) and Michelle Rouillon's transformation programs.</li>
 <li>The likely top needs are the ones the PD names: contract profitability, tender pricing, labour productivity and asset utilisation.</li>
 <li>Agree the target milestones and baselines with Finance at the start, so benefits are signed off, not just claimed (H3).</li>
-</ul>
-  <div class="lbl">Your proof</div>
+</ul></div>
+<div class="tkc tk3"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Your proof</div>
 <ul>
 <li><strong>Fiscal year planning (Jira Align):</strong> gathered requirements for each epic, set success metrics for each one, and shaped yearly themes from transformation and operational needs.</li>
 <li><strong>Quarterly PI planning with WSJF:</strong> ranked every project on criticality, complexity, dependencies, business value, capacity and duration; Miro PI board; quarterly roadmap presented to executives.</li>
 <li>Business value cases for IT programs worth <strong>$11M+</strong>; business value case accuracy improved by <strong>80%</strong>.</li>
 <li>Automated weekly progress reports and narratives for executive leadership.</li>
-</ul>
+</ul></div></div>
   <div class="open">"I start with the decision, not the dashboard: what each leader is trying to achieve, what is in the way, and by when. Then the team's capacity follows the value."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Master Resume (23 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
@@ -776,25 +789,25 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
   <div class="rank">4</div>
   <h4>Empower everyone with self-service analytics</h4>
   <div class="why"><strong>What the PD asks for:</strong> "Business leaders and employees can find and use relevant information more easily, including through approved natural-language queries where suitable connections and access controls are in place."</div>
-  <div class="lbl">Your take, fleshed out</div>
+<div class="tkgrid"><div class="tkc tk1"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Your take, fleshed out</div>
 <ul>
 <li><strong>The ThoughtSpot story and the business need for it:</strong> a third of data requests were simple enough to need no analyst, yet analysts were the bottleneck and stakeholders waited.</li>
 <li><strong>Power BI smart narratives and Q&amp;A:</strong> natural-language summaries and questions inside the dashboards GbN already uses.</li>
 <li><strong>Explore Copilot's ability to power an AI assistant</strong> that queries data in natural language and gives reliable, consistent results.</li>
-</ul>
-  <div class="lbl">What it looks like at GbN</div>
+</ul></div>
+<div class="tkc tk2"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>What it looks like at GbN</div>
 <ul>
 <li>Office and field managers ask "which contracts are over their labour budget this month?" without waiting for an analyst.</li>
 <li>Reliable answers come from the gold layer and a governed semantic model, never raw tables. A standard set of test questions is checked before release, like the Cisco QA process.</li>
 <li>Power BI Q&amp;A retires in December 2026 (Microsoft), so lead with Copilot in Power BI. See Intro to Copilot.</li>
 <li>You have not used Copilot yet (Additional Evidence). Lead with ThoughtSpot Spotter as the transferable natural-language experience.</li>
-</ul>
-  <div class="lbl">Your proof</div>
+</ul></div>
+<div class="tkc tk3"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Your proof</div>
 <ul>
 <li>Built ThoughtSpot on the same verified, governed datasets as the executive KPI dashboards; added Spotter as a natural-language GPT layer for forecasting and correlation; new users enrolled automatically in SharePoint how-to pages and videos.</li>
 <li>Weekly users from <strong>46 to 196 (+326%)</strong>; monthly queries from <strong>8.1K to 19.2K (+137%)</strong>; data request workload down <strong>33%</strong>, saving about <strong>738 hours and $68.9K a year</strong>; short-term dashboard projects avoided by <strong>67%</strong>.</li>
 <li>Went direct to the vendor and built the capacity case: the $70K, 250M-row option gave <strong>2.9x better value</strong>, <strong>65% lower cost per million rows</strong>, <strong>5x the capacity for 1.75x the cost</strong>.</li>
-</ul>
+</ul></div></div>
   <div class="open">"Self-service only works if people trust the answers. At Cisco I built it on the same governed data as the executive dashboards, and weekly users grew from 46 to 196."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
@@ -802,22 +815,22 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
   <div class="rank">5</div>
   <h4>AI-enabled solutions</h4>
   <div class="why"><strong>What the PD asks for:</strong> "Opportunities to improve business performance through AI are identified with business leaders, with benefits measured for agreed initiatives", plus "asset utilisation".</div>
-  <div class="lbl">Your take, fleshed out</div>
+<div class="tkgrid"><div class="tkc tk1"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Your take, fleshed out</div>
 <ul>
 <li><strong>AI assistant:</strong> alerts, AI summaries and Q&amp;A built on verified, business-ready data, with QA checks.</li>
 <li><strong>AI-enabled performance-based refresh (PBR):</strong> decide when to replace an asset from how it actually performs, not how old it is.</li>
-</ul>
-  <div class="lbl">What it looks like at GbN</div>
+</ul></div>
+<div class="tkc tk2"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>What it looks like at GbN</div>
 <ul>
 <li><strong>AI assistant idea:</strong> tripwire alerts on contract performance (for example labour hours or overtime running above plan), with an AI summary sent to the contract manager. GbN's own Caulfield case study describes overtime and casual staff during a carnival (<span class="badge hyp">Working Hypothesis</span>).</li>
 <li><strong>PBR idea:</strong> the same thinking for mowers, vehicles (the EV fleet) and equipment: use usage and performance data to decide when to service, move or replace them. That is the PD's asset utilisation measure.</li>
-</ul>
-  <div class="lbl">Your proof</div>
+</ul></div>
+<div class="tkc tk3"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Your proof</div>
 <ul>
 <li><strong>AI assistant:</strong> two-tier tripwires on six months of case trends (2 standard deviations for executives, 1.8 for operations); prompt patterns such as cognitive verifier, question refinement and few-shot examples; delivered in Webex chat with Q&amp;A from verified SQL views; QA process for accuracy. Case-spike analysis from <strong>4 working days to near-instant</strong>, with fewer executive escalations.</li>
 <li><strong>PBR:</strong> compared supervised learning, unsupervised learning, GenAI and statistical thresholds, and chose unsupervised anomaly detection (no training data to maintain, no hallucination risk, scales with the fleet). Used CPU, RAM, memory pressure and disk telemetry plus app-usage personas across a fleet of about <strong>150,000</strong> devices, supporting <strong>millions</strong> in potential asset management savings.</li>
 <li>AI token waste cut by <strong>40%</strong>; 3 years of AI governance work.</li>
-</ul>
+</ul></div></div>
   <div class="open">"I build AI on top of trusted data, not ahead of it. The assistant cut case-spike analysis from 4 days to near-instant because it answered from verified views, with a QA check."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
@@ -825,21 +838,21 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
   <div class="rank">6</div>
   <h4>Building and mentoring a data team, evolving the data function</h4>
   <div class="why"><strong>What the PD asks for:</strong> "Experience building teams, influencing executives and managing specialist partners alongside technology and transformation functions."</div>
-  <div class="lbl">Your take, fleshed out</div>
+<div class="tkgrid"><div class="tkc tk1"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></span>Your take, fleshed out</div>
 <ul>
 <li><strong>Building and mentoring a data team that evolves the data function:</strong> from answering one-off requests to owning the trusted data layer and setting up self-service.</li>
-</ul>
-  <div class="lbl">What it looks like at GbN</div>
+</ul></div>
+<div class="tkc tk2"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>What it looks like at GbN</div>
 <ul>
 <li>Three direct reports across data engineering, BI and reporting, and data governance (Boyd's ad).</li>
 <li>The shift GbN needs: from reactive report requests to a team that owns the definitions and the business-ready views.</li>
-</ul>
-  <div class="lbl">Your proof</div>
+</ul></div>
+<div class="tkc tk3"><div class="tkh"><span class="tki" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Your proof</div>
 <ul>
 <li>Led a team of analysts, data scientists and engineers, working with specialist partners; built the foundations for a new data function (2017 to 2019).</li>
 <li>Changed what the team was rewarded for: from fast ad-hoc turnaround to advanced SQL and Python, data visualisation and narratives that drive action; built a mission statement with the team and stakeholders.</li>
 <li>Analyst community with quarterly show-and-share sessions; AI workshops and brown-bag sessions for up to 50 people; <strong>ANZ Mentor of the Quarter</strong> (Apr 2023).</li>
-</ul>
+</ul></div></div>
   <div class="open">"I changed what the team was rewarded for: not how fast they answered one question, but how well placed they were to answer the next ten."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Master Resume (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
@@ -1171,7 +1184,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
