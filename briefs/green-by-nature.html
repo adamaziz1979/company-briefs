@@ -347,6 +347,38 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 .hbleg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 4px -1px 8px}
 .hbleg i.b{background:#c5cec8}.hbleg i.a{background:var(--chart)}
 @media (max-width:800px){.hbr{grid-template-columns:1fr 44px;gap:6px 12px}.hbn{grid-column:1/-1}}
+
+/* The Job Ad carousel: three cards in view, the middle one larger; loops */
+.jameta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}
+.jameta span{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:13px;line-height:1.35}
+.jameta b{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.jac{position:relative}
+.jacards{position:relative;margin:0;padding:0;list-style:none;overflow:hidden;height:420px;touch-action:pan-y}
+.jacard{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;position:absolute;top:50%;left:50%;width:var(--cw,320px);box-sizing:border-box;transition:transform .5s ease,opacity .5s ease,box-shadow .5s ease;font-size:14px;line-height:1.5}
+.jacard.side{cursor:pointer}
+.jacard.side:hover{border-color:var(--chart)}
+.jacard.mid{box-shadow:0 10px 28px rgba(0,0,0,.14);border-color:var(--chart)}
+.jacard h4{margin:0 0 8px;font-size:17px}
+.jacard p{margin:0 0 9px}
+.jacard ul,.jacard ol{margin:0 0 9px;padding-left:20px}
+.jacard li{margin:3px 0}
+.jan{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--chart)}
+.jak{font-size:13px;color:var(--muted)}
+.jaq{font-style:italic;border-left:3px solid var(--gold);padding-left:10px}
+.jactl{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
+.jabtns{display:flex;gap:8px}
+.jactl button{min-width:44px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:13px;font-family:inherit}
+.jactl button:hover{border-color:var(--chart)}
+.jactl svg{width:18px;height:18px}
+.jactl .japp{padding:0 14px;gap:6px}
+.jadots{display:flex;flex-wrap:wrap;justify-content:center;margin:0;padding:0;list-style:none}
+.jadots button{min-width:28px;min-height:44px;border:0;background:transparent;padding:0}
+.jadots button::before{content:"";display:block;width:8px;height:8px;margin:auto;border-radius:50%;background:var(--line);transition:width .2s,background .2s}
+.jadots button[aria-current="true"]::before{width:20px;border-radius:4px;background:var(--chart)}
+.jacount{font-size:13px;color:var(--muted);white-space:nowrap}
+@media (max-width:600px){.jacard{font-size:13px;padding:14px;line-height:1.45}.jacard h4{font-size:16px}}
+@media (max-width:480px){.jadots{display:none}}
+@media (prefers-reduced-motion:reduce){.jacard,.jadots button::before{transition:none}}
 /* Copilot infographics */
 .cpi{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:18px 18px 14px;margin:12px 0 16px}
 .cpi .cpi-t{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 12px}
@@ -413,6 +445,7 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 
 
 
+
 /* ===== Dark theme (data-theme="dark" from the briefs page, or device setting) ===== */
 @media screen{
 html[data-theme="dark"]{--ink:#e7ece9;--muted:#a7b3ac;--paper:#111815;--bg:#0a0f0d;--line:#2b3832;--soft:#1c2723;--gold2:#1c2a15;--chart:#8fd14f;--green:#8fd4a8;--greenbg:#143021;--blue:#9cc7ee;--bluebg:#13263a;--orange:#f0c46a;--orangebg:#33280f;--red:#f0a3a3;--redbg:#341b1b;color-scheme:dark}
@@ -456,6 +489,8 @@ html[data-theme="dark"] .bbh{fill:#16201c}
 html[data-theme="dark"] .xfan span{border-color:#2f5a40}
 html[data-theme="dark"] .dnw{background:#16201c}
 html[data-theme="dark"] .hbb{background:#16201c}
+html[data-theme="dark"] .jacard, html[data-theme="dark"] .jactl button{background:#16201c}
+html[data-theme="dark"] .jacard.mid{box-shadow:0 10px 28px rgba(0,0,0,.5)}
 html[data-theme="dark"] .hbt .band, html[data-theme="dark"] .hbt .bd.b, html[data-theme="dark"] .hbleg i.b{background:#55665d}
 html[data-theme="dark"] .dn .dt{stroke:var(--line)}
 html[data-theme="dark"] .dn .db, html[data-theme="dark"] .dleg i.b{stroke:#55665d;background:#55665d}
@@ -515,6 +550,8 @@ html:not([data-theme="light"]) .bbh{fill:#16201c}
 html:not([data-theme="light"]) .xfan span{border-color:#2f5a40}
 html:not([data-theme="light"]) .dnw{background:#16201c}
 html:not([data-theme="light"]) .hbb{background:#16201c}
+html:not([data-theme="light"]) .jacard, html:not([data-theme="light"]) .jactl button{background:#16201c}
+html:not([data-theme="light"]) .jacard.mid{box-shadow:0 10px 28px rgba(0,0,0,.5)}
 html:not([data-theme="light"]) .hbt .band, html:not([data-theme="light"]) .hbt .bd.b, html:not([data-theme="light"]) .hbleg i.b{background:#55665d}
 html:not([data-theme="light"]) .dn .dt{stroke:var(--line)}
 html:not([data-theme="light"]) .dn .db, html:not([data-theme="light"]) .dleg i.b{stroke:#55665d;background:#55665d}
@@ -542,7 +579,7 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Cisco and GbN stacks compared, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 13, updated 25 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 14, updated 25 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -557,6 +594,7 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <a href="#stacks">Stacks compared</a>
   <a href="#stage2">Company dossier</a>
   <a href="#extras">Extras</a>
+  <a href="#jobad">Job ad</a>
   <a href="#role">Role</a>
   <a href="#stage3">Top 5 stories</a>
   <a href="#mytake">My Take</a>
@@ -987,6 +1025,57 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li><strong>Level mismatch risk.</strong> A$200k base fits a Senior Manager role, not a Head of role. Anchoring too high may read as a flight risk.</li>
 </ol>
 <div class="refs"><strong>References:</strong> Inference from Stage 1 and Stage 2 sections 3 and 5. Master Resume (22 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> Rezi Evidence Match (22 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/96034614" title="Head of Data, Insights &amp; AI, Boyd Recruitment, SEEK job 96034614, posted 21 Nov 2026">SEEK: Boyd Recruitment ad</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://www.dyflex.com.au/case-study/sap-s-4hana-cloud-streamlined-disparate-application-landscapes-into-one-core-erp-system" title="SAP S/4HANA Cloud streamlined disparate application landscapes into one core ERP system, DyFlex Solutions, about Sep 2024">DyFlex: GbN SAP case study</a></div>
+</section>
+
+<!-- ============ JOB AD ============ -->
+<section id="jobad">
+<h2>The Job Ad</h2>
+<p>The Boyd Recruitment ad for "Head of Data, Insights &amp; AI", word for word, in its first seven parts. Use the arrows, the dots or swipe to move between parts.</p>
+<div class="jameta"><span><b>Advertiser</b>Boyd Recruitment (exclusive), Antoinette Boyd</span><span><b>Location</b>Sydney NSW, hybrid, full time</span><span><b>Posted</b>21 Nov 2026 on SEEK</span><span><b>Salary</b>Not shown in the ad</span></div>
+<div class="jac" id="jaCarousel" role="region" aria-roledescription="carousel" aria-label="The job ad, in seven parts">
+<ul class="jacards" id="jaCards" aria-live="off">
+<li class="jacard" aria-roledescription="slide" aria-label="1 of 7: Big vision"><p class="jan">1 of 7</p><p class="jak">Reporting to: Head of Transformation | 3 direct reports</p><h4>Big vision. Real-world thinking. And the personality to bring people with you.</h4><p>Not a tech head. A commercially switched-on, charismatic leader who understands that better decisions, stronger performance and meaningful transformation all start with data you can trust. Someone who can influence around an executive table, connect with people on the ground and make complicated things feel simple.</p></li>
+<li class="jacard" aria-roledescription="slide" aria-label="2 of 7: The Opportunity"><p class="jan">2 of 7</p><h4>The Opportunity</h4><p>Large, diverse operational business delivering services across sports turf, education, golf courses, commercial landscapes, vegetation, arboriculture and council environments across Australia and New Zealand. A data lake/warehouse environment is already in place: the opportunity is to strengthen it, improve how the business uses it and get more value from it. Ambition to move away from legacy systems and processes, simplify how work gets done and make better use of data and technology, freeing people for client service and operational delivery while driving stronger commercial and financial performance.</p></li>
+<li class="jacard" aria-roledescription="slide" aria-label="3 of 7: What You'll Own"><p class="jan">3 of 7</p><h4>What You'll Own</h4><ul>
+<li>Data and information strategy, governance, ownership and systems of record</li>
+<li>The continued development and value of the existing data lake/warehouse environment</li>
+<li>Power BI, self-service analytics, data pipelines, curated datasets and models</li>
+<li>Commercial insights across contract profitability, pricing, workforce productivity, asset utilisation and customer outcomes</li>
+<li>Data quality, master data and consistent KPI definitions</li>
+<li>Business information and knowledge standards, including SharePoint</li>
+<li>Data and information requirements supporting major transformation programs</li>
+<li>Three direct reports and specialist partners</li>
+</ul>
+<p>A key part of the impact: lifting leaders to own their data, understand it and use it to perform better. "It's about helping the business own its data, trust it and use it better."</p></li>
+<li class="jacard" aria-roledescription="slide" aria-label="4 of 7: Mergers, Acquisitions and Transformation"><p class="jan">4 of 7</p><h4>Mergers, Acquisitions &amp; Transformation</h4><p>M&amp;A experience will be important (different systems, different data, different ways of working). A clear transformation roadmap is already underway; work with the Head of Transformation so the data and information agenda supports what is in motion. "Connect the dots, not add another layer of complexity."</p></li>
+<li class="jacard" aria-roledescription="slide" aria-label="5 of 7: What You'll Bring"><p class="jan">5 of 7</p><h4>What You'll Bring</h4><ul>
+<li>Strong senior-level experience across data, analytics, insights or information management, with measurable business outcomes</li>
+<li>Depth across data governance and ownership, master data, data quality, BI and analytics, plus commercial judgement to turn information into insight and insight into action</li>
+<li>Power BI experience is important; strong SharePoint capability forms part of the information management remit</li>
+<li>Exposure to Microsoft Fabric, Azure, SAP, WFM and/or other ERP reporting environments highly regarded</li>
+<li>AI is around 30% of the role: keep pace with where it is heading, recognise where it can genuinely improve the business and establish a practical AI roadmap across customers, people, workforce management, assets and finance</li>
+</ul></li>
+<li class="jacard" aria-roledescription="slide" aria-label="6 of 7: Leadership and person"><p class="jan">6 of 7</p><h4>Leadership and person</h4><p>Energy, presence and ideas without the ego. Visionary but pragmatic, empathetic and approachable. Challenge thinking without alienating people, explain complex ideas in plain language, meet people where they are and build their confidence to make better decisions.</p></li>
+<li class="jacard" aria-roledescription="slide" aria-label="7 of 7: How to Apply"><p class="jan">7 of 7</p><h4>How to Apply (cover letter brief from the recruiter)</h4><p>"Make the cover letter count." Tell her:</p>
+<ol>
+<li>What you have delivered across data and insights</li>
+<li>Your experience establishing data governance and ownership</li>
+<li>How you have navigated mergers and acquisitions</li>
+<li>Where you have made a measurable commercial difference</li>
+<li>How you are keeping pace with AI and how you have turned, or would turn, emerging capability into something practical and valuable</li>
+<li>How you lead: how you make the complicated simple, lift the capability of other leaders and bring people with you</li>
+<li>A sense of the person behind the CV</li>
+</ol>
+<p>Must have the right to live and work permanently in Australia.</p></li>
+</ul>
+<div class="jactl">
+<button type="button" class="japp" id="jaPP" aria-label="Pause auto-rotation"></button>
+<ul class="jadots" id="jaDots" aria-label="Choose a part of the ad"></ul>
+<span class="jacount" id="jaCount" aria-hidden="true"></span>
+<div class="jabtns"><button type="button" id="jaPrev" aria-label="Previous part"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button type="button" id="jaNext" aria-label="Next part"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+</div>
+</div>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://au.seek.com/job/96034614" title="Head of Data, Insights &amp; AI, Boyd Recruitment, SEEK job 96034614, posted 21 Nov 2026">SEEK: Boyd Recruitment ad</a> <span class="sep">|</span> Saved job ad (22 Nov 2026), Boyd Recruitment prospect folder</div>
 </section>
 
 <!-- ============ ROLE ============ -->
@@ -1495,10 +1584,76 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 13 (25 November 2026): KPI Trust proof as a horizontal barbell chart, ThoughtSpot proof as donut charts, menu label "My Take". Version 12 (25 November 2026): My Take infographics restyled: hourglass for KPI Trust, Bridge and AI; layer stack for Data Engineering and the data team; before and after with a barbell chart (Viktor's standard) for self-service. Version 11 (25 November 2026): an infographic for each My Take section, and Top 5 stories moved before My Take. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 14 (25 November 2026): The Job Ad section added before Role, as a carousel of the first seven parts of the ad, word for word. Version 13 (25 November 2026): KPI Trust proof as a horizontal barbell chart, ThoughtSpot proof as donut charts, menu label "My Take". Version 12 (25 November 2026): My Take infographics restyled: hourglass for KPI Trust, Bridge and AI; layer stack for Data Engineering and the data team; before and after with a barbell chart (Viktor's standard) for self-service. Version 11 (25 November 2026): an infographic for each My Take section, and Top 5 stories moved before My Take. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
 
+
+<script>
+/* The Job Ad carousel (same pattern as the company briefs home page): three cards in view, the middle one larger.
+   Moves on one part every 8 s and loops. Click a side card, swipe, use arrow keys or dots to move.
+   Pauses on hover, keyboard focus, hidden tab or the Pause button; off by default for reduced motion. */
+(function(){
+  var track=document.getElementById('jaCards');if(!track)return;
+  var cards=[].slice.call(track.children),n=cards.length,car=document.getElementById('jaCarousel'),
+      pp=document.getElementById('jaPP'),dotsEl=document.getElementById('jaDots'),countEl=document.getElementById('jaCount'),
+      idx=0,timer=null,hovering=false,focusing=false,SIDE=.82,
+      reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,userPaused=!!reduce;
+  var PAUSE='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Pause',
+      PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" fill="currentColor"/></svg>Play';
+  function layout(){
+    var w=track.clientWidth;if(!w)return;
+    var cw=Math.round(w<600?w*.78:Math.min(440,(w/2-24-2)/(.5+SIDE)));
+    track.style.setProperty('--cw',cw+'px');
+    cards.forEach(function(c){c.style.height='auto'});
+    var h=Math.max.apply(null,cards.map(function(c){return c.offsetHeight}));
+    cards.forEach(function(c){c.style.height=h+'px'});
+    track.style.height=(h+24)+'px';
+    place();
+  }
+  function place(){
+    var cw=parseFloat(track.style.getPropertyValue('--cw'))||320,gap=track.clientWidth<600?10:24,shift=cw/2+cw*SIDE/2+gap;
+    cards.forEach(function(c,i){
+      var off=((i-idx)%n+n)%n;if(off>n/2)off-=n;
+      var vis=Math.abs(off)<=1,x=(off<-1?-2:off>1?2:off)*shift,sc=off===0?1:SIDE;
+      c.style.transform='translate(calc(-50% + '+x+'px),-50%) scale('+sc+')';
+      c.style.opacity=vis?(off===0?1:.55):0;c.style.zIndex=off===0?2:1;c.style.visibility=vis?'visible':'hidden';
+      c.classList.toggle('mid',off===0);c.classList.toggle('side',vis&&off!==0);c.setAttribute('data-off',off);
+      if(off===0){c.removeAttribute('inert');c.removeAttribute('aria-hidden')}else{c.setAttribute('inert','');c.setAttribute('aria-hidden','true')}
+    });
+    var h='';for(var i=0;i<n;i++)h+='<li><button type="button" data-i="'+i+'" aria-label="Show part '+(i+1)+'"'+(i===idx?' aria-current="true"':'')+'></button></li>';
+    dotsEl.innerHTML=h;countEl.textContent=(idx+1)+' of '+n;
+  }
+  function go(i){idx=((i%n)+n)%n;place()}
+  function running(){return !userPaused&&!hovering&&!focusing&&!document.hidden&&n>1}
+  function sync(){
+    clearInterval(timer);timer=null;if(running())timer=setInterval(function(){go(idx+1)},8000);
+    track.setAttribute('aria-live',running()?'off':'polite');
+    pp.innerHTML=userPaused?PLAY:PAUSE;pp.setAttribute('aria-label',userPaused?'Start auto-rotation':'Pause auto-rotation');
+  }
+  pp.addEventListener('click',function(){userPaused=!userPaused;sync()});
+  document.getElementById('jaPrev').addEventListener('click',function(){go(idx-1);sync()});
+  document.getElementById('jaNext').addEventListener('click',function(){go(idx+1);sync()});
+  dotsEl.addEventListener('click',function(e){var t=e.target.closest('button[data-i]');if(t){go(+t.getAttribute('data-i'));sync()}});
+  var swiped=false;
+  track.addEventListener('click',function(e){
+    if(swiped){swiped=false;return}if(e.target.closest('.jacard.mid'))return;
+    cards.forEach(function(c){if(!c.classList.contains('side'))return;var r=c.getBoundingClientRect();
+      if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom){go(idx+(+c.getAttribute('data-off')));sync()}});});
+  car.addEventListener('keydown',function(e){if(e.key==='ArrowLeft'){go(idx-1);e.preventDefault()}else if(e.key==='ArrowRight'){go(idx+1);e.preventDefault()}});
+  var sx=null;
+  track.addEventListener('pointerdown',function(e){sx=e.clientX});
+  track.addEventListener('pointerup',function(e){if(sx===null)return;var dx=e.clientX-sx;sx=null;if(Math.abs(dx)>40){swiped=true;go(idx+(dx<0?1:-1));sync()}});
+  car.addEventListener('mouseenter',function(){hovering=true;sync()});
+  car.addEventListener('mouseleave',function(){hovering=false;sync()});
+  car.addEventListener('focusin',function(){focusing=true;sync()});
+  car.addEventListener('focusout',function(e){if(!car.contains(e.relatedTarget)){focusing=false;sync()}});
+  document.addEventListener('visibilitychange',sync);
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(layout,150)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(layout);
+  layout();sync();
+})();
+</script>
 </body>
 </html>
