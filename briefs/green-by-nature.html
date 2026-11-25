@@ -582,7 +582,7 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Cisco and GbN stacks compared, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 15, updated 25 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 17, updated 25 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -601,7 +601,7 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <a href="#role">Role</a>
   <a href="#stage3">Top 5 stories</a>
   <a href="#mytake">My Take</a>
-  <a href="#copilot">Copilot &amp; Fabric</a>
+  <a href="#copilot">Copilot, Fabric &amp; Azure</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -793,38 +793,40 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 
 <section id="stacks">
 <h2>Tech Stacks Compared</h2>
-<p>The Cisco stack you ran, next to the Green by Nature stack, layer by layer. The middle column is the job both layers do. Most of the work is the same; the tools change from Snowflake, DBT and ThoughtSpot to Fabric, OneLake and Copilot.</p>
-<div class="sksum"><span class="skp id">Identical: 3</span><span class="skp nw">Same job, new tool: 10</span><span class="skp tc">To confirm: 2</span></div>
+<p>The Cisco stack you ran, next to the Green by Nature stack, layer by layer. The middle column is the job both layers do. Most of the work is the same; the tools change from Snowflake, DBT and ThoughtSpot to Fabric, OneLake and Copilot, all running on Azure.</p>
+<div class="sksum"><span class="skp id">Identical: 3</span><span class="skp nw">Same job, new tool: 11</span><span class="skp tc">To confirm: 2</span></div>
 <div class="skg">
 <div class="hd">Cisco (what you ran)</div><div class="hd mid">Shared job</div><div class="hd">Green by Nature</div>
 <div class="tier">Sources</div>
 <div class="skr"><div class="skc">Workday, Intune, Jamf, Meraki</div><div class="skm">Systems of record<span class="skp nw">Same job, new tool</span></div><div class="skc">SAP S/4HANA, new WFM and time and attendance, payroll</div></div>
 <div class="skr"><div class="skc">SAP BusinessObjects</div><div class="skm">ERP reporting<span class="skp nw">Same job, new tool</span></div><div class="skc">S/4HANA reporting (the SAP family you know)</div></div>
 <div class="tier">Data platform</div>
-<div class="skr"><div class="skc">Snowflake pipelines</div><div class="skm">Ingestion<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric pipelines, Copy job, mirroring</div></div>
-<div class="skr"><div class="skc">Snowflake</div><div class="skm">Storage<span class="skp tc">To confirm</span></div><div class="skc">Existing data lake or warehouse, or OneLake</div></div>
+<div class="skr"><div class="skc">Snowflake pipelines</div><div class="skm">Ingestion<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric pipelines, Copy job, mirroring; older Azure Data Factory pipelines may still run</div></div>
+<div class="skr"><div class="skc">Snowflake</div><div class="skm">Storage<span class="skp tc">To confirm</span></div><div class="skc">Existing data lake or warehouse (possibly Azure Data Lake Storage or Azure SQL <span class="badge hyp">Working Hypothesis</span>), or OneLake</div></div>
 <div class="skr"><div class="skc">DBT models and tests</div><div class="skm">Transformation<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric notebooks, materialised lake views, T-SQL</div></div>
 <div class="skr"><div class="skc">DBT with GitHub releases</div><div class="skm">Release control<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric Git integration and deployment pipelines</div></div>
 <div class="tier">Governance</div>
-<div class="skr"><div class="skc">Alation, then DBT Docs</div><div class="skm">Catalogue and lineage<span class="skp nw">Same job, new tool</span></div><div class="skc">OneLake catalog, lineage view, Purview</div></div>
+<div class="skr"><div class="skc">Alation, then DBT Docs</div><div class="skm">Catalogue and lineage<span class="skp nw">Same job, new tool</span></div><div class="skc">OneLake catalog, lineage view, Purview; access through Microsoft Entra ID</div></div>
 <div class="skr"><div class="skc">AWS S3 data sharing</div><div class="skm">Data sharing<span class="skp nw">Same job, new tool</span></div><div class="skc">OneLake shortcuts</div></div>
 <div class="tier">Insights and AI</div>
 <div class="skr"><div class="skc id">Power BI</div><div class="skm">Dashboards<span class="skp id">Identical</span></div><div class="skc id">Power BI</div></div>
 <div class="skr"><div class="skc">ThoughtSpot and Spotter</div><div class="skm">Ask your data<span class="skp nw">Same job, new tool</span></div><div class="skc">Copilot in Power BI, Fabric data agent</div></div>
-<div class="skr"><div class="skc">Webex AI assistant</div><div class="skm">AI assistant<span class="skp nw">Same job, new tool</span></div><div class="skc">Copilot Studio agent in Teams</div></div>
+<div class="skr"><div class="skc">Webex AI assistant</div><div class="skm">AI assistant<span class="skp nw">Same job, new tool</span></div><div class="skc">Copilot Studio agent in Teams; custom agents in Microsoft Foundry on Azure</div></div>
 <div class="tier">Operations</div>
 <div class="skr"><div class="skc">Service desk tripwires</div><div class="skm">Alerts<span class="skp nw">Same job, new tool</span></div><div class="skc">Fabric Activator, Power BI alerts</div></div>
 <div class="skr"><div class="skc id">Power Automate</div><div class="skm">Automation<span class="skp id">Identical</span></div><div class="skc id">Power Automate</div></div>
 <div class="skr"><div class="skc id">SharePoint</div><div class="skm">Knowledge<span class="skp id">Identical</span></div><div class="skc id">SharePoint</div></div>
 <div class="skr"><div class="skc">Splunk OpenTelemetry</div><div class="skm">Telemetry<span class="skp tc">To confirm</span></div><div class="skc">Possibly mower or EV fleet data <span class="badge hyp">Working Hypothesis</span></div></div>
+<div class="tier">Cloud underneath</div>
+<div class="skr"><div class="skc">Snowflake's own cloud service, with AWS S3 for data sharing</div><div class="skm">Cloud and access<span class="skp nw">Same job, new tool</span></div><div class="skc"><strong>Azure:</strong> the subscription that pays for Fabric capacity, Microsoft Entra ID for sign-in and access</div></div>
 </div>
 <div class="callout"><strong>How to say it at interview.</strong> "I've run every layer of this stack. Power BI, Power Automate and SharePoint are the same tools. For the rest, I've done the same job on Snowflake, DBT and ThoughtSpot, and Fabric, OneLake and Copilot do that job in the Microsoft world."</div>
 <h4>Confirm at interview</h4>
 <ol class="qlist">
-<li>Storage: does the current data lake or warehouse stay, or is a move to OneLake planned?</li>
+<li>Storage: is the current data lake or warehouse on Azure, and does it stay or move into OneLake?</li>
 <li>Telemetry: is there any mower, vehicle or device data the business wants to use?</li>
 </ol>
-<div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> Tech Stack section above <span class="sep">|</span> Intro to Copilot and Fabric section below</div>
+<div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> Tech Stack section above <span class="sep">|</span> Copilot, Fabric and Azure section below (part 8, Where Azure fits)</div>
 </section>
 
 
@@ -1391,7 +1393,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <!-- ============ COPILOT ============ -->
 <section id="copilot">
-<h2>Intro to Copilot and Fabric (for Adam)</h2>
+<h2>Intro to Copilot, Fabric and Azure (for Adam)</h2>
 <p>GbN runs on Microsoft (Power BI, SharePoint, with Fabric and Azure named in the PD), so Copilot is the likely AI layer. This is a quick primer for someone who knows ThoughtSpot Spotter but has not used Copilot. Facts checked 24 Nov 2026. Microsoft renames and moves these features often, so check anything marked preview before quoting it.</p>
 
 <h3>1. "Copilot" is a family, not one product</h3>
@@ -1562,6 +1564,9 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 <li><strong>Medallion in one line:</strong> bronze keeps the raw copy, silver cleans and matches, gold holds the business-ready views that Power BI and Copilot read.</li>
 </ul>
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/get-started/decision-guide-pipeline-dataflow-spark" title="Microsoft Fabric decision guide: copy activity, dataflow, or Spark, Microsoft Learn">Microsoft Learn: Pipeline, dataflow or Spark</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/fundamentals/get-data" title="Get data into Fabric (mirroring and shortcuts), Microsoft Learn">Microsoft Learn: Get data</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-engineering/materialized-lake-views/overview-materialized-lake-view" title="Materialized lake views overview, Microsoft Learn">Microsoft Learn: Materialized lake views</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/mirroring/sap" title="Mirroring SAP in Microsoft Fabric (via SAP Datasphere), Microsoft Learn">Microsoft Learn: Mirroring SAP</a></div>
+<h3>8. Where Azure fits</h3>
+<p><strong>Azure is Microsoft's cloud:</strong> rented computing power, storage, databases and AI services, paid for by use and run from Microsoft data centres, including Australia East (Sydney) and Australia Southeast (Melbourne). Fabric runs on top of it, so at GbN Azure is mostly the plumbing underneath: the <strong>Azure subscription</strong> that pays for the Fabric capacity (F SKU, billed per second, cheaper with a yearly reservation), <strong>Microsoft Entra ID</strong> (formerly Azure Active Directory) that controls who can sign in and what they can see, <strong>Azure Data Lake Storage Gen2</strong>, which OneLake shortcuts can read in place without copying, and any older <strong>Azure Data Factory or Synapse</strong> pipelines, which are still supported but which Microsoft now steers towards Fabric. The custom AI work sits in <strong>Microsoft Foundry</strong> (formerly Azure AI Foundry), where developers build agents on models such as Azure OpenAI; a Foundry agent can call a Fabric data agent as a tool, using each person's own access (preview). In short: <strong>Azure is the cloud, Fabric is the data platform, Power BI and Copilot are where people see it.</strong></p>
+<div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/enterprise/buy-capacity" title="Buy Fabric capacity in Azure, Microsoft Learn">Microsoft Learn: Buy Fabric capacity</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://azure.microsoft.com/en-au/pricing/details/microsoft-fabric/" title="Microsoft Fabric pricing overview, Azure">Azure: Fabric pricing</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://blog.fabric.microsoft.com/en/blog/a-turning-point-for-enterprise-data-warehousing" title="A turning point for enterprise data warehousing, Microsoft Fabric Updates Blog, 2026">Fabric blog: Synapse to Fabric</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/data-science/data-agent-foundry" title="Consume a Fabric data agent from Microsoft Foundry (preview), Microsoft Learn">Microsoft Learn: Data agent in Foundry</a></div>
 </section>
 
 <!-- ============ SOURCES ============ -->
@@ -1588,7 +1593,7 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 15 (25 November 2026): Job Ad cards get paragraph spacing and key phrases in bold; the carousel always starts at part 1. Version 14 (25 November 2026): The Job Ad section added before Role, as a carousel of the first seven parts of the ad, word for word. Version 13 (25 November 2026): KPI Trust proof as a horizontal barbell chart, ThoughtSpot proof as donut charts, menu label "My Take". Version 12 (25 November 2026): My Take infographics restyled: hourglass for KPI Trust, Bridge and AI; layer stack for Data Engineering and the data team; before and after with a barbell chart (Viktor's standard) for self-service. Version 11 (25 November 2026): an infographic for each My Take section, and Top 5 stories moved before My Take. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 17 (25 November 2026): Azure added to Tech Stacks Compared (new Cloud underneath row, notes on Ingestion, Storage, Catalogue and AI assistant). Version 16 (25 November 2026): "Where Azure fits" added to the Copilot, Fabric and Azure section. Version 15 (25 November 2026): Job Ad cards get paragraph spacing and key phrases in bold; the carousel always starts at part 1. Version 14 (25 November 2026): The Job Ad section added before Role, as a carousel of the first seven parts of the ad, word for word. Version 13 (25 November 2026): KPI Trust proof as a horizontal barbell chart, ThoughtSpot proof as donut charts, menu label "My Take". Version 12 (25 November 2026): My Take infographics restyled: hourglass for KPI Trust, Bridge and AI; layer stack for Data Engineering and the data team; before and after with a barbell chart (Viktor's standard) for self-service. Version 11 (25 November 2026): an infographic for each My Take section, and Top 5 stories moved before My Take. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
