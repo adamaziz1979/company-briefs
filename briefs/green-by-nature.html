@@ -224,6 +224,129 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 .skm{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;font-weight:600;font-size:13.5px}
 .skr{display:contents}
 @media (max-width:700px){.skg{grid-template-columns:1fr 1fr}.skr{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}.skm{grid-column:1/-1;order:-1;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;margin-top:4px}.skg .hd.mid{display:none}}
+
+/* My Take infographics */
+.tig{margin:14px 0 6px;background:#f4f7f2;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.tih{font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 9px}
+.tih.mt{margin-top:14px}
+.tflow{display:flex;align-items:stretch;gap:6px}
+.tn{flex:1;background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:13px;line-height:1.38;min-width:0}
+.tn b{display:block;font-size:13.5px;margin-bottom:2px}
+.tn.k{background:var(--deep);border-color:var(--deep);color:#e9f5dc}
+.tn.k b{color:var(--gold)}
+.tn.br{border-top:4px solid #b06a2c}.tn.si{border-top:4px solid #7d8a93}.tn.go{border-top:4px solid #c9a227}
+.tar{flex:0 0 auto;align-self:center;color:var(--muted);font-size:17px;line-height:1}
+.tchs{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.tch{font-size:11.5px;background:var(--soft);border-radius:999px;padding:1px 8px}
+.tn.k .tch{background:rgba(255,255,255,.12)}
+.tband{margin-top:8px;border:1px dashed var(--chart);border-radius:10px;padding:7px 11px;font-size:13px;text-align:center}
+.tband b{color:var(--chart)}
+.tps{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tps.t3{grid-template-columns:repeat(3,1fr)}
+.tp{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 11px;min-width:0}
+.tp .tl{display:block;font-size:12px;color:var(--muted);line-height:1.3}
+.tp .v{display:block;font-size:21px;font-weight:700;color:var(--chart);line-height:1.2;margin-top:2px}
+.tp .fr{display:block;font-size:12px;color:var(--muted)}
+.tbar{margin-top:6px;display:grid;gap:3px}
+.tbar i{display:block;height:6px;border-radius:3px;background:#c5cec8;min-width:3px}
+.tbar i.a{background:var(--chart)}
+.tleg{font-size:11.5px;color:var(--muted);margin-top:7px}
+.tleg i{display:inline-block;width:14px;height:6px;border-radius:3px;background:#c5cec8;margin:0 4px 1px 8px;vertical-align:middle}
+.tleg i.a{background:var(--chart)}
+.tlane{display:grid;grid-template-columns:130px 1fr;gap:10px;align-items:center;margin-bottom:8px}
+.tlane>b{font-size:13.5px}
+.tstage{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.ttag{display:inline-block;font-size:10.5px;font-weight:600;border-radius:999px;padding:1px 8px;background:var(--orangebg);color:var(--orange);margin-top:5px}
+.ttag.g{background:var(--greenbg);color:var(--green)}
+@media (max-width:800px){.tflow{flex-direction:column}.tar{transform:rotate(90deg);align-self:center}.tps,.tps.t3{grid-template-columns:repeat(2,1fr)}.tlane{grid-template-columns:1fr}.tstage{grid-template-columns:1fr}}
+
+/* My Take infographic styles: hourglass, layer stack, before and after with barbell */
+.hg{display:grid;grid-template-columns:1fr 64px minmax(170px,.85fr) 64px 1fr;align-items:stretch}
+.hgc{display:flex;flex-direction:column;justify-content:space-around;gap:8px}
+.hgcard{background:#fff;border:1px solid var(--line);border-radius:9px;padding:7px 11px;font-size:13px;line-height:1.35}
+.hgcard b{display:block;font-size:13.5px}
+.hgcard span{display:block;font-size:12px;color:var(--red)}
+.hgr .hgcard{background:var(--greenbg);border-color:#9fcfae}
+.hgr .hgcard span{color:var(--green)}
+.hgw{width:100%;height:100%;display:block}
+.hgw path{fill:none;vector-effect:non-scaling-stroke;stroke-width:2}
+.hgw.l path{stroke:#b9c4bd}
+.hgw.r path{stroke:var(--chart);stroke-width:2.5}
+.hgm{display:flex;flex-direction:column;justify-content:center;align-items:stretch}
+.hgk{background:var(--deep);color:#e9f5dc;border-radius:14px;padding:14px 12px;text-align:center;font-size:12.5px;line-height:1.45}
+.hgk b{display:block;color:var(--gold);font-size:15px;margin-bottom:4px}
+.hgk span{display:block}
+.hga{display:none;text-align:center;color:var(--muted);font-size:18px;line-height:1.4}
+.hp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.hp div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 11px;font-size:12px;color:var(--muted);line-height:1.35}
+.hp b{display:block;font-size:17px;color:var(--ink);margin-top:2px}
+.hp b em{font-style:normal;color:var(--chart)}
+.lsk{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:center}
+.lsl{padding:11px 14px;font-size:13px;line-height:1.4;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.lsl b{display:block;font-size:14px}
+.lsl:nth-child(1){margin:0 22px;border-top:1px solid var(--line);border-radius:12px 12px 0 0}
+.lsl:nth-child(2){margin:0 11px}
+.lsl:nth-child(3){border-bottom:1px solid var(--line);border-radius:0 0 12px 12px}
+.lsl.w{background:#fff}
+.lsl.k{background:var(--deep);border-color:var(--deep);color:#e9f5dc;padding:14px}
+.lsl.k b{color:var(--gold)}
+.lsl.g{background:#eceff1}
+.lsl.s{background:#efe7dc}
+.lsl .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.lsl .chips span{font-size:11.5px;background:rgba(0,0,0,.06);border-radius:999px;padding:1px 8px}
+.lsl.k .chips span{background:rgba(255,255,255,.13)}
+.lsl .ttag{margin-top:6px}
+.hlt{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hlt div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;font-size:12px;color:var(--muted);line-height:1.35}
+.hlt div.wide{grid-column:1/-1}
+.hlt b{display:block;font-size:26px;line-height:1.15;color:var(--chart);margin-bottom:3px}
+.xba{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.xbp{border-radius:12px;padding:12px 14px;font-size:13px}
+.xbp.b{background:var(--redbg)}.xbp.a{background:var(--greenbg)}
+.xbp h5{margin:0 0 8px;font-size:14px}
+.xbp.b h5{color:var(--red)}.xbp.a h5{color:var(--green)}
+.xbp ul{margin:0;padding-left:18px}
+.xbp li{margin:3px 0}
+.xone{background:var(--deep);color:#e9f5dc;border-radius:10px;padding:10px 12px;font-size:13px}
+.xone b{color:var(--gold);display:block;font-size:13.5px}
+.xfan{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:8px;font-size:12px}
+.xfan span{background:#fff;border:1px solid #cfe5d6;border-radius:999px;padding:2px 9px}
+.xfan i{font-style:normal;color:var(--green)}
+.bbx{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.bbx svg{display:block;width:100%}
+.bbx .ax{font-size:11px;fill:var(--muted)}
+.bbh{fill:#fff}
+.bbleg{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:11.5px;color:var(--muted);margin-top:6px}
+.bbleg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+@media (max-width:800px){.hg{grid-template-columns:1fr}.hgw{display:none}.hga{display:block}.lsk,.xba{grid-template-columns:1fr}.lsl:nth-child(1){margin:0 12px}.lsl:nth-child(2){margin:0 6px}}
+
+/* Donut charts: outer ring before, inner ring after */
+.dnw{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px}
+.dn{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center;font-size:12px;color:var(--muted);line-height:1.35}
+.dn svg{width:100px;height:100px;display:block;margin:0 auto 6px}
+.dn circle{fill:none;stroke-width:10}
+.dn .dt{stroke:#eceff1}.dn .db{stroke:#c5cec8}.dn .da{stroke:var(--chart)}
+.dn b{display:block;font-size:22px;color:var(--chart);line-height:1.15}
+.dleg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 4px -1px 8px}
+.dleg i.b{background:#c5cec8}.dleg i.a{background:var(--chart)}
+@media (max-width:800px){.dn{grid-template-columns:1fr 1fr}}
+
+/* Horizontal barbell: grey dot before, green dot after, bar is the improvement */
+.hbb{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.hbr{display:grid;grid-template-columns:200px 1fr 56px;gap:16px;align-items:center;padding:6px 0 20px}
+.hbn{font-size:13px}
+.hbt{position:relative;height:16px;margin:0 8px}
+.hbt::before{content:"";position:absolute;left:0;right:0;top:7px;height:2px;background:var(--line)}
+.hbt .bar{position:absolute;top:5px;height:6px;background:var(--chart);border-radius:3px}
+.hbt .band{position:absolute;top:2px;height:12px;background:#c5cec8;border-radius:6px}
+.hbt .bd{position:absolute;top:1px;width:14px;height:14px;border-radius:50%;transform:translateX(-50%)}
+.hbt .bd.b{background:#c5cec8}
+.hbt .bd.a{background:var(--chart);width:16px;height:16px;top:0}
+.hbt em{position:absolute;top:19px;transform:translateX(-50%);font-style:normal;font-size:11.5px;color:var(--muted);white-space:nowrap}
+.hbv{font-weight:700;color:var(--chart);font-size:15px}
+.hbleg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin:0 4px -1px 8px}
+.hbleg i.b{background:#c5cec8}.hbleg i.a{background:var(--chart)}
+@media (max-width:800px){.hbr{grid-template-columns:1fr 44px;gap:6px 12px}.hbn{grid-column:1/-1}}
 /* Copilot infographics */
 .cpi{border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:18px 18px 14px;margin:12px 0 16px}
 .cpi .cpi-t{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 12px}
@@ -285,6 +408,11 @@ td,.v,.tag,.num{font-variant-numeric:tabular-nums}
 
 
 
+
+
+
+
+
 /* ===== Dark theme (data-theme="dark" from the briefs page, or device setting) ===== */
 @media screen{
 html[data-theme="dark"]{--ink:#e7ece9;--muted:#a7b3ac;--paper:#111815;--bg:#0a0f0d;--line:#2b3832;--soft:#1c2723;--gold2:#1c2a15;--chart:#8fd14f;--green:#8fd4a8;--greenbg:#143021;--blue:#9cc7ee;--bluebg:#13263a;--orange:#f0c46a;--orangebg:#33280f;--red:#f0a3a3;--redbg:#341b1b;color-scheme:dark}
@@ -313,8 +441,24 @@ html[data-theme="dark"] .barbg{background:var(--line)}
 html[data-theme="dark"] .stock-ranges button{background:#16201c;color:var(--ink);border-color:var(--line)}
 html[data-theme="dark"] .chartbox svg [fill="#3e7a1c"]{fill:#8fd14f}
 html[data-theme="dark"] .chartbox svg [stroke="#3e7a1c"]{stroke:#8fd14f}
-html[data-theme="dark"] .cpi{background:#0e1512}
-html[data-theme="dark"] .fbst, html[data-theme="dark"] .fbbar.orc, html[data-theme="dark"] .fbmr, html[data-theme="dark"] .tkc, html[data-theme="dark"] .cfc, html[data-theme="dark"] .cplane, html[data-theme="dark"] .cpstack span, html[data-theme="dark"] .cprow, html[data-theme="dark"] .cpsum div, html[data-theme="dark"] .skc{background:#16201c}
+html[data-theme="dark"] .cpi, html[data-theme="dark"] .tig{background:#0e1512}
+html[data-theme="dark"] .fbst, html[data-theme="dark"] .fbbar.orc, html[data-theme="dark"] .fbmr, html[data-theme="dark"] .tkc, html[data-theme="dark"] .cfc, html[data-theme="dark"] .cplane, html[data-theme="dark"] .cpstack span, html[data-theme="dark"] .cprow, html[data-theme="dark"] .cpsum div, html[data-theme="dark"] .skc, html[data-theme="dark"] .tn, html[data-theme="dark"] .tp{background:#16201c}
+html[data-theme="dark"] .tn.k{background:#0d3b26;border-color:#1f5a3c}
+html[data-theme="dark"] .tbar i:not(.a), html[data-theme="dark"] .tleg i:not(.a){background:#55665d}
+html[data-theme="dark"] .hgcard, html[data-theme="dark"] .hp div, html[data-theme="dark"] .hlt div, html[data-theme="dark"] .lsl.w, html[data-theme="dark"] .bbx, html[data-theme="dark"] .xfan span{background:#16201c}
+html[data-theme="dark"] .hgr .hgcard{background:var(--greenbg);border-color:#2f5a40}
+html[data-theme="dark"] .hgw.l path{stroke:#4f5f57}
+html[data-theme="dark"] .lsl.k, html[data-theme="dark"] .hgk, html[data-theme="dark"] .xone{background:#0d3b26;border-color:#1f5a3c}
+html[data-theme="dark"] .lsl.g{background:#252e2a}
+html[data-theme="dark"] .lsl.s{background:#2c261d}
+html[data-theme="dark"] .lsl .chips span{background:rgba(255,255,255,.08)}
+html[data-theme="dark"] .bbh{fill:#16201c}
+html[data-theme="dark"] .xfan span{border-color:#2f5a40}
+html[data-theme="dark"] .dnw{background:#16201c}
+html[data-theme="dark"] .hbb{background:#16201c}
+html[data-theme="dark"] .hbt .band, html[data-theme="dark"] .hbt .bd.b, html[data-theme="dark"] .hbleg i.b{background:#55665d}
+html[data-theme="dark"] .dn .dt{stroke:var(--line)}
+html[data-theme="dark"] .dn .db, html[data-theme="dark"] .dleg i.b{stroke:#55665d;background:#55665d}
 html[data-theme="dark"] .fbmr.hd{background:none}
 html[data-theme="dark"] .tkc.tk2{background:var(--bluebg)}
 html[data-theme="dark"] .tkc.tk3{background:var(--gold2)}
@@ -356,8 +500,24 @@ html:not([data-theme="light"]) .barbg{background:var(--line)}
 html:not([data-theme="light"]) .stock-ranges button{background:#16201c;color:var(--ink);border-color:var(--line)}
 html:not([data-theme="light"]) .chartbox svg [fill="#3e7a1c"]{fill:#8fd14f}
 html:not([data-theme="light"]) .chartbox svg [stroke="#3e7a1c"]{stroke:#8fd14f}
-html:not([data-theme="light"]) .cpi{background:#0e1512}
-html:not([data-theme="light"]) .fbst, html:not([data-theme="light"]) .fbbar.orc, html:not([data-theme="light"]) .fbmr, html:not([data-theme="light"]) .tkc, html:not([data-theme="light"]) .cfc, html:not([data-theme="light"]) .cplane, html:not([data-theme="light"]) .cpstack span, html:not([data-theme="light"]) .cprow, html:not([data-theme="light"]) .cpsum div, html:not([data-theme="light"]) .skc{background:#16201c}
+html:not([data-theme="light"]) .cpi, html:not([data-theme="light"]) .tig{background:#0e1512}
+html:not([data-theme="light"]) .fbst, html:not([data-theme="light"]) .fbbar.orc, html:not([data-theme="light"]) .fbmr, html:not([data-theme="light"]) .tkc, html:not([data-theme="light"]) .cfc, html:not([data-theme="light"]) .cplane, html:not([data-theme="light"]) .cpstack span, html:not([data-theme="light"]) .cprow, html:not([data-theme="light"]) .cpsum div, html:not([data-theme="light"]) .skc, html:not([data-theme="light"]) .tn, html:not([data-theme="light"]) .tp{background:#16201c}
+html:not([data-theme="light"]) .tn.k{background:#0d3b26;border-color:#1f5a3c}
+html:not([data-theme="light"]) .tbar i:not(.a), html:not([data-theme="light"]) .tleg i:not(.a){background:#55665d}
+html:not([data-theme="light"]) .hgcard, html:not([data-theme="light"]) .hp div, html:not([data-theme="light"]) .hlt div, html:not([data-theme="light"]) .lsl.w, html:not([data-theme="light"]) .bbx, html:not([data-theme="light"]) .xfan span{background:#16201c}
+html:not([data-theme="light"]) .hgr .hgcard{background:var(--greenbg);border-color:#2f5a40}
+html:not([data-theme="light"]) .hgw.l path{stroke:#4f5f57}
+html:not([data-theme="light"]) .lsl.k, html:not([data-theme="light"]) .hgk, html:not([data-theme="light"]) .xone{background:#0d3b26;border-color:#1f5a3c}
+html:not([data-theme="light"]) .lsl.g{background:#252e2a}
+html:not([data-theme="light"]) .lsl.s{background:#2c261d}
+html:not([data-theme="light"]) .lsl .chips span{background:rgba(255,255,255,.08)}
+html:not([data-theme="light"]) .bbh{fill:#16201c}
+html:not([data-theme="light"]) .xfan span{border-color:#2f5a40}
+html:not([data-theme="light"]) .dnw{background:#16201c}
+html:not([data-theme="light"]) .hbb{background:#16201c}
+html:not([data-theme="light"]) .hbt .band, html:not([data-theme="light"]) .hbt .bd.b, html:not([data-theme="light"]) .hbleg i.b{background:#55665d}
+html:not([data-theme="light"]) .dn .dt{stroke:var(--line)}
+html:not([data-theme="light"]) .dn .db, html:not([data-theme="light"]) .dleg i.b{stroke:#55665d;background:#55665d}
 html:not([data-theme="light"]) .fbmr.hd{background:none}
 html:not([data-theme="light"]) .tkc.tk2{background:var(--bluebg)}
 html:not([data-theme="light"]) .tkc.tk3{background:var(--gold2)}
@@ -382,7 +542,7 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <h1><span>Green by Nature</span>: Company, Role and Recruitment Brief</h1>
   <div class="sub">Senior Manager, Information, Data &amp; AI (Mascot, Sydney; reports to the Head of Transformation; advertised by Boyd Recruitment as "Head of Data, Insights &amp; AI") | Executive infographic, Stage 1 executive briefing, compensation and headcount, tech stack, Cisco and GbN stacks compared, Stage 2 company dossier (sections 1 to 7, 10 and 11), role deconstruction and Stage 3 top five experiences to lead with.</div>
   <div class="meta">
-    <span>Prepared: 23 November 2026 (version 10, updated 24 November 2026)</span>
+    <span>Prepared: 23 November 2026 (version 13, updated 25 November 2026)</span>
     <span>Candidate: Adam Aziz</span>
     <span>Currency: AUD unless stated</span>
     <span><span class="badge fact">Observed Fact</span> <span class="badge infer">Strong Inference</span> <span class="badge hyp">Working Hypothesis</span></span>
@@ -398,9 +558,9 @@ html:not([data-theme="light"]) .cplane.l3 .cph i{background:#3e7a1c}
   <a href="#stage2">Company dossier</a>
   <a href="#extras">Extras</a>
   <a href="#role">Role</a>
-  <a href="#mytake">My take</a>
-  <a href="#copilot">Copilot &amp; Fabric</a>
   <a href="#stage3">Top 5 stories</a>
+  <a href="#mytake">My Take</a>
+  <a href="#copilot">Copilot &amp; Fabric</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -848,6 +1008,123 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <div class="refs"><strong>References:</strong> Senior Manager Information, Data &amp; AI PD <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://au.seek.com/job/96034614" title="Head of Data, Insights &amp; AI, Boyd Recruitment, SEEK job 96034614, posted 21 Nov 2026">SEEK: Boyd Recruitment ad</a> <span class="sep">|</span> Rezi Contacts (22 Nov 2026) <span class="sep">|</span> Michelle Rouillon (from Adam, 23 Nov 2026)</div>
 </section>
 
+<!-- ============ STAGE 3 ============ -->
+<section id="stage3">
+<h2>Stage 3: Top 5 Experiences to Lead With</h2>
+<p>Each story answers part of the business problem: <strong>turning merged data into trusted contract-level profit and productivity measures that managers act on, with AI built on that foundation</strong>.</p>
+
+<div class="story">
+  <div class="rank">1</div>
+  <h4>Closing the data trust gap: 27 service KPIs (Cisco, Data Solutions &amp; Insights Leader, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Common definitions for critical data, KPIs and systems of record" and "fewer conflicting reports and manual reconciliations" (H1).</div>
+  <div class="star">
+    <b>S</b><span>Teams looked at the same KPI and saw different numbers (1% to 5% apart), so leaders asked "which one is right?"</span>
+    <b>T</b><span>Bring inconsistency to zero and restore confidence in the numbers.</span>
+    <b>A</b><span>Moved logic from dashboards into SQL single-source-of-truth tables; plain-English data catalogue and agreed calculations; master dashboard per business area; aligned refresh schedules; tripwires flagging variances above 2% with team-owned fixes.</span>
+    <b>R</b><span><strong>Consistency across 27 service KPIs from 62% to 100%; Power BI dashboards from 70+ to 46; KPI escalations from 3 to 5 a month to zero.</strong></span>
+  </div>
+  <div class="open">"When two teams see different numbers for the same KPI, the problem is ownership, not the dashboard. I fixed the definition once, at the source, and gave each area one master view."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about a time you improved trust in reporting." · <strong>Source:</strong> Master Resume (Cisco 2019 to 2026); STAR Skills (Closing the Data Trust Gap).</div>
+  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">2</div>
+  <h4>Merger data integration: Splunk and Meraki device migrations (Cisco, recent years)</h4>
+  <div class="why"><strong>Why it matters here:</strong> GbN is four merged businesses mid-migration (workforce, payroll). The PD asks for "migration quality criteria in major programs"; Boyd's ad says M&amp;A experience "will be important".</div>
+  <div class="star">
+    <b>S</b><span>Cisco acquired Splunk and Meraki; 8,000+ employees' laptops and mobiles had to move to Cisco devices and Intune before the Splunk device-management contract ended within 6 months.</span>
+    <b>T</b><span>Develop the KPIs, monitoring and progress updates for the migration.</span>
+    <b>A</b><span>Cleaned stale Splunk records and merged them with Cisco asset management data; matched employee records across HR systems; tracked ordering, delivery, setup and returns; watched support channels to head off setup issues.</span>
+    <b>R</b><span><strong>Migration tracked against a 6-month contract deadline across 8,000+ employees.</strong> <span class="badge limit">Confirm</span> whether the deadline was met is not on file yet.</span>
+  </div>
+  <div class="open">"In both mergers the hard part wasn't the new system, it was the old data: stale records, mismatched employee IDs and a fixed deadline. Getting that right is what made progress reporting believable."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How have you handled data through a merger or system change?" · <strong>Source:</strong> Additional Evidence (Splunk and Meraki, 22 Nov 2026).</div>
+  <div class="refs"><strong>References:</strong> Additional Evidence (22 Nov 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">3</div>
+  <h4>Asset utilisation and decisions Finance can back: performance-based laptop refresh (Cisco, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Asset utilisation", "productivity" and "Finance and business owners agree the measures" (H3). Shows choosing the right method, not AI for its own sake.</div>
+  <div class="star">
+    <b>S</b><span>Refresh of about 150,000 devices ran on age, not need, leading to wasted budget and ad-hoc supply.</span>
+    <b>T</b><span>Use performance data to decide when devices should be refreshed, postponed or upgraded.</span>
+    <b>A</b><span>Compared supervised ML, unsupervised ML, GenAI and statistics; chose unsupervised anomaly detection (no hallucination risk, no retraining). Defined telemetry collection; built personas from app usage; took an evidence-based proposal to Finance on AI-ready devices.</span>
+    <b>R</b><span><strong>Earlier refresh for underperforming devices, less over-provisioning, better stock forecasts, supporting millions in potential asset management savings.</strong></span>
+  </div>
+  <div class="open">"We stopped refreshing laptops by age and started refreshing them by need. The data told us which assets were working hard and which were idle, and that's the same question GbN asks of crews and equipment on each contract."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How have you used data to improve asset or workforce productivity?" · <strong>Source:</strong> Master Resume; STAR Skills (Performance-Based Refresh; Budget proposal to Finance).</div>
+  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">4</div>
+  <h4>Natural-language self-service on governed data: ThoughtSpot (Cisco, FY24 to FY26)</h4>
+  <div class="why"><strong>Why it matters here:</strong> "Approved natural-language queries" on "approved, consolidated information sources", Power BI and self-service, SharePoint onboarding, and measured adoption.</div>
+  <div class="star">
+    <b>S</b><span>Analysts were swamped by simple data requests, slowing decisions and complex work.</span>
+    <b>T</b><span>Give people self-service without losing data trust.</span>
+    <b>A</b><span>Introduced ThoughtSpot natural-language search, built only on the same verified datasets as executive KPIs; added Spotter for GPT interactions; set up SharePoint how-to pages, videos and an onboarding SOP; built the commercial case for capacity (2.9x better value).</span>
+    <b>R</b><span><strong>Weekly users from 46 to 196 (326%); monthly queries 8.1K to 19.2K; data request workload down 33%; short-term dashboard projects down 67%.</strong></span>
+  </div>
+  <div class="open">"Self-service only works if people trust the answer, so we pointed natural-language search at the same governed data as the executive KPIs. Adoption followed."</div>
+  <div class="meta2"><strong>Likely question:</strong> "How have you got non-technical people using data, or AI, safely?" · <strong>Source:</strong> Master Resume; STAR Skills (Self-service analytics with ThoughtSpot; Commercial case). <span class="badge limit">Figure note</span> STAR Skills says 2.86x; the Master Resume rounds to 2.9x. Using the Master Resume.</div>
+  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
+</div>
+
+<div class="story">
+  <div class="rank">5</div>
+  <h4>AI assistant for global IT support, with QA and controls (Cisco, 2019 to 2026)</h4>
+  <div class="why"><strong>Why it matters here:</strong> The AI part of the role: "identify opportunities for AI to improve performance", "check results against authoritative information", "human review".</div>
+  <div class="star">
+    <b>S</b><span>Global IT support ran the same caseload with about 40% fewer support contractors. The AI support system meant to close the gap underperformed because it was built on out-of-date knowledge articles. Case spikes were handled reactively, and the usual analysis took about 4 days while cases kept rising.</span>
+    <b>T</b><span>Alert the right teams early with enough insight to act, where they already work.</span>
+    <b>A</b><span>Built statistical tripwire alerts (2 and 1.8 standard deviations); led a GPT-based assistant with prompt patterns, surfaced in Webex with on-demand summaries and Q&amp;A; knowledge base on governed SQL tables; a QA process to verify accuracy.</span>
+    <b>R</b><span><strong>Case-spike analysis cut from 4-days to near-instant insight; fewer surprise escalations to executives.</strong></span>
+  </div>
+  <div class="open">"The AI was only as good as the data under it, so we built it on governed tables and checked its answers before people relied on them."</div>
+  <div class="meta2"><strong>Likely question:</strong> "Tell me about an AI initiative you took from idea to use." · <strong>Source:</strong> Master Resume; STAR Skills (AI-Enabled Decisioning).</div>
+  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
+</div>
+
+<p class="small"><strong>In reserve:</strong> Snowflake and DBT modernisation (warehouse volume down 42%, 355 to 205 tables/views, 517.2M stagnant rows removed, disruptions from 1 to 2 a quarter to zero) for "develop the existing data lake/warehouse"; and root-cause analysis saving up to $4.3M in productivity hours across 34.4K employees for workforce productivity.</p>
+
+<h3>Coverage check (built from Rezi's Evidence Match)</h3>
+<div class="tablewrap"><table>
+<tr><th>#</th><th>Job ad needs</th><th>Match (Rezi)</th><th>Top 5 story</th></tr>
+<tr><td>1</td><td>Senior data, analytics and insights leadership with measurable outcomes</td><td><span class="badge fact">Strong match</span></td><td>1, 3</td></tr>
+<tr><td>2</td><td>Data and information strategy, governance, ownership and systems of record</td><td><span class="badge fact">Strong match</span></td><td>1</td></tr>
+<tr><td>3</td><td>Develop the value of an existing data lake/warehouse</td><td><span class="badge fact">Strong match</span></td><td>Reserve (Snowflake and DBT)</td></tr>
+<tr><td>4</td><td>Power BI, self-service analytics, pipelines, curated datasets and models</td><td><span class="badge fact">Strong match</span></td><td>1, 4</td></tr>
+<tr><td>5</td><td>Commercial insights: contract profitability, pricing, workforce productivity, asset utilisation, customer outcomes</td><td><span class="badge hyp">Partial</span></td><td>3</td></tr>
+<tr><td>6</td><td>Data quality, master data and consistent KPI definitions</td><td><span class="badge fact">Strong match</span></td><td>1, 2</td></tr>
+<tr><td>7</td><td>Business information and knowledge standards, including SharePoint</td><td><span class="badge fact">Strong match</span></td><td>4</td></tr>
+<tr><td>8</td><td>Data requirements supporting major transformation programs</td><td><span class="badge fact">Strong match</span></td><td>2</td></tr>
+<tr><td>9</td><td>Mergers and acquisitions experience</td><td><span class="badge fact">Strong match</span></td><td>2</td></tr>
+<tr><td>10</td><td>Microsoft Fabric, Azure, SAP, WFM or ERP reporting</td><td><span class="badge hyp">Partial</span></td><td>None (gap)</td></tr>
+<tr><td>11</td><td>AI (about 30%): practical AI roadmap</td><td><span class="badge fact">Strong match</span></td><td>5, 3</td></tr>
+<tr><td>12</td><td>AI governance</td><td><span class="badge fact">Strong match</span></td><td>5</td></tr>
+<tr><td>13</td><td>Lift leaders to own, understand and use their data</td><td><span class="badge fact">Strong match</span></td><td>1, 4</td></tr>
+<tr><td>14</td><td>Influence at the executive table; make the complicated simple</td><td><span class="badge fact">Strong match</span></td><td>3</td></tr>
+<tr><td>15</td><td>Lead 3 direct reports and specialist partners</td><td><span class="badge fact">Strong match</span></td><td>4 (vendor), 1</td></tr>
+<tr><td>16</td><td>Operational, field-services business across Australia and NZ</td><td><span class="badge hyp">Partial</span></td><td>3 (transferable)</td></tr>
+<tr><td>17</td><td>Benefits validated by business owners and Finance (PD). <em>Added by Bree</em></td><td><span class="badge hyp">Partial</span></td><td>3, 4</td></tr>
+</table></div>
+<div class="refs"><strong>References:</strong> Rezi Evidence Match (22 Nov 2026) <span class="sep">|</span> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
+
+<h3>Gaps to prepare for</h3>
+<div class="two">
+<div class="qbox"><strong>1. Contract profitability and tender pricing</strong>
+No contract margin or pricing models on file.<br><em>Framing:</em> "I haven't built contract margin models in a field-service business. What I have done is build the cost and value cases leaders and Finance relied on, $11M+ of them, and fix the data underneath so the numbers held up. Contract margin is the same discipline: agree the cost and revenue definitions with Finance, join SAP and labour data at contract level, then let EGMs act on it."</div>
+<div class="qbox"><strong>2. Microsoft Fabric, Azure and SAP depth</strong>
+Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:</em> "My platform work was Snowflake and DBT: I led the engineers, set the release, lineage and quality standards, and cut the warehouse by 42%. Fabric is a different tool with the same problems. I'd lean on Technology and partners for the build and own the standards and the outcomes."</div>
+</div>
+<div class="refs"><strong>References:</strong> Rezi Evidence Match (22 Nov 2026) <span class="sep">|</span> Master Resume (22 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
+
+<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (confirmed 22 Nov 2026), STAR Skills.docx (23 Nov 2026), Additional Evidence (22 Nov 2026), Rezi Evidence Match (22 Nov 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>.</div>
+</section>
+
 <!-- ============ MY TAKE ============ -->
 <section id="mytake">
 <h2>My Take Based on the PD</h2>
@@ -875,7 +1152,8 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li>Plain-English data catalogue in a consistent template, calculations agreed with stakeholders up front, and data literacy sessions so people could challenge the numbers.</li>
 <li>Tripwires flag variances above 2% and trigger team-owned fixes; leaders no longer spend 1 to 2 days on manual validation.</li>
 </ul></div></div>
-  <div class="open">"At Cisco, two teams saw different numbers for the same KPI. I moved the calculation out of the dashboards into one trusted layer, gave each business area one master dashboard, and consistency went from 62% to 100%."</div>
+  <div class="tig" role="img" aria-label="Hourglass infographic: four legacy businesses with their own KPI formulas converge into one gold layer, where each KPI is calculated once with a definition and owner, then fan out to one master dashboard each for Specialty Services, Landscape Services, NZ and Finance. Cisco proof as a horizontal barbell chart, each row on its own scale: KPI consistency 62% to 100%, workspace health 60% to 93%, duplicate dashboards 70+ to 46, escalations 3 to 5 a month to 0."><div class="tih">From four versions of a KPI to one</div><div class="hg"><div class="hgc hgl"><div class="hgcard"><b>Green Options</b><span>Own KPI formulas</span></div><div class="hgcard"><b>Super Gardens</b><span>Own KPI formulas</span></div><div class="hgcard"><b>Skyline</b><span>Own KPI formulas</span></div><div class="hgcard"><b>Recreational Services NZ</b><span>Own KPI formulas</span></div></div><svg class="hgw l" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12.5 C50 12.5 50 50 100 50"/><path d="M0 37.5 C50 37.5 50 50 100 50"/><path d="M0 62.5 C50 62.5 50 50 100 50"/><path d="M0 87.5 C50 87.5 50 50 100 50"/></svg><div class="hgm"><span class="hga" aria-hidden="true">&#8595;</span><div class="hgk"><b>Gold layer</b><span>Each KPI calculated once</span><span>Plain-English definition</span><span>Named business owner</span></div><span class="hga" aria-hidden="true">&#8595;</span></div><svg class="hgw r" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C50 50 50 12.5 100 12.5"/><path d="M0 50 C50 50 50 37.5 100 37.5"/><path d="M0 50 C50 50 50 62.5 100 62.5"/><path d="M0 50 C50 50 50 87.5 100 87.5"/></svg><div class="hgc hgr"><div class="hgcard"><b>Specialty Services</b><span>Master dashboard</span></div><div class="hgcard"><b>Landscape Services</b><span>Master dashboard</span></div><div class="hgcard"><b>NZ</b><span>Master dashboard</span></div><div class="hgcard"><b>Finance</b><span>Master dashboard</span></div></div></div><div class="tband"><b>Tripwire alerts</b> flag when the same KPI drifts between reports. Four formulas today is a Working Hypothesis (H1).</div><div class="tih mt">Your Cisco proof</div><div class="hbb"><div class="hbr"><span class="hbn">Service KPIs consistent</span><span class="hbt"><i class="bar" style="left:62%;width:38%"></i><i class="bd b" style="left:62%"></i><i class="bd a" style="left:100%"></i><em style="left:62%">62%</em></span><span class="hbv">100%</span></div><div class="hbr"><span class="hbn">Power BI workspace health</span><span class="hbt"><i class="bar" style="left:60%;width:33%"></i><i class="bd b" style="left:60%"></i><i class="bd a" style="left:93%"></i><em style="left:60%">60%</em></span><span class="hbv">93%</span></div><div class="hbr"><span class="hbn">Duplicate Power BI dashboards</span><span class="hbt"><i class="bar" style="left:65.7%;width:34.3%"></i><i class="bd b" style="left:100%"></i><i class="bd a" style="left:65.7%"></i><em style="left:100%">70+</em></span><span class="hbv">46</span></div><div class="hbr"><span class="hbn">KPI escalations a month</span><span class="hbt"><i class="band" style="left:60%;width:40%"></i><i class="bar" style="left:0%;width:60%"></i><i class="bd a" style="left:0%"></i><em style="left:80.0%">3 to 5</em></span><span class="hbv">0</span></div><div class="tleg hbleg"><i class="b"></i>before<i class="a"></i>after. Each row on its own scale; the bar shows the improvement.</div></div></div>
+<div class="open">"At Cisco, two teams saw different numbers for the same KPI. I moved the calculation out of the dashboards into one trusted layer, gave each business area one master dashboard, and consistency went from 62% to 100%."</div>
   <div class="refs"><strong>References:</strong> Master Resume (23 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
 <div class="story take">
@@ -901,7 +1179,8 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li><strong>Snowflake and DBT:</strong> lineage, DBT Docs catalogue, and a release cycle from development through peer review and automated tests to production. Warehouse volume down <strong>42%</strong> (355 to 205 tables and views), <strong>517.2M</strong> stagnant rows removed.</li>
 <li>Replaced direct warehouse access with secure AWS S3 data sharing: disruptions from <strong>1 to 2 a quarter to zero</strong>, protecting <strong>200+</strong> stakeholders.</li>
 </ul></div></div>
-  <div class="open">"GbN's challenge is the one I worked on in the Splunk and Meraki mergers: messy, stale data from separate businesses that has to land in one system and match up. The medallion layers are how I would make that repeatable."</div>
+  <div class="tig" role="img" aria-label="Layer stack infographic: bronze raw data from SAP S/4HANA, workforce and time and attendance, payroll and four legacy systems at the bottom; silver clean and matched in the middle; gold business-ready views for contract profitability, labour productivity and asset utilisation on top, with governance on every layer. Cisco proof: 8,000+ employees migrated, warehouse down 42%, 517.2M stagnant rows removed, data-sharing disruptions from 1 to 2 a quarter to 0."><div class="tih">The merger data, layer by layer</div><div class="lsk"><div><div class="lsl k"><b>Gold: business-ready</b>The views leaders use.<div class="chips"><span>Contract profitability</span><span>Labour productivity</span><span>Asset utilisation</span></div></div><div class="lsl g"><b>Silver: clean and matched</b>One key each for client, contract, site, employee and asset; duplicates and stale records removed.</div><div class="lsl s"><b>Bronze: raw</b>Landed as it is, from every source.<div class="chips"><span>SAP S/4HANA</span><span>WFM and time and attendance</span><span>Payroll</span><span>Four legacy systems</span></div></div><div class="tband"><b>Governance on every layer:</b> lineage, quality tests before release, version control, catalogue, pipeline health.</div></div><div><div class="tih">Your Cisco proof</div><div class="hlt"><div><b>8,000+</b>employees in the Splunk and Meraki device migration, 6-month deadline</div><div><b>-42%</b>warehouse tables and views, 355 to 205</div><div><b>517.2M</b>stagnant rows removed</div><div><b>0</b>data-sharing disruptions a quarter, from 1 to 2 (200+ stakeholders)</div></div></div></div></div>
+<div class="open">"GbN's challenge is the one I worked on in the Splunk and Meraki mergers: messy, stale data from separate businesses that has to land in one system and match up. The medallion layers are how I would make that repeatable."</div>
   <div class="refs"><strong>References:</strong> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
 <div class="story take">
@@ -927,7 +1206,8 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li>Business value cases for IT programs worth <strong>$11M+</strong>; business value case accuracy improved by <strong>80%</strong>.</li>
 <li>Automated weekly progress reports and narratives for executive leadership.</li>
 </ul></div></div>
-  <div class="open">"I start with the decision, not the dashboard: what each leader is trying to achieve, what is in the way, and by when. Then the team's capacity follows the value."</div>
+  <div class="tig" role="img" aria-label="Hourglass infographic: the CFO, three EGMs and the Head of Transformation feed one ranked backlog (objectives, WSJF ranking, matched capacity), which fans out to the PD's likely top needs: contract profitability, tender pricing, labour productivity and asset utilisation. Cisco proof: $11M+ of IT programs with value cases, 80% better accuracy, quarterly PI planning."><div class="tih">From many leaders' goals to one ranked backlog</div><div class="hg"><div class="hgc hgl"><div class="hgcard"><b>Angela Kreis</b><span>CFO</span></div><div class="hgcard"><b>Dane Thatcher</b><span>EGM</span></div><div class="hgcard"><b>Michael Culley</b><span>EGM</span></div><div class="hgcard"><b>Matthew Bailey</b><span>EGM</span></div><div class="hgcard"><b>Michelle Rouillon</b><span>Head of Transformation</span></div></div><svg class="hgw l" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10.0 C50 10.0 50 50 100 50"/><path d="M0 30.0 C50 30.0 50 50 100 50"/><path d="M0 50.0 C50 50.0 50 50 100 50"/><path d="M0 70.0 C50 70.0 50 50 100 50"/><path d="M0 90.0 C50 90.0 50 50 100 50"/></svg><div class="hgm"><span class="hga" aria-hidden="true">&#8595;</span><div class="hgk"><b>One ranked backlog</b><span>Objectives, obstacles, milestones</span><span>Ranked by value and effort (WSJF)</span><span>Team capacity matched</span></div><span class="hga" aria-hidden="true">&#8595;</span></div><svg class="hgw r" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C50 50 50 12.5 100 12.5"/><path d="M0 50 C50 50 50 37.5 100 37.5"/><path d="M0 50 C50 50 50 62.5 100 62.5"/><path d="M0 50 C50 50 50 87.5 100 87.5"/></svg><div class="hgc hgr"><div class="hgcard"><b>Contract profitability</b><span>Likely top need (PD)</span></div><div class="hgcard"><b>Tender pricing</b><span>Likely top need (PD)</span></div><div class="hgcard"><b>Labour productivity</b><span>Likely top need (PD)</span></div><div class="hgcard"><b>Asset utilisation</b><span>Likely top need (PD)</span></div></div></div><div class="tband"><b>Benefits signed off by Finance:</b> baselines and target milestones agreed up front (H3).</div><div class="tih mt">Your Cisco proof</div><div class="hp"><div>IT programs with business value cases<b><em>$11M+</em></b></div><div>Business value case accuracy<b><em>+80%</em></b></div><div>Planning rhythm<b><em>Quarterly PI planning</em></b></div></div></div>
+<div class="open">"I start with the decision, not the dashboard: what each leader is trying to achieve, what is in the way, and by when. Then the team's capacity follows the value."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Master Resume (23 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
 <div class="story take">
@@ -953,7 +1233,8 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li>Weekly users from <strong>46 to 196 (+326%)</strong>; monthly queries from <strong>8.1K to 19.2K (+137%)</strong>; data request workload down <strong>33%</strong>, saving about <strong>738 hours and $68.9K a year</strong>; short-term dashboard projects avoided by <strong>67%</strong>.</li>
 <li>Went direct to the vendor and built the capacity case: the $70K, 250M-row option gave <strong>2.9x better value</strong>, <strong>65% lower cost per million rows</strong>, <strong>5x the capacity for 1.75x the cost</strong>.</li>
 </ul></div></div>
-  <div class="open">"Self-service only works if people trust the answers. At Cisco I built it on the same governed data as the executive dashboards, and weekly users grew from 46 to 196."</div>
+  <div class="tig" role="img" aria-label="Before and after infographic with a barbell chart. Before: questions queue for an analyst and simple questions become one-off reports; Power BI Q and A retires in December 2026. After: people ask in plain English through Copilot in Power BI or a Fabric data agent, on a governed semantic model over the gold layer, with test questions checked before release. Donut charts, outer ring before and inner ring after: weekly users 46 to 196 (+326%), monthly queries 8.1K to 19.2K (+137%), data request workload down 33%, short-term dashboard projects down 67%."><div class="tih">How a field manager gets a trusted answer</div><div class="xba"><div class="xbp b"><h5>Today (likely): wait for an analyst</h5><ul><li>Questions queue up for the data team.</li><li>Simple questions become one-off reports.</li><li>Power BI Q&amp;A retires in December 2026 (Microsoft).</li></ul><p style="margin:8px 0 0;font-size:12px;color:var(--red)">Today's state is a Working Hypothesis.</p></div><div class="xbp a"><h5>After: ask in plain English</h5><div class="xone"><b>"Which contracts are over their labour budget this month?"</b>Answered in seconds, from verified data.</div><div class="xfan"><span>Copilot in Power BI or a Fabric data agent</span><i>&#10140;</i><span>Governed semantic model</span><i>&#10140;</i><span>Gold layer</span></div><p style="margin:8px 0 0;font-size:12px;color:var(--green)">QA gate: test questions checked before every release.</p></div></div><div class="tih mt">Your ThoughtSpot proof at Cisco</div><div class="dnw"><div class="dn"><div><svg viewBox="0 0 100 100" aria-hidden="true"><circle class="dt" cx="50" cy="50" r="40"/><circle class="db" cx="50" cy="50" r="40" stroke-dasharray="57.8 251.3" transform="rotate(-90 50 50)"/><circle class="dt" cx="50" cy="50" r="28"/><circle class="da" cx="50" cy="50" r="28" stroke-dasharray="172.4 175.9" transform="rotate(-90 50 50)"/></svg><b>196</b>weekly users, from 46 (+326%), out of 200</div><div><svg viewBox="0 0 100 100" aria-hidden="true"><circle class="dt" cx="50" cy="50" r="40"/><circle class="db" cx="50" cy="50" r="40" stroke-dasharray="101.8 251.3" transform="rotate(-90 50 50)"/><circle class="dt" cx="50" cy="50" r="28"/><circle class="da" cx="50" cy="50" r="28" stroke-dasharray="168.9 175.9" transform="rotate(-90 50 50)"/></svg><b>19.2K</b>monthly queries, from 8.1K (+137%), out of 20K</div><div><svg viewBox="0 0 100 100" aria-hidden="true"><circle class="dt" cx="50" cy="50" r="40"/><circle class="db" cx="50" cy="50" r="40" stroke-dasharray="251.3 251.3" transform="rotate(-90 50 50)"/><circle class="dt" cx="50" cy="50" r="28"/><circle class="da" cx="50" cy="50" r="28" stroke-dasharray="117.9 175.9" transform="rotate(-90 50 50)"/></svg><b>-33%</b>data request workload, about 738 hours a year</div><div><svg viewBox="0 0 100 100" aria-hidden="true"><circle class="dt" cx="50" cy="50" r="40"/><circle class="db" cx="50" cy="50" r="40" stroke-dasharray="251.3 251.3" transform="rotate(-90 50 50)"/><circle class="dt" cx="50" cy="50" r="28"/><circle class="da" cx="50" cy="50" r="28" stroke-dasharray="58.1 175.9" transform="rotate(-90 50 50)"/></svg><b>-67%</b>short-term dashboard projects avoided</div></div><div class="tleg dleg"><i class="b"></i>outer ring: before<i class="a"></i>inner ring: after. Saved about $68.9K a year.</div></div></div>
+<div class="open">"Self-service only works if people trust the answers. At Cisco I built it on the same governed data as the executive dashboards, and weekly users grew from 46 to 196."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
 <div class="story take">
@@ -976,7 +1257,8 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li><strong>PBR:</strong> compared supervised learning, unsupervised learning, GenAI and statistical thresholds, and chose unsupervised anomaly detection (no training data to maintain, no hallucination risk, scales with the fleet). Used CPU, RAM, memory pressure and disk telemetry plus app-usage personas across a fleet of about <strong>150,000</strong> devices, supporting <strong>millions</strong> in potential asset management savings.</li>
 <li>AI token waste cut by <strong>40%</strong>; 3 years of AI governance work.</li>
 </ul></div></div>
-  <div class="open">"I build AI on top of trusted data, not ahead of it. The assistant cut case-spike analysis from 4 days to near-instant because it answered from verified views, with a QA check."</div>
+  <div class="tig" role="img" aria-label="Hourglass infographic: labour hours, overtime, mower and equipment usage and EV fleet performance feed one AI layer on trusted data (tripwires, anomaly detection, AI summary with QA), which leads to alerting the contract manager and servicing, moving or replacing an asset. Cisco proof: case-spike analysis from 4 days to near-instant, about 150,000 devices, AI token waste down 40%."><div class="tih">Many signals, one trusted AI layer, clear actions</div><div class="hg"><div class="hgc hgl"><div class="hgcard"><b>Labour hours</b><span>Contract data</span></div><div class="hgcard"><b>Overtime</b><span>Contract data</span></div><div class="hgcard"><b>Mower and equipment usage</b><span>Asset data</span></div><div class="hgcard"><b>EV fleet performance</b><span>Asset data</span></div></div><svg class="hgw l" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12.5 C50 12.5 50 50 100 50"/><path d="M0 37.5 C50 37.5 50 50 100 50"/><path d="M0 62.5 C50 62.5 50 50 100 50"/><path d="M0 87.5 C50 87.5 50 50 100 50"/></svg><div class="hgm"><span class="hga" aria-hidden="true">&#8595;</span><div class="hgk"><b>AI on trusted data</b><span>Tripwire alerts</span><span>Anomaly detection</span><span>AI summary with a QA check</span></div><span class="hga" aria-hidden="true">&#8595;</span></div><svg class="hgw r" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C50 50 50 12.5 100 12.5"/><path d="M0 50 C50 50 50 37.5 100 37.5"/><path d="M0 50 C50 50 50 62.5 100 62.5"/><path d="M0 50 C50 50 50 87.5 100 87.5"/></svg><div class="hgc hgr"><div class="hgcard"><b>Alert the contract manager</b><span>With an AI summary</span></div><div class="hgcard"><b>Service an asset</b><span>Based on performance</span></div><div class="hgcard"><b>Move an asset</b><span>Based on usage</span></div><div class="hgcard"><b>Replace an asset</b><span>Not just on age</span></div></div></div><div class="tband"><b>Two use cases:</b> an AI assistant for contract performance, and performance-based refresh for the PD's asset utilisation measure. GbN signals are a Working Hypothesis.</div><div class="tih mt">Your Cisco proof</div><div class="hp"><div>Case-spike analysis<b>4 days &rarr; <em>Near-instant</em></b></div><div>Devices in the PBR model<b><em>~150,000</em></b></div><div>AI token waste<b><em>-40%</em></b></div></div></div>
+<div class="open">"I build AI on top of trusted data, not ahead of it. The assistant cut case-spike analysis from 4 days to near-instant because it answered from verified views, with a QA check."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
 <div class="story take">
@@ -998,7 +1280,8 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <li>Changed what the team was rewarded for: from fast ad-hoc turnaround to advanced SQL and Python, data visualisation and narratives that drive action; built a mission statement with the team and stakeholders.</li>
 <li>Analyst community with quarterly show-and-share sessions; AI workshops and brown-bag sessions for up to 50 people; <strong>ANZ Mentor of the Quarter</strong> (Apr 2023).</li>
 </ul></div></div>
-  <div class="open">"I changed what the team was rewarded for: not how fast they answered one question, but how well placed they were to answer the next ten."</div>
+  <div class="tig" role="img" aria-label="Layer stack infographic: the data function builds up from a request desk (likely start), to trusted data owners with three direct reports in data engineering, BI and reporting, and data governance, to self-service enablers (the goal). Proof: ANZ Mentor of the Quarter April 2023, sessions for up to 50 people, built a new data function 2017 to 2019."><div class="tih">Evolving the data function</div><div class="lsk"><div><div class="lsl w"><b>Self-service enablers</b>People answer their own questions; the team is ready for the next ten.<span class="ttag g">The goal</span></div><div class="lsl k"><b>Trusted data owners</b>The team owns the definitions and the business-ready views. Your three direct reports (Boyd's ad):<div class="chips"><span>Data engineering</span><span>BI and reporting</span><span>Data governance</span></div></div><div class="lsl s"><b>Request desk</b>One-off reports; speed of answer is what gets rewarded.<span class="ttag">Likely start (Working Hypothesis)</span></div></div><div><div class="tih">Your Cisco proof</div><div class="hlt"><div><b>Apr 2023</b>ANZ Mentor of the Quarter</div><div><b>Up to 50</b>people per AI workshop and brown-bag session</div><div class="wide"><b>2017 to 2019</b>built a new data function: analysts, data scientists, engineers</div></div></div></div></div>
+<div class="open">"I changed what the team was rewarded for: not how fast they answered one question, but how well placed they were to answer the next ten."</div>
   <div class="refs"><strong>References:</strong> STAR Skills (23 Nov 2026) <span class="sep">|</span> Master Resume (23 Nov 2026) <span class="sep">|</span> Tailored resume, Boyd Recruitment (22 Nov 2026) <span class="sep">|</span> Additional Evidence (23 Nov 2026) <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/" title="Adam Aziz, Data Analytics &amp; AI Leader portfolio, accessed 24 Nov 2026">Portfolio: Data Professional</a> <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
 </div>
 
@@ -1188,123 +1471,6 @@ SAP and the new workforce system are giving GbN, for the first time, the raw dat
 <div class="refs"><strong>References:</strong> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/get-started/decision-guide-pipeline-dataflow-spark" title="Microsoft Fabric decision guide: copy activity, dataflow, or Spark, Microsoft Learn">Microsoft Learn: Pipeline, dataflow or Spark</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/fabric/fundamentals/get-data" title="Get data into Fabric (mirroring and shortcuts), Microsoft Learn">Microsoft Learn: Get data</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/data-engineering/materialized-lake-views/overview-materialized-lake-view" title="Materialized lake views overview, Microsoft Learn">Microsoft Learn: Materialized lake views</a> <span class="sep">|</span> <a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/fabric/mirroring/sap" title="Mirroring SAP in Microsoft Fabric (via SAP Datasphere), Microsoft Learn">Microsoft Learn: Mirroring SAP</a></div>
 </section>
 
-<!-- ============ STAGE 3 ============ -->
-<section id="stage3">
-<h2>Stage 3: Top 5 Experiences to Lead With</h2>
-<p>Each story answers part of the business problem: <strong>turning merged data into trusted contract-level profit and productivity measures that managers act on, with AI built on that foundation</strong>.</p>
-
-<div class="story">
-  <div class="rank">1</div>
-  <h4>Closing the data trust gap: 27 service KPIs (Cisco, Data Solutions &amp; Insights Leader, 2019 to 2026)</h4>
-  <div class="why"><strong>Why it matters here:</strong> "Common definitions for critical data, KPIs and systems of record" and "fewer conflicting reports and manual reconciliations" (H1).</div>
-  <div class="star">
-    <b>S</b><span>Teams looked at the same KPI and saw different numbers (1% to 5% apart), so leaders asked "which one is right?"</span>
-    <b>T</b><span>Bring inconsistency to zero and restore confidence in the numbers.</span>
-    <b>A</b><span>Moved logic from dashboards into SQL single-source-of-truth tables; plain-English data catalogue and agreed calculations; master dashboard per business area; aligned refresh schedules; tripwires flagging variances above 2% with team-owned fixes.</span>
-    <b>R</b><span><strong>Consistency across 27 service KPIs from 62% to 100%; Power BI dashboards from 70+ to 46; KPI escalations from 3 to 5 a month to zero.</strong></span>
-  </div>
-  <div class="open">"When two teams see different numbers for the same KPI, the problem is ownership, not the dashboard. I fixed the definition once, at the source, and gave each area one master view."</div>
-  <div class="meta2"><strong>Likely question:</strong> "Tell me about a time you improved trust in reporting." · <strong>Source:</strong> Master Resume (Cisco 2019 to 2026); STAR Skills (Closing the Data Trust Gap).</div>
-  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
-</div>
-
-<div class="story">
-  <div class="rank">2</div>
-  <h4>Merger data integration: Splunk and Meraki device migrations (Cisco, recent years)</h4>
-  <div class="why"><strong>Why it matters here:</strong> GbN is four merged businesses mid-migration (workforce, payroll). The PD asks for "migration quality criteria in major programs"; Boyd's ad says M&amp;A experience "will be important".</div>
-  <div class="star">
-    <b>S</b><span>Cisco acquired Splunk and Meraki; 8,000+ employees' laptops and mobiles had to move to Cisco devices and Intune before the Splunk device-management contract ended within 6 months.</span>
-    <b>T</b><span>Develop the KPIs, monitoring and progress updates for the migration.</span>
-    <b>A</b><span>Cleaned stale Splunk records and merged them with Cisco asset management data; matched employee records across HR systems; tracked ordering, delivery, setup and returns; watched support channels to head off setup issues.</span>
-    <b>R</b><span><strong>Migration tracked against a 6-month contract deadline across 8,000+ employees.</strong> <span class="badge limit">Confirm</span> whether the deadline was met is not on file yet.</span>
-  </div>
-  <div class="open">"In both mergers the hard part wasn't the new system, it was the old data: stale records, mismatched employee IDs and a fixed deadline. Getting that right is what made progress reporting believable."</div>
-  <div class="meta2"><strong>Likely question:</strong> "How have you handled data through a merger or system change?" · <strong>Source:</strong> Additional Evidence (Splunk and Meraki, 22 Nov 2026).</div>
-  <div class="refs"><strong>References:</strong> Additional Evidence (22 Nov 2026)</div>
-</div>
-
-<div class="story">
-  <div class="rank">3</div>
-  <h4>Asset utilisation and decisions Finance can back: performance-based laptop refresh (Cisco, 2019 to 2026)</h4>
-  <div class="why"><strong>Why it matters here:</strong> "Asset utilisation", "productivity" and "Finance and business owners agree the measures" (H3). Shows choosing the right method, not AI for its own sake.</div>
-  <div class="star">
-    <b>S</b><span>Refresh of about 150,000 devices ran on age, not need, leading to wasted budget and ad-hoc supply.</span>
-    <b>T</b><span>Use performance data to decide when devices should be refreshed, postponed or upgraded.</span>
-    <b>A</b><span>Compared supervised ML, unsupervised ML, GenAI and statistics; chose unsupervised anomaly detection (no hallucination risk, no retraining). Defined telemetry collection; built personas from app usage; took an evidence-based proposal to Finance on AI-ready devices.</span>
-    <b>R</b><span><strong>Earlier refresh for underperforming devices, less over-provisioning, better stock forecasts, supporting millions in potential asset management savings.</strong></span>
-  </div>
-  <div class="open">"We stopped refreshing laptops by age and started refreshing them by need. The data told us which assets were working hard and which were idle, and that's the same question GbN asks of crews and equipment on each contract."</div>
-  <div class="meta2"><strong>Likely question:</strong> "How have you used data to improve asset or workforce productivity?" · <strong>Source:</strong> Master Resume; STAR Skills (Performance-Based Refresh; Budget proposal to Finance).</div>
-  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
-</div>
-
-<div class="story">
-  <div class="rank">4</div>
-  <h4>Natural-language self-service on governed data: ThoughtSpot (Cisco, FY24 to FY26)</h4>
-  <div class="why"><strong>Why it matters here:</strong> "Approved natural-language queries" on "approved, consolidated information sources", Power BI and self-service, SharePoint onboarding, and measured adoption.</div>
-  <div class="star">
-    <b>S</b><span>Analysts were swamped by simple data requests, slowing decisions and complex work.</span>
-    <b>T</b><span>Give people self-service without losing data trust.</span>
-    <b>A</b><span>Introduced ThoughtSpot natural-language search, built only on the same verified datasets as executive KPIs; added Spotter for GPT interactions; set up SharePoint how-to pages, videos and an onboarding SOP; built the commercial case for capacity (2.9x better value).</span>
-    <b>R</b><span><strong>Weekly users from 46 to 196 (326%); monthly queries 8.1K to 19.2K; data request workload down 33%; short-term dashboard projects down 67%.</strong></span>
-  </div>
-  <div class="open">"Self-service only works if people trust the answer, so we pointed natural-language search at the same governed data as the executive KPIs. Adoption followed."</div>
-  <div class="meta2"><strong>Likely question:</strong> "How have you got non-technical people using data, or AI, safely?" · <strong>Source:</strong> Master Resume; STAR Skills (Self-service analytics with ThoughtSpot; Commercial case). <span class="badge limit">Figure note</span> STAR Skills says 2.86x; the Master Resume rounds to 2.9x. Using the Master Resume.</div>
-  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
-</div>
-
-<div class="story">
-  <div class="rank">5</div>
-  <h4>AI assistant for global IT support, with QA and controls (Cisco, 2019 to 2026)</h4>
-  <div class="why"><strong>Why it matters here:</strong> The AI part of the role: "identify opportunities for AI to improve performance", "check results against authoritative information", "human review".</div>
-  <div class="star">
-    <b>S</b><span>Global IT support ran the same caseload with about 40% fewer support contractors. The AI support system meant to close the gap underperformed because it was built on out-of-date knowledge articles. Case spikes were handled reactively, and the usual analysis took about 4 days while cases kept rising.</span>
-    <b>T</b><span>Alert the right teams early with enough insight to act, where they already work.</span>
-    <b>A</b><span>Built statistical tripwire alerts (2 and 1.8 standard deviations); led a GPT-based assistant with prompt patterns, surfaced in Webex with on-demand summaries and Q&amp;A; knowledge base on governed SQL tables; a QA process to verify accuracy.</span>
-    <b>R</b><span><strong>Case-spike analysis cut from 4-days to near-instant insight; fewer surprise escalations to executives.</strong></span>
-  </div>
-  <div class="open">"The AI was only as good as the data under it, so we built it on governed tables and checked its answers before people relied on them."</div>
-  <div class="meta2"><strong>Likely question:</strong> "Tell me about an AI initiative you took from idea to use." · <strong>Source:</strong> Master Resume; STAR Skills (AI-Enabled Decisioning).</div>
-  <div class="refs"><strong>References:</strong> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
-</div>
-
-<p class="small"><strong>In reserve:</strong> Snowflake and DBT modernisation (warehouse volume down 42%, 355 to 205 tables/views, 517.2M stagnant rows removed, disruptions from 1 to 2 a quarter to zero) for "develop the existing data lake/warehouse"; and root-cause analysis saving up to $4.3M in productivity hours across 34.4K employees for workforce productivity.</p>
-
-<h3>Coverage check (built from Rezi's Evidence Match)</h3>
-<div class="tablewrap"><table>
-<tr><th>#</th><th>Job ad needs</th><th>Match (Rezi)</th><th>Top 5 story</th></tr>
-<tr><td>1</td><td>Senior data, analytics and insights leadership with measurable outcomes</td><td><span class="badge fact">Strong match</span></td><td>1, 3</td></tr>
-<tr><td>2</td><td>Data and information strategy, governance, ownership and systems of record</td><td><span class="badge fact">Strong match</span></td><td>1</td></tr>
-<tr><td>3</td><td>Develop the value of an existing data lake/warehouse</td><td><span class="badge fact">Strong match</span></td><td>Reserve (Snowflake and DBT)</td></tr>
-<tr><td>4</td><td>Power BI, self-service analytics, pipelines, curated datasets and models</td><td><span class="badge fact">Strong match</span></td><td>1, 4</td></tr>
-<tr><td>5</td><td>Commercial insights: contract profitability, pricing, workforce productivity, asset utilisation, customer outcomes</td><td><span class="badge hyp">Partial</span></td><td>3</td></tr>
-<tr><td>6</td><td>Data quality, master data and consistent KPI definitions</td><td><span class="badge fact">Strong match</span></td><td>1, 2</td></tr>
-<tr><td>7</td><td>Business information and knowledge standards, including SharePoint</td><td><span class="badge fact">Strong match</span></td><td>4</td></tr>
-<tr><td>8</td><td>Data requirements supporting major transformation programs</td><td><span class="badge fact">Strong match</span></td><td>2</td></tr>
-<tr><td>9</td><td>Mergers and acquisitions experience</td><td><span class="badge fact">Strong match</span></td><td>2</td></tr>
-<tr><td>10</td><td>Microsoft Fabric, Azure, SAP, WFM or ERP reporting</td><td><span class="badge hyp">Partial</span></td><td>None (gap)</td></tr>
-<tr><td>11</td><td>AI (about 30%): practical AI roadmap</td><td><span class="badge fact">Strong match</span></td><td>5, 3</td></tr>
-<tr><td>12</td><td>AI governance</td><td><span class="badge fact">Strong match</span></td><td>5</td></tr>
-<tr><td>13</td><td>Lift leaders to own, understand and use their data</td><td><span class="badge fact">Strong match</span></td><td>1, 4</td></tr>
-<tr><td>14</td><td>Influence at the executive table; make the complicated simple</td><td><span class="badge fact">Strong match</span></td><td>3</td></tr>
-<tr><td>15</td><td>Lead 3 direct reports and specialist partners</td><td><span class="badge fact">Strong match</span></td><td>4 (vendor), 1</td></tr>
-<tr><td>16</td><td>Operational, field-services business across Australia and NZ</td><td><span class="badge hyp">Partial</span></td><td>3 (transferable)</td></tr>
-<tr><td>17</td><td>Benefits validated by business owners and Finance (PD). <em>Added by Bree</em></td><td><span class="badge hyp">Partial</span></td><td>3, 4</td></tr>
-</table></div>
-<div class="refs"><strong>References:</strong> Rezi Evidence Match (22 Nov 2026) <span class="sep">|</span> Master Resume (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> Senior Manager Information, Data &amp; AI PD</div>
-
-<h3>Gaps to prepare for</h3>
-<div class="two">
-<div class="qbox"><strong>1. Contract profitability and tender pricing</strong>
-No contract margin or pricing models on file.<br><em>Framing:</em> "I haven't built contract margin models in a field-service business. What I have done is build the cost and value cases leaders and Finance relied on, $11M+ of them, and fix the data underneath so the numbers held up. Contract margin is the same discipline: agree the cost and revenue definitions with Finance, join SAP and labour data at contract level, then let EGMs act on it."</div>
-<div class="qbox"><strong>2. Microsoft Fabric, Azure and SAP depth</strong>
-Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:</em> "My platform work was Snowflake and DBT: I led the engineers, set the release, lineage and quality standards, and cut the warehouse by 42%. Fabric is a different tool with the same problems. I'd lean on Technology and partners for the build and own the standards and the outcomes."</div>
-</div>
-<div class="refs"><strong>References:</strong> Rezi Evidence Match (22 Nov 2026) <span class="sep">|</span> Master Resume (22 Nov 2026) <span class="sep">|</span> Additional Evidence (22 Nov 2026) <span class="sep">|</span> STAR Skills (23 Nov 2026)</div>
-
-<div class="notice"><strong>Candidate source versions:</strong> AdamAzizMasterResume.pdf (confirmed 22 Nov 2026), STAR Skills.docx (23 Nov 2026), Additional Evidence (22 Nov 2026), Rezi Evidence Match (22 Nov 2026) and the <a target="_blank" rel="noopener" href="https://adamaziz1979.github.io/AdamAziz_DataProfessional/">portfolio site</a>.</div>
-</section>
-
 <!-- ============ SOURCES ============ -->
 <section id="sources">
 <h2>Source Register</h2>
@@ -1329,9 +1495,10 @@ Power BI and SAP BusinessObjects reporting; no Fabric or Azure.<br><em>Framing:<
 
 <footer class="footer">
 <p><strong>Evidence labels.</strong> <span class="badge fact">Observed Fact</span> directly supported by a cited source. <span class="badge infer">Strong Inference</span> multiple facts point to it. <span class="badge hyp">Working Hypothesis</span> plausible, needs validation. <span class="badge limit">Caution</span> a limit or conflict to note.</p>
-<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
+<p>Figures and pay in AUD unless stated. Green by Nature is private and publishes no accounts; revenue is a third-party estimate. Boyd Recruitment's ad does not name the client; the match to Green by Nature is a Strong Inference. Prepared 23 November 2026 for Adam Aziz's interview preparation. Version 13 (25 November 2026): KPI Trust proof as a horizontal barbell chart, ThoughtSpot proof as donut charts, menu label "My Take". Version 12 (25 November 2026): My Take infographics restyled: hourglass for KPI Trust, Bridge and AI; layer stack for Data Engineering and the data team; before and after with a barbell chart (Viktor's standard) for self-service. Version 11 (25 November 2026): an infographic for each My Take section, and Top 5 stories moved before My Take. Version 10 (24 November 2026): Tech Stacks Compared section added (Cisco next to GbN). Version 9 (24 November 2026): dark version for the light/dark toggle. Version 8 (24 November 2026): My Take sub-sections shown as cards. Version 7 (24 November 2026): Fabric pipeline infographic added, and the Copilot family shown as cards. Version 6 (24 November 2026): My Take Based on the PD and Intro to Copilot sections added. Version 5 (24 November 2026): removed content repeated between Stage 1 and Stage 2. Version 4 (24 November 2026): menu labels use section titles (Executive briefing, Company dossier, Top 5 stories). Version 3 (24 November 2026): Named clients added to Stage 2 section 1. Version 2 (23 November 2026): Stage 3 story 5 updated from the revised STAR Skills (4-day figure now matches the Master Resume; figure conflict flag removed). Version 1 (23 November 2026): first issue.</p>
 </footer>
 
 </main>
+
 </body>
 </html>
